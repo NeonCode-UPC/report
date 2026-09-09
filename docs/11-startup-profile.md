@@ -14,7 +14,8 @@ En esta sección se presentarán los perfiles de los integrantes del equipo, inc
 
 | Integrante | Código | Carrera | Perfil y aporte al proyecto |
 |---|---|---|---|
-| [Integrante 1] | [Código] | Ingeniería de Software | [Descripción de conocimientos técnicos, habilidades y responsabilidades principales.] |
-| [Integrante 2] | [Código] | Ingeniería de Software | [Descripción de conocimientos técnicos, habilidades y responsabilidades principales.] |
-| [Integrante 3] | [Código] | Ingeniería de Software | [Descripción de conocimientos técnicos, habilidades y responsabilidades principales.] |
-| [Integrante 4] | [Código] | Ingeniería de Software | [Descripción de conocimientos técnicos, habilidades y responsabilidades principales.] |
+| Renzo Piero Santos Minaya | u202114790 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
+| Aaron André Espinoza Flores | u202222859 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
+| Jhon Jordy Jaramillo Mayta | u202520310 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
+| Santiago Gargate Paredes | u20211b556 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
+| Maria Luisa Munayco Apolaya | u20231c995 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
