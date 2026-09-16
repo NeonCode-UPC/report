@@ -30,7 +30,7 @@ Para cada segmento objetivo se registrarán entre tres y cinco entrevistas. Cada
 
 | Entrevistado | Segmento | Edad | Distrito | Fecha | URL del video | Inicio | Duración | Resumen |
 |---|---|---:|---|---|---|---|---|---|
-| [Entrevistado 1] | [Segmento] | [Edad] | [Distrito] | [YYYY-MM-DD] | [URL] | [hh:mm:ss] | [mm:ss] | [Resumen de respuestas principales.] |
+| Aaron Espinoza | Personal médico y de emergencias | [Edad] | [Distrito] | 2026-09-16 | [Entrevista1_Segmento1_AaronEspinoza.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi) | 00:00:00 | 02:51 | Entrevista del Segmento 1 orientada a validar necesidades de personal médico y de emergencias sobre el traslado de medicamentos, órganos e insumos sensibles, considerando verificación de condiciones, información crítica, problemas de temperatura, tiempos de llegada, disponibilidad de insumos y utilidad de alertas. |
 | [Entrevistado 2] | [Segmento] | [Edad] | [Distrito] | [YYYY-MM-DD] | [URL] | [hh:mm:ss] | [mm:ss] | [Resumen de respuestas principales.] |
 | [Entrevistado 3] | [Segmento] | [Edad] | [Distrito] | [YYYY-MM-DD] | [URL] | [hh:mm:ss] | [mm:ss] | [Resumen de respuestas principales.] |
 
