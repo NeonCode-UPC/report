@@ -8,14 +8,10 @@ Este segmento incluye paramédicos, enfermeros, médicos de emergencia y técnic
 
 El personal médico requiere una interfaz clara, accesible y rápida de consultar, especialmente en escenarios de alta presión. Para este segmento, la solución debe priorizar información esencial como temperatura actual, estado del contenedor, stock disponible, alertas activas y tiempo estimado de llegada.
 
-## Segmento 2: Operadores logísticos de salud
+## Segmento 2: Operadores logísticos e instituciones de salud
 
-Este segmento está conformado por coordinadores de ambulancias, responsables de transporte médico, supervisores de cadena de frío y personal encargado de planificar traslados entre instituciones de salud. Sus actividades requieren visibilidad sobre múltiples unidades, rutas, contenedores y entregas.
+Este segmento está conformado por coordinadores de ambulancias, responsables de transporte médico, supervisores de cadena de frío, hospitales, clínicas, bancos de sangre, laboratorios, centros quirúrgicos, áreas de farmacia hospitalaria y personal encargado de planificar, supervisar o recibir traslados médicos entre instituciones de salud.
 
-Los operadores logísticos necesitan monitorear la ubicación de los contenedores, revisar el avance de cada traslado, anticipar demoras, validar disponibilidad de combustible y coordinar acciones cuando se presenta una incidencia. Para ellos, la plataforma debe ofrecer un dashboard centralizado, filtros de búsqueda, priorización de alertas y reportes de operación.
+Los operadores logísticos e instituciones de salud necesitan visibilidad sobre múltiples unidades, rutas, contenedores y entregas, así como evidencia del cumplimiento de condiciones de transporte para medicamentos refrigerados, órganos, muestras biológicas o insumos de alto valor. Sus principales necesidades se relacionan con monitorear la ubicación de los contenedores, revisar el avance de cada traslado, anticipar demoras, validar disponibilidad de recursos, confirmar entregas y coordinar acciones cuando se presenta una incidencia.
 
-## Segmento 3: Instituciones de salud y áreas especializadas
-
-Este segmento incluye hospitales, clínicas, bancos de sangre, laboratorios, centros quirúrgicos y áreas de farmacia hospitalaria. Estas organizaciones requieren evidencia del cumplimiento de condiciones de transporte, especialmente cuando se trata de medicamentos refrigerados, órganos, muestras biológicas o insumos de alto valor.
-
-Las instituciones de salud necesitan trazabilidad, reportes históricos, confirmación de entrega y control sobre la cadena de custodia. Para este segmento, la solución debe permitir consultar registros de temperatura, ubicación, responsables, horarios de apertura del contenedor, incidentes y acciones tomadas durante cada traslado.
+Para este segmento, la solución debe ofrecer un dashboard centralizado, filtros de búsqueda, priorización de alertas, trazabilidad histórica, reportes de operación, registros de temperatura, ubicación, responsables, horarios de apertura del contenedor, incidentes y acciones tomadas durante cada traslado.

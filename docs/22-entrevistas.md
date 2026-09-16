@@ -4,7 +4,7 @@ Las entrevistas permitirán obtener información cualitativa sobre las necesidad
 
 ## 2.2.1. Diseño de entrevistas
 
-Las entrevistas estarán dirigidas a personal médico de emergencia, operadores logísticos de salud y representantes de instituciones médicas. Las preguntas se formularán evitando inducir respuestas y buscando comprender experiencias previas, tareas actuales, problemas frecuentes y criterios de éxito.
+Las entrevistas estarán dirigidas a personal médico de emergencia, operadores logísticos de salud, representantes de instituciones médicas y áreas especializadas. Las preguntas se formularán evitando inducir respuestas y buscando comprender experiencias previas, tareas actuales, problemas frecuentes y criterios de éxito.
 
 ### Preguntas para personal médico y de emergencias
 
@@ -14,21 +14,15 @@ Las entrevistas estarán dirigidas a personal médico de emergencia, operadores 
 4. ¿Qué problemas ha observado relacionados con temperatura, tiempo de llegada o disponibilidad de insumos?
 5. ¿Cómo debería presentarse una alerta para que sea útil durante una situación de emergencia?
 
-### Preguntas para operadores logísticos de salud
+### Preguntas para operadores logísticos e instituciones de salud
 
-1. ¿Cómo se planifican actualmente las rutas y asignaciones de ambulancias o unidades de transporte médico?
-2. ¿Qué herramientas utilizan para conocer ubicación, estado del vehículo y tiempo estimado de llegada?
-3. ¿Qué información falta normalmente durante un traslado médico sensible?
-4. ¿Cómo se registran incidentes relacionados con demoras, conservación o entrega de productos?
-5. ¿Qué reportes serían útiles para mejorar la operación y reducir riesgos?
-
-### Preguntas para instituciones de salud
-
-1. ¿Qué requisitos de trazabilidad deben cumplirse al recibir medicamentos, órganos o muestras biológicas?
-2. ¿Qué evidencias se solicitan cuando ocurre una incidencia durante el traslado?
-3. ¿Qué riesgos considera más relevantes en la cadena de custodia de productos médicos?
-4. ¿Qué indicadores ayudarían a evaluar la calidad de los traslados?
-5. ¿Qué condiciones debería cumplir una solución digital para ser adoptada por la institución?
+1. ¿Cómo se planifican actualmente las rutas, asignaciones de ambulancias o unidades de transporte médico y la recepción de productos sensibles?
+2. ¿Qué herramientas utilizan para conocer ubicación, estado del vehículo, condiciones de la carga y tiempo estimado de llegada?
+3. ¿Qué información falta normalmente durante un traslado médico sensible o al momento de recibir medicamentos, órganos o muestras biológicas?
+4. ¿Cómo se registran incidentes relacionados con demoras, conservación, cadena de custodia o entrega de productos?
+5. ¿Qué requisitos de trazabilidad y evidencias deben cumplirse ante una incidencia durante el traslado?
+6. ¿Qué indicadores y reportes serían útiles para mejorar la operación, evaluar la calidad de los traslados y reducir riesgos?
+7. ¿Qué condiciones debería cumplir una solución digital para ser adoptada por operadores logísticos e instituciones de salud?
 
 ## 2.2.2. Registro de entrevistas
 
