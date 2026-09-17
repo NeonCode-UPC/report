@@ -4,19 +4,19 @@ El proceso de Needfinding permitió identificar y representar las necesidades, o
 ### 2.3.1. User Personas
 A continuación, se presentan las fichas de User Persona elaboradas para cada uno de los segmentos objetivo ded Medical SmartBox. Cada ficha representa un arquetipo de usuario construido a partir de las características, responsabilidades, necesidades, objetivos y frustraciones identificadas dentro del dominio del transporte médico y la cadena de frío
 
-#### User Persona 1: Empresas de Transporte y Operadores Logísticos de Cadena de Frío
+#### User Persona 1: Personal médico y de emergencias
 
-![User Persona - Empresas de Transporte y Operadores Logísticos de Cadena de Frío](./assets/chapter-2/user-persona-logistics.png)
+![User Persona - Personal médico y de emergencias](./assets/chapter-2/user-persona-logistics.png)
 
-#### User Persona 2: Centros de Salud y Cadenas Farmacéuticas
+#### User Persona 2: Operadores logísticos e instituciones de salud
 
-![User Persona - Centros de Salud y Cadenas Farmacéuticas](./assets/chapter-2/user-persona-healthcare.png)
+![User Persona - Operadores logísticos e instituciones de salud](./assets/chapter-2/user-persona-healthcare.png)
 
 ### 2.3.2. User Task Matrix
 
 La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos dentro de los procesos de transporte y recepción de productos médicos, independientemente de la existencia de una solución tecnológica. A continuación, se presentan las principales tareas identificadas para cada segmento, junto con su frecuencia e importancia para los User Personas correspondientes.
 
-| **Tarea** | **Empresas de Transporte y Operadores Logísticos de Cadena de Frío (Frecuencia / Importancia)** | **Centros de Salud y Cadenas Farmacéuticas (Frecuencia / Importancia)** |
+| **Tarea** | **Personal médico y de emergencias (Frecuencia / Importancia)** | **Operadores logísticos e instituciones de salud (Frecuencia / Importancia)** |
 | --- | --- | --- |
 | **Supervisar el estado de los productos médicos durante el transporte** | Alta / Alta | Media / Alta |
 | **Coordinar y dar seguimiento a los transportes en curso** | Alta / Alta | Alta / Alta |
@@ -32,3 +32,19 @@ La User Task Matrix permite visualizar y comparar las tareas que cada segmento o
 | **Investigar las causas de incidentes o problemas durante una entrega** | Media / Alta | Media / Alta |
 
 **Análisis de la User Task Matrix:** Las empresas de transporte y los operadores logísticos presentan una alta frecuencia e importancia en tareas relacionadas con la supervisión y coordinación de los transportes, debido a que deben gestionar continuamente el traslado de productos médicos y responder ante posibles incidentes. Por su parte, los centros de salud y las cadenas farmacéuticas concentran sus actividades principalmente en el seguimiento de los envíos, la verificación de las condiciones de los productos y la confirmación de su recepción. Para ambos segmentos, las tareas relacionadas con el control de las condiciones del transporte, la ubicación de los envíos y la gestión de incidentes presentan una importancia elevada, debido al impacto que pueden tener sobre la seguridad y trazabilidad de los productos médicos.
+
+### 2.3.3. User Journey Mapping
+
+Los User Journey Maps representan el recorrido end-to-end que cada User Persona realiza actualmente (situación As-Is) para cumplir con sus objetivos dentro de los procesos relacionados con el traslado, monitoreo y recepción de productos médicos sensibles, sin la existencia de Medical SmartBox. Estos mapas permiten identificar los puntos de dolor (pains) y las oportunidades de mejora (gains) presentes en las actividades actuales de los usuarios.
+
+- **Segmento 1: Personal médico y de emergencias**
+
+El siguiente Journey Map representa el recorrido de Renato Calvo Yalan, integrante del personal médico y de emergencias, durante las actividades relacionadas con el traslado y recepción de medicamentos, órganos e insumos médicos sensibles. El recorrido comprende la coordinación previa del traslado, el seguimiento de las condiciones de los productos, la espera durante el transporte y la recepción de los insumos. Durante este proceso, el usuario necesita contar con información oportuna sobre las condiciones de conservación, el tiempo estimado de llegada y la disponibilidad de los productos para poder actuar ante posibles incidentes.
+
+![User Journey Map - Personal médico y de emergencias](./assets/chapter-2/user-journey-medical.png)
+
+- **Segmento 2: Operadores logísticos e instituciones de salud**
+
+El siguiente Journey Map representa el recorrido de Karla Pacheco, auxiliar administrativa del área de salud encargada del monitoreo y registro de rutas de ambulancias y de la recolección de muestras o materiales médicos. El recorrido comprende la coordinación de las rutas, el registro de información, el seguimiento del transporte y la recepción de los materiales. Durante este proceso, la comunicación con los transportistas y la disponibilidad de información actualizada resultan importantes para mantener un seguimiento adecuado de las rutas y registrar correctamente el desarrollo de cada traslado.
+
+![User Journey Map - Operadores logísticos e instituciones de salud](./assets/chapter-2/user-journey-logistics-healthcare.png)
