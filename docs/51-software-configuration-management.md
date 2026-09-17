@@ -1,97 +1,105 @@
 # 5.1. Software Configuration Management
 
-En esta sección se detallan la configuración del entorno de desarrollo, la estrategia de gestión del código fuente, las convenciones de estilo adoptadas por el equipo de desarrollo de **NeonCode** y la infraestructura empleada para el despliegue del sistema de supervisión de contenedores médicos inteligentes.
+En esta sección se detallan la configuración del entorno de desarrollo, la estrategia de gestión del código fuente, las convenciones de estilo adoptadas por el equipo de desarrollo de **NeonCode** y la infraestructura empleada para el despliegue del sistema de supervisión de contenedores médicos inteligentes conforme a las exigencias oficiales de la asignatura.
 
 ---
 
 ### 5.1.1. Software Development Environment Configuration
 
-Para garantizar un flujo de trabajo uniforme y minimizar discrepancias entre las estaciones de trabajo de los miembros del equipo, se ha estandarizado la configuración del entorno de desarrollo:
+Para garantizar un flujo de trabajo uniforme y minimizar discrepancias entre las estaciones de trabajo de los miembros del equipo, se ha estandarizado la configuración del entorno de desarrollo alineada estrictamente con el stack tecnológico normado por el curso:
 
 * **Entornos de Desarrollo Integrados (IDE):**
-    * **JetBrains WebStorm:** Entorno principal utilizado para el desarrollo, maquetación y pruebas del sitio web corporativo (Landing Page) y la aplicación web administrativa frontend. Se han configurado complementos como *GitFlowHelper*, *Prettier* y *ESLint*.
-    * **Visual Studio Code / IntelliJ IDEA:** Utilizados para el desarrollo y depuración de los microservicios backend de la API RESTful.
-* **Entorno de Ejecución (Runtime) y Lenguajes:**
-    * **Node.js (v20.x LTS):** Entorno de ejecución JavaScript del lado del servidor para los servicios web de la API.
-    * **TypeScript (v5.x):** Lenguaje tipado adoptado en el frontend para garantizar el control de tipos en la manipulación de estados y datos de telemetría.
-    * **HTML5, CSS3 y TailwindCSS:** Estándares empleados para el diseño responsive y accesible de las aplicaciones web.
+    * **Visual Studio 2022 / JetBrains Rider / VS Code:** Entornos principales utilizados para el desarrollo, compilación y pruebas de los servicios backend en **ASP.NET Core 10.0 (.NET 10 LTS)** en lenguaje **C#**, con soporte para Entity Framework Core y Swagger UI.
+    * **JetBrains WebStorm / VS Code:** Utilizados para el maquetado semántico del Landing Page corporativo (HTML5, CSS3, JavaScript) y el desarrollo de la aplicación web frontend en **Vue 3** con la biblioteca de componentes **PrimeVue**.
+* **Entorno de Ejecución (Runtime), Frameworks y Lenguajes:**
+    * **.NET 10 LTS (`net10.0`) y C#:** Framework y lenguaje oficial del lado del servidor para el desarrollo de los servicios web bajo estilo arquitectónico RESTful API y el servicio en segundo plano de ingesta telemática IoT (`BackgroundService`).
+    * **Vue Framework (Vue 3) con PrimeVue:** Framework frontend y biblioteca de componentes basados en **Material Design** para la construcción de las Web Applications reactivas.
+    * **HTML5 semántico, CSS3 modular y JavaScript (ES6+):** Estándares de la W3C empleados para el diseño responsive, accesible (WCAG) y optimizado para SEO del Landing Page institucional.
+    * **Node.js (v20.x LTS) y Vite:** Entorno de soporte de herramientas para compilación rápida y empaquetado de assets frontend.
 * **Gestor de Paquetes y Depósitos de Software:**
-    * **npm (v10.x):** Gestor de paquetes utilizado para la administración, auditoría de seguridad e instalación de las bibliotecas del proyecto.
+    * **NuGet:** Gestor oficial de dependencias y paquetes para la solución ASP.NET Core (`Microsoft.EntityFrameworkCore`, `Swashbuckle.AspNetCore`, `BCrypt.Net-Next`).
+    * **npm (v10.x):** Gestor de paquetes empleado para la administración de bibliotecas y plugins de desarrollo frontend.
 
 ---
 
 ### 5.1.2. Source Code Management
 
-La gestión del código fuente de **NeonCode** se realiza a través de **Git** como sistema de control de versiones distribuido, centralizado en la organización de **GitHub** (`NeonCode-UPC/report`).
+La gestión del código fuente de **NeonCode** se realiza a través de **Git** como sistema de control de versiones distribuido, centralizado en la organización oficial de **GitHub** (`NeonCode-UPC`).
 
 #### Estrategia de Ramificación (GitFlow)
 
-El equipo aplica la estrategia **GitFlow** para mantener un desarrollo aislado, seguro y estructurado:
+El equipo aplica rigurosamente el modelo de ramificación **GitFlow** para asegurar un desarrollo ordenado y auditable:
 
-* **`main`:** Rama de producción que almacena exclusivamente código estable, verificado y listo para el despliegue final.
-* **`develop`:** Rama de integración continua donde se consolidan todas las funcionalidades completadas durante el desarrollo de los sprints.
-* **`feature/<nombre-funcionalidad>`:** Ramas de trabajo temporal creadas a partir de `develop` para la construcción de historias de usuario o secciones específicas (ejemplo: `feature/us01-registro-institucion` o `feature/capitulo-1`).
-* **`release/<version>`:** Ramas de preparación creadas antes de un despliegue importante para pruebas finales de integración.
-* **`hotfix/<nombre-incidencia>`:** Ramas de emergencia creadas directamente desde `main` para solventar errores críticos en el entorno de producción.
+* **`main`:** Rama de producción que almacena exclusivamente código estable, verificado y desplegado para las revisiones oficiales de hito.
+* **`develop`:** Rama de integración continua donde se consolidan todas las funcionalidades completadas durante los sprints.
+* **`feature/<nombre-funcionalidad>`:** Ramas de trabajo temporal creadas a partir de `develop` para el desarrollo de historias de usuario o módulos específicos (ejemplo: `feature/landing-alerts-section`).
+* **`release/<version>`:** Ramas de preparación creadas antes de la entrega de un hito oficial para congelamiento de código y pruebas finales.
+* **`hotfix/<incidencia>`:** Ramas creadas directamente desde `main` para resolver contingencias críticas.
 
 #### Flujo de Comandos GitFlow
 
 ```bash
 # Iniciar una rama de funcionalidad desde develop
-git flow feature start us01-registro-institucion
+git flow feature start landing-hero-section
 
 # Publicar la rama en el repositorio remoto de GitHub
-git flow feature publish us01-registro-institucion
+git flow feature publish landing-hero-section
 
 # Finalizar la funcionalidad e integrar los cambios en develop
-git flow feature finish us01-registro-institucion
+git flow feature finish landing-hero-section
 ```
+
+---
+
 ## 5.1.3. Source Code Style Guide & Conventions
 
-Para mantener la calidad, legibilidad y mantenibilidad del código fuente en el repositorio de **NeonCode**, el equipo de desarrollo sigue guías de estilo estandarizadas y convenciones de control de versiones.
+Para mantener la máxima calidad, legibilidad y mantenibilidad del código fuente, el equipo sigue guías de estilo estandarizadas en concordancia con las buenas prácticas de la industria:
 
 ### Guía de Estilo de Código Fuente
 
-* **Estándar de Formato:** Se utiliza **Prettier** y **ESLint** para el análisis estático de código y formateo automático en la aplicación web frontend (React con TypeScript) y los servicios de la API RESTful.
-* **Convenciones de Nomenclatura:**
-    * **Variables y Funciones:** Se utiliza `camelCase` (ejemplo: `containerTemperature`, `calculateEstimatedArrival`).
-    * **Componentes y Clases:** Se utiliza `PascalCase` (ejemplo: `TelemetryDashboard`, `ContainerService`).
-    * **Archivos y Directorios:** Se utiliza `kebab-case` para nombres de archivos y carpetas (ejemplo: `container-monitoring.component.tsx`, `3.1-user-stories.md`).
-    * **Constantes Globales:** Se utiliza `UPPER_SNAKE_CASE` (ejemplo: `MAX_CRITICAL_TEMPERATURE`, `DEFAULT_TIMEOUT`).
-* **Terminología Normada (Anexo E):** Queda estrictamente prohibido el uso de *spanglish* o términos no reconocidos académicamente. Se debe emplear de manera exclusiva:
+* **Estándar de Formato Backend (C# / .NET):** Se aplican las directrices oficiales *Microsoft C# Coding Conventions* y *ASP.NET Core Engineering Guidelines*. Análisis estático configurado mediante Roslyn Analyzers y editorconfig institucional:
+    * Clases, interfaces, métodos y propiedades en `PascalCase` (ejemplo: `SmartContainer`, `ITelemetryService`, `RecordTelemetrySnapshot`).
+    * Parámetros y variables locales en `camelCase` (ejemplo: `ambientTemperature`, `batteryLevel`).
+    * Constantes en `PascalCase` según el estándar de Microsoft (ejemplo: `MaxCriticalTemperatureCelsius`).
+* **Estándar de Formato Frontend (Vue.js / HTML / CSS / JS):** Se aplican *Prettier* y *ESLint* configurados bajo las reglas oficiales de la *Vue 3 Style Guide*:
+    * Componentes Single-File (`.vue`) en `PascalCase` (ejemplo: `TelemetryCard.vue`, `AlertBanner.vue`).
+    * Funciones y propiedades reactivas en `camelCase`.
+    * Clases CSS bajo convención BEM simplificada y variables semánticas en `kebab-case`.
+* **Terminología Normada (Anexo E de la Rúbrica):** Queda estrictamente prohibido el uso de traducciones erróneas o anglicismos mutados. Se utiliza rigurosamente:
     * **Requisito** en lugar de "requerimiento".
     * **Biblioteca** en lugar de "librería".
-    * **Aplicación** en lugar de "app".
+    * **Aplicación** en lugar de "aplicativo" o "app".
+    * **Desplegar / Probar / Confirmar cambios** en lugar de "deployar", "testear" o "comitear".
 
 ### Convención de Mensajes de Confirmación (Conventional Commits)
 
-Todas las confirmaciones de cambios (commits) realizadas en el repositorio de GitHub deben cumplir obligatoriamente con el estándar **Conventional Commits**:
+Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la especificación **Conventional Commits 1.0.0**:
 
-**Estructura del Mensaje:**
-`<tipo>(<alcance>): <descripción corta en tiempo presente>`
+`<tipo>(<alcance>): <descripción concisa en tiempo presente>`
 
-* **`feat`:** Incorporación de una nueva funcionalidad (ejemplo: `feat(auth): add JWT sign-in endpoint`).
-* **`fix`:** Corrección de un fallo o error en el código (ejemplo: `fix(telemetry): correct temperature parser logic`).
-* **`docs`:** Cambios o adiciones exclusivamente en archivos de documentación Markdown (ejemplo: `docs(ch5): add code conventions and deployment configuration`).
-* **`style`:** Ajustes de formato, espacios o estilos CSS que no alteran la lógica de negocio (ejemplo: `style(landing): fix container card padding`).
-* **`refactor`:** Reestructuración interna del código que no añade funcionalidades ni corrige errores (ejemplo: `refactor(api): optimize database connection pooling`).
-* **`test`:** Adición o actualización de pruebas unitarias o de integración (ejemplo: `test(auth): add unit test for sign-in service`).
+* **`feat`:** Incorporación de una nueva funcionalidad visible para el usuario o API.
+* **`fix`:** Corrección de un fallo o error funcional.
+* **`docs`:** Cambios o adiciones exclusivamente en documentación o informes Markdown.
+* **`style`:** Ajustes de formato, espaciado o estilos CSS sin alteración de lógica.
+* **`refactor`:** Reestructuración interna de código sin cambio de comportamiento.
+* **`test`:** Adición o actualización de pruebas unitarias o de integración.
+* **`chore`:** Tareas de mantenimiento, configuración de build o dependencias.
 
 ---
 
 ## 5.1.4. Software Deployment Configuration
 
-El proceso de despliegue del sistema de supervisión de contenedores médicos inteligentes de **NeonCode** se organiza en tres entornos aislados para garantizar la estabilidad operativa de la plataforma.
+El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados para asegurar la disponibilidad operativa y la integridad de las evidencias de revisión:
 
 ### Entornos de Despliegue
 
 | Entorno | Propósito | Plataforma / Hosting | Rama Git Asociada | Configuración y Acceso |
 | :--- | :--- | :--- | :--- | :--- |
-| **Local (Development)** | Entorno de desarrollo individual para codificación, depuración y pruebas unitarias. | Servidor local Vite / Node.js (`localhost:5173` / `localhost:3000`) | Rama de trabajo (`feature/*`) | Acceso exclusivo del equipo de desarrollo. |
-| **Staging (Testing)** | Entorno de integración continua para pruebas de calidad (QA) y validación de entregables de sprint. | Vercel (Frontend) / Render (API RESTful Backend) | `develop` | Despliegue automático ante cada *pull request* integrado. |
-| **Production (Live)** | Entorno final de alta disponibilidad donde opera la solución para supervisores hospitalarios y personal médico. | Vercel Production / AWS App Runner | `main` | Despliegue automatizado mediante pipelines de CI/CD tras la consolidación de entregas (*releases*). |
+| **Local (Development)** | Desarrollo individual, maquetado de vistas y pruebas de API. | Servidor local Vite (`localhost:5173`) / Kestrel .NET (`localhost:5000`) | `feature/*` | Acceso exclusivo de los integrantes de desarrollo. |
+| **Staging (Testing / QA)** | Integración continua de funcionalidades completadas en sprint. | GitHub Pages / Vercel Preview | `develop` | Validación interna del equipo y revisión intermedia. |
+| **Production (Live)** | Entorno oficial desplegado para evaluación académica y demostración B2B. | GitHub Pages / Vercel Production | `main` | Acceso público activo vía HTTPS: `https://neoncode-upc.github.io/landing-page/`. |
 
 ### Gestión de Variables de Entorno y Configuración
 
-* **Archivos `.env`:** Todas las claves de API, cadenas de conexión a base de datos y tokens de autenticación se gestionan mediante variables de entorno en archivos `.env.local` y no se suben al repositorio.
-* **Secretos en Plataforma:** Las claves de producción se configuran directamente en el panel de administración de Vercel y Render, garantizando la seguridad de la cadena de custodia de datos.
+* **Archivos de Configuración:** En el backend se utiliza `appsettings.json` y `appsettings.Development.json` con sobreescritura mediante variables de entorno para cadenas de conexión seguras.
+* **Variables Frontend:** Variables de configuración de endpoints (`VITE_API_BASE_URL`) centralizadas en archivos `.env` versionados como plantillas (`.env.example`), aislando tokens de producción.

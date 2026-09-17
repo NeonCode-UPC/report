@@ -1,68 +1,85 @@
-﻿# 2.3. Needfinding
+# 2.3. Needfinding
 
-El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de Medical SmartBox. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones, se elaboran los siguientes artefactos centrados en el usuario, los cuales servirán como base para el diseño de la solución.
+El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de **Medical SMARTBOX**. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones en Lima Metropolitana, se elaboraron artefactos empáticos centrados en el usuario conforme a las pautas de diseño UX de la industria (Nielsen Norman Group, Interaction Design Foundation), los cuales constituyen el cimiento empírico de las especificaciones y el diseño de la solución.
+
+---
 
 ## 2.3.1. User Personas
 
-A continuación, se presentan las fichas de User Persona elaboradas para cada uno de los segmentos objetivo de Medical SmartBox. Cada ficha representa un arquetipo de usuario construido a partir de las características, responsabilidades, necesidades, objetivos y frustraciones identificadas dentro del dominio del transporte médico y la cadena de frío.
+A continuación, se presentan las fichas de User Persona elaboradas para cada uno de los dos segmentos objetivo de Medical SMARTBOX, sintetizando arquetipos construidos con base en las entrevistas a profundidad y la investigación de campo.
 
-### User Persona 1: Personal médico y de emergencias
+### User Persona 1: Empresas de Transporte y Operadores Logísticos de Cadena de Frío
+Representa al personal operativo y asistencial en cabina de ambulancia (SAMU / empresas privadas), cuyo día a día enfrenta el congestionamiento limeño, la fatiga por traslados y el riesgo de desconexión accidental del suministro eléctrico de los equipos médicos.
 
-![User Persona - Personal médico y de emergencias](../assets/chapter-2/user-persona-logistics.png)
+![User Persona - Paramédico Javier Soto](../assets/chapter-2/user-persona-logistics.png)
+*Nota: Elaboración propia en UXPressia para el Segmento 1 (Operadores de Transporte Asistencial).*
 
-### User Persona 2: Operadores logísticos e instituciones de salud
+### User Persona 2: Centros de Salud y Cadenas Farmacéuticas
+Representa al personal médico y farmacéutico de destino (cirujanos de trasplante, patólogos, directores técnicos de farmacia hospitalaria y auditores de calidad), cuya máxima preocupación es la viabilidad biológica celular y el cumplimiento inexcusable de las directivas sanitarias de DIGEMID.
 
-![User Persona - Operadores logísticos e instituciones de salud](../assets/chapter-2/user-persona-healthcare.png)
+![User Persona - Dr. Carlos Mendoza](../assets/chapter-2/user-persona-healthcare.png)
+*Nota: Elaboración propia en UXPressia para el Segmento 2 (Centros de Salud y Farmacéuticas).*
+
+---
 
 ## 2.3.2. User Task Matrix
 
-La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos dentro de los procesos de transporte y recepción de productos médicos, independientemente de la existencia de una solución tecnológica. A continuación, se presentan las principales tareas identificadas para cada segmento, junto con su frecuencia e importancia para los User Personas correspondientes.
+La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecutan los usuarios en el ecosistema de transporte médico, clasificándolas según su frecuencia de ejecución y su nivel de criticidad o impacto para la viabilidad de la carga y el paciente.
 
-| **Tarea** | **Personal médico y de emergencias (Frecuencia / Importancia)** | **Operadores logísticos e instituciones de salud (Frecuencia / Importancia)** |
-| --- | --- | --- |
-| **Supervisar el estado de los productos médicos durante el transporte** | Alta / Alta | Media / Alta |
-| **Coordinar y dar seguimiento a los transportes en curso** | Alta / Alta | Alta / Alta |
-| **Verificar que los productos se mantengan en condiciones adecuadas** | Alta / Alta | Alta / Alta |
-| **Identificar y atender incidentes durante el transporte** | Alta / Alta | Media / Alta |
-| **Consultar la ubicación y el tiempo estimado de llegada de los transportes** | Alta / Alta | Alta / Alta |
-| **Coordinar acciones ante retrasos o cambios durante el traslado** | Alta / Alta | Alta / Alta |
-| **Registrar información relacionada con el transporte y la entrega** | Alta / Media | Alta / Alta |
-| **Verificar las condiciones de los productos al momento de la recepción** | Media / Alta | Alta / Alta |
-| **Confirmar la recepción de medicamentos o productos médicos** | Media / Alta | Alta / Alta |
-| **Revisar antecedentes de transportes y entregas anteriores** | Media / Alta | Media / Alta |
-| **Generar o revisar evidencias de las condiciones del transporte** | Media / Alta | Media / Alta |
-| **Investigar las causas de incidentes o problemas durante una entrega** | Media / Alta | Media / Alta |
+| # | Tarea Clave de Usuario | Segmento Principal | Frecuencia | Criticidad / Importancia | Dolor u Oportunidad Asociada |
+| :-: | :--- | :--- | :---: | :---: | :--- |
+| **T01** | **Monitoreo continuo de temperatura interna del contenedor** | Ambos Segmentos | Alta (Tiempo real) | **Crítica** | Evitar la pérdida irreversible de órganos y hemoderivados por excursiones térmicas inadvertidas. |
+| **T02** | **Supervisión de nivel de batería interna y conexión a 12V DC** | Segmento 1 (Ambulancia) | Alta (En ruta) | **Alta** | Prevenir descargas no detectadas por baches o desconexión del cable de 12V en cabina vehicular. |
+| **T03** | **Recepción y reconocimiento de alertas críticas en cabina** | Segmento 1 (Ambulancia) | Media / Por excepción | **Crítica** | Proveer alarmas audibles y visuales no intrusivas que permitan actuar sin distraer la conducción. |
+| **T04** | **Monitoreo remoto de ruta y tiempo estimado de arribo (ETA)** | Segmento 2 (Hospital) | Alta (En tránsito) | **Alta** | Notificación anticipada (10 min antes) para despejar rampa de trauma shock y alistar quirófano. |
+| **T05** | **Desbloqueo seguro de tapa mediante clave dinámica OTP** | Segmento 2 (Receptor) | Baja (Una vez por viaje) | **Crítica** | Garantizar que únicamente el personal médico autorizado acceda a la carga en destino. |
+| **T06** | **Firma y validación del acta digital de transferencia de custodia** | Ambos Segmentos | Baja (Cierre de viaje) | **Crítica** | Sustituir actas en papel por registros inmutables con sellado criptográfico para DIGEMID/SUSALUD. |
+| **T07** | **Consulta de reportes históricos de excursión térmica para auditoría** | Segmento 2 (Auditoría) | Media (Mensual / Semanal) | **Media-Alta** | Certificar trazabilidad técnica ante auditorías hospitalarias e inspecciones regulatorias. |
 
-**Análisis de la User Task Matrix:** Las empresas de transporte y los operadores logísticos presentan una alta frecuencia e importancia en tareas relacionadas con la supervisión y coordinación de los transportes, debido a que deben gestionar continuamente el traslado de productos médicos y responder ante posibles incidentes. Por su parte, los centros de salud y las cadenas farmacéuticas concentran sus actividades principalmente en el seguimiento de los envíos, la verificación de las condiciones de los productos y la confirmación de su recepción. Para ambos segmentos, las tareas relacionadas con el control de las condiciones del transporte, la ubicación de los envíos y la gestión de incidentes presentan una importancia elevada, debido al impacto que pueden tener sobre la seguridad y trazabilidad de los productos médicos.
+---
 
 ## 2.3.3. User Journey Mapping
 
-Los User Journey Maps representan el recorrido end-to-end que cada User Persona realiza actualmente (situación As-Is) para cumplir con sus objetivos dentro de los procesos relacionados con el traslado, monitoreo y recepción de productos médicos sensibles, sin la existencia de Medical SmartBox. Estos mapas permiten identificar los puntos de dolor (pains) y las oportunidades de mejora (gains) presentes en las actividades actuales de los usuarios.
+El **User Journey Mapping** ilustra la secuencia de experiencias, emociones, puntos de dolor y oportunidades de interacción de los usuarios arquetípicos a lo largo de las fases de Antes (despacho y pre-enfriamiento), Durante (tránsito y telemetría activa) y Después (entrega asistencial y custodia final).
 
-- **Segmento 1: Personal médico y de emergencias**
+### User Journey Map 1: Operador de Transporte Asistencial (Paramédico Javier Soto)
+Mapea el recorrido desde la recepción de la orden de emergencia, la conexión vehicular del contenedor, la navegación en el tráfico limeño asistido por telemetría IoT, hasta la entrega formal en rampa hospitalaria.
 
-El siguiente Journey Map representa el recorrido de Renato Calvo Yalan, integrante del personal médico y de emergencias, durante las actividades relacionadas con el traslado y recepción de medicamentos, órganos e insumos médicos sensibles. El recorrido comprende la coordinación previa del traslado, el seguimiento de las condiciones de los productos, la espera durante el transporte y la recepción de los insumos. Durante este proceso, el usuario necesita contar con información oportuna sobre las condiciones de conservación, el tiempo estimado de llegada y la disponibilidad de los productos para poder actuar ante posibles incidentes.
+![User Journey Map - Operadores Logísticos](../assets/chapter-2/user-journey-medical.png)
+*Nota: Elaboración propia en UXPressia comparando el flujo As-Is (manual con incertidumbre) vs. To-Be (asistido con Medical SMARTBOX).*
 
-![User Journey Map - Personal médico y de emergencias](../assets/chapter-2/user-journey-medical.png)
+### User Journey Map 2: Director Médico / Químico Farmacéutico (Dr. Carlos Mendoza)
+Mapea la experiencia desde la coordinación de la solicitud urgente, el seguimiento en tiempo real de la temperatura y el ETA en el portal web, hasta la validación de la carga con token OTP en quirófano.
 
-- **Segmento 2: Operadores logísticos e instituciones de salud**
+![User Journey Map - Centros de Salud](../assets/chapter-2/user-journey-logistics-healthcare.png)
+*Nota: Elaboración propia en UXPressia detallando los puntos de contacto clínicos y la mitigación de tiempos muertos.*
 
-El siguiente Journey Map representa el recorrido de Karla Pacheco, auxiliar administrativa del área de salud encargada del monitoreo y registro de rutas de ambulancias y de la recolección de muestras o materiales médicos. El recorrido comprende la coordinación de las rutas, el registro de información, el seguimiento del transporte y la recepción de los materiales. Durante este proceso, la comunicación con los transportistas y la disponibilidad de información actualizada resultan importantes para mantener un seguimiento adecuado de las rutas y registrar correctamente el desarrollo de cada traslado.
-
-![User Journey Map - Operadores logísticos e instituciones de salud](../assets/chapter-2/user-journey-logistics-healthcare.png)
+---
 
 ## 2.3.4. Empathy Mapping
 
-Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace dentro de su contexto relacionado con el traslado y manejo de productos médicos sensibles. Estos mapas permiten identificar los principales pains y gains de cada segmento y comprender las necesidades que deben ser consideradas durante el diseño de Medical SmartBox.
+El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones y presiones cotidianas de los dos perfiles de usuario, permitiendo diseñar interfaces y flujos de software acordes con su contexto real de trabajo.
 
-- **Segmento 1: Personal médico y de emergencias**
+### Mapa de Empatía 1: Segmento Transporte y Paramédicos (Javier Soto)
 
-El siguiente Mapa de Empatía profundiza en la experiencia de Aldair Lazaro, integrante del personal médico y de emergencias. Se identifican sus principales pensamientos y sentimientos relacionados con la responsabilidad de garantizar que los productos médicos sensibles lleguen en condiciones adecuadas, así como lo que observa durante el traslado, la información que recibe de otros participantes del proceso y las acciones que realiza para verificar las condiciones y disponibilidad de los productos. El mapa también permite identificar como principales pains la falta de información oportuna, la incertidumbre ante posibles incidentes y la dificultad para conocer el estado del traslado, mientras que entre los gains se encuentran una mayor visibilidad del proceso, información confiable y capacidad de respuesta ante situaciones críticas.
+![Empathy Map - Paramédico Javier Soto](../assets/chapter-2/empathy-map-medical.png)
+*Nota: Elaboración propia en UXPressia para el perfil operativo de ambulancias.*
 
-![Empathy Map - Personal médico y de emergencias](../assets/chapter-2/empathy-map-medical.png)
+* **¿Qué piensa y siente?** Necesidad de proteger la vida del paciente; preocupación constante por quedar atrapado en el tráfico de Javier Prado o la Vía Expresa mientras traslada insumos perecibles; temor a ser culpado si una muestra se degrada sin que él se entere.
+* **¿Qué ve?** Congestión vehicular caótica, baches en pistas, conductores que no ceden el paso a la ambulancia, tableros de instrumentos complejos.
+* **¿Qué oye?** Sirenas de emergencia, indicaciones por radio de la central 106, quejas de familiares y urgencia del personal médico receptor.
+* **¿Qué dice y hace?** Conduce a la defensiva, verifica visualmente los cables cada vez que puede, intenta llegar en el menor tiempo posible sin comprometer la seguridad.
+* **Dolores (Pains):** Falta de visibilidad de la temperatura interna sin abrir la tapa; estrés por desconexiones accidentales de 12V.
+* **Necesidades (Gains):** Señalización sonora clara y automática en cabina; tranquilidad de saber que la carga se mantiene en rango de 2 °C a 8 °C.
 
-- **Segmento 2: Operadores logísticos e instituciones de salud**
+### Mapa de Empatía 2: Segmento Salud y Farmacéutica (Dr. Carlos Mendoza)
 
-El siguiente Mapa de Empatía profundiza en la experiencia de Gianfranco Timoteo, quien participa en actividades relacionadas con el soporte y registro dentro de una institución de salud. Se identifican sus principales pensamientos y sentimientos relacionados con la necesidad de mantener información organizada y disponible, así como lo que observa en el proceso de transporte, la información que recibe de otros participantes y las actividades que realiza para registrar y dar seguimiento a los traslados. El mapa permite identificar como principales pains las dificultades de comunicación, la información distribuida y el seguimiento de las rutas, mientras que entre los gains se encuentran una mejor coordinación, información centralizada y mayor facilidad para consultar el estado de los transportes.
+![Empathy Map - Dr. Carlos Mendoza](../assets/chapter-2/empathy-map-logistics-healthcare.png)
+*Nota: Elaboración propia en UXPressia para el perfil clínico de centros hospitalarios.*
 
-![Empathy Map - Operadores logísticos e instituciones de salud](../assets/chapter-2/empathy-map-logistics-healthcare.png)
+* **¿Qué piensa y siente?** Rigor ético y clínico; angustia ante la posibilidad de implantar un tejido dañado; presión por auditorías de DIGEMID y SUSALUD.
+* **¿Qué ve?** Pacientes esperando en lista de trasplante; quirófanos con alto costo por minuto; cajas de tecnopor tradicionales con hielo gel sin telemetría.
+* **¿Qué oye?** Reclamos por retrasos en cirugías programadas; exigencias regulatorias de trazabilidad documental inmutable.
+* **¿Qué dice y hace?** Exige reportes de temperatura antes de aceptar cualquier lote; supervisa personalmente la apertura de contenedores críticos.
+* **Dolores (Pains):** Incertidumbre ("caja negra") sobre el trato térmico de la muestra durante el trayecto; pérdida de tiempo por actas manuscritas ilegibles.
+* **Necesidades (Gains):** Certificación digital de que la temperatura nunca superó los 8 °C; apertura con token OTP exclusivo y acta PDF con firma criptográfica.

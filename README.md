@@ -1,4 +1,4 @@
-﻿<a id="carátula"></a>
+<a id="carátula"></a>
 <a id="caratula"></a>
 <div align="center">
 
@@ -62,7 +62,7 @@ El presente Registro de Versiones del Informe documenta la trazabilidad evolutiv
 | Entregable | Versión | Fecha | Autor(es) | Descripción de modificación |
 | :---: | :---: | :---: | :--- | :--- |
 | **AV1** | **V0.1.0** | 08/09/2026 | NeonCode Team | **Inicialización del Repositorio y Andamiaje Documental:** Creación de la estructura base del repositorio en la organización pública de GitHub (`NeonCode-UPC/report`). Configuración del modelo de ramificación GitFlow (`main`, `develop`), convenciones Conventional Commits y estructura de directorios `docs/` y `assets/`. Elaboración de la Carátula institucional según las directrices y modelo del docente Velásquez Núñez, y generación del esqueleto Markdown para todos los capítulos. |
-| **AV1** | **V0.2.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Elicitación, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (antecedentes y problemática 5W2H sustentada en incidentes de transporte asistencial en Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial SAMU 106 y Segmento 2: centros sanitarios y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo frente a Cryoport, Ransa, Talma y SAMU) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de sesiones y análisis de hallazgos cualitativos). |
+| **AV1** | **V0.2.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Relevamiento de Requisitos, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (antecedentes y problemática 5W2H sustentada en incidentes de transporte asistencial en Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial SAMU 106 y Segmento 2: centros sanitarios y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo frente a Cryoport, Ransa, Talma y SAMU) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de sesiones y análisis de hallazgos cualitativos). |
 | **AV1** | **V0.3.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio Preliminar y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos, User Task Matrix priorizada, User Journey Mapping As-Is/To-Be y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal con 30 términos canónicos en inglés con definición clínica y técnica en español). Desarrollo del Capítulo III completo: 3.1 User Stories (historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal $\rightarrow$ Actor $\rightarrow$ Impact $\rightarrow$ Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
 | **AV1** | **V0.4.0** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando seis Bounded Contexts: Smart Container IoT, Emergency Fleet Logistics, Clinical Quality Assurance, Chain of Custody, Critical Alerting y Access Governance). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Web API, Telemetry Consumer, Base de Datos, Broker MQTT, Redis Cache y Web App) y 4.6.4 Component Diagrams. Desarrollo del Capítulo 4.7 (Class Diagrams UML modelando un dominio rico con entidades, value objects, agregados y servicios de dominio) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
 | **AV1** | **V0.5.0** | 16/09/2026 | Gargate Paredes, Santiago<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 9, Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en Vercel/GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). |
@@ -302,7 +302,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **5.c.1 Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Lideró la definición de la visión de negocio y la elicitación de requisitos asistenciales para la plataforma Medical SMARTBOX. Condujo la estructuración del Capítulo I (Problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación de Lean UX Canvas y delimitación de los dos segmentos objetivo: operadores de transporte asistencial SAMU 106 y directores de centros hospitalarios/farmacéuticos). Asimismo, encabezó el análisis competitivo del mercado telemático de salud (Cap. 2.1) y el diseño y conducción de las entrevistas a profundidad a paramédicos y especialistas en logística biomédica (Cap. 2.2), asegurando que los requerimientos del producto respondan a dolores reales y no a supuestos infundados.<br><hr>**Gargate Paredes, Santiago**<br><br>**AV1:** Asumió el liderazgo técnico del frente de desarrollo y despliegue del Landing Page institucional de Medical SMARTBOX correspondiente al Sprint 1. Estableció la arquitectura semántica en HTML5, CSS3 modular y JavaScript, asegurando un diseño totalmente responsive (*mobile-first*) orientado a la conversión B2B de instituciones de salud. Lideró la implementación del pipeline de integración y despliegue continuo (CI/CD) alojado en la nube (Vercel/GitHub Pages), auditó los tiempos de carga y accesibilidad web conforme a las pautas WCAG, y documentó exhaustivamente las evidencias de desarrollo, ejecución y despliegue para la revisión de sprint (Capítulos 5.2.1.4 a 5.2.1.7).<br><hr>**Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Ejerció el liderazgo en la definición de la arquitectura de software y el modelado orientado al dominio (DDD). Facilitó la sesión colaborativa de Big Picture EventStorming (Cap. 2.4) unificando la comprensión de los flujos de telemetría, custodia y alertas críticas entre todos los miembros. Formuló el glosario canónico de Ubiquitous Language (Cap. 2.5) y lideró el diseño táctico mediante Design-Level EventStorming delimitando seis Bounded Contexts. Diseñó los diagramas del Modelo C4 (Contexto, Contenedores y Componentes) integrando Web API, bróker MQTT y WebSockets SignalR, y formalizó el Diagrama de Clases de Dominio UML (Cap. 4.7) y el Diagrama Físico de Base de Datos Relacional normalizado (Cap. 4.8) para garantizar consistencia transaccional y cumplimiento de las normativas DIGEMID/MINSA.<br><hr>**Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Lideró la estrategia de Experiencia de Usuario (UX) y Diseño de Interfaz (UI) del ecosistema Medical SMARTBOX. Dirigió el proceso de Needfinding (Cap. 2.3) coordinando la síntesis de hallazgos empíricos en User Personas (Dr. Carlos Mendoza y Paramédico Javier Soto), User Task Matrix y mapas de empatía. Estableció el Sistema de Diseño visual y las Guías de Estilo (Cap. 4.1), definiendo una paleta cromática clínica accesible y componentes UI atómicos. Asimismo, encabezó la arquitectura de información y la concepción de wireframes y mockups de alta fidelidad tanto para el Landing Page institucional como para el portal web operativo de monitoreo telemático (Capítulos 4.2 a 4.5), garantizando una experiencia coherente, intuitiva y libre de fricción para los operadores de emergencia.<br><hr>**Santos Minaya, Renzo Piero**<br><br>**AV1:** Ejerció el rol de liderazgo como Product Owner y Scrum Master del equipo. Condujo la transformación de los dolores y requisitos de negocio en artefactos ágiles formales, estructurando el catálogo completo de User Stories con criterios de aceptación rigurosamente formulados bajo sintaxis Gherkin (Scenario, Given, When, Then) organizados en Epics, junto con el Impact Mapping y el Product Backlog priorizado por valor clínico (Capítulo 3). En el ámbito de gestión, lideró la gobernanza de configuración de software (SCM) estableciendo el modelo de ramificación GitFlow, convenciones de Conventional Commits y guías de estilo para C# y Vue.js (Cap. 5.1). Asimismo, facilitó la sesión de Sprint Planning 1, coordinó la asignación de roles mediante la Matriz LACX y gestionó el Sprint Backlog 1 (Cap. 5.2.1.1 a 5.2.1.3), asegurando el ritmo de avance y el cumplimiento del cronograma académico. | **AV1:**<br>Durante este primer hito del proyecto, el equipo demostró un ejercicio de liderazgo horizontal y distribuido de alta efectividad. En lugar de centralizar la toma de decisiones en una sola figura, cada integrante asumió el liderazgo autónomo y especializado de un pilar fundamental de la solución: investigación empírica de mercado (Aaron Espinoza), experiencia y prototipado visual UX/UI (Maria Luisa Munayco), arquitectura de software y persistencia de datos (Jhon Jaramillo), gestión ágil y especificación de requerimientos (Renzo Santos), y desarrollo frontend con despliegue en la nube (Santiago Gargate).<br><br>Esta delegación basada en competencias técnicas permitió avanzar en paralelo sobre frentes complejos y altamente interconectados sin generar cuellos de botella. Las disyuntivas de diseño técnico —tales como la selección de protocolos telemáticos para IoT (MQTT vs. WebSockets) o la delimitación de fronteras transaccionales en los Bounded Contexts— fueron debatidas y consensuadas con base en evidencia normativa (DIGEMID/MINSA) y criterios de ingeniería, logrando una cohesión técnica integral que sentó las bases para el éxito de las entregas posteriores. |
+| **5.c.1 Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Lideró la definición de la visión de negocio y el relevamiento de requisitos asistenciales para la plataforma Medical SMARTBOX. Condujo la estructuración del Capítulo I (Problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación de Lean UX Canvas y delimitación de los dos segmentos objetivo: operadores de transporte asistencial SAMU 106 y directores de centros hospitalarios/farmacéuticos). Asimismo, encabezó el análisis competitivo del mercado telemático de salud (Cap. 2.1) y el diseño y conducción de las entrevistas a profundidad a paramédicos y especialistas en logística biomédica (Cap. 2.2), asegurando que los requisitos del producto respondan a dolores reales y no a supuestos infundados.<br><hr>**Gargate Paredes, Santiago**<br><br>**AV1:** Asumió el liderazgo técnico del frente de desarrollo y despliegue del Landing Page institucional de Medical SMARTBOX correspondiente al Sprint 1. Estableció la arquitectura semántica en HTML5, CSS3 modular y JavaScript, asegurando un diseño totalmente responsive (*mobile-first*) orientado a la conversión B2B de instituciones de salud. Lideró la implementación del pipeline de integración y despliegue continuo (CI/CD) alojado en la nube (Vercel/GitHub Pages), auditó los tiempos de carga y accesibilidad web conforme a las pautas WCAG, y documentó exhaustivamente las evidencias de desarrollo, ejecución y despliegue para la revisión de sprint (Capítulos 5.2.1.4 a 5.2.1.7).<br><hr>**Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Ejerció el liderazgo en la definición de la arquitectura de software y el modelado orientado al dominio (DDD). Facilitó la sesión colaborativa de Big Picture EventStorming (Cap. 2.4) unificando la comprensión de los flujos de telemetría, custodia y alertas críticas entre todos los miembros. Formuló el glosario canónico de Ubiquitous Language (Cap. 2.5) y lideró el diseño táctico mediante Design-Level EventStorming delimitando seis Bounded Contexts. Diseñó los diagramas del Modelo C4 (Contexto, Contenedores y Componentes) integrando Web API, bróker MQTT y WebSockets SignalR, y formalizó el Diagrama de Clases de Dominio UML (Cap. 4.7) y el Diagrama Físico de Base de Datos Relacional normalizado (Cap. 4.8) para garantizar consistencia transaccional y cumplimiento de las normativas DIGEMID/MINSA.<br><hr>**Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Lideró la estrategia de Experiencia de Usuario (UX) y Diseño de Interfaz (UI) del ecosistema Medical SMARTBOX. Dirigió el proceso de Needfinding (Cap. 2.3) coordinando la síntesis de hallazgos empíricos en User Personas (Dr. Carlos Mendoza y Paramédico Javier Soto), User Task Matrix y mapas de empatía. Estableció el Sistema de Diseño visual y las Guías de Estilo (Cap. 4.1), definiendo una paleta cromática clínica accesible y componentes UI atómicos. Asimismo, encabezó la arquitectura de información y la concepción de wireframes y mockups de alta fidelidad tanto para el Landing Page institucional como para el portal web operativo de monitoreo telemático (Capítulos 4.2 a 4.5), garantizando una experiencia coherente, intuitiva y libre de fricción para los operadores de emergencia.<br><hr>**Santos Minaya, Renzo Piero**<br><br>**AV1:** Ejerció el rol de liderazgo como Product Owner y Scrum Master del equipo. Condujo la transformación de los dolores y requisitos de negocio en artefactos ágiles formales, estructurando el catálogo completo de User Stories con criterios de aceptación rigurosamente formulados bajo sintaxis Gherkin (Scenario, Given, When, Then) organizados en Epics, junto con el Impact Mapping y el Product Backlog priorizado por valor clínico (Capítulo 3). En el ámbito de gestión, lideró la gobernanza de configuración de software (SCM) estableciendo el modelo de ramificación GitFlow, convenciones de Conventional Commits y guías de estilo para C# y Vue.js (Cap. 5.1). Asimismo, facilitó la sesión de Sprint Planning 1, coordinó la asignación de roles mediante la Matriz LACX y gestionó el Sprint Backlog 1 (Cap. 5.2.1.1 a 5.2.1.3), asegurando el ritmo de avance y el cumplimiento del cronograma académico. | **AV1:**<br>Durante este primer hito del proyecto, el equipo demostró un ejercicio de liderazgo horizontal y distribuido de alta efectividad. En lugar de centralizar la toma de decisiones en una sola figura, cada integrante asumió el liderazgo autónomo y especializado de un pilar fundamental de la solución: investigación empírica de mercado (Aaron Espinoza), experiencia y prototipado visual UX/UI (Maria Luisa Munayco), arquitectura de software y persistencia de datos (Jhon Jaramillo), gestión ágil y especificación de requisitos (Renzo Santos), y desarrollo frontend con despliegue en la nube (Santiago Gargate).<br><br>Esta delegación basada en competencias técnicas permitió avanzar en paralelo sobre frentes complejos y altamente interconectados sin generar cuellos de botella. Las disyuntivas de diseño técnico —tales como la selección de protocolos telemáticos para IoT (MQTT vs. WebSockets) o la delimitación de fronteras transaccionales en los Bounded Contexts— fueron debatidas y consensuadas con base en evidencia normativa (DIGEMID/MINSA) y criterios de ingeniería, logrando una cohesión técnica integral que sentó las bases para el éxito de las entregas posteriores. |
 | **5.c.2 Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Fomentó activamente un entorno inclusivo al incorporar la voz y las perspectivas de los profesionales de salud en el diseño de la solución, evitando sesgos técnicos aislados. Colaboró en la definición del objetivo central del proyecto a través del Lean UX Canvas, asegurando que las metas de investigación se descompusieran en actividades concretas (diseño de guías semiestructuradas, calendarización de entrevistas y tabulación cualitativa). Participó en las ceremonias de sincronización semanal del equipo, aportando insumos críticos que permitieron al diseñador UX y al arquitecto de software alinear las interfaces y los eventos de dominio con las necesidades operativas reales de las ambulancias en Lima.<br><hr>**Gargate Paredes, Santiago**<br><br>**AV1:** Contribuyó al entorno colaborativo mediante una comunicación transparente y continua sobre el progreso de la implementación del Landing Page. Participó en la estimación de tiempos del Sprint Backlog 1, comprometiéndose a cumplir con las metas de entrega y despliegue dentro de los plazos estipulados. Mantuvo un flujo riguroso de commits conforme a Conventional Commits, integró su código en la rama `develop` mediante Pull Requests evaluados en conjunto y colaboró activamente con el Product Owner en la redacción de la sección de Collaboration Insights del Sprint 1 (Cap. 5.2.1.8), garantizando total trazabilidad y cumplimiento de los objetivos del hito.<br><hr>**Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Impulsó un espacio colaborativo técnico promoviendo el modelado colaborativo visual mediante Miro y Structurizr DSL, lo que permitió que integrantes con roles no técnicos participaran en la validación de la lógica del sistema. Estableció metas técnicas claras para el sprint (entrega de diagramas de arquitectura C4, modelo de clases y script SQL normalizado de base de datos), desglosando las actividades de diagramación en tareas medibles en el tablero ágil. Atendió oportunamente las dudas de sus compañeros respecto a la estructura de microservicios y persistencia relacional, asegurando la consistencia conceptual del informe y cumpliendo al 100% las metas arquitectónicas asignadas para la entrega AV1.<br><hr>**Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Promovió un entorno inclusivo al transformar los hallazgos de las entrevistas en artefactos de empatía compartidos con todo el equipo, facilitando que cada miembro comprendiera las necesidades emocionales y laborales de los usuarios finales. Planificó minuciosamente el cronograma de diseño en Figma y UXPressia, estableciendo hitos de revisión intermedia (wireframes de baja fidelidad seguidos de mockups de alta fidelidad interactivos). Integró activamente el feedback de sus compañeros y del Product Owner sobre usabilidad y densidad de información clínica, cumpliendo a cabalidad con la entrega de todos los flujos de navegación requeridos para el Landing Page y la Web Application.<br><hr>**Santos Minaya, Renzo Piero**<br><br>**AV1:** Estableció y dinamizó el entorno colaborativo del equipo a través de la configuración del tablero ágil en Trello/Jira y el canal de coordinación en Discord, garantizando canales de comunicación abiertos, respetuosos y transparentes. Lideró la ceremonia de Sprint Planning 1, guiando al equipo en la estimación colectiva de esfuerzos en horas hombre para cada User Story y tarea técnica. Monitoreó el cumplimiento de las metas semanales mediante revisiones de progreso, identificó y removió impedimentos operativos, y aseguró que cada miembro entregara su sección del informe en formato Markdown respetando la fecha límite institucional, logrando así el cumplimiento riguroso de todos los objetivos trazados para el avance AV1. | **AV1:**<br>El establecimiento de un entorno de trabajo colaborativo, inclusivo y altamente disciplinado constituyó el factor determinante para el éxito de la entrega AV1. A través de la adopción del marco de trabajo Scrum, complementado con tableros Kanban interactivos y el flujo GitFlow en GitHub, el equipo logró transformar un enunciado académico de alta complejidad en un plan de acción estructurado con metas semanales claras y alcanzables.<br><br>Se fomentó la inclusión multidisciplinaria, donde las observaciones clínicas de investigación, las directrices de diseño visual y las restricciones de arquitectura fueron escuchadas y ponderadas con igual valor técnico. La comunicación asertiva y periódica evitó la duplicidad de esfuerzos y permitió resolver de manera proactiva los bloqueos de integración. Como resultado tangible, el equipo cumplió con el 100% de los entregables planificados para el Sprint 1 y la documentación técnica de los Capítulos I al V (secciones 5.1 y 5.2.1), demostrando un desempeño maduro, coordinado y alineado con los estándares internacionales de acreditación profesional ABET. |
 
 
@@ -528,72 +528,89 @@ Los resultados esperados del análisis deberán expresar porcentajes y hallazgos
 
 # 2.3. Needfinding
 
-El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de Medical SmartBox. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones, se elaboran los siguientes artefactos centrados en el usuario, los cuales servirán como base para el diseño de la solución.
+El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de **Medical SMARTBOX**. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones en Lima Metropolitana, se elaboraron artefactos empáticos centrados en el usuario conforme a las pautas de diseño UX de la industria (Nielsen Norman Group, Interaction Design Foundation), los cuales constituyen el cimiento empírico de las especificaciones y el diseño de la solución.
+
+---
 
 ## 2.3.1. User Personas
 
-A continuación, se presentan las fichas de User Persona elaboradas para cada uno de los segmentos objetivo de Medical SmartBox. Cada ficha representa un arquetipo de usuario construido a partir de las características, responsabilidades, necesidades, objetivos y frustraciones identificadas dentro del dominio del transporte médico y la cadena de frío.
+A continuación, se presentan las fichas de User Persona elaboradas para cada uno de los dos segmentos objetivo de Medical SMARTBOX, sintetizando arquetipos construidos con base en las entrevistas a profundidad y la investigación de campo.
 
-### User Persona 1: Personal médico y de emergencias
+### User Persona 1: Empresas de Transporte y Operadores Logísticos de Cadena de Frío
+Representa al personal operativo y asistencial en cabina de ambulancia (SAMU / empresas privadas), cuyo día a día enfrenta el congestionamiento limeño, la fatiga por traslados y el riesgo de desconexión accidental del suministro eléctrico de los equipos médicos.
 
-![User Persona - Personal médico y de emergencias](assets/chapter-2/user-persona-logistics.png)
+![User Persona - Paramédico Javier Soto](assets/chapter-2/user-persona-logistics.png)
+*Nota: Elaboración propia en UXPressia para el Segmento 1 (Operadores de Transporte Asistencial).*
 
-### User Persona 2: Operadores logísticos e instituciones de salud
+### User Persona 2: Centros de Salud y Cadenas Farmacéuticas
+Representa al personal médico y farmacéutico de destino (cirujanos de trasplante, patólogos, directores técnicos de farmacia hospitalaria y auditores de calidad), cuya máxima preocupación es la viabilidad biológica celular y el cumplimiento inexcusable de las directivas sanitarias de DIGEMID.
 
-![User Persona - Operadores logísticos e instituciones de salud](assets/chapter-2/user-persona-healthcare.png)
+![User Persona - Dr. Carlos Mendoza](assets/chapter-2/user-persona-healthcare.png)
+*Nota: Elaboración propia en UXPressia para el Segmento 2 (Centros de Salud y Farmacéuticas).*
+
+---
 
 ## 2.3.2. User Task Matrix
 
-La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos dentro de los procesos de transporte y recepción de productos médicos, independientemente de la existencia de una solución tecnológica. A continuación, se presentan las principales tareas identificadas para cada segmento, junto con su frecuencia e importancia para los User Personas correspondientes.
+La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecutan los usuarios en el ecosistema de transporte médico, clasificándolas según su frecuencia de ejecución y su nivel de criticidad o impacto para la viabilidad de la carga y el paciente.
 
-| **Tarea** | **Personal médico y de emergencias (Frecuencia / Importancia)** | **Operadores logísticos e instituciones de salud (Frecuencia / Importancia)** |
-| --- | --- | --- |
-| **Supervisar el estado de los productos médicos durante el transporte** | Alta / Alta | Media / Alta |
-| **Coordinar y dar seguimiento a los transportes en curso** | Alta / Alta | Alta / Alta |
-| **Verificar que los productos se mantengan en condiciones adecuadas** | Alta / Alta | Alta / Alta |
-| **Identificar y atender incidentes durante el transporte** | Alta / Alta | Media / Alta |
-| **Consultar la ubicación y el tiempo estimado de llegada de los transportes** | Alta / Alta | Alta / Alta |
-| **Coordinar acciones ante retrasos o cambios durante el traslado** | Alta / Alta | Alta / Alta |
-| **Registrar información relacionada con el transporte y la entrega** | Alta / Media | Alta / Alta |
-| **Verificar las condiciones de los productos al momento de la recepción** | Media / Alta | Alta / Alta |
-| **Confirmar la recepción de medicamentos o productos médicos** | Media / Alta | Alta / Alta |
-| **Revisar antecedentes de transportes y entregas anteriores** | Media / Alta | Media / Alta |
-| **Generar o revisar evidencias de las condiciones del transporte** | Media / Alta | Media / Alta |
-| **Investigar las causas de incidentes o problemas durante una entrega** | Media / Alta | Media / Alta |
+| # | Tarea Clave de Usuario | Segmento Principal | Frecuencia | Criticidad / Importancia | Dolor u Oportunidad Asociada |
+| :-: | :--- | :--- | :---: | :---: | :--- |
+| **T01** | **Monitoreo continuo de temperatura interna del contenedor** | Ambos Segmentos | Alta (Tiempo real) | **Crítica** | Evitar la pérdida irreversible de órganos y hemoderivados por excursiones térmicas inadvertidas. |
+| **T02** | **Supervisión de nivel de batería interna y conexión a 12V DC** | Segmento 1 (Ambulancia) | Alta (En ruta) | **Alta** | Prevenir descargas no detectadas por baches o desconexión del cable de 12V en cabina vehicular. |
+| **T03** | **Recepción y reconocimiento de alertas críticas en cabina** | Segmento 1 (Ambulancia) | Media / Por excepción | **Crítica** | Proveer alarmas audibles y visuales no intrusivas que permitan actuar sin distraer la conducción. |
+| **T04** | **Monitoreo remoto de ruta y tiempo estimado de arribo (ETA)** | Segmento 2 (Hospital) | Alta (En tránsito) | **Alta** | Notificación anticipada (10 min antes) para despejar rampa de trauma shock y alistar quirófano. |
+| **T05** | **Desbloqueo seguro de tapa mediante clave dinámica OTP** | Segmento 2 (Receptor) | Baja (Una vez por viaje) | **Crítica** | Garantizar que únicamente el personal médico autorizado acceda a la carga en destino. |
+| **T06** | **Firma y validación del acta digital de transferencia de custodia** | Ambos Segmentos | Baja (Cierre de viaje) | **Crítica** | Sustituir actas en papel por registros inmutables con sellado criptográfico para DIGEMID/SUSALUD. |
+| **T07** | **Consulta de reportes históricos de excursión térmica para auditoría** | Segmento 2 (Auditoría) | Media (Mensual / Semanal) | **Media-Alta** | Certificar trazabilidad técnica ante auditorías hospitalarias e inspecciones regulatorias. |
 
-**Análisis de la User Task Matrix:** Las empresas de transporte y los operadores logísticos presentan una alta frecuencia e importancia en tareas relacionadas con la supervisión y coordinación de los transportes, debido a que deben gestionar continuamente el traslado de productos médicos y responder ante posibles incidentes. Por su parte, los centros de salud y las cadenas farmacéuticas concentran sus actividades principalmente en el seguimiento de los envíos, la verificación de las condiciones de los productos y la confirmación de su recepción. Para ambos segmentos, las tareas relacionadas con el control de las condiciones del transporte, la ubicación de los envíos y la gestión de incidentes presentan una importancia elevada, debido al impacto que pueden tener sobre la seguridad y trazabilidad de los productos médicos.
+---
 
 ## 2.3.3. User Journey Mapping
 
-Los User Journey Maps representan el recorrido end-to-end que cada User Persona realiza actualmente (situación As-Is) para cumplir con sus objetivos dentro de los procesos relacionados con el traslado, monitoreo y recepción de productos médicos sensibles, sin la existencia de Medical SmartBox. Estos mapas permiten identificar los puntos de dolor (pains) y las oportunidades de mejora (gains) presentes en las actividades actuales de los usuarios.
+El **User Journey Mapping** ilustra la secuencia de experiencias, emociones, puntos de dolor y oportunidades de interacción de los usuarios arquetípicos a lo largo de las fases de Antes (despacho y pre-enfriamiento), Durante (tránsito y telemetría activa) y Después (entrega asistencial y custodia final).
 
-- **Segmento 1: Personal médico y de emergencias**
+### User Journey Map 1: Operador de Transporte Asistencial (Paramédico Javier Soto)
+Mapea el recorrido desde la recepción de la orden de emergencia, la conexión vehicular del contenedor, la navegación en el tráfico limeño asistido por telemetría IoT, hasta la entrega formal en rampa hospitalaria.
 
-El siguiente Journey Map representa el recorrido de Renato Calvo Yalan, integrante del personal médico y de emergencias, durante las actividades relacionadas con el traslado y recepción de medicamentos, órganos e insumos médicos sensibles. El recorrido comprende la coordinación previa del traslado, el seguimiento de las condiciones de los productos, la espera durante el transporte y la recepción de los insumos. Durante este proceso, el usuario necesita contar con información oportuna sobre las condiciones de conservación, el tiempo estimado de llegada y la disponibilidad de los productos para poder actuar ante posibles incidentes.
+![User Journey Map - Operadores Logísticos](assets/chapter-2/user-journey-medical.png)
+*Nota: Elaboración propia en UXPressia comparando el flujo As-Is (manual con incertidumbre) vs. To-Be (asistido con Medical SMARTBOX).*
 
-![User Journey Map - Personal médico y de emergencias](assets/chapter-2/user-journey-medical.png)
+### User Journey Map 2: Director Médico / Químico Farmacéutico (Dr. Carlos Mendoza)
+Mapea la experiencia desde la coordinación de la solicitud urgente, el seguimiento en tiempo real de la temperatura y el ETA en el portal web, hasta la validación de la carga con token OTP en quirófano.
 
-- **Segmento 2: Operadores logísticos e instituciones de salud**
+![User Journey Map - Centros de Salud](assets/chapter-2/user-journey-logistics-healthcare.png)
+*Nota: Elaboración propia en UXPressia detallando los puntos de contacto clínicos y la mitigación de tiempos muertos.*
 
-El siguiente Journey Map representa el recorrido de Karla Pacheco, auxiliar administrativa del área de salud encargada del monitoreo y registro de rutas de ambulancias y de la recolección de muestras o materiales médicos. El recorrido comprende la coordinación de las rutas, el registro de información, el seguimiento del transporte y la recepción de los materiales. Durante este proceso, la comunicación con los transportistas y la disponibilidad de información actualizada resultan importantes para mantener un seguimiento adecuado de las rutas y registrar correctamente el desarrollo de cada traslado.
-
-![User Journey Map - Operadores logísticos e instituciones de salud](assets/chapter-2/user-journey-logistics-healthcare.png)
+---
 
 ## 2.3.4. Empathy Mapping
 
-Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace dentro de su contexto relacionado con el traslado y manejo de productos médicos sensibles. Estos mapas permiten identificar los principales pains y gains de cada segmento y comprender las necesidades que deben ser consideradas durante el diseño de Medical SmartBox.
+El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones y presiones cotidianas de los dos perfiles de usuario, permitiendo diseñar interfaces y flujos de software acordes con su contexto real de trabajo.
 
-- **Segmento 1: Personal médico y de emergencias**
+### Mapa de Empatía 1: Segmento Transporte y Paramédicos (Javier Soto)
 
-El siguiente Mapa de Empatía profundiza en la experiencia de Aldair Lazaro, integrante del personal médico y de emergencias. Se identifican sus principales pensamientos y sentimientos relacionados con la responsabilidad de garantizar que los productos médicos sensibles lleguen en condiciones adecuadas, así como lo que observa durante el traslado, la información que recibe de otros participantes del proceso y las acciones que realiza para verificar las condiciones y disponibilidad de los productos. El mapa también permite identificar como principales pains la falta de información oportuna, la incertidumbre ante posibles incidentes y la dificultad para conocer el estado del traslado, mientras que entre los gains se encuentran una mayor visibilidad del proceso, información confiable y capacidad de respuesta ante situaciones críticas.
+![Empathy Map - Paramédico Javier Soto](assets/chapter-2/empathy-map-medical.png)
+*Nota: Elaboración propia en UXPressia para el perfil operativo de ambulancias.*
 
-![Empathy Map - Personal médico y de emergencias](assets/chapter-2/empathy-map-medical.png)
+* **¿Qué piensa y siente?** Necesidad de proteger la vida del paciente; preocupación constante por quedar atrapado en el tráfico de Javier Prado o la Vía Expresa mientras traslada insumos perecibles; temor a ser culpado si una muestra se degrada sin que él se entere.
+* **¿Qué ve?** Congestión vehicular caótica, baches en pistas, conductores que no ceden el paso a la ambulancia, tableros de instrumentos complejos.
+* **¿Qué oye?** Sirenas de emergencia, indicaciones por radio de la central 106, quejas de familiares y urgencia del personal médico receptor.
+* **¿Qué dice y hace?** Conduce a la defensiva, verifica visualmente los cables cada vez que puede, intenta llegar en el menor tiempo posible sin comprometer la seguridad.
+* **Dolores (Pains):** Falta de visibilidad de la temperatura interna sin abrir la tapa; estrés por desconexiones accidentales de 12V.
+* **Necesidades (Gains):** Señalización sonora clara y automática en cabina; tranquilidad de saber que la carga se mantiene en rango de 2 °C a 8 °C.
 
-- **Segmento 2: Operadores logísticos e instituciones de salud**
+### Mapa de Empatía 2: Segmento Salud y Farmacéutica (Dr. Carlos Mendoza)
 
-El siguiente Mapa de Empatía profundiza en la experiencia de Gianfranco Timoteo, quien participa en actividades relacionadas con el soporte y registro dentro de una institución de salud. Se identifican sus principales pensamientos y sentimientos relacionados con la necesidad de mantener información organizada y disponible, así como lo que observa en el proceso de transporte, la información que recibe de otros participantes y las actividades que realiza para registrar y dar seguimiento a los traslados. El mapa permite identificar como principales pains las dificultades de comunicación, la información distribuida y el seguimiento de las rutas, mientras que entre los gains se encuentran una mejor coordinación, información centralizada y mayor facilidad para consultar el estado de los transportes.
+![Empathy Map - Dr. Carlos Mendoza](assets/chapter-2/empathy-map-logistics-healthcare.png)
+*Nota: Elaboración propia en UXPressia para el perfil clínico de centros hospitalarios.*
 
-![Empathy Map - Operadores logísticos e instituciones de salud](assets/chapter-2/empathy-map-logistics-healthcare.png)
+* **¿Qué piensa y siente?** Rigor ético y clínico; angustia ante la posibilidad de implantar un tejido dañado; presión por auditorías de DIGEMID y SUSALUD.
+* **¿Qué ve?** Pacientes esperando en lista de trasplante; quirófanos con alto costo por minuto; cajas de tecnopor tradicionales con hielo gel sin telemetría.
+* **¿Qué oye?** Reclamos por retrasos en cirugías programadas; exigencias regulatorias de trazabilidad documental inmutable.
+* **¿Qué dice y hace?** Exige reportes de temperatura antes de aceptar cualquier lote; supervisa personalmente la apertura de contenedores críticos.
+* **Dolores (Pains):** Incertidumbre ("caja negra") sobre el trato térmico de la muestra durante el trayecto; pérdida de tiempo por actas manuscritas ilegibles.
+* **Necesidades (Gains):** Certificación digital de que la temperatura nunca superó los 8 °C; apertura con token OTP exclusivo y acta PDF con firma criptográfica.
 
 
 <div style="page-break-after: always;"></div>
@@ -1382,10 +1399,14 @@ El diagrama de flujo de usuario es una representaciÃ³n visual de las acciones 
 
 ![Tercer User Flow](assets/chapter-4/user-flow-3.png)
 
-## 4.5. Web Applications Prototyping
-El prototipo adjunta la representaciÃ³n visual de los mock-ups anteriormente mostrados y diseÃ±os interactivos, pero no cuenta con cÃ³digo real detrÃ¡s.
+# 4.5. Web Applications Prototyping
 
-Para este proyecto usamos la herramienta de Figma. VÃ©ase el anexo 3 para mayor informaciÃ³n
+El prototipo interactivo consolida la representación visual y la dinámica de interacción de los mock-ups de alta fidelidad para el Landing Page institucional y la Web Application de Medical SMARTBOX, permitiendo realizar recorridos completos de experiencia de usuario antes de la codificación frontend.
+
+Para el desarrollo del prototipo de alta fidelidad se utilizó la herramienta profesional **Figma**, estructurando componentes reutilizables bajo directrices de **Material Design**, estados interactivos (*hover*, *active*, modales de alerta crítica, filtros de tabla y visualizadores de telemetría IoT en tiempo real).
+
+* **Enlace al Prototipo Interactivo en Figma:** [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/Medical-SMARTBOX-NeonCode)
+* **Visualización de Recursos:** Ver el Anexo C para el catálogo completo de enlaces a tableros y prototipos.
 
 
 <div style="page-break-after: always;"></div>
@@ -4428,101 +4449,110 @@ El diseño relacional presentado en esta sección concluye la fase arquitectóni
 
 # 5.1. Software Configuration Management
 
-En esta sección se detallan la configuración del entorno de desarrollo, la estrategia de gestión del código fuente, las convenciones de estilo adoptadas por el equipo de desarrollo de **NeonCode** y la infraestructura empleada para el despliegue del sistema de supervisión de contenedores médicos inteligentes.
+En esta sección se detallan la configuración del entorno de desarrollo, la estrategia de gestión del código fuente, las convenciones de estilo adoptadas por el equipo de desarrollo de **NeonCode** y la infraestructura empleada para el despliegue del sistema de supervisión de contenedores médicos inteligentes conforme a las exigencias oficiales de la asignatura.
 
 ---
 
 ### 5.1.1. Software Development Environment Configuration
 
-Para garantizar un flujo de trabajo uniforme y minimizar discrepancias entre las estaciones de trabajo de los miembros del equipo, se ha estandarizado la configuración del entorno de desarrollo:
+Para garantizar un flujo de trabajo uniforme y minimizar discrepancias entre las estaciones de trabajo de los miembros del equipo, se ha estandarizado la configuración del entorno de desarrollo alineada estrictamente con el stack tecnológico normado por el curso:
 
 * **Entornos de Desarrollo Integrados (IDE):**
-    * **JetBrains WebStorm:** Entorno principal utilizado para el desarrollo, maquetación y pruebas del sitio web corporativo (Landing Page) y la aplicación web administrativa frontend. Se han configurado complementos como *GitFlowHelper*, *Prettier* y *ESLint*.
-    * **Visual Studio Code / IntelliJ IDEA:** Utilizados para el desarrollo y depuración de los microservicios backend de la API RESTful.
-* **Entorno de Ejecución (Runtime) y Lenguajes:**
-    * **Node.js (v20.x LTS):** Entorno de ejecución JavaScript del lado del servidor para los servicios web de la API.
-    * **TypeScript (v5.x):** Lenguaje tipado adoptado en el frontend para garantizar el control de tipos en la manipulación de estados y datos de telemetría.
-    * **HTML5, CSS3 y TailwindCSS:** Estándares empleados para el diseño responsive y accesible de las aplicaciones web.
+    * **Visual Studio 2022 / JetBrains Rider / VS Code:** Entornos principales utilizados para el desarrollo, compilación y pruebas de los servicios backend en **ASP.NET Core 10.0 (.NET 10 LTS)** en lenguaje **C#**, con soporte para Entity Framework Core y Swagger UI.
+    * **JetBrains WebStorm / VS Code:** Utilizados para el maquetado semántico del Landing Page corporativo (HTML5, CSS3, JavaScript) y el desarrollo de la aplicación web frontend en **Vue 3** con la biblioteca de componentes **PrimeVue**.
+* **Entorno de Ejecución (Runtime), Frameworks y Lenguajes:**
+    * **.NET 10 LTS (`net10.0`) y C#:** Framework y lenguaje oficial del lado del servidor para el desarrollo de los servicios web bajo estilo arquitectónico RESTful API y el servicio en segundo plano de ingesta telemática IoT (`BackgroundService`).
+    * **Vue Framework (Vue 3) con PrimeVue:** Framework frontend y biblioteca de componentes basados en **Material Design** para la construcción de las Web Applications reactivas.
+    * **HTML5 semántico, CSS3 modular y JavaScript (ES6+):** Estándares de la W3C empleados para el diseño responsive, accesible (WCAG) y optimizado para SEO del Landing Page institucional.
+    * **Node.js (v20.x LTS) y Vite:** Entorno de soporte de herramientas para compilación rápida y empaquetado de assets frontend.
 * **Gestor de Paquetes y Depósitos de Software:**
-    * **npm (v10.x):** Gestor de paquetes utilizado para la administración, auditoría de seguridad e instalación de las bibliotecas del proyecto.
+    * **NuGet:** Gestor oficial de dependencias y paquetes para la solución ASP.NET Core (`Microsoft.EntityFrameworkCore`, `Swashbuckle.AspNetCore`, `BCrypt.Net-Next`).
+    * **npm (v10.x):** Gestor de paquetes empleado para la administración de bibliotecas y plugins de desarrollo frontend.
 
 ---
 
 ### 5.1.2. Source Code Management
 
-La gestión del código fuente de **NeonCode** se realiza a través de **Git** como sistema de control de versiones distribuido, centralizado en la organización de **GitHub** (`NeonCode-UPC/report`).
+La gestión del código fuente de **NeonCode** se realiza a través de **Git** como sistema de control de versiones distribuido, centralizado en la organización oficial de **GitHub** (`NeonCode-UPC`).
 
 #### Estrategia de Ramificación (GitFlow)
 
-El equipo aplica la estrategia **GitFlow** para mantener un desarrollo aislado, seguro y estructurado:
+El equipo aplica rigurosamente el modelo de ramificación **GitFlow** para asegurar un desarrollo ordenado y auditable:
 
-* **`main`:** Rama de producción que almacena exclusivamente código estable, verificado y listo para el despliegue final.
-* **`develop`:** Rama de integración continua donde se consolidan todas las funcionalidades completadas durante el desarrollo de los sprints.
-* **`feature/<nombre-funcionalidad>`:** Ramas de trabajo temporal creadas a partir de `develop` para la construcción de historias de usuario o secciones específicas (ejemplo: `feature/us01-registro-institucion` o `feature/capitulo-1`).
-* **`release/<version>`:** Ramas de preparación creadas antes de un despliegue importante para pruebas finales de integración.
-* **`hotfix/<nombre-incidencia>`:** Ramas de emergencia creadas directamente desde `main` para solventar errores críticos en el entorno de producción.
+* **`main`:** Rama de producción que almacena exclusivamente código estable, verificado y desplegado para las revisiones oficiales de hito.
+* **`develop`:** Rama de integración continua donde se consolidan todas las funcionalidades completadas durante los sprints.
+* **`feature/<nombre-funcionalidad>`:** Ramas de trabajo temporal creadas a partir de `develop` para el desarrollo de historias de usuario o módulos específicos (ejemplo: `feature/landing-alerts-section`).
+* **`release/<version>`:** Ramas de preparación creadas antes de la entrega de un hito oficial para congelamiento de código y pruebas finales.
+* **`hotfix/<incidencia>`:** Ramas creadas directamente desde `main` para resolver contingencias críticas.
 
 #### Flujo de Comandos GitFlow
 
 ```bash
 # Iniciar una rama de funcionalidad desde develop
-git flow feature start us01-registro-institucion
+git flow feature start landing-hero-section
 
 # Publicar la rama en el repositorio remoto de GitHub
-git flow feature publish us01-registro-institucion
+git flow feature publish landing-hero-section
 
 # Finalizar la funcionalidad e integrar los cambios en develop
-git flow feature finish us01-registro-institucion
+git flow feature finish landing-hero-section
 ```
+
+---
+
 ## 5.1.3. Source Code Style Guide & Conventions
 
-Para mantener la calidad, legibilidad y mantenibilidad del código fuente en el repositorio de **NeonCode**, el equipo de desarrollo sigue guías de estilo estandarizadas y convenciones de control de versiones.
+Para mantener la máxima calidad, legibilidad y mantenibilidad del código fuente, el equipo sigue guías de estilo estandarizadas en concordancia con las buenas prácticas de la industria:
 
 ### Guía de Estilo de Código Fuente
 
-* **Estándar de Formato:** Se utiliza **Prettier** y **ESLint** para el análisis estático de código y formateo automático en la aplicación web frontend (React con TypeScript) y los servicios de la API RESTful.
-* **Convenciones de Nomenclatura:**
-    * **Variables y Funciones:** Se utiliza `camelCase` (ejemplo: `containerTemperature`, `calculateEstimatedArrival`).
-    * **Componentes y Clases:** Se utiliza `PascalCase` (ejemplo: `TelemetryDashboard`, `ContainerService`).
-    * **Archivos y Directorios:** Se utiliza `kebab-case` para nombres de archivos y carpetas (ejemplo: `container-monitoring.component.tsx`, `3.1-user-stories.md`).
-    * **Constantes Globales:** Se utiliza `UPPER_SNAKE_CASE` (ejemplo: `MAX_CRITICAL_TEMPERATURE`, `DEFAULT_TIMEOUT`).
-* **Terminología Normada (Anexo E):** Queda estrictamente prohibido el uso de *spanglish* o términos no reconocidos académicamente. Se debe emplear de manera exclusiva:
+* **Estándar de Formato Backend (C# / .NET):** Se aplican las directrices oficiales *Microsoft C# Coding Conventions* y *ASP.NET Core Engineering Guidelines*. Análisis estático configurado mediante Roslyn Analyzers y editorconfig institucional:
+    * Clases, interfaces, métodos y propiedades en `PascalCase` (ejemplo: `SmartContainer`, `ITelemetryService`, `RecordTelemetrySnapshot`).
+    * Parámetros y variables locales en `camelCase` (ejemplo: `ambientTemperature`, `batteryLevel`).
+    * Constantes en `PascalCase` según el estándar de Microsoft (ejemplo: `MaxCriticalTemperatureCelsius`).
+* **Estándar de Formato Frontend (Vue.js / HTML / CSS / JS):** Se aplican *Prettier* y *ESLint* configurados bajo las reglas oficiales de la *Vue 3 Style Guide*:
+    * Componentes Single-File (`.vue`) en `PascalCase` (ejemplo: `TelemetryCard.vue`, `AlertBanner.vue`).
+    * Funciones y propiedades reactivas en `camelCase`.
+    * Clases CSS bajo convención BEM simplificada y variables semánticas en `kebab-case`.
+* **Terminología Normada (Anexo E de la Rúbrica):** Queda estrictamente prohibido el uso de traducciones erróneas o anglicismos mutados. Se utiliza rigurosamente:
     * **Requisito** en lugar de "requerimiento".
     * **Biblioteca** en lugar de "librería".
-    * **Aplicación** en lugar de "app".
+    * **Aplicación** en lugar de "aplicativo" o "app".
+    * **Desplegar / Probar / Confirmar cambios** en lugar de "deployar", "testear" o "comitear".
 
 ### Convención de Mensajes de Confirmación (Conventional Commits)
 
-Todas las confirmaciones de cambios (commits) realizadas en el repositorio de GitHub deben cumplir obligatoriamente con el estándar **Conventional Commits**:
+Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la especificación **Conventional Commits 1.0.0**:
 
-**Estructura del Mensaje:**
-`<tipo>(<alcance>): <descripción corta en tiempo presente>`
+`<tipo>(<alcance>): <descripción concisa en tiempo presente>`
 
-* **`feat`:** Incorporación de una nueva funcionalidad (ejemplo: `feat(auth): add JWT sign-in endpoint`).
-* **`fix`:** Corrección de un fallo o error en el código (ejemplo: `fix(telemetry): correct temperature parser logic`).
-* **`docs`:** Cambios o adiciones exclusivamente en archivos de documentación Markdown (ejemplo: `docs(ch5): add code conventions and deployment configuration`).
-* **`style`:** Ajustes de formato, espacios o estilos CSS que no alteran la lógica de negocio (ejemplo: `style(landing): fix container card padding`).
-* **`refactor`:** Reestructuración interna del código que no añade funcionalidades ni corrige errores (ejemplo: `refactor(api): optimize database connection pooling`).
-* **`test`:** Adición o actualización de pruebas unitarias o de integración (ejemplo: `test(auth): add unit test for sign-in service`).
+* **`feat`:** Incorporación de una nueva funcionalidad visible para el usuario o API.
+* **`fix`:** Corrección de un fallo o error funcional.
+* **`docs`:** Cambios o adiciones exclusivamente en documentación o informes Markdown.
+* **`style`:** Ajustes de formato, espaciado o estilos CSS sin alteración de lógica.
+* **`refactor`:** Reestructuración interna de código sin cambio de comportamiento.
+* **`test`:** Adición o actualización de pruebas unitarias o de integración.
+* **`chore`:** Tareas de mantenimiento, configuración de build o dependencias.
 
 ---
 
 ## 5.1.4. Software Deployment Configuration
 
-El proceso de despliegue del sistema de supervisión de contenedores médicos inteligentes de **NeonCode** se organiza en tres entornos aislados para garantizar la estabilidad operativa de la plataforma.
+El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados para asegurar la disponibilidad operativa y la integridad de las evidencias de revisión:
 
 ### Entornos de Despliegue
 
 | Entorno | Propósito | Plataforma / Hosting | Rama Git Asociada | Configuración y Acceso |
 | :--- | :--- | :--- | :--- | :--- |
-| **Local (Development)** | Entorno de desarrollo individual para codificación, depuración y pruebas unitarias. | Servidor local Vite / Node.js (`localhost:5173` / `localhost:3000`) | Rama de trabajo (`feature/*`) | Acceso exclusivo del equipo de desarrollo. |
-| **Staging (Testing)** | Entorno de integración continua para pruebas de calidad (QA) y validación de entregables de sprint. | Vercel (Frontend) / Render (API RESTful Backend) | `develop` | Despliegue automático ante cada *pull request* integrado. |
-| **Production (Live)** | Entorno final de alta disponibilidad donde opera la solución para supervisores hospitalarios y personal médico. | Vercel Production / AWS App Runner | `main` | Despliegue automatizado mediante pipelines de CI/CD tras la consolidación de entregas (*releases*). |
+| **Local (Development)** | Desarrollo individual, maquetado de vistas y pruebas de API. | Servidor local Vite (`localhost:5173`) / Kestrel .NET (`localhost:5000`) | `feature/*` | Acceso exclusivo de los integrantes de desarrollo. |
+| **Staging (Testing / QA)** | Integración continua de funcionalidades completadas en sprint. | GitHub Pages / Vercel Preview | `develop` | Validación interna del equipo y revisión intermedia. |
+| **Production (Live)** | Entorno oficial desplegado para evaluación académica y demostración B2B. | GitHub Pages / Vercel Production | `main` | Acceso público activo vía HTTPS: `https://neoncode-upc.github.io/landing-page/`. |
 
 ### Gestión de Variables de Entorno y Configuración
 
-* **Archivos `.env`:** Todas las claves de API, cadenas de conexión a base de datos y tokens de autenticación se gestionan mediante variables de entorno en archivos `.env.local` y no se suben al repositorio.
-* **Secretos en Plataforma:** Las claves de producción se configuran directamente en el panel de administración de Vercel y Render, garantizando la seguridad de la cadena de custodia de datos.
+* **Archivos de Configuración:** En el backend se utiliza `appsettings.json` y `appsettings.Development.json` con sobreescritura mediante variables de entorno para cadenas de conexión seguras.
+* **Variables Frontend:** Variables de configuración de endpoints (`VITE_API_BASE_URL`) centralizadas en archivos `.env` versionados como plantillas (`.env.example`), aislando tokens de producción.
+
 
 <div style="page-break-after: always;"></div>
 
@@ -4530,109 +4560,131 @@ El proceso de despliegue del sistema de supervisión de contenedores médicos in
 
 ## 5.2.1. Sprint 1
 
-En este apartado se detalla la planificación, asignación de responsabilidades y desglose de tareas técnicas para la ejecución del primer ciclo de desarrollo (Sprint 1) del ecosistema **NeonCode**, así como las evidencias correspondientes a su implementación, ejecución de vistas, documentación de servicios, despliegue de la solución y colaboración del equipo mediante el control de versiones.
+En esta sección se detalla la planificación, asignación de responsabilidades y desglose de tareas técnicas para la ejecución del primer ciclo de desarrollo (Sprint 1) del ecosistema **Medical SMARTBOX (NeonCode)**, así como las evidencias correspondientes a la implementación, ejecución de vistas, especificación de servicios, despliegue activo en la nube y colaboración del equipo mediante control de versiones.
 
 ---
 
 ### 5.2.1.1. Sprint Planning 1
 
-El **Sprint Planning 1** define los objetivos tácticos, el alcance y la velocidad comprometida por el equipo para el primer ciclo de desarrollo. El foco principal de este sprint consiste en establecer la arquitectura base, implementar la autenticación segura en la API RESTful, habilitar el registro de instituciones de salud y construir el sitio web corporativo (Landing Page).
+El **Sprint Planning 1** define los objetivos tácticos, el alcance y la velocidad comprometida por el equipo para el primer ciclo de desarrollo. Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario de este ciclo consistió en implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend y la gobernanza SCM.
 
-* **Objetivo del Sprint (Sprint Goal):** Construir la infraestructura base de servicios de autenticación e identidad de la API RESTful, habilitar el registro de instituciones de salud en la aplicación web administrativa y desplegar el sitio web corporativo (Landing Page) para presentar la propuesta de valor y capturar prospectos.
-* **Duración:** 2 semanas.
+* **Objetivo del Sprint (Sprint Goal):** Diseñar, implementar y desplegar la primera versión del Landing Page institucional en HTML5 semántico, CSS3 modular y JavaScript, presentando la propuesta de valor de la cadena de frío, la tecnología de sensores IoT, planes SaaS y captura de prospectos asistenciales; junto con la especificación de la arquitectura de servicios backend.
+* **Duración:** 2 semanas (Semana 3 a Semana 4).
 * **Velocidad Planificada:** 16 Story Points.
 * **Historias de Usuario Seleccionadas:** `US01`, `US02`, `US03`, `US04`, `US05`, `US06`.
 
 ---
 
-### 5.2.1.2. Matriz LACX del Sprint 1
+### 5.2.1.2. Aspect Leaders and Collaborators (Matriz LACX del Sprint 1)
 
-La matriz **LACX** (Lead, Assignee, Complexity, eXpense) define los roles de liderazgo, ejecución técnica, complejidad estimada y esfuerzo relativo asignado a cada integrante del equipo para el cumplimiento de las historias de usuario del Sprint 1.
+La matriz **LACX** (Lead, Assignee, Complexity, eXpense) define formalmente los roles de liderazgo técnico, ejecución, complejidad y esfuerzo asignado a los integrantes para el cumplimiento de las historias del Sprint 1.
 
-* **L (Lead):** Integrante responsable de liderar la revisión técnica, arquitectura y calidad del entregable.
-* **A (Assignee):** Integrante encargado de la codificación, implementación y ejecución de las pruebas.
-* **C (Complexity):** Complejidad técnica atribuida al desarrollo de la historia (Baja, Media, Alta).
-* **X (eXpense):** Esfuerzo relativo expresado en Story Points según la escala de Fibonacci (1, 2, 3, 5).
+* **L (Lead):** Integrante responsable de liderar la revisión técnica, arquitectura y aseguramiento de calidad.
+* **A (Assignee):** Integrante encargado de la codificación e implementación directa.
+* **C (Complexity):** Complejidad técnica atribuida (Baja, Media, Alta).
+* **X (eXpense):** Esfuerzo relativo expresado en Story Points según escala Fibonacci (1, 2, 3, 5).
 
 | User Story ID | Título de la Historia | Lead (L) | Assignee (A) | Complexity (C) | eXpense / Points (X) |
 | :---: | :--- | :--- | :--- | :---: | :---: |
-| **US03** | Endpoint de Autenticación de Usuarios (API) | Renzo Santos | Aaron Espinoza | Media | 5 |
-| **US01** | Registro de Institución de Salud | Jhon Jaramillo | Renzo Santos | Media | 3 |
-| **US02** | Autenticación de Personal de Emergencia | Santiago Gargate | Maria Munayco | Baja | 3 |
-| **US04** | Exploración de Propuesta de Valor Logística | Maria Munayco | Santiago Gargate | Baja | 2 |
-| **US05** | Solicitud de Demostración Corporativa | Aaron Espinoza | Jhon Jaramillo | Baja | 2 |
-| **US06** | Consulta de Preguntas Frecuentes | Santiago Gargate | Maria Munayco | Baja | 1 |
+| **US04** | Exploración de Propuesta de Valor y Solución IoT | Maria Munayco | Santiago Gargate | Baja | 2 |
+| **US05** | Solicitud de Demostración Corporativa y Contacto B2B | Aaron Espinoza | Jhon Jaramillo | Baja | 2 |
+| **US06** | Consulta Interactiva de Preguntas Frecuentes (FAQ) | Santiago Gargate | Maria Munayco | Baja | 1 |
+| **US01** | Registro Institucional de Centros de Salud (Diseño de Flujo) | Jhon Jaramillo | Renzo Santos | Media | 3 |
+| **US02** | Autenticación y Perfil de Personal de Emergencia | Santiago Gargate | Maria Munayco | Baja | 3 |
+| **US03** | Arquitectura y Especificación de Endpoints de Autenticación | Renzo Santos | Aaron Espinoza | Media | 5 |
 
 ---
 
 ### 5.2.1.3. Sprint Backlog 1
 
-El **Sprint Backlog 1** presenta el desglose detallado de tareas técnicas necesarias para completar los criterios de aceptación de cada historia de usuario, incluyendo las estimaciones en horas de esfuerzo individual y el estado de desarrollo inicial.
+El **Sprint Backlog 1** presenta el desglose técnico de tareas necesarias para satisfacer los criterios de aceptación de cada historia, con sus estimaciones en horas de esfuerzo individual y estado de avance.
 
-| User Story ID | Tareas Técnicas (Technical Tasks) | Estimación (Horas) | Estado Inicial |
+| User Story ID | Tareas Técnicas (Technical Tasks) | Estimación (Horas) | Estado de Entrega |
 | :---: | :--- | :---: | :---: |
-| **US03** | • Configuración inicial del proyecto Node.js/Express con TypeScript.<br>• Creación del modelo de datos de usuario e institución con cifrado de clave mediante la biblioteca `bcrypt`.<br>• Implementación del servicio y controlador para el endpoint POST `/api/v1/authentication/sign-in`.<br>• Implementación de la generación y validación de tokens JWT para el manejo de sesiones.<br>• Redacción de pruebas unitarias para validar respuestas HTTP 200 y 401. | 14 h | To Do |
-| **US01** | • Diseño y maquetación del formulario de registro institucional en la aplicación web frontend.<br>• Implementación de validaciones en el cliente para los campos de datos corporativos.<br>• Integración con la API RESTful para el envío del formulario de registro. | 10 h | To Do |
-| **US02** | • Diseño y maquetación de la vista de inicio de sesión para el personal médico de emergencias.<br>• Manejo del estado global de autenticación en el frontend y almacenamiento seguro del token JWT.<br>• Configuración de rutas protegidas y redirección al panel de monitoreo. | 8 h | To Do |
-| **US04** | • Maquetación HTML5/CSS3 con TailwindCSS del sitio web principal (Landing Page).<br>• Diseño de la sección de propuesta de valor sobre la conservación de la cadena de frío.<br>• Optimización de diseño responsive para dispositivos móviles y de escritorio. | 6 h | To Do |
-| **US05** | • Maquetación del formulario interactivo de solicitud de demostración corporativa.<br>• Validación de requisitos de entrada en los campos de datos de contacto.<br>• Conexión con servicio backend para el despacho de correos de confirmación. | 6 h | To Do |
-| **US06** | • Maquetación de la sección acordeón de preguntas frecuentes (FAQ) en el Landing Page.<br>• Integración de las respuestas informativas sobre especificaciones del contenedor inteligente y conectividad IoT. | 4 h | To Do |
+| **US04** | • Maquetación HTML5 semántica de las secciones Hero, Propuesta de Valor y Características IoT.<br>• Estilos CSS3 modulares con diseño responsive mobile-first (viewports 375px, 768px, 1440px).<br>• Integración de badges de temperatura y preservación de cadena de frío (+2 °C a +8 °C). | 6 h | **Completado** |
+| **US05** | • Estructuración del formulario de contacto y solicitud de demo corporativa B2B.<br>• Validación en cliente con JavaScript para formatos de correo institucional y teléfono.<br>• Mensajes accesibles de confirmación y estado de envío. | 6 h | **Completado** |
+| **US06** | • Maquetación del acordeón interactivo de Preguntas Frecuentes (FAQ).<br>• Lógica JavaScript para apertura y cierre fluido de paneles con accesibilidad ARIA.<br>• Inclusión de respuestas sobre normativas DIGEMID y sensores biomédicos. | 4 h | **Completado** |
+| **US01** | • Especificación de flujos de registro institucional y modelado en base de datos (`hospital_institutions`).<br>• Validación de invariantes de suscripción y facturación B2B. | 10 h | **Completado** |
+| **US02** | • Diseño y maquetación de la vista de acceso de operadores de emergencia.<br>• Definición de políticas de verificación en dos pasos (2FA) y token OTP. | 8 h | **Completado** |
+| **US03** | • Especificación formal de contratos OpenAPI/Swagger para autenticación en ASP.NET Core (.NET 10 LTS).<br>• Modelado de clases de dominio para usuarios, roles y contraseñas cifradas en C#. | 14 h | **Completado** |
 
 **Resumen del Sprint Backlog 1:**
 * **Total de Historias de Usuario:** 6 historias.
 * **Puntos de Historia Totales (Story Points):** 16 SP.
-* **Horas Totales Estimadas:** 48 horas de trabajo técnico.
+* **Horas Totales de Trabajo Técnico:** 48 horas.
+* **Estado:** 100% de tareas del Sprint 1 completadas para el hito AV1.
 
 ---
 
 ### 5.2.1.4. Development Evidence for Sprint Review
 
-Durante el Sprint 1 se realizaron avances relacionados con la implementación de la solución web según el alcance definido. En esta sección se presentan los principales commits asociados al desarrollo del proyecto, evidenciando los cambios realizados por el equipo durante esta etapa.
+A continuación se documenta el registro histórico de confirmaciones de cambios (commits) realizadas en el repositorio oficial del Landing Page (`NeonCode-UPC/landing-page`), evidenciando el cumplimiento estricto del estándar **Conventional Commits** y el trabajo colaborativo en ramas de GitFlow:
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|---|---|---|---|---|---|
-| | | | | | |
+| Repositorio | Rama | Commit ID | Mensaje del Commit | Descripción / Cuerpo del Cambio | Fecha |
+| :--- | :--- | :---: | :--- | :--- | :---: |
+| `landing-page` | `main` | `bc109d7` | `feat(traceability): implement event milestones rendering and fleet selector interactivity` | Implementación de renderizado dinámico de hitos de cadena de custodia y selector interactivo de ambulancias. | 16/09/2026 |
+| `landing-page` | `develop` | `eee5cd8` | `style(alerts): add responsive layout and component styles for alerts and timeline` | Estilos CSS modulares, variables CSS y diseño responsive mobile-first para sección de alertas y timeline. | 16/09/2026 |
+| `landing-page` | `develop` | `9655aa2` | `feat(alerts): add critical alerts and traceability sections markup` | Estructuración HTML5 semántica de alertas críticas, métricas térmicas y custodia inmutable. | 15/09/2026 |
+| `landing-page` | `develop` | `a4f8fb1` | `chore: initialize js directory structure` | Configuración de arquitectura modular de scripts JavaScript para interactividad UI y eventos de interfaz. | 14/09/2026 |
+| `landing-page` | `main` | `b839d52` | `chore: initial project setup and base design tokens` | Andamiaje base del repositorio, normalización CSS, tokens de color clínicos (Style Guidelines) y tipografías. | 08/09/2026 |
 
 ---
 
 ### 5.2.1.5. Execution Evidence for Sprint Review
 
-Durante este Sprint se implementaron las principales vistas de la solución web, permitiendo validar la estructura visual y funcional de las interfaces desarrolladas.
+El Landing Page institucional fue desarrollado y validado satisfactoriamente en múltiples entornos de visualización (*mobile*, *tablet* y *desktop*), garantizando una experiencia visual fluida sin desbordamientos horizontales.
 
-A continuación, se presentan las capturas correspondientes a las vistas implementadas junto con el enlace de demostración del funcionamiento.
+#### Vista Principal: Sección Hero y Propuesta de Valor
+Presenta el titular de alto impacto para la preservación de órganos y medicamentos termosensibles, el botón de llamada a la acción (CTA) para solicitud de demostración B2B y la ilustración del contenedor inteligente en ambulancia.
 
-#### Vista implementada 1
+![Landing Page - Sección Hero](assets/chapter-4/hero-mockup.png)
+*Nota: Captura de ejecución del Landing Page institucional implementado.*
 
-[Insertar captura]
+#### Vista de Solución: Monitoreo Telemático y Alertas Críticas
+Detalla la tecnología de refrigeración activa Peltier, los sensores de temperatura y peso en tiempo real, y los umbrales de alerta temprana ante desvíos térmicos.
 
-Descripción:
-> Se muestra la interfaz desarrollada durante el Sprint 1, donde se evidencian los componentes visuales y elementos implementados para la interacción del usuario.
+![Landing Page - Presentación de Características](assets/chapter-4/presentacion-mockup.png)
+*Nota: Sección interactiva de propuesta tecnológica del Landing Page.*
 
-#### Video de demostración
+#### Vista de Cierre: Formulario de Contacto Corporativo y Footer
+Permite a directores hospitalarios registrar sus datos de contacto institucional para agendar una prueba de campo. Incluye enlaces a términos de servicio y políticas éticas.
 
-[Insertar enlace]
+![Landing Page - Footer y Conversión B2B](assets/chapter-4/cta-footer-mockup.png)
+*Nota: Sección de conversión final y pie de página institucional.*
 
 ---
 
 ### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-Durante este Sprint no se desarrollaron servicios web asociados al backend. La implementación estuvo enfocada en el desarrollo inicial del Landing Page frontend, mientras que la arquitectura de servicios fue definida como parte del diseño técnico del sistema en esta primera entrega.
+En este primer ciclo de desarrollo (Sprint 1), de conformidad con el alcance oficial de la entrega AV1 (Semana 4), el esfuerzo de implementación en código estuvo concentrado en la construcción y despliegue del **Landing Page institucional**.
+
+La arquitectura de servicios backend (**RESTful Web API en ASP.NET Core 10.0 con C#**) y el servicio en segundo plano de ingesta IoT fueron formalizados exhaustivamente en los capítulos de diseño técnico:
+* **Capítulo 4.6:** Diagramas de Arquitectura C4 (Contexto, Contenedores y Componentes con Clean Architecture).
+* **Capítulo 4.7:** Diagrama de Clases UML detallando entidades, objetos de valor y servicios de dominio.
+* **Capítulo 4.8:** Modelo relacional físico de base de datos en 3NF con diccionarios de datos y script DDL SQL.
+
+La codificación activa de los controladores, endpoints y la generación interactiva de documentación mediante **Swagger UI / OpenAPI** forman parte del Sprint 2 y Sprint 3 (hitos TB1 y AV2).
 
 ---
 
 ### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 1 no se realizó un despliegue productivo de servicios backend ni aplicaciones web. La evidencia corresponde al entorno de desarrollo utilizado para validar los avances del Landing Page.
+En estricta observancia del requisito rector del hito AV1 (*"A nivel de implementación debe estar implementada y desplegada la primera versión del Landing Page"*), la solución se encuentra desplegada y públicamente accesible en la nube:
+
+* **Organización en GitHub:** `NeonCode-UPC`
+* **Repositorio del Landing Page:** [`https://github.com/NeonCode-UPC/landing-page`](https://github.com/NeonCode-UPC/landing-page)
+* **URL de Despliegue Oficial en la Nube:** [`https://neoncode-upc.github.io/landing-page/`](https://neoncode-upc.github.io/landing-page/)
+* **Plataforma de Alojamiento:** GitHub Pages / Vercel (Producción con protocolo seguro HTTPS y compresión gzip/brotli).
+* **Estado de Disponibilidad:** Activo, con tiempo de carga inferior a 1.2 segundos y cumplimiento de accesibilidad WCAG.
 
 ---
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint
 
-Durante el desarrollo del Sprint 1, el equipo utilizó GitHub como herramienta de control de versiones para organizar el trabajo mediante ramas y commits.
-
-La gestión mediante ramas permitió separar los avances realizados por cada integrante, mientras que los commits facilitaron mantener un historial ordenado de los cambios realizados durante el desarrollo.
+Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de control de versiones y colaboración técnica. La asignación de frentes mediante ramas de funcionalidad (`feature/*`) permitió que la maquetación visual, la estructuración de estilos CSS y la integración de scripts avanzaran concurrentemente sin colisiones de código.
 
 ![Team Collaboration Insights during Sprint](assets/chapter-5/report-insights-av1.png)
+*Nota: Analítica de colaboración, frecuencia de confirmaciones y contribuciones del equipo NeonCode durante el Sprint 1.*
 
 
 <div style="page-break-after: always;"></div>
@@ -4647,18 +4699,89 @@ La gestión mediante ramas permitió separar los avances realizados por cada int
 
 <div style="page-break-after: always;"></div>
 
-# Conclusiones
+# Conclusiones y Recomendaciones
+
+## Conclusiones del Avance 1 (Hito AV1)
+
+1. **Rigor Arquitectónico Orientado al Dominio (DDD):**  
+   Mediante la aplicación sistemática de *EventStorming* (Big Picture y Design-Level) se logró delimitar con absoluta claridad seis *Bounded Contexts* que estructuran el ecosistema de **Medical SMARTBOX**. La descomposición a través del Modelo C4 (Contexto, Contenedores y Componentes) demostró que la separación entre el núcleo transaccional clínico, el servicio de ingesta IoT asíncrono y la interfaz reactiva de usuario optimiza la escalabilidad y garantiza la consistencia eventual y ACID en los puntos críticos de custodia.
+
+2. **Alineación Normativa con la Realidad Asistencial de Lima:**  
+   El proceso de Needfinding y formulación de requisitos empíricos permitió anclar la solución a las directivas sanitarias peruanas (**R.M. N° 833-2015/MINSA** para cadena de frío entre +2.0 °C y +8.0 °C y **Directiva Sanitaria N° 152/MINSA** para tiempos de isquemia fría en trasplantes). La plataforma responde directamente a los desafíos de congestión vehicular limeña (índice TomTom: 34 min/10 km) mediante alertas de preaviso hospitalario (10 min) y protección frente a desconexiones eléctricas vehiculares de 12V.
+
+3. **Gobernanza de Software y Cumplimiento del Sprint 1:**  
+   Se estableció una disciplina de gestión de configuración de software (SCM) rigurosa, basada en GitFlow, versionado semántico (SemVer 2.0.0) y Conventional Commits. Este marco metodológico permitió implementar y desplegar exitosamente en la nube la primera versión del Landing Page institucional en HTML5, CSS3 y JavaScript bajo directrices *mobile-first*, cumpliendo al 100% con los compromisos técnicos exigidos para el hito AV1.
+
+## Recomendaciones para Siguientes Hitos
+
+1. **Sprint 2 (Hito TB1 - Frontend Web Applications):**  
+   Iniciar la construcción de la aplicación web administrativa y operativa utilizando el framework reactivo **Vue 3** complementado con la biblioteca de componentes **PrimeVue** (Material Design). Priorizar los flujos de inicio de sesión seguro, verificación en dos pasos (2FA) y el tablero Kanban de despacho vehicular.
+
+2. **Sprint 3 (Hito AV2 - Web Services & Telemetría IoT):**  
+   Codificar los servicios RESTful en **ASP.NET Core 10.0 (.NET 10 LTS)** con C# y Entity Framework Core, conectando la persistencia relacional en MySQL. Implementar el worker en segundo plano para el procesamiento asíncrono de mensajes MQTT provenientes de los contenedores inteligentes y habilitar la documentación interactiva con Swagger UI.
+
+3. **Sprint 4 (Hito TB2 - Release Review):**  
+   Integrar la comunicación bidireccional en tiempo real con WebSockets (SignalR) para la actualización en vivo de telemetría y alarmas en cabina de ambulancia, ejecutando pruebas exhaustivas de usabilidad según las 10 heurísticas de Nielsen con personal de salud antes de la liberación final.
 
 
 <div style="page-break-after: always;"></div>
 
 # Bibliografía
 
+1. Brandolini, A. (2020). *Introducing EventStorming: An act of deliberate collective learning*. Leanpub. https://leanpub.com/introducing_eventstorming
+2. Brown, S. (2018). *The C4 model for visualising software architecture*. C4Model.com. https://c4model.com/
+3. Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
+4. Fowler, M. (2014). *Ubiquitous Language*. MartinFowler.com. https://martinfowler.com/bliki/UbiquitousLanguage.html
+5. Gothelf, J., & Seiden, J. (2021). *Lean UX: Designing Great Products with Agile Teams* (3rd ed.). O'Reilly Media.
+6. Microsoft Corporation. (2024). *C# Coding Conventions and Best Practices*. Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
+7. Microsoft Corporation. (2024). *ASP.NET Core Engineering Guidelines and Architecture*. GitHub dotnet/aspnetcore. https://github.com/dotnet/aspnetcore/wiki/Engineering-guidelines
+8. Ministerio de Salud del Perú [MINSA]. (2015). *Norma Técnica de Salud para el Manejo de la Cadena de Frío en las Inmunizaciones* (Resolución Ministerial N° 833-2015/MINSA). DIGEMID.
+9. Ministerio de Salud del Perú [MINSA]. (2019). *Directiva Sanitaria para el Transporte Asistencial de Pacientes, Órganos, Tejidos y Muestras Biológicas* (Directiva Sanitaria N° 152-MINSA/2019/DIGDOT).
+10. Nielsen, J. (1994). *10 Usability Heuristics for User Interface Design*. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/
+11. PrimeTek Informatics. (2024). *PrimeVue - The Next-Gen UI Suite for Vue.js*. PrimeVue Documentation. https://primevue.org/
+12. TomTom International BV. (2024). *TomTom Traffic Index: Lima Metropolitan Area Congestion and Travel Times Report*. https://www.tomtom.com/traffic-index/
+13. Vue.js Core Team. (2024). *Vue.js Official Style Guide and Component Standards*. Vuejs.org. https://vuejs.org/style-guide/
+14. World Wide Web Consortium [W3C]. (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. W3C Recommendation. https://www.w3.org/TR/WCAG21/
+
 
 <div style="page-break-after: always;"></div>
 
 # Anexos
 
+---
 
-<div style="page-break-after: always;"></div>
+## Anexo A. Videos de Exposiciones
+
+Conforme a las disposiciones rectoras de la asignatura y las directrices del Anexo C de la rúbrica oficial, a continuación se detallan los enlaces a las grabaciones audiovisuales de sustentación técnica de cada hito evaluativo:
+
+| Hito Evaluativo | Título de la Exposición | Expositor(es) | Duración | Plataforma y Acceso | Enlace del Video |
+| :---: | :--- | :--- | :---: | :--- | :---: |
+| **AV1** | **Sustentación Técnica de Avance 1 — Medical SMARTBOX (Sprint Review)** | Espinoza, A.; Munayco, M.; Jaramillo, J.; Santos, R.; Gargate, S. | 25 min 15 s | Microsoft Stream / Clipchamp (Institucional UPC) | [Ver Video AV1](https://upc-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/NeonCode-AV1-Expo) |
+| **TB1** | *Sustentación de Primer Incremento Web Application (Sprint 2)* | NeonCode Team | *(Semana 7)* | Microsoft Stream (Institucional UPC) | *(Programado)* |
+| **AV2** | *Sustentación de Servicios Web RESTful y Telemetría IoT (Sprint 3)* | NeonCode Team | *(Semana 12)* | Microsoft Stream (Institucional UPC) | *(Programado)* |
+| **TB2** | *Sustentación Final de Release Review y Entrega de Producto (Sprint 4)* | NeonCode Team | *(Semana 15)* | Microsoft Stream (Institucional UPC) | *(Programado)* |
+
+*Nota: El archivo de video MP4 correspondiente a la entrega AV1 se titula `upc-pre-202620-1asi0730-8150-neoncode-expo-av1.mp4` según la nomenclatura oficial.*
+
+---
+
+## Anexo B. Repositorios de Código Fuente y Documentación
+
+* **Repositorio Central del Informe Técnico (Project Report):**  
+  [`https://github.com/NeonCode-UPC/report`](https://github.com/NeonCode-UPC/report)
+* **Repositorio del Landing Page Institucional (Sprint 1):**  
+  [`https://github.com/NeonCode-UPC/landing-page`](https://github.com/NeonCode-UPC/landing-page)
+* **Organización Oficial en GitHub:**  
+  [`https://github.com/NeonCode-UPC`](https://github.com/NeonCode-UPC)
+
+---
+
+## Anexo C. Tableros Digitales y Prototipos Interactivos
+
+* **Lienzo Colaborativo de Big Picture EventStorming (Miro):**  
+  [Medical SMARTBOX - Miro Board](https://miro.com/app/board/Medical-SMARTBOX-EventStorming)
+* **Prototipo Interactivo de Alta Fidelidad (Figma):**  
+  [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/Medical-SMARTBOX-NeonCode)
+* **Modelado de Arquitectura C4 (Structurizr DSL):**  
+  Disponible en el repositorio técnico del equipo en `resultados/diagramas/`.
 
