@@ -199,3 +199,25 @@ Esta imagen detalla el panel de Perfil, Configuración y roles de acceso. La int
 Esta imagen muestra los módulos orientados a la auditoría, la trazabilidad y el cumplimiento normativo. Destaca el flujo de entrega, que exige la validación de un código OTP en el punto de destino para desbloquear el contenedor, evento que queda registrado en la Línea de Tiempo de Cadena de Custodia. El sistema genera manifiestos digitales de cada traslado, los cuales son sellados criptográficamente (SHA-256) para garantizar su inmutabilidad. Finalmente, un panel de reportes consolida el rendimiento térmico mensual de las distintas sedes, facilitando la presentación de datos ante entidades regulatorias como DIGEMID.
 
 ![Mockup07 - Wireframe](./assets/chapter-4/mockup-7.png)
+
+### 4.4.4. Web Applications User Flow Diagrams
+
+El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que un operador logístico, supervisor hospitalario o personal médico realiza al interactuar con el ecosistema digital de NeonCode. A continuación se presentan tres diagramas de flujo clave adaptados a las historias de usuario de la plataforma, detallando el *Happy Path* (ruta ideal) y las ramificaciones alternativas (errores de validación, fallas de conectividad IoT y desviaciones en la cadena de frío).
+
+**User Flow 1: Autenticación de Personal y Acceso al Panel**
+*   **User Stories relacionadas:** US01, US02
+*   **Flujos incluidos:** *Happy Path* (autenticación exitosa y acceso al panel), credenciales inválidas, cuenta institucional no activada, campos incompletos y reintentos de sesión.
+
+![Primer User Flow](./assets/chapter-4/user-flow-1.png)
+
+**User Flow 2: Alta de Ambulancia y Vinculación de Contenedor Inteligente**
+*   **User Stories relacionadas:** US07, US08
+*   **Flujos incluidos:** *Happy Path* (registro de vehículo y asignación telemétrica de contenedor), matrícula de ambulancia duplicada, ID de contenedor no encontrado, contenedor previamente asignado a otro vehículo y falla de enlace telemétrico inicial.
+
+![Segundo User Flow](./assets/chapter-4/user-flow-2.png)
+
+**User Flow 3: Monitoreo Térmico en Ruta, Gestión de Alertas y Cierre de Custodia**
+*   **User Stories relacionadas:** US10, US11, US13, US14, US17
+*   **Flujos incluidos:** *Happy Path* (monitoreo en tiempo real, recepción de alerta por variación térmica, acción correctiva y confirmación de entrega), pérdida de señal del contenedor, umbral térmico no configurado, variación de stock por sensores de peso e incidencia no resuelta en ruta.
+
+![Tercer User Flow](./assets/chapter-4/user-flow-3.png)
