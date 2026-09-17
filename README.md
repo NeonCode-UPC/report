@@ -1108,10 +1108,10 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 ### Captura de los Artefactos en UXPressia
 
 #### Impact Map Goal 1
-<img src="assets/chapter-3/Impact%20map_goal_1.png" alt="Impact Map Goal 1" width="600">
+<img src="assets/chapter-3/impact-map-goal-1.png" alt="Impact Map Goal 1" width="600">
 
 #### Impact Map Goal 2
-<img src="assets/chapter-3/Impact%20map_goal_2.png" alt="Impact Map Goal 2" width="600">
+<img src="assets/chapter-3/impact-map-goal-2.png" alt="Impact Map Goal 2" width="600">
 
 
 <div style="page-break-after: always;"></div>
