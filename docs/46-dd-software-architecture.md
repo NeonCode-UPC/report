@@ -263,6 +263,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context IAM](../assets/chapter-4/4.6.1-dles-iam-context.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity & Access Management (IAM).*
 
 ---
@@ -327,6 +328,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Subscription & Fleet Provisioning](../assets/chapter-4/4.6.1-dles-subscription-fleet.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Subscription & Fleet Provisioning.*
 
 ---
@@ -410,6 +412,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](../assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
 ---
@@ -483,6 +486,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](../assets/chapter-4/4.6.1-dles-smart-container.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
 ---
@@ -558,6 +562,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](../assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
 
 ---
@@ -631,6 +636,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.7 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](../assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
 
 ---

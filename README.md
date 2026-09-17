@@ -63,7 +63,7 @@ El presente Registro de Versiones del Informe documenta la trazabilidad evolutiv
 | :---: | :---: | :---: | :--- | :--- |
 | **AV1** | **V0.1.0** | 08/09/2026 | NeonCode Team | **Inicialización del Repositorio y Andamiaje Documental:** Creación de la estructura base del repositorio en la organización pública de GitHub (`NeonCode-UPC/report`). Configuración del modelo de ramificación GitFlow (`main`, `develop`), convenciones Conventional Commits y estructura de directorios `docs/` y `assets/`. Elaboración de la Carátula institucional según las directrices y modelo del docente Velásquez Núñez, y generación del esqueleto Markdown para todos los capítulos. |
 | **AV1** | **V0.2.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Relevamiento de Requisitos, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (antecedentes y problemática 5W2H sustentada en incidentes de transporte asistencial en Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial SAMU 106 y Segmento 2: centros sanitarios y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo frente a Cryoport, Ransa, Talma y SAMU) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de sesiones y análisis de hallazgos cualitativos). |
-| **AV1** | **V0.3.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio Preliminar y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos, User Task Matrix priorizada, User Journey Mapping As-Is/To-Be y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal con 30 términos canónicos en inglés con definición clínica y técnica en español). Desarrollo del Capítulo III completo: 3.1 User Stories (historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal $\rightarrow$ Actor $\rightarrow$ Impact $\rightarrow$ Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
+| **AV1** | **V0.3.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio Preliminar y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos, User Task Matrix priorizada, User Journey Mapping As-Is/To-Be y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal con 30 términos canónicos en inglés con definición clínica y técnica en español). Desarrollo del Capítulo III completo: 3.1 User Stories (historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal → Actor → Impact → Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
 | **AV1** | **V0.4.0** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando seis Bounded Contexts: Smart Container IoT, Emergency Fleet Logistics, Clinical Quality Assurance, Chain of Custody, Critical Alerting y Access Governance). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Web API, Telemetry Consumer, Base de Datos, Broker MQTT, Redis Cache y Web App) y 4.6.4 Component Diagrams. Desarrollo del Capítulo 4.7 (Class Diagrams UML modelando un dominio rico con entidades, value objects, agregados y servicios de dominio) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
 | **AV1** | **V0.5.0** | 16/09/2026 | Gargate Paredes, Santiago<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 9, Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en Vercel/GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). |
 | **AV1** | **V1.0.0** | 17/09/2026 | NeonCode Team | **Consolidación Oficial del Entregable AV1:** Integración armonizada de todos los capítulos del informe (Cap. I, II, III, IV y V: 5.1 y 5.2.1). Incorporación formal de la sección 01 (Carátula según modelo docente), sección 02 (Registro de Versiones del Informe), sección 03 (Project Report Collaboration Insights con métricas analíticas de GitHub y trazabilidad de commits de AV1), sección 04 (Tabla de Contenidos a 4 niveles de jerarquía con hipervínculos funcionales) y sección 05 (Student Outcome ABET EAC 5 detallado con sustentos individuales para los 5 integrantes y conclusiones de avance). Conclusiones preliminares, Bibliografía en formato APA y Anexos normativos. |
@@ -1672,6 +1672,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context IAM](assets/chapter-4/4.6.1-dles-iam-context.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity & Access Management (IAM).*
 
 ---
@@ -1736,6 +1737,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Subscription & Fleet Provisioning](assets/chapter-4/4.6.1-dles-subscription-fleet.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Subscription & Fleet Provisioning.*
 
 ---
@@ -1819,6 +1821,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
 ---
@@ -1892,6 +1895,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
 ---
@@ -1967,6 +1971,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
 
 ---
@@ -2040,6 +2045,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ---
 
+![Figura 4.6.1.7 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
 
 ---
@@ -2953,15 +2959,15 @@ El diseño orientado a objetos del sistema **Medical SMARTBOX** trasciende la me
 
 #### Mapeo Objeto-Relacional con Entity Framework Core 10.0 y Convenciones Nominales
 En estricta observancia de los patrones Domain-Driven Design (DDD), las clases del dominio adoptan nomenclatura de negocio en C# (*PascalCase*), mientras que el esquema relacional en MySQL 8.0 implementa estándares físicos de base de datos (*snake_case*). Las correspondencias específicas entre nombres de propiedades y columnas físicas se gobiernan declarativamente mediante la Fluent API de EF Core (`.HasColumnName(...)`):
-* `SubscriptionPlan.PlanCode` $\longrightarrow$ columna `code` (definida en tabla `subscription_plans`).
-* `SubscriptionPlan.MaxFleetBoxes` $\longrightarrow$ columna `max_smartboxes` (definida en tabla `subscription_plans`).
-* `SubscriptionPlan.MonthlyCostUsd` $\longrightarrow$ columna `monthly_price_usd` (definida en tabla `subscription_plans`).
-* `HospitalInstitution.OfficialName` $\longrightarrow$ columna `name` (definida en tabla `hospital_institutions`).
-* `UserAccount.ProfessionalLicenseNumber` $\longrightarrow$ columna `medical_license_number` (definida en tabla `users`).
-* `TransportOrder.Priority` $\longrightarrow$ columna `clinical_priority` (definida en tabla `transport_orders`).
-* `CustodyTransfer.TransferredAt` $\longrightarrow$ columna `completed_at` (definida en tabla `custody_transfers`).
-* `DigitalAuditManifest.GeneratedAt` $\longrightarrow$ columna `sealed_at` (definida en tabla `digital_audit_manifests`).
-* `DigitalAuditManifest.CloudStorageUrl` $\longrightarrow$ columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
+* `SubscriptionPlan.PlanCode` → columna `code` (definida en tabla `subscription_plans`).
+* `SubscriptionPlan.MaxFleetBoxes` → columna `max_smartboxes` (definida en tabla `subscription_plans`).
+* `SubscriptionPlan.MonthlyCostUsd` → columna `monthly_price_usd` (definida en tabla `subscription_plans`).
+* `HospitalInstitution.OfficialName` → columna `name` (definida en tabla `hospital_institutions`).
+* `UserAccount.ProfessionalLicenseNumber` → columna `medical_license_number` (definida en tabla `users`).
+* `TransportOrder.Priority` → columna `clinical_priority` (definida en tabla `transport_orders`).
+* `CustodyTransfer.TransferredAt` → columna `completed_at` (definida en tabla `custody_transfers`).
+* `DigitalAuditManifest.GeneratedAt` → columna `sealed_at` (definida en tabla `digital_audit_manifests`).
+* `DigitalAuditManifest.CloudStorageUrl` → columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
 Esta separación formal preserva la expresividad del lenguaje ubicuo en el código fuente de dominio sin acoplarlo rígidamente a los identificadores físicos de almacenamiento.
 
 ---
@@ -4039,81 +4045,28 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * Las coordenadas geográficas de telemetría se aplanan en `latitude` y `longitude` en `telemetry_logs`.
 4. **Marcas Temporales UTC con Precisión de Microsegundos:**  
    Dado que los contenedores inteligentes registran desviaciones térmicas en milisegundos y las ambulancias se desplazan rápidamente por arterias viales, todas las fechas y horas se registran en formato universal coordinado (`DateTime.UtcNow`) utilizando el tipo `DATETIME(6)`. Esto elimina ambigüedades por husos horarios y garantiza orden estricto en el procesamiento reactivo de eventos.
-5. **Mapeo de Entidades Internas y Agregados en EF Core 10 (`OwnsOne`):**  
-   En el modelo orientado a objetos (Capítulo 4.7), la raíz de agregado `SmartContainer` encapsula entidades subordinadas como `ElectromechanicalLock` (cerrojo de seguridad) y `BatteryUnit` (unidad de alimentación LiFePO4), mientras que la raíz `DispatchTrip` encapsula la entidad de ruta `TransportRoute`. En la base de datos física, para evitar la proliferación de tablas satélite 1 a 1 y maximizar la eficiencia en consultas operativas sin sobrecarga de operaciones `JOIN`, estas entidades se aplanan directamente dentro de las tablas `smart_containers` y `dispatch_trips` mediante la Fluent API de Entity Framework Core 10.0:
-   ```csharp
-   builder.Entity<SmartContainer>(b =>
-   {
-       b.ToTable("smart_containers");
-       b.HasKey(c => c.Id);
-
-       // Mapeo OwnsOne para cerrojo electromecánico
-       b.OwnsOne(c => c.Lock, lockBuilder =>
-       {
-           lockBuilder.Property(l => l.State)
-                      .HasColumnName("lock_state")
-                      .HasConversion<string>()
-                      .IsRequired();
-       });
-
-       // Mapeo OwnsOne para unidad de batería y alimentación 12V
-       b.OwnsOne(c => c.Battery, batteryBuilder =>
-       {
-           batteryBuilder.Property(bt => bt.ChargePercentage)
-                         .HasColumnName("battery_percentage")
-                         .HasPrecision(5, 2)
-                         .IsRequired();
-           batteryBuilder.Property(bt => bt.IsChargingFrom12V)
-                         .HasColumnName("is_12v_connected")
-                         .IsRequired();
-       });
-
-       // Entidad en memoria; su telemetría dinámica se persiste en telemetry_logs.peltier_power_pct
-       b.Ignore(c => c.Cooler);
-   });
-
-   // Mapeo OwnsOne para ruta telemétrica en DispatchTrip
-   builder.Entity<DispatchTrip>(b =>
-   {
-       b.ToTable("dispatch_trips");
-       b.HasKey(t => t.Id);
-
-       b.OwnsOne(t => t.Route, routeBuilder =>
-       {
-           routeBuilder.Property(r => r.DistanceKilometers)
-                       .HasColumnName("distance_km")
-                       .HasPrecision(6, 2)
-                       .IsRequired();
-           routeBuilder.Property(r => r.PlannedDurationMinutes)
-                       .HasColumnName("planned_duration_minutes")
-                       .IsRequired();
-           routeBuilder.Property(r => r.CurrentCongestionDelayMinutes)
-                       .HasColumnName("current_delay_minutes")
-                       .IsRequired();
-           routeBuilder.Property(r => r.PolylineCoordinates)
-                       .HasColumnName("polyline_coordinates")
-                       .HasColumnType("TEXT");
-       });
-   });
-   ```
-   Esta configuración garantiza que el modelo de dominio en C# preserve estrictamente el encapsulamiento y comportamiento de objetos internos de la raíz de agregado, mientras que el motor MySQL persiste las columnas de forma atómica y de alto rendimiento.
+5. **Estrategia de Persistencia de Entidades Internas de Agregados (*Entity Flattening*):**  
+   En el modelo orientado a objetos (Capítulo 4.7), la raíz de agregado `SmartContainer` encapsula entidades subordinadas como `ElectromechanicalLock` (cerrojo de seguridad) y `BatteryUnit` (unidad de alimentación LiFePO4), mientras que la raíz `DispatchTrip` encapsula la entidad de ruta `TransportRoute`. En la base de datos física relacional, para evitar la proliferación innecesaria de tablas satélite 1 a 1 y maximizar la eficiencia en consultas operativas sin sobrecarga de operaciones `JOIN`, estas entidades subordinadas se integran y aplanan directamente como columnas dentro de sus tablas principales:
+   * En `smart_containers`: se persisten atómicamente `lock_state` (estado del cerrojo), `battery_percentage` (porcentaje de carga) e `is_12v_connected` (alimentación auxiliar 12V).
+   * En `dispatch_trips`: se persisten directamente los atributos de ruta calculados `distance_km`, `planned_duration_minutes`, `current_delay_minutes` y `polyline_coordinates`.  
+   Esta decisión garantiza un esquema de almacenamiento de alto rendimiento para las consultas operativas en ruta sin comprometer la encapsulación conceptual definida en el diseño orientado a objetos.
 6. **Conversión de Tipos Numéricos entre Dominio y Persistencia (`double` a `DECIMAL`):**  
-   En el modelo de clases de dominio en C# (Capítulo 4.7), las lecturas sensoriales y telemétricas (temperatura, peso neto y coordenadas geográficas) se representan como tipos primitivos `double` para optimizar el rendimiento computacional de cálculos en memoria y procesamiento de flujos IoT. En la persistencia física en MySQL, estos valores se persisten rigurosamente como tipos de coma fija `DECIMAL(p, s)` (`DECIMAL(4,2)` para temperatura, `DECIMAL(6,2)` para peso en gramos y `DECIMAL(10,8)` / `DECIMAL(11,8)` para latitud/longitud). En Entity Framework Core 10.0, esta transición se gobierna explícitamente mediante conversores de valor `HasConversion<double>()` y directivas `HasPrecision(p, s)` en la configuración Fluent API, eliminando discrepancias de precisión entre capas de arquitectura.
+   En el modelo de clases de dominio (Capítulo 4.7), las lecturas sensoriales y telemétricas (temperatura, peso neto y coordenadas geográficas) se representan como tipos numéricos en coma flotante para optimizar el rendimiento computacional de cálculos en memoria y procesamiento de flujos IoT. En la persistencia física en MySQL, estos valores se almacenan rigurosamente como tipos de coma fija `DECIMAL(p, s)` (`DECIMAL(4,2)` para temperatura, `DECIMAL(6,2)` para peso en gramos y `DECIMAL(10,8)` / `DECIMAL(11,8)` para latitud/longitud), eliminando cualquier riesgo de discrepancia por redondeo o imprecisión binaria en los registros médicos.
 7. **Delimitación de Flota Vehicular y Activos Externos (Segmento 1):**  
    En el modelo SaaS, las ambulancias constituyen activos vehiculares de transporte sanitario operados por terceros (Segmento 1) identificados por su número de placa (`assigned_vehicle_plate`) en las órdenes de despacho (`dispatch_trips`). El control de cuotas comerciales de suscripción (`max_ambulances` en `subscription_plans`) se valida a nivel de servicio contra las unidades móviles simultáneamente activas, preservando el foco del software exclusivamente en la gestión del contenedor médico inteligente y evitando la sobreingeniería de tablas maestras vehiculares internas.
 8. **Invariantes Térmicas de Firmware y Control de Celda Peltier:**  
    La celda termoeléctrica Peltier opera bajo un punto de consigna (*setpoint*) fijo y normado (+4.0 °C) implementado como invariante de control en el firmware autónomo del ESP32. Su estado no demanda columnas de configuración mutable en la tabla de catálogo `smart_containers`, sino que su modulación dinámica de potencia se audita y persiste históricamente mediante la columna `peltier_power_pct` en la tabla de series temporales de alta frecuencia `telemetry_logs`.
-9. **Mapeo Declarativo de Nombres de Columnas en Fluent API:**  
-   Para preservar la pureza del modelo de dominio en C# (Capítulo 4.7) conforme al lenguaje ubicuo (*PascalCase*) y garantizar total coherencia con el esquema físico en MySQL 8.0 (*snake_case*), EF Core mapea explícitamente las siguientes propiedades mediante `.HasColumnName(...)`:
-   * `SubscriptionPlan.PlanCode` $\longrightarrow$ `code` (tabla `subscription_plans`).
-   * `SubscriptionPlan.MaxFleetBoxes` $\longrightarrow$ `max_smartboxes` (tabla `subscription_plans`).
-   * `SubscriptionPlan.MonthlyCostUsd` $\longrightarrow$ `monthly_price_usd` (tabla `subscription_plans`).
-   * `HospitalInstitution.OfficialName` $\longrightarrow$ `name` (tabla `hospital_institutions`).
-   * `UserAccount.ProfessionalLicenseNumber` $\longrightarrow$ `medical_license_number` (tabla `users`).
-   * `TransportOrder.Priority` $\longrightarrow$ `clinical_priority` (tabla `transport_orders`).
-   * `CustodyTransfer.TransferredAt` $\longrightarrow$ `completed_at` (tabla `custody_transfers`).
-   * `DigitalAuditManifest.GeneratedAt` $\longrightarrow$ `sealed_at` (tabla `digital_audit_manifests`).
-   * `DigitalAuditManifest.CloudStorageUrl` $\longrightarrow$ `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
+9. **Correspondencia de Nomenclatura entre Dominio y Esquema Físico:**  
+   Para preservar la pureza del modelo conceptual de dominio (Capítulo 4.7) formulado bajo el lenguaje ubicuo (*PascalCase*) y garantizar total coherencia con las convenciones relacionales del esquema físico en MySQL 8.0 (*snake_case*), se formaliza la siguiente matriz de correspondencia:
+   * `SubscriptionPlan.PlanCode` → `code` (tabla `subscription_plans`).
+   * `SubscriptionPlan.MaxFleetBoxes` → `max_smartboxes` (tabla `subscription_plans`).
+   * `SubscriptionPlan.MonthlyCostUsd` → `monthly_price_usd` (tabla `subscription_plans`).
+   * `HospitalInstitution.OfficialName` → `name` (tabla `hospital_institutions`).
+   * `UserAccount.ProfessionalLicenseNumber` → `medical_license_number` (tabla `users`).
+   * `TransportOrder.Priority` → `clinical_priority` (tabla `transport_orders`).
+   * `CustodyTransfer.TransferredAt` → `completed_at` (tabla `custody_transfers`).
+   * `DigitalAuditManifest.GeneratedAt` → `sealed_at` (tabla `digital_audit_manifests`).
+   * `DigitalAuditManifest.CloudStorageUrl` → `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
 
 ---
 
@@ -4133,7 +4086,7 @@ El modelo de datos relacional de Medical SMARTBOX ha sido diseñado bajo una est
   En la tabla `digital_audit_manifests` (Contexto de Cadena de Custodia), se almacenan de manera precalculada las métricas `average_temperature_celsius`, `min_temperature_celsius`, `max_temperature_celsius` y `total_excursion_seconds`.  
   *Justificación Técnica y Legal:* Un traslado en ambulancia puede generar miles de lecturas de telemetría en `telemetry_logs`. Si un auditor de calidad de DIGEMID o un cirujano de trasplantes requiere verificar el acta de entrega durante una auditoría o minutos antes de implantar un corazón, calcular agregaciones dinámicas (`AVG`, `MIN`, `MAX`) sobre millones de filas degradaría la base de datos y retardaría la respuesta médica. Además, el acta digital constituye un documento médico-legal sellado criptográficamente con hash SHA-256 (`cryptographic_hash_sha256`); desnormalizar estas métricas en el momento exacto del cierre de custodia garantiza que las cifras auditadas permanezcan inmutables en el tiempo, protegidas de cualquier alteración histórica o depuración de logs sensoriales antiguos.
 * **Principio de Custodia Unívoca y Ausencia de Tablas N:M:**  
-  A diferencia de aplicaciones comerciales genéricas, el modelo relacional descarta de forma deliberada el uso de tablas intermedias de descomposición muchos a muchos (N:M). Bajo la normativa de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva Sanitaria N° 152), el transporte asistencial de órganos, hemoderivados y vacunas críticas opera bajo el **Principio de Custodia Unívoca (1 Orden de Traslado $\rightarrow$ 1 Despacho $\rightarrow$ 1 Contenedor Inteligente $\rightarrow$ 1 Custodio Receptor Acreditado)**. Establecer asignaciones múltiples concurrentes (N:M) introduciría vacíos de trazabilidad médico-legal y riesgo inaceptable de contaminación cruzada o confusión de muestras biológicas, por lo que el esquema relacional refuerza estrictamente relaciones 1:1 y 1:N con integridad referencial restrictiva.
+  A diferencia de aplicaciones comerciales genéricas, el modelo relacional descarta de forma deliberada el uso de tablas intermedias de descomposición muchos a muchos (N:M). Bajo la normativa de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva Sanitaria N° 152), el transporte asistencial de órganos, hemoderivados y vacunas críticas opera bajo el **Principio de Custodia Unívoca (1 Orden de Traslado → 1 Despacho → 1 Contenedor Inteligente → 1 Custodio Receptor Acreditado)**. Establecer asignaciones múltiples concurrentes (N:M) introduciría vacíos de trazabilidad médico-legal y riesgo inaceptable de contaminación cruzada o confusión de muestras biológicas, por lo que el esquema relacional refuerza estrictamente relaciones 1:1 y 1:N con integridad referencial restrictiva.
 
 ---
 
@@ -4414,7 +4367,7 @@ La siguiente matriz documenta las **20 relaciones de clave foránea** implementa
 Para procesar ráfagas continuas de telemetría provenientes de múltiples ambulancias sin degradar los tiempos de respuesta del dashboard web en Vue.js ni la transmisión en tiempo real de WebSockets vía SignalR, se implementa una estrategia de **índices B-Tree compuestos**:
 
 1. **`idx_telemetry_container_timestamp (container_id, timestamp_utc DESC)`:**  
-   *Propósito:* Optimiza la consulta más frecuente del sistema: obtener la última lectura emitida por un contenedor específico para renderizar el termómetro digital, indicador de peso y estado de batería en el frontend. Al estar ordenado descendentemente, el motor MySQL resuelve la consulta en tiempo $O(1)$ sin realizar un escaneo completo de tabla (*Full Table Scan*).
+   *Propósito:* Optimiza la consulta más frecuente del sistema: obtener la última lectura emitida por un contenedor específico para renderizar el termómetro digital, indicador de peso y estado de batería en el frontend. Al estar ordenado descendentemente, el motor MySQL resuelve la consulta en tiempo O(1) sin realizar un escaneo completo de tabla (*Full Table Scan*).
 2. **`idx_telemetry_trip_timestamp (trip_id, timestamp_utc ASC)`:**  
    *Propósito:* Permite recuperar la curva térmica completa y las coordenadas del recorrido de una ambulancia para trazar el gráfico histórico de temperatura en el visor de auditoría clínica.
 3. **`idx_dispatch_trips_status_departure (status, scheduled_departure_time)`:**  

@@ -26,15 +26,15 @@ El diseño orientado a objetos del sistema **Medical SMARTBOX** trasciende la me
 
 #### Mapeo Objeto-Relacional con Entity Framework Core 10.0 y Convenciones Nominales
 En estricta observancia de los patrones Domain-Driven Design (DDD), las clases del dominio adoptan nomenclatura de negocio en C# (*PascalCase*), mientras que el esquema relacional en MySQL 8.0 implementa estándares físicos de base de datos (*snake_case*). Las correspondencias específicas entre nombres de propiedades y columnas físicas se gobiernan declarativamente mediante la Fluent API de EF Core (`.HasColumnName(...)`):
-* `SubscriptionPlan.PlanCode` $\longrightarrow$ columna `code` (definida en tabla `subscription_plans`).
-* `SubscriptionPlan.MaxFleetBoxes` $\longrightarrow$ columna `max_smartboxes` (definida en tabla `subscription_plans`).
-* `SubscriptionPlan.MonthlyCostUsd` $\longrightarrow$ columna `monthly_price_usd` (definida en tabla `subscription_plans`).
-* `HospitalInstitution.OfficialName` $\longrightarrow$ columna `name` (definida en tabla `hospital_institutions`).
-* `UserAccount.ProfessionalLicenseNumber` $\longrightarrow$ columna `medical_license_number` (definida en tabla `users`).
-* `TransportOrder.Priority` $\longrightarrow$ columna `clinical_priority` (definida en tabla `transport_orders`).
-* `CustodyTransfer.TransferredAt` $\longrightarrow$ columna `completed_at` (definida en tabla `custody_transfers`).
-* `DigitalAuditManifest.GeneratedAt` $\longrightarrow$ columna `sealed_at` (definida en tabla `digital_audit_manifests`).
-* `DigitalAuditManifest.CloudStorageUrl` $\longrightarrow$ columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
+* `SubscriptionPlan.PlanCode` → columna `code` (definida en tabla `subscription_plans`).
+* `SubscriptionPlan.MaxFleetBoxes` → columna `max_smartboxes` (definida en tabla `subscription_plans`).
+* `SubscriptionPlan.MonthlyCostUsd` → columna `monthly_price_usd` (definida en tabla `subscription_plans`).
+* `HospitalInstitution.OfficialName` → columna `name` (definida en tabla `hospital_institutions`).
+* `UserAccount.ProfessionalLicenseNumber` → columna `medical_license_number` (definida en tabla `users`).
+* `TransportOrder.Priority` → columna `clinical_priority` (definida en tabla `transport_orders`).
+* `CustodyTransfer.TransferredAt` → columna `completed_at` (definida en tabla `custody_transfers`).
+* `DigitalAuditManifest.GeneratedAt` → columna `sealed_at` (definida en tabla `digital_audit_manifests`).
+* `DigitalAuditManifest.CloudStorageUrl` → columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
 Esta separación formal preserva la expresividad del lenguaje ubicuo en el código fuente de dominio sin acoplarlo rígidamente a los identificadores físicos de almacenamiento.
 
 ---
