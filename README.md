@@ -617,126 +617,126 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 
 # 2.4. Big Picture EventStorming
 
-El equipo llevÃ³ a cabo una sesiÃ³n formal de **Big Picture EventStorming** con el objetivo de obtener una visiÃ³n holÃ­stica y compartida del dominio de negocio del **Contenedor MÃ©dico Inteligente (Smart Medical Container)** para el transporte asistencial de medicamentos termosensibles, hemoderivados, muestras biolÃ³gicas y Ã³rganos en Lima Metropolitana. Bajo los principios y prÃ¡cticas de *Domain-Driven Design* y la tÃ©cnica de *EventStorming* propuesta por Alberto Brandolini, la dinÃ¡mica integrÃ³ activamente la perspectiva de los dos segmentos objetivo del negocio: **Empresas de Transporte y Operadores LogÃ­sticos de Cadena de FrÃ­o** (conductores y paramÃ©dicos de ambulancia) y **Centros de Salud y Cadenas FarmacÃ©uticas** (coordinadores de despacho, farmacÃ©uticos y mÃ©dicos receptores), en conjunto con el equipo de ingenierÃ­a de software e IoT.
+El equipo llevó a cabo una sesión formal de **Big Picture EventStorming** con el objetivo de obtener una visión holística y compartida del dominio de negocio del **Contenedor Médico Inteligente (Smart Medical Container)** para el transporte asistencial de medicamentos termosensibles, hemoderivados, muestras biológicas y órganos en Lima Metropolitana. Bajo los principios y prácticas de *Domain-Driven Design* y la técnica de *EventStorming* propuesta por Alberto Brandolini, la dinámica integró activamente la perspectiva de los dos segmentos objetivo del negocio: **Empresas de Transporte y Operadores Logísticos de Cadena de Frío** (conductores y paramédicos de ambulancia) y **Centros de Salud y Cadenas Farmacéuticas** (coordinadores de despacho, farmacéuticos y médicos receptores), en conjunto con el equipo de ingeniería de software e IoT.
 
-Siguiendo los principios de modelado colaborativo de Brandolini, el Big Picture EventStorming no se diseÃ±Ã³ como un diagrama de flujo rÃ­gido de ingenierÃ­a ni como un BPMN con carriles estructurados, sino como un **lienzo colaborativo de notas adhesivas** en Miro donde el tiempo fluye de manera natural y orgÃ¡nica de **izquierda a derecha**. A lo largo de la sesiÃ³n, los participantes exploraron el ciclo de vida completo del transporte mÃ©dico urgente: desde la solicitud inicial del traslado hasta la recepciÃ³n conforme en el centro de salud receptor bajo estricta cadena de frÃ­o (2 Â°C a 8 Â°C segÃºn DIGEMID R.M. NÂ° 833-2015/MINSA) y custodia electrÃ³nica inmutable.
+Siguiendo los principios de modelado colaborativo de Brandolini, el Big Picture EventStorming no se diseñó como un diagrama de flujo rígido de ingeniería ni como un BPMN con carriles estructurados, sino como un **lienzo colaborativo de notas adhesivas** en Miro donde el tiempo fluye de manera natural y orgánica de **izquierda a derecha**. A lo largo de la sesión, los participantes exploraron el ciclo de vida completo del transporte médico urgente: desde la solicitud inicial del traslado hasta la recepción conforme en el centro de salud receptor bajo estricta cadena de frío (2 °C a 8 °C según DIGEMID R.M. N° 833-2015/MINSA) y custodia electrónica inmutable.
 
-El taller se desarrollÃ³ ejecutando rigurosamente los nueve (9) pasos estructurados del proceso canÃ³nico de Big Picture EventStorming documentado por Alberto Brandolini (*Step-by-Step Guide to Run Your Big Picture EventStorming*):
+El taller se desarrolló ejecutando rigurosamente los nueve (9) pasos estructurados del proceso canónico de Big Picture EventStorming documentado por Alberto Brandolini (*Step-by-Step Guide to Run Your Big Picture EventStorming*):
 
-1. **PreparaciÃ³n del Espacio y Materiales (*Preparing the Room*):** Se estructurÃ³ un lienzo infinito colaborativo en Miro, eliminando barreras jerÃ¡rquicas y configurando una superficie de modelado sin lÃ­mites de anchura, provista de la agenda visual de la sesiÃ³n y una paleta cromÃ¡tica estandarizada de notas adhesivas digitales.
-2. **DinÃ¡mica de ActivaciÃ³n (*Energizing the Audience*):** Se realizÃ³ una breve dinÃ¡mica de desinhibiciÃ³n y alineaciÃ³n para predisponer activamente al equipo multidisciplinario, articulando la visiÃ³n operativa de conductores y paramÃ©dicos de ambulancia (Segmento 1) con el criterio clÃ­nico de mÃ©dicos cirujanos, quÃ­micos farmacÃ©uticos y el equipo de ingenierÃ­a de software e IoT (Segmento 2).
-3. **PresentaciÃ³n del Alcance, Objetivos y Reglas (*Briefing and Presenting the Plan*):** El facilitador presentÃ³ el propÃ³sito central del modelado: la preservaciÃ³n inviolable de la cadena de frÃ­o (+2 Â°C a +8 Â°C bajo normativa DIGEMID R.M. NÂ° 833-2015) y la trazabilidad digital de Ã³rganos y hemoderivados frente a la congestiÃ³n vehicular de Lima Metropolitana, estableciendo las reglas de interacciÃ³n y respeto por el tiempo cronolÃ³gico.
-4. **GeneraciÃ³n CaÃ³tica de Eventos de Dominio (*Generating Domain Events*):** Fase divergente de modelado silencioso e individual. Cada participante escribiÃ³ y pegÃ³ de forma libre y masiva en notas adhesivas naranjas (`#FFA500`) todos los eventos relevantes del negocio expresados en tiempo verbal pasado (*Domain Events*), reflejando hitos significativos como `Pre-enfriamiento Peltier estabilizado`, `ExcursiÃ³n tÃ©rmica incipiente detectada` o `Muestra aceptada formalmente como viable`.
-5. **Ordenamiento CronolÃ³gico y DetecciÃ³n de Flujos Concurrentes (*Sorting Domain Events*):** Fase convergente de debate intenso. Los participantes organizaron cooperativamente las notas de izquierda a derecha en una lÃ­nea temporal estricta de extremo a extremo, alineando verticalmente los procesos que ocurren en paralelo (por ejemplo, el control tÃ©rmico autÃ³nomo Peltier ejecutÃ¡ndose concurrentemente mientras el vehÃ­culo avanza en el trÃ¡fico).
-6. **IdentificaciÃ³n de Actores y Sistemas Externos (*Adding Actors and External Systems*):** Se incorporaron los roles humanos responsables de gatillar o atender eventos mediante notas amarillas pequeÃ±as (Conductor de Ambulancia, ParamÃ©dico TEM, Coordinador de Despacho, Cirujano Receptor), asÃ­ como los sistemas externos interactuantes en notas azules (Firmware AutÃ³nomo ESP32 como nodo IoT Edge emisor, API de TrÃ¡fico TomTom, Pasarela SMS Twilio, Registro RENIPRESS / SUSALUD y Sistema HIS / QuirÃ³fano Hospitalario receptor).
-7. **NarraciÃ³n CronolÃ³gica Hacia Adelante (*Storytelling*):** Un facilitador y representantes de ambos segmentos narraron oralmente la historia completa del flujo de negocio de izquierda a derecha. Esta lectura validÃ³ la consistencia global del proceso, esclareciÃ³ supuestos implÃ­citos y permitiÃ³ identificar fricciones operativas y riesgos reales, seÃ±alizados de inmediato con notas magenta/rosa (*Hotspots*).
-8. **NarraciÃ³n Inversa y DetecciÃ³n de Brechas (*Reverse Storytelling*):** Se ejecutÃ³ una lectura en sentido inverso, comenzando desde el evento final (`Muestra aceptada formalmente como viable` / `Acta final de entrega firmada digitalmente`) y preguntando repetidamente: *Â¿QuÃ© condiciÃ³n previa tuvo que cumplirse para que ocurriera este hecho?* Este anÃ¡lisis retrospectivo descubriÃ³ eventos faltantes de bioseguridad, validaciones de pre-enfriamiento y protocolos de contingencia ante caÃ­das de la toma vehicular de 12V.
-9. **Cierre, Consenso y SÃ­ntesis de Oportunidades (*Closing and Synthesis*):** Se consolidÃ³ el entendimiento compartido del dominio, se extrajo el vocabulario fundamental para la construcciÃ³n del Lenguaje Ubicuo (SecciÃ³n 2.5) y se priorizaron en notas verdes las oportunidades de soluciÃ³n de software e IoT (tara automÃ¡tica con celda de carga HX711, algoritmo predictivo de desvÃ­os de ETA y acta digital inmutable con firma QR).
-
----
-
-![Figura 2.4 - Big Picture EventStorming: Fases de Origen, TrÃ¡nsito y Destino](assets/chapter-2/smart-medical-container-eventstorming.jpg)  
-*Nota: ElaboraciÃ³n propia en Miro segÃºn la tÃ©cnica de modelado colaborativo de Alberto Brandolini para el transporte asistencial de muestras mÃ©dicas y Ã³rganos en Lima Metropolitana.*
+1. **Preparación del Espacio y Materiales (*Preparing the Room*):** Se estructuró un lienzo infinito colaborativo en Miro, eliminando barreras jerárquicas y configurando una superficie de modelado sin límites de anchura, provista de la agenda visual de la sesión y una paleta cromática estandarizada de notas adhesivas digitales.
+2. **Dinámica de Activación (*Energizing the Audience*):** Se realizó una breve dinámica de desinhibición y alineación para predisponer activamente al equipo multidisciplinario, articulando la visión operativa de conductores y paramédicos de ambulancia (Segmento 1) con el criterio clínico de médicos cirujanos, químicos farmacéuticos y el equipo de ingeniería de software e IoT (Segmento 2).
+3. **Presentación del Alcance, Objetivos y Reglas (*Briefing and Presenting the Plan*):** El facilitador presentó el propósito central del modelado: la preservación inviolable de la cadena de frío (+2 °C a +8 °C bajo normativa DIGEMID R.M. N° 833-2015) y la trazabilidad digital de órganos y hemoderivados frente a la congestión vehicular de Lima Metropolitana, estableciendo las reglas de interacción y respeto por el tiempo cronológico.
+4. **Generación Caótica de Eventos de Dominio (*Generating Domain Events*):** Fase divergente de modelado silencioso e individual. Cada participante escribió y pegó de forma libre y masiva en notas adhesivas naranjas (`#FFA500`) todos los eventos relevantes del negocio expresados en tiempo verbal pasado (*Domain Events*), reflejando hitos significativos como `Pre-enfriamiento Peltier estabilizado`, `Excursión térmica incipiente detectada` o `Muestra aceptada formalmente como viable`.
+5. **Ordenamiento Cronológico y Detección de Flujos Concurrentes (*Sorting Domain Events*):** Fase convergente de debate intenso. Los participantes organizaron cooperativamente las notas de izquierda a derecha en una línea temporal estricta de extremo a extremo, alineando verticalmente los procesos que ocurren en paralelo (por ejemplo, el control térmico autónomo Peltier ejecutándose concurrentemente mientras el vehículo avanza en el tráfico).
+6. **Identificación de Actores y Sistemas Externos (*Adding Actors and External Systems*):** Se incorporaron los roles humanos responsables de gatillar o atender eventos mediante notas amarillas pequeñas (Conductor de Ambulancia, Paramédico TEM, Coordinador de Despacho, Cirujano Receptor), así como los sistemas externos interactuantes en notas azules (Firmware Autónomo ESP32 como nodo IoT Edge emisor, API de Tráfico TomTom, Pasarela SMS Twilio, Registro RENIPRESS / SUSALUD y Sistema HIS / Quirófano Hospitalario receptor).
+7. **Narración Cronológica Hacia Adelante (*Storytelling*):** Un facilitador y representantes de ambos segmentos narraron oralmente la historia completa del flujo de negocio de izquierda a derecha. Esta lectura validó la consistencia global del proceso, esclareció supuestos implícitos y permitió identificar fricciones operativas y riesgos reales, señalizados de inmediato con notas magenta/rosa (*Hotspots*).
+8. **Narración Inversa y Detección de Brechas (*Reverse Storytelling*):** Se ejecutó una lectura en sentido inverso, comenzando desde el evento final (`Muestra aceptada formalmente como viable` / `Acta final de entrega firmada digitalmente`) y preguntando repetidamente: *¿Qué condición previa tuvo que cumplirse para que ocurriera este hecho?* Este análisis retrospectivo descubrió eventos faltantes de bioseguridad, validaciones de pre-enfriamiento y protocolos de contingencia ante caídas de la toma vehicular de 12V.
+9. **Cierre, Consenso y Síntesis de Oportunidades (*Closing and Synthesis*):** Se consolidó el entendimiento compartido del dominio, se extrajo el vocabulario fundamental para la construcción del Lenguaje Ubicuo (Sección 2.5) y se priorizaron en notas verdes las oportunidades de solución de software e IoT (tara automática con celda de carga HX711, algoritmo predictivo de desvíos de ETA y acta digital inmutable con firma QR).
 
 ---
 
-### **2.4.1. AnÃ¡lisis del Dominio y Hallazgos de la SesiÃ³n**
+![Figura 2.4 - Big Picture EventStorming: Fases de Origen, Tránsito y Destino](assets/chapter-2/smart-medical-container-eventstorming.jpg)  
+*Nota: Elaboración propia en Miro según la técnica de modelado colaborativo de Alberto Brandolini para el transporte asistencial de muestras médicas y órganos en Lima Metropolitana.*
 
-La sesiÃ³n de Big Picture EventStorming permitiÃ³ al equipo comprender la dinÃ¡mica real del transporte mÃ©dico en Lima Metropolitana y articular las necesidades clÃ­nicas con la arquitectura del sistema:
+---
 
-#### 1. ExploraciÃ³n Desestructurada, LÃ­nea de Tiempo y Eventos Pivote (Pivotal Events)
-El mapeo de eventos evidenciÃ³ que el transporte asistencial es un proceso altamente concurrente y sensible al tiempo. Mientras el vehÃ­culo se desplaza por arterias viales congestionadas de Lima Metropolitana, el hardware del contenedor inteligente ejecuta en paralelo un lazo cerrado autÃ³nomo de control tÃ©rmico (manteniendo la carga entre +2.0 Â°C y +8.0 Â°C mediante celdas Peltier), registrando la estabilidad del peso y verificando el precinto de seguridad electromecÃ¡nico.
+### **2.4.1. Análisis del Dominio y Hallazgos de la Sesión**
 
-Siguiendo el enfoque canÃ³nico de modelado colaborativo concebido por Alberto Brandolini, la lÃ­nea de tiempo temporal se estructura a partir de tres **Eventos Pivote (*Pivotal Events*)** que demarcan formalmente los momentos crÃ­ticos de quiebre y transiciÃ³n de responsabilidad entre las tres macrofases del sistema:
-* **Pivotal Event 1 (Origen â†’ TrÃ¡nsito):** `Acta digital de salida generada y firmada digitalmente` junto con la `ConexiÃ³n del contenedor a la toma 12V DC`. Marca la transferencia legal de custodia desde el hospital donante o farmacia central hacia el equipo asistencial mÃ³vil, activando el rÃ©gimen de supervisiÃ³n telemÃ¡tica en ruta.
-* **Pivotal Event 2 (TrÃ¡nsito â†’ Destino):** `Geocerca de pre-arribo hospitalaria activada`. Disparo telemÃ¡tico automatizado al ingresar al radio de 2 km / 10 minutos del hospital receptor, habilitando la alerta temprana a la rampa de trauma shock y la preparaciÃ³n del equipo mÃ©dico o farmacÃ©utico receptor.
-* **Pivotal Event 3 (Destino â†’ Cierre ClÃ­nico):** `Muestra aceptada formalmente como viable`, `Acta final de entrega firmada digitalmente` y `Expediente PDF auditado exportado a DIGEMID`. Cierre definitivo de la cadena de custodia con generaciÃ³n del expediente digital sellado mediante hash criptogrÃ¡fico SHA-256 para auditorÃ­a sanitaria de DIGEMID.
+La sesión de Big Picture EventStorming permitió al equipo comprender la dinámica real del transporte médico en Lima Metropolitana y articular las necesidades clínicas con la arquitectura del sistema:
 
-#### 2. Matriz de Puntos CrÃ­ticos (Hotspots) y Oportunidades de SoluciÃ³n
+#### 1. Exploración Desestructurada, Línea de Tiempo y Eventos Pivote (Pivotal Events)
+El mapeo de eventos evidenció que el transporte asistencial es un proceso altamente concurrente y sensible al tiempo. Mientras el vehículo se desplaza por arterias viales congestionadas de Lima Metropolitana, el hardware del contenedor inteligente ejecuta en paralelo un lazo cerrado autónomo de control térmico (manteniendo la carga entre +2.0 °C y +8.0 °C mediante celdas Peltier), registrando la estabilidad del peso y verificando el precinto de seguridad electromecánico.
 
-La pizarra colaborativa desarrollada en Miro articula el flujo de izquierda a derecha en tres macrofases espaciales (**1. Origen y Despacho**, **2. TrÃ¡nsito y Monitoreo Asistencial**, **3. Destino, Custodia y Cierre ClÃ­nico**), integrando analÃ­ticamente sus seis (6) etapas operativas para brindar una granularidad tÃ©cnica precisa.
+Siguiendo el enfoque canónico de modelado colaborativo concebido por Alberto Brandolini, la línea de tiempo temporal se estructura a partir de tres **Eventos Pivote (*Pivotal Events*)** que demarcan formalmente los momentos críticos de quiebre y transición de responsabilidad entre las tres macrofases del sistema:
+* **Pivotal Event 1 (Origen → Tránsito):** `Acta digital de salida generada y firmada digitalmente` junto con la `Conexión del contenedor a la toma 12V DC`. Marca la transferencia legal de custodia desde el hospital donante o farmacia central hacia el equipo asistencial móvil, activando el régimen de supervisión telemática en ruta.
+* **Pivotal Event 2 (Tránsito → Destino):** `Geocerca de pre-arribo hospitalaria activada`. Disparo telemático automatizado al ingresar al radio de 2 km / 10 minutos del hospital receptor, habilitando la alerta temprana a la rampa de trauma shock y la preparación del equipo médico o farmacéutico receptor.
+* **Pivotal Event 3 (Destino → Cierre Clínico):** `Muestra aceptada formalmente como viable`, `Acta final de entrega firmada digitalmente` y `Expediente PDF auditado exportado a DIGEMID`. Cierre definitivo de la cadena de custodia con generación del expediente digital sellado mediante hash criptográfico SHA-256 para auditoría sanitaria de DIGEMID.
 
-La siguiente matriz sintetiza los problemas operativos reales identificados en la red hospitalaria de Lima y las soluciones de ingenierÃ­a de software e IoT implementadas:
+#### 2. Matriz de Puntos Críticos (Hotspots) y Oportunidades de Solución
+
+La pizarra colaborativa desarrollada en Miro articula el flujo de izquierda a derecha en tres macrofases espaciales (**1. Origen y Despacho**, **2. Tránsito y Monitoreo Asistencial**, **3. Destino, Custodia y Cierre Clínico**), integrando analíticamente sus seis (6) etapas operativas para brindar una granularidad técnica precisa.
+
+La siguiente matriz sintetiza los problemas operativos reales identificados en la red hospitalaria de Lima y las soluciones de ingeniería de software e IoT implementadas:
 
 <table border="1" cellpadding="6" cellspacing="0">
   <thead>
     <tr>
       <th>Fase Operativa</th>
-      <th>Punto CrÃ­tico / Hotspot (Problema Real en Lima)</th>
+      <th>Punto Crítico / Hotspot (Problema Real en Lima)</th>
       <th>Severidad</th>
-      <th>Oportunidad de SoluciÃ³n (Software / IoT)</th>
+      <th>Oportunidad de Solución (Software / IoT)</th>
       <th>Subdominio DDD</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Despacho</strong></td>
-      <td>AsignaciÃ³n de ambulancias sin visibilidad del estado de su toma de 12V ni del pre-enfriamiento del contenedor.</td>
+      <td>Asignación de ambulancias sin visibilidad del estado de su toma de 12V ni del pre-enfriamiento del contenedor.</td>
       <td>Alta</td>
-      <td><strong>Tablero IoT de Estado de Flota:</strong> SupervisiÃ³n en tiempo real de baterÃ­a, conexiÃ³n elÃ©ctrica y temperatura previa.</td>
+      <td><strong>Tablero IoT de Estado de Flota:</strong> Supervisión en tiempo real de batería, conexión eléctrica y temperatura previa.</td>
       <td><em>Medical Transport Planning & Dispatching</em></td>
     </tr>
     <tr>
       <td><strong>Carga y Custodia</strong></td>
-      <td>Riesgo de sustituciÃ³n de muestras o carga de paquetes no verificados en la rampa hospitalaria.</td>
-      <td>CrÃ­tica</td>
-      <td><strong>Tara AutomÃ¡tica con Celda HX711:</strong> Registro de masa inicial (&plusmn;5 g) y bloqueo automÃ¡tico del solenoide.</td>
+      <td>Riesgo de sustitución de muestras o carga de paquetes no verificados en la rampa hospitalaria.</td>
+      <td>Crítica</td>
+      <td><strong>Tara Automática con Celda HX711:</strong> Registro de masa inicial (&plusmn;5 g) y bloqueo automático del solenoide.</td>
       <td><em>Smart Container & Telemetry Monitoring</em></td>
     </tr>
     <tr>
       <td><strong>Carga y Custodia</strong></td>
       <td>Actas en papel autocopiativo mojadas, extraviadas o ilegibles sin respaldo probatorio.</td>
       <td>Media</td>
-      <td><strong>Acta Digital con Firma QR:</strong> Comprobante electrÃ³nico inalterable consultable en plataforma web.</td>
+      <td><strong>Acta Digital con Firma QR:</strong> Comprobante electrónico inalterable consultable en plataforma web.</td>
       <td><em>Chain of Custody & Traceability</em></td>
     </tr>
     <tr>
-      <td><strong>TrÃ¡nsito</strong></td>
-      <td><strong>CongestiÃ³n severa en Lima (TomTom: 34 min/10 km):</strong> Retrasos crÃ­ticos en Av. Javier Prado o VÃ­a Expresa.</td>
-      <td>CrÃ­tica</td>
-      <td><strong>Motor de ETA DinÃ¡mico:</strong> RecÃ¡lculo de tiempos con TomTom Traffic API cada 60s y alertas de demora.</td>
+      <td><strong>Tránsito</strong></td>
+      <td><strong>Congestión severa en Lima (TomTom: 34 min/10 km):</strong> Retrasos críticos en Av. Javier Prado o Vía Expresa.</td>
+      <td>Crítica</td>
+      <td><strong>Motor de ETA Dinámico:</strong> Recálculo de tiempos con TomTom Traffic API cada 60s y alertas de demora.</td>
       <td><em>Medical Transport Planning & Dispatching</em></td>
     </tr>
     <tr>
-      <td><strong>TrÃ¡nsito</strong></td>
-      <td><strong>Golpe de calor en cabina (hasta 38.5 &deg;C):</strong> Rompe la cadena de frÃ­o en cajas convencionales en &lt;45 min.</td>
-      <td>CatastrÃ³fica</td>
-      <td><strong>RefrigeraciÃ³n Activa Peltier + Alarma Dual:</strong> Control PID (2&ndash;8 &deg;C), alarma sonora local y push a mÃ©dicos.</td>
+      <td><strong>Tránsito</strong></td>
+      <td><strong>Golpe de calor en cabina (hasta 38.5 &deg;C):</strong> Rompe la cadena de frío en cajas convencionales en &lt;45 min.</td>
+      <td>Catastrófica</td>
+      <td><strong>Refrigeración Activa Peltier + Alarma Dual:</strong> Control PID (2&ndash;8 &deg;C), alarma sonora local y push a médicos.</td>
       <td><em>Critical Alerting & Incident Response</em></td>
     </tr>
     <tr>
-      <td><strong>TrÃ¡nsito</strong></td>
-      <td><strong>DesconexiÃ³n accidental de 12V:</strong> El enchufe del encendedor se zafa con baches o frenadas.</td>
+      <td><strong>Tránsito</strong></td>
+      <td><strong>Desconexión accidental de 12V:</strong> El enchufe del encendedor se zafa con baches o frenadas.</td>
       <td>Alta</td>
-      <td><strong>ConmutaciÃ³n AutomÃ¡tica a BaterÃ­a LiFePO4:</strong> Pack interno LiFePO4 (4h de autonomÃ­a) con aviso en cabina.</td>
+      <td><strong>Conmutación Automática a Batería LiFePO4:</strong> Pack interno LiFePO4 (4h de autonomía) con aviso en cabina.</td>
       <td><em>Smart Container & Telemetry Monitoring</em></td>
     </tr>
     <tr>
-      <td><strong>TrÃ¡nsito</strong></td>
-      <td><strong>PÃ©rdida de seÃ±al 4G en tÃºneles (LÃ­nea Amarilla / zanjas):</strong> Provoca vacÃ­os de datos durante el traslado.</td>
+      <td><strong>Tránsito</strong></td>
+      <td><strong>Pérdida de señal 4G en túneles (Línea Amarilla / zanjas):</strong> Provoca vacíos de datos durante el traslado.</td>
       <td>Alta</td>
-      <td><strong>BÃºfer Flash Offline en ESP32:</strong> Almacenamiento local de 5,000 muestras y sincronizaciÃ³n al reconectar.</td>
+      <td><strong>Búfer Flash Offline en ESP32:</strong> Almacenamiento local de 5,000 muestras y sincronización al reconectar.</td>
       <td><em>Smart Container & Telemetry Monitoring</em></td>
     </tr>
     <tr>
       <td><strong>Arribo</strong></td>
-      <td>QuirÃ³fano o personal de guardia no preparado al llegar la ambulancia por falta de preaviso.</td>
+      <td>Quirófano o personal de guardia no preparado al llegar la ambulancia por falta de preaviso.</td>
       <td>Alta</td>
-      <td><strong>Geocerca de Pre-Arribo (&le; 2 km / 10 min):</strong> NotificaciÃ³n automÃ¡tica al hospital receptor para alistar recepciÃ³n.</td>
+      <td><strong>Geocerca de Pre-Arribo (&le; 2 km / 10 min):</strong> Notificación automática al hospital receptor para alistar recepción.</td>
       <td><em>Medical Transport Planning & Dispatching</em></td>
     </tr>
     <tr>
       <td><strong>Entrega</strong></td>
-      <td>Apertura indebida en pasillos o entrega a personal no facultado sin validaciÃ³n de identidad.</td>
-      <td>CrÃ­tica</td>
-      <td><strong>Doble Factor de Desbloqueo:</strong> UbicaciÃ³n obligatoria en geocerca hospitalaria + cÃ³digo OTP temporal.</td>
+      <td>Apertura indebida en pasillos o entrega a personal no facultado sin validación de identidad.</td>
+      <td>Crítica</td>
+      <td><strong>Doble Factor de Desbloqueo:</strong> Ubicación obligatoria en geocerca hospitalaria + código OTP temporal.</td>
       <td><em>Chain of Custody & Traceability</em></td>
     </tr>
     <tr>
       <td><strong>Cierre</strong></td>
-      <td>Rechazo de lotes o litigios por falta de auditorÃ­a continua exigida por DIGEMID (R.M. 833-2015).</td>
+      <td>Rechazo de lotes o litigios por falta de auditoría continua exigida por DIGEMID (R.M. 833-2015).</td>
       <td>Media</td>
-      <td><strong>Expediente Digital con Hash SHA-256:</strong> Reporte PDF descargable con telemetrÃ­a completa y firmas.</td>
+      <td><strong>Expediente Digital con Hash SHA-256:</strong> Reporte PDF descargable con telemetría completa y firmas.</td>
       <td><em>Chain of Custody & Traceability</em></td>
     </tr>
   </tbody>
@@ -744,16 +744,16 @@ La siguiente matriz sintetiza los problemas operativos reales identificados en l
 
 ---
 
-#### 3. ValidaciÃ³n por Storytelling y Reverse Storytelling
-La validaciÃ³n del recorrido de extremo a extremo confirmÃ³ la coherencia del ciclo asistencial entre ambos segmentos. Mediante la narrativa directa se verificÃ³ la transiciÃ³n sin fricciones de custodia entre el mÃ©dico emisor, el paramÃ©dico y el cirujano receptor. Complementariamente, el anÃ¡lisis retrospectivo desde el hito `Muestra aceptada formalmente como viable` (`Acta final de entrega firmada digitalmente`) comprobÃ³ que ninguna entrega puede consumarse sin la confluencia de tres condiciones inviolables: desbloqueo por OTP dentro de la geocerca hospitalaria, preservaciÃ³n tÃ©rmica continua (2 Â°C a 8 Â°C) garantizada por el respaldo LiFePO4, y descarga Ã­ntegra de la telemetrÃ­a resguardada en el bÃºfer flash local tras cruzar tÃºneles.
+#### 3. Validación por Storytelling y Reverse Storytelling
+La validación del recorrido de extremo a extremo confirmó la coherencia del ciclo asistencial entre ambos segmentos. Mediante la narrativa directa se verificó la transición sin fricciones de custodia entre el médico emisor, el paramédico y el cirujano receptor. Complementariamente, el análisis retrospectivo desde el hito `Muestra aceptada formalmente como viable` (`Acta final de entrega firmada digitalmente`) comprobó que ninguna entrega puede consumarse sin la confluencia de tres condiciones inviolables: desbloqueo por OTP dentro de la geocerca hospitalaria, preservación térmica continua (2 °C a 8 °C) garantizada por el respaldo LiFePO4, y descarga íntegra de la telemetría resguardada en el búfer flash local tras cruzar túneles.
 
-#### 4. DelimitaciÃ³n Preliminar de Contextos Acotados (Bounded Contexts)
-La sesiÃ³n exploratoria preliminar del Big Picture permitiÃ³ delimitar cinco (5) macro-contextos de negocio, los cuales, durante la fase de descomposiciÃ³n tÃ¡ctica de Design-Level EventStorming (CapÃ­tulo 4.6.1), evolucionan naturalmente hacia seis (6) Bounded Contexts al independizar la gestiÃ³n de suscripciones comerciales y aprovisionamiento de flota (*Subscription & Fleet Provisioning*) del nÃºcleo de autenticaciÃ³n y organizaciones (*IAM*):
-1. **Medical Transport Planning & Dispatching:** GestiÃ³n de solicitudes de traslado, asignaciÃ³n de unidades mÃ³viles/tripulaciÃ³n y cÃ¡lculo dinÃ¡mico de rutas anti-trÃ¡fico.
-2. **Smart Container & Telemetry Monitoring:** IngestiÃ³n de telemetrÃ­a continua (temperatura, peso neto HX711, baterÃ­a Li-Ion) y control electromecÃ¡nico de tapa.
-3. **Critical Alerting & Incident Response:** DetecciÃ³n en tiempo real de excursiones tÃ©rmicas, disparador de alarmas acÃºsticas en cabina y notificaciÃ³n de contingencias.
-4. **Chain of Custody & Traceability:** VerificaciÃ³n de token OTP en geocerca, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
-5. **Identity, Access & Subscriptions (IAM):** GestiÃ³n de instituciones hospitalarias, planes SaaS B2B, autenticaciÃ³n JWT basada en roles y trazabilidad de licencias mÃ©dicas.
+#### 4. Delimitación Preliminar de Contextos Acotados (Bounded Contexts)
+La sesión exploratoria preliminar del Big Picture permitió delimitar cinco (5) macro-contextos de negocio, los cuales, durante la fase de descomposición táctica de Design-Level EventStorming (Capítulo 4.6.1), evolucionan naturalmente hacia seis (6) Bounded Contexts al independizar la gestión de suscripciones comerciales y aprovisionamiento de flota (*Subscription & Fleet Provisioning*) del núcleo de autenticación y organizaciones (*IAM*):
+1. **Medical Transport Planning & Dispatching:** Gestión de solicitudes de traslado, asignación de unidades móviles/tripulación y cálculo dinámico de rutas anti-tráfico.
+2. **Smart Container & Telemetry Monitoring:** Ingestión de telemetría continua (temperatura, peso neto HX711, batería Li-Ion) y control electromecánico de tapa.
+3. **Critical Alerting & Incident Response:** Detección en tiempo real de excursiones térmicas, disparador de alarmas acústicas en cabina y notificación de contingencias.
+4. **Chain of Custody & Traceability:** Verificación de token OTP en geocerca, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
+5. **Identity, Access & Subscriptions (IAM):** Gestión de instituciones hospitalarias, planes SaaS B2B, autenticación JWT basada en roles y trazabilidad de licencias médicas.
 
 
 
@@ -761,43 +761,43 @@ La sesiÃ³n exploratoria preliminar del Big Picture permitiÃ³ delimitar cinco
 
 # 2.5. Ubiquitous Language
 
-En esta secciÃ³n se establece el glosario formal de tÃ©rminos y conceptos del dominio del negocio (*Smart Medical Container*), garantizando una comunicaciÃ³n unÃ­voca, rigurosa y libre de ambigÃ¼edades entre los dos segmentos clave del negocio (las **empresas de transporte y operadores logÃ­sticos de cadena de frÃ­o**, y los **centros de salud y cadenas farmacÃ©uticas** receptoras), las entidades reguladoras peruanas (MINSA, DIGEMID, DIGDOT) y el equipo de desarrollo de software.
+En esta sección se establece el glosario formal de términos y conceptos del dominio del negocio (*Smart Medical Container*), garantizando una comunicación unívoca, rigurosa y libre de ambigüedades entre los dos segmentos clave del negocio (las **empresas de transporte y operadores logísticos de cadena de frío**, y los **centros de salud y cadenas farmacéuticas** receptoras), las entidades reguladoras peruanas (MINSA, DIGEMID, DIGDOT) y el equipo de desarrollo de software.
 
-Conforme a las directrices fundamentales de *Domain-Driven Design* (Eric Evans, Martin Fowler), todos los tÃ©rminos se presentan en idioma inglÃ©s con su equivalente formal en espaÃ±ol entre parÃ©ntesis. Cada definiciÃ³n ha sido redactada rigurosamente desde la perspectiva clÃ­nica, operativa y legal del negocio asistencial en Lima Metropolitana, asegurando que el vocabulario permanezca libre de tecnicismos de implementaciÃ³n de software (tales como tablas relacionales, llaves forÃ¡neas, APIs, endpoints o controladores).
+Conforme a las directrices fundamentales de *Domain-Driven Design* (Eric Evans, Martin Fowler), todos los términos se presentan en idioma inglés con su equivalente formal en español entre paréntesis. Cada definición ha sido redactada rigurosamente desde la perspectiva clínica, operativa y legal del negocio asistencial en Lima Metropolitana, asegurando que el vocabulario permanezca libre de tecnicismos de implementación de software (tales como tablas relacionales, llaves foráneas, APIs, endpoints o controladores).
 
-Cada uno de los 29 tÃ©rminos canÃ³nicos se encuentra formalmente circunscrito a su correspondiente *Bounded Context*, garantizando que cada concepto posea una semÃ¡ntica unÃ­voca y bien delimitada dentro de las fronteras transaccionales del dominio. Cabe precisar que la estructuraciÃ³n en cinco (5) Bounded Contexts dentro de este glosario refleja los macro-contextos delimitados durante la fase exploratoria de requisitos del Big Picture (CapÃ­tulo 2.4), los cuales evolucionan armÃ³nicamente hacia seis (6) Bounded Contexts durante la descomposiciÃ³n de diseÃ±o tÃ¡ctico (CapÃ­tulo 4.6.1) al independizarse modularmente el aprovisionamiento de flota y suscripciones B2B. A continuaciÃ³n, se presenta la tabla consolidada en orden alfabÃ©tico estricto (A-Z) como Ã­ndice lexicogrÃ¡fico de referencia rÃ¡pida, seguida del desglose analÃ­tico detallado por cada subdominio:
+Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a su correspondiente *Bounded Context*, garantizando que cada concepto posea una semántica unívoca y bien delimitada dentro de las fronteras transaccionales del dominio. Cabe precisar que la estructuración en cinco (5) Bounded Contexts dentro de este glosario refleja los macro-contextos delimitados durante la fase exploratoria de requisitos del Big Picture (Capítulo 2.4), los cuales evolucionan armónicamente hacia seis (6) Bounded Contexts durante la descomposición de diseño táctico (Capítulo 4.6.1) al independizarse modularmente el aprovisionamiento de flota y suscripciones B2B. A continuación, se presenta la tabla consolidada en orden alfabético estricto (A-Z) como índice lexicográfico de referencia rápida, seguida del desglose analítico detallado por cada subdominio:
 
-| # | Ubiquitous Term (English / EspaÃ±ol) | Bounded Context Asociado | Tipo de Artefacto DDD |
+| # | Ubiquitous Term (English / Español) | Bounded Context Asociado | Tipo de Artefacto DDD |
 |:---:|:---|:---|:---|
-| 1 | **Acceptable Temperature Range (Rango TÃ©rmico Aceptable)** | Medical Transport Planning & Dispatching | Value Object |
-| 2 | **Audit Trail & Digital Manifest (Rastro de AuditorÃ­a y Manifiesto Digital)** | Chain of Custody & Traceability | Aggregate Root |
-| 3 | **Automated Maintenance and Sensor Calibration (Mantenimiento y CalibraciÃ³n Automatizada)** | Smart Container & Telemetry Monitoring | Domain Policy |
+| 1 | **Acceptable Temperature Range (Rango Térmico Aceptable)** | Medical Transport Planning & Dispatching | Value Object |
+| 2 | **Audit Trail & Digital Manifest (Rastro de Auditoría y Manifiesto Digital)** | Chain of Custody & Traceability | Aggregate Root |
+| 3 | **Automated Maintenance and Sensor Calibration (Mantenimiento y Calibración Automatizada)** | Smart Container & Telemetry Monitoring | Domain Policy |
 | 4 | **Chain of Custody (Cadena de Custodia Sanitaria)** | Chain of Custody & Traceability | Core Domain / Aggregate Root |
-| 5 | **Cold Chain (Cadena de FrÃ­o)** | Smart Container & Telemetry Monitoring | Domain Policy |
-| 6 | **Cold Ischemia Time (Tiempo de Isquemia FrÃ­a)** | Medical Transport Planning & Dispatching | Value Object |
-| 7 | **Cold-Chain Deviation Report (Informe de DesviaciÃ³n de Cadena de FrÃ­o)** | Critical Alerting & Incident Response | Read Model / Domain Report |
-| 8 | **Container Autonomy and Telemetry (TelemetrÃ­a y AutonomÃ­a del Contenedor)** | Smart Container & Telemetry Monitoring | Entity / Value Object |
-| 9 | **Container Lid Status & Tamper-Evident Lock (Estado de Tapa y Bloqueo ElectromecÃ¡nico de Custodia)** | Smart Container & Telemetry Monitoring | Entity |
-| 10 | **Critical Operational Alert & Acknowledgment (Alerta Operativa CrÃ­tica y Acuse de Recibo)** | Critical Alerting & Incident Response | Aggregate Root / Entity |
+| 5 | **Cold Chain (Cadena de Frío)** | Smart Container & Telemetry Monitoring | Domain Policy |
+| 6 | **Cold Ischemia Time (Tiempo de Isquemia Fría)** | Medical Transport Planning & Dispatching | Value Object |
+| 7 | **Cold-Chain Deviation Report (Informe de Desviación de Cadena de Frío)** | Critical Alerting & Incident Response | Read Model / Domain Report |
+| 8 | **Container Autonomy and Telemetry (Telemetría y Autonomía del Contenedor)** | Smart Container & Telemetry Monitoring | Entity / Value Object |
+| 9 | **Container Lid Status & Tamper-Evident Lock (Estado de Tapa y Bloqueo Electromecánico de Custodia)** | Smart Container & Telemetry Monitoring | Entity |
+| 10 | **Critical Operational Alert & Acknowledgment (Alerta Operativa Crítica y Acuse de Recibo)** | Critical Alerting & Incident Response | Aggregate Root / Entity |
 | 11 | **Custody Handover Act (Acta de Entrega y Trazabilidad de Custodia)** | Chain of Custody & Traceability | Aggregate Root |
-| 12 | **Dynamic Route ETA (Tiempo Estimado de Llegada DinÃ¡mico)** | Medical Transport Planning & Dispatching | Value Object |
-| 13 | **Emergency Medical Crew (TripulaciÃ³n Asistencial y ParamÃ©dica)** | Medical Transport Planning & Dispatching | Entity |
-| 14 | **Fleet Container Provisioning (Aprovisionamiento y VinculaciÃ³n de Flota)** | Identity, Access & Subscriptions (IAM) | Domain Policy / Entity |
-| 15 | **Healthcare & Pharmaceutical Client (Centro de Salud y Cadena FarmacÃ©utica)** | Identity, Access & Subscriptions (IAM) | Aggregate Root |
+| 12 | **Dynamic Route ETA (Tiempo Estimado de Llegada Dinámico)** | Medical Transport Planning & Dispatching | Value Object |
+| 13 | **Emergency Medical Crew (Tripulación Asistencial y Paramédica)** | Medical Transport Planning & Dispatching | Entity |
+| 14 | **Fleet Container Provisioning (Aprovisionamiento y Vinculación de Flota)** | Identity, Access & Subscriptions (IAM) | Domain Policy / Entity |
+| 15 | **Healthcare & Pharmaceutical Client (Centro de Salud y Cadena Farmacéutica)** | Identity, Access & Subscriptions (IAM) | Aggregate Root |
 | 16 | **Hospital Geofence (Geocerca Hospitalaria)** | Identity, Access & Subscriptions (IAM) | Value Object |
 | 17 | **Hospital Pre-Arrival Notice (Aviso de Pre-Arribo Hospitalario)** | Critical Alerting & Incident Response | Domain Event |
-| 18 | **Logistics Transport Unit (Unidad de Transporte y Ambulancia LogÃ­stica)** | Medical Transport Planning & Dispatching | Entity |
-| 19 | **Medical and Biological Payload (Carga MÃ©dica y BiolÃ³gica)** | Medical Transport Planning & Dispatching | Value Object |
+| 18 | **Logistics Transport Unit (Unidad de Transporte y Ambulancia Logística)** | Medical Transport Planning & Dispatching | Entity |
+| 19 | **Medical and Biological Payload (Carga Médica y Biológica)** | Medical Transport Planning & Dispatching | Value Object |
 | 20 | **One-Time Password / Unlock Token (Clave OTP / Token de Desbloqueo Temporal)** | Chain of Custody & Traceability | Value Object |
 | 21 | **Procurement & Dispatch Coordinator (Coordinador de Procura y Despacho Asistencial)** | Medical Transport Planning & Dispatching | Entity |
-| 22 | **Receiving Medical Custodian (Custodio MÃ©dico Receptor)** | Chain of Custody & Traceability | Value Object |
-| 23 | **SaaS Subscription Plan (Plan de SuscripciÃ³n SaaS B2B)** | Identity, Access & Subscriptions (IAM) | Aggregate Root |
-| 24 | **Smart Medical Container (Contenedor MÃ©dico Inteligente)** | Smart Container & Telemetry Monitoring | Aggregate Root |
+| 22 | **Receiving Medical Custodian (Custodio Médico Receptor)** | Chain of Custody & Traceability | Value Object |
+| 23 | **SaaS Subscription Plan (Plan de Suscripción SaaS B2B)** | Identity, Access & Subscriptions (IAM) | Aggregate Root |
+| 24 | **Smart Medical Container (Contenedor Médico Inteligente)** | Smart Container & Telemetry Monitoring | Aggregate Root |
 | 25 | **Tare Weight & Net Weight (Peso Tara y Peso Neto)** | Smart Container & Telemetry Monitoring | Value Object |
-| 26 | **Thermal Excursion (ExcursiÃ³n TÃ©rmica)** | Critical Alerting & Incident Response | Domain Event / Aggregate Root |
-| 27 | **Transport Mission / Emergency Transport Order (MisiÃ³n de Transporte Asistido / Orden de Traslado de Emergencia)** | Medical Transport Planning & Dispatching | Aggregate Root |
-| 28 | **Vehicle Telematics and Auxiliary Power (TelemÃ¡tica Vehicular y AlimentaciÃ³n Auxiliar)** | Smart Container & Telemetry Monitoring | Value Object / Domain Event |
-| 29 | **Weight-Based Medical Stock (Stock MÃ©dico Ponderal)** | Smart Container & Telemetry Monitoring | Value Object |
+| 26 | **Thermal Excursion (Excursión Térmica)** | Critical Alerting & Incident Response | Domain Event / Aggregate Root |
+| 27 | **Transport Mission / Emergency Transport Order (Misión de Transporte Asistido / Orden de Traslado de Emergencia)** | Medical Transport Planning & Dispatching | Aggregate Root |
+| 28 | **Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)** | Smart Container & Telemetry Monitoring | Value Object / Domain Event |
+| 29 | **Weight-Based Medical Stock (Stock Médico Ponderal)** | Smart Container & Telemetry Monitoring | Value Object |
 
 ---
 
@@ -813,23 +813,23 @@ Cada uno de los 29 tÃ©rminos canÃ³nicos se encuentra formalmente circunscrit
   </thead>
   <tbody>
     <tr>
-      <td><strong>Healthcare &amp; Pharmaceutical Client (Centro de Salud y Cadena FarmacÃ©utica)</strong></td>
-      <td>Entidad pÃºblica o privada del sector salud o farmacÃ©utico (hospital nacional, clÃ­nica privada, instituto especializado, laboratorio clÃ­nico o cadena farmacÃ©utica) facultada legalmente para actuar como centro emisor o receptor de insumos mÃ©dicos crÃ­ticos, medicamentos termosensibles, hemoderivados u Ã³rganos bajo estricta cadena de frÃ­o.</td>
+      <td><strong>Healthcare &amp; Pharmaceutical Client (Centro de Salud y Cadena Farmacéutica)</strong></td>
+      <td>Entidad pública o privada del sector salud o farmacéutico (hospital nacional, clínica privada, instituto especializado, laboratorio clínico o cadena farmacéutica) facultada legalmente para actuar como centro emisor o receptor de insumos médicos críticos, medicamentos termosensibles, hemoderivados u órganos bajo estricta cadena de frío.</td>
       <td><strong>Aggregate Root:</strong> <code>HospitalInstitution</code><br><em>Bounded Context:</em> Identity, Access &amp; Subscriptions (IAM)</td>
     </tr>
     <tr>
       <td><strong>Hospital Geofence (Geocerca Hospitalaria)</strong></td>
-      <td>PerÃ­metro geogrÃ¡fico virtual delimitado alrededor de la instituciÃ³n de salud receptora (tÃ­picamente con un radio de 2 km / 10 min), cuyo traspaso por la ambulancia activa automÃ¡ticamente los protocolos de pre-arribo y habilita la autorizaciÃ³n del desbloqueo digital.</td>
+      <td>Perímetro geográfico virtual delimitado alrededor de la institución de salud receptora (típicamente con un radio de 2 km / 10 min), cuyo traspaso por la ambulancia activa automáticamente los protocolos de pre-arribo y habilita la autorización del desbloqueo digital.</td>
       <td><strong>Value Object:</strong> <code>GeoFence</code> en <code>HospitalInstitution</code><br><em>Bounded Context:</em> Identity, Access &amp; Subscriptions (IAM)</td>
     </tr>
     <tr>
-      <td><strong>SaaS Subscription Plan (Plan de SuscripciÃ³n SaaS B2B)</strong></td>
-      <td>Acuerdo comercial formal y recurrente entre la plataforma Medical SMARTBOX y la instituciÃ³n de salud o empresa de ambulancias, que establece la cuota mÃ¡xima de contenedores mÃ©dicos autorizados en flota (Small Box de 5L vs. Standard Box de 20L), niveles de servicio de soporte y acceso multi-inquilino al portal de trazabilidad.</td>
+      <td><strong>SaaS Subscription Plan (Plan de Suscripción SaaS B2B)</strong></td>
+      <td>Acuerdo comercial formal y recurrente entre la plataforma Medical SMARTBOX y la institución de salud o empresa de ambulancias, que establece la cuota máxima de contenedores médicos autorizados en flota (Small Box de 5L vs. Standard Box de 20L), niveles de servicio de soporte y acceso multi-inquilino al portal de trazabilidad.</td>
       <td><strong>Aggregate Root:</strong> <code>SubscriptionPlan</code><br><em>Bounded Context:</em> Identity, Access &amp; Subscriptions (IAM)</td>
     </tr>
     <tr>
-      <td><strong>Fleet Container Provisioning (Aprovisionamiento y VinculaciÃ³n de Flota)</strong></td>
-      <td>Proceso tÃ©cnico y administrativo mediante el cual se activa, calibra y asocia un Contenedor MÃ©dico Inteligente a la flota de una instituciÃ³n acreditada, vinculando su nÃºmero de serie de fÃ¡brica a los lÃ­mites de membresÃ­a contratados.</td>
+      <td><strong>Fleet Container Provisioning (Aprovisionamiento y Vinculación de Flota)</strong></td>
+      <td>Proceso técnico y administrativo mediante el cual se activa, calibra y asocia un Contenedor Médico Inteligente a la flota de una institución acreditada, vinculando su número de serie de fábrica a los límites de membresía contratados.</td>
       <td><strong>Domain Policy / Entity:</strong> <code>ContainerProvisioning</code> en <code>SmartContainer</code><br><em>Bounded Context:</em> Identity, Access &amp; Subscriptions (IAM)</td>
     </tr>
   </tbody>
@@ -849,43 +849,43 @@ Cada uno de los 29 tÃ©rminos canÃ³nicos se encuentra formalmente circunscrit
   </thead>
   <tbody>
     <tr>
-      <td><strong>Acceptable Temperature Range (Rango TÃ©rmico Aceptable)</strong></td>
-      <td>Intervalo estricto de temperatura de preservaciÃ³n bioambiental fijado por las Buenas PrÃ¡cticas de Almacenamiento y Transporte de DIGEMID (+2.0 Â°C a +8.0 Â°C para medicamentos biolÃ³gicos, vacunas y hemoderivados; y +2.0 Â°C a +4.0 Â°C para Ã³rganos de donante cadavÃ©rico), dentro del cual se garantiza la estabilidad farmacolÃ³gica y viabilidad tisular de la carga.</td>
+      <td><strong>Acceptable Temperature Range (Rango Térmico Aceptable)</strong></td>
+      <td>Intervalo estricto de temperatura de preservación bioambiental fijado por las Buenas Prácticas de Almacenamiento y Transporte de DIGEMID (+2.0 °C a +8.0 °C para medicamentos biológicos, vacunas y hemoderivados; y +2.0 °C a +4.0 °C para órganos de donante cadavérico), dentro del cual se garantiza la estabilidad farmacológica y viabilidad tisular de la carga.</td>
       <td><strong>Value Object:</strong> <code>TemperatureRange</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
     </tr>
     <tr>
-      <td><strong>Cold Ischemia Time (Tiempo de Isquemia FrÃ­a)</strong></td>
-      <td>Intervalo de tiempo fisiolÃ³gico mÃ¡ximo que un Ã³rgano para trasplante puede permanecer sin irrigaciÃ³n sanguÃ­nea en preservaciÃ³n hipotÃ©rmica (desde el clampado aÃ³rtico en el hospital donante hasta su revascularizaciÃ³n en quirÃ³fano) antes de sufrir necrosis tisular irreversible, gobernado por la Directiva Sanitaria NÂ° 152/DIGDOT.</td>
+      <td><strong>Cold Ischemia Time (Tiempo de Isquemia Fría)</strong></td>
+      <td>Intervalo de tiempo fisiológico máximo que un órgano para trasplante puede permanecer sin irrigación sanguínea en preservación hipotérmica (desde el clampado aórtico en el hospital donante hasta su revascularización en quirófano) antes de sufrir necrosis tisular irreversible, gobernado por la Directiva Sanitaria N° 152/DIGDOT.</td>
       <td><strong>Value Object:</strong> <code>IschemiaTimeLimit</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
     </tr>
     <tr>
-      <td><strong>Dynamic Route ETA (Tiempo Estimado de Llegada DinÃ¡mico)</strong></td>
-      <td>CÃ¡lculo predictivo continuo de la duraciÃ³n remanente y la hora exacta de arribo de la ambulancia al hospital de destino, ajustado dinÃ¡micamente segÃºn las variaciones del flujo vehicular, congestiÃ³n e incidentes de trÃ¡nsito en los corredores hospitalarios de Lima Metropolitana.</td>
+      <td><strong>Dynamic Route ETA (Tiempo Estimado de Llegada Dinámico)</strong></td>
+      <td>Cálculo predictivo continuo de la duración remanente y la hora exacta de arribo de la ambulancia al hospital de destino, ajustado dinámicamente según las variaciones del flujo vehicular, congestión e incidentes de tránsito en los corredores hospitalarios de Lima Metropolitana.</td>
       <td><strong>Value Object:</strong> <code>RouteProgress</code> en la Entidad <code>TransportRoute</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
     </tr>
     <tr>
-      <td><strong>Emergency Medical Crew (TripulaciÃ³n Asistencial y ParamÃ©dica)</strong></td>
-      <td>Personal asistencial calificado (paramÃ©dicos, enfermeros o conductores de emergencias mÃ©dicas) encargado de la operaciÃ³n en ruta, conexiÃ³n del contenedor a la toma 12V del vehÃ­culo asistencial y custodia fÃ­sica directa durante el traslado de urgencia.</td>
+      <td><strong>Emergency Medical Crew (Tripulación Asistencial y Paramédica)</strong></td>
+      <td>Personal asistencial calificado (paramédicos, enfermeros o conductores de emergencias médicas) encargado de la operación en ruta, conexión del contenedor a la toma 12V del vehículo asistencial y custodia física directa durante el traslado de urgencia.</td>
       <td><strong>Entity:</strong> <code>CrewMember</code> en <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
     </tr>
     <tr>
-      <td><strong>Logistics Transport Unit (Unidad de Transporte y Ambulancia LogÃ­stica)</strong></td>
-      <td>VehÃ­culo terrestre de transporte especializado (ambulancia asistencial Tipo II/III o furgÃ³n logÃ­stico climatizado) operado por empresas de transporte y operadores logÃ­sticos de cadena de frÃ­o, equipado con soporte elÃ©ctrico continuo de 12V en cabina y sistema telemÃ¡tico de navegaciÃ³n para el Contenedor MÃ©dico Inteligente.</td>
+      <td><strong>Logistics Transport Unit (Unidad de Transporte y Ambulancia Logística)</strong></td>
+      <td>Vehículo terrestre de transporte especializado (ambulancia asistencial Tipo II/III o furgón logístico climatizado) operado por empresas de transporte y operadores logísticos de cadena de frío, equipado con soporte eléctrico continuo de 12V en cabina y sistema telemático de navegación para el Contenedor Médico Inteligente.</td>
       <td><strong>Entity:</strong> <code>VehicleBinding</code> asociada al Agregado <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
     </tr>
     <tr>
-      <td><strong>Medical and Biological Payload (Carga MÃ©dica y BiolÃ³gica)</strong></td>
-      <td>Conjunto de insumos terapÃ©uticos y biolÃ³gicos altamente termosensibles y crÃ­ticos trasladados en la unidad de transporte asistido, que comprende Ã³rganos sÃ³lidos para trasplante (corazÃ³n, riÃ±Ã³n, hÃ­gado), tejidos humanos, componentes sanguÃ­neos (paquetes globulares, plasma), vacunas e inmunobiolÃ³gicos, y medicamentos de alto costo sujetos a rigurosos lÃ­mites de supervivencia biolÃ³gica.</td>
+      <td><strong>Medical and Biological Payload (Carga Médica y Biológica)</strong></td>
+      <td>Conjunto de insumos terapéuticos y biológicos altamente termosensibles y críticos trasladados en la unidad de transporte asistido, que comprende órganos sólidos para trasplante (corazón, riñón, hígado), tejidos humanos, componentes sanguíneos (paquetes globulares, plasma), vacunas e inmunobiológicos, y medicamentos de alto costo sujetos a rigurosos límites de supervivencia biológica.</td>
       <td><strong>Value Object:</strong> <code>BiologicalPayload</code> encapsulado en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
     </tr>
     <tr>
       <td><strong>Procurement &amp; Dispatch Coordinator (Coordinador de Procura y Despacho Asistencial)</strong></td>
-      <td>Profesional asistencial o logÃ­stico (adscrito a DIGDOT, MINSA o a la central de despacho del operador de transporte) facultado para autorizar la misiÃ³n de traslado, evaluar la disponibilidad de unidades mÃ³viles climatizadas y emitir la orden formal de transporte de Ã³rganos o hemoderivados.</td>
+      <td>Profesional asistencial o logístico (adscrito a DIGDOT, MINSA o a la central de despacho del operador de transporte) facultado para autorizar la misión de traslado, evaluar la disponibilidad de unidades móviles climatizadas y emitir la orden formal de transporte de órganos o hemoderivados.</td>
       <td><strong>Entity:</strong> <code>DispatchCoordinator</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
     </tr>
     <tr>
-      <td><strong>Transport Mission / Emergency Transport Order (MisiÃ³n de Transporte Asistido / Orden de Traslado de Emergencia)</strong></td>
-      <td>OperaciÃ³n asistencial protocolizada de traslado mÃ©dico entre un centro de salud o almacÃ©n farmacÃ©utico de origen y una instituciÃ³n de destino, gobernada por una ventana temporal crÃ­tica, una tripulaciÃ³n tÃ©cnica asignada y directivas estrictas de conservaciÃ³n bioambiental.</td>
+      <td><strong>Transport Mission / Emergency Transport Order (Misión de Transporte Asistido / Orden de Traslado de Emergencia)</strong></td>
+      <td>Operación asistencial protocolizada de traslado médico entre un centro de salud o almacén farmacéutico de origen y una institución de destino, gobernada por una ventana temporal crítica, una tripulación técnica asignada y directivas estrictas de conservación bioambiental.</td>
       <td><strong>Aggregate Root:</strong> <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
     </tr>
   </tbody>
@@ -905,43 +905,43 @@ Cada uno de los 29 tÃ©rminos canÃ³nicos se encuentra formalmente circunscrit
   </thead>
   <tbody>
     <tr>
-      <td><strong>Automated Maintenance and Sensor Calibration (Mantenimiento y CalibraciÃ³n Automatizada)</strong></td>
-      <td>Protocolo de diagnÃ³stico predictivo y continuo ejecutado de forma autÃ³noma por el contenedor inteligente y la plataforma de monitoreo asistencial para supervisar el desgaste de la celda Peltier, la deriva de calibraciÃ³n de la celda de carga HX711 y los ciclos de vida Ãºtil de la baterÃ­a interna LiFePO4, programando Ã³rdenes de servicio preventivo antes de que ocurra una falla operativa en ruta.</td>
+      <td><strong>Automated Maintenance and Sensor Calibration (Mantenimiento y Calibración Automatizada)</strong></td>
+      <td>Protocolo de diagnóstico predictivo y continuo ejecutado de forma autónoma por el contenedor inteligente y la plataforma de monitoreo asistencial para supervisar el desgaste de la celda Peltier, la deriva de calibración de la celda de carga HX711 y los ciclos de vida útil de la batería interna LiFePO4, programando órdenes de servicio preventivo antes de que ocurra una falla operativa en ruta.</td>
       <td><strong>Domain Policy:</strong> <code>PreventiveMaintenancePolicy</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
     <tr>
-      <td><strong>Cold Chain (Cadena de FrÃ­o)</strong></td>
-      <td>Proceso logÃ­stico ininterrumpido de control y supervisiÃ³n ambiental que asegura que los insumos biolÃ³gicos y farmacÃ©uticos se mantengan dentro de los intervalos tÃ©rmicos normativos reglamentados por el MINSA y la DIGEMID (+2 Â°C a +4 Â°C para Ã³rganos; +2 Â°C a +8 Â°C para hemoderivados y vacunas) durante todas las etapas de custodia y desplazamiento en ambulancia.</td>
+      <td><strong>Cold Chain (Cadena de Frío)</strong></td>
+      <td>Proceso logístico ininterrumpido de control y supervisión ambiental que asegura que los insumos biológicos y farmacéuticos se mantengan dentro de los intervalos térmicos normativos reglamentados por el MINSA y la DIGEMID (+2 °C a +4 °C para órganos; +2 °C a +8 °C para hemoderivados y vacunas) durante todas las etapas de custodia y desplazamiento en ambulancia.</td>
       <td><strong>Domain Policy:</strong> <code>ColdChainPreservationPolicy</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
     <tr>
-      <td><strong>Container Autonomy and Telemetry (TelemetrÃ­a y AutonomÃ­a del Contenedor)</strong></td>
-      <td>Flujo periÃ³dico de mediciones fÃ­sicas directas (temperatura interna de cÃ¡mara, peso en bandeja, estado del sensor magnÃ©tico de tapa, voltaje y porcentaje de carga de la baterÃ­a interna LiFePO4) transmitidas de forma continua para garantizar que el soporte tÃ©rmico se mantenga activo aun ante desconexiones de la red de la ambulancia.</td>
+      <td><strong>Container Autonomy and Telemetry (Telemetría y Autonomía del Contenedor)</strong></td>
+      <td>Flujo periódico de mediciones físicas directas (temperatura interna de cámara, peso en bandeja, estado del sensor magnético de tapa, voltaje y porcentaje de carga de la batería interna LiFePO4) transmitidas de forma continua para garantizar que el soporte térmico se mantenga activo aun ante desconexiones de la red de la ambulancia.</td>
       <td><strong>Entity:</strong> <code>TelemetryLog</code> / <strong>Value Object:</strong> <code>TelemetrySnapshot</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
     <tr>
-      <td><strong>Container Lid Status &amp; Tamper-Evident Lock (Estado de Tapa y Bloqueo ElectromecÃ¡nico de Custodia)</strong></td>
-      <td>SupervisiÃ³n continua del sellado hermÃ©tico superior (contacto magnÃ©tico) y cerrojo electromecÃ¡nico de alta retenciÃ³n comandado por solenoide, que previene la apertura no autorizada de la tapa durante el trÃ¡nsito de la ambulancia y habilita su liberaciÃ³n fÃ­sica Ãºnicamente cuando el vehÃ­culo ingresa a la geocerca hospitalaria de destino y el personal facultado valida su identidad mediante un cÃ³digo OTP de un solo uso.</td>
+      <td><strong>Container Lid Status &amp; Tamper-Evident Lock (Estado de Tapa y Bloqueo Electromecánico de Custodia)</strong></td>
+      <td>Supervisión continua del sellado hermético superior (contacto magnético) y cerrojo electromecánico de alta retención comandado por solenoide, que previene la apertura no autorizada de la tapa durante el tránsito de la ambulancia y habilita su liberación física únicamente cuando el vehículo ingresa a la geocerca hospitalaria de destino y el personal facultado valida su identidad mediante un código OTP de un solo uso.</td>
       <td><strong>Entity:</strong> <code>ElectromechanicalLock</code> subordinada a <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
     <tr>
-      <td><strong>Smart Medical Container (Contenedor MÃ©dico Inteligente)</strong></td>
-      <td>Unidad fÃ­sica mÃ³vil e isotÃ©rmica de grado clÃ­nico instalada en el transporte asistido, disponible en diversos factores de forma y capacidades volumÃ©tricas modulares segÃºn los requisitos de carga, dotada de aislamiento tÃ©rmico de alta densidad, alimentaciÃ³n energÃ©tica dual (red fija y toma vehicular de 12V), instrumentaciÃ³n de mediciÃ³n bioambiental continua y mecanismo de cierre electromecÃ¡nico de seguridad.</td>
+      <td><strong>Smart Medical Container (Contenedor Médico Inteligente)</strong></td>
+      <td>Unidad física móvil e isotérmica de grado clínico instalada en el transporte asistido, disponible en diversos factores de forma y capacidades volumétricas modulares según los requisitos de carga, dotada de aislamiento térmico de alta densidad, alimentación energética dual (red fija y toma vehicular de 12V), instrumentación de medición bioambiental continua y mecanismo de cierre electromecánico de seguridad.</td>
       <td><strong>Aggregate Root:</strong> <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
     <tr>
       <td><strong>Tare Weight &amp; Net Weight (Peso Tara y Peso Neto)</strong></td>
-      <td>Procedimiento metrolÃ³gico de calibraciÃ³n en origen mediante el cual se descuenta la masa basal del contenedor vacÃ­o y sus componentes de fijaciÃ³n (tara), permitiendo cuantificar con precisiÃ³n (&plusmn;5 g) la masa neta de la carga biolÃ³gica para detectar variaciones por fugas, sustracciÃ³n o reemplazo clandestino durante el traslado.</td>
+      <td>Procedimiento metrológico de calibración en origen mediante el cual se descuenta la masa basal del contenedor vacío y sus componentes de fijación (tara), permitiendo cuantificar con precisión (&plusmn;5 g) la masa neta de la carga biológica para detectar variaciones por fugas, sustracción o reemplazo clandestino durante el traslado.</td>
       <td><strong>Value Object:</strong> <code>ContainerWeightMetrics</code> en <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
     <tr>
-      <td><strong>Vehicle Telematics and Auxiliary Power (TelemÃ¡tica Vehicular y AlimentaciÃ³n Auxiliar)</strong></td>
-      <td>ParÃ¡metros operativos capturados desde la unidad mÃ³vil de transporte asistencial (estado de suministro elÃ©ctrico continuo de 12V en cabina, velocidad de desplazamiento y coordenadas geogrÃ¡ficas en tiempo real) que permiten supervisar la estabilidad energÃ©tica del contenedor y predecir los tiempos de traslado en la red vial de Lima Metropolitana.</td>
+      <td><strong>Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)</strong></td>
+      <td>Parámetros operativos capturados desde la unidad móvil de transporte asistencial (estado de suministro eléctrico continuo de 12V en cabina, velocidad de desplazamiento y coordenadas geográficas en tiempo real) que permiten supervisar la estabilidad energética del contenedor y predecir los tiempos de traslado en la red vial de Lima Metropolitana.</td>
       <td><strong>Value Object:</strong> <code>AuxiliaryPowerTelemetry</code> / <strong>Domain Event:</strong> <code>ExternalPowerLost</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
     <tr>
-      <td><strong>Weight-Based Medical Stock (Stock MÃ©dico Ponderal)</strong></td>
-      <td>EstimaciÃ³n cuantitativa en tiempo real de la cantidad de medicamentos, ampollas o insumos almacenados dentro del compartimento, calculada a partir de las variaciones de masa registradas continuamente por la celda de carga de precisiÃ³n, permitiendo prevenir desabastecimientos en ruta o sustracciones clandestinas.</td>
+      <td><strong>Weight-Based Medical Stock (Stock Médico Ponderal)</strong></td>
+      <td>Estimación cuantitativa en tiempo real de la cantidad de medicamentos, ampollas o insumos almacenados dentro del compartimento, calculada a partir de las variaciones de masa registradas continuamente por la celda de carga de precisión, permitiendo prevenir desabastecimientos en ruta o sustracciones clandestinas.</td>
       <td><strong>Value Object:</strong> <code>PayloadWeight</code> (Invariante de peso en <code>SmartContainer</code>)<br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
   </tbody>
@@ -961,23 +961,23 @@ Cada uno de los 29 tÃ©rminos canÃ³nicos se encuentra formalmente circunscrit
   </thead>
   <tbody>
     <tr>
-      <td><strong>Cold-Chain Deviation Report (Informe de DesviaciÃ³n de Cadena de FrÃ­o)</strong></td>
-      <td>Acta tÃ©cnico-sanitaria de notificaciÃ³n obligatoria emitida automÃ¡ticamente cuando se constata una excursiÃ³n tÃ©rmica no mitigada durante el traslado en ambulancia, documentando la integral tiempo-temperatura del evento para sustentar formalmente el descarte, reemplazo o cuarentena preventiva del lote mÃ©dico ante auditorÃ­as de DIGEMID y DIGDOT.</td>
+      <td><strong>Cold-Chain Deviation Report (Informe de Desviación de Cadena de Frío)</strong></td>
+      <td>Acta técnico-sanitaria de notificación obligatoria emitida automáticamente cuando se constata una excursión térmica no mitigada durante el traslado en ambulancia, documentando la integral tiempo-temperatura del evento para sustentar formalmente el descarte, reemplazo o cuarentena preventiva del lote médico ante auditorías de DIGEMID y DIGDOT.</td>
       <td><strong>Read Model / Domain Report:</strong> <code>ColdChainDeviationReport</code><br><em>Bounded Context:</em> Critical Alerting &amp; Incident Response</td>
     </tr>
     <tr>
-      <td><strong>Critical Operational Alert &amp; Acknowledgment (Alerta Operativa CrÃ­tica y Acuse de Recibo)</strong></td>
-      <td>NotificaciÃ³n de alta prioridad y respuesta inmediata ante contingencias en ruta (excursiones tÃ©rmicas, desconexiÃ³n vehicular de 12V, apertura indebida o anomalÃ­as ponderales), que combina avisos acÃºstico-visuales en la cabina asistencial y alertas digitales a la central mÃ©dica, requiriendo que la tripulaciÃ³n confirme manualmente su recepciÃ³n en un plazo no mayor a 2 minutos para coordinar el plan de contingencia.</td>
+      <td><strong>Critical Operational Alert &amp; Acknowledgment (Alerta Operativa Crítica y Acuse de Recibo)</strong></td>
+      <td>Notificación de alta prioridad y respuesta inmediata ante contingencias en ruta (excursiones térmicas, desconexión vehicular de 12V, apertura indebida o anomalías ponderales), que combina avisos acústico-visuales en la cabina asistencial y alertas digitales a la central médica, requiriendo que la tripulación confirme manualmente su recepción en un plazo no mayor a 2 minutos para coordinar el plan de contingencia.</td>
       <td><strong>Aggregate Root:</strong> <code>CriticalIncident</code> / <strong>Entity:</strong> <code>ContingencyResolution</code><br><em>Bounded Context:</em> Critical Alerting &amp; Incident Response</td>
     </tr>
     <tr>
       <td><strong>Hospital Pre-Arrival Notice (Aviso de Pre-Arribo Hospitalario)</strong></td>
-      <td>ComunicaciÃ³n protocolar preventiva enviada automÃ¡ticamente al equipo mÃ©dico y quirÃºrgico del hospital receptor cuando la ambulancia se encuentra a una proximidad crÃ­tica (10 minutos de arribo o cruce de geocerca), facilitando el alistamiento de quirÃ³fano, esterilizaciÃ³n de instrumental y despeje de rampas de trauma shock.</td>
+      <td>Comunicación protocolar preventiva enviada automáticamente al equipo médico y quirúrgico del hospital receptor cuando la ambulancia se encuentra a una proximidad crítica (10 minutos de arribo o cruce de geocerca), facilitando el alistamiento de quirófano, esterilización de instrumental y despeje de rampas de trauma shock.</td>
       <td><strong>Domain Event:</strong> <code>HospitalPreArrivalTriggered</code><br><em>Bounded Context:</em> Critical Alerting &amp; Incident Response</td>
     </tr>
     <tr>
-      <td><strong>Thermal Excursion (ExcursiÃ³n TÃ©rmica)</strong></td>
-      <td>Incidente crÃ­tico originado cuando la temperatura interna de la cÃ¡mara del contenedor traspasa los mÃ¡rgenes de seguridad normativos durante un tiempo mayor a la tolerancia asistencial permitida, comprometiendo la estabilidad fisicoquÃ­mica o viabilidad celular del insumo y tipificÃ¡ndose como una no conformidad sanitaria grave.</td>
+      <td><strong>Thermal Excursion (Excursión Térmica)</strong></td>
+      <td>Incidente crítico originado cuando la temperatura interna de la cámara del contenedor traspasa los márgenes de seguridad normativos durante un tiempo mayor a la tolerancia asistencial permitida, comprometiendo la estabilidad fisicoquímica o viabilidad celular del insumo y tipificándose como una no conformidad sanitaria grave.</td>
       <td><strong>Domain Event:</strong> <code>ThermalExcursionDetected</code> / <strong>Aggregate Root:</strong> <code>CriticalIncident</code><br><em>Bounded Context:</em> Critical Alerting &amp; Incident Response</td>
     </tr>
   </tbody>
@@ -997,28 +997,28 @@ Cada uno de los 29 tÃ©rminos canÃ³nicos se encuentra formalmente circunscrit
   </thead>
   <tbody>
     <tr>
-      <td><strong>Audit Trail &amp; Digital Manifest (Rastro de AuditorÃ­a y Manifiesto Digital)</strong></td>
-      <td>Secuencia ininterrumpida y cronolÃ³gica de evidencias fÃ­sicas, temporales y ambientales registradas durante toda la misiÃ³n de transporte, compilada al cierre en un acta o expediente digital sellado criptogrÃ¡ficamente que acredita ante los auditores de DIGEMID, DIGDOT y SUSALUD que la custodia mÃ©dica nunca fue vulnerada.</td>
+      <td><strong>Audit Trail &amp; Digital Manifest (Rastro de Auditoría y Manifiesto Digital)</strong></td>
+      <td>Secuencia ininterrumpida y cronológica de evidencias físicas, temporales y ambientales registradas durante toda la misión de transporte, compilada al cierre en un acta o expediente digital sellado criptográficamente que acredita ante los auditores de DIGEMID, DIGDOT y SUSALUD que la custodia médica nunca fue vulnerada.</td>
       <td><strong>Aggregate Root:</strong> <code>DigitalAuditManifest</code><br><em>Bounded Context:</em> Chain of Custody &amp; Traceability</td>
     </tr>
     <tr>
       <td><strong>Chain of Custody (Cadena de Custodia Sanitaria)</strong></td>
-      <td>Registro documental, fÃ­sico y legal continuo e inalterable que certifica la tenencia, ubicaciÃ³n, trazabilidad horaria, eventos de manipulaciÃ³n y curvas bioambientales de la carga mÃ©dica desde el centro donante o farmacia de origen hasta su recepciÃ³n definitiva.</td>
+      <td>Registro documental, físico y legal continuo e inalterable que certifica la tenencia, ubicación, trazabilidad horaria, eventos de manipulación y curvas bioambientales de la carga médica desde el centro donante o farmacia de origen hasta su recepción definitiva.</td>
       <td><strong>Core Bounded Context:</strong> Chain of Custody &amp; Traceability<br><em>Aggregate Root:</em> <code>CustodyTransfer</code></td>
     </tr>
     <tr>
       <td><strong>Custody Handover Act (Acta de Entrega y Trazabilidad de Custodia)</strong></td>
-      <td>Documento protocolar formal generado al tÃ©rmino del traslado asistencial, donde la tripulaciÃ³n paramÃ©dica y el equipo mÃ©dico receptor rubrican mancomunadamente la conformidad del estado fÃ­sico, el balance de stock y el dictamen de viabilidad biolÃ³gica con el respaldo de la curva tÃ©rmica completa del trayecto.</td>
+      <td>Documento protocolar formal generado al término del traslado asistencial, donde la tripulación paramédica y el equipo médico receptor rubrican mancomunadamente la conformidad del estado físico, el balance de stock y el dictamen de viabilidad biológica con el respaldo de la curva térmica completa del trayecto.</td>
       <td><strong>Aggregate Root:</strong> <code>CustodyTransfer</code><br><em>Bounded Context:</em> Chain of Custody &amp; Traceability</td>
     </tr>
     <tr>
       <td><strong>One-Time Password / Unlock Token (Clave OTP / Token de Desbloqueo Temporal)</strong></td>
-      <td>Clave numÃ©rica efÃ­mera de seguridad clÃ­nica generada dinÃ¡micamente por la plataforma y transmitida exclusivamente al mÃ©dico receptor facultado, cuya introducciÃ³n en el panel de control del contenedor condiciona la liberaciÃ³n del solenoide fÃ­sico de la tapa Ãºnicamente cuando la ambulancia se encuentra dentro de la geocerca hospitalaria autorizada de destino.</td>
+      <td>Clave numérica efímera de seguridad clínica generada dinámicamente por la plataforma y transmitida exclusivamente al médico receptor facultado, cuya introducción en el panel de control del contenedor condiciona la liberación del solenoide físico de la tapa únicamente cuando la ambulancia se encuentra dentro de la geocerca hospitalaria autorizada de destino.</td>
       <td><strong>Value Object:</strong> <code>OtpToken</code> encapsulado en <code>CustodyTransfer</code><br><em>Bounded Context:</em> Chain of Custody &amp; Traceability</td>
     </tr>
     <tr>
-      <td><strong>Receiving Medical Custodian (Custodio MÃ©dico Receptor)</strong></td>
-      <td>Profesional de la salud facultado en el establecimiento hospitalario o farmacia de destino (cirujano de trasplantes, mÃ©dico de emergencia o quÃ­mico farmacÃ©utico responsable) habilitado para recibir la clave OTP, constatar la viabilidad clÃ­nica y formalizar el acta de conformidad.</td>
+      <td><strong>Receiving Medical Custodian (Custodio Médico Receptor)</strong></td>
+      <td>Profesional de la salud facultado en el establecimiento hospitalario o farmacia de destino (cirujano de trasplantes, médico de emergencia o químico farmacéutico responsable) habilitado para recibir la clave OTP, constatar la viabilidad clínica y formalizar el acta de conformidad.</td>
       <td><strong>Value Object:</strong> <code>ReceivingPhysician</code> en <code>CustodyTransfer</code><br><em>Bounded Context:</em> Chain of Custody &amp; Traceability</td>
     </tr>
   </tbody>
@@ -1176,37 +1176,37 @@ El backlog se encuentra organizado secuencialmente para guiar el desarrollo de l
 # Capítulo IV: Product Design
 
 # 4.1. Style Guidelines
-Un "Style Guideline" es un conjunto de directrices y normas que establecen los estÃ¡ndares y criterios a seguir en la redacciÃ³n, diseÃ±o y presentaciÃ³n de documentos, contenido web, software y otros productos creativos. A continuaciÃ³n, se presentan las especificaciones detalladas de los parÃ¡metros implementados en la estructura de **Medical SmartBox**.
+Un "Style Guideline" es un conjunto de directrices y normas que establecen los estándares y criterios a seguir en la redacción, diseño y presentación de documentos, contenido web, software y otros productos creativos. A continuación, se presentan las especificaciones detalladas de los parámetros implementados en la estructura de **Medical SmartBox**.
 
 ## 4.1.1. General Style Guidelines
 
 ### Branding
-Para el desarrollo de la identidad de Medical SmartBox, hemos elegido un diseÃ±o que encapsula la esencia de la logÃ­stica mÃ©dica y la monitorizaciÃ³n de precisiÃ³n. El logotipo y la interfaz presentan una estÃ©tica limpia y tecnolÃ³gica, aportando modernidad y mÃ¡xima legibilidad. La identidad visual fusiona la salud con la tecnologÃ­a IoT, simbolizando el control total y la trazabilidad de la cadena de frÃ­o. La elecciÃ³n de colores, en una combinaciÃ³n de azul marino, verde cerceta (teal) y acentos en coral/rojo, transmite una sensaciÃ³n de confianza, estabilidad tÃ©cnica y la capacidad de alerta inmediata frente a incidencias. 
+Para el desarrollo de la identidad de Medical SmartBox, hemos elegido un diseño que encapsula la esencia de la logística médica y la monitorización de precisión. El logotipo y la interfaz presentan una estética limpia y tecnológica, aportando modernidad y máxima legibilidad. La identidad visual fusiona la salud con la tecnología IoT, simbolizando el control total y la trazabilidad de la cadena de frío. La elección de colores, en una combinación de azul marino, verde cerceta (teal) y acentos en coral/rojo, transmite una sensación de confianza, estabilidad técnica y la capacidad de alerta inmediata frente a incidencias. 
 
 ![Medical SmartBox - Logo](assets/chapter-4/logo.png)
 
 ### Typography
-Para el diseÃ±o tipogrÃ¡fico de Medical SmartBox, se ha seleccionado una combinaciÃ³n de fuentes que refleja modernidad y claridad de datos, priorizando la lectura rÃ¡pida en dashboards operativos.
-*   **Bricolage Grotesque:** Fue elegida como la tipografÃ­a principal para nuestros encabezados (`h1`, `h2`, `h3`). Su estructura sÃ³lida y geomÃ©trica otorga al diseÃ±o un aire profesional, tecnolÃ³gico y contemporÃ¡neo.
-*   **Inter:** Para los pÃ¡rrafos, etiquetas de la interfaz y la visualizaciÃ³n de datos numÃ©ricos (como telemetrÃ­a y temperaturas), hemos optado por Inter, una fuente destacada por su altÃ­sima legibilidad en pantallas digitales e interfaces ricas en datos, favoreciendo una lectura Ã¡gil para los operadores logÃ­sticos y personal de salud.
+Para el diseño tipográfico de Medical SmartBox, se ha seleccionado una combinación de fuentes que refleja modernidad y claridad de datos, priorizando la lectura rápida en dashboards operativos.
+*   **Bricolage Grotesque:** Fue elegida como la tipografía principal para nuestros encabezados (`h1`, `h2`, `h3`). Su estructura sólida y geométrica otorga al diseño un aire profesional, tecnológico y contemporáneo.
+*   **Inter:** Para los párrafos, etiquetas de la interfaz y la visualización de datos numéricos (como telemetría y temperaturas), hemos optado por Inter, una fuente destacada por su altísima legibilidad en pantallas digitales e interfaces ricas en datos, favoreciendo una lectura ágil para los operadores logísticos y personal de salud.
 
 ![Bricolage Grotesque - Font](assets/chapter-4/bricolage-font.png)
 ![Inter - Font](assets/chapter-4/inter-font.png)
 
 ### Colors
-La paleta de colores de Medical SmartBox fue seleccionada para reflejar los valores de seguridad, precisiÃ³n tÃ©cnica y prevenciÃ³n operativa.
-*   **Verde Cerceta (Teal - `#0F7A70`) y Verde Claro (`#B9DDA0`):** Representan el estado Ã³ptimo, la salud y las operaciones estables ("En rango").
-*   **Azul Marino (`#10312F` / `#1F3C77`):** Evocan profesionalismo, tecnologÃ­a y la solidez institucional del sector mÃ©dico.
-*   **Coral / Rojo (`#E05A46`):** Utilizado estratÃ©gicamente como color de acento para alertas crÃ­ticas (ej. "Temperatura fuera de rango" o "BaterÃ­a baja"), garantizando que los incidentes destaquen inmediatamente visualmente.
+La paleta de colores de Medical SmartBox fue seleccionada para reflejar los valores de seguridad, precisión técnica y prevención operativa.
+*   **Verde Cerceta (Teal - `#0F7A70`) y Verde Claro (`#B9DDA0`):** Representan el estado óptimo, la salud y las operaciones estables ("En rango").
+*   **Azul Marino (`#10312F` / `#1F3C77`):** Evocan profesionalismo, tecnología y la solidez institucional del sector médico.
+*   **Coral / Rojo (`#E05A46`):** Utilizado estratégicamente como color de acento para alertas críticas (ej. "Temperatura fuera de rango" o "Batería baja"), garantizando que los incidentes destaquen inmediatamente visualmente.
 
 ![Paleta de Colores](assets/chapter-4/paleta.png)
 
 ### Spacing
-El espaciado en Medical SmartBox estÃ¡ cuidadosamente definido para garantizar una interfaz limpia, enfocada en la visualizaciÃ³n de mÃ©tricas. Se emplea un diseÃ±o modular con separaciones claras (paneles y tarjetas flotantes), lo que mejora la jerarquÃ­a de la telemetrÃ­a en vivo, evita confusiones al monitorear mÃºltiples transportes y aporta equilibrio visual en vistas saturadas de datos.
+El espaciado en Medical SmartBox está cuidadosamente definido para garantizar una interfaz limpia, enfocada en la visualización de métricas. Se emplea un diseño modular con separaciones claras (paneles y tarjetas flotantes), lo que mejora la jerarquía de la telemetría en vivo, evita confusiones al monitorear múltiples transportes y aporta equilibrio visual en vistas saturadas de datos.
 
 # 4.1.2. Web Style Guidelines
 
-Medical SmartBox cuenta con un diseÃ±o web responsivo para garantizar una experiencia fluida en cualquier dispositivo, permitiendo su uso tanto en paneles de control (operadores logÃ­sticos) como en dispositivos mÃ³viles (centros de salud recibiendo despachos). Se utiliza un diseÃ±o lineal con un "Route Rail" (navegaciÃ³n vertical) que guÃ­a al usuario por la narrativa del producto. La barra de navegaciÃ³n superior (pegajosa) mantiene el logotipo a la izquierda, y los controles crÃ­ticos como el cambio de idioma (ES/EN), el inicio de sesiÃ³n y el llamado a la acciÃ³n ("Ir a la Web App") a la derecha.
+Medical SmartBox cuenta con un diseño web responsivo para garantizar una experiencia fluida en cualquier dispositivo, permitiendo su uso tanto en paneles de control (operadores logísticos) como en dispositivos móviles (centros de salud recibiendo despachos). Se utiliza un diseño lineal con un "Route Rail" (navegación vertical) que guía al usuario por la narrativa del producto. La barra de navegación superior (pegajosa) mantiene el logotipo a la izquierda, y los controles críticos como el cambio de idioma (ES/EN), el inicio de sesión y el llamado a la acción ("Ir a la Web App") a la derecha.
 
 ---
 
@@ -1216,33 +1216,33 @@ Medical SmartBox cuenta con un diseÃ±o web responsivo para garantizar una expe
 
 *   **Visual Organization:**
 
-    Para facilitar la asimilaciÃ³n visual de la informaciÃ³n crÃ­tica, la plataforma prioriza las tarjetas de telemetrÃ­a y alertas. En el dashboard, la informaciÃ³n mÃ¡s crÃ­tica (como alertas rojas de "Temperatura sobre el rango esperado" o desvÃ­os de ETA) tiene el mayor peso visual mediante contrastes cromÃ¡ticos y tipografÃ­a agrandada (clase `.tnum`). La informaciÃ³n secundaria tiene colores neutros o silenciados.
-*   **OrganizaciÃ³n CronolÃ³gica / Secuencial:**
+    Para facilitar la asimilación visual de la información crítica, la plataforma prioriza las tarjetas de telemetría y alertas. En el dashboard, la información más crítica (como alertas rojas de "Temperatura sobre el rango esperado" o desvíos de ETA) tiene el mayor peso visual mediante contrastes cromáticos y tipografía agrandada (clase `.tnum`). La información secundaria tiene colores neutros o silenciados.
+*   **Organización Cronológica / Secuencial:**
 
-    Se emplea intensivamente en el mÃ³dulo de **Trazabilidad (Traceability)**. El historial de un transporte (ej. TR-0417) se divide en hitos secuenciales (Preparado -> Recogido -> En trÃ¡nsito -> Llegando -> Entregado), permitiendo al usuario ver el ciclo de vida de un envÃ­o en orden lÃ³gico.
-*   **OrganizaciÃ³n Matricial / Cruzada:**
+    Se emplea intensivamente en el módulo de **Trazabilidad (Traceability)**. El historial de un transporte (ej. TR-0417) se divide en hitos secuenciales (Preparado -> Recogido -> En tránsito -> Llegando -> Entregado), permitiendo al usuario ver el ciclo de vida de un envío en orden lógico.
+*   **Organización Matricial / Cruzada:**
 
-    Se aplica en el Panel de Operaciones (Flota en ruta) y en el Inbox de Receptores. Los operadores visualizan listas cruzando identificadores de transporte (TR-0417) con mÃ©tricas dinÃ¡micas (Temperatura, ETA, BaterÃ­a del SmartBox, Estado de Puertas).
+    Se aplica en el Panel de Operaciones (Flota en ruta) y en el Inbox de Receptores. Los operadores visualizan listas cruzando identificadores de transporte (TR-0417) con métricas dinámicas (Temperatura, ETA, Batería del SmartBox, Estado de Puertas).
 
 ### 4.2.2. Labeling Systems
 
-La aplicaciÃ³n utiliza un sistema de etiquetas y terminologÃ­a adaptado a los dos principales tipos de usuarios: Operadores logÃ­sticos y Centros Receptores.
+La aplicación utiliza un sistema de etiquetas y terminología adaptado a los dos principales tipos de usuarios: Operadores logísticos y Centros Receptores.
 
-*   **Para el visitante:** Botones directos como "Ir a la Web App" o "Iniciar sesiÃ³n".
-*   **Para los Operadores de Transporte:** Se emplea terminologÃ­a tÃ©cnica de monitoreo y flota. Etiquetas como "ETA", "TelemetrÃ­a en vivo", "Combustible (%)", "BaterÃ­a (%)" y "Temperatura (Â°C)". Las alertas usan un lenguaje preciso: "Puerta abierta fuera de parada", "BaterÃ­a baja del SmartBox".
-*   **Para los Centros Receptores (Hospitales/Farmacias):** El enfoque cambia hacia la recepciÃ³n de paquetes. Etiquetas enfocadas en el estado de llegada: "EnvÃ­os entrantes", "Llegan hoy", "Recibido", y confirmaciones como "Conforme".
+*   **Para el visitante:** Botones directos como "Ir a la Web App" o "Iniciar sesión".
+*   **Para los Operadores de Transporte:** Se emplea terminología técnica de monitoreo y flota. Etiquetas como "ETA", "Telemetría en vivo", "Combustible (%)", "Batería (%)" y "Temperatura (°C)". Las alertas usan un lenguaje preciso: "Puerta abierta fuera de parada", "Batería baja del SmartBox".
+*   **Para los Centros Receptores (Hospitales/Farmacias):** El enfoque cambia hacia la recepción de paquetes. Etiquetas enfocadas en el estado de llegada: "Envíos entrantes", "Llegan hoy", "Recibido", y confirmaciones como "Conforme".
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-Los SEO y meta tags implementados en Medical SmartBox estÃ¡n optimizados para el nicho de logÃ­stica mÃ©dica:
+Los SEO y meta tags implementados en Medical SmartBox están optimizados para el nicho de logística médica:
 
 *   **Title Tag:**
-    `<title>Medical SmartBox â€” Monitoreo y trazabilidad del transporte mÃ©dico</title>`
+    `<title>Medical SmartBox — Monitoreo y trazabilidad del transporte médico</title>`
 *   **Meta Description:**
-    `<meta name="description" content="Medical SmartBox es una plataforma para monitorear transportes mÃ©dicos, detectar incidencias de temperatura en tiempo real y mantener cada envÃ­o y cadena de frÃ­o bajo control.">`
-*   **Language tag:** (DinÃ¡mico vÃ­a script, base en inglÃ©s y espaÃ±ol)
+    `<meta name="description" content="Medical SmartBox es una plataforma para monitorear transportes médicos, detectar incidencias de temperatura en tiempo real y mantener cada envío y cadena de frío bajo control.">`
+*   **Language tag:** (Dinámico vía script, base en inglés y español)
     `<html lang="es">`
-*   **Meta Viewport:** (Esencial para responsividad en mÃ³viles y paneles de campo)
+*   **Meta Viewport:** (Esencial para responsividad en móviles y paneles de campo)
     `<meta name="viewport" content="width=device-width, initial-scale=1">`
 *   **Author tag:**
     `<meta name="author" content="Medical SmartBox Team">`
@@ -1253,149 +1253,149 @@ Los SEO y meta tags implementados en Medical SmartBox estÃ¡n optimizados para 
 
 Para asegurar que los usuarios encuentren la unidad o el dato exacto al instante:
 
-*   **BÃºsqueda global y de flota:** Un input de bÃºsqueda con el placeholder *"Buscar transporte, SmartBox o destino"* y filtros dedicados *"Filtrar por ruta, estado o SmartBox"*.
-*   **BÃºsqueda por Estados (Tabs):** Posibilidad de filtrar vistas rÃ¡pidamente mediante estados activos como "En trÃ¡nsito", "CrÃ­tica", o "Entregado".
+*   **Búsqueda global y de flota:** Un input de búsqueda con el placeholder *"Buscar transporte, SmartBox o destino"* y filtros dedicados *"Filtrar por ruta, estado o SmartBox"*.
+*   **Búsqueda por Estados (Tabs):** Posibilidad de filtrar vistas rápidamente mediante estados activos como "En tránsito", "Crítica", o "Entregado".
 
 ### 4.2.5. Navigation Systems
 
-*   **NavegaciÃ³n principal (Top Nav):** Enlaces ancla directos a secciones clave del producto: *Plataforma, CÃ³mo funciona, Soluciones, Trazabilidad*.
-*   **NavegaciÃ³n Vertical de Seguimiento (Route Rail):** Un indicador de progreso visual en el lateral de la pantalla que funciona como un "scrollspy", ubicando al usuario en quÃ© secciÃ³n de la pÃ¡gina (Inicio, Monitoreo, Alertas, Capturas, Datos, etc.) se encuentra.
-*   **Controles de AutenticaciÃ³n y DemostraciÃ³n:** Botones persistentes en el encabezado y menÃºs laterales (Drawer) para "Iniciar sesiÃ³n" o abrir la "Web App" completa.
-*   **Selector de Idioma:** Un interruptor claro (Toggle ES/EN) que permite cambiar la internacionalizaciÃ³n de la plataforma sin recargar, crucial para equipos logÃ­sticos internacionales.
+*   **Navegación principal (Top Nav):** Enlaces ancla directos a secciones clave del producto: *Plataforma, Cómo funciona, Soluciones, Trazabilidad*.
+*   **Navegación Vertical de Seguimiento (Route Rail):** Un indicador de progreso visual en el lateral de la pantalla que funciona como un "scrollspy", ubicando al usuario en qué sección de la página (Inicio, Monitoreo, Alertas, Capturas, Datos, etc.) se encuentra.
+*   **Controles de Autenticación y Demostración:** Botones persistentes en el encabezado y menús laterales (Drawer) para "Iniciar sesión" o abrir la "Web App" completa.
+*   **Selector de Idioma:** Un interruptor claro (Toggle ES/EN) que permite cambiar la internacionalización de la plataforma sin recargar, crucial para equipos logísticos internacionales.
 
 ## 4.3. Landing Page UI Design
-El diseÃ±o de la interfaz de usuario en la landing page de **Medical SmartBox** es clave para causar una primera impresiÃ³n positiva y transmitir la innovaciÃ³n tecnolÃ³gica y el rigor que respalda a nuestra soluciÃ³n de monitoreo de la cadena de frÃ­o mÃ©dica. Buscamos ofrecer una experiencia visual limpia, profesional y altamente funcional que inspire confianza e invite a los operadores logÃ­sticos, gerentes de distribuciÃ³n farmacÃ©utica y administradores de centros de salud a solicitar una demostraciÃ³n y explorar nuestro ecosistema de monitoreo IoT y trazabilidad en tiempo real.
+El diseño de la interfaz de usuario en la landing page de **Medical SmartBox** es clave para causar una primera impresión positiva y transmitir la innovación tecnológica y el rigor que respalda a nuestra solución de monitoreo de la cadena de frío médica. Buscamos ofrecer una experiencia visual limpia, profesional y altamente funcional que inspire confianza e invite a los operadores logísticos, gerentes de distribución farmacéutica y administradores de centros de salud a solicitar una demostración y explorar nuestro ecosistema de monitoreo IoT y trazabilidad en tiempo real.
 
 ### 4.3.1. Landing Page Wireframe
 
 *   **Landing Page para Desktop Browser:**
-    *   **Hero Section:** Boceto estructural de la secciÃ³n principal (Hero Section), definiendo un diseÃ±o de dos columnas para ubicar la propuesta de valor centrada en la protecciÃ³n de insumos mÃ©dicos a la izquierda, y un elemento visual destacado a la derecha (preview interactivo del contenedor SmartBox y su telemetrÃ­a).
+    *   **Hero Section:** Boceto estructural de la sección principal (Hero Section), definiendo un diseño de dos columnas para ubicar la propuesta de valor centrada en la protección de insumos médicos a la izquierda, y un elemento visual destacado a la derecha (preview interactivo del contenedor SmartBox y su telemetría).
 
 ![Hero - Wireframe](assets/chapter-4/hero-wireframe.png)
 
-*   **CaracterÃ­sticas de la Plataforma:** DiseÃ±o esquemÃ¡tico (layout) para la secciÃ³n de caracterÃ­sticas clave (*Monitoreo TÃ©rmico en Tiempo Real*, *Alertas Predictivas de Incidencias* y *Trazabilidad End-to-End*), utilizando un sistema de cuadrÃ­cula para distribuir equitativamente tres tarjetas informativas.
+*   **Características de la Plataforma:** Diseño esquemático (layout) para la sección de características clave (*Monitoreo Térmico en Tiempo Real*, *Alertas Predictivas de Incidencias* y *Trazabilidad End-to-End*), utilizando un sistema de cuadrícula para distribuir equitativamente tres tarjetas informativas.
 
 ![Caracteristicas - Wireframe](assets/chapter-4/caracteristicas-wireframe.png)
 
-*   **PresentaciÃ³n de la Startup / QuiÃ©nes Somos:** Estructura conceptual para la presentaciÃ³n del equipo detrÃ¡s de Medical SmartBox. Define una cuadrÃ­cula adaptable (responsive grid) con cinco espacios reservados para las fotografÃ­as y perfiles del equipo desarrollador e ingenieros de software.
+*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SmartBox. Define una cuadrícula adaptable (responsive grid) con cinco espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
 
 ![Presentacion - Wireframe](assets/chapter-4/presentacion-wireframe.png)
 
-*   **Call to Action (CTA) y Footer:** MaquetaciÃ³n bÃ¡sica para la secciÃ³n de "Llamado a la AcciÃ³n", mostrando un formulario centralizado para la solicitud de demostraciones guiadas y el bloque del pie de pÃ¡gina con enlaces institucionales, legales y de cumplimiento normativo sanitario.
+*   **Call to Action (CTA) y Footer:** Maquetación básica para la sección de "Llamado a la Acción", mostrando un formulario centralizado para la solicitud de demostraciones guiadas y el bloque del pie de página con enlaces institucionales, legales y de cumplimiento normativo sanitario.
 
 ![CTA-footer - Wireframe](assets/chapter-4/cta-footer-wireframe.png)
 
 ### 4.3.2. Landing Page Mock-up
 
-*   **Hero Section:** Interfaz final del Hero Section. Destaca la integraciÃ³n de la paleta de colores corporativa (Azul Marino `#10312F`, Verde Cerceta `#0F7A70` y Verde Claro `#B9DDA0`), la tipografÃ­a moderna (**Bricolage Grotesque** para titulares e **Inter** para cuerpo de texto) y una composiciÃ³n visual de un operador logÃ­stico inspeccionando un envÃ­o mÃ©dico con telemetrÃ­a activa en un dispositivo SmartBox, logrando captar la atenciÃ³n del usuario inmediatamente.
+*   **Hero Section:** Interfaz final del Hero Section. Destaca la integración de la paleta de colores corporativa (Azul Marino `#10312F`, Verde Cerceta `#0F7A70` y Verde Claro `#B9DDA0`), la tipografía moderna (**Bricolage Grotesque** para titulares e **Inter** para cuerpo de texto) y una composición visual de un operador logístico inspeccionando un envío médico con telemetría activa en un dispositivo SmartBox, logrando captar la atención del usuario inmediatamente.
   
 * ![Hero - Mockup](assets/chapter-4/hero-mockup.png)
 
-*   **Tarjetas de Servicios:** ImplementaciÃ³n final de las tarjetas de servicio (*TelemetrÃ­a IoT en Vivo*, *Mapeo de Ruta TÃ©rmica* y *Alertas Predictivas de ExcursiÃ³n de Temperatura*). Se incorporaron imÃ¡genes fotogrÃ¡ficas de alta calidad y un diseÃ±o de tarjeta limpia (*Clean UI*) con sombras suaves y bordes redondeados para facilitar la lectura de mÃ©tricas clave.
+*   **Tarjetas de Servicios:** Implementación final de las tarjetas de servicio (*Telemetría IoT en Vivo*, *Mapeo de Ruta Térmica* y *Alertas Predictivas de Excursión de Temperatura*). Se incorporaron imágenes fotográficas de alta calidad y un diseño de tarjeta limpia (*Clean UI*) con sombras suaves y bordes redondeados para facilitar la lectura de métricas clave.
 
 ![Servicios - Mockup](assets/chapter-4/servicios-mockup.png)
 
-*   **SecciÃ³n "QuiÃ©nes Somos":** Resultado visual de la secciÃ³n "QuiÃ©nes Somos". Presenta formalmente a los cinco ingenieros de software del equipo de Medical SmartBox, transmitiendo transparencia, profesionalismo, solvencia tÃ©cnica y compromiso con la seguridad en la salud digital.
+*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cinco ingenieros de software del equipo de Medical SmartBox, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
 
 ![Presentacion - Mockup](assets/chapter-4/presentacion-mockup.png)
 
-*   **Formulario "Ãšnete a Medical SmartBox":** VersiÃ³n construida del formulario "Ir a la Web App". Utiliza el fondo azul marino oscuro de la marca para generar un alto contraste con los campos de entrada e incentivar la conversiÃ³n, cerrando la pÃ¡gina con un footer minimalista con polÃ­ticas de privacidad, certificaciones sanitarias y enlaces legales.
+*   **Formulario "Únete a Medical SmartBox":** Versión construida del formulario "Ir a la Web App". Utiliza el fondo azul marino oscuro de la marca para generar un alto contraste con los campos de entrada e incentivar la conversión, cerrando la página con un footer minimalista con políticas de privacidad, certificaciones sanitarias y enlaces legales.
 
 ![CTA-footer - Mockup](assets/chapter-4/cta-footer-mockup.png)
 ---
 
 # 4.4. Web Applications UX/UI Design
 
-El diseÃ±o de experiencia de usuario (UX) y diseÃ±o de interfaz de usuario (UI) en la plataforma web de **Medical SmartBox** busca crear una herramienta digital intuitiva, accesible y altamente funcional para operadores logÃ­sticos, conductores de transporte mÃ©dico y personal receptor en hospitales o farmacias. La UX se enfoca en comprender la urgencia y precisiÃ³n requeridas en la cadena de frÃ­o, diseÃ±ando flujos de interacciÃ³n eficientes para monitorear cargas tÃ©rmicamente sensibles, reaccionar ante desvÃ­os de temperatura y configurar sensores IoT sin fricciÃ³n.
+El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) en la plataforma web de **Medical SmartBox** busca crear una herramienta digital intuitiva, accesible y altamente funcional para operadores logísticos, conductores de transporte médico y personal receptor en hospitales o farmacias. La UX se enfoca en comprender la urgencia y precisión requeridas en la cadena de frío, diseñando flujos de interacción eficientes para monitorear cargas térmicamente sensibles, reaccionar ante desvíos de temperatura y configurar sensores IoT sin fricción.
 
-Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemÃ©tricos en tiempo real, trazabilidad por hitos de envÃ­o, grÃ¡ficos de estabilidad tÃ©rmica y sistemas de alertas predictivas. Un diseÃ±o UX/UI exitoso en Medical SmartBox fusiona una estÃ©tica tecnolÃ³gica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logÃ­sticas rÃ¡pidas que salvan vidas y evitan la merma de medicamentos.
+Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemétricos en tiempo real, trazabilidad por hitos de envío, gráficos de estabilidad térmica y sistemas de alertas predictivas. Un diseño UX/UI exitoso en Medical SmartBox fusiona una estética tecnológica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logísticas rápidas que salvan vidas y evitan la merma de medicamentos.
 
 ### 4.4.1. Web Applications Wireframes
-*   **Acceso y AutenticaciÃ³n Segura:** El flujo de inicio de sesiÃ³n presenta un diseÃ±o *desktop* de dos columnas ("auth-shell"). La izquierda actÃºa como un panel informativo destacando la propuesta de valor ("Cadena de frÃ­o bajo custodia digital") y estadÃ­sticas de la flota, mientras que la derecha contiene el formulario de acceso institucional que solicita RUC/Correo y ContraseÃ±a. A esto le sigue una pantalla obligatoria de VerificaciÃ³n en Dos Pasos (2FA) mediante un cÃ³digo OTP de 6 dÃ­gitos
+*   **Acceso y Autenticación Segura:** El flujo de inicio de sesión presenta un diseño *desktop* de dos columnas ("auth-shell"). La izquierda actúa como un panel informativo destacando la propuesta de valor ("Cadena de frío bajo custodia digital") y estadísticas de la flota, mientras que la derecha contiene el formulario de acceso institucional que solicita RUC/Correo y Contraseña. A esto le sigue una pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante un código OTP de 6 dígitos
 
 ![Autenticacion - Wireframe](assets/chapter-4/autenticacion-wireframe.png)
 
-*   **NÃºcleo Operativo - Dashboard Principal:** El Dashboard general organiza la vista del operador comenzando con una fila de KPIs (unidades en ruta, monitorizadas, alertas crÃ­ticas y cumplimiento DIGEMID). En el cuerpo central, se emplea una estructura de cuadrÃ­cula (`grid-2`) que muestra un mapa de "Flota en tiempo real" a la izquierda y un panel consolidado de "Alertas crÃ­ticas recientes" a la derecha, finalizando con una tabla inferior para los "Traslados en curso"
+*   **Núcleo Operativo - Dashboard Principal:** El Dashboard general organiza la vista del operador comenzando con una fila de KPIs (unidades en ruta, monitorizadas, alertas críticas y cumplimiento DIGEMID). En el cuerpo central, se emplea una estructura de cuadrícula (`grid-2`) que muestra un mapa de "Flota en tiempo real" a la izquierda y un panel consolidado de "Alertas críticas recientes" a la derecha, finalizando con una tabla inferior para los "Traslados en curso"
 
 ![Nucleo Operativo  - Wireframe](assets/chapter-4/nucleo-wireframe.png)
 
-*   **GestiÃ³n de EnvÃ­os y Tablero de Despacho:** El sistema incluye una lista maestra de "Ã“rdenes de traslado" y un formulario completo para crear una nueva orden validando ventana de isquemia frÃ­a y precooling. AdemÃ¡s, presenta un Tablero de Despacho en formato Kanban que categoriza los viajes en Pendientes, Despachados, En trÃ¡nsito y Entregados
+*   **Gestión de Envíos y Tablero de Despacho:** El sistema incluye una lista maestra de "Órdenes de traslado" y un formulario completo para crear una nueva orden validando ventana de isquemia fría y precooling. Además, presenta un Tablero de Despacho en formato Kanban que categoriza los viajes en Pendientes, Despachados, En tránsito y Entregados
 
 ![Gestion de Envios  - Wireframe](assets/chapter-4/envios-wireframe.png)
 
-*   **Vista Detallada de TelemetrÃ­a y Ruta:** La inspecciÃ³n individual de un envÃ­o presenta un *stepper* de estado en la parte superior. Debajo, se divide en dos mÃ³dulos: a la izquierda, el mapa de trazabilidad y ruta en vivo con cÃ¡lculo de ETA dinÃ¡mico; a la derecha, las tarjetas telemÃ©tricas y medidores (*gauges*) mostrando la temperatura interna en tiempo real (ej. 4.3Â°C), nivel de baterÃ­a, estado de cierre y lecturas recientes.
+*   **Vista Detallada de Telemetría y Ruta:** La inspección individual de un envío presenta un *stepper* de estado en la parte superior. Debajo, se divide en dos módulos: a la izquierda, el mapa de trazabilidad y ruta en vivo con cálculo de ETA dinámico; a la derecha, las tarjetas telemétricas y medidores (*gauges*) mostrando la temperatura interna en tiempo real (ej. 4.3°C), nivel de batería, estado de cierre y lecturas recientes.
 
 ![Vista de Ruta  - Wireframe](assets/chapter-4/ruta-wireframe.png)
 
-*   **Monitoreo y Control de Smart Containers:** Se incluye un mÃ³dulo visual tipo *grid* para monitorear todos los contenedores de la flota y una vista de detalle por Smart Container que incluye una curva grÃ¡fica de temperatura de las Ãºltimas 24 horas. Complementariamente, el sistema permite enviar comandos de desbloqueo remoto de la tapa mediante interacciÃ³n electromecÃ¡nica y visualizar el historial completo de excursiones tÃ©rmicas.
+*   **Monitoreo y Control de Smart Containers:** Se incluye un módulo visual tipo *grid* para monitorear todos los contenedores de la flota y una vista de detalle por Smart Container que incluye una curva gráfica de temperatura de las últimas 24 horas. Complementariamente, el sistema permite enviar comandos de desbloqueo remoto de la tapa mediante interacción electromecánica y visualizar el historial completo de excursiones térmicas.
 
 ![Monitoreo de Containers  - Wireframe](assets/chapter-4/containers-wireframe.png)
 
-*   **Centro de Alertas y Respuesta a Incidentes:** La plataforma cuenta con una bandeja centralizada para gestionar notificaciones. El detalle de una alerta crÃ­tica expone la magnitud de la excursiÃ³n tÃ©rmica (temperatura, duraciÃ³n, ubicaciÃ³n), el registro temporal del despacho de alertas (vÃ­a SMS y Push) y una secciÃ³n para que el operador documente las acciones correctivas.
+*   **Centro de Alertas y Respuesta a Incidentes:** La plataforma cuenta con una bandeja centralizada para gestionar notificaciones. El detalle de una alerta crítica expone la magnitud de la excursión térmica (temperatura, duración, ubicación), el registro temporal del despacho de alertas (vía SMS y Push) y una sección para que el operador documente las acciones correctivas.
 
 ![Centro de Alertas  - Wireframe](assets/chapter-4/incidentes-wireframe.png)
 
-*   **ConfiguraciÃ³n y Umbrales de Alerta:** Una pantalla de administraciÃ³n dedicada a "Canales de notificaciÃ³n" permite al usuario activar/desactivar notificaciones Push, SMS, Correo y alarmas acÃºsticas. AquÃ­ mismo, en el panel "Umbrales de severidad", se configuran manualmente los lÃ­mites mÃ¡ximos/mÃ­nimos de temperatura y los tiempos lÃ­mite (SLA) para el envÃ­o de alertas.
+*   **Configuración y Umbrales de Alerta:** Una pantalla de administración dedicada a "Canales de notificación" permite al usuario activar/desactivar notificaciones Push, SMS, Correo y alarmas acústicas. Aquí mismo, en el panel "Umbrales de severidad", se configuran manualmente los límites máximos/mínimos de temperatura y los tiempos límite (SLA) para el envío de alertas.
 
 ![Umbrales de Alerta  - Wireframe](assets/chapter-4/alerta-wireframe.png)
 
-*   **Cadena de Custodia, Manifiestos y Reportes:** El flujo de entrega garantiza la seguridad exigiendo la VerificaciÃ³n OTP en destino y trazando todos los eventos en una LÃ­nea de Tiempo de Cadena de Custodia. Administrativamente, se generan Manifiestos Digitales de AuditorÃ­a inmutables sellados con SHA-256 y se presenta un consolidado analÃ­tico para cumplimiento normativo DIGEMID/DIGDOT
+*   **Cadena de Custodia, Manifiestos y Reportes:** El flujo de entrega garantiza la seguridad exigiendo la Verificación OTP en destino y trazando todos los eventos en una Línea de Tiempo de Cadena de Custodia. Administrativamente, se generan Manifiestos Digitales de Auditoría inmutables sellados con SHA-256 y se presenta un consolidado analítico para cumplimiento normativo DIGEMID/DIGDOT
 
 ![Cadena de Custodia  - Wireframe](assets/chapter-4/custodia-wireframe.png)
 
-*   **AdministraciÃ³n Institucional y B2B:** La plataforma incluye la gestiÃ³n integral de la suscripciÃ³n, facturaciÃ³n B2B, vinculaciÃ³n de unidades vehiculares y el control granular de usuarios organizados en roles operativos de logÃ­stica o perfiles clÃ­nicos.
+*   **Administración Institucional y B2B:** La plataforma incluye la gestión integral de la suscripción, facturación B2B, vinculación de unidades vehiculares y el control granular de usuarios organizados en roles operativos de logística o perfiles clínicos.
    
 ![Administracion - Wireframe](assets/chapter-4/administracion-wireframes.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
-Esta imagen presenta el diseÃ±o de interfaz de usuario (UI) en alta fidelidad para el flujo de acceso institucional a Medical SmartBox. La vista se divide en dos columnas: el panel izquierdo refuerza la propuesta de valor de la plataforma ("Cadena de frÃ­o bajo custodia digital") y muestra estadÃ­sticas clave de la flota. El panel derecho contiene el formulario de inicio de sesiÃ³n, seguido de un flujo obligatorio de VerificaciÃ³n en Dos Pasos (2FA), donde el operador debe ingresar un cÃ³digo OTP de 6 dÃ­gitos. Este diseÃ±o garantiza un acceso seguro restringido a personal autorizado, manteniendo una estÃ©tica corporativa e intuitiva.
+Esta imagen presenta el diseño de interfaz de usuario (UI) en alta fidelidad para el flujo de acceso institucional a Medical SmartBox. La vista se divide en dos columnas: el panel izquierdo refuerza la propuesta de valor de la plataforma ("Cadena de frío bajo custodia digital") y muestra estadísticas clave de la flota. El panel derecho contiene el formulario de inicio de sesión, seguido de un flujo obligatorio de Verificación en Dos Pasos (2FA), donde el operador debe ingresar un código OTP de 6 dígitos. Este diseño garantiza un acceso seguro restringido a personal autorizado, manteniendo una estética corporativa e intuitiva.
 
 ![Mockup01 - Wireframe](assets/chapter-4/mockup-1.png)
 
-Esta imagen detalla el Dashboard General de Operaciones. La interfaz aprovecha el espacio horizontal para presentar una fila superior de indicadores clave de rendimiento (KPIs), como traslados activos, unidades monitorizadas, alertas crÃ­ticas y cumplimiento tÃ©rmico. El cuerpo central se divide en dos Ã¡reas principales: a la izquierda, un mapa interactivo que ubica la flota en tiempo real dentro de Lima Metropolitana; a la derecha, un panel que consolida las alertas crÃ­ticas mÃ¡s recientes. En la parte inferior, una tabla estructurada permite visualizar rÃ¡pidamente los traslados en curso, ofreciendo al operador logÃ­stico un centro de control integral en una sola vista.
+Esta imagen detalla el Dashboard General de Operaciones. La interfaz aprovecha el espacio horizontal para presentar una fila superior de indicadores clave de rendimiento (KPIs), como traslados activos, unidades monitorizadas, alertas críticas y cumplimiento térmico. El cuerpo central se divide en dos áreas principales: a la izquierda, un mapa interactivo que ubica la flota en tiempo real dentro de Lima Metropolitana; a la derecha, un panel que consolida las alertas críticas más recientes. En la parte inferior, una tabla estructurada permite visualizar rápidamente los traslados en curso, ofreciendo al operador logístico un centro de control integral en una sola vista.
 
 ![Mockup02 - Wireframe](assets/chapter-4/mockup-2.png)
 
-Esta imagen ilustra las interfaces dedicadas a la planificaciÃ³n y seguimiento logÃ­stico. El diseÃ±o incluye una lista navegable de Ã“rdenes de Traslado y un formulario de creaciÃ³n que integra validaciones automÃ¡ticas de isquemia frÃ­a y pre-enfriamiento del contenedor. Destaca el Tablero de Despacho en formato Kanban, que categoriza visualmente el estado de cada viaje (Pendiente, Despachado, En trÃ¡nsito, Entregado). AdemÃ¡s, la vista de detalle de un viaje especÃ­fico divide la pantalla para mostrar, simultÃ¡neamente, la ruta en vivo con el cÃ¡lculo de ETA dinÃ¡mico y la telemetrÃ­a en tiempo real del Smart Container asociado.
+Esta imagen ilustra las interfaces dedicadas a la planificación y seguimiento logístico. El diseño incluye una lista navegable de Órdenes de Traslado y un formulario de creación que integra validaciones automáticas de isquemia fría y pre-enfriamiento del contenedor. Destaca el Tablero de Despacho en formato Kanban, que categoriza visualmente el estado de cada viaje (Pendiente, Despachado, En tránsito, Entregado). Además, la vista de detalle de un viaje específico divide la pantalla para mostrar, simultáneamente, la ruta en vivo con el cálculo de ETA dinámico y la telemetría en tiempo real del Smart Container asociado.
 
 ![Mockup03 - Wireframe](assets/chapter-4/mockup-3.png)
 
-Esta imagen presenta los mÃ³dulos de monitoreo y control a nivel de hardware IoT. La interfaz ofrece una vista en cuadrÃ­cula de todos los Smart Containers activos. Al inspeccionar una unidad individual (SB-0231), el usuario accede a un panel detallado que muestra medidores circulares (*gauges*) para la temperatura actual y el nivel de baterÃ­a, junto con un grÃ¡fico que traza la curva tÃ©rmica de las Ãºltimas 24 horas. Estos paneles tambiÃ©n incluyen herramientas para revisar el historial completo de excursiones tÃ©rmicas exportable para auditorÃ­a, y controles directos para accionar el bloqueo o desbloqueo electromecÃ¡nico de la tapa del contenedor mediante comandos MQTT.
+Esta imagen presenta los módulos de monitoreo y control a nivel de hardware IoT. La interfaz ofrece una vista en cuadrícula de todos los Smart Containers activos. Al inspeccionar una unidad individual (SB-0231), el usuario accede a un panel detallado que muestra medidores circulares (*gauges*) para la temperatura actual y el nivel de batería, junto con un gráfico que traza la curva térmica de las últimas 24 horas. Estos paneles también incluyen herramientas para revisar el historial completo de excursiones térmicas exportable para auditoría, y controles directos para accionar el bloqueo o desbloqueo electromecánico de la tapa del contenedor mediante comandos MQTT.
 
 ![Mockup04 - Wireframe](assets/chapter-4/mockup-4.png)
 
-Esta imagen expone el Centro de Alertas CrÃ­ticas y la gestiÃ³n de incidentes. La bandeja principal clasifica las notificaciones por severidad, permitiendo al operador priorizar la atenciÃ³n. El detalle de un incidente (por ejemplo, una excursiÃ³n tÃ©rmica crÃ­tica) presenta una vista estructurada que documenta la temperatura registrada, la duraciÃ³n fuera del umbral, y un registro temporal (*timeline*) del despacho automÃ¡tico de notificaciones vÃ­a Push y SMS. La interfaz fomenta la resoluciÃ³n eficiente al incluir un campo de texto donde el operador puede registrar las acciones correctivas tomadas y un botÃ³n para marcar la alerta como resuelta.
+Esta imagen expone el Centro de Alertas Críticas y la gestión de incidentes. La bandeja principal clasifica las notificaciones por severidad, permitiendo al operador priorizar la atención. El detalle de un incidente (por ejemplo, una excursión térmica crítica) presenta una vista estructurada que documenta la temperatura registrada, la duración fuera del umbral, y un registro temporal (*timeline*) del despacho automático de notificaciones vía Push y SMS. La interfaz fomenta la resolución eficiente al incluir un campo de texto donde el operador puede registrar las acciones correctivas tomadas y un botón para marcar la alerta como resuelta.
 
 ![Mockup05 - Wireframe](assets/chapter-4/mockup-5.png)
 
-Esta imagen detalla el panel de Perfil, ConfiguraciÃ³n y roles de acceso. La interfaz de configuraciÃ³n permite al administrador gestionar los "Canales de notificaciÃ³n", activando o desactivando avisos vÃ­a SMS, Push, correo y alarma acÃºstica, asÃ­ como definir los umbrales de temperatura y SLA crÃ­ticos. Complementariamente, se incluyen vistas para la gestiÃ³n del personal, donde se listan los usuarios activos y se asignan permisos granulares a travÃ©s de perfiles especÃ­ficos, divididos entre el segmento operativo (Fleet Logistics Dispatcher) y el segmento clÃ­nico (Receiving Physician, Health Quality Auditor).
+Esta imagen detalla el panel de Perfil, Configuración y roles de acceso. La interfaz de configuración permite al administrador gestionar los "Canales de notificación", activando o desactivando avisos vía SMS, Push, correo y alarma acústica, así como definir los umbrales de temperatura y SLA críticos. Complementariamente, se incluyen vistas para la gestión del personal, donde se listan los usuarios activos y se asignan permisos granulares a través de perfiles específicos, divididos entre el segmento operativo (Fleet Logistics Dispatcher) y el segmento clínico (Receiving Physician, Health Quality Auditor).
 
 ![Mockup06 - Wireframe](assets/chapter-4/mockup-6.png)
 
-Esta imagen muestra los mÃ³dulos orientados a la auditorÃ­a, la trazabilidad y el cumplimiento normativo. Destaca el flujo de entrega, que exige la validaciÃ³n de un cÃ³digo OTP en el punto de destino para desbloquear el contenedor, evento que queda registrado en la LÃ­nea de Tiempo de Cadena de Custodia. El sistema genera manifiestos digitales de cada traslado, los cuales son sellados criptogrÃ¡ficamente (SHA-256) para garantizar su inmutabilidad. Finalmente, un panel de reportes consolida el rendimiento tÃ©rmico mensual de las distintas sedes, facilitando la presentaciÃ³n de datos ante entidades regulatorias como DIGEMID.
+Esta imagen muestra los módulos orientados a la auditoría, la trazabilidad y el cumplimiento normativo. Destaca el flujo de entrega, que exige la validación de un código OTP en el punto de destino para desbloquear el contenedor, evento que queda registrado en la Línea de Tiempo de Cadena de Custodia. El sistema genera manifiestos digitales de cada traslado, los cuales son sellados criptográficamente (SHA-256) para garantizar su inmutabilidad. Finalmente, un panel de reportes consolida el rendimiento térmico mensual de las distintas sedes, facilitando la presentación de datos ante entidades regulatorias como DIGEMID.
 
 ![Mockup07 - Wireframe](assets/chapter-4/mockup-7.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-El diagrama de flujo de usuario es una representaciÃ³n visual de las acciones secuenciales que un operador logÃ­stico, supervisor hospitalario o personal mÃ©dico realiza al interactuar con el ecosistema digital de NeonCode. A continuaciÃ³n se presentan tres diagramas de flujo clave adaptados a las historias de usuario de la plataforma, detallando el *Happy Path* (ruta ideal) y las ramificaciones alternativas (errores de validaciÃ³n, fallas de conectividad IoT y desviaciones en la cadena de frÃ­o).
+El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que un operador logístico, supervisor hospitalario o personal médico realiza al interactuar con el ecosistema digital de NeonCode. A continuación se presentan tres diagramas de flujo clave adaptados a las historias de usuario de la plataforma, detallando el *Happy Path* (ruta ideal) y las ramificaciones alternativas (errores de validación, fallas de conectividad IoT y desviaciones en la cadena de frío).
 
-**User Flow 1: AutenticaciÃ³n de Personal y Acceso al Panel**
+**User Flow 1: Autenticación de Personal y Acceso al Panel**
 *   **User Stories relacionadas:** US01, US02
-*   **Flujos incluidos:** *Happy Path* (autenticaciÃ³n exitosa y acceso al panel), credenciales invÃ¡lidas, cuenta institucional no activada, campos incompletos y reintentos de sesiÃ³n.
+*   **Flujos incluidos:** *Happy Path* (autenticación exitosa y acceso al panel), credenciales inválidas, cuenta institucional no activada, campos incompletos y reintentos de sesión.
 
 ![Primer User Flow](assets/chapter-4/user-flow-1.png)
 
-**User Flow 2: Alta de Ambulancia y VinculaciÃ³n de Contenedor Inteligente**
+**User Flow 2: Alta de Ambulancia y Vinculación de Contenedor Inteligente**
 *   **User Stories relacionadas:** US07, US08
-*   **Flujos incluidos:** *Happy Path* (registro de vehÃ­culo y asignaciÃ³n telemÃ©trica de contenedor), matrÃ­cula de ambulancia duplicada, ID de contenedor no encontrado, contenedor previamente asignado a otro vehÃ­culo y falla de enlace telemÃ©trico inicial.
+*   **Flujos incluidos:** *Happy Path* (registro de vehículo y asignación telemétrica de contenedor), matrícula de ambulancia duplicada, ID de contenedor no encontrado, contenedor previamente asignado a otro vehículo y falla de enlace telemétrico inicial.
 
 ![Segundo User Flow](assets/chapter-4/user-flow-2.png)
 
-**User Flow 3: Monitoreo TÃ©rmico en Ruta, GestiÃ³n de Alertas y Cierre de Custodia**
+**User Flow 3: Monitoreo Térmico en Ruta, Gestión de Alertas y Cierre de Custodia**
 *   **User Stories relacionadas:** US10, US11, US13, US14, US17
-*   **Flujos incluidos:** *Happy Path* (monitoreo en tiempo real, recepciÃ³n de alerta por variaciÃ³n tÃ©rmica, acciÃ³n correctiva y confirmaciÃ³n de entrega), pÃ©rdida de seÃ±al del contenedor, umbral tÃ©rmico no configurado, variaciÃ³n de stock por sensores de peso e incidencia no resuelta en ruta.
+*   **Flujos incluidos:** *Happy Path* (monitoreo en tiempo real, recepción de alerta por variación térmica, acción correctiva y confirmación de entrega), pérdida de señal del contenedor, umbral térmico no configurado, variación de stock por sensores de peso e incidencia no resuelta en ruta.
 
 ![Tercer User Flow](assets/chapter-4/user-flow-3.png)
 
