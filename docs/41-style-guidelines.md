@@ -54,3 +54,20 @@ La aplicación utiliza un sistema de etiquetas y terminología adaptado a los do
 *   **Para el visitante:** Botones directos como "Ir a la Web App" o "Iniciar sesión".
 *   **Para los Operadores de Transporte:** Se emplea terminología técnica de monitoreo y flota. Etiquetas como "ETA", "Telemetría en vivo", "Combustible (%)", "Batería (%)" y "Temperatura (°C)". Las alertas usan un lenguaje preciso: "Puerta abierta fuera de parada", "Batería baja del SmartBox".
 *   **Para los Centros Receptores (Hospitales/Farmacias):** El enfoque cambia hacia la recepción de paquetes. Etiquetas enfocadas en el estado de llegada: "Envíos entrantes", "Llegan hoy", "Recibido", y confirmaciones como "Conforme".
+
+### 4.2.3. SEO Tags and Meta Tags
+
+Los SEO y meta tags implementados en Medical SmartBox están optimizados para el nicho de logística médica:
+
+*   **Title Tag:**
+    `<title>Medical SmartBox — Monitoreo y trazabilidad del transporte médico</title>`
+*   **Meta Description:**
+    `<meta name="description" content="Medical SmartBox es una plataforma para monitorear transportes médicos, detectar incidencias de temperatura en tiempo real y mantener cada envío y cadena de frío bajo control.">`
+*   **Language tag:** (Dinámico vía script, base en inglés y español)
+    `<html lang="es">`
+*   **Meta Viewport:** (Esencial para responsividad en móviles y paneles de campo)
+    `<meta name="viewport" content="width=device-width, initial-scale=1">`
+*   **Author tag:**
+    `<meta name="author" content="Medical SmartBox Team">`
+*   **Canonical Tag:**
+    `<link rel="canonical" href="https://www.medicalsmartbox.com/">`
