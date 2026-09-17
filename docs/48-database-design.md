@@ -16,81 +16,28 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * Las coordenadas geográficas de telemetría se aplanan en `latitude` y `longitude` en `telemetry_logs`.
 4. **Marcas Temporales UTC con Precisión de Microsegundos:**  
    Dado que los contenedores inteligentes registran desviaciones térmicas en milisegundos y las ambulancias se desplazan rápidamente por arterias viales, todas las fechas y horas se registran en formato universal coordinado (`DateTime.UtcNow`) utilizando el tipo `DATETIME(6)`. Esto elimina ambigüedades por husos horarios y garantiza orden estricto en el procesamiento reactivo de eventos.
-5. **Mapeo de Entidades Internas y Agregados en EF Core 10 (`OwnsOne`):**  
-   En el modelo orientado a objetos (Capítulo 4.7), la raíz de agregado `SmartContainer` encapsula entidades subordinadas como `ElectromechanicalLock` (cerrojo de seguridad) y `BatteryUnit` (unidad de alimentación LiFePO4), mientras que la raíz `DispatchTrip` encapsula la entidad de ruta `TransportRoute`. En la base de datos física, para evitar la proliferación de tablas satélite 1 a 1 y maximizar la eficiencia en consultas operativas sin sobrecarga de operaciones `JOIN`, estas entidades se aplanan directamente dentro de las tablas `smart_containers` y `dispatch_trips` mediante la Fluent API de Entity Framework Core 10.0:
-   ```csharp
-   builder.Entity<SmartContainer>(b =>
-   {
-       b.ToTable("smart_containers");
-       b.HasKey(c => c.Id);
-
-       // Mapeo OwnsOne para cerrojo electromecánico
-       b.OwnsOne(c => c.Lock, lockBuilder =>
-       {
-           lockBuilder.Property(l => l.State)
-                      .HasColumnName("lock_state")
-                      .HasConversion<string>()
-                      .IsRequired();
-       });
-
-       // Mapeo OwnsOne para unidad de batería y alimentación 12V
-       b.OwnsOne(c => c.Battery, batteryBuilder =>
-       {
-           batteryBuilder.Property(bt => bt.ChargePercentage)
-                         .HasColumnName("battery_percentage")
-                         .HasPrecision(5, 2)
-                         .IsRequired();
-           batteryBuilder.Property(bt => bt.IsChargingFrom12V)
-                         .HasColumnName("is_12v_connected")
-                         .IsRequired();
-       });
-
-       // Entidad en memoria; su telemetría dinámica se persiste en telemetry_logs.peltier_power_pct
-       b.Ignore(c => c.Cooler);
-   });
-
-   // Mapeo OwnsOne para ruta telemétrica en DispatchTrip
-   builder.Entity<DispatchTrip>(b =>
-   {
-       b.ToTable("dispatch_trips");
-       b.HasKey(t => t.Id);
-
-       b.OwnsOne(t => t.Route, routeBuilder =>
-       {
-           routeBuilder.Property(r => r.DistanceKilometers)
-                       .HasColumnName("distance_km")
-                       .HasPrecision(6, 2)
-                       .IsRequired();
-           routeBuilder.Property(r => r.PlannedDurationMinutes)
-                       .HasColumnName("planned_duration_minutes")
-                       .IsRequired();
-           routeBuilder.Property(r => r.CurrentCongestionDelayMinutes)
-                       .HasColumnName("current_delay_minutes")
-                       .IsRequired();
-           routeBuilder.Property(r => r.PolylineCoordinates)
-                       .HasColumnName("polyline_coordinates")
-                       .HasColumnType("TEXT");
-       });
-   });
-   ```
-   Esta configuración garantiza que el modelo de dominio en C# preserve estrictamente el encapsulamiento y comportamiento de objetos internos de la raíz de agregado, mientras que el motor MySQL persiste las columnas de forma atómica y de alto rendimiento.
+5. **Estrategia de Persistencia de Entidades Internas de Agregados (*Entity Flattening*):**  
+   En el modelo orientado a objetos (Capítulo 4.7), la raíz de agregado `SmartContainer` encapsula entidades subordinadas como `ElectromechanicalLock` (cerrojo de seguridad) y `BatteryUnit` (unidad de alimentación LiFePO4), mientras que la raíz `DispatchTrip` encapsula la entidad de ruta `TransportRoute`. En la base de datos física relacional, para evitar la proliferación innecesaria de tablas satélite 1 a 1 y maximizar la eficiencia en consultas operativas sin sobrecarga de operaciones `JOIN`, estas entidades subordinadas se integran y aplanan directamente como columnas dentro de sus tablas principales:
+   * En `smart_containers`: se persisten atómicamente `lock_state` (estado del cerrojo), `battery_percentage` (porcentaje de carga) e `is_12v_connected` (alimentación auxiliar 12V).
+   * En `dispatch_trips`: se persisten directamente los atributos de ruta calculados `distance_km`, `planned_duration_minutes`, `current_delay_minutes` y `polyline_coordinates`.  
+   Esta decisión garantiza un esquema de almacenamiento de alto rendimiento para las consultas operativas en ruta sin comprometer la encapsulación conceptual definida en el diseño orientado a objetos.
 6. **Conversión de Tipos Numéricos entre Dominio y Persistencia (`double` a `DECIMAL`):**  
-   En el modelo de clases de dominio en C# (Capítulo 4.7), las lecturas sensoriales y telemétricas (temperatura, peso neto y coordenadas geográficas) se representan como tipos primitivos `double` para optimizar el rendimiento computacional de cálculos en memoria y procesamiento de flujos IoT. En la persistencia física en MySQL, estos valores se persisten rigurosamente como tipos de coma fija `DECIMAL(p, s)` (`DECIMAL(4,2)` para temperatura, `DECIMAL(6,2)` para peso en gramos y `DECIMAL(10,8)` / `DECIMAL(11,8)` para latitud/longitud). En Entity Framework Core 10.0, esta transición se gobierna explícitamente mediante conversores de valor `HasConversion<double>()` y directivas `HasPrecision(p, s)` en la configuración Fluent API, eliminando discrepancias de precisión entre capas de arquitectura.
+   En el modelo de clases de dominio (Capítulo 4.7), las lecturas sensoriales y telemétricas (temperatura, peso neto y coordenadas geográficas) se representan como tipos numéricos en coma flotante para optimizar el rendimiento computacional de cálculos en memoria y procesamiento de flujos IoT. En la persistencia física en MySQL, estos valores se almacenan rigurosamente como tipos de coma fija `DECIMAL(p, s)` (`DECIMAL(4,2)` para temperatura, `DECIMAL(6,2)` para peso en gramos y `DECIMAL(10,8)` / `DECIMAL(11,8)` para latitud/longitud), eliminando cualquier riesgo de discrepancia por redondeo o imprecisión binaria en los registros médicos.
 7. **Delimitación de Flota Vehicular y Activos Externos (Segmento 1):**  
    En el modelo SaaS, las ambulancias constituyen activos vehiculares de transporte sanitario operados por terceros (Segmento 1) identificados por su número de placa (`assigned_vehicle_plate`) en las órdenes de despacho (`dispatch_trips`). El control de cuotas comerciales de suscripción (`max_ambulances` en `subscription_plans`) se valida a nivel de servicio contra las unidades móviles simultáneamente activas, preservando el foco del software exclusivamente en la gestión del contenedor médico inteligente y evitando la sobreingeniería de tablas maestras vehiculares internas.
 8. **Invariantes Térmicas de Firmware y Control de Celda Peltier:**  
    La celda termoeléctrica Peltier opera bajo un punto de consigna (*setpoint*) fijo y normado (+4.0 °C) implementado como invariante de control en el firmware autónomo del ESP32. Su estado no demanda columnas de configuración mutable en la tabla de catálogo `smart_containers`, sino que su modulación dinámica de potencia se audita y persiste históricamente mediante la columna `peltier_power_pct` en la tabla de series temporales de alta frecuencia `telemetry_logs`.
-9. **Mapeo Declarativo de Nombres de Columnas en Fluent API:**  
-   Para preservar la pureza del modelo de dominio en C# (Capítulo 4.7) conforme al lenguaje ubicuo (*PascalCase*) y garantizar total coherencia con el esquema físico en MySQL 8.0 (*snake_case*), EF Core mapea explícitamente las siguientes propiedades mediante `.HasColumnName(...)`:
-   * `SubscriptionPlan.PlanCode` $\longrightarrow$ `code` (tabla `subscription_plans`).
-   * `SubscriptionPlan.MaxFleetBoxes` $\longrightarrow$ `max_smartboxes` (tabla `subscription_plans`).
-   * `SubscriptionPlan.MonthlyCostUsd` $\longrightarrow$ `monthly_price_usd` (tabla `subscription_plans`).
-   * `HospitalInstitution.OfficialName` $\longrightarrow$ `name` (tabla `hospital_institutions`).
-   * `UserAccount.ProfessionalLicenseNumber` $\longrightarrow$ `medical_license_number` (tabla `users`).
-   * `TransportOrder.Priority` $\longrightarrow$ `clinical_priority` (tabla `transport_orders`).
-   * `CustodyTransfer.TransferredAt` $\longrightarrow$ `completed_at` (tabla `custody_transfers`).
-   * `DigitalAuditManifest.GeneratedAt` $\longrightarrow$ `sealed_at` (tabla `digital_audit_manifests`).
-   * `DigitalAuditManifest.CloudStorageUrl` $\longrightarrow$ `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
+9. **Correspondencia de Nomenclatura entre Dominio y Esquema Físico:**  
+   Para preservar la pureza del modelo conceptual de dominio (Capítulo 4.7) formulado bajo el lenguaje ubicuo (*PascalCase*) y garantizar total coherencia con las convenciones relacionales del esquema físico en MySQL 8.0 (*snake_case*), se formaliza la siguiente matriz de correspondencia:
+   * `SubscriptionPlan.PlanCode` → `code` (tabla `subscription_plans`).
+   * `SubscriptionPlan.MaxFleetBoxes` → `max_smartboxes` (tabla `subscription_plans`).
+   * `SubscriptionPlan.MonthlyCostUsd` → `monthly_price_usd` (tabla `subscription_plans`).
+   * `HospitalInstitution.OfficialName` → `name` (tabla `hospital_institutions`).
+   * `UserAccount.ProfessionalLicenseNumber` → `medical_license_number` (tabla `users`).
+   * `TransportOrder.Priority` → `clinical_priority` (tabla `transport_orders`).
+   * `CustodyTransfer.TransferredAt` → `completed_at` (tabla `custody_transfers`).
+   * `DigitalAuditManifest.GeneratedAt` → `sealed_at` (tabla `digital_audit_manifests`).
+   * `DigitalAuditManifest.CloudStorageUrl` → `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
 
 ---
 
@@ -110,7 +57,7 @@ El modelo de datos relacional de Medical SMARTBOX ha sido diseñado bajo una est
   En la tabla `digital_audit_manifests` (Contexto de Cadena de Custodia), se almacenan de manera precalculada las métricas `average_temperature_celsius`, `min_temperature_celsius`, `max_temperature_celsius` y `total_excursion_seconds`.  
   *Justificación Técnica y Legal:* Un traslado en ambulancia puede generar miles de lecturas de telemetría en `telemetry_logs`. Si un auditor de calidad de DIGEMID o un cirujano de trasplantes requiere verificar el acta de entrega durante una auditoría o minutos antes de implantar un corazón, calcular agregaciones dinámicas (`AVG`, `MIN`, `MAX`) sobre millones de filas degradaría la base de datos y retardaría la respuesta médica. Además, el acta digital constituye un documento médico-legal sellado criptográficamente con hash SHA-256 (`cryptographic_hash_sha256`); desnormalizar estas métricas en el momento exacto del cierre de custodia garantiza que las cifras auditadas permanezcan inmutables en el tiempo, protegidas de cualquier alteración histórica o depuración de logs sensoriales antiguos.
 * **Principio de Custodia Unívoca y Ausencia de Tablas N:M:**  
-  A diferencia de aplicaciones comerciales genéricas, el modelo relacional descarta de forma deliberada el uso de tablas intermedias de descomposición muchos a muchos (N:M). Bajo la normativa de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva Sanitaria N° 152), el transporte asistencial de órganos, hemoderivados y vacunas críticas opera bajo el **Principio de Custodia Unívoca (1 Orden de Traslado $\rightarrow$ 1 Despacho $\rightarrow$ 1 Contenedor Inteligente $\rightarrow$ 1 Custodio Receptor Acreditado)**. Establecer asignaciones múltiples concurrentes (N:M) introduciría vacíos de trazabilidad médico-legal y riesgo inaceptable de contaminación cruzada o confusión de muestras biológicas, por lo que el esquema relacional refuerza estrictamente relaciones 1:1 y 1:N con integridad referencial restrictiva.
+  A diferencia de aplicaciones comerciales genéricas, el modelo relacional descarta de forma deliberada el uso de tablas intermedias de descomposición muchos a muchos (N:M). Bajo la normativa de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva Sanitaria N° 152), el transporte asistencial de órganos, hemoderivados y vacunas críticas opera bajo el **Principio de Custodia Unívoca (1 Orden de Traslado → 1 Despacho → 1 Contenedor Inteligente → 1 Custodio Receptor Acreditado)**. Establecer asignaciones múltiples concurrentes (N:M) introduciría vacíos de trazabilidad médico-legal y riesgo inaceptable de contaminación cruzada o confusión de muestras biológicas, por lo que el esquema relacional refuerza estrictamente relaciones 1:1 y 1:N con integridad referencial restrictiva.
 
 ---
 
@@ -391,7 +338,7 @@ La siguiente matriz documenta las **20 relaciones de clave foránea** implementa
 Para procesar ráfagas continuas de telemetría provenientes de múltiples ambulancias sin degradar los tiempos de respuesta del dashboard web en Vue.js ni la transmisión en tiempo real de WebSockets vía SignalR, se implementa una estrategia de **índices B-Tree compuestos**:
 
 1. **`idx_telemetry_container_timestamp (container_id, timestamp_utc DESC)`:**  
-   *Propósito:* Optimiza la consulta más frecuente del sistema: obtener la última lectura emitida por un contenedor específico para renderizar el termómetro digital, indicador de peso y estado de batería en el frontend. Al estar ordenado descendentemente, el motor MySQL resuelve la consulta en tiempo $O(1)$ sin realizar un escaneo completo de tabla (*Full Table Scan*).
+   *Propósito:* Optimiza la consulta más frecuente del sistema: obtener la última lectura emitida por un contenedor específico para renderizar el termómetro digital, indicador de peso y estado de batería en el frontend. Al estar ordenado descendentemente, el motor MySQL resuelve la consulta en tiempo O(1) sin realizar un escaneo completo de tabla (*Full Table Scan*).
 2. **`idx_telemetry_trip_timestamp (trip_id, timestamp_utc ASC)`:**  
    *Propósito:* Permite recuperar la curva térmica completa y las coordenadas del recorrido de una ambulancia para trazar el gráfico histórico de temperatura en el visor de auditoría clínica.
 3. **`idx_dispatch_trips_status_departure (status, scheduled_departure_time)`:**  
