@@ -37,39 +37,13 @@ Descripción:
 
 ## 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 1 se realizó la documentación de los servicios web relacionados con la solución desarrollada. En esta sección se presentan los endpoints utilizados, las acciones disponibles y las evidencias de interacción con los servicios implementados.
-
-| Endpoint | Método HTTP | Descripción | Parámetros | Respuesta |
-|---|---|---|---|---|
-| | GET/POST/PUT/DELETE | | | |
-
-### Evidencias de servicios
-
-Se presentan capturas de las pruebas realizadas mediante herramientas de documentación o consumo de servicios, mostrando la comunicación entre los componentes de la solución.
-
-[Insertar capturas de Swagger/Postman/servicios]
-
-Repositorio de servicios:
-
-[Insertar URL del repositorio]
+Durante este Sprint no se desarrollaron servicios web asociados al backend. La implementación estuvo enfocada en el desarrollo inicial del Landing Page frontend, mientras que la arquitectura de servicios fue definida como parte del diseño técnico del sistema en esta primera entrega.
 
 ---
 
 ## 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-En esta sección se presentan las evidencias del despliegue realizado durante el Sprint 1, mostrando la disponibilidad de la solución en un entorno accesible para revisión.
-
-Plataforma utilizada:
-
-- 
-
-URL del despliegue:
-
-- 
-
-Captura del despliegue:
-
-[Insertar imagen]
+Durante el Sprint 1 no se realizó un despliegue productivo de servicios backend ni aplicaciones web. La evidencia corresponde al entorno de desarrollo utilizado para validar los avances del Landing Page.
 
 ---
 
