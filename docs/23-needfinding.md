@@ -48,3 +48,19 @@ El siguiente Journey Map representa el recorrido de Renato Calvo Yalan, integran
 El siguiente Journey Map representa el recorrido de Karla Pacheco, auxiliar administrativa del área de salud encargada del monitoreo y registro de rutas de ambulancias y de la recolección de muestras o materiales médicos. El recorrido comprende la coordinación de las rutas, el registro de información, el seguimiento del transporte y la recepción de los materiales. Durante este proceso, la comunicación con los transportistas y la disponibilidad de información actualizada resultan importantes para mantener un seguimiento adecuado de las rutas y registrar correctamente el desarrollo de cada traslado.
 
 ![User Journey Map - Operadores logísticos e instituciones de salud](./assets/chapter-2/user-journey-logistics-healthcare.png)
+
+### 2.3.4. Empathy Mapping
+
+Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace dentro de su contexto relacionado con el traslado y manejo de productos médicos sensibles. Estos mapas permiten identificar los principales pains y gains de cada segmento y comprender las necesidades que deben ser consideradas durante el diseño de Medical SmartBox.
+
+- **Segmento 1: Personal médico y de emergencias**
+
+El siguiente Mapa de Empatía profundiza en la experiencia de Aldair Lazaro, integrante del personal médico y de emergencias. Se identifican sus principales pensamientos y sentimientos relacionados con la responsabilidad de garantizar que los productos médicos sensibles lleguen en condiciones adecuadas, así como lo que observa durante el traslado, la información que recibe de otros participantes del proceso y las acciones que realiza para verificar las condiciones y disponibilidad de los productos. El mapa también permite identificar como principales pains la falta de información oportuna, la incertidumbre ante posibles incidentes y la dificultad para conocer el estado del traslado, mientras que entre los gains se encuentran una mayor visibilidad del proceso, información confiable y capacidad de respuesta ante situaciones críticas.
+
+![Empathy Map - Personal médico y de emergencias](./assets/chapter-2/empathy-map-medical.png)
+
+- **Segmento 2: Operadores logísticos e instituciones de salud**
+
+El siguiente Mapa de Empatía profundiza en la experiencia de Gianfranco Timoteo, quien participa en actividades relacionadas con el soporte y registro dentro de una institución de salud. Se identifican sus principales pensamientos y sentimientos relacionados con la necesidad de mantener información organizada y disponible, así como lo que observa en el proceso de transporte, la información que recibe de otros participantes y las actividades que realiza para registrar y dar seguimiento a los traslados. El mapa permite identificar como principales pains las dificultades de comunicación, la información distribuida y el seguimiento de las rutas, mientras que entre los gains se encuentran una mejor coordinación, información centralizada y mayor facilidad para consultar el estado de los transportes.
+
+![Empathy Map - Operadores logísticos e instituciones de salud](./assets/chapter-2/empathy-map-logistics-healthcare.png)
