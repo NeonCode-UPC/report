@@ -1,1 +1,1 @@
-# 2.4. Big Picture EventStorming
+﻿# 2.4. Big Picture EventStorming
