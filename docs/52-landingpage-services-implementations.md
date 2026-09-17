@@ -12,7 +12,8 @@ Durante el Sprint 1 se realizaron avances relacionados con la implementación de
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
-| | | | | | |
+| landing-page-draft | main | a4f8fb1 | chore: initialize js directory structure | Se organizó la estructura inicial del directorio JavaScript para la implementación del Landing Page. | 17/09/2026 |
+| landing-page-draft | main | b839d52 | chore: initial project setup and base design tokens | Se realizó la configuración inicial del proyecto y la definición de tokens base de diseño para establecer estilos reutilizables. | 17/09/2026 |
 
 ---
 
