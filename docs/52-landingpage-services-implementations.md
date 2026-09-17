@@ -104,4 +104,4 @@ Durante el desarrollo del Sprint 1, el equipo utilizó GitHub como herramienta d
 
 La gestión mediante ramas permitió separar los avances realizados por cada integrante, mientras que los commits facilitaron mantener un historial ordenado de los cambios realizados durante el desarrollo.
 
-[Insertar captura de commits/GitHub Insights]
+![Team Collaboration Insights during Sprint](../assets/chapter-5/report-insights-av1.png)
