@@ -71,3 +71,10 @@ Los SEO y meta tags implementados en Medical SmartBox están optimizados para el
     `<meta name="author" content="Medical SmartBox Team">`
 *   **Canonical Tag:**
     `<link rel="canonical" href="https://www.medicalsmartbox.com/">`
+
+### 4.2.4. Searching Systems
+
+Para asegurar que los usuarios encuentren la unidad o el dato exacto al instante:
+
+*   **Búsqueda global y de flota:** Un input de búsqueda con el placeholder *"Buscar transporte, SmartBox o destino"* y filtros dedicados *"Filtrar por ruta, estado o SmartBox"*.
+*   **Búsqueda por Estados (Tabs):** Posibilidad de filtrar vistas rápidamente mediante estados activos como "En tránsito", "Crítica", o "Entregado".
