@@ -23,6 +23,7 @@ Durante este Sprint se implementaron las principales vistas de la solución web,
 
 A continuación, se presentan las capturas correspondientes a las vistas implementadas junto con el enlace de demostración del funcionamiento.
 
+<img width="2028" height="1090" alt="Screenshot 2026-09-28 at 10 33 48 AM" src="https://github.com/user-attachments/assets/7c5733c4-086d-4fd7-8335-7a6b68b379a6" />
 ### Vista implementada 1
 
 Descripción:
