@@ -1,6 +1,6 @@
-﻿# 2.1. Competidores
+# 2.1. Competidores
 
-Esta sección identifica competidores directos e indirectos relacionados con el monitoreo de cadena de frío, rastreo logístico, transporte médico y gestión de activos IoT. El análisis permite reconocer alternativas existentes, comparar capacidades y definir estrategias que diferencien la propuesta de [Nombre del producto].
+Esta sección identifica competidores directos e indirectos relacionados con el monitoreo de cadena de frío, rastreo logístico, transporte médico y gestión de activos IoT. El análisis permite reconocer alternativas existentes, comparar capacidades y definir estrategias que diferencien la propuesta de NeonCode.
 
 ## 2.1.1. Análisis competitivo
 
