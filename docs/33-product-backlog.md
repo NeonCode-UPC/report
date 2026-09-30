@@ -26,11 +26,32 @@ El backlog se encuentra organizado secuencialmente para guiar el desarrollo de l
 | **18** | EP06 | **US17** | Confirmación de Entrega y Cadena de Custodia | 3 | Sprint 4 |
 
 ---
+### 3.3.1.Engineering Tasks
 
-### Resumen de Estimación y Velocidad por Sprint
+A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales) en tareas de ingeniería (*Engineering Tasks*). Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
 
-* **Sprint 1 (Fundación e Identidad):** 16 Story Points (US01, US02, US03, US04, US05, US06)
-* **Sprint 2 (Ingesta IoT y Monitoreo Base):** 29 Story Points (US07, US08, US09, US10, US12)
-* **Sprint 3 (Alertas e Inventario Avanzado):** 21 Story Points (US11, US13, US14, US15)
-* **Sprint 4 (Trazabilidad y Auditoría):** 16 Story Points (US16, US17, US18)
-* **Total del Product Backlog:** 82 Story Points
+#### **US04: Exploración de Propuesta de Valor Logística (2 SP)**
+* **TSK-04-01:** Maquetación responsive de la sección "Soluciones Logísticas" en el Landing Page (HTML5 / Tailwind CSS). **[6 Horas]**
+* **TSK-04-02:** Integración de componentes visuales interactivos para especificaciones técnicas del contenedor inteligente. **[4 Horas]**
+
+#### **US05: Solicitud de Demostración Corporativa (2 SP)**
+* **TSK-05-01:** Desarrollo del formulario de contacto para clientes corporativos con validación de campos en cliente (JavaScript/TypeScript). **[5 Horas]**
+* **TSK-05-02:** Configuración del servicio backend/mailing para la recepción y reenvío de prospectos a ventas. **[6 Horas]**
+
+#### **US06: Consulta de Preguntas Frecuentes (1 SP)**
+* **TSK-06-01:** Implementación del componente acordeón de FAQ y buscador por palabra clave en el Landing Page. **[4 Horas]**
+
+#### **US01: Registro de Institución de Salud (3 SP)**
+* **TSK-01-01:** Diseño y maquetación del formulario web de registro institucional hospitalario. **[5 Horas]**
+* **TSK-01-02:** Creación de endpoints en API REST para recepción de datos de registro y validación de RUC duplicado. **[7 Horas]**
+* **TSK-01-03:** Implementación del servicio de envío de correos electrónicos de confirmación de cuenta. **[4 Horas]**
+
+#### **US07: Alta de Unidades de Ambulancia (3 SP)**
+* **TSK-07-01:** Creación del modelo de datos de Ambulancias en la base de datos (PostgreSQL/MySQL). **[4 Horas]**
+* **TSK-07-02:** Desarrollo de endpoints CRUD para el registro y consulta de vehículos de transporte. **[6 Horas]**
+* **TSK-07-03:** Interfaz web para el formulario de registro y lista de unidades registradas. **[6 Horas]**
+
+#### **US08: Vinculación de Contenedor Inteligente (5 SP)**
+* **TSK-08-01:** Desarrollo del módulo backend de asignación física (relación 1:1 entre ambulancia y contenedor IoT). **[8 Horas]**
+* **TSK-08-02:** Validación de estados del dispositivo (bloqueo de reasignación si está ocupado). **[5 Horas]**
+* **TSK-08-03:** Interfaz web para vinculación mediante lectura o digitación del UUID/MAC del contenedor. **[6 Horas]**
