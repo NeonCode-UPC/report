@@ -46,7 +46,16 @@ img {
 /* Cover page specific styles */
 .cover-page {
     page-break-inside: avoid !important;
-    }
+}
+.cover-page img, .cover-page .cover-logo {
+    width: 13.5mm !important;
+    height: 13.5mm !important;
+    max-width: 13.5mm !important;
+    max-height: 13.5mm !important;
+    display: block !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+}
 .cover-page table, .cover-page .integrantes-table {
     width: auto !important;
     table-layout: auto !important;
