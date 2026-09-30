@@ -23,8 +23,7 @@ Durante este Sprint se implementaron las principales vistas de la solución web,
 
 A continuación, se presentan las capturas correspondientes a las vistas implementadas junto con el enlace de demostración del funcionamiento.
 
-🎥 **[ENLACE EN CONSTRUCCIÓN] Ver Video de Demostración y Navegación del Sprint** 
-*(el enlace vía YouTube / Drive se actualizará al concluir la grabación del sprint review)*
+#### Video de Demostración de Navegación (Landing Page): [Ver video aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
 
 <img width="2028" height="1090" alt="Screenshot 2026-09-28 at 10 33 48 AM" src="https://github.com/user-attachments/assets/7c5733c4-086d-4fd7-8335-7a6b68b379a6" />
 
