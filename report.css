@@ -42,3 +42,23 @@ img {
     max-width: 100% !important;
     height: auto !important;
 }
+
+/* Cover page specific styles */
+.cover-page {
+    page-break-inside: avoid !important;
+    }
+.cover-page table, .cover-page .integrantes-table {
+    width: auto !important;
+    table-layout: auto !important;
+    margin: 0 auto !important;
+    border: none !important;
+    border-collapse: collapse !important;
+}
+.cover-page th, .cover-page td {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 2.5px 30px 2.5px 0 !important;
+}
+.cover-page th:last-child, .cover-page td:last-child {
+    padding-right: 0 !important;
+}
