@@ -37,13 +37,13 @@ En estricta observancia de los patrones Domain-Driven Design (DDD), las clases d
 * `DigitalAuditManifest.CloudStorageUrl` → columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
 Esta separación formal preserva la expresividad del lenguaje ubicuo en el código fuente de dominio sin acoplarlo rígidamente a los identificadores físicos de almacenamiento.
 
----
+***
 
 ### **2. Desglose Exhaustivo de Clases por Bounded Context**
 
 A continuación se detalla la especificación estática de clases para los cinco Bounded Contexts del sistema que articulan el **Segmento 1 (Transporte y Flota Logística)** y el **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**:
 
----
+***
 
 #### **4.7.1.0. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
@@ -203,7 +203,7 @@ A nivel del diseño estático de clases de software, las entidades de identidad,
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.1. Bounded Context A: Smart Container & Telemetry Monitoring (IoT)**
 
@@ -406,7 +406,7 @@ Representa el núcleo físico y sensorial del proyecto. Modela el control activo
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.2. Bounded Context B: Medical Transport Planning & Dispatching (Segmento 1)**
 
@@ -557,7 +557,7 @@ Modela la respuesta operativa del **Segmento 1 (Ambulancias y Despacho)** ante l
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.3. Bounded Context C: Critical Alerting & Incident Response (Segmentos 1 y 2)**
 
@@ -670,7 +670,7 @@ Modela la detección de contingencias, despacho de alarmas acústicas y visuales
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.4. Bounded Context D: Chain of Custody & Traceability (Segmento 2 - Clínico y Legal)**
 
@@ -785,7 +785,7 @@ Modela la seguridad de custodia en el hospital receptor (**Segmento 2**): valida
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.5. Domain Events y Clases Transversales (Shared Kernel)**
 
@@ -874,7 +874,7 @@ Permiten propagar asíncronamente cambios de estado críticos entre los Bounded 
   </tbody>
 </table>
 
----
+***
 
 ### **3. Matriz de Relaciones y Cardinalidades del Modelo de Clases**
 
@@ -1047,7 +1047,7 @@ Para asegurar total rigurosidad en la implementación del diagrama UML, la sigui
   </tbody>
 </table>
 
----
+***
 
 ### **4. Diagramas de Clases por Bounded Context**
 
@@ -1055,38 +1055,38 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 #### **4.1. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
-![Figura 4.7.1.1 - Diagrama de Clases: Identity, Access & Subscriptions (IAM)](../assets/chapter-4/4.7.1-class-diagram-iam.png)
+![Figura 4.7.1.1 - Diagrama de Clases: Identity, Access & Subscriptions (IAM)](assets/chapter-4/4.7.1-class-diagram-iam.png)
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de IAM y Suscripciones.*
 
----
+***
 
 #### **4.2. Bounded Context: Smart Container & Telemetry Monitoring**
 
-![Figura 4.7.1.2 - Diagrama de Clases: Smart Container & Telemetry Monitoring](../assets/chapter-4/4.7.1-class-diagram-smart-container.png)
+![Figura 4.7.1.2 - Diagrama de Clases: Smart Container & Telemetry Monitoring](assets/chapter-4/4.7.1-class-diagram-smart-container.png)
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Contenedores Inteligentes y Telemetría.*
 
----
+***
 
 #### **4.3. Bounded Context: Medical Transport Planning & Dispatching**
 
-![Figura 4.7.1.3 - Diagrama de Clases: Medical Transport Planning & Dispatching](../assets/chapter-4/4.7.1-class-diagram-transport-planning.png)
+![Figura 4.7.1.3 - Diagrama de Clases: Medical Transport Planning & Dispatching](assets/chapter-4/4.7.1-class-diagram-transport-planning.png)
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Transporte y Despacho.*
 
----
+***
 
 #### **4.4. Bounded Context: Critical Alerting & Incident Response**
 
-![Figura 4.7.1.4 - Diagrama de Clases: Critical Alerting & Incident Response](../assets/chapter-4/4.7.1-class-diagram-critical-alerting.png)
+![Figura 4.7.1.4 - Diagrama de Clases: Critical Alerting & Incident Response](assets/chapter-4/4.7.1-class-diagram-critical-alerting.png)
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Alertas Críticas e Incidentes.*
 
----
+***
 
 #### **4.5. Bounded Context: Chain of Custody & Traceability**
 
-![Figura 4.7.1.5 - Diagrama de Clases: Chain of Custody & Traceability](../assets/chapter-4/4.7.1-class-diagram-chain-of-custody.png)
+![Figura 4.7.1.5 - Diagrama de Clases: Chain of Custody & Traceability](assets/chapter-4/4.7.1-class-diagram-chain-of-custody.png)
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Cadena de Custodia y Trazabilidad.*

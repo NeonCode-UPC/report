@@ -36,7 +36,7 @@ En esta sección se especifican las 18 historias de usuario (User Stories) que d
 
 Todos los criterios de aceptación están redactados en español bajo el estándar **Gherkin** (Dado que / Cuando / Entonces), estructurados en modo orientado a escenarios (*scenario-oriented*), cubriendo flujos exitosos, excepciones y reglas del dominio de la salud.
 
----
+***
 
 ### Epic 01: Identity & Access Management (EP01)
 
@@ -58,7 +58,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** intenta enviar el formulario de registro.
         * **Entonces** el sistema bloquea el registro e indica que debe utilizar un dominio de correo institucional.
 
----
+***
 
 #### **US02: Autenticación de Personal de Emergencia**
 * **Título:** Autenticación de Personal de Emergencia.
@@ -78,7 +78,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** realiza el quinto intento incorrecto.
         * **Entonces** el sistema bloquea temporalmente la cuenta por un periodo de 15 minutos y envía una alerta de seguridad al correo registrado.
 
----
+***
 
 #### **US03: Endpoint de Autenticación de Usuarios (API)**
 * **Título:** Endpoint de Autenticación de Usuarios (API).
@@ -98,7 +98,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** la API ejecuta la validación de entrada.
         * **Entonces** responde con un código `HTTP 400 Bad Request` indicando las reglas de validación no cumplidas.
 
----
+***
 
 ### Epic 02: Landing Page & Brand Awareness (EP02)
 
@@ -116,7 +116,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** la página carga sus contenidos.
         * **Entonces** los activos de información sobre las características IoT deben renderizarse completamente en un tiempo no mayor a 2 segundos bajo conexiones estándar.
 
----
+***
 
 #### **US05: Solicitud de Demostración Corporativa**
 * **Título:** Solicitud de Demostración Corporativa.
@@ -132,7 +132,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** intenta enviar el formulario de contacto.
         * **Entonces** el sistema detiene el proceso de envío y notifica de manera específica cuáles campos deben ser completados.
 
----
+***
 
 #### **US06: Consulta de Preguntas Frecuentes (FAQ)**
 * **Título:** Consulta de Preguntas Frecuentes.
@@ -148,7 +148,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** procesa la consulta en la barra de búsqueda de FAQ.
         * **Entonces** el sistema filtra y expone únicamente aquellos elementos cuya pregunta o respuesta contengan la palabra clave consultada.
 
----
+***
 
 ### Epic 03: Container & Ambulance Provisioning (EP03)
 
@@ -166,7 +166,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** el operador intenta guardar el registro.
         * **Entonces** el sistema impide la creación del duplicado y envía una alerta de conflicto de identificación del vehículo.
 
----
+***
 
 #### **US08: Vinculación de Contenedor Inteligente**
 * **Título:** Vinculación de Contenedor Inteligente.
@@ -182,7 +182,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** el operador intenta asociarlo a una nueva ambulancia.
         * **Entonces** el sistema rechaza la operación e indica que el contenedor debe ser desvinculado de su unidad origen antes de una nueva asignación.
 
----
+***
 
 #### **US09: Ingesta de Telemetría IoT (API)**
 * **Título:** Ingesta de Telemetría IoT (API).
@@ -202,7 +202,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** la API recibe la transmisión.
         * **Entonces** rechaza la conexión con un código `HTTP 401 Unauthorized`.
 
----
+***
 
 ### Epic 04: Real-Time Environmental & Fleet Monitoring (EP04)
 
@@ -220,7 +220,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** se cumple el tiempo límite de inactividad.
         * **Entonces** el sistema marca el estado de la conexión como "Sin Señal / Desconectado" y registra la hora de última lectura recibida.
 
----
+***
 
 #### **US11: Control de Stock por Sensores de Peso**
 * **Título:** Control de Stock por Sensores de Peso.
@@ -236,7 +236,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** se procesa la lectura.
         * **Entonces** el sistema genera una observación en la bitácora de la ruta indicando "Divergencia de peso no clasificada".
 
----
+***
 
 #### **US12: Consulta de Telemetría e Indicadores (API)**
 * **Título:** Consulta de Telemetría e Indicadores (API).
@@ -252,7 +252,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** se ejecuta la consulta GET al endpoint.
         * **Entonces** la API responde con un código `HTTP 200 OK` entregando la estructura con valores nulos y un indicador de estado "Sin datos registrados".
 
----
+***
 
 ### Epic 05: Incident Alerts & Medical Dispatch (EP05)
 
@@ -270,7 +270,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** procesa la solicitud de guardado.
         * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser strictly menor al límite máximo.
 
----
+***
 
 #### **US14: Visualización de Alertas en Ruta**
 * **Título:** Visualización de Alertas en Ruta.
@@ -286,7 +286,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** el tiempo de apertura continua excede los 120 segundos.
         * **Entonces** el sistema emite una alerta de advertencia "Escotilla Abierta Prolongada" dirigida al personal médico de la unidad.
 
----
+***
 
 #### **US15: Servicio de Despacho de Alertas (API)**
 * **Título:** Servicio de Despacho de Alertas (API).
@@ -302,7 +302,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** la API evalúa la estructura del mensaje.
         * **Entonces** detiene la ejecución y devuelve un código `HTTP 400 Bad Request`.
 
----
+***
 
 ### Epic 06: Chain of Custody & Audit Reports (EP06)
 
@@ -320,7 +320,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** el supervisor intenta consolidar el reporte final de auditoría.
         * **Entonces** el sistema bloquea la emisión final e indica que únicamente se pueden generar reportes parciales o preliminares mientras el traslado siga abierto.
 
----
+***
 
 #### **US17: Confirmación de Entrega y Cadena de Custodia**
 * **Título:** Confirmación de Entrega y Cadena de Custodia.
@@ -336,7 +336,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** se intenta cerrar la cadena de custodia.
         * **Entonces** el sistema exige al usuario ingresar una observación de cierre obligatoria detallando las condiciones en las que se recibe la carga antes de permitir la finalización del servicio.
 
----
+***
 
 #### **US18: Consulta de Historial de Traslados (API)**
 * **Título:** Consulta de Historial de Traslados (API).

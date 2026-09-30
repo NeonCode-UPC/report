@@ -2,7 +2,7 @@
 
 En esta sección se realiza la identificación, evaluación multidimensional y contraste estratégico de los principales competidores directos e indirectos que operan en el mercado global y nacional de monitoreo telemático y preservación de cadena de frío farmacéutica. El propósito fundamental de este análisis es evidenciar cómo **Medical SMARTBOX (NeonCode)** se posiciona de forma diferenciada y competitiva en el sector salud peruano, resolviendo las brechas operativas críticas del transporte asistencial en ambulancias que las soluciones convencionales no atienden.
 
----
+***
 
 ## 2.1.1. Análisis competitivo
 
@@ -12,7 +12,7 @@ Para el relevamiento de la competencia se investigaron tres empresas con presenc
 2. **Tracklink Perú (Motorlink S.A.C.):** Empresa líder nacional en seguridad vehicular, monitoreo GPS satelital y telemática de flotas con más de 20 años de trayectoria y central de operaciones 24/7 en el Perú. Ofrece la solución *Tracklink Cold Chain Control*, orientada al monitoreo de temperatura en la cabina o furgón frigorífico del camión.
 3. **Controlant:** Empresa global pionera en soluciones de visibilidad de cadena de frío en tiempo real para medicamentos biológicos y vacunas de ultracongelación (-80 °C a +25 °C), reconocida por la gestión de la cadena de frío global de las vacunas Pfizer-BioNTech COVID-19 mediante sus dispositivos celulares *Saga Card* / *Saga Mobile* y la plataforma analítica predictiva *Aurora Cloud Platform*.
 
----
+***
 
 ### Competitive Analysis Landscape
 
@@ -34,7 +34,7 @@ El análisis comparativo adopta estrictamente la estructura normativa del cuadro
 | **Análisis SWOT: Oportunidades** | Exigencias crecientes de DIGEMID y MINSA para trazabilidad de cadena de frío en emergencias; alta tasa de mermas por tráfico vehicular en Lima. | Incremento en la demanda mundial de medicamentos biológicos sensibles a variaciones de temperatura. | Crecimiento del comercio farmacéutico electrónico y requerimientos de trazabilidad en transporte logístico local. | Expansión de requerimientos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica. |
 | **Análisis SWOT: Amenazas** | Burocracia y lentitud en licitaciones del sector salud público (EsSalud/MINSA); resistencia al cambio del personal paramédico ante el registro digital. | Nuevos entrantes en tecnología IoT celular de bajo costo que presionan a la baja los márgenes de hardware. | Competidores de rastreo satelital genérico que ofrecen sensores de temperatura básicos como commodity a bajo precio. | Tensiones geopolíticas y disrupciones en la cadena global de suministro de componentes electrónicos semiconductores para hardware IoT. |
 
----
+***
 
 ## 2.1.2. Estrategias y tácticas frente a competidores
 

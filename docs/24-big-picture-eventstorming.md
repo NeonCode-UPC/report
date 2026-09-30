@@ -16,12 +16,12 @@ El taller se desarrolló ejecutando rigurosamente los nueve (9) pasos estructura
 8. **Narración Inversa y Detección de Brechas (*Reverse Storytelling*):** Se ejecutó una lectura en sentido inverso, comenzando desde el evento final (`Muestra aceptada formalmente como viable` / `Acta final de entrega firmada digitalmente`) y preguntando repetidamente: *¿Qué condición previa tuvo que cumplirse para que ocurriera este hecho?* Este análisis retrospectivo descubrió eventos faltantes de bioseguridad, validaciones de pre-enfriamiento y protocolos de contingencia ante caídas de la toma vehicular de 12V.
 9. **Cierre, Consenso y Síntesis de Oportunidades (*Closing and Synthesis*):** Se consolidó el entendimiento compartido del dominio, se extrajo el vocabulario fundamental para la construcción del Lenguaje Ubicuo (Sección 2.5) y se priorizaron en notas verdes las oportunidades de solución de software e IoT (tara automática con celda de carga HX711, algoritmo predictivo de desvíos de ETA y acta digital inmutable con firma QR).
 
----
+***
 
-![Figura 2.4 - Big Picture EventStorming: Fases de Origen, Tránsito y Destino](../assets/chapter-2/smart-medical-container-eventstorming.jpg)  
+![Figura 2.4 - Big Picture EventStorming: Fases de Origen, Tránsito y Destino](assets/chapter-2/smart-medical-container-eventstorming.jpg)  
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo de Alberto Brandolini para el transporte asistencial de muestras médicas y órganos en Lima Metropolitana.*
 
----
+***
 
 ### **2.4.1. Análisis del Dominio y Hallazgos de la Sesión**
 
@@ -125,7 +125,7 @@ La siguiente matriz sintetiza los problemas operativos reales identificados en l
   </tbody>
 </table>
 
----
+***
 
 #### 3. Validación por Storytelling y Reverse Storytelling
 La validación del recorrido de extremo a extremo confirmó la coherencia del ciclo asistencial entre ambos segmentos. Mediante la narrativa directa se verificó la transición sin fricciones de custodia entre el médico emisor, el paramédico y el cirujano receptor. Complementariamente, el análisis retrospectivo desde el hito `Muestra aceptada formalmente como viable` (`Acta final de entrega firmada digitalmente`) comprobó que ninguna entrega puede consumarse sin la confluencia de tres condiciones inviolables: desbloqueo por OTP dentro de la geocerca hospitalaria, preservación térmica continua (2 °C a 8 °C) garantizada por el respaldo LiFePO4, y descarga íntegra de la telemetría resguardada en el búfer flash local tras cruzar túneles.
@@ -138,7 +138,7 @@ La sesión exploratoria preliminar del Big Picture permitió delimitar cinco (5)
 4. **Chain of Custody & Traceability:** Verificación de token OTP en geocerca, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
 5. **Identity, Access & Subscriptions (IAM):** Gestión de instituciones hospitalarias, planes SaaS B2B, autenticación JWT basada en roles y trazabilidad de licencias médicas.
 
----
+***
 
 ### **2.4.2. Flujo Detallado de Comandos, Eventos y Políticas de Dominio**
 

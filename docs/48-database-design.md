@@ -39,7 +39,7 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * `DigitalAuditManifest.GeneratedAt` → `sealed_at` (tabla `digital_audit_manifests`).
    * `DigitalAuditManifest.CloudStorageUrl` → `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
 
----
+***
 
 ### **4.8.1. Database Diagrams**
 
@@ -59,13 +59,13 @@ El modelo de datos relacional de Medical SMARTBOX ha sido diseñado bajo una est
 * **Principio de Custodia Unívoca y Ausencia de Tablas N:M:**  
   A diferencia de aplicaciones comerciales genéricas, el modelo relacional descarta de forma deliberada el uso de tablas intermedias de descomposición muchos a muchos (N:M). Bajo la normativa de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva Sanitaria N° 152), el transporte asistencial de órganos, hemoderivados y vacunas críticas opera bajo el **Principio de Custodia Unívoca (1 Orden de Traslado → 1 Despacho → 1 Contenedor Inteligente → 1 Custodio Receptor Acreditado)**. Establecer asignaciones múltiples concurrentes (N:M) introduciría vacíos de trazabilidad médico-legal y riesgo inaceptable de contaminación cruzada o confusión de muestras biológicas, por lo que el esquema relacional refuerza estrictamente relaciones 1:1 y 1:N con integridad referencial restrictiva.
 
----
+***
 
 #### **2. Diccionario de Datos Exhaustivo por Bounded Context**
 
 A continuación se detalla la especificación formal de las 11 tablas del sistema relacional agrupadas por sus Bounded Contexts, cubriendo de forma estricta las necesidades operativas del **Segmento 1 (Ambulancias y Logística)** y el **Segmento 2 (Hospitales y Laboratorios B2B)**:
 
----
+***
 
 ##### **4.8.1.1. Bounded Context: IAM & Subscriptions (Soporte B2B y Acceso)**
 
@@ -128,7 +128,7 @@ Gestiona las credenciales y perfiles profesionales autorizados en ambos segmento
 | `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Registro inicial de la cuenta de usuario. |
 | `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de modificación de credenciales o perfil. |
 
----
+***
 
 ##### **4.8.1.2. Bounded Context: Smart Container & Telemetry Monitoring (Core IoT)**
 
@@ -174,7 +174,7 @@ Serie temporal de lecturas sensoriales emitidas en ráfagas cada 5 segundos dura
 | `firmware_signature` | `VARCHAR(128)` | **NOT NULL** | — | Hash de validación criptográfica de la trama generada por el ESP32. |
 | `is_thermal_excursion` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 0` | Flag de desvío: marcado con 1 si la temperatura sale de +2.0°C a +8.0°C. |
 
----
+***
 
 ##### **4.8.1.3. Bounded Context: Medical Transport Planning & Dispatching (Core Operativo)**
 
@@ -222,7 +222,7 @@ Ejecución del traslado por la ambulancia, tripulación y contenedor asignados (
 | `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Momento de creación de la hoja de despacho. |
 | `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de la última actualización telemétrica o de ETA. |
 
----
+***
 
 ##### **4.8.1.4. Bounded Context: Critical Alerting & Incident Response (Soporte Reactivo)**
 
@@ -260,7 +260,7 @@ Medidas correctivas aplicadas y validadas para mitigar el incidente y proteger e
 | `resolved_by_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Profesional biomédico o médico de guardia responsable. |
 | `resolved_at` | `DATETIME(6)` | **NOT NULL** | — | Marca temporal del cierre satisfactorio de la contingencia. |
 
----
+***
 
 ##### **4.8.1.5. Bounded Context: Chain of Custody & Traceability (Core Regulatorio)**
 
@@ -302,7 +302,7 @@ Acta digital de entrega legal sellada criptográficamente con hash SHA-256 para 
 | `minsa_compliance_verified` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Certificación booleana de cumplimiento de la Directiva Sanitaria 152/MINSA. |
 | `sealed_at` | `DATETIME(6)` | **NOT NULL** | — | Fecha y hora UTC del sellado criptográfico del acta. |
 
----
+***
 
 #### **3. Políticas Globales de Integridad Referencial y Trazabilidad**
 
@@ -316,7 +316,7 @@ En lugar de redundar en las especificaciones de claves foráneas ya detalladas e
 | **Principio de Custodia Unívoca (Sin N:M)** | Restricciones `1:1` y `1:N` estrictas con `UNIQUE` | Asignación Orden → Despacho → Contenedor → Transferencia de Custodia. | Elimina tablas intermedias de cruce N:M; la normativa sanitaria exige un único custodio legal y un único contenedor responsable por cada traslado de órganos o hemoderivados. |
 | **Inmutabilidad Criptográfica de Cierre** | Columna `is_sealed_and_immutable = 1` y hash SHA-256 | Tabla `digital_audit_manifests` (Manifiesto de Auditoría). | Bloquea a nivel de servicio y regla de base de datos cualquier mutación posterior al sellado de custodia asistencial en destino hospitalario. |
 
----
+***
 
 #### **4. Estrategia de Indexación y Optimización de Consultas IoT**
 
@@ -331,14 +331,14 @@ Para procesar ráfagas continuas de telemetría provenientes de múltiples ambul
 4. **`idx_critical_incidents_status_severity (status, severity)`:**  
    *Propósito:* Prioriza las alertas no resueltas (`Open`) de mayor severidad (`CriticalEmergency`, `CatastrophicFailure`) para despachar notificaciones inmediatas mediante push y SMS a la central médica.
 
----
+***
 
 #### **5. Diagrama Físico de Base de Datos (Entity Relationship Diagram)**
 
-![Figura 4.8.1 - Database Physical Data Model (Entity Relationship Diagram)](../assets/chapter-4/4.8.1-database-diagram.png)  
+![Figura 4.8.1 - Database Physical Data Model (Entity Relationship Diagram)](assets/chapter-4/4.8.1-database-diagram.png)  
 *Nota: Diagrama Relacional Físico de Base de Datos generado mediante Reverse Engineering en MySQL Workbench 8.0 bajo motor InnoDB.*
 
----
+***
 
 #### **6. Conclusiones y Transición hacia el Capítulo V (Implementación y Validación)**
 

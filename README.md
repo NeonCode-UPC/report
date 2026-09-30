@@ -1,52 +1,50 @@
 <div align="center">
 
-![Logo](assets/images/logo_upc.png)
+<img src="assets/images/logo_upc.png" alt="UPC_logo" width="150"></img>
 
-#### Universidad Peruana de Ciencias Aplicadas
+## Universidad Peruana de Ciencias Aplicadas
 
-#### Carrera de Ingeniería de Software
+#### Carrera de ingeniería de software
 
-----
+1ASI0730
 
-### 1ASI0730 
-### Aplicaciones Web 
-#### NRC 
-### 8150
+**Aplicaciones Web**
 
-## Informe del Trabajo Final
+NRC
 
-----
+**8150**
 
-#### Docente
-### Velásquez Núñez, Ángel Augusto
+Docente
 
-----
+**Velásquez Núñez, Ángel Augusto**
 
-#### Equipo
-### NeonCode
+<br>
 
-#### Proyecto
-### Medical SMARTBOX
+Equipo    
 
-----
+ **NeonCode**
 
-#### Integrantes:
+ Proyecto
 
-u202222859 - Espinoza Flores, Aaron André
+**Medical SMARTBOX**
 
-u20211b556 - Gargate Paredes, Santiago
+<br>
 
-u202520310 - Jaramillo Mayta, Jhon Jordy
+### Integrantes
 
-u20231c995 - Munayco Apolaya, Maria Luisa
+| Código | Apellidos y Nombres |
+|---|---|
+| u202222859 | Espinoza Flores, Aaron André |
+| u20211b556 | Gargate Paredes, Santiago |
+| u202520310 | Jaramillo Mayta, Jhon Jordy |
+| u20231c995 | Munayco Apolaya, Maria Luisa |
+| u202114790 | Santos Minaya, Renzo Piero |
 
-u202114790 - Santos Minaya, Renzo Piero
+<br>
 
-----
+**Periodo 202620**
 
-#### Período 202620
-
-#### Septiembre 2026
+**Setiembre 2026**
 
 </div>
 
@@ -76,7 +74,7 @@ El informe del proyecto **Medical SMARTBOX** ha sido elaborado de manera estrict
 **URL del Repositorio Oficial del Informe:**  
 <https://github.com/NeonCode-UPC/report>
 
----
+***
 
 ## 1. Gobernanza y Flujo de Trabajo en el Repositorio
 
@@ -89,7 +87,7 @@ Para garantizar la integridad estructural, la trazabilidad histórica de los cam
 * **Estándar Conventional Commits 1.0.0:** Todos los registros de confirmación se estructuraron bajo prefijos canónicos (`docs(...)`, `feat(...)`, `fix(...)`, `chore(...)`), especificando el alcance del cambio y facilitando la auditoría cruzada.
 * **Políticas de Pull Requests (PR) y Code/Doc Review:** La incorporación de contenido hacia `develop` y `main` requirió la revisión cruzada de al menos un miembro del equipo para verificar el cumplimiento de las guías de estilo Markdown y la integridad de los enlaces y tablas.
 
----
+***
 
 ## 2. Participación del Equipo en el Informe Técnico (Hito AV1)
 
@@ -103,7 +101,7 @@ La siguiente matriz resume la distribución formal de responsabilidades y las ap
 | **Munayco Apolaya, Maria Luisa** | `@malumunayco` | UX/UI Designer | **Capítulo II:**<br>• 2.3 Needfinding (Personas, Task Matrix, Journey Maps, Empathy)<br>**Capítulo IV:**<br>• 4.1 Style Guidelines<br>• 4.2 Information Architecture<br>• 4.3 a 4.5 UI/UX Wireframes & Mockups | Creación de User Personas y mapas de empatía en UXPressia; definición del Design System clínico y Guías de Estilo; arquitectura de la información (SEO, taxonomía, navegación); diseño interactivo de wireframes y mockups de alta fidelidad en Figma. |
 | **Santos Minaya, Renzo Piero** | `@psure` / `@pisure` | Product Owner / Scrum Master | **Capítulo III completo:**<br>• 3.1 User Stories (Gherkin)<br>• 3.2 Impact Mapping<br>• 3.3 Product Backlog<br>**Capítulo V:**<br>• 5.1 SCM (5.1.1 a 5.1.4)<br>• 5.2.1 Sprint 1 (5.2.1.1 a 5.2.1.3) | Redacción de User Stories con criterios de aceptación Gherkin (Given-When-Then); matriz de Impact Mapping y priorización de Backlog; documentación de gobernanza SCM (GitFlow, SemVer); facilitación del Sprint Planning 1, Matriz LACX y Sprint Backlog 1. |
 
----
+***
 
 ## 3. AV1 – Sprint Review (Semana 4)
 
@@ -145,7 +143,7 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
 * **Semana 3 (14/09/2026):** Consolidación de sesiones de modelado colaborativo de dominio (EventStorming) y especificación de historias de usuario.
 * **Semana 4 (16/09/2026 - 17/09/2026):** Fase de máxima convergencia técnica: integración de arquitectura C4, modelo de clases, persistencia física de base de datos, evidencias de despliegue del Landing Page y auditoría final del informe AV1.
 
----
+***
 
 ## 4. Proyección de Colaboración para Siguientes Hitos
 
@@ -288,7 +286,7 @@ En esta sección se presentarán los perfiles de los integrantes del equipo, inc
 
 <div style="page-break-after: always;"></div>
 
-﻿# 1.2. Solution Profile
+# 1.2. Solution Profile
 
 ## 1.2.1. Antecedentes y problemática
 
@@ -375,7 +373,7 @@ We will know we are successful when users can monitor active medical transports 
 
 <div style="page-break-after: always;"></div>
 
-﻿# 1.3. Segmentos Objetivo
+# 1.3. Segmentos Objetivo
 
 La solución propuesta está dirigida a actores que participan directa o indirectamente en el transporte de medicamentos, órganos e insumos médicos sensibles. Estos segmentos requieren información confiable, alertas oportunas y trazabilidad durante el traslado, debido a que las condiciones de conservación y los tiempos de llegada pueden impactar en la continuidad de la atención médica.
 
@@ -399,7 +397,7 @@ Para este segmento, la solución debe ofrecer un dashboard centralizado, filtros
 
 En esta sección se realiza la identificación, evaluación multidimensional y contraste estratégico de los principales competidores directos e indirectos que operan en el mercado global y nacional de monitoreo telemático y preservación de cadena de frío farmacéutica. El propósito fundamental de este análisis es evidenciar cómo **Medical SMARTBOX (NeonCode)** se posiciona de forma diferenciada y competitiva en el sector salud peruano, resolviendo las brechas operativas críticas del transporte asistencial en ambulancias que las soluciones convencionales no atienden.
 
----
+***
 
 ## 2.1.1. Análisis competitivo
 
@@ -409,7 +407,7 @@ Para el relevamiento de la competencia se investigaron tres empresas con presenc
 2. **Tracklink Perú (Motorlink S.A.C.):** Empresa líder nacional en seguridad vehicular, monitoreo GPS satelital y telemática de flotas con más de 20 años de trayectoria y central de operaciones 24/7 en el Perú. Ofrece la solución *Tracklink Cold Chain Control*, orientada al monitoreo de temperatura en la cabina o furgón frigorífico del camión.
 3. **Controlant:** Empresa global pionera en soluciones de visibilidad de cadena de frío en tiempo real para medicamentos biológicos y vacunas de ultracongelación (-80 °C a +25 °C), reconocida por la gestión de la cadena de frío global de las vacunas Pfizer-BioNTech COVID-19 mediante sus dispositivos celulares *Saga Card* / *Saga Mobile* y la plataforma analítica predictiva *Aurora Cloud Platform*.
 
----
+***
 
 ### Competitive Analysis Landscape
 
@@ -431,7 +429,7 @@ El análisis comparativo adopta estrictamente la estructura normativa del cuadro
 | **Análisis SWOT: Oportunidades** | Exigencias crecientes de DIGEMID y MINSA para trazabilidad de cadena de frío en emergencias; alta tasa de mermas por tráfico vehicular en Lima. | Incremento en la demanda mundial de medicamentos biológicos sensibles a variaciones de temperatura. | Crecimiento del comercio farmacéutico electrónico y requerimientos de trazabilidad en transporte logístico local. | Expansión de requerimientos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica. |
 | **Análisis SWOT: Amenazas** | Burocracia y lentitud en licitaciones del sector salud público (EsSalud/MINSA); resistencia al cambio del personal paramédico ante el registro digital. | Nuevos entrantes en tecnología IoT celular de bajo costo que presionan a la baja los márgenes de hardware. | Competidores de rastreo satelital genérico que ofrecen sensores de temperatura básicos como commodity a bajo precio. | Tensiones geopolíticas y disrupciones en la cadena global de suministro de componentes electrónicos semiconductores para hardware IoT. |
 
----
+***
 
 ## 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -459,7 +457,7 @@ A partir del análisis de fortalezas, debilidades y oportunidades de la competen
 
 La investigación empírica de campo constituye el cimiento metodológico del proyecto **Medical SMARTBOX**. Para validar la problemática y relevar las necesidades operativas de la cadena de frío biomédica en Lima Metropolitana, se diseñaron y ejecutaron entrevistas a profundidad con profesionales en ejercicio activo pertenecientes a los dos segmentos objetivo del proyecto: personal médico y paramédicos asistenciales en ambulancias (**Segmento 1**), y coordinadores de logística farmacéutica y directores de centros hospitalarios (**Segmento 2**).
 
----
+***
 
 ## 2.2.1. Diseño de entrevistas
 
@@ -496,7 +494,7 @@ Se elaboró una guía de entrevista semiestructurada aplicando las directrices m
 9. **Impacto del tráfico:** ¿Cómo afecta la congestión vehicular de Lima Metropolitana la planificación de turnos de quirófano y ventanas de isquemia?
 10. **Criterio de valor:** ¿Qué características técnicas consideras indispensables en una plataforma digital de monitoreo para confiar plenamente en ella?
 
----
+***
 
 ## 2.2.2. Registro de entrevistas
 
@@ -513,7 +511,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 | **E5** | Segmento 2 | **Gianfranco Timoteo** | Coordinador de Soporte y Cadena de Frío | Laboratorio y Centro Clínico | 21 | Chorrillos | 16/09/2026 | 04:59 min | [Entrevista 5 (Timoteo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) |
 | **E6** | Segmento 2 | **Karla Pacheco** | Auxiliar Administrativa de Farmacia y Rutas | Centro de Salud Policlínico | 25 | Breña | 16/09/2026 | 04:09 min | [Entrevista 6 (Pacheco)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) |
 
----
+***
 
 ### Resúmenes Descriptivos Individuales de Entrevistas:
 
@@ -559,7 +557,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 * **Variables Subjetivas:** Ansiedad por falta de predictibilidad: las salas de inmunizaciones se llenan de pacientes esperando dosis que no saben cuándo llegarán. Frustración por tener que llamar repetidamente a conductores que no pueden contestar mientras conducen.
 * **Cita Textual:** *"Pasamos la mitad del día preguntando '¿por dónde vienes?' y '¿sigue fría la caja?'. Si tuviéramos una pantalla con un mapa en vivo y la temperatura exacta, organizaríamos las citas y el quirófano sin perder tiempo."*
 
----
+***
 
 ## 2.2.3. Análisis de entrevistas
 
@@ -575,7 +573,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
 * **66.7% (4/6) ha presenciado pérdidas o rechazos de lotes de medicamentos:** Experiencias directas de descarte de hemoderivados, vacunas o reactivos por excursión térmica comprobada al abrir el cooler.
 * **66.7% (4/6) reporta disputas interdepartamentales sobre la responsabilidad de la carga:** Conflictos entre el equipo de ambulancia y farmacia hospitalaria respecto al momento exacto en que se rompió la cadena de frío.
 
----
+***
 
 ### B. Análisis por Segmento Objetivo
 
@@ -601,7 +599,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
   * Escepticismo ante reportes llenados a mano con lapicero; preferencia por información digital inmutable con sello de tiempo (*timestamp*).
   * Necesidad de predictibilidad operativa: coordinar la disponibilidad de quirófanos de trasplante y personal de triaje en función de un ETA confiable.
 
----
+***
 
 ### C. Incidentes Críticos Reales Extraídos del Trabajo de Campo
 
@@ -612,7 +610,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
 3. **Incidente de Vacunas Comprometidas en Brigada de Vacunación (Relatado por E5 - Gianfranco Timoteo):**  
    En una campaña de inmunización descentralizada, brigadas de salud regresaron con cajas térmicas cuyos dataloggers USB revelaron —recién al conectarse a la PC del almacén a las 18:00 horas— que la temperatura superó los 9.0 °C a las 14:15 horas. Durante cuatro horas se administraron dosis con viabilidad comprometida antes de detectarse la anomalía, evidenciando el peligro inaceptable del monitoreo pasivo diferido.
 
----
+***
 
 ### D. Implicancias Directas para la Arquitectura y el Diseño del Sistema
 
@@ -632,7 +630,7 @@ El proceso de Needfinding permitió identificar y representar las necesidades, o
 
 Los artefactos de esta sección se construyen a partir de los dos patrones de comportamiento identificados en las entrevistas a profundidad (Capítulo 2.2): **decisión clínica-operativa inmediata** y **coordinación logística trazable**. Las personas descritas son arquetipos compuestos sintetizados a partir de los participantes de la investigación de campo.
 
----
+***
 
 ### Criterios de Agrupación y Selección
 
@@ -643,7 +641,7 @@ Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron p
 | Decisión clínica-operativa | Wilbert Toledo, Aldair Lazaro y Renato Calvo Yalan | Consulta información crítica, verifica condiciones y necesita responder con rapidez. | Personal médico y paramédicos asistenciales (Javier Soto). |
 | Coordinación logística trazable | Humberto Arellán, Gianfranco Timoteo y Karla Pacheco | Monitorea rutas y registros, coordina actores y necesita evidencia auditable. | Coordinador logístico y directores de centros de salud (Dr. Carlos Mendoza). |
 
----
+***
 
 ## 2.3.1. User Personas
 
@@ -661,7 +659,7 @@ Representa al personal médico y farmacéutico de destino (cirujanos de trasplan
 ![User Persona - Dr. Carlos Mendoza](assets/chapter-2/user-persona-healthcare.png)
 *Nota: Elaboración propia en UXPressia para el Segmento 2 (Centros de Salud y Farmacéuticas).*
 
----
+***
 
 ## 2.3.2. User Task Matrix
 
@@ -677,7 +675,7 @@ La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecut
 | **T06** | **Firma y validación del acta digital de transferencia de custodia** | Ambos Segmentos | Baja (Cierre de viaje) | **Crítica** | Sustituir actas en papel por registros inmutables con sellado criptográfico para DIGEMID/SUSALUD. |
 | **T07** | **Consulta de reportes históricos de excursión térmica para auditoría** | Segmento 2 (Auditoría) | Media (Mensual / Semanal) | **Media-Alta** | Certificar trazabilidad técnica ante auditorías hospitalarias e inspecciones regulatorias. |
 
----
+***
 
 ## 2.3.3. User Journey Mapping
 
@@ -695,7 +693,7 @@ Mapea la experiencia desde la coordinación de la solicitud urgente, el seguimie
 ![User Journey Map - Centros de Salud](assets/chapter-2/user-journey-logistics-healthcare.png)
 *Nota: Elaboración propia en UXPressia detallando los puntos de contacto clínicos y la mitigación de tiempos muertos.*
 
----
+***
 
 ## 2.3.4. Empathy Mapping
 
@@ -725,7 +723,7 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 * **Dolores (Pains):** Incertidumbre ("caja negra") sobre el trato térmico de la muestra durante el trayecto; pérdida de tiempo por actas manuscritas ilegibles.
 * **Necesidades (Gains):** Certificación digital de que la temperatura nunca superó los 8 °C; apertura con token OTP exclusivo y acta PDF con firma criptográfica.
 
----
+***
 
 ### Síntesis de Necesidades Priorizadas
 
@@ -757,12 +755,12 @@ El taller se desarrolló ejecutando rigurosamente los nueve (9) pasos estructura
 8. **Narración Inversa y Detección de Brechas (*Reverse Storytelling*):** Se ejecutó una lectura en sentido inverso, comenzando desde el evento final (`Muestra aceptada formalmente como viable` / `Acta final de entrega firmada digitalmente`) y preguntando repetidamente: *¿Qué condición previa tuvo que cumplirse para que ocurriera este hecho?* Este análisis retrospectivo descubrió eventos faltantes de bioseguridad, validaciones de pre-enfriamiento y protocolos de contingencia ante caídas de la toma vehicular de 12V.
 9. **Cierre, Consenso y Síntesis de Oportunidades (*Closing and Synthesis*):** Se consolidó el entendimiento compartido del dominio, se extrajo el vocabulario fundamental para la construcción del Lenguaje Ubicuo (Sección 2.5) y se priorizaron en notas verdes las oportunidades de solución de software e IoT (tara automática con celda de carga HX711, algoritmo predictivo de desvíos de ETA y acta digital inmutable con firma QR).
 
----
+***
 
 ![Figura 2.4 - Big Picture EventStorming: Fases de Origen, Tránsito y Destino](assets/chapter-2/smart-medical-container-eventstorming.jpg)  
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo de Alberto Brandolini para el transporte asistencial de muestras médicas y órganos en Lima Metropolitana.*
 
----
+***
 
 ### **2.4.1. Análisis del Dominio y Hallazgos de la Sesión**
 
@@ -866,7 +864,7 @@ La siguiente matriz sintetiza los problemas operativos reales identificados en l
   </tbody>
 </table>
 
----
+***
 
 #### 3. Validación por Storytelling y Reverse Storytelling
 La validación del recorrido de extremo a extremo confirmó la coherencia del ciclo asistencial entre ambos segmentos. Mediante la narrativa directa se verificó la transición sin fricciones de custodia entre el médico emisor, el paramédico y el cirujano receptor. Complementariamente, el análisis retrospectivo desde el hito `Muestra aceptada formalmente como viable` (`Acta final de entrega firmada digitalmente`) comprobó que ninguna entrega puede consumarse sin la confluencia de tres condiciones inviolables: desbloqueo por OTP dentro de la geocerca hospitalaria, preservación térmica continua (2 °C a 8 °C) garantizada por el respaldo LiFePO4, y descarga íntegra de la telemetría resguardada en el búfer flash local tras cruzar túneles.
@@ -879,7 +877,7 @@ La sesión exploratoria preliminar del Big Picture permitió delimitar cinco (5)
 4. **Chain of Custody & Traceability:** Verificación de token OTP en geocerca, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
 5. **Identity, Access & Subscriptions (IAM):** Gestión de instituciones hospitalarias, planes SaaS B2B, autenticación JWT basada en roles y trazabilidad de licencias médicas.
 
----
+***
 
 ### **2.4.2. Flujo Detallado de Comandos, Eventos y Políticas de Dominio**
 
@@ -945,7 +943,7 @@ Para complementar la visión macro del lienzo y facilitar la transición hacia e
 
 <div style="page-break-after: always;"></div>
 
-﻿# 2.5. Ubiquitous Language
+# 2.5. Ubiquitous Language
 
 En esta sección se establece el glosario formal de términos y conceptos del dominio del negocio (*Smart Medical Container*), garantizando una comunicación unívoca, rigurosa y libre de ambigüedades entre los dos segmentos clave del negocio (las **empresas de transporte y operadores logísticos de cadena de frío**, y los **centros de salud y cadenas farmacéuticas** receptoras), las entidades reguladoras peruanas (MINSA, DIGEMID, DIGDOT) y el equipo de desarrollo de software.
 
@@ -985,7 +983,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | 28 | **Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)** | Smart Container & Telemetry Monitoring | Value Object / Domain Event |
 | 29 | **Weight-Based Medical Stock (Stock Médico Ponderal)** | Smart Container & Telemetry Monitoring | Value Object |
 
----
+***
 
 ### **2.5.1. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
@@ -1021,7 +1019,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.2. Bounded Context: Medical Transport Planning & Dispatching**
 
@@ -1077,7 +1075,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.3. Bounded Context: Smart Container & Telemetry Monitoring**
 
@@ -1133,7 +1131,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.4. Bounded Context: Critical Alerting & Incident Response**
 
@@ -1169,7 +1167,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.5. Bounded Context: Chain of Custody & Traceability**
 
@@ -1250,7 +1248,7 @@ En esta sección se especifican las 18 historias de usuario (User Stories) que d
 
 Todos los criterios de aceptación están redactados en español bajo el estándar **Gherkin** (Dado que / Cuando / Entonces), estructurados en modo orientado a escenarios (*scenario-oriented*), cubriendo flujos exitosos, excepciones y reglas del dominio de la salud.
 
----
+***
 
 ### Epic 01: Identity & Access Management (EP01)
 
@@ -1272,7 +1270,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** intenta enviar el formulario de registro.
         * **Entonces** el sistema bloquea el registro e indica que debe utilizar un dominio de correo institucional.
 
----
+***
 
 #### **US02: Autenticación de Personal de Emergencia**
 * **Título:** Autenticación de Personal de Emergencia.
@@ -1292,7 +1290,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** realiza el quinto intento incorrecto.
         * **Entonces** el sistema bloquea temporalmente la cuenta por un periodo de 15 minutos y envía una alerta de seguridad al correo registrado.
 
----
+***
 
 #### **US03: Endpoint de Autenticación de Usuarios (API)**
 * **Título:** Endpoint de Autenticación de Usuarios (API).
@@ -1312,7 +1310,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** la API ejecuta la validación de entrada.
         * **Entonces** responde con un código `HTTP 400 Bad Request` indicando las reglas de validación no cumplidas.
 
----
+***
 
 ### Epic 02: Landing Page & Brand Awareness (EP02)
 
@@ -1330,7 +1328,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** la página carga sus contenidos.
         * **Entonces** los activos de información sobre las características IoT deben renderizarse completamente en un tiempo no mayor a 2 segundos bajo conexiones estándar.
 
----
+***
 
 #### **US05: Solicitud de Demostración Corporativa**
 * **Título:** Solicitud de Demostración Corporativa.
@@ -1346,7 +1344,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** intenta enviar el formulario de contacto.
         * **Entonces** el sistema detiene el proceso de envío y notifica de manera específica cuáles campos deben ser completados.
 
----
+***
 
 #### **US06: Consulta de Preguntas Frecuentes (FAQ)**
 * **Título:** Consulta de Preguntas Frecuentes.
@@ -1362,7 +1360,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** procesa la consulta en la barra de búsqueda de FAQ.
         * **Entonces** el sistema filtra y expone únicamente aquellos elementos cuya pregunta o respuesta contengan la palabra clave consultada.
 
----
+***
 
 ### Epic 03: Container & Ambulance Provisioning (EP03)
 
@@ -1380,7 +1378,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** el operador intenta guardar el registro.
         * **Entonces** el sistema impide la creación del duplicado y envía una alerta de conflicto de identificación del vehículo.
 
----
+***
 
 #### **US08: Vinculación de Contenedor Inteligente**
 * **Título:** Vinculación de Contenedor Inteligente.
@@ -1396,7 +1394,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** el operador intenta asociarlo a una nueva ambulancia.
         * **Entonces** el sistema rechaza la operación e indica que el contenedor debe ser desvinculado de su unidad origen antes de una nueva asignación.
 
----
+***
 
 #### **US09: Ingesta de Telemetría IoT (API)**
 * **Título:** Ingesta de Telemetría IoT (API).
@@ -1416,7 +1414,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** la API recibe la transmisión.
         * **Entonces** rechaza la conexión con un código `HTTP 401 Unauthorized`.
 
----
+***
 
 ### Epic 04: Real-Time Environmental & Fleet Monitoring (EP04)
 
@@ -1434,7 +1432,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** se cumple el tiempo límite de inactividad.
         * **Entonces** el sistema marca el estado de la conexión como "Sin Señal / Desconectado" y registra la hora de última lectura recibida.
 
----
+***
 
 #### **US11: Control de Stock por Sensores de Peso**
 * **Título:** Control de Stock por Sensores de Peso.
@@ -1450,7 +1448,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** se procesa la lectura.
         * **Entonces** el sistema genera una observación en la bitácora de la ruta indicando "Divergencia de peso no clasificada".
 
----
+***
 
 #### **US12: Consulta de Telemetría e Indicadores (API)**
 * **Título:** Consulta de Telemetría e Indicadores (API).
@@ -1466,7 +1464,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** se ejecuta la consulta GET al endpoint.
         * **Entonces** la API responde con un código `HTTP 200 OK` entregando la estructura con valores nulos y un indicador de estado "Sin datos registrados".
 
----
+***
 
 ### Epic 05: Incident Alerts & Medical Dispatch (EP05)
 
@@ -1484,7 +1482,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** procesa la solicitud de guardado.
         * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser strictly menor al límite máximo.
 
----
+***
 
 #### **US14: Visualización de Alertas en Ruta**
 * **Título:** Visualización de Alertas en Ruta.
@@ -1500,7 +1498,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** el tiempo de apertura continua excede los 120 segundos.
         * **Entonces** el sistema emite una alerta de advertencia "Escotilla Abierta Prolongada" dirigida al personal médico de la unidad.
 
----
+***
 
 #### **US15: Servicio de Despacho de Alertas (API)**
 * **Título:** Servicio de Despacho de Alertas (API).
@@ -1516,7 +1514,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** la API evalúa la estructura del mensaje.
         * **Entonces** detiene la ejecución y devuelve un código `HTTP 400 Bad Request`.
 
----
+***
 
 ### Epic 06: Chain of Custody & Audit Reports (EP06)
 
@@ -1534,7 +1532,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** el supervisor intenta consolidar el reporte final de auditoría.
         * **Entonces** el sistema bloquea la emisión final e indica que únicamente se pueden generar reportes parciales o preliminares mientras el traslado siga abierto.
 
----
+***
 
 #### **US17: Confirmación de Entrega y Cadena de Custodia**
 * **Título:** Confirmación de Entrega y Cadena de Custodia.
@@ -1550,7 +1548,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
         * **Cuando** se intenta cerrar la cadena de custodia.
         * **Entonces** el sistema exige al usuario ingresar una observación de cierre obligatoria detallando las condiciones en las que se recibe la carga antes de permitir la finalización del servicio.
 
----
+***
 
 #### **US18: Consulta de Historial de Traslados (API)**
 * **Título:** Consulta de Historial de Traslados (API).
@@ -1568,7 +1566,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 <div style="page-break-after: always;"></div>
 
-﻿# 3.2. Impact Mapping
+# 3.2. Impact Mapping
 
 El **Impact Mapping** es una técnica de planificación estratégica que conecta los objetivos de negocio de la startup **NeonCode** con las entregas de software para la supervisión de contenedores médicos inteligentes. Este mapa permite priorizar las funcionalidades que generan un impacto directo en el comportamiento de nuestros segmentos objetivo: Personal Médico de Emergencias, Operadores Logísticos de Salud, Supervisores Hospitalarios y Visitantes Comerciales.
 
@@ -1580,7 +1578,7 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 3. **Impact:** Los cambios conductuales o beneficios esperados en los actores.
 4. **Deliverables & User Stories:** Los entregables digitales y las historias de usuario asociadas que provocan dichos impactos.
 
----
+***
 
 ### Mapeo Completo por Objetivos de Negocio (Business Goals)
 
@@ -1599,7 +1597,7 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
             * **US01:** Registro de Institución de Salud.
             * **US07:** Alta de Unidades de Ambulancia.
 
----
+***
 
 #### Goal 2: Reducir en un 40% las incidencias de pérdida de insumos médicos y ruptura de la cadena de frío durante los traslados en el primer año.
 
@@ -1623,15 +1621,15 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
             * **US13:** Configuración de Umbrales Térmicos Críticos.
             * **US16:** Generación de Reportes de Trazabilidad.
 
----
+***
 
 ### Captura de los Artefactos en UXPressia
 
 #### Impact Map Goal 1
-<img src="assets/chapter-3/impact-map-goal-1.png" alt="Impact Map Goal 1" width="600">
+![Impact Map Goal 1](assets/chapter-3/impact-map-goal-1.png)
 
 #### Impact Map Goal 2
-<img src="assets/chapter-3/impact-map-goal-2.png" alt="Impact Map Goal 2" width="600">
+![Impact Map Goal 2](assets/chapter-3/impact-map-goal-2.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -1662,8 +1660,9 @@ El backlog se encuentra organizado secuencialmente para guiar el desarrollo de l
 | **17** | EP06 | **US16** | Generación de Reportes de Trazabilidad | 8 | Sprint 4 |
 | **18** | EP06 | **US17** | Confirmación de Entrega y Cadena de Custodia | 3 | Sprint 4 |
 
----
-### 3.3.1.Engineering Tasks
+***
+
+### 3.3.1. Engineering Tasks
 
 A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales) en tareas de ingeniería (*Engineering Tasks*). Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
 
@@ -1732,7 +1731,7 @@ La paleta cromática se seleccionó bajo criterios de contraste accesible (cumpl
 ### Spacing
 El espaciado se fundamenta en un sistema de rejilla base modular de **8 píxeles** (8-point grid system: 4px, 8px, 16px, 24px, 32px, 48px, 64px). Este estándar asegura consistencia entre paneles modulares, tarjetas de telemetría telemática (*telemetry cards*) y botones de acción rápida, previniendo el hacinamiento de información y reduciendo la tasa de error por toques accidentales en pantallas táctiles de cabina.
 
----
+***
 
 ## 4.1.2. Web Style Guidelines
 
@@ -1834,7 +1833,7 @@ Para dispositivos móviles (viewports de 360px a 414px), la estructura de wirefr
 *   **Cuadrícula de Tarjetas Apiladas:** Las tarjetas de características y perfiles de equipo se reorganizan en una pila vertical (1 tarjeta por fila) con espaciado vertical de 16px, facilitando el desplazamiento vertical con el pulgar.
 *   **Ergonomía Táctil:** Todos los botones de acción e inputs de formulario adoptan un ancho del 100% y una altura mínima de 48px con espaciado interactivo para evitar pulsaciones erróneas.
 
----
+***
 
 ### 4.3.2. Landing Page Mock-up
 
@@ -1869,7 +1868,7 @@ El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) 
 
 Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemétricos en tiempo real, trazabilidad por hitos de envío, gráficos de estabilidad térmica y sistemas de alertas predictivas. Un diseño UX/UI exitoso en Medical SMARTBOX fusiona una estética tecnológica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logísticas rápidas que salvan vidas y evitan la merma de medicamentos.
 
----
+***
 
 ### 4.4.1. Web Applications Wireframes
 
@@ -1916,33 +1915,59 @@ Para dispositivos móviles de campo (smartphones de personal asistencial y table
 *   **Navegación Móvil por Barra Inferior (Bottom Navigation Bar):** Se reemplaza la barra lateral izquierda por una barra de navegación inferior de 5 accesos directos (*Dashboard*, *Ruta en Vivo*, *SmartBox*, *Alertas* y *Perfil*), facilitando la operación con una sola mano.
 *   **Zona Táctil Aumentada para Emergencias:** Todos los controles críticos, en especial el botón de desbloqueo de emergencia y el teclado numérico en pantalla para validación de OTP, cuentan con dimensiones mínimas de 48x48px con alto contraste, permitiendo su uso rápido incluso con guantes clínicos.
 
----
+***
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-El diagrama de wireflow documenta la navegación estructural y las transiciones pantalla a pantalla del sistema web, asociando las vistas esquemáticas con las decisiones del usuario y los eventos del sistema:
+La especificación del Wireflow de la aplicación web articula la navegación estructural y las transiciones pantalla a pantalla del sistema **Medical SMARTBOX**, vinculando las vistas esquemáticas desarrolladas en la sección precedente con las decisiones operativas del usuario, los eventos de telemetría IoT y las reglas de negocio clínicas.
 
-```mermaid
-flowchart TD
-    A[Inicio / Login Institucional] -->|Credenciales Válidas| B{2FA Requerido?}
-    B -->|Sí| C[Pantalla Código OTP]
-    C -->|OTP Correcto| D[Dashboard Operativo Principal]
-    B -->|No| D
-    
-    D -->|Seleccionar Ambulancia / Envío| E[Vista Detalle de Traslado y Telemetría]
-    D -->|Notificación Crítica| F[Centro de Alertas e Incidentes]
-    D -->|Menú Administración| G[Gestión de Flota y Contenedores]
-    
-    E -->|Arribo a Destino| H[Pantalla de Desbloqueo OTP y Entrega]
-    H -->|Firma Digital y OTP OK| I[Línea de Tiempo de Cadena de Custodia]
-    I -->|Exportar Acta| J[Generación de Reporte PDF SHA-256]
-    
-    F -->|Documentar Acción Correctiva| E
-```
+#### Estructura de Navegación y Rutas Principales
+
+El flujo de interacción del sistema se organiza a través de los siguientes recorridos clave:
+
+1. **Ruta de Acceso y Seguridad Institucional:**
+   * **Inicio / Login Institucional:** El usuario introduce sus credenciales corporativas (RUC/correo y contraseña).
+   * **Validación de Doble Factor (2FA):** Si la cuenta exige verificación reforzada o detecta un nuevo dispositivo, el flujo transita hacia la pantalla de ingreso del código OTP de 6 dígitos enviado al canal autorizado.
+   * **Ingreso al Panel:** Tras la validación conforme del token temporal (o si la sesión previa de confianza se encuentra activa), se concede acceso y se redirige automáticamente al Dashboard Operativo Principal.
+
+2. **Ruta de Monitoreo Telemétrico de Traslado:**
+   * **Dashboard Operativo Principal:** Presenta la matriz de flota activa, KPIs de cumplimiento térmico y mapa en vivo.
+   * **Vista Detalle de Traslado y Telemetría:** Al seleccionar una ambulancia o envío en curso, el despachador accede a la vista especializada con trazabilidad cartográfica en vivo, cálculo dinámico de ETA, nivel de batería del Smart Container y gráfica térmica continua de las últimas 24 horas.
+
+3. **Ruta de Atención Prioritaria a Incidentes Térmicos:**
+   * **Detección de Excursión:** Si un sensor telemétrico reporta una temperatura fuera del rango normativo de cadena de frío (menor a 2 °C o superior a 8 °C), el sistema dispara una alerta visual destacada en cabecera.
+   * **Centro de Alertas e Incidentes:** Al accionar la notificación crítica, el operador transita hacia la bandeja de incidentes para evaluar la severidad, geolocalización y duración de la desviación.
+   * **Retorno Contextual:** Una vez registrada y documentada la acción correctiva (ej. reajuste térmico o cambio de ruta), el operador retorna a la vista de detalle del traslado para verificar la estabilización de los parámetros biológicos.
+
+4. **Ruta de Arribo, Desbloqueo y Cierre de Custodia:**
+   * **Llegada a Destino:** La confirmación de geocerca en el centro hospitalario o banco de sangre receptor habilita la pantalla de entrega y desbloqueo seguro.
+   * **Validación OTP de Recepción:** El personal receptor facultado introduce el código OTP de desbloqueo, validando su identidad clínica.
+   * **Línea de Tiempo de Cadena de Custodia:** El sistema registra inmutablemente el evento de apertura electromecánica de la tapa y la firma digital del acta de entrega.
+   * **Exportación de Acta Oficial:** Concluido el protocolo, se genera el reporte de custodia en formato PDF sellado con firma digital SHA-256 para auditoría sanitaria ante DIGEMID y SUSALUD.
+
+5. **Ruta de Administración de Activos y Parametrización:**
+   * **Gestión de Flota y Contenedores:** Desde el menú lateral del Dashboard, los administradores acceden a la configuración del parque de ambulancias, inventario de Smart Containers IoT, umbrales de severidad y políticas de notificación.
+
+#### Matriz de Transiciones de Pantalla (Wireflow Transitions)
+
+La siguiente matriz documenta las transiciones sistemáticas entre las interfaces de usuario del sistema web:
+
+| Pantalla Origen (Wireframe) | Disparador / Acción del Usuario | Condición de Control / Regla de Negocio | Pantalla Destino | Tipo de Transición |
+| :--- | :--- | :--- | :--- | :--- |
+| **Inicio / Login Institucional** | Ingreso de credenciales de acceso | Credenciales válidas; requiere doble factor | **Pantalla de Verificación OTP (2FA)** | Condicional de seguridad |
+| **Inicio / Login Institucional** | Ingreso de credenciales de acceso | Credenciales válidas; sesión de confianza activa | **Dashboard Operativo Principal** | Redirección directa |
+| **Pantalla de Verificación OTP** | Envío de código numérico de 6 dígitos | Token OTP vigente y validado correctamente | **Dashboard Operativo Principal** | Autorización concedida |
+| **Dashboard Operativo Principal** | Clic en ambulancia o envío en la tabla | Selección de unidad telemétrica en tránsito | **Vista Detalle de Traslado y Telemetría** | Navegación a detalle |
+| **Dashboard Operativo Principal** | Clic en notificación crítica en cabecera | Registro telemétrico fuera de rango (2 °C - 8 °C) | **Centro de Alertas e Incidentes** | Interrupción prioritaria |
+| **Centro de Alertas e Incidentes** | Registro y guardado de acción correctiva | Formulario de contingencia validado y guardado | **Vista Detalle de Traslado y Telemetría** | Retorno contextual |
+| **Dashboard Operativo Principal** | Selección de "Gestión de Flota" en menú | Usuario con privilegios de Administrador / Logística | **Gestión de Flota y Contenedores** | Navegación modular |
+| **Vista Detalle de Traslado** | Detección de arribo al punto de destino | Geocerca de destino alcanzada por ambulancia | **Pantalla de Desbloqueo OTP y Entrega** | Disparo por hito de ruta |
+| **Pantalla de Desbloqueo OTP** | Validación de código OTP por médico receptor | Firma digital y token de apertura verificados | **Línea de Tiempo de Cadena de Custodia** | Confirmación de custodia |
+| **Línea de Tiempo de Cadena de Custodia** | Clic en "Exportar Acta de Entrega" | Cierre exitoso del traslado con hash SHA-256 | **Generación de Reporte PDF Certificado** | Descarga documental |
 
 *Nota: Las decisiones de interfaz y flujos alternativos detallados por cada historia de usuario se formalizan en la sección 4.4.4 mediante los diagramas de User Flow.*
 
----
+***
 
 ### 4.4.3. Web Applications Mock-ups
 
@@ -1981,7 +2006,7 @@ En pantallas móviles de smartphones asistenciales (360px a 414px):
 *   **Comandos de Acción en Barra Flotante:** La acción de "Confirmar Entrega y Solicitar OTP" permanece anclada como botón flotante (*sticky bottom*) visible en todo momento durante el trayecto, agilizando el traspaso en quirófano o rampa hospitalaria sin necesidad de desplazarse por menús complejos.
 *   **Modo Nocturno / Alto Contraste para Cabina:** La paleta adopta un fondo oscuro de bajo brillo para no encandilar al paramédico ni al conductor en traslados nocturnos de emergencia.
 
----
+***
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
@@ -2037,7 +2062,7 @@ Para representar la arquitectura de forma rigurosa, comprensible y estandarizada
 * **4.6.3. Software Architecture Container Level Diagrams (C4 Nivel 2):** Descomposición en unidades ejecutables independientes y tecnologías del stack oficial.
 * **4.6.4. Software Architecture Component Level Diagrams (C4 Nivel 3):** Diseño modular interno bajo los principios de Clean Architecture e Inversión de Dependencias.
 
----
+***
 
 ## **4.6.1. Design-Level EventStorming**
 
@@ -2073,7 +2098,7 @@ Durante el taller colaborativo se aplicó el código de colores estandarizado in
 | **External System / IoT** | Rosa / Fucsia (`#F48FB1`) | Nombre del sistema / hardware | Entidad ajena a la plataforma (`ESP32 Hardware`, `OBD-II Telemetry`, `FCM/Twilio`). |
 | **Hotspot / Risk / Exception** | Rojo / Magenta (`#E53935`) | Problema o riesgo crítico | Fricción del entorno operativo de Lima (`12V Socket Disconnect`, `TomTom Traffic Delay`). |
 
----
+***
 
 ### **2. Matriz Estratégica de Clasificación de Bounded Contexts**
 
@@ -2204,24 +2229,24 @@ Para corroborar la cobertura integral del modelo respecto a los requisitos de pl
 
 A nivel de descomposición analítica de dominio, la gestión contractual de flotas (`Subscription & Fleet Provisioning`) se modela tácticamente como un subdominio de soporte independiente de la autenticación pura de usuarios (`IAM`). En la posterior fase de diseño de clases y persistencia relacional, ambos contextos se agrupan de forma cohesionada bajo un esquema unificado (`IAM & Subscriptions`). Dicha decisión de ingeniería optimiza las transacciones de validación de cuotas multi-inquilino (*multi-tenancy*), garantizando que las credenciales del personal médico y la disponibilidad de cajas inteligentes se resuelvan dentro de la misma frontera transaccional en la base de datos.
 
----
+***
 
 ### **3. Diagrama Panorámico de Integración de Bounded Contexts**
 
 Este diagrama macro ilustra cómo interactúan los seis contextos mediante el intercambio de eventos de dominio asíncronos y comandos de orquestación, asegurando un desacoplamiento de bajo acoplamiento y alta cohesión.
 
----
+***
 
 ![Figura 4.6.1.1 - Mapa de Integración entre Bounded Contexts (DLES)](assets/chapter-4/4.6.1-dles-macro-context-map.jpg)  
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo Design-Level EventStorming para Medical SMARTBOX.*
 
----
+***
 
 ### **4. Desglose Exhaustivo por Bounded Context**
 
 A continuación se detalla la especificación transaccional completa para cada uno de los seis Bounded Contexts, definiendo sus responsabilidades de negocio, agregados, invariantes inviolables, matrices de artefactos DDD y flujos de ejecución.
 
----
+***
 
 #### **4.6.1.1. Bounded Context 1: Identity & Access Management (IAM)**
 
@@ -2290,12 +2315,12 @@ A continuación se detalla la especificación transaccional completa para cada u
   </tbody>
 </table>
 
----
+***
 
 ![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context IAM](assets/chapter-4/4.6.1-dles-iam-context.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity & Access Management (IAM).*
 
----
+***
 
 #### **4.6.1.2. Bounded Context 2: Subscription & Fleet Provisioning**
 
@@ -2355,12 +2380,12 @@ A continuación se detalla la especificación transaccional completa para cada u
   </tbody>
 </table>
 
----
+***
 
 ![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Subscription & Fleet Provisioning](assets/chapter-4/4.6.1-dles-subscription-fleet.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Subscription & Fleet Provisioning.*
 
----
+***
 
 #### **4.6.1.3. Bounded Context 3: Medical Transport Planning & Dispatching**
 
@@ -2439,12 +2464,12 @@ A continuación se detalla la especificación transaccional completa para cada u
   </tbody>
 </table>
 
----
+***
 
 ![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
----
+***
 
 #### **4.6.1.4. Bounded Context 4: Smart Container & Telemetry Monitoring**
 
@@ -2513,12 +2538,12 @@ A continuación se detalla la especificación transaccional completa para cada u
   </tbody>
 </table>
 
----
+***
 
 ![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
----
+***
 
 #### **4.6.1.5. Bounded Context 5: Critical Alerting & Incident Response**
 
@@ -2589,12 +2614,12 @@ A continuación se detalla la especificación transaccional completa para cada u
   </tbody>
 </table>
 
----
+***
 
 ![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
 
----
+***
 
 #### **4.6.1.6. Bounded Context 6: Chain of Custody & Traceability**
 
@@ -2663,12 +2688,12 @@ A continuación se detalla la especificación transaccional completa para cada u
   </tbody>
 </table>
 
----
+***
 
 ![Figura 4.6.1.7 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
 
----
+***
 
 ### **5. Matriz Transversal de Políticas de Negocio Reactivas (Event-Driven)**
 
@@ -2683,7 +2708,7 @@ Para garantizar que la arquitectura DDD soporte adecuadamente la reactividad en 
 | **POL-05: Autorización de Apertura en Rampa** | DeliveryOtpVerified | *Chain of Custody* | UnlockElectromechanicalLid | *Smart Container IoT* | Internal MediatR (intra-API) → Redis Pub/Sub: smartbox.commands.actuators → MQTT TLS 8883 | Consistencia Fuerte / Inmediata |
 | **POL-06: Cierre Inmutable de Manifiesto** | MedicalCustodyTransferred | *Chain of Custody* | SealDigitalAuditManifest | *Chain of Custody* | Internal Event Bus (MediatR): custody.completed | Consistencia Fuerte (Transaccional) |
 
----
+***
 
 ### **6. Conclusiones y Preparación para el C4 Model (Capítulo 4.6.2)**
 
@@ -2693,7 +2718,7 @@ El **Design-Level EventStorming** ha permitido descomponer con total rigor la co
 
 Este modelado funcional establece las fronteras directas para la elaboración del **C4 Model (Context Diagram en 4.6.2, Container Diagram en 4.6.3 y Component Diagrams en 4.6.4)**, así como los cimientos para el **Diagrama de Clases UML (4.7)** y el **Esquema Relacional de Base de Datos (4.8)**.
 
----
+***
 
 ## **4.6.2. Software Architecture Context Diagram**
 
@@ -2709,7 +2734,7 @@ El objetivo esencial del Diagrama de Contexto es **establecer las fronteras oper
 2. **Cuáles son las dependencias externas:** Qué sistemas de software de terceros, hardware embebido y servicios en la nube son requeridos para que la solución funcione.
 3. **Cuáles son los límites de responsabilidad:** Qué funciones ejecuta estrictamente el sistema y qué tareas delega a sistemas especializados del ecosistema de salud y movilidad de Lima Metropolitana.
 
----
+***
 
 ### **2. Definición del Sistema Central (Subject System)**
 
@@ -2720,7 +2745,7 @@ El objetivo esencial del Diagrama de Contexto es **establecer las fronteras oper
 * **Misión Operativa:**  
   Garantizar el "Desperdicio Cero" de órganos para trasplante, hemoderivados, vacunas y muestras biológicas termosensibles durante el trayecto vial, blindando el cumplimiento de la **R.M. N° 833-2015/MINSA** (Manual de BPDT - DIGEMID) y la **Directiva Sanitaria N° 152/MINSA** (DIGDOT), mediante la supervisión en tiempo real de temperatura, energía vehicular (12V) y cálculo dinámico de tiempos de llegada (ETA) frente al tráfico severo de la capital.
 
----
+***
 
 ### **3. Catálogo de Actores y Personas (Segmentos Objetivo)**
 
@@ -2775,7 +2800,7 @@ Los usuarios del sistema se articulan de manera estricta con los **dos segmentos
   </tbody>
 </table>
 
----
+***
 
 ### **4. Catálogo de Sistemas Externos e Interfaces Periféricas**
 
@@ -2836,7 +2861,7 @@ La plataforma se conecta con siete sistemas de software externos y dispositivos 
   </tbody>
 </table>
 
----
+***
 
 ### **5. Matriz de Interacciones y Protocolos de Comunicación**
 
@@ -2947,17 +2972,17 @@ Para garantizar que el modelado técnico no deje ambigüedades sobre las tecnolo
   </tbody>
 </table>
 
----
+***
 
 ### **6. Especificación Visual Oficial y Bloque de Diagramación**
 
----
+***
 
 ![Figura 4.6.2.1 - C4 Model: System Context Diagram (Nivel 1)](assets/chapter-4/4.6.2-c4-context-diagram.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **7. Conclusiones y Transición hacia el Container Diagram (Capítulo 4.6.3)**
 
@@ -2966,7 +2991,7 @@ El **Software Architecture Context Diagram** define formalmente el perímetro de
 2. **Robustez de Integraciones:** El sistema no depende de soluciones mágicas, sino de contratos técnicos específicos: telemetría continua sobre **MQTT/TLS** para el hardware IoT de ultrabajo consumo (ESP32), APIs de geolocalización contra **TomTom** para vencer la congestión de Lima, y almacenamiento inmutable **WORM** para cumplir la regulación de DIGEMID.
 3. **Paso Siguiente:** Habiendo establecido la plataforma central como una caja negra de alcance delimitado, el siguiente capítulo (**4.6.3 Software Architecture Container Diagrams**) "abrirá" esta caja negra para descomponerla en sus unidades ejecutables independientes: **Landing Page estática, Single Page Application en Vue.js + PrimeVue, RESTful Web API en ASP.NET Core C#, IoT Background Ingestion Worker y Base de Datos Relacional MySQL**.
 
----
+***
 
 ## **4.6.3. Software Architecture Container Diagrams**
 
@@ -2979,7 +3004,7 @@ Tras haber delimitado en el Capítulo 4.6.2 la plataforma central `Medical SMART
 2. **Las decisiones y criterios de selección tecnológica:** Adopción estratégica de **HTML5/CSS3/JavaScript** para la Landing Page de captación y difusión; **Vue Framework con PrimeVue** (Material Design) para la Frontend Web Application interactiva de alta densidad operativa; **ASP.NET Core con Entity Framework Core (C#)** para la Web API RESTful de alta concurrencia y procesamiento asíncrono; y **MySQL Server** como RDBMS principal con motor transaccional InnoDB para garantizar consistencia ACID.
 3. **Los patrones y protocolos de comunicación inter-contenedor:** Especificación exacta de canales de transporte (HTTPS, WSS, TCP/MQTT, SQL/TCP) para garantizar alta disponibilidad, baja latencia y tolerancia a fallos.
 
----
+***
 
 ### **2. Catálogo de Contenedores de Software (Arquitectura de Despliegue)**
 
@@ -3041,7 +3066,7 @@ La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores princ
   </tbody>
 </table>
 
----
+***
 
 ### **3. Matriz de Protocolos de Comunicación y Conectividad Inter-Contenedor**
 
@@ -3190,7 +3215,7 @@ Para garantizar el cumplimiento de los estándares de conectividad segura e inte
   </tbody>
 </table>
 
----
+***
 
 ### **4. Decisiones de Arquitectura y Trade-offs Técnicos**
 
@@ -3201,17 +3226,17 @@ Para garantizar el cumplimiento de los estándares de conectividad segura e inte
 3. **Persistencia Relacional en MySQL Server:**  
    * *Justificación:* El transporte asistencial exige estricta integridad referencial (ACID) para auditorías de DIGEMID: no puede existir un viaje sin una orden médica, ni un acta firmada sin un custodio validado. **MySQL 8.0 administrado por Entity Framework Core** provee el control transaccional requerido.
 
----
+***
 
 ### **5. Especificación Visual Oficial y Bloque de Diagramación**
 
----
+***
 
 ![Figura 4.6.3.1 - C4 Model: Container Diagram (Nivel 2)](assets/chapter-4/4.6.3-c4-container-diagram.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **6. Conclusiones y Transición hacia el Component Diagram (Capítulo 4.6.4)**
 
@@ -3220,7 +3245,7 @@ El **Software Architecture Container Diagram** formaliza la distribución físic
 2. **Desacoplamiento de Carga:** La separación entre la **RESTful Web API** (orientada a transacciones de usuario) y el **IoT Ingestion Worker** (orientado a ráfagas continuas de telemetría MQTT) garantiza que la plataforma soporte cientos de ambulancias concurrentes en Lima sin degradar el rendimiento.
 3. **Paso Siguiente:** Habiendo descompuesto el sistema en contenedores ejecutables, el siguiente capítulo (**4.6.4 Software Architecture Components Diagrams**) profundizará en la arquitectura interna del contenedor central más complejo: la **RESTful Web API en ASP.NET Core**, desglosándola bajo los principios de **Clean Architecture / Onion Architecture DDD** (Controllers, Application Handlers, Domain Aggregates e Infrastructure Repositories).
 
----
+***
 
 ## **4.6.4. Software Architecture Components Diagrams**
 
@@ -3236,7 +3261,7 @@ Conforme a las recomendaciones de arquitectura de software para sistemas distrib
 
 En este capítulo se realiza la descomposición exhaustiva de la **RESTful Web API en ASP.NET Core (.NET 10 LTS, C# 14)**, estructurándola bajo los principios de **Domain-Driven Design (DDD) y Clean Architecture** con estricta inversión de dependencias para evidenciar cómo se organizan los módulos que dan soporte operativo al **Segmento 1 (Transporte / Ambulancias)** y al **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**.
 
----
+***
 
 ### **2. Organización en Capas DDD de los Componentes del Contenedor**
 
@@ -3253,203 +3278,208 @@ Para evitar el acoplamiento directo entre los controladores HTTP y la base de da
 
 Conforme a los fundamentos del C4 Model, en este Nivel 3 (Component Diagrams) se modelan los artefactos modulares inyectables en el contenedor de inversión de control (IoC) de ASP.NET Core (Controladores, Servicios de Aplicación, Repositorios, Adaptadores y DbContext). Las entidades de dominio, objetos de valor y estructuras internas de clases corresponden al Nivel 4 (Code / UML Class Diagrams), los cuales se especifican con exhaustividad técnica en el Capítulo 4.7.
 
----
+***
+
+<div style="page-break-before: always;"></div>
 
 ### **3. Catálogo Detallado de Componentes de la RESTful Web API**
 
 A continuación se detallan los componentes estructurados por capa para los Bounded Contexts principales:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Capa Arquitectónica</th>
-      <th>Componente C4</th>
-      <th>Tecnología / Framework</th>
-      <th>Responsabilidades Técnicas y de Negocio</th>
-      <th>Dependencias Inyectadas</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-    <tr>
-      <td rowspan="7"><strong>Presentation<br>(Controllers & Hubs)</strong></td>
-      <td><code>AuthController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para autenticación JWT, renovación de tokens, registro de usuarios institucionales y roles.</td>
-      <td><code>IIdentityService</code></td>
-    </tr>
-    <tr>
-      <td><code>SubscriptionsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para planes SaaS B2B, cupos de contenedores (5L/20L) y vinculación de ambulancias.</td>
-      <td><code>ISubscriptionService</code></td>
-    </tr>
-    <tr>
-      <td><code>TransportsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints REST para crear órdenes de traslado de emergencia, asignar ambulancias (Seg. 1) y consultar rutas activas.</td>
-      <td><code>ITransportService</code></td>
-    </tr>
-    <tr>
-      <td><code>ContainersController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para calibración de tara y pesaje neto con celda HX711, y envío de comandos de bloqueo solenoide.</td>
-      <td><code>ITelemetryService</code></td>
-    </tr>
-    <tr>
-      <td><code>AlertsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para acuse de recibo de alarmas acústicas en cabina (Seg. 1) y registro de mitigación ante excursión térmica.</td>
-      <td><code>IIncidentService</code></td>
-    </tr>
-    <tr>
-      <td><code>CustodyController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para validar el <strong>código OTP de un solo uso</strong> en rampa hospitalaria (Seg. 2) y descargar el acta digital certificada.</td>
-      <td><code>ICustodyService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryHub</code></td>
-      <td>ASP.NET Core SignalR Hub, Authorize Attribute</td>
-      <td>Expone el endpoint de WebSockets (<code>/hubs/telemetry</code>) para suscripción en tiempo real a curvas térmicas, estado de 12V y posición GPS de SmartBoxes.</td>
-      <td><code>IRealTimeCacheService</code></td>
-    </tr>
-    
-    <tr>
-      <td rowspan="7"><strong>Application<br>(Services / Use Cases)</strong></td>
-      <td><code>IdentityService</code></td>
-      <td>C# Service Class, JWT Bearer Handler</td>
-      <td>Valida credenciales con hashing BCrypt, emite tokens criptográficos JWT y verifica permisos RBAC de ambos segmentos.</td>
-      <td><code>IUserRepository</code>,<br><code>ITokenGeneratorService</code></td>
-    </tr>
-    <tr>
-      <td><code>SubscriptionService</code></td>
-      <td>C# Service Class</td>
-      <td>Gestiona planes institucionales B2B, valida cupos de SmartBoxes activos por institución y acuerdos de soporte SLA.</td>
-      <td><code>ISubscriptionRepository</code></td>
-    </tr>
-    <tr>
-      <td><code>TransportApplicationService</code></td>
-      <td>C# Service Class, FluentValidation</td>
-      <td>Orquesta la planificación del viaje, valida tiempos de isquemia fría (&lt;4h corazón, &lt;8h hígado) y consulta a TomTom para recalcular ETA dinámico.</td>
-      <td><code>ITransportRepository</code>,<br><code>ITrafficRoutingService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryProcessingService</code></td>
-      <td>C# Service Class, MediatR</td>
-      <td>Valida snapshots de telemetría, comprueba rango térmico (+2.0 °C a +8.0 °C), detecta desconexión de energía de 12V y persiste periódicamente bloques consolidados en MySQL vía <code>ISmartContainerRepository</code> para alimentar las actas de DIGEMID.</td>
-      <td><code>ISmartContainerRepository</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryAlertSubscriber</code></td>
-      <td>BackgroundService (C#), IHostedService</td>
-      <td>Servicio continuo en segundo plano que escucha los canales Redis Pub/Sub (<code>smartbox.alerts.critical</code> y <code>smartbox.telemetry.batch</code>); mediante <code>IServiceScope</code>, delega de forma segura el manejo de alertas a <code>IncidentResponseService</code> y la persistencia de lotes a <code>TelemetryProcessingService</code>.</td>
-      <td><code>IServiceScopeFactory</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    <tr>
-      <td><code>IncidentResponseService</code></td>
-      <td>C# Service Class</td>
-      <td>Evalúa severidad de desviaciones térmicas y orquesta el despacho omnicanal de alertas push y SMS hacia la tripulación y médicos.</td>
-      <td><code>IIncidentRepository</code>,<br><code>INotificationService</code></td>
-    </tr>
-    <tr>
-      <td><code>CustodyVerificationService</code></td>
-      <td>C# Service Class</td>
-      <td>Comprueba la validez temporal del OTP, comanda el desbloqueo electromecánico de la tapa y genera el manifiesto sellado con SHA-256.</td>
-      <td><code>ICustodyRepository</code>,<br><code>IStorageService</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    
-    <tr>
-      <td rowspan="5"><strong>Domain<br>(Core Business)</strong><br><small style="color: #666;"><em>(Límites de dominio orquestados por Aplicación; modelado estructural de clases detallado en Capítulo 4.7)</em></small></td>
-      <td><code>UserAccount</code> & <code>SubscriptionPlan</code></td>
-      <td>Plain C# (POCO), Domain Entities</td>
-      <td>Representan las identidades, roles clínicos, límites de flota de SmartBoxes y acuerdos comerciales B2B.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>SmartContainer</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Encapsula el estado electromecánico de la tapa, celda Peltier, batería LiFePO4 y el historial telemétrico.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>TransportOrder</code> & <code>DispatchTrip</code></td>
-      <td>DDD Aggregate Roots</td>
-      <td>Modelan la solicitud clínica de traslado, asignación de paramédico/ambulancia y ruta con isquemia fría controlada.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>CriticalIncident</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Modela anomalías térmicas y de energía auxiliar, gobernando las reglas de escalamiento y resoluciones de mitigación.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>CustodyTransfer</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Gobernado por la máquina de estados de entrega, validación de clave OTP temporal y manifiesto inmutable DIGEMID.</td>
-      <td>—</td>
-    </tr>
-    
-    <tr>
-      <td rowspan="9"><strong>Infrastructure<br>(Persistence & Adapters)</strong></td>
-      <td><code>AppDbContext</code></td>
-      <td>Entity Framework Core 10.0 (.NET 10 LTS), Pomelo MySQL / Oracle MySQL EF Core</td>
-      <td>Contexto de base de datos que mapea las entidades del dominio hacia el esquema relacional en MySQL 8.0 (TCP 3306).</td>
-      <td><code>DbContextOptions</code></td>
-    </tr>
-    <tr>
-      <td><code>EF Repositories Implementations</code></td>
-      <td>EF Core Repositories (C#)</td>
-      <td>Implementan <code>IUserRepository</code>, <code>ISubscriptionRepository</code>, <code>ITransportRepository</code>, <code>ISmartContainerRepository</code>, etc.</td>
-      <td><code>AppDbContext</code></td>
-    </tr>
-    <tr>
-      <td><code>TomTomRoutingAdapter</code></td>
-      <td>HttpClient, Polly (Retry/CircuitBreaker)</td>
-      <td>Consume la API de TomTom para obtener matrices de tiempo considerando el tráfico vehicular en avenidas de Lima.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>FirebaseTwilioNotificationAdapter</code></td>
-      <td>FirebaseAdmin SDK, Twilio REST API</td>
-      <td>Despacha notificaciones push a la PWA móvil y mensajes de texto SMS a los teléfonos de la guardia médica.</td>
-      <td><code>IOptions&lt;NotificationSettings&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>AwsS3StorageAdapter</code></td>
-      <td>AWSSDK.S3 (C#)</td>
-      <td>Sube los manifiestos de viaje en PDF generados con sellado SHA-256 a buckets con retención WORM inmutable.</td>
-      <td><code>IAmazonS3</code></td>
-    </tr>
-    <tr>
-      <td><code>CulqiPaymentAdapter</code></td>
-      <td>HttpClient, Polly (Resilience)</td>
-      <td>Implementa <code>IPaymentGateway</code> para procesamiento automatizado de débitos B2B y validación de comprobantes de pago.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>HospitalFhirAdapter</code></td>
-      <td>HttpClient, HL7.Fhir.R4</td>
-      <td>Implementa <code>IHospitalInteroperabilityService</code> para sincronización de preavisos con el HIS hospitalario y consulta de habilitación RENIPRESS.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>JwtTokenGeneratorAdapter</code></td>
-      <td>System.IdentityModel.Tokens.Jwt, C# Class</td>
-      <td>Implementa <code>ITokenGeneratorService</code> para generar y firmar criptográficamente tokens JWT con claims institucionales.</td>
-      <td><code>IOptions&lt;JwtSettings&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>RedisRealTimeCacheAdapter</code></td>
-      <td>StackExchange.Redis (C#)</td>
-      <td>Implementa <code>IRealTimeCacheService</code> para gestión de estado volátil en memoria y suscripción a canales Pub/Sub.</td>
-      <td><code>IConnectionMultiplexer</code></td>
-    </tr>
-  </tbody>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; font-size: 6.8pt; table-layout: fixed; border: 1px solid #777;">
+<colgroup>
+<col style="width: 14%;" />
+<col style="width: 17%;" />
+<col style="width: 20%;" />
+<col style="width: 32%;" />
+<col style="width: 17%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f0f0f0;">
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Capa Arquitectónica</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Componente C4</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Tecnología / Framework</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Responsabilidades Técnicas y de Negocio</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Dependencias Inyectadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="7" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Presentation<br />(Controllers &amp; Hubs)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AuthController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para autenticación JWT, renovación de tokens, registro de usuarios institucionales y roles.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIdentityService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SubscriptionsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para planes SaaS B2B, cupos de contenedores (5L/20L) y vinculación de ambulancias.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISubscriptionService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints REST para crear órdenes de traslado de emergencia, asignar ambulancias (Seg. 1) y consultar rutas activas.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITransportService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ContainersController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para calibración de tara y pesaje neto con celda HX711, y envío de comandos de bloqueo solenoide.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITelemetryService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AlertsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para acuse de recibo de alarmas acústicas en cabina (Seg. 1) y registro de mitigación ante excursión térmica.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIncidentService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para validar el <strong>código OTP de un solo uso</strong> en rampa hospitalaria (Seg. 2) y descargar el acta digital certificada.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ICustodyService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryHub</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core SignalR Hub, Authorize Attribute</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone el endpoint de WebSockets (<code>/hubs/telemetry</code>) para suscripción en tiempo real a curvas térmicas, estado de 12V y posición GPS de SmartBoxes.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td rowspan="7" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Application<br />(Services / Use Cases)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IdentityService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, JWT Bearer Handler</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Valida credenciales con hashing BCrypt, emite tokens criptográficos JWT y verifica permisos RBAC de ambos segmentos.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IUserRepository</code>,<br /><code>ITokenGeneratorService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SubscriptionService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Gestiona planes institucionales B2B, valida cupos de SmartBoxes activos por institución y acuerdos de soporte SLA.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISubscriptionRepository</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportApplicationService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, FluentValidation</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Orquesta la planificación del viaje, valida tiempos de isquemia fría (&lt;4h corazón, &lt;8h hígado) y consulta a TomTom para recalcular ETA dinámico.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITransportRepository</code>,<br /><code>ITrafficRoutingService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryProcessingService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, MediatR</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Valida snapshots de telemetría, comprueba rango térmico (+2.0 °C a +8.0 °C), detecta desconexión de energía de 12V y persiste periódicamente bloques consolidados en MySQL vía <code>ISmartContainerRepository</code> para alimentar las actas de DIGEMID.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISmartContainerRepository</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryAlertSubscriber</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">BackgroundService (C#), IHostedService</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Servicio continuo en segundo plano que escucha los canales Redis Pub/Sub (<code>smartbox.alerts.critical</code> y <code>smartbox.telemetry.batch</code>); mediante <code>IServiceScope</code>, delega de forma segura el manejo de alertas a <code>IncidentResponseService</code> y la persistencia de lotes a <code>TelemetryProcessingService</code>.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IServiceScopeFactory</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IncidentResponseService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Evalúa severidad de desviaciones térmicas y orquesta el despacho omnicanal de alertas push y SMS hacia la tripulación y médicos.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIncidentRepository</code>,<br /><code>INotificationService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyVerificationService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Comprueba la validez temporal del OTP, comanda el desbloqueo electromecánico de la tapa y genera el manifiesto sellado con SHA-256.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ICustodyRepository</code>,<br /><code>IStorageService</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td rowspan="5" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Domain<br />(Core Business)</strong><br /><small style="color: #666;"><em>(Límites de dominio orquestados por Aplicación; modelado estructural de clases detallado en Capítulo 4.7)</em></small></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>UserAccount</code> &amp; <code>SubscriptionPlan</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Plain C# (POCO), Domain Entities</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Representan las identidades, roles clínicos, límites de flota de SmartBoxes y acuerdos comerciales B2B.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SmartContainer</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Encapsula el estado electromecánico de la tapa, celda Peltier, batería LiFePO4 y el historial telemétrico.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportOrder</code> &amp; <code>DispatchTrip</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Roots</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Modelan la solicitud clínica de traslado, asignación de paramédico/ambulancia y ruta con isquemia fría controlada.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CriticalIncident</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Modela anomalías térmicas y de energía auxiliar, gobernando las reglas de escalamiento y resoluciones de mitigación.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyTransfer</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Gobernado por la máquina de estados de entrega, validación de clave OTP temporal y manifiesto inmutable DIGEMID.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td rowspan="9" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Infrastructure<br />(Persistence &amp; Adapters)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AppDbContext</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Entity Framework Core 10.0 (.NET 10 LTS), Pomelo MySQL / Oracle MySQL EF Core</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Contexto de base de datos que mapea las entidades del dominio hacia el esquema relacional en MySQL 8.0 (TCP 3306).</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>DbContextOptions</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>EF Repositories Implementations</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">EF Core Repositories (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementan <code>IUserRepository</code>, <code>ISubscriptionRepository</code>, <code>ITransportRepository</code>, <code>ISmartContainerRepository</code>, etc.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AppDbContext</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TomTomRoutingAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, Polly (Retry/CircuitBreaker)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Consume la API de TomTom para obtener matrices de tiempo considerando el tráfico vehicular en avenidas de Lima.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>FirebaseTwilioNotificationAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">FirebaseAdmin SDK, Twilio REST API</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Despacha notificaciones push a la PWA móvil y mensajes de texto SMS a los teléfonos de la guardia médica.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IOptions&lt;NotificationSettings&gt;</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AwsS3StorageAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">AWSSDK.S3 (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Sube los manifiestos de viaje en PDF generados con sellado SHA-256 a buckets con retención WORM inmutable.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IAmazonS3</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CulqiPaymentAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, Polly (Resilience)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IPaymentGateway</code> para procesamiento automatizado de débitos B2B y validación de comprobantes de pago.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>HospitalFhirAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, HL7.Fhir.R4</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IHospitalInteroperabilityService</code> para sincronización de preavisos con el HIS hospitalario y consulta de habilitación RENIPRESS.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>JwtTokenGeneratorAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">System.IdentityModel.Tokens.Jwt, C# Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>ITokenGeneratorService</code> para generar y firmar criptográficamente tokens JWT con claims institucionales.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IOptions&lt;JwtSettings&gt;</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>RedisRealTimeCacheAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">StackExchange.Redis (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IRealTimeCacheService</code> para gestión de estado volátil en memoria y suscripción a canales Pub/Sub.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IConnectionMultiplexer</code></td>
+</tr>
+</tbody>
 </table>
 
----
+***
 
 ### **4. Matriz de Inyección de Dependencias y Ciclos de Vida (IoC Container)**
 
@@ -3480,17 +3510,17 @@ Siguiendo las convenciones oficiales de desarrollo para ASP.NET Core de Microsof
 | `IRealTimeCacheService` | `RedisRealTimeCacheAdapter` | `Singleton` | Administra la conexión multiplexada persistente hacia Redis para telemetría en tiempo real y canales SignalR Pub/Sub. |
 | `MapHub<TelemetryHub>` | `TelemetryHub` (SignalR) | `Transient` / *Per-Invocation* | Endpoint WebSockets (`/hubs/telemetry`) para distribución reactiva de eventos y telemetría hacia los clientes SPA conectados. |
 
----
+***
 
 ### **5. Especificación Visual Oficial y Bloque de Diagramación del Backend RESTful API**
 
----
+***
 
 ![Figura 4.6.4.2 - C4 Model: Component Diagram (Nivel 3 - Backend RESTful Web API)](assets/chapter-4/4.6.4-c4-component-backend-api.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **6. Desglose Componencial de Contenedores Satélites (SPA y Ingestion Worker)**
 
@@ -3508,13 +3538,13 @@ Para complementar la visión integral de la arquitectura en el Nivel 3 (Componen
   * `OtpHandoverDialog`: Interfaz modal para ingreso del código OTP de 6 dígitos con teclado numérico accesible para cirujanos y farmacéuticos en quirófano.
 * **HTTP Client & Resiliency (Axios ApiClient):** Instancia de Axios configurada con interceptores para inyección automática del encabezado `Authorization: Bearer <token>` y captura uniforme de errores RFC 7807 (ProblemDetails).
 
----
+***
 
 ![Figura 4.6.4.3 - C4 Model: Component Diagram (Single Page Application Vue.js)](assets/chapter-4/4.6.4-c4-component-spa-vue.png)
 
 *Nota: Elaboración propia en Structurizr conforme a la notación C4 Model (Nivel 3: Componentes) de Simon Brown.*
 
----
+***
 
 #### **6.2. IoT Telemetry Ingestion Worker (.NET BackgroundService)**
 * **MqttTelemetryConsumer:** Servicio residente en segundo plano basado en `MQTTnet` que mantiene una conexión persistente bidireccional sobre TLS (puerto 8883) suscrito al tópico canónico `smartbox/+/telemetry`.
@@ -3523,13 +3553,13 @@ Para complementar la visión integral de la arquitectura en el Nivel 3 (Componen
 * **RedisTelemetryPublisher:** Publica las lecturas normalizadas en el canal Pub/Sub de Redis para su propagación inmediata a la Web API y clientes conectados mediante SignalR Hubs.
 * **MqttCommandDispatcher:** Componente residente que se suscribe al canal Redis Pub/Sub (`smartbox.commands.actuators`) para consumir comandos de bloqueo y desbloqueo emitidos por `CustodyVerificationService`, publicando mensajes firmados vía MQTT sobre TLS (puerto 8883) hacia el actuador del cerrojo electromecánico en el microcontrolador ESP32 (`smartbox/{boxId}/commands`).
 
----
+***
 
 ![Figura 4.6.4.4 - C4 Model: Component Diagram (IoT Ingestion Background Worker)](assets/chapter-4/4.6.4-c4-component-iot-worker.png)
 
 *Nota: Elaboración propia en Structurizr conforme a la notación C4 Model (Nivel 3: Componentes) de Simon Brown.*
 
----
+***
 
 ### **7. Conclusiones y Transición hacia el Diseño Orientado a Objetos (Capítulo 4.7)**
 
@@ -3538,7 +3568,7 @@ El **Software Architecture Components Diagram** demuestra la aplicación riguros
 2. **Alta Cohesión:** Cada Bounded Context cuenta con su tríada de Controlador, Servicio de Aplicación y Repositorio, garantizando mantenibilidad y escalabilidad.
 3. **Paso Siguiente:** Habiendo establecido la estructura modular de componentes, el siguiente capítulo (**4.7 Software Object-Oriented Design / 4.7.1 Class Diagrams**) detallará el modelado estático orientado a objetos de estas clases, especificando atributos tipados, modificadores de acceso (`+`, `-`, `#`), métodos con parámetros y tipos de retorno, y relaciones UML con multiplicidades exactas.
 
----
+***
 
 <div style="page-break-after: always;"></div>
 
@@ -3581,13 +3611,13 @@ En estricta observancia de los patrones Domain-Driven Design (DDD), las clases d
 * `DigitalAuditManifest.CloudStorageUrl` → columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
 Esta separación formal preserva la expresividad del lenguaje ubicuo en el código fuente de dominio sin acoplarlo rígidamente a los identificadores físicos de almacenamiento.
 
----
+***
 
 ### **2. Desglose Exhaustivo de Clases por Bounded Context**
 
 A continuación se detalla la especificación estática de clases para los cinco Bounded Contexts del sistema que articulan el **Segmento 1 (Transporte y Flota Logística)** y el **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**:
 
----
+***
 
 #### **4.7.1.0. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
@@ -3747,7 +3777,7 @@ A nivel del diseño estático de clases de software, las entidades de identidad,
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.1. Bounded Context A: Smart Container & Telemetry Monitoring (IoT)**
 
@@ -3950,7 +3980,7 @@ Representa el núcleo físico y sensorial del proyecto. Modela el control activo
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.2. Bounded Context B: Medical Transport Planning & Dispatching (Segmento 1)**
 
@@ -4101,7 +4131,7 @@ Modela la respuesta operativa del **Segmento 1 (Ambulancias y Despacho)** ante l
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.3. Bounded Context C: Critical Alerting & Incident Response (Segmentos 1 y 2)**
 
@@ -4214,7 +4244,7 @@ Modela la detección de contingencias, despacho de alarmas acústicas y visuales
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.4. Bounded Context D: Chain of Custody & Traceability (Segmento 2 - Clínico y Legal)**
 
@@ -4329,7 +4359,7 @@ Modela la seguridad de custodia en el hospital receptor (**Segmento 2**): valida
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.5. Domain Events y Clases Transversales (Shared Kernel)**
 
@@ -4418,7 +4448,7 @@ Permiten propagar asíncronamente cambios de estado críticos entre los Bounded 
   </tbody>
 </table>
 
----
+***
 
 ### **3. Matriz de Relaciones y Cardinalidades del Modelo de Clases**
 
@@ -4591,7 +4621,7 @@ Para asegurar total rigurosidad en la implementación del diagrama UML, la sigui
   </tbody>
 </table>
 
----
+***
 
 ### **4. Diagramas de Clases por Bounded Context**
 
@@ -4603,7 +4633,7 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de IAM y Suscripciones.*
 
----
+***
 
 #### **4.2. Bounded Context: Smart Container & Telemetry Monitoring**
 
@@ -4611,7 +4641,7 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Contenedores Inteligentes y Telemetría.*
 
----
+***
 
 #### **4.3. Bounded Context: Medical Transport Planning & Dispatching**
 
@@ -4619,7 +4649,7 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Transporte y Despacho.*
 
----
+***
 
 #### **4.4. Bounded Context: Critical Alerting & Incident Response**
 
@@ -4627,7 +4657,7 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Alertas Críticas e Incidentes.*
 
----
+***
 
 #### **4.5. Bounded Context: Chain of Custody & Traceability**
 
@@ -4678,7 +4708,7 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * `DigitalAuditManifest.GeneratedAt` → `sealed_at` (tabla `digital_audit_manifests`).
    * `DigitalAuditManifest.CloudStorageUrl` → `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
 
----
+***
 
 ### **4.8.1. Database Diagrams**
 
@@ -4698,13 +4728,13 @@ El modelo de datos relacional de Medical SMARTBOX ha sido diseñado bajo una est
 * **Principio de Custodia Unívoca y Ausencia de Tablas N:M:**  
   A diferencia de aplicaciones comerciales genéricas, el modelo relacional descarta de forma deliberada el uso de tablas intermedias de descomposición muchos a muchos (N:M). Bajo la normativa de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva Sanitaria N° 152), el transporte asistencial de órganos, hemoderivados y vacunas críticas opera bajo el **Principio de Custodia Unívoca (1 Orden de Traslado → 1 Despacho → 1 Contenedor Inteligente → 1 Custodio Receptor Acreditado)**. Establecer asignaciones múltiples concurrentes (N:M) introduciría vacíos de trazabilidad médico-legal y riesgo inaceptable de contaminación cruzada o confusión de muestras biológicas, por lo que el esquema relacional refuerza estrictamente relaciones 1:1 y 1:N con integridad referencial restrictiva.
 
----
+***
 
 #### **2. Diccionario de Datos Exhaustivo por Bounded Context**
 
 A continuación se detalla la especificación formal de las 11 tablas del sistema relacional agrupadas por sus Bounded Contexts, cubriendo de forma estricta las necesidades operativas del **Segmento 1 (Ambulancias y Logística)** y el **Segmento 2 (Hospitales y Laboratorios B2B)**:
 
----
+***
 
 ##### **4.8.1.1. Bounded Context: IAM & Subscriptions (Soporte B2B y Acceso)**
 
@@ -4767,7 +4797,7 @@ Gestiona las credenciales y perfiles profesionales autorizados en ambos segmento
 | `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Registro inicial de la cuenta de usuario. |
 | `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de modificación de credenciales o perfil. |
 
----
+***
 
 ##### **4.8.1.2. Bounded Context: Smart Container & Telemetry Monitoring (Core IoT)**
 
@@ -4813,7 +4843,7 @@ Serie temporal de lecturas sensoriales emitidas en ráfagas cada 5 segundos dura
 | `firmware_signature` | `VARCHAR(128)` | **NOT NULL** | — | Hash de validación criptográfica de la trama generada por el ESP32. |
 | `is_thermal_excursion` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 0` | Flag de desvío: marcado con 1 si la temperatura sale de +2.0°C a +8.0°C. |
 
----
+***
 
 ##### **4.8.1.3. Bounded Context: Medical Transport Planning & Dispatching (Core Operativo)**
 
@@ -4861,7 +4891,7 @@ Ejecución del traslado por la ambulancia, tripulación y contenedor asignados (
 | `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Momento de creación de la hoja de despacho. |
 | `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de la última actualización telemétrica o de ETA. |
 
----
+***
 
 ##### **4.8.1.4. Bounded Context: Critical Alerting & Incident Response (Soporte Reactivo)**
 
@@ -4899,7 +4929,7 @@ Medidas correctivas aplicadas y validadas para mitigar el incidente y proteger e
 | `resolved_by_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Profesional biomédico o médico de guardia responsable. |
 | `resolved_at` | `DATETIME(6)` | **NOT NULL** | — | Marca temporal del cierre satisfactorio de la contingencia. |
 
----
+***
 
 ##### **4.8.1.5. Bounded Context: Chain of Custody & Traceability (Core Regulatorio)**
 
@@ -4941,7 +4971,7 @@ Acta digital de entrega legal sellada criptográficamente con hash SHA-256 para 
 | `minsa_compliance_verified` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Certificación booleana de cumplimiento de la Directiva Sanitaria 152/MINSA. |
 | `sealed_at` | `DATETIME(6)` | **NOT NULL** | — | Fecha y hora UTC del sellado criptográfico del acta. |
 
----
+***
 
 #### **3. Políticas Globales de Integridad Referencial y Trazabilidad**
 
@@ -4955,7 +4985,7 @@ En lugar de redundar en las especificaciones de claves foráneas ya detalladas e
 | **Principio de Custodia Unívoca (Sin N:M)** | Restricciones `1:1` y `1:N` estrictas con `UNIQUE` | Asignación Orden → Despacho → Contenedor → Transferencia de Custodia. | Elimina tablas intermedias de cruce N:M; la normativa sanitaria exige un único custodio legal y un único contenedor responsable por cada traslado de órganos o hemoderivados. |
 | **Inmutabilidad Criptográfica de Cierre** | Columna `is_sealed_and_immutable = 1` y hash SHA-256 | Tabla `digital_audit_manifests` (Manifiesto de Auditoría). | Bloquea a nivel de servicio y regla de base de datos cualquier mutación posterior al sellado de custodia asistencial en destino hospitalario. |
 
----
+***
 
 #### **4. Estrategia de Indexación y Optimización de Consultas IoT**
 
@@ -4970,14 +5000,14 @@ Para procesar ráfagas continuas de telemetría provenientes de múltiples ambul
 4. **`idx_critical_incidents_status_severity (status, severity)`:**  
    *Propósito:* Prioriza las alertas no resueltas (`Open`) de mayor severidad (`CriticalEmergency`, `CatastrophicFailure`) para despachar notificaciones inmediatas mediante push y SMS a la central médica.
 
----
+***
 
 #### **5. Diagrama Físico de Base de Datos (Entity Relationship Diagram)**
 
 ![Figura 4.8.1 - Database Physical Data Model (Entity Relationship Diagram)](assets/chapter-4/4.8.1-database-diagram.png)  
 *Nota: Diagrama Relacional Físico de Base de Datos generado mediante Reverse Engineering en MySQL Workbench 8.0 bajo motor InnoDB.*
 
----
+***
 
 #### **6. Conclusiones y Transición hacia el Capítulo V (Implementación y Validación)**
 
@@ -4992,7 +5022,7 @@ El diseño relacional presentado en esta sección concluye la fase arquitectóni
 
 En esta sección se detallan la configuración del entorno de desarrollo, la estrategia de gestión del código fuente, las convenciones de estilo adoptadas por el equipo de desarrollo de **NeonCode** y la infraestructura empleada para el despliegue del sistema de supervisión de contenedores médicos inteligentes conforme a las exigencias oficiales de la asignatura.
 
----
+***
 
 ### 5.1.1. Software Development Environment Configuration
 
@@ -5010,7 +5040,7 @@ Para garantizar un flujo de trabajo uniforme y minimizar discrepancias entre las
     * **NuGet:** Gestor oficial de dependencias y paquetes para la solución ASP.NET Core (`Microsoft.EntityFrameworkCore`, `Swashbuckle.AspNetCore`, `BCrypt.Net-Next`).
     * **npm (v10.x):** Gestor de paquetes empleado para la administración de bibliotecas y plugins de desarrollo frontend.
 
----
+***
 
 ### 5.1.2. Source Code Management
 
@@ -5039,7 +5069,7 @@ git flow feature publish landing-hero-section
 git flow feature finish landing-hero-section
 ```
 
----
+***
 
 ## 5.1.3. Source Code Style Guide & Conventions
 
@@ -5075,7 +5105,7 @@ Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la
 * **`test`:** Adición o actualización de pruebas unitarias o de integración.
 * **`chore`:** Tareas de mantenimiento, configuración de build o dependencias.
 
----
+***
 
 ## 5.1.4. Software Deployment Configuration
 
@@ -5102,7 +5132,7 @@ El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados
 
 En esta sección se detalla la planificación, asignación de responsabilidades y desglose de tareas técnicas para la ejecución del primer ciclo de desarrollo (Sprint 1) del ecosistema **Medical SMARTBOX (NeonCode)**, así como las evidencias correspondientes a la implementación, ejecución de vistas, especificación de servicios, despliegue activo en la nube y colaboración del equipo mediante control de versiones.
 
----
+***
 
 ### 5.2.1.1. Sprint Planning 1
 
@@ -5123,7 +5153,7 @@ El **Sprint Planning 1** formaliza los aspectos principales de la reunión de pl
 | Sprint 1 Velocity | 16 Story Points |
 | Sum of Story Points | 16 Story Points (US04: 2 SP, US05: 2 SP, US06: 1 SP, US01: 3 SP, US02: 3 SP, US03: 5 SP) |
 
----
+***
 
 ### 5.2.1.2. Aspect Leaders and Collaborators
 
@@ -5145,14 +5175,11 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
 | Munayco Apolaya, Maria Luisa | `MunaycoMaria` | L | C | C | C | C | C |
 | Santos Minaya, Renzo Piero | `RenzoSantosUPC` | C | C | C | C | C | L |
 
----
+***
 
 ### 5.2.1.3. Sprint Backlog 1
 
 El **Sprint Backlog 1** presenta el desglose detallado de tareas técnicas asociadas a las historias de usuario comprometidas para el Sprint 1. El objetivo principal de la iteración fue la construcción, validación responsive y despliegue del Landing Page institucional, junto con la definición de contratos y modelos para los servicios de autenticación y registro.
-
-* **Herramienta de Gestión:** GitHub Projects / Trello.
-* **URL Pública del Board:** [`https://github.com/orgs/NeonCode-UPC/projects/1`](https://github.com/orgs/NeonCode-UPC/projects/1)
 
 A continuación se presenta la tabla oficial de control de estado del Sprint 1:
 
@@ -5177,7 +5204,7 @@ A continuación se presenta la tabla oficial de control de estado del Sprint 1:
 * **Horas de Ingeniería Ejecutadas:** 53 horas de desarrollo colaborativo.
 * **Estado Final:** Sprint 1 cerrado satisfactoriamente con despliegue activo en la nube.
 
----
+***
 
 ### 5.2.1.4. Development Evidence for Sprint Review
 
@@ -5191,7 +5218,7 @@ A continuación se documenta el registro histórico de confirmaciones de cambios
 | `landing-page` | `develop` | `a4f8fb1` | `chore: initialize js directory structure` | Configuración de arquitectura modular de scripts JavaScript para interactividad UI y eventos de interfaz. | 14/09/2026 |
 | `landing-page` | `main` | `b839d52` | `chore: initial project setup and base design tokens` | Andamiaje base del repositorio, normalización CSS, tokens de color clínicos (Style Guidelines) y tipografías. | 08/09/2026 |
 
----
+***
 
 ### 5.2.1.5. Execution Evidence for Sprint Review
 
@@ -5210,14 +5237,14 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Propuesta de valor clara:** Título principal de alto impacto acompañado de una breve descripción del propósito del software.
 * **Llamados a la acción (CTA):** Botones duales contrastados para redirigir rápidamente al usuario hacia la Web App o el formulario de ingreso.
 
-<br>
+<br />
 
 ![Landing Page - Sección Hero](assets/chapter-4/hero-mockup.png)
 *Nota: Captura de ejecución del Landing Page institucional implementado.*
 
-<br>
+<br />
 
-<img width="669" height="588" alt="Screenshot 2026-09-28 at 10 46 46 AM" src="https://github.com/user-attachments/assets/42d285c0-2ff3-48f9-b89f-d21dc15bc4ff" /> 
+<img width="669" height="588" alt="Screenshot 2026-09-28 at 10 46 46 AM" src="https://github.com/user-attachments/assets/42d285c0-2ff3-48f9-b89f-d21dc15bc4ff" />
 
 ### Vista implementada: Formulario de Inicio de Sesión (Login)
 
@@ -5228,7 +5255,7 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Botón de acción directa:** Botón estilizado con los colores de la marca para el envío y validación de las credenciales de usuario (*Iniciar sesión*).
 * **Control de navegación:** Botón de cierre superior (X) para retornar a la Landing Page principal de manera intuitiva.
 
-<br>
+<br />
 
 <img width="1061" height="894" alt="Screenshot 2026-09-28 at 11 06 33 AM" src="https://github.com/user-attachments/assets/22dc7b3b-5cc6-402a-b381-8ed8964b464b" />
 
@@ -5241,12 +5268,12 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Gráfico de Historial Térmico:** Gráfica lineal automatizada que contrasta las mediciones de las últimas 6 horas frente al rango seguro permitido (2 °C - 8 °C).
 * **Metadatos de Operación:** Tarjetas informativas con los datos asignados del Conductor (M. Quispe) y la Placa del Vehículo (ABQ-742).
 
-<br>
+<br />
 
 ![Landing Page - Presentación de Características](assets/chapter-4/presentacion-mockup.png)
 *Nota: Sección interactiva de propuesta tecnológica del Landing Page.*
 
-<br>
+<br />
 
 <img width="1078" height="704" alt="Screenshot 2026-09-28 at 11 16 31 AM" src="https://github.com/user-attachments/assets/59b725c5-d856-4195-bddc-5b4af7790860" />
 
@@ -5260,12 +5287,12 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Acciones de Mitigación:** Botones interactivos de respuesta rápida (*Revisar transporte* y *Ver historial*).
 * **Feed Cronológico Histórico:** Listado lateral estructurado por prioridad de eventos y estados logísticos anteriores (Puerta abierta, Batería baja, Desvío resuelto, Entrega confirmada).
 
-<br>
+<br />
 
 ![Landing Page - Footer y Conversión B2B](assets/chapter-4/cta-footer-mockup.png)
 *Nota: Sección de conversión final y pie de página institucional.*
 
----
+***
 
 ### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -5278,7 +5305,7 @@ La arquitectura de servicios backend (**RESTful Web API en ASP.NET Core 10.0 con
 
 La codificación activa de los controladores, endpoints y la generación interactiva de documentación mediante **Swagger UI / OpenAPI** forman parte del Sprint 2 y Sprint 3 (hitos TB1 y AV2).
 
----
+***
 
 ### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
@@ -5290,7 +5317,7 @@ En estricta observancia del requisito rector del hito AV1 (*"A nivel de implemen
 * **Plataforma de Alojamiento:** GitHub Pages / Vercel (Producción con protocolo seguro HTTPS y compresión gzip/brotli).
 * **Estado de Disponibilidad:** Activo, con tiempo de carga inferior a 1.2 segundos y cumplimiento de accesibilidad WCAG.
 
----
+***
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint
 
@@ -5350,7 +5377,7 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 
 En esta sección se consolidan los accesos a los repositorios de código fuente, despliegues públicos en la nube, herramientas de diseño colaborativo y registros audiovisuales institucionales correspondientes a la entrega **AV1 (Semana 4)** del proyecto **Medical SMARTBOX (NeonCode)**.
 
----
+***
 
 ## Anexo A. Repositorios de Código Fuente y Despliegues en la Nube
 
@@ -5363,7 +5390,7 @@ En esta sección se consolidan los accesos a los repositorios de código fuente,
 * **Organización Oficial del Proyecto en GitHub:**  
   [https://github.com/NeonCode-UPC](https://github.com/NeonCode-UPC)
 
----
+***
 
 ## Anexo B. Tableros Digitales y Prototipos Interactivos
 
@@ -5371,10 +5398,8 @@ En esta sección se consolidan los accesos a los repositorios de código fuente,
   [Medical SMARTBOX - Miro Board](https://miro.com/app/board/uXjVHnHEONU=/?share_link_id=336672614310)
 * **Prototipo Interactivo de Alta Fidelidad (Figma):**  
   [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
-* **Tablero Ágil de Gestión del Sprint 1 (GitHub Projects):**  
-  [Tablero Kanban Sprint 1 - NeonCode](https://github.com/orgs/NeonCode-UPC/projects/1)
 
----
+***
 
 ## Anexo C. Grabaciones Audiovisuales y Entrevistas a Profundidad
 

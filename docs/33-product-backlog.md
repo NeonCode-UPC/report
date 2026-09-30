@@ -25,8 +25,9 @@ El backlog se encuentra organizado secuencialmente para guiar el desarrollo de l
 | **17** | EP06 | **US16** | Generación de Reportes de Trazabilidad | 8 | Sprint 4 |
 | **18** | EP06 | **US17** | Confirmación de Entrega y Cadena de Custodia | 3 | Sprint 4 |
 
----
-### 3.3.1.Engineering Tasks
+***
+
+### 3.3.1. Engineering Tasks
 
 A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales) en tareas de ingeniería (*Engineering Tasks*). Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
 

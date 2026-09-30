@@ -1,4 +1,4 @@
-﻿# 3.2. Impact Mapping
+# 3.2. Impact Mapping
 
 El **Impact Mapping** es una técnica de planificación estratégica que conecta los objetivos de negocio de la startup **NeonCode** con las entregas de software para la supervisión de contenedores médicos inteligentes. Este mapa permite priorizar las funcionalidades que generan un impacto directo en el comportamiento de nuestros segmentos objetivo: Personal Médico de Emergencias, Operadores Logísticos de Salud, Supervisores Hospitalarios y Visitantes Comerciales.
 
@@ -10,7 +10,7 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 3. **Impact:** Los cambios conductuales o beneficios esperados en los actores.
 4. **Deliverables & User Stories:** Los entregables digitales y las historias de usuario asociadas que provocan dichos impactos.
 
----
+***
 
 ### Mapeo Completo por Objetivos de Negocio (Business Goals)
 
@@ -29,7 +29,7 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
             * **US01:** Registro de Institución de Salud.
             * **US07:** Alta de Unidades de Ambulancia.
 
----
+***
 
 #### Goal 2: Reducir en un 40% las incidencias de pérdida de insumos médicos y ruptura de la cadena de frío durante los traslados en el primer año.
 
@@ -53,12 +53,12 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
             * **US13:** Configuración de Umbrales Térmicos Críticos.
             * **US16:** Generación de Reportes de Trazabilidad.
 
----
+***
 
 ### Captura de los Artefactos en UXPressia
 
 #### Impact Map Goal 1
-<img src="../assets/chapter-3/impact-map-goal-1.png" alt="Impact Map Goal 1" width="600">
+![Impact Map Goal 1](assets/chapter-3/impact-map-goal-1.png)
 
 #### Impact Map Goal 2
-<img src="../assets/chapter-3/impact-map-goal-2.png" alt="Impact Map Goal 2" width="600">
+![Impact Map Goal 2](assets/chapter-3/impact-map-goal-2.png)

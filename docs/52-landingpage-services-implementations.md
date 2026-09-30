@@ -4,7 +4,7 @@
 
 En esta sección se detalla la planificación, asignación de responsabilidades y desglose de tareas técnicas para la ejecución del primer ciclo de desarrollo (Sprint 1) del ecosistema **Medical SMARTBOX (NeonCode)**, así como las evidencias correspondientes a la implementación, ejecución de vistas, especificación de servicios, despliegue activo en la nube y colaboración del equipo mediante control de versiones.
 
----
+***
 
 ### 5.2.1.1. Sprint Planning 1
 
@@ -25,7 +25,7 @@ El **Sprint Planning 1** formaliza los aspectos principales de la reunión de pl
 | Sprint 1 Velocity | 16 Story Points |
 | Sum of Story Points | 16 Story Points (US04: 2 SP, US05: 2 SP, US06: 1 SP, US01: 3 SP, US02: 3 SP, US03: 5 SP) |
 
----
+***
 
 ### 5.2.1.2. Aspect Leaders and Collaborators
 
@@ -47,14 +47,11 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
 | Munayco Apolaya, Maria Luisa | `MunaycoMaria` | L | C | C | C | C | C |
 | Santos Minaya, Renzo Piero | `RenzoSantosUPC` | C | C | C | C | C | L |
 
----
+***
 
 ### 5.2.1.3. Sprint Backlog 1
 
 El **Sprint Backlog 1** presenta el desglose detallado de tareas técnicas asociadas a las historias de usuario comprometidas para el Sprint 1. El objetivo principal de la iteración fue la construcción, validación responsive y despliegue del Landing Page institucional, junto con la definición de contratos y modelos para los servicios de autenticación y registro.
-
-* **Herramienta de Gestión:** GitHub Projects / Trello.
-* **URL Pública del Board:** [`https://github.com/orgs/NeonCode-UPC/projects/1`](https://github.com/orgs/NeonCode-UPC/projects/1)
 
 A continuación se presenta la tabla oficial de control de estado del Sprint 1:
 
@@ -79,7 +76,7 @@ A continuación se presenta la tabla oficial de control de estado del Sprint 1:
 * **Horas de Ingeniería Ejecutadas:** 53 horas de desarrollo colaborativo.
 * **Estado Final:** Sprint 1 cerrado satisfactoriamente con despliegue activo en la nube.
 
----
+***
 
 ### 5.2.1.4. Development Evidence for Sprint Review
 
@@ -93,7 +90,7 @@ A continuación se documenta el registro histórico de confirmaciones de cambios
 | `landing-page` | `develop` | `a4f8fb1` | `chore: initialize js directory structure` | Configuración de arquitectura modular de scripts JavaScript para interactividad UI y eventos de interfaz. | 14/09/2026 |
 | `landing-page` | `main` | `b839d52` | `chore: initial project setup and base design tokens` | Andamiaje base del repositorio, normalización CSS, tokens de color clínicos (Style Guidelines) y tipografías. | 08/09/2026 |
 
----
+***
 
 ### 5.2.1.5. Execution Evidence for Sprint Review
 
@@ -112,14 +109,14 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Propuesta de valor clara:** Título principal de alto impacto acompañado de una breve descripción del propósito del software.
 * **Llamados a la acción (CTA):** Botones duales contrastados para redirigir rápidamente al usuario hacia la Web App o el formulario de ingreso.
 
-<br>
+<br />
 
-![Landing Page - Sección Hero](../assets/chapter-4/hero-mockup.png)
+![Landing Page - Sección Hero](assets/chapter-4/hero-mockup.png)
 *Nota: Captura de ejecución del Landing Page institucional implementado.*
 
-<br>
+<br />
 
-<img width="669" height="588" alt="Screenshot 2026-09-28 at 10 46 46 AM" src="https://github.com/user-attachments/assets/42d285c0-2ff3-48f9-b89f-d21dc15bc4ff" /> 
+<img width="669" height="588" alt="Screenshot 2026-09-28 at 10 46 46 AM" src="https://github.com/user-attachments/assets/42d285c0-2ff3-48f9-b89f-d21dc15bc4ff" />
 
 ### Vista implementada: Formulario de Inicio de Sesión (Login)
 
@@ -130,7 +127,7 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Botón de acción directa:** Botón estilizado con los colores de la marca para el envío y validación de las credenciales de usuario (*Iniciar sesión*).
 * **Control de navegación:** Botón de cierre superior (X) para retornar a la Landing Page principal de manera intuitiva.
 
-<br>
+<br />
 
 <img width="1061" height="894" alt="Screenshot 2026-09-28 at 11 06 33 AM" src="https://github.com/user-attachments/assets/22dc7b3b-5cc6-402a-b381-8ed8964b464b" />
 
@@ -143,12 +140,12 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Gráfico de Historial Térmico:** Gráfica lineal automatizada que contrasta las mediciones de las últimas 6 horas frente al rango seguro permitido (2 °C - 8 °C).
 * **Metadatos de Operación:** Tarjetas informativas con los datos asignados del Conductor (M. Quispe) y la Placa del Vehículo (ABQ-742).
 
-<br>
+<br />
 
-![Landing Page - Presentación de Características](../assets/chapter-4/presentacion-mockup.png)
+![Landing Page - Presentación de Características](assets/chapter-4/presentacion-mockup.png)
 *Nota: Sección interactiva de propuesta tecnológica del Landing Page.*
 
-<br>
+<br />
 
 <img width="1078" height="704" alt="Screenshot 2026-09-28 at 11 16 31 AM" src="https://github.com/user-attachments/assets/59b725c5-d856-4195-bddc-5b4af7790860" />
 
@@ -162,12 +159,12 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Acciones de Mitigación:** Botones interactivos de respuesta rápida (*Revisar transporte* y *Ver historial*).
 * **Feed Cronológico Histórico:** Listado lateral estructurado por prioridad de eventos y estados logísticos anteriores (Puerta abierta, Batería baja, Desvío resuelto, Entrega confirmada).
 
-<br>
+<br />
 
-![Landing Page - Footer y Conversión B2B](../assets/chapter-4/cta-footer-mockup.png)
+![Landing Page - Footer y Conversión B2B](assets/chapter-4/cta-footer-mockup.png)
 *Nota: Sección de conversión final y pie de página institucional.*
 
----
+***
 
 ### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -180,7 +177,7 @@ La arquitectura de servicios backend (**RESTful Web API en ASP.NET Core 10.0 con
 
 La codificación activa de los controladores, endpoints y la generación interactiva de documentación mediante **Swagger UI / OpenAPI** forman parte del Sprint 2 y Sprint 3 (hitos TB1 y AV2).
 
----
+***
 
 ### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
@@ -192,11 +189,11 @@ En estricta observancia del requisito rector del hito AV1 (*"A nivel de implemen
 * **Plataforma de Alojamiento:** GitHub Pages / Vercel (Producción con protocolo seguro HTTPS y compresión gzip/brotli).
 * **Estado de Disponibilidad:** Activo, con tiempo de carga inferior a 1.2 segundos y cumplimiento de accesibilidad WCAG.
 
----
+***
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint
 
 Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de control de versiones y colaboración técnica. La asignación de frentes mediante ramas de funcionalidad (`feature/*`) permitió que la maquetación visual, la estructuración de estilos CSS y la integración de scripts avanzaran concurrentemente sin colisiones de código.
 
-![Team Collaboration Insights during Sprint](../assets/chapter-5/report-insights-av1.png)
+![Team Collaboration Insights during Sprint](assets/chapter-5/report-insights-av1.png)
 *Nota: Analítica de colaboración, frecuencia de confirmaciones y contribuciones del equipo NeonCode durante el Sprint 1.*

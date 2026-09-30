@@ -7,7 +7,7 @@ Un *Style Guideline* es un conjunto de directrices y normas que establecen los e
 ### Branding
 Para el desarrollo de la identidad de **Medical SMARTBOX**, se definió una estética limpia, clínica y altamente tecnológica que sintetiza la convergencia entre logística médica asistencial y telemetría de precisión IoT. La identidad visual simboliza el control integral y la custodia ininterrumpida de la cadena de frío para hemoderivados, órganos y medicamentos biológicos. La composición cromática —basada en Azul Marino Profundo, Verde Cerceta (Teal), Verde Menta y acentos de Alerta en Coral/Rojo— transmite confiabilidad médica, estabilidad operativa y capacidad inmediata de advertencia frente a excursiones térmicas.
 
-![Medical SMARTBOX - Logo](../assets/chapter-4/logo.png)
+![Medical SMARTBOX - Logo](assets/chapter-4/logo.png)
 *Nota: Logotipo oficial de Medical SMARTBOX, representando la custodia térmica inteligente.*
 
 ### Typography
@@ -16,8 +16,8 @@ El sistema tipográfico prioriza la jerarquía visual y la decodificación insta
 *   **Bricolage Grotesque:** Empleada como tipografía corporativa para encabezados primarios y secundarios (`h1`, `h2`, `h3`). Su estructura geométrica contemporánea con remates técnicos otorga autoridad visual, solidez institucional y modernidad tecnológica.
 *   **Inter:** Empleada para textos de párrafo, microcopia de interfaz, tablas de auditoría y visualización de telemetría numérica. Su excelente renderizado subpíxel y variantes tabulares numéricas (`font-variant-numeric: tabular-nums`) garantizan una lectura nítida de decimales de temperatura y porcentajes de batería sin oscilaciones visuales.
 
-![Bricolage Grotesque - Font](../assets/chapter-4/bricolage-font.png)
-![Inter - Font](../assets/chapter-4/inter-font.png)
+![Bricolage Grotesque - Font](assets/chapter-4/bricolage-font.png)
+![Inter - Font](assets/chapter-4/inter-font.png)
 *Nota: Muestrarios tipográficos de Bricolage Grotesque (titulares) e Inter (cuerpo y datos numéricos).*
 
 ### Colors
@@ -29,13 +29,13 @@ La paleta cromática se seleccionó bajo criterios de contraste accesible (cumpl
 *   **Coral / Rojo Alerta (`#E05A46`):** Tono semántico de alta prioridad reservado exclusivamente para situaciones críticas (temperatura fuera de umbral, desconexión de energía de 12V, batería residual < 15%, apertura no autorizada de tapa).
 *   **Gris Neutro Frío (`#F4F7F6` / `#E2E8F0`):** Fondos de interfaz y delimitadores de paneles modulares para reducir la fatiga visual en turnos prolongados.
 
-![Paleta de Colores](../assets/chapter-4/paleta.png)
+![Paleta de Colores](assets/chapter-4/paleta.png)
 *Nota: Muestra de la paleta de colores corporativa y semántica de Medical SMARTBOX.*
 
 ### Spacing
 El espaciado se fundamenta en un sistema de rejilla base modular de **8 píxeles** (8-point grid system: 4px, 8px, 16px, 24px, 32px, 48px, 64px). Este estándar asegura consistencia entre paneles modulares, tarjetas de telemetría telemática (*telemetry cards*) y botones de acción rápida, previniendo el hacinamiento de información y reduciendo la tasa de error por toques accidentales en pantallas táctiles de cabina.
 
----
+***
 
 ## 4.1.2. Web Style Guidelines
 

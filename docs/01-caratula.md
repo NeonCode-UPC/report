@@ -1,51 +1,49 @@
 <div align="center">
 
-![Logo](../assets/images/logo_upc.png)
+<img src="assets/images/logo_upc.png" alt="UPC_logo" width="150"></img>
 
-#### Universidad Peruana de Ciencias Aplicadas
+## Universidad Peruana de Ciencias Aplicadas
 
-#### Carrera de Ingeniería de Software
+#### Carrera de ingeniería de software
 
-----
+1ASI0730
 
-### 1ASI0730 
-### Aplicaciones Web 
-#### NRC 
-### 8150
+**Aplicaciones Web**
 
-## Informe del Trabajo Final
+NRC
 
-----
+**8150**
 
-#### Docente
-### Velásquez Núñez, Ángel Augusto
+Docente
 
-----
+**Velásquez Núñez, Ángel Augusto**
 
-#### Equipo
-### NeonCode
+<br>
 
-#### Proyecto
-### Medical SMARTBOX
+Equipo    
 
-----
+ **NeonCode**
 
-#### Integrantes:
+ Proyecto
 
-u202222859 - Espinoza Flores, Aaron André
+**Medical SMARTBOX**
 
-u20211b556 - Gargate Paredes, Santiago
+<br>
 
-u202520310 - Jaramillo Mayta, Jhon Jordy
+### Integrantes
 
-u20231c995 - Munayco Apolaya, Maria Luisa
+| Código | Apellidos y Nombres |
+|---|---|
+| u202222859 | Espinoza Flores, Aaron André |
+| u20211b556 | Gargate Paredes, Santiago |
+| u202520310 | Jaramillo Mayta, Jhon Jordy |
+| u20231c995 | Munayco Apolaya, Maria Luisa |
+| u202114790 | Santos Minaya, Renzo Piero |
 
-u202114790 - Santos Minaya, Renzo Piero
+<br>
 
-----
+**Periodo 202620**
 
-#### Período 202620
-
-#### Septiembre 2026
+**Setiembre 2026**
 
 </div>

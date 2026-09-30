@@ -2,7 +2,7 @@
 
 La investigación empírica de campo constituye el cimiento metodológico del proyecto **Medical SMARTBOX**. Para validar la problemática y relevar las necesidades operativas de la cadena de frío biomédica en Lima Metropolitana, se diseñaron y ejecutaron entrevistas a profundidad con profesionales en ejercicio activo pertenecientes a los dos segmentos objetivo del proyecto: personal médico y paramédicos asistenciales en ambulancias (**Segmento 1**), y coordinadores de logística farmacéutica y directores de centros hospitalarios (**Segmento 2**).
 
----
+***
 
 ## 2.2.1. Diseño de entrevistas
 
@@ -39,7 +39,7 @@ Se elaboró una guía de entrevista semiestructurada aplicando las directrices m
 9. **Impacto del tráfico:** ¿Cómo afecta la congestión vehicular de Lima Metropolitana la planificación de turnos de quirófano y ventanas de isquemia?
 10. **Criterio de valor:** ¿Qué características técnicas consideras indispensables en una plataforma digital de monitoreo para confiar plenamente en ella?
 
----
+***
 
 ## 2.2.2. Registro de entrevistas
 
@@ -56,7 +56,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 | **E5** | Segmento 2 | **Gianfranco Timoteo** | Coordinador de Soporte y Cadena de Frío | Laboratorio y Centro Clínico | 21 | Chorrillos | 16/09/2026 | 04:59 min | [Entrevista 5 (Timoteo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) |
 | **E6** | Segmento 2 | **Karla Pacheco** | Auxiliar Administrativa de Farmacia y Rutas | Centro de Salud Policlínico | 25 | Breña | 16/09/2026 | 04:09 min | [Entrevista 6 (Pacheco)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) |
 
----
+***
 
 ### Resúmenes Descriptivos Individuales de Entrevistas:
 
@@ -102,7 +102,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 * **Variables Subjetivas:** Ansiedad por falta de predictibilidad: las salas de inmunizaciones se llenan de pacientes esperando dosis que no saben cuándo llegarán. Frustración por tener que llamar repetidamente a conductores que no pueden contestar mientras conducen.
 * **Cita Textual:** *"Pasamos la mitad del día preguntando '¿por dónde vienes?' y '¿sigue fría la caja?'. Si tuviéramos una pantalla con un mapa en vivo y la temperatura exacta, organizaríamos las citas y el quirófano sin perder tiempo."*
 
----
+***
 
 ## 2.2.3. Análisis de entrevistas
 
@@ -118,7 +118,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
 * **66.7% (4/6) ha presenciado pérdidas o rechazos de lotes de medicamentos:** Experiencias directas de descarte de hemoderivados, vacunas o reactivos por excursión térmica comprobada al abrir el cooler.
 * **66.7% (4/6) reporta disputas interdepartamentales sobre la responsabilidad de la carga:** Conflictos entre el equipo de ambulancia y farmacia hospitalaria respecto al momento exacto en que se rompió la cadena de frío.
 
----
+***
 
 ### B. Análisis por Segmento Objetivo
 
@@ -144,7 +144,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
   * Escepticismo ante reportes llenados a mano con lapicero; preferencia por información digital inmutable con sello de tiempo (*timestamp*).
   * Necesidad de predictibilidad operativa: coordinar la disponibilidad de quirófanos de trasplante y personal de triaje en función de un ETA confiable.
 
----
+***
 
 ### C. Incidentes Críticos Reales Extraídos del Trabajo de Campo
 
@@ -155,7 +155,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
 3. **Incidente de Vacunas Comprometidas en Brigada de Vacunación (Relatado por E5 - Gianfranco Timoteo):**  
    En una campaña de inmunización descentralizada, brigadas de salud regresaron con cajas térmicas cuyos dataloggers USB revelaron —recién al conectarse a la PC del almacén a las 18:00 horas— que la temperatura superó los 9.0 °C a las 14:15 horas. Durante cuatro horas se administraron dosis con viabilidad comprometida antes de detectarse la anomalía, evidenciando el peligro inaceptable del monitoreo pasivo diferido.
 
----
+***
 
 ### D. Implicancias Directas para la Arquitectura y el Diseño del Sistema
 

@@ -2,7 +2,7 @@
 
 En esta sección se consolidan los accesos a los repositorios de código fuente, despliegues públicos en la nube, herramientas de diseño colaborativo y registros audiovisuales institucionales correspondientes a la entrega **AV1 (Semana 4)** del proyecto **Medical SMARTBOX (NeonCode)**.
 
----
+***
 
 ## Anexo A. Repositorios de Código Fuente y Despliegues en la Nube
 
@@ -15,7 +15,7 @@ En esta sección se consolidan los accesos a los repositorios de código fuente,
 * **Organización Oficial del Proyecto en GitHub:**  
   [https://github.com/NeonCode-UPC](https://github.com/NeonCode-UPC)
 
----
+***
 
 ## Anexo B. Tableros Digitales y Prototipos Interactivos
 
@@ -23,10 +23,8 @@ En esta sección se consolidan los accesos a los repositorios de código fuente,
   [Medical SMARTBOX - Miro Board](https://miro.com/app/board/uXjVHnHEONU=/?share_link_id=336672614310)
 * **Prototipo Interactivo de Alta Fidelidad (Figma):**  
   [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
-* **Tablero Ágil de Gestión del Sprint 1 (GitHub Projects):**  
-  [Tablero Kanban Sprint 1 - NeonCode](https://github.com/orgs/NeonCode-UPC/projects/1)
 
----
+***
 
 ## Anexo C. Grabaciones Audiovisuales y Entrevistas a Profundidad
 

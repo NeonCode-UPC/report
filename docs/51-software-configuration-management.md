@@ -2,7 +2,7 @@
 
 En esta sección se detallan la configuración del entorno de desarrollo, la estrategia de gestión del código fuente, las convenciones de estilo adoptadas por el equipo de desarrollo de **NeonCode** y la infraestructura empleada para el despliegue del sistema de supervisión de contenedores médicos inteligentes conforme a las exigencias oficiales de la asignatura.
 
----
+***
 
 ### 5.1.1. Software Development Environment Configuration
 
@@ -20,7 +20,7 @@ Para garantizar un flujo de trabajo uniforme y minimizar discrepancias entre las
     * **NuGet:** Gestor oficial de dependencias y paquetes para la solución ASP.NET Core (`Microsoft.EntityFrameworkCore`, `Swashbuckle.AspNetCore`, `BCrypt.Net-Next`).
     * **npm (v10.x):** Gestor de paquetes empleado para la administración de bibliotecas y plugins de desarrollo frontend.
 
----
+***
 
 ### 5.1.2. Source Code Management
 
@@ -49,7 +49,7 @@ git flow feature publish landing-hero-section
 git flow feature finish landing-hero-section
 ```
 
----
+***
 
 ## 5.1.3. Source Code Style Guide & Conventions
 
@@ -85,7 +85,7 @@ Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la
 * **`test`:** Adición o actualización de pruebas unitarias o de integración.
 * **`chore`:** Tareas de mantenimiento, configuración de build o dependencias.
 
----
+***
 
 ## 5.1.4. Software Deployment Configuration
 
