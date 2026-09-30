@@ -2,9 +2,22 @@
 
 El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de **Medical SMARTBOX**. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones en Lima Metropolitana, se elaboraron artefactos empáticos centrados en el usuario conforme a las pautas de diseño UX de la industria (Nielsen Norman Group, Interaction Design Foundation), los cuales constituyen el cimiento empírico de las especificaciones y el diseño de la solución.
 
+Los artefactos de esta sección se construyen a partir de los dos patrones de comportamiento identificados en las entrevistas a profundidad (Capítulo 2.2): **decisión clínica-operativa inmediata** y **coordinación logística trazable**. Las personas descritas son arquetipos compuestos sintetizados a partir de los participantes de la investigación de campo.
+
 ---
 
-## 2.3.1. User Personas
+## 2.3.1. Criterios de Agrupación y Selección
+
+Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron por objetivos, tareas, responsabilidad y contexto de uso:
+
+| Conjunto | Participantes que aportan evidencia | Comportamiento común | Arquetipo resultante |
+|---|---|---|---|
+| Decisión clínica-operativa | Wilbert Toledo, Aldair Lazaro y Renato Calvo Yalan | Consulta información crítica, verifica condiciones y necesita responder con rapidez. | Personal médico y paramédicos asistenciales (Javier Soto / Valeria Ramos). |
+| Coordinación logística trazable | Humberto Arellán, Gianfranco Timoteo y Karla Pacheco | Monitorea rutas y registros, coordina actores y necesita evidencia auditable. | Coordinador logístico y directores de centros de salud (Dr. Carlos Mendoza). |
+
+---
+
+## 2.3.2. User Personas
 
 A continuación, se presentan las fichas de User Persona elaboradas para cada uno de los dos segmentos objetivo de Medical SMARTBOX, sintetizando arquetipos construidos con base en las entrevistas a profundidad y la investigación de campo.
 
@@ -22,7 +35,7 @@ Representa al personal médico y farmacéutico de destino (cirujanos de trasplan
 
 ---
 
-## 2.3.2. User Task Matrix
+## 2.3.3. User Task Matrix
 
 La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecutan los usuarios en el ecosistema de transporte médico, clasificándolas según su frecuencia de ejecución y su nivel de criticidad o impacto para la viabilidad de la carga y el paciente.
 
@@ -38,7 +51,7 @@ La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecut
 
 ---
 
-## 2.3.3. User Journey Mapping
+## 2.3.4. User Journey Mapping
 
 El **User Journey Mapping** ilustra la secuencia de experiencias, emociones, puntos de dolor y oportunidades de interacción de los usuarios arquetípicos a lo largo de las fases de Antes (despacho y pre-enfriamiento), Durante (tránsito y telemetría activa) y Después (entrega asistencial y custodia final).
 
@@ -56,7 +69,7 @@ Mapea la experiencia desde la coordinación de la solicitud urgente, el seguimie
 
 ---
 
-## 2.3.4. Empathy Mapping
+## 2.3.5. Empathy Mapping
 
 El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones y presiones cotidianas de los dos perfiles de usuario, permitiendo diseñar interfaces y flujos de software acordes con su contexto real de trabajo.
 
@@ -83,3 +96,15 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 * **¿Qué dice y hace?** Exige reportes de temperatura antes de aceptar cualquier lote; supervisa personalmente la apertura de contenedores críticos.
 * **Dolores (Pains):** Incertidumbre ("caja negra") sobre el trato térmico de la muestra durante el trayecto; pérdida de tiempo por actas manuscritas ilegibles.
 * **Necesidades (Gains):** Certificación digital de que la temperatura nunca superó los 8 °C; apertura con token OTP exclusivo y acta PDF con firma criptográfica.
+
+---
+
+## 2.3.6. Necesidades Priorizadas
+
+| Prioridad | Necesidad | Criterio de validación |
+|:---:|---|---|
+| 1 | Conocer condición y ubicación de la carga en tiempo casi real. | El usuario identifica estado, vigencia y riesgo sin recurrir a otro canal. |
+| 2 | Recibir alertas accionables y priorizadas. | Cada alerta muestra severidad, causa, impacto, responsable y próximo paso. |
+| 3 | Mantener cadena de custodia verificable. | Cada evento registra fecha, hora, actor y evidencia. |
+| 4 | Coordinar incidentes en un único flujo. | Se asigna responsable, se registra acción y se confirma resolución. |
+| 5 | Cerrar y auditar el traslado. | Se obtiene una línea de tiempo y un reporte de cumplimiento/excepciones. |
