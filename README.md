@@ -1,5 +1,3 @@
-<a id="carátula"></a>
-<a id="caratula"></a>
 <div align="center">
 
 ![Logo](assets/images/logo_upc.png)
@@ -52,25 +50,22 @@ u202114790 - Santos Minaya, Renzo Piero
 
 </div>
 
-
 <div style="page-break-after: always;"></div>
 
 # Registro de Versiones del Informe
 
 El presente Registro de Versiones del Informe documenta la trazabilidad evolutiva, iterativa y colaborativa de la memoria técnica del proyecto **Medical SMARTBOX** a lo largo de su ciclo de vida de desarrollo. En estricta observancia del estándar de versionado semántico (*Semantic Versioning 2.0.0*) y de los criterios de evaluación de la asignatura **1ASI0730 Aplicaciones Web**, se registran de forma estructurada las incorporaciones de secciones, diagramas de arquitectura, modelos de dominio, historias de usuario, especificaciones de bases de datos y evidencias de implementación del primer ciclo ágil (Sprint 1) junto con el despliegue del Landing Page institucional, así como las mejoras producto de las revisiones internas de calidad del equipo **NeonCode** para la entrega oficial del **Avance 1 (AV1 - Semana 4)**, complementado con la hoja de ruta planificada para los hitos sucesivos del proyecto.
 
-| Entregable | Versión | Fecha | Autor(es) | Descripción de modificación |
-| :---: | :---: | :---: | :--- | :--- |
-| **AV1** | **V0.1.0** | 08/09/2026 | NeonCode Team | **Inicialización del Repositorio y Andamiaje Documental:** Creación de la estructura base del repositorio en la organización pública de GitHub (`NeonCode-UPC/report`). Configuración del modelo de ramificación GitFlow (`main`, `develop`), convenciones Conventional Commits y estructura de directorios `docs/` y `assets/`. Elaboración de la Carátula institucional según las directrices y modelo del docente Velásquez Núñez, y generación del esqueleto Markdown para todos los capítulos. |
-| **AV1** | **V0.2.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Relevamiento de Requisitos, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (antecedentes y problemática 5W2H sustentada en incidentes de transporte asistencial en Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial SAMU 106 y Segmento 2: centros sanitarios y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo frente a Cryoport, Ransa, Talma y SAMU) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de sesiones y análisis de hallazgos cualitativos). |
-| **AV1** | **V0.3.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio Preliminar y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos, User Task Matrix priorizada, User Journey Mapping As-Is/To-Be y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal con 30 términos canónicos en inglés con definición clínica y técnica en español). Desarrollo del Capítulo III completo: 3.1 User Stories (historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal → Actor → Impact → Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
-| **AV1** | **V0.4.0** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando seis Bounded Contexts: Smart Container IoT, Emergency Fleet Logistics, Clinical Quality Assurance, Chain of Custody, Critical Alerting y Access Governance). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Web API, Telemetry Consumer, Base de Datos, Broker MQTT, Redis Cache y Web App) y 4.6.4 Component Diagrams. Desarrollo del Capítulo 4.7 (Class Diagrams UML modelando un dominio rico con entidades, value objects, agregados y servicios de dominio) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
-| **AV1** | **V0.5.0** | 16/09/2026 | Gargate Paredes, Santiago<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 9, Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en Vercel/GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). |
-| **AV1** | **V1.0.0** | 17/09/2026 | NeonCode Team | **Consolidación Oficial del Entregable AV1:** Integración armonizada de todos los capítulos del informe (Cap. I, II, III, IV y V: 5.1 y 5.2.1). Incorporación formal de la sección 01 (Carátula según modelo docente), sección 02 (Registro de Versiones del Informe), sección 03 (Project Report Collaboration Insights con métricas analíticas de GitHub y trazabilidad de commits de AV1), sección 04 (Tabla de Contenidos a 4 niveles de jerarquía con hipervínculos funcionales) y sección 05 (Student Outcome ABET EAC 5 detallado con sustentos individuales para los 5 integrantes y conclusiones de avance). Conclusiones preliminares, Bibliografía en formato APA y Anexos normativos. |
-| **TB1** | **V2.0.0** | *(Planificado)* | NeonCode Team | **Incorporación del Sprint 2 y Primer Incremento de Web Application:** Documentación del Sprint 2 (5.2.2 completo: Sprint Planning 2, Aspect Leaders Matrix, Sprint Backlog 2, evidencias de desarrollo del frontend en Vue.js / PrimeVue, gestión de estado Pinia, evidencias de despliegue y collaboration insights). Levantamiento de observaciones formuladas por el docente evaluador sobre la entrega AV1. Actualización de conclusiones y Student Outcome para el hito TB1. |
-| **AV2** | **V3.0.0** | *(Planificado)* | NeonCode Team | **Integración de Web Services RESTful API y Sprint 3:** Documentación del Sprint 3 (5.2.3 completo: servicios backend en ASP.NET Core (.NET 9) bajo Clean Architecture y DDD, documentación Swagger/OpenAPI, base de datos relacional y telemetría IoT en tiempo real). Incorporación de la sección 5.3 (Validation Interviews y evaluaciones según heurísticas de Nielsen) y 5.4 (Video About-the-Product). Actualización de Student Outcome para AV2. |
-| **TB2** | **V4.0.0** | *(Planificado)* | NeonCode Team | **Cierre del Producto Final, Sprint 4 y Release Review:** Documentación del Sprint 4 (5.2.4 completo: consolidación de seguridad JWT, control de acceso basado en roles RBAC, integración completa frontend-backend y pruebas de estrés). Incorporación del video About-the-Team, informe de desempeño del equipo (Participant Performance Report), anexos consolidados y preparación de la versión final para la sustentación sincrónica del trabajo de fin de curso. |
-
+| Versión | Fecha | Autor | Descripción de modificación |
+| :---: | :---: | :--- | :--- |
+| **V1.0.0** | 08/09/2026 | NeonCode Team | **Inicialización del Repositorio y Andamiaje Documental:** Creación de la estructura base del repositorio en la organización pública de GitHub (`NeonCode-UPC/report`). Configuración del modelo de ramificación GitFlow (`main`, `develop`), convenciones Conventional Commits y estructura de directorios `docs/` y `assets/`. Elaboración de la Carátula institucional según las directrices y modelo del docente Velásquez Núñez, y generación del esqueleto Markdown para todos los capítulos. |
+| **V1.1.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Relevamiento de Requisitos, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial y ambulancias, y Segmento 2: centros sanitarios, bancos de sangre y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo de mercado real frente a Sensitech, Tracklink Perú y Controlant) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de 6 sesiones con enlaces a video y análisis de hallazgos cualitativos). |
+| **V1.2.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos: Paramédico Javier Soto y Dr. Carlos Mendoza; User Task Matrix priorizada, User Journey Mapping As-Is y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal categorizado por Bounded Contexts). Desarrollo del Capítulo III completo: 3.1 User Stories (18 historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then en español con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal → Actor → Impact → Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
+| **V1.2.5** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando seis Bounded Contexts: Smart Container IoT, Emergency Fleet Logistics, Clinical Quality Assurance, Chain of Custody, Critical Alerting y Access Governance). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Web API, Telemetry Worker, MySQL 8.0, Broker MQTT, Redis Cache y Web App) y 4.6.4 Component Diagrams en capas DDD. Desarrollo del Capítulo 4.7 (Class Diagrams UML) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF en MySQL 8.0 InnoDB, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
+| **V1.3.0** | 16/09/2026 | Gargate Paredes, Santiago<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 10 LTS [`net10.0`], Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), servicios backend proyectados (5.2.1.6) y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). Conclusiones preliminares, Bibliografía en formato APA y Anexos normativos. |
+| **V2.0.0** | *(Planificado)* | NeonCode Team | **Incorporación del Sprint 2 y Primer Incremento de Web Application (Hito TB1 - Semana 7):** Documentación del Sprint 2 (5.2.2 completo: Sprint Planning 2, Aspect Leaders Matrix, Sprint Backlog 2, evidencias de desarrollo del frontend en Vue.js / PrimeVue, gestión de estado Pinia, evidencias de despliegue y collaboration insights). Levantamiento de observaciones formuladas por el docente evaluador sobre la entrega AV1. Actualización de conclusiones y Student Outcome para el hito TB1. |
+| **V3.0.0** | *(Planificado)* | NeonCode Team | **Integración de Web Services RESTful API y Sprint 3 (Hito AV2 - Semana 12):** Documentación del Sprint 3 (5.2.3 completo: servicios backend en ASP.NET Core 10.0 [.NET 10 LTS, C# 14] bajo arquitectura DDD por capas, documentación OpenAPI/Scalar, base de datos relacional MySQL 8.0 y telemetría IoT en tiempo real). Incorporación de la sección 5.3 (Validation Interviews y evaluaciones según heurísticas de Nielsen) y 5.4 (Video About-the-Product). Actualización de Student Outcome para AV2. |
+| **V4.0.0** | *(Planificado)* | NeonCode Team | **Cierre del Producto Final, Sprint 4 y Release Review (Hito TB2 - Semana 15):** Documentación del Sprint 4 (5.2.4 completo: consolidación de seguridad JWT, control de acceso basado en roles RBAC, integración completa frontend-backend y pruebas de estrés). Incorporación del video About-the-Team, informe de desempeño del equipo (Participant Performance Report), anexos consolidados y preparación de la versión final para la sustentación sincrónica del trabajo de fin de curso. |
 
 <div style="page-break-after: always;"></div>
 
@@ -155,9 +150,8 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
 ## 4. Proyección de Colaboración para Siguientes Hitos
 
 * **TB1 – Stage Review (Semana 7):** Incorporación de la documentación del Sprint 2 (Frontend Web Application en Vue.js / PrimeVue), levantamiento de observaciones del docente y actualización de métricas de contribución.
-* **AV2 – Sprint Review (Semana 12):** Documentación del Sprint 3 (Backend RESTful API en ASP.NET Core y persistencia en PostgreSQL/SQL Server), entrevistas de validación con usuarios clínicos y métricas de integración.
+* **AV2 – Sprint Review (Semana 12):** Documentación del Sprint 3 (Backend RESTful API en ASP.NET Core 10.0 y persistencia en MySQL Server 8.0 [InnoDB] mediante EF Core 10.0), entrevistas de validación con usuarios clínicos y métricas de integración.
 * **TB2 – Release Review (Semana 15):** Consolidación final del Sprint 4 (seguridad JWT, pruebas integradas, despliegue global en la nube), producción audiovisual y auditoría final de contribuciones.
-
 
 <div style="page-break-after: always;"></div>
 
@@ -195,7 +189,6 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-    - [2.3.5. As-Is Scenario Mapping](#235-as-is-scenario-mapping)
   - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
@@ -246,44 +239,12 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
       - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
       - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
       - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
-    - [5.2.2. Sprint 2 (Proyección TB1)](#522-sprint-2)
-      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
-      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
-      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
-      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
-      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
-      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
-      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
-      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
-    - [5.2.3. Sprint 3 (Proyección AV2)](#523-sprint-3)
-      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
-      - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
-      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
-      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
-      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
-      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
-      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
-      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
-    - [5.2.4. Sprint 4 (Proyección TB2)](#524-sprint-4)
-      - [5.2.4.1. Sprint Planning 4](#5241-sprint-planning-4)
-      - [5.2.4.2. Aspect Leaders and Collaborators](#5242-aspect-leaders-and-collaborators)
-      - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-4)
-      - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
-      - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
-      - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
-      - [5.2.4.7. Software Deployment Evidence for Sprint Review](#5247-software-deployment-evidence-for-sprint-review)
-      - [5.2.4.8. Team Collaboration Insights during Sprint](#5248-team-collaboration-insights-during-sprint)
-  - [5.3. Validation Interviews](#53-validation-interviews)
-    - [5.3.1. Diseño de entrevistas](#531-diseño-de-entrevistas)
-    - [5.3.2. Registro de entrevistas](#532-registro-de-entrevistas)
-    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
-  - [5.4. Video About-the-Product](#54-video-about-the-product)
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
   - [Anexo A. Repositorios de Código Fuente y Documentación](#anexo-a-repositorios-de-código-fuente-y-documentación)
   - [Anexo B. Tableros Digitales y Prototipos Interactivos](#anexo-b-tableros-digitales-y-prototipos-interactivos)
-
+  - [Anexo C. Registro Audiovisual de Entrevistas y Demostración](#anexo-c-registro-audiovisual-de-entrevistas-y-demostración)
 
 <div style="page-break-after: always;"></div>
 
@@ -301,37 +262,33 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 | **5.c.1 Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Lideró la definición de la visión de negocio y el relevamiento de requisitos asistenciales para la plataforma Medical SMARTBOX. Condujo la estructuración del Capítulo I (Problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación de Lean UX Canvas y delimitación de los dos segmentos objetivo: operadores de transporte asistencial SAMU 106 y directores de centros hospitalarios/farmacéuticos). Asimismo, encabezó el análisis competitivo del mercado telemático de salud (Cap. 2.1) y el diseño y conducción de las entrevistas a profundidad a paramédicos y especialistas en logística biomédica (Cap. 2.2), asegurando que los requisitos del producto respondan a dolores reales y no a supuestos infundados.<br><hr>**Gargate Paredes, Santiago**<br><br>**AV1:** Asumió el liderazgo técnico del frente de desarrollo y despliegue del Landing Page institucional de Medical SMARTBOX correspondiente al Sprint 1. Estableció la arquitectura semántica en HTML5, CSS3 modular y JavaScript, asegurando un diseño totalmente responsive (*mobile-first*) orientado a la conversión B2B de instituciones de salud. Lideró la implementación del pipeline de integración y despliegue continuo (CI/CD) alojado en la nube (Vercel/GitHub Pages), auditó los tiempos de carga y accesibilidad web conforme a las pautas WCAG, y documentó exhaustivamente las evidencias de desarrollo, ejecución y despliegue para la revisión de sprint (Capítulos 5.2.1.4 a 5.2.1.7).<br><hr>**Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Ejerció el liderazgo en la definición de la arquitectura de software y el modelado orientado al dominio (DDD). Facilitó la sesión colaborativa de Big Picture EventStorming (Cap. 2.4) unificando la comprensión de los flujos de telemetría, custodia y alertas críticas entre todos los miembros. Formuló el glosario canónico de Ubiquitous Language (Cap. 2.5) y lideró el diseño táctico mediante Design-Level EventStorming delimitando seis Bounded Contexts. Diseñó los diagramas del Modelo C4 (Contexto, Contenedores y Componentes) integrando Web API, bróker MQTT y WebSockets SignalR, y formalizó el Diagrama de Clases de Dominio UML (Cap. 4.7) y el Diagrama Físico de Base de Datos Relacional normalizado (Cap. 4.8) para garantizar consistencia transaccional y cumplimiento de las normativas DIGEMID/MINSA.<br><hr>**Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Lideró la estrategia de Experiencia de Usuario (UX) y Diseño de Interfaz (UI) del ecosistema Medical SMARTBOX. Dirigió el proceso de Needfinding (Cap. 2.3) coordinando la síntesis de hallazgos empíricos en User Personas (Dr. Carlos Mendoza y Paramédico Javier Soto), User Task Matrix y mapas de empatía. Estableció el Sistema de Diseño visual y las Guías de Estilo (Cap. 4.1), definiendo una paleta cromática clínica accesible y componentes UI atómicos. Asimismo, encabezó la arquitectura de información y la concepción de wireframes y mockups de alta fidelidad tanto para el Landing Page institucional como para el portal web operativo de monitoreo telemático (Capítulos 4.2 a 4.5), garantizando una experiencia coherente, intuitiva y libre de fricción para los operadores de emergencia.<br><hr>**Santos Minaya, Renzo Piero**<br><br>**AV1:** Ejerció el rol de liderazgo como Product Owner y Scrum Master del equipo. Condujo la transformación de los dolores y requisitos de negocio en artefactos ágiles formales, estructurando el catálogo completo de User Stories con criterios de aceptación rigurosamente formulados bajo sintaxis Gherkin (Scenario, Given, When, Then) organizados en Epics, junto con el Impact Mapping y el Product Backlog priorizado por valor clínico (Capítulo 3). En el ámbito de gestión, lideró la gobernanza de configuración de software (SCM) estableciendo el modelo de ramificación GitFlow, convenciones de Conventional Commits y guías de estilo para C# y Vue.js (Cap. 5.1). Asimismo, facilitó la sesión de Sprint Planning 1, coordinó la asignación de roles mediante la Matriz LACX y gestionó el Sprint Backlog 1 (Cap. 5.2.1.1 a 5.2.1.3), asegurando el ritmo de avance y el cumplimiento del cronograma académico. | **AV1:**<br>Durante este primer hito del proyecto, el equipo demostró un ejercicio de liderazgo horizontal y distribuido de alta efectividad. En lugar de centralizar la toma de decisiones en una sola figura, cada integrante asumió el liderazgo autónomo y especializado de un pilar fundamental de la solución: investigación empírica de mercado (Aaron Espinoza), experiencia y prototipado visual UX/UI (Maria Luisa Munayco), arquitectura de software y persistencia de datos (Jhon Jaramillo), gestión ágil y especificación de requisitos (Renzo Santos), y desarrollo frontend con despliegue en la nube (Santiago Gargate).<br><br>Esta delegación basada en competencias técnicas permitió avanzar en paralelo sobre frentes complejos y altamente interconectados sin generar cuellos de botella. Las disyuntivas de diseño técnico —tales como la selección de protocolos telemáticos para IoT (MQTT vs. WebSockets) o la delimitación de fronteras transaccionales en los Bounded Contexts— fueron debatidas y consensuadas con base en evidencia normativa (DIGEMID/MINSA) y criterios de ingeniería, logrando una cohesión técnica integral que sentó las bases para el éxito de las entregas posteriores. |
 | **5.c.2 Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Fomentó activamente un entorno inclusivo al incorporar la voz y las perspectivas de los profesionales de salud en el diseño de la solución, evitando sesgos técnicos aislados. Colaboró en la definición del objetivo central del proyecto a través del Lean UX Canvas, asegurando que las metas de investigación se descompusieran en actividades concretas (diseño de guías semiestructuradas, calendarización de entrevistas y tabulación cualitativa). Participó en las ceremonias de sincronización semanal del equipo, aportando insumos críticos que permitieron al diseñador UX y al arquitecto de software alinear las interfaces y los eventos de dominio con las necesidades operativas reales de las ambulancias en Lima.<br><hr>**Gargate Paredes, Santiago**<br><br>**AV1:** Contribuyó al entorno colaborativo mediante una comunicación transparente y continua sobre el progreso de la implementación del Landing Page. Participó en la estimación de tiempos del Sprint Backlog 1, comprometiéndose a cumplir con las metas de entrega y despliegue dentro de los plazos estipulados. Mantuvo un flujo riguroso de commits conforme a Conventional Commits, integró su código en la rama `develop` mediante Pull Requests evaluados en conjunto y colaboró activamente con el Product Owner en la redacción de la sección de Collaboration Insights del Sprint 1 (Cap. 5.2.1.8), garantizando total trazabilidad y cumplimiento de los objetivos del hito.<br><hr>**Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Impulsó un espacio colaborativo técnico promoviendo el modelado colaborativo visual mediante Miro y Structurizr DSL, lo que permitió que integrantes con roles no técnicos participaran en la validación de la lógica del sistema. Estableció metas técnicas claras para el sprint (entrega de diagramas de arquitectura C4, modelo de clases y script SQL normalizado de base de datos), desglosando las actividades de diagramación en tareas medibles en el tablero ágil. Atendió oportunamente las dudas de sus compañeros respecto a la estructura de microservicios y persistencia relacional, asegurando la consistencia conceptual del informe y cumpliendo al 100% las metas arquitectónicas asignadas para la entrega AV1.<br><hr>**Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Promovió un entorno inclusivo al transformar los hallazgos de las entrevistas en artefactos de empatía compartidos con todo el equipo, facilitando que cada miembro comprendiera las necesidades emocionales y laborales de los usuarios finales. Planificó minuciosamente el cronograma de diseño en Figma y UXPressia, estableciendo hitos de revisión intermedia (wireframes de baja fidelidad seguidos de mockups de alta fidelidad interactivos). Integró activamente el feedback de sus compañeros y del Product Owner sobre usabilidad y densidad de información clínica, cumpliendo a cabalidad con la entrega de todos los flujos de navegación requeridos para el Landing Page y la Web Application.<br><hr>**Santos Minaya, Renzo Piero**<br><br>**AV1:** Estableció y dinamizó el entorno colaborativo del equipo a través de la configuración del tablero ágil en Trello/Jira y el canal de coordinación en Discord, garantizando canales de comunicación abiertos, respetuosos y transparentes. Lideró la ceremonia de Sprint Planning 1, guiando al equipo en la estimación colectiva de esfuerzos en horas hombre para cada User Story y tarea técnica. Monitoreó el cumplimiento de las metas semanales mediante revisiones de progreso, identificó y removió impedimentos operativos, y aseguró que cada miembro entregara su sección del informe en formato Markdown respetando la fecha límite institucional, logrando así el cumplimiento riguroso de todos los objetivos trazados para el avance AV1. | **AV1:**<br>El establecimiento de un entorno de trabajo colaborativo, inclusivo y altamente disciplinado constituyó el factor determinante para el éxito de la entrega AV1. A través de la adopción del marco de trabajo Scrum, complementado con tableros Kanban interactivos y el flujo GitFlow en GitHub, el equipo logró transformar un enunciado académico de alta complejidad en un plan de acción estructurado con metas semanales claras y alcanzables.<br><br>Se fomentó la inclusión multidisciplinaria, donde las observaciones clínicas de investigación, las directrices de diseño visual y las restricciones de arquitectura fueron escuchadas y ponderadas con igual valor técnico. La comunicación asertiva y periódica evitó la duplicidad de esfuerzos y permitió resolver de manera proactiva los bloqueos de integración. Como resultado tangible, el equipo cumplió con el 100% de los entregables planificados para el Sprint 1 y la documentación técnica de los Capítulos I al V (secciones 5.1 y 5.2.1), demostrando un desempeño maduro, coordinado y alineado con los estándares internacionales de acreditación profesional ABET. |
 
-
 <div style="page-break-after: always;"></div>
-
-# Capítulo I: Introducción
 
 # 1.1. Startup Profile
 
 ## 1.1.1. Descripción de la Startup
 
-[Nombre de la startup] es una iniciativa orientada al diseño de soluciones tecnológicas para el sector salud, enfocada en mejorar la seguridad, trazabilidad y eficiencia del transporte de medicamentos, órganos e insumos médicos sensibles. La startup surge ante la necesidad de reducir riesgos durante los traslados médicos, especialmente cuando los productos requieren condiciones controladas de temperatura, monitoreo continuo y disponibilidad inmediata para la atención de pacientes.
+NeonCode es una iniciativa orientada al diseño de soluciones tecnológicas para el sector salud, enfocada en mejorar la seguridad, trazabilidad y eficiencia del transporte de medicamentos, órganos e insumos médicos sensibles. La startup surge ante la necesidad de reducir riesgos durante los traslados médicos, especialmente cuando los productos requieren condiciones controladas de temperatura, monitoreo continuo y disponibilidad inmediata para la atención de pacientes.
 
 La propuesta de la startup se basa en integrar tecnologías web, sensores IoT y servicios de geolocalización para ofrecer una plataforma que permita supervisar en tiempo real el estado de contenedores inteligentes instalados en ambulancias o unidades de transporte médico. Estos contenedores están diseñados para conservar la carga en condiciones adecuadas, detectar variaciones críticas, registrar el stock mediante sensores de peso y reportar información relevante sobre la ubicación y el estado operativo del vehículo.
 
-El enfoque de [Nombre de la startup] combina innovación tecnológica con responsabilidad social, debido a que el transporte seguro de productos médicos puede impactar directamente en la calidad de la atención sanitaria. Por ello, la solución busca apoyar a personal médico, operadores logísticos y entidades de salud en la toma de decisiones oportunas, reduciendo la incertidumbre durante los traslados y fortaleciendo la cadena de custodia de los productos transportados.
+El enfoque de NeonCode combina innovación tecnológica con responsabilidad social, debido a que el transporte seguro de productos médicos puede impactar directamente en la calidad de la atención sanitaria. Por ello, la solución busca apoyar a personal médico, operadores logísticos y entidades de salud en la toma de decisiones oportunas, reduciendo la incertidumbre durante los traslados y fortaleciendo la cadena de custodia de los productos transportados.
 
 ## 1.1.2. Perfiles de integrantes del equipo
 
 En esta sección se presentarán los perfiles de los integrantes del equipo, incluyendo fotografía, código de estudiante, nombres y apellidos, carrera, principales conocimientos técnicos y habilidades que aportan al desarrollo del proyecto. Cada integrante deberá evidenciar su participación en la investigación, documentación, diseño, implementación, pruebas y despliegue de la solución.
 
-| Integrante | Código | Carrera | Perfil y aporte al proyecto |
-|---|---|---|---|
-| Renzo Piero Santos Minaya | u202114790 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-| Aaron André Espinoza Flores | u202222859 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-| Jhon Jordy Jaramillo Mayta | u202520310 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-| Santiago Gargate Paredes | u20211b556 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-| Maria Luisa Munayco Apolaya | u20231c995 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-
+| Foto | Integrante | Código | Carrera | Perfil y aporte al proyecto |
+| :---: | --- | :---: | :---: | --- |
+| <img src="assets/chapter-1/renzo.jpg" alt="Renzo Piero Santos Minaya" width="100"/> | **Renzo Piero Santos Minaya** | u202114790 | Ingeniería de Software | Estudiante de Ingeniería de Software con conocimientos en arquitectura orientada al dominio (DDD), backend en ASP.NET Core (.NET 10) y modelado relacional en MySQL. Aporta en el diseño arquitectónico C4, especificación de contratos OpenAPI y servicios de backend. |
+| <img src="assets/chapter-1/aaron.jpg" alt="Aaron André Espinoza Flores" width="100"/> | **Aaron André Espinoza Flores** | u202222859 | Ingeniería de Software | Estudiante de Ingeniería de Software con experiencia en diseño de interacción, historias de usuario en Gherkin y maquetación frontend. Lidera el desarrollo de componentes de captura en el Landing Page y colabora en Needfinding. |
+| <img src="assets/chapter-1/jhon.png" alt="Jhon Jordy Jaramillo Mayta" width="100"/> | **Jhon Jordy Jaramillo Mayta** | u202520310 | Ingeniería de Software | Estudiante de Ingeniería de Software con enfoque en gestión de identidad, control de acceso y seguridad web. Aporta en el modelado del Bounded Context de IAM, flujos de autenticación segura 2FA/OTP y despliegue del Landing Page. |
+| <img src="assets/chapter-1/santiago.jpg" alt="Santiago Gargate Paredes" width="100"/> | **Santiago Gargate Paredes** | u20211b556 | Ingeniería de Software | Estudiante de Ingeniería de Software enfocado en gestión de configuración de software (SCM), normativas clínicas y desarrollo frontend. Aporta en las guías de estilo, cumplimiento normativo (DIGEMID/DIGDOT) y diseño de interacción asistencial. |
+| <img src="assets/chapter-1/maria.jpg" alt="Maria Luisa Munayco Apolaya" width="100"/> | **Maria Luisa Munayco Apolaya** | u20231c995 | Ingeniería de Software | Estudiante de Ingeniería de Software con fortalezas en diseño UI/UX en Figma, accesibilidad WCAG y desarrollo HTML5/CSS3. Lidera la maquetación semántica y adaptación responsive mobile-first del Landing Page y prototipado interactivo. |
 
 <div style="page-break-after: always;"></div>
 
-# 1.2. Solution Profile
+﻿# 1.2. Solution Profile
 
 ## 1.2.1. Antecedentes y problemática
 
@@ -416,10 +373,9 @@ We will know we are successful when users can monitor active medical transports 
 | Most important thing to learn first | Validar si los usuarios consideran prioritario integrar temperatura, ubicación, stock y ETA en una sola plataforma. |
 | Least amount of work to learn it | Prototipo navegable con dashboard de contenedores, alertas, detalle de traslado y registro histórico básico. |
 
-
 <div style="page-break-after: always;"></div>
 
-# 1.3. Segmentos Objetivo
+﻿# 1.3. Segmentos Objetivo
 
 La solución propuesta está dirigida a actores que participan directa o indirectamente en el transporte de medicamentos, órganos e insumos médicos sensibles. Estos segmentos requieren información confiable, alertas oportunas y trazabilidad durante el traslado, debido a que las condiciones de conservación y los tiempos de llegada pueden impactar en la continuidad de la atención médica.
 
@@ -437,94 +393,255 @@ Los operadores logísticos e instituciones de salud necesitan visibilidad sobre 
 
 Para este segmento, la solución debe ofrecer un dashboard centralizado, filtros de búsqueda, priorización de alertas, trazabilidad histórica, reportes de operación, registros de temperatura, ubicación, responsables, horarios de apertura del contenedor, incidentes y acciones tomadas durante cada traslado.
 
-
 <div style="page-break-after: always;"></div>
-
-# Capítulo II: Requirements Elicitation & Analysis
 
 # 2.1. Competidores
 
-Esta sección identifica competidores directos e indirectos relacionados con el monitoreo de cadena de frío, rastreo logístico, transporte médico y gestión de activos IoT. El análisis permite reconocer alternativas existentes, comparar capacidades y definir estrategias que diferencien la propuesta de [Nombre del producto].
+En esta sección se realiza la identificación, evaluación multidimensional y contraste estratégico de los principales competidores directos e indirectos que operan en el mercado global y nacional de monitoreo telemático y preservación de cadena de frío farmacéutica. El propósito fundamental de este análisis es evidenciar cómo **Medical SMARTBOX (NeonCode)** se posiciona de forma diferenciada y competitiva en el sector salud peruano, resolviendo las brechas operativas críticas del transporte asistencial en ambulancias que las soluciones convencionales no atienden.
+
+---
 
 ## 2.1.1. Análisis competitivo
 
-Para el análisis se consideran soluciones de monitoreo de temperatura, plataformas de rastreo vehicular y sistemas de gestión logística médica. Aunque algunas alternativas cubren parcialmente el problema, no siempre integran en una sola experiencia la temperatura del contenedor, stock por peso, ubicación GPS, estado del vehículo, ETA y trazabilidad de cadena de custodia.
+Para el relevamiento de la competencia se investigaron tres empresas con presencia tecnológica real en el transporte de productos biológicos y seguimiento de activos:
 
-| Criterio | Nuestra solución | Competidor 1: Monitoreo de cadena de frío | Competidor 2: Rastreo vehicular GPS | Competidor 3: Gestión logística médica |
-|---|---|---|---|---|
-| Perfil | Plataforma IoT para contenedores médicos inteligentes en ambulancias. | Solución enfocada en sensores de temperatura para productos refrigerados. | Plataforma orientada a localización y control de flotas. | Sistema para coordinar entregas e inventario médico. |
-| Valor para clientes | Integra conservación, stock, ubicación, vehículo y trazabilidad. | Permite conocer condiciones térmicas. | Permite conocer ubicación y ruta. | Organiza procesos logísticos e inventario. |
-| Mercado objetivo | Hospitales, clínicas, ambulancias y operadores de transporte médico. | Empresas con cadena de frío. | Empresas con flotas vehiculares. | Instituciones con operaciones logísticas. |
-| Productos y servicios | Contenedor IoT, aplicación web, API RESTful, alertas y reportes. | Sensores, registradores y panel de temperatura. | GPS, mapas, alertas de ruta y reportes de flota. | Módulos de despacho, inventario y seguimiento. |
-| Ventaja competitiva | Visión integral del traslado médico crítico. | Especialización térmica. | Seguimiento vehicular consolidado. | Gestión administrativa del proceso. |
-| Debilidad identificada | Requiere integración con hardware y vehículos. | No gestiona stock ni vehículo. | No controla condiciones internas del contenedor. | Puede no integrarse con sensores físicos en tiempo real. |
+1. **Sensitech Inc. (Carrier Global Corporation):** Referente mundial indiscutido en la visibilidad de la cadena de frío farmacéutica y monitoreo de carga biofarmacéutica a granel (pallets, contenedores aéreos y fletes transcontinentales) mediante registradores de datos (*dataloggers*) de temperatura USB (*TempTale Ultra*) y balizas celulares en tiempo real (*TempTale GEO LTE*), respaldados por la plataforma en la nube *ColdStream SaaS*.
+2. **Tracklink Perú (Motorlink S.A.C.):** Empresa líder nacional en seguridad vehicular, monitoreo GPS satelital y telemática de flotas con más de 20 años de trayectoria y central de operaciones 24/7 en el Perú. Ofrece la solución *Tracklink Cold Chain Control*, orientada al monitoreo de temperatura en la cabina o furgón frigorífico del camión.
+3. **Controlant:** Empresa global pionera en soluciones de visibilidad de cadena de frío en tiempo real para medicamentos biológicos y vacunas de ultracongelación (-80 °C a +25 °C), reconocida por la gestión de la cadena de frío global de las vacunas Pfizer-BioNTech COVID-19 mediante sus dispositivos celulares *Saga Card* / *Saga Mobile* y la plataforma analítica predictiva *Aurora Cloud Platform*.
+
+---
+
+### Competitive Analysis Landscape
+
+El análisis comparativo adopta estrictamente la estructura normativa del cuadro de **Competitive Analysis Landscape** prescrita en las **páginas 10 y 11 del Enunciado Oficial del Trabajo Final**, evaluando a NeonCode frente a los tres competidores reales en sus 11 dimensiones:
+
+| Competitive Analysis Landscape | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| **¿Por qué llevar a cabo este análisis?** | **¿Cuál es la propuesta de valor diferenciada de Medical SMARTBOX frente a las soluciones globales y locales de monitoreo de cadena de frío para unidades de soporte vital y traslados biomédicos en Lima Metropolitana?** | | | |
+| **(Nombre y Logo)** | **Medical SMARTBOX (NeonCode)** | **Sensitech (Carrier Global)** | **Tracklink Perú (Motorlink S.A.C.)** | **Controlant** |
+| **Perfil: Overview** | Plataforma IoT y contenedor biomédico inteligente con telemetría activa en tiempo real (temperatura, peso neto, GPS) y control de acceso físico mediante solenoide con token OTP para ambulancias y triaje prehospitalario. | Líder multinacional en visibilidad de cadena de frío mediante dataloggers USB y dispositivos celulares para pallets y contenedores de carga farmacéutica masiva transcontinental. | Proveedor nacional líder en seguridad vehicular, monitoreo GPS de flotas y telemetría de furgones frigoríficos mediante sensores en la computadora de abordo del camión. | Innovador global en visibilidad de cadena de frío en tiempo real mediante balizas IoT celulares y plataforma en la nube para fabricantes biofarmacéuticos. |
+| **Perfil: Ventaja competitiva ¿Qué valor ofrece a los clientes?** | Protección activa en el último tramo prehospitalario (ambulancia a cama del paciente), cerradura solenoide anti-apertura no autorizada con token OTP y monitoreo de peso digital para evitar adulteración o mermas. | Marca de referencia mundial con cumplimiento regulatorio estricto FDA 21 CFR Part 11 y certificación de calibración individual con trazabilidad metrológica NIST. | Central de monitoreo 24/7 y cobertura de red celular en las 24 regiones del Perú, con servicio técnico, instalación y soporte presencial en talleres a nivel nacional. | Automatización analítica de extremo a extremo, monitoreo de ultracongelación (-80 °C) y validación en distribución global de biológicos y vacunas críticas. |
+| **Perfil de Marketing: Mercado objetivo** | Empresas de transporte asistido, ambulancias públicas (SAMU) y privadas, bancos de sangre, policlínicos y laboratorios de análisis clínicos en el Perú. | Grandes laboratorios farmacéuticos transnacionales y distribuidores logísticos globales de medicamentos y vacunas. | Empresas de transporte de carga refrigerada, distribuidores mayoristas de alimentos perecibles y operadores logísticos interprovinciales. | Fabricantes multinacionales biofarmacéuticos, centros de investigación de ensayos clínicos y cadenas globales de ultracongelación. |
+| **Perfil de Marketing: Estrategias de marketing** | Posicionamiento como solución HaaS (Hardware as a Service) especializada en emergencias prehospitalarias, alianzas con redes clínicas y venta consultiva técnica. | Marketing B2B corporativo basado en certificaciones globales, presencia en ferias farmacéuticas mundiales y licitaciones masivas corporativas. | Fuerza de ventas corporativa de flotas, campañas de telemática vehicular, y venta cruzada con servicios de recuperación antirrobo vehicular. | Marketing relacional y alianzas estratégicas globales con farmacéuticas de primera línea (ej. Pfizer) y organismos internacionales de salud. |
+| **Perfil de Producto: Productos & Servicios** | Dispositivo IoT Medical SMARTBOX (ESP32, DS18B20, celda de carga HX711, solenoide), Web App Vue.js/PrimeVue y REST API en ASP.NET Core 10.0. | Dataloggers TempTale Ultra (USB), TempTale GEO LTE (celular en tiempo real) y software de analítica ColdStream SaaS. | Hardware telemático vehicular Tracklink Cold Chain, sensores de temperatura para furgón y portal web de rastreo de flota. | Controlant Saga Card / Saga Mobile (sensores celulares compactos) y plataforma cloud de visibilidad predictiva Aurora. |
+| **Perfil de Producto: Precios & Costos** | Suscripción mensual SaaS por Smartbox activo ($30 - $45 USD/mes) + hardware en comodato o costo accesible de entrada ($180 USD). | Alto costo por datalogger desechable ($25 - $40 USD/unidad) o reutilizable ($150 - $250 USD) más licencias corporativas anuales de software. | Costo de instalación de hardware vehicular ($350 - $500 USD por camión) + cuota de servicio mensual ($35 - $50 USD por vehículo). | Servicio corporativo cerrado por viaje o suscripción de alto valor ($500+ USD mensuales por lote monitorizado), logística inversa obligatoria. |
+| **Perfil de Producto: Canales de distribución (Web y/o Móvil)** | Web Application responsive (optimizada para desktop y tablets de ambulancia) y Landing Page comercial con portal de cotización. | Plataforma web corporativa ColdStream (Web SaaS) y herramientas de configuración desktop/USB para lectura de reportes PDF. | Plataforma Web de rastreo de flotas y Aplicación Móvil (Android/iOS) para gestión y ubicación satelital de vehículos. | Plataforma Web Aurora Cloud Platform y servicios API de integración empresarial con ERPs/WMS. |
+| **Análisis SWOT: Fortalezas** | Control activo físico solenoide con OTP, monitoreo de peso digital, diseño adaptado a ambulancias de Lima, arquitectura moderna en .NET 10 y MySQL 8.0. | Máxima reputación regulatoria mundial, precisión metrológica certificada, plataforma cloud robusta para millones de envíos farmacéuticos. | Infraestructura operativa local consolidada, red de soporte 24/7 en Perú, integración con rastreo antirrobo y botón de pánico vehicular. | Tecnología IoT de vanguardia (NB-IoT/Cat-M1), analítica predictiva avanzada, cobertura global sin intervención del operador. |
+| **Análisis SWOT: Debilidades** | Startup emergente sin marca posicionada en el sector salud público, dependencia inicial de autofinanciamiento de prototipos. | Monitoreo pasivo en modelos estándar (requiere conectar USB al final), sin cerradura inteligente de seguridad, sin sensor de peso. | Monitoreo a nivel de vehículo completo y no del contenedor individual, sin integración con flujos clínicos prehospitalarios ni control de custodia digital. | Barrera de costos restrictiva para el mercado peruano, complejidad de logística inversa de recolección de tarjetas, sin protección física local (OTP). |
+| **Análisis SWOT: Oportunidades** | Exigencias crecientes de DIGEMID y MINSA para trazabilidad de cadena de frío en emergencias; alta tasa de mermas por tráfico vehicular en Lima. | Incremento en la demanda mundial de medicamentos biológicos sensibles a variaciones de temperatura. | Crecimiento del comercio farmacéutico electrónico y requerimientos de trazabilidad en transporte logístico local. | Expansión de requerimientos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica. |
+| **Análisis SWOT: Amenazas** | Burocracia y lentitud en licitaciones del sector salud público (EsSalud/MINSA); resistencia al cambio del personal paramédico ante el registro digital. | Nuevos entrantes en tecnología IoT celular de bajo costo que presionan a la baja los márgenes de hardware. | Competidores de rastreo satelital genérico que ofrecen sensores de temperatura básicos como commodity a bajo precio. | Tensiones geopolíticas y disrupciones en la cadena global de suministro de componentes electrónicos semiconductores para hardware IoT. |
+
+---
 
 ## 2.1.2. Estrategias y tácticas frente a competidores
 
-La estrategia principal de la startup será diferenciarse mediante una solución integrada para transporte médico crítico, evitando competir únicamente como plataforma de GPS o como registrador de temperatura. La propuesta busca unir información clínica-operativa relevante en una sola aplicación web.
+A partir del análisis de fortalezas, debilidades y oportunidades de la competencia, NeonCode establece las siguientes estrategias y tácticas comerciales y tecnológicas para consolidar su ventaja competitiva en el mercado asistencial:
 
-Las tácticas iniciales serán:
+1. **Estrategia de Especialización en el Último Tramo Prehospitalario (*Last-Mile Emergency*):**  
+   * *Diagnóstico:* Sensitech y Controlant diseñan productos para pallets de comercio exterior aéreo o marítimo, mientras que Tracklink monitorea la posición del camión entero. Ninguno protege el insumo médico en el transbordo manual desde la ambulancia hasta la rampa de trauma shock o quirófano.
+   * *Táctica:* Posicionar a Medical SMARTBOX como un contenedor isotérmico móvil autónomo que acompaña el medicamento o hemoderivado de forma ininterrumpida hasta la entrega final al médico especialista receptor.
 
-- Priorizar escenarios de alto valor, como transporte de medicamentos refrigerados, órganos, sangre y muestras biológicas.
-- Ofrecer trazabilidad completa del traslado, incluyendo temperatura, ubicación, apertura del contenedor, stock estimado y eventos relevantes.
-- Integrar mapas y estimación de llegada mediante servicios externos para mejorar la coordinación operativa.
-- Diseñar alertas simples y priorizadas para que el personal médico pueda actuar sin sobrecarga de información.
-- Generar reportes históricos que apoyen auditorías, mejora continua y responsabilidad profesional.
+2. **Táctica de Seguridad Activa mediante Cerrojo Solenoide y Clave Dinámica OTP:**  
+   * *Diagnóstico:* Los competidores alertan sobre aperturas de puerta únicamente mediante sensores de luz ambiental o contactos magnéticos en la carrocería del vehículo, sin capacidad de impedir físicamente el acceso no autorizado.
+   * *Táctica:* Incorporar un mecanismo de cerrojo solenoide controlado electromecánicamente mediante microcontrolador ESP32. La caja solo se desbloquea en destino cuando el receptor autorizado ingresa un código de un solo uso (OTP) despachado a la aplicación web, garantizando una cadena de custodia inviolable con valor probatorio ante DIGEMID.
 
+3. **Estrategia de Accesibilidad Económica mediante Modelo Hardware as a Service (HaaS):**  
+   * *Diagnóstico:* Las soluciones internacionales implican costos elevados en moneda extranjera y tarifas de consultoría corporativa inaccesibles para servicios de ambulancias privadas y policlínicos peruanos.
+   * *Táctica:* Ofrecer una tarifa de suscripción mensual accesible en moneda local (S/ 110 – S/ 160 por contenedor activo), incluyendo el hardware en comodato, el acceso a la plataforma web de monitoreo en tiempo real y el soporte técnico, eliminando la barrera inicial de inversión de capital (*CapEx*).
+
+4. **Táctica de Control de Stock Automatizado por Celda de Carga (HX711):**  
+   * *Diagnóstico:* Ningún competidor del mercado cuenta con detección de masa o peso interno en cajas térmicas, obligando al conteo manual de viales y ampollas.
+   * *Táctica:* Integrar una celda de carga con convertidor analógico-digital HX711 en la base del compartimento clínico. Al detectar una reducción abrupta de peso sin registro de parada médica autorizada, la plataforma genera una alerta inmediata de posible sustracción o pérdida de carga.
 
 <div style="page-break-after: always;"></div>
 
 # 2.2. Entrevistas
 
-Las entrevistas permitirán obtener información cualitativa sobre las necesidades, frustraciones y expectativas de los segmentos objetivo. El objetivo es validar si el problema identificado representa una necesidad real y si las funcionalidades propuestas aportan valor durante el transporte de medicamentos, órganos e insumos médicos sensibles.
+La investigación empírica de campo constituye el cimiento metodológico del proyecto **Medical SMARTBOX**. Para validar la problemática y relevar las necesidades operativas de la cadena de frío biomédica en Lima Metropolitana, se diseñaron y ejecutaron entrevistas a profundidad con profesionales en ejercicio activo pertenecientes a los dos segmentos objetivo del proyecto: personal médico y paramédicos asistenciales en ambulancias (**Segmento 1**), y coordinadores de logística farmacéutica y directores de centros hospitalarios (**Segmento 2**).
+
+---
 
 ## 2.2.1. Diseño de entrevistas
 
-Las entrevistas estarán dirigidas a personal médico de emergencia, operadores logísticos de salud, representantes de instituciones médicas y áreas especializadas. Las preguntas se formularán evitando inducir respuestas y buscando comprender experiencias previas, tareas actuales, problemas frecuentes y criterios de éxito.
+Se elaboró una guía de entrevista semiestructurada aplicando las directrices metodológicas de UX Research de la industria (Nielsen Norman Group e Interaction Design Foundation). El diseño se orientó a reconstruir experiencias reales recientes sin condicionar al entrevistado ni presentar prematuramente la solución tecnológica, garantizando la recolección neutral de datos objetivos y percepciones subjetivas.
 
-### Preguntas para personal médico y de emergencias
+### Objetivos de la Guía de Entrevista:
+1. Reconstruir el flujo paso a paso del traslado asistencial de medicamentos refrigerados, hemoderivados, vacunas y muestras biológicas.
+2. Identificar las herramientas, registros documentales y canales de comunicación actualmente utilizados en ruta y en almacén.
+3. Documentar incidentes críticos reales de ruptura de cadena de frío, fallas mecánicas, demoras por congestión vehicular y pérdidas de custodia.
+4. Medir los niveles de estrés, confianza, carga cognitiva y frustración del personal operativo frente a la falta de trazabilidad telemática.
+5. Extraer requerimientos funcionales prioritarios para la formulación de los arquetipos (*User Personas*), matrices de tareas y escenarios de uso.
 
-1. ¿Qué tipo de medicamentos, insumos u otros elementos sensibles suele trasladar o recibir durante una emergencia?
-2. ¿Cómo verifica actualmente que la carga transportada se mantuvo en condiciones adecuadas?
-3. ¿Qué información considera crítica durante el traslado de un medicamento u órgano?
-4. ¿Qué problemas ha observado relacionados con temperatura, tiempo de llegada o disponibilidad de insumos?
-5. ¿Cómo debería presentarse una alerta para que sea útil durante una situación de emergencia?
+### Guía de Preguntas para el Segmento 1 (Personal Médico y Paramédicos de Ambulancia):
+1. **Contexto operativo:** ¿Cuál es tu rol exacto durante una guardia de emergencia y qué tipo de insumos refrigerados te toca trasladar con mayor frecuencia?
+2. **Procedimiento actual:** ¿Qué pasos sigues desde que recibes la orden de despacho hasta que entregas el contenedor térmico en el hospital receptor?
+3. **Control térmico:** ¿Cómo verificas que la temperatura interna del cooler se mantenga en el rango de +2 °C a +8 °C mientras conduces o atiendes al paciente en cabina?
+4. **Instrumentación y registro:** ¿Qué herramientas utilizas para medir la temperatura y dónde registras las lecturas durante el trayecto?
+5. **Incidentes en ruta:** Recuerda una ocasión en la que la ambulancia quedó atrapada en el tráfico o se produjo un sobrecalentamiento. ¿Qué ocurrió y cómo reaccionaron?
+6. **Seguridad y custodia:** ¿Cómo aseguras que el contenedor no sea abierto indebidamente en ruta o que no se confundan los medicamentos?
+7. **Puntos ciegos:** ¿En qué momento del traslado experimentas mayor incertidumbre respecto al estado de la carga?
+8. **Comunicación operativa:** ¿Por qué medios coordinas con la central de despacho y con el hospital de destino tu hora estimada de llegada (ETA)?
+9. **Criterios de entrega:** ¿Qué condiciones exige el personal del hospital receptor para aceptar o rechazar formalmente la entrega de un hemoderivado o fármaco?
+10. **Requerimiento ideal:** Si pudieras incorporar una innovación tecnológica en tu contenedor de traslado, ¿cuál resolvería tu mayor preocupación?
 
-### Preguntas para operadores logísticos e instituciones de salud
+### Guía de Preguntas para el Segmento 2 (Coordinadores Logísticos y Farmacéuticos Hospitalarios):
+1. **Gestión de cadena de frío:** ¿Cómo planificas y supervisas la distribución de biológicos y medicamentos termolábiles hacia ambulancias o centros periféricos?
+2. **Recepción y verificación:** Al arribar un envío a tu centro de salud, ¿qué protocolo sigues para certificar que no hubo excursiones térmicas en tránsito?
+3. **Dataloggers y herramientas:** ¿Qué tecnologías emplean actualmente para registrar la temperatura y con qué retraso temporal accedes a la información de los viajes?
+4. **Pérdidas y descartes:** ¿Con qué frecuencia se reportan pérdidas o descartes de vacunas o hemoderivados por ruptura de la cadena de frío y qué costo representa para tu institución?
+5. **Auditoría y DIGEMID:** ¿Cómo gestionan las actas de entrega física y qué dificultades enfrentan durante las auditorías de trazabilidad de DIGEMID/SUSALUD?
+6. **Conflictos de custodia:** ¿Se han presentado disputas entre el transportista/paramédico y el personal receptor sobre la responsabilidad de un lote degradado?
+7. **Visibilidad en tiempo real:** ¿Dispones actualmente de una plataforma web que te permita ver en vivo la ubicación y temperatura del contenedor antes de que llegue a tu puerta?
+8. **Control de stock y mermas:** ¿Cómo detectan si un insumo fue retirado del cooler de manera no autorizada durante un traslado de emergencia?
+9. **Impacto del tráfico:** ¿Cómo afecta la congestión vehicular de Lima Metropolitana la planificación de turnos de quirófano y ventanas de isquemia?
+10. **Criterio de valor:** ¿Qué características técnicas consideras indispensables en una plataforma digital de monitoreo para confiar plenamente en ella?
 
-1. ¿Cómo se planifican actualmente las rutas, asignaciones de ambulancias o unidades de transporte médico y la recepción de productos sensibles?
-2. ¿Qué herramientas utilizan para conocer ubicación, estado del vehículo, condiciones de la carga y tiempo estimado de llegada?
-3. ¿Qué información falta normalmente durante un traslado médico sensible o al momento de recibir medicamentos, órganos o muestras biológicas?
-4. ¿Cómo se registran incidentes relacionados con demoras, conservación, cadena de custodia o entrega de productos?
-5. ¿Qué requisitos de trazabilidad y evidencias deben cumplirse ante una incidencia durante el traslado?
-6. ¿Qué indicadores y reportes serían útiles para mejorar la operación, evaluar la calidad de los traslados y reducir riesgos?
-7. ¿Qué condiciones debería cumplir una solución digital para ser adoptada por operadores logísticos e instituciones de salud?
+---
 
 ## 2.2.2. Registro de entrevistas
 
-Para cada segmento objetivo se registrarán entre tres y cinco entrevistas. Cada registro incluirá nombres y apellidos del entrevistado, edad, distrito, segmento al que pertenece, fecha de entrevista, captura representativa del video, URL del video publicado en Microsoft Stream, minuto de inicio y duración.
+Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por cada segmento objetivo). Las sesiones fueron grabadas en video con consentimiento informado de los participantes y se encuentran alojadas en la plataforma institucional de Microsoft Stream / SharePoint de la universidad.
 
-| Entrevistado | Segmento | Edad | Distrito | Fecha | URL del video | Inicio | Duración | Resumen |
-|---|---|---:|---|---|---|---|---|---|
-| Wilbert Toledo | Personal médico y de emergencias | 21 | Pueblo Libre | 2026-09-16 | [Entrevista1_Segmento1_AaronEspinoza.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi) | 00:00:00 | 02:51 | Entrevista a un estudiante de medicina que se encuentra realizando prácticas, orientada a validar necesidades del personal médico y de emergencias sobre el traslado de medicamentos, órganos e insumos sensibles, considerando verificación de condiciones, información crítica, problemas de temperatura, tiempos de llegada, disponibilidad de insumos y utilidad de alertas. |
-| Aldair Lazaro | Personal médico y de emergencias | 26 | San Martín de Porres | 2026-09-17 | [Entrevista2_Segmento1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd) | 00:00:00 | 04:38 | Entrevista del Segmento 1 orientada a recopilar respuestas de personal médico y de emergencias sobre el traslado de productos médicos sensibles, la verificación de condiciones de conservación, la información crítica requerida, los problemas frecuentes y la utilidad de alertas durante situaciones de emergencia. |
-| Renato Calvo Yalan | Personal médico y de emergencias | 22 | San Isidro | 2026-09-17 | [Entrevista3_Segmento1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi) | 00:00:00 | 02:24 | Entrevista del Segmento 1 enfocada en recopilar información sobre experiencias, necesidades y problemas del personal médico y de emergencias durante el traslado de productos médicos sensibles, considerando condiciones de conservación, trazabilidad, tiempos de llegada, disponibilidad de insumos y respuesta ante alertas. |
-| Humberto Arellán | Operadores logísticos e instituciones de salud | 49 | Chancay | 2026-09-16 | [Entrevista1_Segmento2_Santiago.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc) | 00:00:00 | 04:27 | Entrevista del Segmento 2 enfocada en los requisitos a tomar en cuenta para mejorar la comunicación dentro del recorrido en instituciones de salud a un transportista logístico de material médico y biológico. |
-| Gianfranco Timoteo | Operadores logísticos e instituciones de salud | 21 | Chorrillos | 2026-09-16 | [Entrevista2_Segmento2_Santiago.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) | 00:00:00 | 04:59 | Entrevista del segmento 2 a un practicante de la carrera de Ingenería de Sistemas que ejerce del área técnologíca al soporte y registro en una institución de salud.  |
-| Karla Pacheco | Operadores logísticos e instituciones de salud | 25 | Breña | 2003-09-16 | [Entrevista3_Segmento2_Santiago.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) | 00:00:00 | 04:09 | Entrevista del Segmento 2 a una axuliar administrativa del área de la salud encargada del monitoreo y registro de las rutas de ambulancias y recolección de muestras o medicamentos. |
+### Tabla Consolidada de Registro de Entrevistas:
+
+| # | Segmento | Nombre del Entrevistado | Rol / Cargo | Organización / Contexto | Edad | Distrito | Fecha | Duración | Enlace a Video (Microsoft Stream) |
+| :-: | :--- | :--- | :--- | :--- | :-: | :--- | :-: | :-: | :--- |
+| **E1** | Segmento 1 | **Wilbert Toledo** | Estudiante de Medicina / Paramédico en Prácticas | Red de Ambulancias de Emergencia | 21 | Pueblo Libre | 16/09/2026 | 02:51 min | [Entrevista 1 (Toledo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi) |
+| **E2** | Segmento 1 | **Aldair Lazaro** | Paramédico de Transporte Asistido | Servicio de Ambulancias y Rescate | 26 | San Martín de Porres | 17/09/2026 | 04:38 min | [Entrevista 2 (Lazaro)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd) |
+| **E3** | Segmento 1 | **Renato Calvo Yalan** | Conductor / Paramédico Asistencial | Unidad Móvil de Soporte Vital | 22 | San Isidro | 17/09/2026 | 02:24 min | [Entrevista 3 (Calvo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi) |
+| **E4** | Segmento 2 | **Humberto Arellán** | Transportista Logístico Biomédico | Empresa de Distribución de Muestras y Fármacos | 49 | Chancay | 16/09/2026 | 04:27 min | [Entrevista 4 (Arellán)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc) |
+| **E5** | Segmento 2 | **Gianfranco Timoteo** | Coordinador de Soporte y Cadena de Frío | Laboratorio y Centro Clínico | 21 | Chorrillos | 16/09/2026 | 04:59 min | [Entrevista 5 (Timoteo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) |
+| **E6** | Segmento 2 | **Karla Pacheco** | Auxiliar Administrativa de Farmacia y Rutas | Centro de Salud Policlínico | 25 | Breña | 16/09/2026 | 04:09 min | [Entrevista 6 (Pacheco)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) |
+
+---
+
+### Resúmenes Descriptivos Individuales de Entrevistas:
+
+#### Entrevista E1: Wilbert Toledo (Segmento 1)
+* **Perfil:** Estudiante de medicina y paramédico en prácticas de ambulancia de soporte vital.
+* **Datos Demográficos:** 21 años, residente en Pueblo Libre. Dispositivos preferidos: smartphone Android (Samsung Galaxy), laptop Windows. Navegador: Google Chrome.
+* **Variables Objetivas:** Traslada medicamentos termolábiles de primera línea, sueros y hemoderivados. Utiliza coolers pasivos de poliestireno expandido con geles refrigerantes. Verifica la temperatura únicamente al inicio y al final abriendo la tapa con un termómetro de varilla. Tiempo promedio de traslado en Lima: 45 a 80 minutos.
+* **Variables Subjetivas:** Ansiedad elevada ante atascos en avenidas principales (Av. Brasil, Javier Prado). Desconfianza respecto a si el gel congelado mantiene la temperatura real tras 1 hora bajo el calor de la cabina. Expresa frustración por la falta de un aviso sonoro si la temperatura sube de +8 °C.
+* **Cita Textual:** *"Si la sirena suena fuerte y el paciente está inestable, nadie está mirando si la caja de vacunas se calentó. Necesitamos que el contenedor te avise solo, con una alarma roja o al celular."*
+
+#### Entrevista E2: Aldair Lazaro (Segmento 1)
+* **Perfil:** Paramédico rescatista de ambulancia con 3 años de experiencia en emergencias prehospitalarias.
+* **Datos Demográficos:** 26 años, residente en San Martín de Porres. Dispositivos: smartphone Xiaomi Android, tablet institucional. Navegador: Chrome / Edge.
+* **Variables Objetivas:** Realiza entre 3 y 6 traslados asistenciales por turno. Registra el estado de la entrega en planillas físicas de papel autocopiativo. Se comunica con el hospital receptor mediante llamadas de voz y mensajes de WhatsApp. Ha experimentado aperturas accidentales de coolers por vibraciones en baches viales.
+* **Variables Subjetivas:** Estrés crónico por la doble carga de vigilar al paciente y proteger los fármacos. Sensación de desamparo ante reclamos del hospital si el medicamento llega caliente, ya que no tiene cómo demostrar a qué hora exacta subió la temperatura.
+* **Cita Textual:** *"Cuando llegas al hospital y Farmacia te rechaza el lote diciendo que demoró mucho, se genera un conflicto. Si tuviéramos un registro que pruebe que el frío nunca se rompió, nos ahorraríamos horas de discusiones."*
+
+#### Entrevista E3: Renato Calvo Yalan (Segmento 1)
+* **Perfil:** Conductor y asistente paramédico en unidades móviles de intervención rápida.
+* **Datos Demográficos:** 22 años, residente en San Isidro. Dispositivos: iPhone (iOS), iPad, MacBook. Canales: WhatsApp, Waze, Google Maps.
+* **Variables Objetivas:** Responsable de la conducción segura y de la conexión de equipos a los tomacorrientes de 12V DC de la ambulancia. Desconoce la temperatura interna del contenedor durante el viaje porque la caja va en el compartimento asistencial posterior.
+* **Variables Subjetivas:** Presión por los tiempos de llegada (ETA). Manifiesta que conducir a alta velocidad sorteando el tráfico limeño impide manipular cajas o verificar diales analógicos.
+* **Cita Textual:** *"Yo voy al volante concentrado en abrirme paso entre los carros. Si el cooler tiene un indicador visual grande o se conecta a una tablet en el tablero, el chofer sabe de un vistazo si todo va bien sin voltear."*
+
+#### Entrevista E4: Humberto Arellán (Segmento 2)
+* **Perfil:** Transportista y operador logístico biomédico interprovincial e interurbano con más de 15 años de trayectoria.
+* **Datos Demográficos:** 49 años, residente en Chancay (con operaciones logísticas en Lima Norte). Dispositivos: smartphone Android gama media. Canales: llamadas telefónicas, WhatsApp corporativo.
+* **Variables Objetivas:** Maneja furgones de distribución hacia postas médicas y hospitales de la red periférica. Utiliza dataloggers USB convencionales que se leen en destino tras conectar a una computadora. Traslados con duración de 2 a 5 horas.
+* **Variables Subjetivas:** Resignación frente a la burocracia documental de recepción. Preocupación constante por averías mecánicas del aire acondicionado o fallas de refrigeración en la carretera Panamericana.
+* **Cita Textual:** *"El datalogger USB solo te dice al final del día que la carga se malogró hace tres horas. Para ese momento ya perdiste miles de soles en medicamentos y el paciente se quedó sin tratamiento."*
+
+#### Entrevista E5: Gianfranco Timoteo (Segmento 2)
+* **Perfil:** Coordinador de soporte y supervisor de cadena de frío en laboratorio clínico central.
+* **Datos Demográficos:** 21 años, residente en Chorrillos. Dispositivos: laptop Windows, smartphone Android, monitor dual en central. Navegador: Chrome, Brave.
+* **Variables Objetivas:** Responsable de auditar la recepción de muestras biológicas y reactivos de diagnóstico. Consolida manualmente registros en hojas de cálculo de Excel a partir de actas en papel. Detecta discrepancias de temperatura en aproximadamente el 15% de los envíos recibidos en horas punta.
+* **Variables Subjetivas:** Agotamiento por conciliar hojas de ruta dispersas. Temor a sanciones de DIGEMID ante la falta de trazabilidad digital inmutable. Desconfianza hacia los registros anotados a mano por choferes.
+* **Cita Textual:** *"En el laboratorio nos llega un papel con un garabato que dice 4 °C, pero no hay forma de auditar si la muestra estuvo a 12 °C durante el embotellamiento. Necesitamos una gráfica digital continua que no pueda manipularse."*
+
+#### Entrevista E6: Karla Pacheco (Segmento 2)
+* **Perfil:** Auxiliar administrativa y técnica de farmacia encargada del monitoreo de rutas en centro de salud.
+* **Datos Demográficos:** 25 años, residente en Breña. Dispositivos: PC de escritorio hospitalaria, smartphone Android. Navegador: Google Chrome.
+* **Variables Objetivas:** Gestiona el despacho y recepción de vacunas y ampollas refrigeradas. Se coordina con brigadas móviles mediante llamadas telefónicas insistentes para consultar su ubicación y hora de llegada.
+* **Variables Subjetivas:** Ansiedad por falta de predictibilidad: las salas de inmunizaciones se llenan de pacientes esperando dosis que no saben cuándo llegarán. Frustración por tener que llamar repetidamente a conductores que no pueden contestar mientras conducen.
+* **Cita Textual:** *"Pasamos la mitad del día preguntando '¿por dónde vienes?' y '¿sigue fría la caja?'. Si tuviéramos una pantalla con un mapa en vivo y la temperatura exacta, organizaríamos las citas y el quirófano sin perder tiempo."*
+
+---
 
 ## 2.2.3. Análisis de entrevistas
 
-El análisis de entrevistas permitirá identificar patrones comunes por segmento. Se evaluarán necesidades relacionadas con visibilidad del traslado, conservación de la carga, trazabilidad, disponibilidad de stock, tiempos de llegada y respuesta ante alertas.
+El análisis sistemático de las entrevistas combina el rigor cualitativo de incidentes críticos con el sustento cuantitativo porcentual ($n = 6$), derivando conclusiones directas para la especificación de requisitos y la arquitectura de **Medical SMARTBOX**.
 
-Los resultados esperados del análisis deberán expresar porcentajes y hallazgos sustentados en las entrevistas registradas. Por ejemplo, se podrá identificar qué proporción de entrevistados considera crítica la temperatura, qué porcentaje necesita conocer la ubicación en tiempo real y qué problemas se repiten durante la coordinación entre ambulancias e instituciones de salud.
+### A. Sustento Cuantitativo y Patrones Consolidados ($n = 6$)
 
+* **100.0% (6/6) de los entrevistados carece de monitoreo telemático en tiempo real:** Ninguno de los participantes cuenta con visibilidad remota continua; el 50% utiliza termómetros analógicos de mercurio/alcohol y el 50% dataloggers de descarga diferida por puerto USB.
+* **100.0% (6/6) depende de registros manuales en papel:** La totalidad de las transferencias de custodia se firma en hojas físicas vulnerables al extravío, enmendaduras y deterioro físico.
+* **100.0% (6/6) señala la congestión vehicular como factor crítico de riesgo:** El tráfico limeño genera demoras imprevistas de 30 a 90 minutos adicionales sobre el tiempo planificado, poniendo en riesgo la estabilidad del hielo gel pasivo.
+* **83.3% (5/6) exige alertas preventivas antes de la ruptura térmica:** Demandan alarmas audibles en cabina y notificaciones automáticas al celular cuando la temperatura supere los +6.5 °C (margen preventivo antes del límite crítico de +8.0 °C).
+* **83.3% (5/6) reporta falta de cálculo de hora estimada de llegada (ETA):** Tanto paramédicos como personal hospitalario sufren desorganización operativa al desconocer el minuto exacto de arribo de la unidad.
+* **66.7% (4/6) ha presenciado pérdidas o rechazos de lotes de medicamentos:** Experiencias directas de descarte de hemoderivados, vacunas o reactivos por excursión térmica comprobada al abrir el cooler.
+* **66.7% (4/6) reporta disputas interdepartamentales sobre la responsabilidad de la carga:** Conflictos entre el equipo de ambulancia y farmacia hospitalaria respecto al momento exacto en que se rompió la cadena de frío.
+
+---
+
+### B. Análisis por Segmento Objetivo
+
+#### Segmento 1: Personal Médico y Paramédicos de Ambulancias (E1, E2, E3)
+* **Variables Objetivas Identificadas:**
+  * Entorno de trabajo móvil de alta vibración, aceleración y maniobras de emergencia.
+  * Tiempos de tránsito: 25 a 90 minutos dentro del radio metropolitano.
+  * Carga médica prioritaria: ampollas de epinefrina, insulina, hemoderivados (plasma fresco congelado, concentrado de eritrocitos) y vacunas.
+  * Procedimiento actual: colocación de 4 a 6 paquetes de gel refrigerante precongelados; cierre manual por pestillo plástico pasivo.
+* **Variables Subjetivas y Modelo Mental:**
+  * Sobrecarga cognitiva y estrés agudo: la prioridad clínica del paciente absorbe la atención del personal, relegando la verificación visual del contenedor.
+  * Sentimiento de vulnerabilidad legal: temor a ser culpados injustamente por la merma del producto biológico sin contar con pruebas telemétricas de su desempeño.
+  * Rechazo a interfaces complejas: requieren pantallas de alto contraste, tipografía legible a distancia y alertas acústicas inconfundibles.
+
+#### Segmento 2: Centros de Salud, Farmacias y Operadores Logísticos (E4, E5, E6)
+* **Variables Objetivas Identificadas:**
+  * Supervisión de múltiples despachos simultáneos (flota de 5 a 20 unidades).
+  * Exigencia regulatoria inexcusable: cumplimiento del Manual de Buenas Prácticas de Almacenamiento y Transporte de Productos Farmacéuticos (R.M. N° 833-2015/MINSA) y directivas de DIGEMID.
+  * Tiempos de retención de actas documentales: mínimo 12 meses archivadas físicamente.
+  * Requerimiento de auditoría: gráficas continuas de temperatura cada 30 a 60 segundos durante todo el trayecto.
+* **Variables Subjetivas y Modelo Mental:**
+  * Obsesión por el cumplimiento normativo y aversión al riesgo regulatorio (clausura temporal de farmacias o multas de SUSALUD).
+  * Escepticismo ante reportes llenados a mano con lapicero; preferencia por información digital inmutable con sello de tiempo (*timestamp*).
+  * Necesidad de predictibilidad operativa: coordinar la disponibilidad de quirófanos de trasplante y personal de triaje en función de un ETA confiable.
+
+---
+
+### C. Incidentes Críticos Reales Extraídos del Trabajo de Campo
+
+1. **Incidente de Apertura Inadvertida y Ruptura Térmica en Ambulancia (Relatado por E1 - Wilbert Toledo):**  
+   Durante un traslado asistencial urgente desde un centro de salud de Lima Norte hacia un hospital del Callao en hora punta vespertina, un bache severo provocó que el seguro plástico del cooler se abriera parcialmente sin ser percibido por el ruido de la sirena de emergencia. Al arribar a destino tras 75 minutos de viaje, el termómetro marcó 11.5 °C. El banco de sangre receptor rechazó las unidades de plasma, obligando a iniciar un proceso administrativo de descarte por valor de miles de soles.
+2. **Incidente de Discrepancia Documental y Falta de Prueba Histórica (Relatado por E2 - Aldair Lazaro):**  
+   Una ambulancia trasladó insulina y hemoderivados en una ruta demorada por manifestaciones viales. En recepción, el termómetro digital marcaba 8.2 °C (apenas 0.2 °C por encima del límite regulatorio). Farmacia hospitalaria se negó a firmar el acta de conformidad. Al no existir un historial continuo que demostrara que el lote estuvo a 4.5 °C durante el 98% del viaje y que solo subió en los últimos 2 minutos al abrir la puerta del vehículo, el lote fue desechado en su totalidad.
+3. **Incidente de Vacunas Comprometidas en Brigada de Vacunación (Relatado por E5 - Gianfranco Timoteo):**  
+   En una campaña de inmunización descentralizada, brigadas de salud regresaron con cajas térmicas cuyos dataloggers USB revelaron —recién al conectarse a la PC del almacén a las 18:00 horas— que la temperatura superó los 9.0 °C a las 14:15 horas. Durante cuatro horas se administraron dosis con viabilidad comprometida antes de detectarse la anomalía, evidenciando el peligro inaceptable del monitoreo pasivo diferido.
+
+---
+
+### D. Implicancias Directas para la Arquitectura y el Diseño del Sistema
+
+| Hallazgo Empírico de Entrevistas | Requerimiento Funcional Derivado | Componente de la Solución (Arquitectura / UI) |
+| :--- | :--- | :--- |
+| El paramédico no puede abrir la tapa para mirar la temperatura. | Telemetría continua en vivo proyectada en pantalla sin manipular el contenedor. | Sensor Dallas DS18B20 + Pantalla en Web App / Tablet (`US10`). |
+| Aperturas accidentales o sustracción de insumos en ruta. | Bloqueo electromecánico de tapa y control de masa del contenido. | Cerrojo solenoide con token OTP (`US17`) y celda de carga HX711 (`US11`). |
+| Pérdida de frío inadvertida por ruido de sirena. | Alertas críticas acústicas en hardware y visuales en la plataforma web. | Alertas tempranas configurables en el Centro de Incidentes (`US13`, `US14`). |
+| Desconocimiento de la hora de llegada en quirófano. | Visualización de ruta en tiempo real y cálculo automatizado de ETA dinámico. | Integración de servicio telemático de mapas y rutas (`US08`, `US12`). |
+| Disputas legales y desconfianza en actas de papel. | Generación de acta de custodia digital inmutable con sellado criptográfico. | Manifiesto digital PDF con hash SHA-256 (`US16`) almacenado en MySQL 8.0. |
 
 <div style="page-break-after: always;"></div>
 
 # 2.3. Needfinding
 
 El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de **Medical SMARTBOX**. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones en Lima Metropolitana, se elaboraron artefactos empáticos centrados en el usuario conforme a las pautas de diseño UX de la industria (Nielsen Norman Group, Interaction Design Foundation), los cuales constituyen el cimiento empírico de las especificaciones y el diseño de la solución.
+
+Los artefactos de esta sección se construyen a partir de los dos patrones de comportamiento identificados en las entrevistas a profundidad (Capítulo 2.2): **decisión clínica-operativa inmediata** y **coordinación logística trazable**. Las personas descritas son arquetipos compuestos sintetizados a partir de los participantes de la investigación de campo.
+
+---
+
+### Criterios de Agrupación y Selección
+
+Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron por objetivos, tareas, responsabilidad y contexto de uso:
+
+| Conjunto | Participantes que aportan evidencia | Comportamiento común | Arquetipo resultante |
+|---|---|---|---|
+| Decisión clínica-operativa | Wilbert Toledo, Aldair Lazaro y Renato Calvo Yalan | Consulta información crítica, verifica condiciones y necesita responder con rapidez. | Personal médico y paramédicos asistenciales (Javier Soto). |
+| Coordinación logística trazable | Humberto Arellán, Gianfranco Timoteo y Karla Pacheco | Monitorea rutas y registros, coordina actores y necesita evidencia auditable. | Coordinador logístico y directores de centros de salud (Dr. Carlos Mendoza). |
 
 ---
 
@@ -608,6 +725,17 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 * **Dolores (Pains):** Incertidumbre ("caja negra") sobre el trato térmico de la muestra durante el trayecto; pérdida de tiempo por actas manuscritas ilegibles.
 * **Necesidades (Gains):** Certificación digital de que la temperatura nunca superó los 8 °C; apertura con token OTP exclusivo y acta PDF con firma criptográfica.
 
+---
+
+### Síntesis de Necesidades Priorizadas
+
+| Prioridad | Necesidad | Criterio de validación |
+|:---:|---|---|
+| 1 | Conocer condición y ubicación de la carga en tiempo casi real. | El usuario identifica estado, vigencia y riesgo sin recurrir a otro canal. |
+| 2 | Recibir alertas accionables y priorizadas. | Cada alerta muestra severidad, causa, impacto, responsable y próximo paso. |
+| 3 | Mantener cadena de custodia verificable. | Cada evento registra fecha, hora, actor y evidencia. |
+| 4 | Coordinar incidentes en un único flujo. | Se asigna responsable, se registra acción y se confirma resolución. |
+| 5 | Cerrar y auditar el traslado. | Se obtiene una línea de tiempo y un reporte de cumplimiento/excepciones. |
 
 <div style="page-break-after: always;"></div>
 
@@ -751,11 +879,73 @@ La sesión exploratoria preliminar del Big Picture permitió delimitar cinco (5)
 4. **Chain of Custody & Traceability:** Verificación de token OTP en geocerca, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
 5. **Identity, Access & Subscriptions (IAM):** Gestión de instituciones hospitalarias, planes SaaS B2B, autenticación JWT basada en roles y trazabilidad de licencias médicas.
 
+---
 
+### **2.4.2. Flujo Detallado de Comandos, Eventos y Políticas de Dominio**
+
+Para complementar la visión macro del lienzo y facilitar la transición hacia el diseño táctico (DDD) y los contratos de software, a continuación se especifican los artefactos canónicos de la técnica:
+
+#### Leyenda de Modelado
+
+| Elemento | Significado | Ejemplo en el Dominio |
+|---|---|---|
+| **Actor** | Persona o rol que inicia una intención o toma una decisión. | Coordinador logístico, Paramédico TEM, Cirujano receptor. |
+| **Comando** | Intención de acción que busca modificar el estado del sistema. | `AsignarRecursosTraslado`, `RegistrarLecturaTelemetria`. |
+| **Evento de Dominio** | Hecho relevante consumado e inmutable expresado en tiempo pasado. | `TrasladoIniciado`, `ExcursionTermicaDetectada`. |
+| **Política / Regla** | Reacción automática ante un evento (*Whenever [Event] Then [Action]*). | Si la temperatura supera 8.0 °C por >2 min, emitir alerta crítica. |
+| **Read Model** | Proyección de datos optimizada para la toma de decisiones. | Tablero de telemetría en vivo, Línea de tiempo de custodia. |
+| **Sistema Externo** | Plataforma de terceros fuera de la frontera transaccional. | GPS / TomTom API, Bróker MQTT, Pasarela Twilio SMS. |
+| **Hotspot** | Riesgo operacional, vacío normativo o punto de fricción técnica. | Falla de señal celular 4G en zanjas viales o túneles de Lima. |
+
+#### Flujo Secuencial de Eventos de Extremo a Extremo
+
+| N.° | Actor / Sistema | Comando | Evento de Dominio Resultante | Read Model o Evidencia Generada |
+|---:|---|---|---|---|
+| 1 | Institución de origen | `SolicitarTraslado` | `TrasladoSolicitado` | Registro de solicitud con tipo de carga médica, origen, destino y prioridad clínica. |
+| 2 | Coordinador de despacho | `ValidarSolicitud` | `SolicitudValidada` | Verificación de viabilidad, disponibilidad horaria y requerimiento térmico (2 °C - 8 °C). |
+| 3 | Coordinador de despacho | `AsignarRecursosTraslado` | `RecursosAsignados` | Asignación de unidad móvil, contenedor inteligente y tripulación asistencial. |
+| 4 | Paramédico asistencial | `VerificarPreparacion` | `PreparacionVerificada` | Lista de chequeo previa: estado de batería LiFePO4, calibración y conexión 12V. |
+| 5 | Personal médico emisor | `RegistrarCargaYSellar` | `CargaRegistrada` / `ContenedorSellado` | Registro de masa inicial en celda HX711 (tara automática) y bloqueo electromecánico de solenoide. |
+| 6 | Paramédico asistencial | `IniciarTraslado` | `TrasladoIniciado` | Registro de hora exacta de salida, geocerca inicial y cálculo dinámico de ETA. |
+| 7 | Contenedor IoT (ESP32) | `PublicarTelemetria` | `TelemetriaRegistrada` | Ingesta de temperatura ambiente/interna, nivel de batería, estado de tapa y coordenadas GPS. |
+| 8 | Motor de Reglas de Negocio | `EvaluarCondiciones` | `CondicionEvaluada` | Validación de cumplimiento estricto del rango térmico e integridad de la ruta. |
+| 9 | Coordinador de despacho | `SupervisarMonitoreo` | `MonitoreoConfirmado` | Tablero de control de flota en tiempo real con semaforización de riesgo. |
+| 10 | Conductor de ambulancia | `RegistrarArribo` | `UnidadArribadaADestino` | Activación de geocerca hospitalaria de pre-arribo (radio ≤ 2 km / 10 min). |
+| 11 | Cirujano / Farmacéutico receptor | `VerificarCarga` | `CondicionFinalVerificada` | Inspección de integridad celular, historial térmico continuo y balance de peso. |
+| 12 | Cirujano / Farmacéutico receptor | `AceptarORechazarEntrega` | `EntregaAceptada` / `EntregaRechazada` | Desbloqueo mediante token dinámico OTP en geocerca y registro de observaciones clínicas. |
+| 13 | Coordinador de despacho | `CerrarTraslado` | `TrasladoCerrado` | Sellado de la línea de tiempo inmutable de custodia. |
+| 14 | Plataforma Web | `GenerarExpedienteAuditoria` | `ExpedienteAuditoriaGenerado` | Exportación de reporte técnico PDF sellado con hash criptográfico SHA-256 para DIGEMID. |
+
+#### Políticas y Rutas Alternativas de Contingencia
+
+* **Desviación Térmica (Excursión Térmica):**
+  * *Evento desencadenante:* `TemperaturaFueraDeRango`.
+  * *Política reactiva:* Si la temperatura interna excede los 8.0 °C o desciende de 2.0 °C durante más de 120 segundos continuos, disparar de inmediato alerta acústica/visual en cabina vehicular y remitir notificación push de máxima severidad a los médicos del hospital receptor.
+  * *Acción correctiva:* Paramédico verifica ventilación y suministro eléctrico del contenedor; se registra la intervención en la bitácora telemática.
+* **Pérdida de Conectividad Celular (Túneles y Zonas de Sombra 4G):**
+  * *Evento desencadenante:* `TelemetriaInterrumpida`.
+  * *Política reactiva:* El microcontrolador ESP32 conmuta autónomamente al búfer de memoria flash interna no volátil (almacenando hasta 5,000 muestras con marca de tiempo del RTC), marcando el read model web con advertencia de última lectura conocida. Al reconectar la red celular 4G, se gatilla `TelemetriaRestablecida` y sincronización secuencial en bloque.
+* **Retraso Crítico por Congestión Vehicular:**
+  * *Evento desencadenante:* `ETAEscedido`.
+  * *Política reactiva:* Reevaluación del tráfico en tiempo real mediante TomTom Traffic API. Si la demora supera los 15 minutos respecto a la ventana de viabilidad del órgano, notificar a la central de despacho para gestionar apoyo vial policial o advertir al equipo quirúrgico receptor.
+* **Apertura No Autorizada de Escotilla:**
+  * *Evento desencadenante:* `AperturaFueraDeGeocercaDetectada`.
+  * *Política reactiva:* Si el sensor magnético detecta separación de la tapa fuera del radio hospitalario autorizado, marcar `CadenaDeCustodiaComprometida`, activar sirena local de seguridad y registrar el incidente con coordenadas geográficas inmediatas.
+
+#### Agregados y Límites del Dominio
+
+| Agregado | Responsabilidad Principal | Eventos de Dominio Clave |
+|---|---|---|
+| **MedicalTransport** | Orquestar el ciclo de vida del traslado, tripulación, ruta y tiempos comprometidos. | `TrasladoSolicitado`, `TrasladoIniciado`, `UnidadArribadaADestino`, `TrasladoCerrado`. |
+| **SmartContainer** | Gestionar el estado operativo del hardware, precinto electromecánico y calibración de sensores. | `ContenedorSellado`, `TapaAperturada`, `SuministroConmutadoLiFePO4`. |
+| **MedicalPayload** | Salvaguardar la identificación de la carga biológica, condiciones requeridas y verificación médica. | `CargaRegistrada`, `CondicionFinalVerificada`, `EntregaAceptada`. |
+| **TelemetryMonitoring**| Ingestar series temporales de temperatura, humedad, peso neto HX711 y posicionamiento GPS. | `TelemetriaRegistrada`, `CondicionEvaluada`, `MuestraSincronizada`. |
+| **IncidentAlert** | Gestionar el ciclo de vida de anomalías térmicas y operativas, asignación de responsables y mitigación. | `AlertaGenerada`, `AccionMitigacionRegistrada`, `IncidenteResuelto`. |
+| **ChainOfCustody** | Preservar el registro inmutable de transferencias de custodia con firmas electrónicas y token OTP. | `CustodiaTransferida`, `EntregaConfirmada`, `ActaFirmada`. |
 
 <div style="page-break-after: always;"></div>
 
-# 2.5. Ubiquitous Language
+﻿# 2.5. Ubiquitous Language
 
 En esta sección se establece el glosario formal de términos y conceptos del dominio del negocio (*Smart Medical Container*), garantizando una comunicación unívoca, rigurosa y libre de ambigüedades entre los dos segmentos clave del negocio (las **empresas de transporte y operadores logísticos de cadena de frío**, y los **centros de salud y cadenas farmacéuticas** receptoras), las entidades reguladoras peruanas (MINSA, DIGEMID, DIGDOT) y el equipo de desarrollo de software.
 
@@ -1020,10 +1210,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
-
 <div style="page-break-after: always;"></div>
-
-# Capítulo III: Requirements Specification
 
 # 3.1. User Stories
 
@@ -1043,25 +1230,345 @@ Todos los criterios de aceptación siguen la especificación **Gherkin** (Dado q
 | **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial, deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | **Dado que** el visitante ingresa al centro de ayuda del sitio web,<br>**Cuando** selecciona la categoría de hardware y sensores IoT,<br>**Entonces** el sistema muestra las respuestas estructuradas sobre la cadena de frío y conectividad. | EP02 |
 | **EP03** | Container & Ambulance Provisioning | Épica para el alta, configuración y vinculación de contenedores IoT y unidades de ambulancia. | N/A | N/A |
 | **US07** | Alta de Unidades de Ambulancia | Como operador logístico de salud, deseo registrar vehículos de transporte en el sistema para asociarles contenedores de insumos. | **Dado que** el operador logístico ha iniciado sesión,<br>**Cuando** ingresa los datos de identificación y matrícula de la ambulancia,<br>**Entonces** el sistema registra el vehículo en el inventario activo de la institución. | EP03 |
-| **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión de la carga. | **Dado que** el operador selecciona una ambulancia disponible,<br>**When** ingresa el identificador único del contenedor inteligente,<br>**Then** el sistema asigna el dispositivo al vehículo y habilita la recepción de telemetría. | EP03 |
-| **US09** | Ingesta de Telemetría IoT (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/containers/{containerId}/telemetry` para registrar datos térmicos y de estado. | **Dado que** el contenedor transmite un payload con temperatura, peso, apertura y batería,<br>**When** la API valida y procesa la estructura de datos,<br>**Then** almacena la lectura en la base de datos y responde con HTTP 201 Created. | EP03 |
+| **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión de la carga. | **Dado que** el operador selecciona una ambulancia disponible,<br>**Cuando** ingresa el identificador único del contenedor inteligente,<br>**Entonces** el sistema asigna el dispositivo al vehículo y habilita la recepción de telemetría. | EP03 |
+| **US09** | Ingesta de Telemetría IoT (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/containers/{containerId}/telemetry` para registrar datos térmicos y de estado. | **Dado que** el contenedor transmite un payload con temperatura, peso, apertura y batería,<br>**Cuando** la API valida y procesa la estructura de datos,<br>**Entonces** almacena la lectura en la base de datos y responde con HTTP 201 Created. | EP03 |
 | **EP04** | Real-Time Environmental & Fleet Monitoring | Épica centrada en la supervisión continua de temperatura, inventario por peso, GPS, combustible y ETA. | N/A | N/A |
-| **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | **Dado que** la ambulancia se encuentra en ruta de traslado,<br>**When** los sensores del contenedor registran cambios térmicos o de escotilla,<br>**Then** la plataforma actualiza de forma inmediata las lecturas en la vista de monitoreo. | EP04 |
-| **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia, deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | **Dado que** el usuario médico consulta el detalle del contenedor,<br>**When** se retira o ingresa un insumo médico,<br>**Then** el sistema calcula la diferencia de masa y actualiza el estimado de stock en la plataforma. | EP04 |
-| **US12** | Consulta de Telemetría e Indicadores (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/containers/{containerId}/metrics` para alimentar la vista del panel web. | **Dado que** el cliente web solicita el estado actual de un contenedor,<br>**When** la API procesa la petición con un identificador válido,<br>**Then** responde con código HTTP 200 y el objeto JSON con las últimas mediciones. | EP04 |
+| **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | **Dado que** la ambulancia se encuentra en ruta de traslado,<br>**Cuando** los sensores del contenedor registran cambios térmicos o de escotilla,<br>**Entonces** la plataforma actualiza de forma inmediata las lecturas en la vista de monitoreo. | EP04 |
+| **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia, deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | **Dado que** el usuario médico consulta el detalle del contenedor,<br>**Cuando** se retira o ingresa un insumo médico,<br>**Entonces** el sistema calcula la diferencia de masa y actualiza el estimado de stock en la plataforma. | EP04 |
+| **US12** | Consulta de Telemetría e Indicadores (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/containers/{containerId}/metrics` para alimentar la vista del panel web. | **Dado que** el cliente web solicita el estado actual de un contenedor,<br>**Cuando** la API procesa la petición con un identificador válido,<br>**Entonces** responde con código HTTP 200 y el objeto JSON con las últimas mediciones. | EP04 |
 | **EP05** | Incident Alerts & Medical Dispatch | Épica para la gestión y notificación de incidentes críticos como variaciones térmicas o retrasos. | N/A | N/A |
-| **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | **Dado que** el supervisor edita los parámetros de conservación de una carga sensible,<br>**When** guarda los límites mínimos y máximos de temperatura,<br>**Then** el sistema registra la regla de negocio para la emisión de alertas. | EP05 |
-| **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud, deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | **Dado que** un sensor detecta una anomalía de temperatura o nivel crítico de batería,<br>**When** el evento es registrado por el sistema,<br>**Then** la plataforma notifica la alerta priorizada en el panel del operador. | EP05 |
-| **US15** | Servicio de Despacho de Alertas (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/alerts/dispatch` para procesar notificaciones de emergencia. | **Dado que** la regla de negocio detecta la ruptura de la cadena de frío,<br>**When** la API ejecuta el servicio de despacho,<br>**Then** genera la notificación correspondiente y retorna un código HTTP 202 Accepted. | EP05 |
+| **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | **Dado que** el supervisor edita los parámetros de conservación de una carga sensible,<br>**Cuando** guarda los límites mínimos y máximos de temperatura,<br>**Entonces** el sistema registra la regla de negocio para la emisión de alertas. | EP05 |
+| **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud, deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | **Dado que** un sensor detecta una anomalía de temperatura o nivel crítico de batería,<br>**Cuando** el evento es registrado por el sistema,<br>**Entonces** la plataforma notifica la alerta priorizada en el panel del operador. | EP05 |
+| **US15** | Servicio de Despacho de Alertas (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/alerts/dispatch` para procesar notificaciones de emergencia. | **Dado que** la regla de negocio detecta la ruptura de la cadena de frío,<br>**Cuando** la API ejecuta el servicio de despacho,<br>**Entonces** genera la notificación correspondiente y retorna un código HTTP 202 Accepted. | EP05 |
 | **EP06** | Chain of Custody & Audit Reports | Épica orientada al registro histórico, trazabilidad de la cadena de custodia y reportes de auditoría. | N/A | N/A |
-| **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario, deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | **Dado que** un traslado médico ha finalizado,<br>**When** el supervisor solicita la consolidación del informe de auditoría,<br>**Then** el sistema genera un reporte con la gráfica de temperatura, aperturas y tiempos de traslado. | EP06 |
-| **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia, deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | **Dado que** la ambulancia arriba a la institución de destino,<br>**When** el profesional de salud confirma la recepción satisfactoria de la carga,<br>**Then** el sistema sella el registro histórico con fecha, hora y responsable de recepción. | EP06 |
-| **US18** | Consulta de Historial de Traslados (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría. | **Dado que** se requiere auditar un traslado finalizado,<br>**When** la API procesa la consulta con el identificador de traslado,<br>**Then** devuelve un código HTTP 200 con el historial de eventos y datos de telemetría. | EP06 |
+| **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario, deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | **Dado que** un traslado médico ha finalizado,<br>**Cuando** el supervisor solicita la consolidación del informe de auditoría,<br>**Entonces** el sistema genera un reporte con la gráfica de temperatura, aperturas y tiempos de traslado. | EP06 |
+| **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia, deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | **Dado que** la ambulancia arriba a la institución de destino,<br>**Cuando** el profesional de salud confirma la recepción satisfactoria de la carga,<br>**Entonces** el sistema sella el registro histórico con fecha, hora y responsable de recepción. | EP06 |
+| **US18** | Consulta de Historial de Traslados (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría. | **Dado que** se requiere auditar un traslado finalizado,<br>**Cuando** la API procesa la consulta con el identificador de traslado,<br>**Entonces** devuelve un código HTTP 200 con el historial de eventos y datos de telemetría. | EP06 |
 
+
+En esta sección se especifican las 18 historias de usuario (User Stories) que definen el alcance funcional del ecosistema **NeonCode**. La arquitectura funcional abarca la plataforma web responsive para supervisión hospitalaria y logística, el sitio web público (Landing Page) orientado a la captación de clientes institucionales, y los servicios backend RESTful API para la ingesta y procesamiento de telemetría IoT de contenedores médicos inteligentes.
+
+Todos los criterios de aceptación están redactados en español bajo el estándar **Gherkin** (Dado que / Cuando / Entonces), estructurados en modo orientado a escenarios (*scenario-oriented*), cubriendo flujos exitosos, excepciones y reglas del dominio de la salud.
+
+---
+
+### Epic 01: Identity & Access Management (EP01)
+
+#### **US01: Registro de Institución de Salud**
+* **Título:** Registro de Institución de Salud.
+* **Descripción:** Como supervisor hospitalario, deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores térmicos inteligentes.
+* **Relacionado con:** EP01
+* **Criterios de Aceptación:**
+    * **Escenario 1: Registro exitoso de institución (Happy Path)**
+        * **Dado que** la institución de salud no cuenta con una cuenta previa en el sistema.
+        * **Cuando** el usuario ingresa una Razón Social válida, el número de identificación tributaria (RUC) activo, una dirección de correo institucional corporativo y establece una contraseña que cumpla con los estándares de seguridad (mínimo 8 caracteres, mayúscula, número y carácter especial).
+        * **Entonces** el sistema crea la cuenta institucional en estado pendiente de verificación y despacha un correo electrónico con un enlace de confirmación al correo proporcionado.
+    * **Escenario 2: Intento de registro con identificación tributaria duplicada**
+        * **Dado que** ya existe un centro médico registrado con el mismo RUC en la base de datos.
+        * **Cuando** el usuario intenta registrarse utilizando dicho número de RUC.
+        * **Entonces** el sistema rechaza la solicitud, no genera registros nuevos y notifica que la institución ya se encuentra registrada en la plataforma.
+    * **Escenario 3: Validación de formato de correo no corporativo**
+        * **Dado que** el usuario ingresa un correo de un dominio público no permitido (ej. @gmail.com, @hotmail.com).
+        * **Cuando** intenta enviar el formulario de registro.
+        * **Entonces** el sistema bloquea el registro e indica que debe utilizar un dominio de correo institucional.
+
+---
+
+#### **US02: Autenticación de Personal de Emergencia**
+* **Título:** Autenticación de Personal de Emergencia.
+* **Descripción:** Como personal médico de emergencia, deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real durante un traslado.
+* **Relacionado con:** EP01
+* **Criterios de Aceptación:**
+    * **Escenario 1: Inicio de sesión exitoso**
+        * **Dado que** el usuario médico cuenta con credenciales activas y confirmadas.
+        * **Cuando** ingresa su usuario registrado y contraseña correcta.
+        * **Entonces** el sistema valida la identidad, inicia la sesión de usuario y concede acceso inmediato al panel de supervisión de unidades asignadas.
+    * **Escenario 2: Intento de acceso con contraseña errónea**
+        * **Dado que** el usuario ingresa una contraseña incorrecta para una cuenta existente.
+        * **Cuando** solicita iniciar sesión.
+        * **Entonces** el sistema deniega el acceso y muestra un mensaje genérico de credenciales inválidas.
+    * **Escenario 3: Bloqueo de cuenta por intentos fallidos recurrentes**
+        * **Dado que** un usuario acumula 5 intentos fallidos consecutivos de inicio de sesión.
+        * **Cuando** realiza el quinto intento incorrecto.
+        * **Entonces** el sistema bloquea temporalmente la cuenta por un periodo de 15 minutos y envía una alerta de seguridad al correo registrado.
+
+---
+
+#### **US03: Endpoint de Autenticación de Usuarios (API)**
+* **Título:** Endpoint de Autenticación de Usuarios (API).
+* **Descripción:** Como Developer, deseo disponer de un endpoint `POST /api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión seguros para las aplicaciones clientes.
+* **Relacionado con:** EP01
+* **Criterios de Aceptación:**
+    * **Escenario 1: Petición de autenticación válida**
+        * **Dado que** la aplicación cliente envía una solicitud `POST /api/v1/authentication/sign-in` con un cuerpo JSON conteniendo `username` y `password` válidos.
+        * **Cuando** la API procesa y verifica las credenciales en la base de datos.
+        * **Entonces** responde con un código `HTTP 200 OK`, retornando en la respuesta un objeto JSON con el token JWT de sesión, la fecha de expiración y los roles asociados.
+    * **Escenario 2: Credenciales inválidas o inexistentes**
+        * **Dado que** el cuerpo de la solicitud contiene credenciales que no coinciden con ningún usuario activo.
+        * **Cuando** la API procesa la petición.
+        * **Entonces** responde con un código `HTTP 401 Unauthorized` y una estructura JSON estándar de error detallando la denegación de acceso.
+    * **Escenario 3: Solicitud con estructura de payload malformada**
+        * **Dado que** el cliente envía una petición omitiendo campos requeridos en el JSON.
+        * **Cuando** la API ejecuta la validación de entrada.
+        * **Entonces** responde con un código `HTTP 400 Bad Request` indicando las reglas de validación no cumplidas.
+
+---
+
+### Epic 02: Landing Page & Brand Awareness (EP02)
+
+#### **US04: Exploración de Propuesta de Valor Logística**
+* **Título:** Exploración de Propuesta de Valor Logística.
+* **Descripción:** Como visitante comercial, deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación en mi centro de salud.
+* **Relacionado con:** EP02
+* **Criterios de Aceptación:**
+    * **Escenario 1: Despliegue de especificaciones técnicas e información de solución**
+        * **Dado que** el visitante ingresa al portal público de NeonCode.
+        * **Cuando** explora la sección de soluciones para transporte y conservación médica.
+        * **Entonces** el sistema presenta la información sobre el rango de control térmico (-20°C a +8°C), autonomía energética, capacidad de sensores de masa/apertura y los planes de suscripción disponibles.
+    * **Escenario 2: Disponibilidad y tiempo de respuesta del portal**
+        * **Dado que** el visitante solicita la navegación dentro de la plataforma pública.
+        * **Cuando** la página carga sus contenidos.
+        * **Entonces** los activos de información sobre las características IoT deben renderizarse completamente en un tiempo no mayor a 2 segundos bajo conexiones estándar.
+
+---
+
+#### **US05: Solicitud de Demostración Corporativa**
+* **Título:** Solicitud de Demostración Corporativa.
+* **Descripción:** Como visitante comercial, deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario.
+* **Relacionado con:** EP02
+* **Criterios de Aceptación:**
+    * **Escenario 1: Envío exitoso de solicitud de demo**
+        * **Dado que** el visitante completa los campos obligatorios del formulario (Nombre, Cargo, Nombre de la Institución, Correo Corporativo, Teléfono y Tamaño de Flota).
+        * **Cuando** ejecuta el envío del formulario.
+        * **Entonces** el sistema almacena los datos en el módulo de prospectos y envía automáticamente un correo de confirmación de recepción al visitante y una notificación al equipo de ventas.
+    * **Escenario 2: Intento de envío con datos incompletos**
+        * **Dado que** el visitante omite llenar alguno de los campos obligatorios.
+        * **Cuando** intenta enviar el formulario de contacto.
+        * **Entonces** el sistema detiene el proceso de envío y notifica de manera específica cuáles campos deben ser completados.
+
+---
+
+#### **US06: Consulta de Preguntas Frecuentes (FAQ)**
+* **Título:** Consulta de Preguntas Frecuentes.
+* **Descripción:** Como visitante comercial, deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración del hardware IoT en ambulancias.
+* **Relacionado con:** EP02
+* **Criterios de Aceptación:**
+    * **Escenario 1: Filtrado y visualización de categorías de ayuda**
+        * **Dado que** el visitante accede a la sección de soporte del Landing Page.
+        * **Cuando** selecciona la categoría de "Hardware y Sensores IoT".
+        * **Entonces** el sistema despliega las preguntas y respuestas vinculadas a la homologación de la batería, calibración de sensores de temperatura y soporte de conectividad móvil en ambulancias.
+    * **Escenario 2: Búsqueda de palabras clave en el centro de ayuda**
+        * **Dado que** el usuario ingresa un término de búsqueda (ej. "Cadena de frío").
+        * **Cuando** procesa la consulta en la barra de búsqueda de FAQ.
+        * **Entonces** el sistema filtra y expone únicamente aquellos elementos cuya pregunta o respuesta contengan la palabra clave consultada.
+
+---
+
+### Epic 03: Container & Ambulance Provisioning (EP03)
+
+#### **US07: Alta de Unidades de Ambulancia**
+* **Título:** Alta de Unidades de Ambulancia.
+* **Descripción:** Como operador logístico de salud, deseo registrar vehículos de transporte en el sistema para asociarles posteriormente contenedores de insumos.
+* **Relacionado con:** EP03
+* **Criterios de Aceptación:**
+    * **Escenario 1: Registro exitoso de ambulancia**
+        * **Dado que** el operador logístico se encuentra autenticado con un rol con permisos de gestión de inventario.
+        * **Cuando** registra el código de placa del vehículo, el tipo de unidad (SVA/SVB) y el modelo de la ambulancia.
+        * **Entonces** el sistema valida que la placa no esté registrada previamente, guarda el nuevo vehículo y le asigna el estado "Disponible sin contenedor".
+    * **Escenario 2: Intento de registro con placa duplicada**
+        * **Dado que** la placa de la ambulancia ya se encuentra registrada para la misma institución.
+        * **Cuando** el operador intenta guardar el registro.
+        * **Entonces** el sistema impide la creación del duplicado y envía una alerta de conflicto de identificación del vehículo.
+
+---
+
+#### **US08: Vinculación de Contenedor Inteligente**
+* **Título:** Vinculación de Contenedor Inteligente.
+* **Descripción:** Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión activa de la carga médica.
+* **Relacionado con:** EP03
+* **Criterios de Aceptación:**
+    * **Escenario 1: Vinculación exitosa de contenedor a vehículo**
+        * **Dado que** se dispone de una ambulancia registrada en estado "Disponible sin contenedor" y un contenedor inteligente en estado "Inactivo/Desvinculado".
+        * **Cuando** el operador selecciona la unidad de ambulancia y digita el identificador físico (UUID/MAC) del contenedor IoT.
+        * **Entonces** el sistema establece la relación entre ambos componentes, cambia el estado de la ambulancia a "Monitoreo Activo" y habilita la recepción de paquetes de telemetría para dicha combinación.
+    * **Escenario 2: Intento de vinculación de un contenedor previamente asignado**
+        * **Dado que** el contenedor IoT ya se encuentra asignado a otra unidad activa.
+        * **Cuando** el operador intenta asociarlo a una nueva ambulancia.
+        * **Entonces** el sistema rechaza la operación e indica que el contenedor debe ser desvinculado de su unidad origen antes de una nueva asignación.
+
+---
+
+#### **US09: Ingesta de Telemetría IoT (API)**
+* **Título:** Ingesta de Telemetría IoT (API).
+* **Descripción:** Como Developer, deseo contar con un endpoint `POST /api/v1/containers/{containerId}/telemetry` para registrar periódicamente datos térmicos, de peso y estado del contenedor.
+* **Relacionado con:** EP03
+* **Criterios de Aceptación:**
+    * **Escenario 1: Recepción e ingesta de payload de telemetría válido**
+        * **Dado que** un contenedor IoT autenticado transmite un `POST` al endpoint especificando un `{containerId}` válido y un payload con `temperature`, `weight`, `doorStatus`, `batteryLevel` y `timestamp`.
+        * **Cuando** la API procesa y valida que los valores numéricos están dentro de rangos físicamente posibles.
+        * **Entonces** registra la lectura en la base de datos de series temporales y responde con un código `HTTP 201 Created`.
+    * **Escenario 2: Envío de lectura con identificador de contenedor inexistente**
+        * **Dado que** el hardware transmite datos utilizando un `{containerId}` no registrado en la plataforma.
+        * **Cuando** la API evalúa la solicitud.
+        * **Entonces** descarta el registro y responde con un código `HTTP 404 Not Found`.
+    * **Escenario 3: Petición sin token de autenticación de dispositivo**
+        * **Dado que** la solicitud HTTP carece de la cabecera de autenticación del dispositivo IoT (`X-Device-Token`).
+        * **Cuando** la API recibe la transmisión.
+        * **Entonces** rechaza la conexión con un código `HTTP 401 Unauthorized`.
+
+---
+
+### Epic 04: Real-Time Environmental & Fleet Monitoring (EP04)
+
+#### **US10: Monitoreo Térmico y de Apertura**
+* **Título:** Monitoreo Térmico y de Apertura.
+* **Descripción:** Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de la escotilla del contenedor para garantizar la conservación del paquete médico durante el trayecto.
+* **Relacionado con:** EP04
+* **Criterios de Aceptación:**
+    * **Escenario 1: Visualización en tiempo real de variables ambientales**
+        * **Dado que** el contenedor inteligente está vinculado a una ambulancia en ruta.
+        * **Cuando** los sensores del dispositivo emiten una nueva lectura de temperatura o detectan el cambio en la escotilla (abierta/cerrada).
+        * **Entonces** el sistema procesa el evento y actualiza de manera inmediata la información expuesta en el panel de supervisión sin requerir la recarga manual de la página.
+    * **Escenario 2: Indicación visual de pérdida de señal de telemetría**
+        * **Dado que** un contenedor activo deja de transmitir telemetría durante más de 3 minutos debido a fallas de cobertura.
+        * **Cuando** se cumple el tiempo límite de inactividad.
+        * **Entonces** el sistema marca el estado de la conexión como "Sin Señal / Desconectado" y registra la hora de última lectura recibida.
+
+---
+
+#### **US11: Control de Stock por Sensores de Peso**
+* **Título:** Control de Stock por Sensores de Peso.
+* **Descripción:** Como personal médico de emergencia, deseo verificar la disponibilidad y retiro de insumos mediante sensores de peso para confirmar existencias en tiempo real.
+* **Relacionado con:** EP04
+* **Criterios de Aceptación:**
+    * **Escenario 1: Detección y cálculo de retiro de insumo médico**
+        * **Dado que** el contenedor tiene registrado un inventario con un peso base total de 5.00 kg.
+        * **Cuando** el personal médico abre la escotilla y retira un paquete de insumos de 0.50 kg.
+        * **Entonces** el sistema detecta la variación de peso tras el cierre de la escotilla, calcula la diferencia de masa y descuenta la unidad del inventario estimado.
+    * **Escenario 2: Notificación por inconsistencia de masa no registrada**
+        * **Dado que** la variación de peso registrada no coincide con el peso promedio de los insumos parametrizados.
+        * **Cuando** se procesa la lectura.
+        * **Entonces** el sistema genera una observación en la bitácora de la ruta indicando "Divergencia de peso no clasificada".
+
+---
+
+#### **US12: Consulta de Telemetría e Indicadores (API)**
+* **Título:** Consulta de Telemetría e Indicadores (API).
+* **Descripción:** Como Developer, deseo disponer de un endpoint `GET /api/v1/containers/{containerId}/metrics` para proveer las últimas mediciones consolidadas a la interfaz de usuario.
+* **Relacionado con:** EP04
+* **Criterios de Aceptación:**
+    * **Escenario 1: Consulta exitosa de métricas actuales**
+        * **Dado que** la aplicación de supervisión consulta la API con un `{containerId}` válido y activo.
+        * **Cuando** la API procesa la petición de lectura.
+        * **Entonces** responde con un código `HTTP 200 OK` retornando un objeto JSON con la última lectura de temperatura, nivel de batería, estado de escotilla, peso y fecha/hora de sincronización.
+    * **Escenario 2: Consulta sobre contenedor sin lecturas previas**
+        * **Dado que** el contenedor existe pero no ha registrado aún lecturas de telemetría.
+        * **Cuando** se ejecuta la consulta GET al endpoint.
+        * **Entonces** la API responde con un código `HTTP 200 OK` entregando la estructura con valores nulos y un indicador de estado "Sin datos registrados".
+
+---
+
+### Epic 05: Incident Alerts & Medical Dispatch (EP05)
+
+#### **US13: Configuración de Umbrales Térmicos Críticos**
+* **Título:** Configuración de Umbrales Térmicos Críticos.
+* **Descripción:** Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos (mínimo y máximo) para recibir avisos preventivos ante desviaciones en la cadena de frío.
+* **Relacionado con:** EP05
+* **Criterios de Aceptación:**
+    * **Escenario 1: Guardado correcto de límites de tolerancia térmica**
+        * **Dado que** el supervisor accede a la configuración de parámetros de conservación de una carga sensible (ej. Órganos o vacunas).
+        * **Cuando** define una temperatura mínima de 2°C y una temperatura máxima de 8°C y solicita guardar la regla.
+        * **Entonces** el sistema almacena la configuración de umbrales y la asocia a las evaluaciones en tiempo real del contenedor asignado.
+    * **Escenario 2: Validación de rango térmico inconsistente**
+        * **Dado que** el supervisor intenta ingresar un valor de temperatura mínima que es igual o mayor a la temperatura máxima definida.
+        * **Cuando** procesa la solicitud de guardado.
+        * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser strictly menor al límite máximo.
+
+---
+
+#### **US14: Visualización de Alertas en Ruta**
+* **Título:** Visualización de Alertas en Ruta.
+* **Descripción:** Como operador logístico de salud, deseo recibir avisos prioritarios de variaciones térmicas o apertura no autorizada para ejecutar acciones correctivas inmediatas.
+* **Relacionado con:** EP05
+* **Criterios de Aceptación:**
+    * **Escenario 1: Generación de alerta por ruptura de la cadena de frío**
+        * **Dado que** el contenedor tiene un rango configurado entre 2°C y 8°C.
+        * **Cuando** la telemetría reporta una lectura de 9.5°C persistente durante más de 60 segundos.
+        * **Entonces** el sistema genera una alerta de prioridad alta "Ruptura de Cadena de Frío", la registra en la bitácora del traslado y la notifica en el panel del operador.
+    * **Escenario 2: Generación de alerta por apertura prolongada de escotilla**
+        * **Dado que** el contenedor se encuentra en traslado con la escotilla en estado "Abierta".
+        * **Cuando** el tiempo de apertura continua excede los 120 segundos.
+        * **Entonces** el sistema emite una alerta de advertencia "Escotilla Abierta Prolongada" dirigida al personal médico de la unidad.
+
+---
+
+#### **US15: Servicio de Despacho de Alertas (API)**
+* **Título:** Servicio de Despacho de Alertas (API).
+* **Descripción:** Como Developer, deseo contar con un endpoint `POST /api/v1/alerts/dispatch` para procesar y canalizar notificaciones de eventos críticos hacia servicios externos.
+* **Relacionado con:** EP05
+* **Criterios de Aceptación:**
+    * **Escenario 1: Procesamiento y despacho exitoso de evento de alerta**
+        * **Dado que** el motor de reglas detecta un evento anómalo y envía la estructura JSON de la alerta con el nivel de severidad, ID de contenedor y tipo de anomalía.
+        * **Cuando** la API procesa la solicitud de despacho.
+        * **Entonces** registra la incidencia en la base de datos, encola el envío de correo/SMS y responde con un código `HTTP 202 Accepted`.
+    * **Escenario 2: Petición de despacho con campos obligatorios faltantes**
+        * **Dado que** la solicitud omitió el nivel de severidad (`severityLevel`) o el identificador del evento (`eventId`).
+        * **Cuando** la API evalúa la estructura del mensaje.
+        * **Entonces** detiene la ejecución y devuelve un código `HTTP 400 Bad Request`.
+
+---
+
+### Epic 06: Chain of Custody & Audit Reports (EP06)
+
+#### **US16: Generación de Reportes de Trazabilidad**
+* **Título:** Generación de Reportes de Trazabilidad.
+* **Descripción:** Como supervisor hospitalario, deseo exportar el informe consolidado del traslado médico para certificar el cumplimiento normativo de la cadena de frío.
+* **Relacionado con:** EP06
+* **Criterios de Aceptación:**
+    * **Escenario 1: Exportación exitosa de informe de trazabilidad**
+        * **Dado que** un traslado médico ha sido marcado como "Finalizado".
+        * **Cuando** el supervisor solicita la generación del reporte consolidado de trazabilidad en formato PDF.
+        * **Entonces** el sistema compila la gráfica temporal de variaciones de temperatura, el registro de apertura de escotillas, el historial de peso y el resumen de alertas emitidas durante la ruta.
+    * **Escenario 2: Intento de generación de reporte en traslado en curso**
+        * **Dado que** el traslado aún se encuentra en estado "En Ruta / Activo".
+        * **Cuando** el supervisor intenta consolidar el reporte final de auditoría.
+        * **Entonces** el sistema bloquea la emisión final e indica que únicamente se pueden generar reportes parciales o preliminares mientras el traslado siga abierto.
+
+---
+
+#### **US17: Confirmación de Entrega y Cadena de Custodia**
+* **Título:** Confirmación de Entrega y Cadena de Custodia.
+* **Descripción:** Como personal médico de emergencia, deseo registrar la recepción del contenedor en el punto de destino para cerrar formalmente la cadena de custodia del envío.
+* **Relacionado con:** EP06
+* **Criterios de Aceptación:**
+    * **Escenario 1: Cierre exitoso y sellado de cadena de custodia**
+        * **Dado que** la ambulancia ha arribado al centro hospitalario de destino.
+        * **Cuando** el profesional médico receptor valida el paquete, firma digitalmente la recepción y confirma la entrega en el sistema.
+        * **Entonces** la plataforma actualiza el estado del traslado a "Entregado", sella el registro histórico inmutable con la fecha, hora exacta y la identidad del receptor, liberando el contenedor para una nueva asignación.
+    * **Escenario 2: Cierre de traslado con alertas no resueltas**
+        * **Dado que** el traslado cuenta con alertas de temperatura críticas sin justificación o resolución previa.
+        * **Cuando** se intenta cerrar la cadena de custodia.
+        * **Entonces** el sistema exige al usuario ingresar una observación de cierre obligatoria detallando las condiciones en las que se recibe la carga antes de permitir la finalización del servicio.
+
+---
+
+#### **US18: Consulta de Historial de Traslados (API)**
+* **Título:** Consulta de Historial de Traslados (API).
+* **Descripción:** Como Developer, deseo disponer de un endpoint `GET /api/v1/transfers/{transferId}/audit` para recuperar el registro completo de auditoría y eventos de un traslado.
+* **Relacionado con:** EP06
+* **Criterios de Aceptación:**
+    * **Escenario 1: Recuperación de registro de auditoría completo**
+        * **Dado que** se requiere auditar un traslado con un `{transferId}` existente.
+        * **Cuando** la API procesa la solicitud `GET /api/v1/transfers/{transferId}/audit` con credenciales de auditor o supervisor.
+        * **Entonces** devuelve un código `HTTP 200 OK` con un objeto JSON conteniendo el resumen del trayecto, tiempos de inicio y fin, datos del receptor y la serie temporal completa de la telemetría registrada.
+    * **Escenario 2: Intento de consulta de auditoría con identificador inexistente**
+        * **Dado que** la solicitud utiliza un `{transferId}` que no existe en el registro histórico.
+        * **Cuando** la API busca el expediente.
+        * **Entonces** responde con un código `HTTP 404 Not Found` notificando la inexistencia del registro.
 
 <div style="page-break-after: always;"></div>
 
-# 3.2. Impact Mapping
+﻿# 3.2. Impact Mapping
 
 El **Impact Mapping** es una técnica de planificación estratégica que conecta los objetivos de negocio de la startup **NeonCode** con las entregas de software para la supervisión de contenedores médicos inteligentes. Este mapa permite priorizar las funcionalidades que generan un impacto directo en el comportamiento de nuestros segmentos objetivo: Personal Médico de Emergencias, Operadores Logísticos de Salud, Supervisores Hospitalarios y Visitantes Comerciales.
 
@@ -1126,7 +1633,6 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 #### Impact Map Goal 2
 <img src="assets/chapter-3/impact-map-goal-2.png" alt="Impact Map Goal 2" width="600">
 
-
 <div style="page-break-after: always;"></div>
 
 # 3.3. Product Backlog
@@ -1157,56 +1663,93 @@ El backlog se encuentra organizado secuencialmente para guiar el desarrollo de l
 | **18** | EP06 | **US17** | Confirmación de Entrega y Cadena de Custodia | 3 | Sprint 4 |
 
 ---
+### 3.3.1.Engineering Tasks
 
-### Resumen de Estimación y Velocidad por Sprint
+A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales) en tareas de ingeniería (*Engineering Tasks*). Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
 
-* **Sprint 1 (Fundación e Identidad):** 16 Story Points (US01, US02, US03, US04, US05, US06)
-* **Sprint 2 (Ingesta IoT y Monitoreo Base):** 29 Story Points (US07, US08, US09, US10, US12)
-* **Sprint 3 (Alertas e Inventario Avanzado):** 21 Story Points (US11, US13, US14, US15)
-* **Sprint 4 (Trazabilidad y Auditoría):** 16 Story Points (US16, US17, US18)
-* **Total del Product Backlog:** 82 Story Points
+#### **US04: Exploración de Propuesta de Valor Logística (2 SP)**
+* **TSK-04-01:** Maquetación responsive de la sección "Soluciones Logísticas" en el Landing Page (HTML5 / Tailwind CSS). **[6 Horas]**
+* **TSK-04-02:** Integración de componentes visuales interactivos para especificaciones técnicas del contenedor inteligente. **[4 Horas]**
 
+#### **US05: Solicitud de Demostración Corporativa (2 SP)**
+* **TSK-05-01:** Desarrollo del formulario de contacto para clientes corporativos con validación de campos en cliente (JavaScript/TypeScript). **[5 Horas]**
+* **TSK-05-02:** Configuración del servicio backend/mailing para la recepción y reenvío de prospectos a ventas. **[6 Horas]**
+
+#### **US06: Consulta de Preguntas Frecuentes (1 SP)**
+* **TSK-06-01:** Implementación del componente acordeón de FAQ y buscador por palabra clave en el Landing Page. **[4 Horas]**
+
+#### **US01: Registro de Institución de Salud (3 SP)**
+* **TSK-01-01:** Diseño y maquetación del formulario web de registro institucional hospitalario. **[5 Horas]**
+* **TSK-01-02:** Creación de endpoints en API REST para recepción de datos de registro y validación de RUC duplicado. **[7 Horas]**
+* **TSK-01-03:** Implementación del servicio de envío de correos electrónicos de confirmación de cuenta. **[4 Horas]**
+
+#### **US07: Alta de Unidades de Ambulancia (3 SP)**
+* **TSK-07-01:** Creación del modelo de datos de Ambulancias en la base de datos MySQL Server 8.0 (InnoDB) mediante Entity Framework Core 10.0. **[4 Horas]**
+* **TSK-07-02:** Desarrollo de endpoints CRUD para el registro y consulta de vehículos de transporte. **[6 Horas]**
+* **TSK-07-03:** Interfaz web para el formulario de registro y lista de unidades registradas. **[6 Horas]**
+
+#### **US08: Vinculación de Contenedor Inteligente (5 SP)**
+* **TSK-08-01:** Desarrollo del módulo backend de asignación física (relación 1:1 entre ambulancia y contenedor IoT). **[8 Horas]**
+* **TSK-08-02:** Validación de estados del dispositivo (bloqueo de reasignación si está ocupado). **[5 Horas]**
+* **TSK-08-03:** Interfaz web para vinculación mediante lectura o digitación del UUID/MAC del contenedor. **[6 Horas]**
 
 <div style="page-break-after: always;"></div>
 
-# Capítulo IV: Product Design
-
 # 4.1. Style Guidelines
-Un "Style Guideline" es un conjunto de directrices y normas que establecen los estándares y criterios a seguir en la redacción, diseño y presentación de documentos, contenido web, software y otros productos creativos. A continuación, se presentan las especificaciones detalladas de los parámetros implementados en la estructura de **Medical SmartBox**.
+
+Un *Style Guideline* es un conjunto de directrices y normas que establecen los estándares visuales, de interacción y de presentación que rigen el ecosistema digital de **Medical SMARTBOX**. Las especificaciones aseguran coherencia estética, usabilidad rigurosa y máxima legibilidad de datos telemétricos críticos tanto en la aplicación web de monitoreo como en el sitio web de divulgación comercial (Landing Page).
 
 ## 4.1.1. General Style Guidelines
 
 ### Branding
-Para el desarrollo de la identidad de Medical SmartBox, hemos elegido un diseño que encapsula la esencia de la logística médica y la monitorización de precisión. El logotipo y la interfaz presentan una estética limpia y tecnológica, aportando modernidad y máxima legibilidad. La identidad visual fusiona la salud con la tecnología IoT, simbolizando el control total y la trazabilidad de la cadena de frío. La elección de colores, en una combinación de azul marino, verde cerceta (teal) y acentos en coral/rojo, transmite una sensación de confianza, estabilidad técnica y la capacidad de alerta inmediata frente a incidencias. 
+Para el desarrollo de la identidad de **Medical SMARTBOX**, se definió una estética limpia, clínica y altamente tecnológica que sintetiza la convergencia entre logística médica asistencial y telemetría de precisión IoT. La identidad visual simboliza el control integral y la custodia ininterrumpida de la cadena de frío para hemoderivados, órganos y medicamentos biológicos. La composición cromática —basada en Azul Marino Profundo, Verde Cerceta (Teal), Verde Menta y acentos de Alerta en Coral/Rojo— transmite confiabilidad médica, estabilidad operativa y capacidad inmediata de advertencia frente a excursiones térmicas.
 
-![Medical SmartBox - Logo](assets/chapter-4/logo.png)
+![Medical SMARTBOX - Logo](assets/chapter-4/logo.png)
+*Nota: Logotipo oficial de Medical SMARTBOX, representando la custodia térmica inteligente.*
 
 ### Typography
-Para el diseño tipográfico de Medical SmartBox, se ha seleccionado una combinación de fuentes que refleja modernidad y claridad de datos, priorizando la lectura rápida en dashboards operativos.
-*   **Bricolage Grotesque:** Fue elegida como la tipografía principal para nuestros encabezados (`h1`, `h2`, `h3`). Su estructura sólida y geométrica otorga al diseño un aire profesional, tecnológico y contemporáneo.
-*   **Inter:** Para los párrafos, etiquetas de la interfaz y la visualización de datos numéricos (como telemetría y temperaturas), hemos optado por Inter, una fuente destacada por su altísima legibilidad en pantallas digitales e interfaces ricas en datos, favoreciendo una lectura ágil para los operadores logísticos y personal de salud.
+El sistema tipográfico prioriza la jerarquía visual y la decodificación instantánea de telemetría numérica en entornos de alta exigencia cognitiva (ej. cabina de ambulancia o supervisión en central de emergencias). Se implementa una escala tipográfica modular basada en las siguientes fuentes de Google Fonts:
+
+*   **Bricolage Grotesque:** Empleada como tipografía corporativa para encabezados primarios y secundarios (`h1`, `h2`, `h3`). Su estructura geométrica contemporánea con remates técnicos otorga autoridad visual, solidez institucional y modernidad tecnológica.
+*   **Inter:** Empleada para textos de párrafo, microcopia de interfaz, tablas de auditoría y visualización de telemetría numérica. Su excelente renderizado subpíxel y variantes tabulares numéricas (`font-variant-numeric: tabular-nums`) garantizan una lectura nítida de decimales de temperatura y porcentajes de batería sin oscilaciones visuales.
 
 ![Bricolage Grotesque - Font](assets/chapter-4/bricolage-font.png)
 ![Inter - Font](assets/chapter-4/inter-font.png)
+*Nota: Muestrarios tipográficos de Bricolage Grotesque (titulares) e Inter (cuerpo y datos numéricos).*
 
 ### Colors
-La paleta de colores de Medical SmartBox fue seleccionada para reflejar los valores de seguridad, precisión técnica y prevención operativa.
-*   **Verde Cerceta (Teal - `#0F7A70`) y Verde Claro (`#B9DDA0`):** Representan el estado óptimo, la salud y las operaciones estables ("En rango").
-*   **Azul Marino (`#10312F` / `#1F3C77`):** Evocan profesionalismo, tecnología y la solidez institucional del sector médico.
-*   **Coral / Rojo (`#E05A46`):** Utilizado estratégicamente como color de acento para alertas críticas (ej. "Temperatura fuera de rango" o "Batería baja"), garantizando que los incidentes destaquen inmediatamente visualmente.
+La paleta cromática se seleccionó bajo criterios de contraste accesible (cumplimiento WCAG 2.1 Nivel AA) y codificación semántica para estados operativos clínicos:
+
+*   **Azul Marino Corporativo (`#10312F` / `#1F3C77`):** Color dominante institucional que proyecta solidez, seriedad médica y rigor de ingeniería.
+*   **Verde Cerceta / Teal (`#0F7A70`):** Color primario de acción y estado óptimo ("En Rango", carga refrigerada entre 2 °C y 8 °C, telemetría activa).
+*   **Verde Menta (`#B9DDA0`):** Fondo suave de soporte para indicadores de éxito y tarjetas de estado estable.
+*   **Coral / Rojo Alerta (`#E05A46`):** Tono semántico de alta prioridad reservado exclusivamente para situaciones críticas (temperatura fuera de umbral, desconexión de energía de 12V, batería residual < 15%, apertura no autorizada de tapa).
+*   **Gris Neutro Frío (`#F4F7F6` / `#E2E8F0`):** Fondos de interfaz y delimitadores de paneles modulares para reducir la fatiga visual en turnos prolongados.
 
 ![Paleta de Colores](assets/chapter-4/paleta.png)
+*Nota: Muestra de la paleta de colores corporativa y semántica de Medical SMARTBOX.*
 
 ### Spacing
-El espaciado en Medical SmartBox está cuidadosamente definido para garantizar una interfaz limpia, enfocada en la visualización de métricas. Se emplea un diseño modular con separaciones claras (paneles y tarjetas flotantes), lo que mejora la jerarquía de la telemetría en vivo, evita confusiones al monitorear múltiples transportes y aporta equilibrio visual en vistas saturadas de datos.
-
-# 4.1.2. Web Style Guidelines
-
-Medical SmartBox cuenta con un diseño web responsivo para garantizar una experiencia fluida en cualquier dispositivo, permitiendo su uso tanto en paneles de control (operadores logísticos) como en dispositivos móviles (centros de salud recibiendo despachos). Se utiliza un diseño lineal con un "Route Rail" (navegación vertical) que guía al usuario por la narrativa del producto. La barra de navegación superior (pegajosa) mantiene el logotipo a la izquierda, y los controles críticos como el cambio de idioma (ES/EN), el inicio de sesión y el llamado a la acción ("Ir a la Web App") a la derecha.
+El espaciado se fundamenta en un sistema de rejilla base modular de **8 píxeles** (8-point grid system: 4px, 8px, 16px, 24px, 32px, 48px, 64px). Este estándar asegura consistencia entre paneles modulares, tarjetas de telemetría telemática (*telemetry cards*) y botones de acción rápida, previniendo el hacinamiento de información y reduciendo la tasa de error por toques accidentales en pantallas táctiles de cabina.
 
 ---
 
-## 4.2. Information Architecture
+## 4.1.2. Web Style Guidelines
+
+Las directrices web definen la estructura adaptativa, componentes interactivos y comportamiento responsivo de la plataforma:
+
+*   **Estrategia Responsive y Adaptabilidad Multi-dispositivo:**
+    *   **Desktop / Estaciones Hospitalarias (Viewport ≥ 1280px):** Disposición de cuadrícula fluida de 12 columnas. Aprovecha el ancho panorámico para mostrar simultáneamente el mapa de flota satelital en vivo, gráficos telemétricos continuos y panel lateral de incidentes activos.
+    *   **Tablet / Terminales de Cabina (Viewport 768px a 1024px):** Cuadrícula adaptativa de 6 columnas. Los paneles secundarios se condensan en pestañas (*tabs*) o cajones laterales (*drawers*) accesibles mediante gestos táctiles.
+    *   **Mobile Browser / Smartphones Médicos (Viewport 360px a 414px):** Colapso a una columna única fluida (1 columna, 100% de ancho con márgenes laterales de 16px). La barra de navegación superior colapsa en un menú tipo hamburguesa/drawer lateral; los mapas de ruta alternan a pantalla completa modal; las tarjetas de métricas telemétricas se apilan verticalmente; y los botones de acción rápida (ej. "Reconocer Alerta", "Solicitar OTP") cuentan con una altura mínima de **48px** para garantizar un área táctil ergonómica (*touch target*) según directrices de Google Material Design y Apple Human Interface Guidelines.
+*   **Navegación y Patrones de Interacción:**
+    *   **Sticky Header:** Barra de navegación superior fija que mantiene visible el logotipo institucional, estado de conexión en tiempo real (indicador verde de latencia de red), conmutador de idioma (ES/EN) y botón de acceso rápido al perfil de usuario.
+    *   **Route Rail (Navegación Vertical de Seguimiento):** En el Landing Page, un indicador lateral animado (*scrollspy*) sitúa visualmente al visitante a lo largo de las secciones informativas del producto.
+    *   **Retroalimentación Inmediata de Estados:** Cada microinteracción (hover en escritorio, active state en móvil) ofrece respuestas visuales no mayores a 150ms mediante transiciones CSS fluidas (`ease-in-out`), confirmando visualmente cada comando emitido.
+
+<div style="page-break-after: always;"></div>
+
+# 4.2. Information Architecture
 
 ### 4.2.1. Organization Systems
 
@@ -1259,13 +1802,16 @@ Para asegurar que los usuarios encuentren la unidad o el dato exacto al instante
 *   **Controles de Autenticación y Demostración:** Botones persistentes en el encabezado y menús laterales (Drawer) para "Iniciar sesión" o abrir la "Web App" completa.
 *   **Selector de Idioma:** Un interruptor claro (Toggle ES/EN) que permite cambiar la internacionalización de la plataforma sin recargar, crucial para equipos logísticos internacionales.
 
-## 4.3. Landing Page UI Design
-El diseño de la interfaz de usuario en la landing page de **Medical SmartBox** es clave para causar una primera impresión positiva y transmitir la innovación tecnológica y el rigor que respalda a nuestra solución de monitoreo de la cadena de frío médica. Buscamos ofrecer una experiencia visual limpia, profesional y altamente funcional que inspire confianza e invite a los operadores logísticos, gerentes de distribución farmacéutica y administradores de centros de salud a solicitar una demostración y explorar nuestro ecosistema de monitoreo IoT y trazabilidad en tiempo real.
+<div style="page-break-after: always;"></div>
+
+# 4.3. Landing Page UI Design
+
+El diseño de la interfaz de usuario en la landing page de **Medical SMARTBOX** es clave para causar una primera impresión positiva y transmitir la innovación tecnológica y el rigor que respalda a nuestra solución de monitoreo de la cadena de frío médica. Buscamos ofrecer una experiencia visual limpia, profesional y altamente funcional que inspire confianza e invite a los operadores logísticos, gerentes de distribución farmacéutica y administradores de centros de salud a solicitar una demostración y explorar nuestro ecosistema de monitoreo IoT y trazabilidad en tiempo real.
 
 ### 4.3.1. Landing Page Wireframe
 
-*   **Landing Page para Desktop Browser:**
-    *   **Hero Section:** Boceto estructural de la sección principal (Hero Section), definiendo un diseño de dos columnas para ubicar la propuesta de valor centrada en la protección de insumos médicos a la izquierda, y un elemento visual destacado a la derecha (preview interactivo del contenedor SmartBox y su telemetría).
+#### Diseño para Desktop Browser
+*   **Hero Section:** Boceto estructural de la sección principal (Hero Section), definiendo un diseño de dos columnas para ubicar la propuesta de valor centrada en la protección de insumos médicos a la izquierda, y un elemento visual destacado a la derecha (preview interactivo del contenedor SmartBox y su telemetría).
 
 ![Hero - Wireframe](assets/chapter-4/hero-wireframe.png)
 
@@ -1273,7 +1819,7 @@ El diseño de la interfaz de usuario en la landing page de **Medical SmartBox** 
 
 ![Caracteristicas - Wireframe](assets/chapter-4/caracteristicas-wireframe.png)
 
-*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SmartBox. Define una cuadrícula adaptable (responsive grid) con cinco espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
+*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SMARTBOX. Define una cuadrícula adaptable (responsive grid) con cinco espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
 
 ![Presentacion - Wireframe](assets/chapter-4/presentacion-wireframe.png)
 
@@ -1281,97 +1827,161 @@ El diseño de la interfaz de usuario en la landing page de **Medical SmartBox** 
 
 ![CTA-footer - Wireframe](assets/chapter-4/cta-footer-wireframe.png)
 
+#### Adaptabilidad para Mobile Browser
+Para dispositivos móviles (viewports de 360px a 414px), la estructura de wireframe implementa una adaptación fluida de una columna:
+*   **Navegación Móvil:** El menú horizontal superior se condensa en un botón de menú tipo hamburguesa ubicado en la esquina superior derecha, desplegando un panel Drawer lateral con los enlaces a Soluciones, Características, Equipo y Formulario de Contacto.
+*   **Hero Section Vertical:** La disposición de dos columnas colapsa linealmente, colocando el titular persuasivo y el botón CTA prioritario en la parte superior, seguido del elemento gráfico representativo del SmartBox.
+*   **Cuadrícula de Tarjetas Apiladas:** Las tarjetas de características y perfiles de equipo se reorganizan en una pila vertical (1 tarjeta por fila) con espaciado vertical de 16px, facilitando el desplazamiento vertical con el pulgar.
+*   **Ergonomía Táctil:** Todos los botones de acción e inputs de formulario adoptan un ancho del 100% y una altura mínima de 48px con espaciado interactivo para evitar pulsaciones erróneas.
+
+---
+
 ### 4.3.2. Landing Page Mock-up
 
+#### Diseño de Alta Fidelidad para Desktop Browser
 *   **Hero Section:** Interfaz final del Hero Section. Destaca la integración de la paleta de colores corporativa (Azul Marino `#10312F`, Verde Cerceta `#0F7A70` y Verde Claro `#B9DDA0`), la tipografía moderna (**Bricolage Grotesque** para titulares e **Inter** para cuerpo de texto) y una composición visual de un operador logístico inspeccionando un envío médico con telemetría activa en un dispositivo SmartBox, logrando captar la atención del usuario inmediatamente.
   
-* ![Hero - Mockup](assets/chapter-4/hero-mockup.png)
+![Hero - Mockup](assets/chapter-4/hero-mockup.png)
 
 *   **Tarjetas de Servicios:** Implementación final de las tarjetas de servicio (*Telemetría IoT en Vivo*, *Mapeo de Ruta Térmica* y *Alertas Predictivas de Excursión de Temperatura*). Se incorporaron imágenes fotográficas de alta calidad y un diseño de tarjeta limpia (*Clean UI*) con sombras suaves y bordes redondeados para facilitar la lectura de métricas clave.
 
 ![Servicios - Mockup](assets/chapter-4/servicios-mockup.png)
 
-*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cinco ingenieros de software del equipo de Medical SmartBox, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
+*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cinco ingenieros de software del equipo de Medical SMARTBOX, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
 
 ![Presentacion - Mockup](assets/chapter-4/presentacion-mockup.png)
 
 *   **Formulario "Únete a Medical SmartBox":** Versión construida del formulario "Ir a la Web App". Utiliza el fondo azul marino oscuro de la marca para generar un alto contraste con los campos de entrada e incentivar la conversión, cerrando la página con un footer minimalista con políticas de privacidad, certificaciones sanitarias y enlaces legales.
 
 ![CTA-footer - Mockup](assets/chapter-4/cta-footer-mockup.png)
----
+
+#### Adaptabilidad de Alta Fidelidad para Mobile Browser
+En la versión móvil de alta fidelidad, se aplican los estándares visuales de diseño responsivo definidos en las guías de estilo:
+*   **Alineación Tipográfica y Tamaños Proporcionales:** Los encabezados `h1` reducen su tamaño de 48px a 32px con interlineado ajustado a 1.2, evitando desbordes horizontales y garantizando lectura cómoda sin zoom.
+*   **Interacciones Táctiles y Controles:** Los formularios de contacto optimizan los campos de entrada para teclados virtuales nativos de iOS y Android (input types `email`, `tel`, `text`), y los botones principales disponen de microinteracciones activas táctiles (`active:scale-95`).
+*   **Optimización de Carga y Recursos Gráficos:** Las imágenes de presentación y mockups emplean renderizado responsivo con densidades optimizadas, reduciendo el consumo de datos celulares en redes móviles de transporte asistencial.
+
+<div style="page-break-after: always;"></div>
 
 # 4.4. Web Applications UX/UI Design
 
-El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) en la plataforma web de **Medical SmartBox** busca crear una herramienta digital intuitiva, accesible y altamente funcional para operadores logísticos, conductores de transporte médico y personal receptor en hospitales o farmacias. La UX se enfoca en comprender la urgencia y precisión requeridas en la cadena de frío, diseñando flujos de interacción eficientes para monitorear cargas térmicamente sensibles, reaccionar ante desvíos de temperatura y configurar sensores IoT sin fricción.
+El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) en la plataforma web de **Medical SMARTBOX** busca crear una herramienta digital intuitiva, accesible y altamente funcional para operadores logísticos, conductores de transporte médico y personal receptor en hospitales o farmacias. La UX se enfoca en comprender la urgencia y precisión requeridas en la cadena de frío, diseñando flujos de interacción eficientes para monitorear cargas térmicamente sensibles, reaccionar ante desvíos de temperatura y configurar sensores IoT sin fricción.
 
-Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemétricos en tiempo real, trazabilidad por hitos de envío, gráficos de estabilidad térmica y sistemas de alertas predictivas. Un diseño UX/UI exitoso en Medical SmartBox fusiona una estética tecnológica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logísticas rápidas que salvan vidas y evitan la merma de medicamentos.
+Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemétricos en tiempo real, trazabilidad por hitos de envío, gráficos de estabilidad térmica y sistemas de alertas predictivas. Un diseño UX/UI exitoso en Medical SMARTBOX fusiona una estética tecnológica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logísticas rápidas que salvan vidas y evitan la merma de medicamentos.
+
+---
 
 ### 4.4.1. Web Applications Wireframes
-*   **Acceso y Autenticación Segura:** El flujo de inicio de sesión presenta un diseño *desktop* de dos columnas ("auth-shell"). La izquierda actúa como un panel informativo destacando la propuesta de valor ("Cadena de frío bajo custodia digital") y estadísticas de la flota, mientras que la derecha contiene el formulario de acceso institucional que solicita RUC/Correo y Contraseña. A esto le sigue una pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante un código OTP de 6 dígitos
+
+#### Wireframes para Desktop Browser
+*   **Acceso y Autenticación Segura:** El flujo de inicio de sesión presenta un diseño *desktop* de dos columnas ("auth-shell"). La izquierda actúa como un panel informativo destacando la propuesta de valor ("Cadena de frío bajo custodia digital") y estadísticas de la flota, mientras que la derecha contiene el formulario de acceso institucional que solicita RUC/Correo y Contraseña. A esto le sigue una pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante un código OTP de 6 dígitos.
 
 ![Autenticacion - Wireframe](assets/chapter-4/autenticacion-wireframe.png)
 
-*   **Núcleo Operativo - Dashboard Principal:** El Dashboard general organiza la vista del operador comenzando con una fila de KPIs (unidades en ruta, monitorizadas, alertas críticas y cumplimiento DIGEMID). En el cuerpo central, se emplea una estructura de cuadrícula (`grid-2`) que muestra un mapa de "Flota en tiempo real" a la izquierda y un panel consolidado de "Alertas críticas recientes" a la derecha, finalizando con una tabla inferior para los "Traslados en curso"
+*   **Núcleo Operativo - Dashboard Principal:** El Dashboard general organiza la vista del operador comenzando con una fila de KPIs (unidades en ruta, monitorizadas, alertas críticas y cumplimiento DIGEMID). En el cuerpo central, se emplea una estructura de cuadrícula (`grid-2`) que muestra un mapa de "Flota en tiempo real" a la izquierda y un panel consolidado de "Alertas críticas recientes" a la derecha, finalizando con una tabla inferior para los "Traslados en curso".
 
-![Nucleo Operativo  - Wireframe](assets/chapter-4/nucleo-wireframe.png)
+![Nucleo Operativo - Wireframe](assets/chapter-4/nucleo-wireframe.png)
 
-*   **Gestión de Envíos y Tablero de Despacho:** El sistema incluye una lista maestra de "Órdenes de traslado" y un formulario completo para crear una nueva orden validando ventana de isquemia fría y precooling. Además, presenta un Tablero de Despacho en formato Kanban que categoriza los viajes en Pendientes, Despachados, En tránsito y Entregados
+*   **Gestión de Envíos y Tablero de Despacho:** El sistema incluye una lista maestra de "Órdenes de traslado" y un formulario completo para crear una nueva orden validando ventana de isquemia fría y precooling. Además, presenta un Tablero de Despacho en formato Kanban que categoriza los viajes en Pendientes, Despachados, En tránsito y Entregados.
 
-![Gestion de Envios  - Wireframe](assets/chapter-4/envios-wireframe.png)
+![Gestion de Envios - Wireframe](assets/chapter-4/envios-wireframe.png)
 
 *   **Vista Detallada de Telemetría y Ruta:** La inspección individual de un envío presenta un *stepper* de estado en la parte superior. Debajo, se divide en dos módulos: a la izquierda, el mapa de trazabilidad y ruta en vivo con cálculo de ETA dinámico; a la derecha, las tarjetas telemétricas y medidores (*gauges*) mostrando la temperatura interna en tiempo real (ej. 4.3°C), nivel de batería, estado de cierre y lecturas recientes.
 
-![Vista de Ruta  - Wireframe](assets/chapter-4/ruta-wireframe.png)
+![Vista de Ruta - Wireframe](assets/chapter-4/ruta-wireframe.png)
 
 *   **Monitoreo y Control de Smart Containers:** Se incluye un módulo visual tipo *grid* para monitorear todos los contenedores de la flota y una vista de detalle por Smart Container que incluye una curva gráfica de temperatura de las últimas 24 horas. Complementariamente, el sistema permite enviar comandos de desbloqueo remoto de la tapa mediante interacción electromecánica y visualizar el historial completo de excursiones térmicas.
 
-![Monitoreo de Containers  - Wireframe](assets/chapter-4/containers-wireframe.png)
+![Monitoreo de Containers - Wireframe](assets/chapter-4/containers-wireframe.png)
 
 *   **Centro de Alertas y Respuesta a Incidentes:** La plataforma cuenta con una bandeja centralizada para gestionar notificaciones. El detalle de una alerta crítica expone la magnitud de la excursión térmica (temperatura, duración, ubicación), el registro temporal del despacho de alertas (vía SMS y Push) y una sección para que el operador documente las acciones correctivas.
 
-![Centro de Alertas  - Wireframe](assets/chapter-4/incidentes-wireframe.png)
+![Centro de Alertas - Wireframe](assets/chapter-4/incidentes-wireframe.png)
 
 *   **Configuración y Umbrales de Alerta:** Una pantalla de administración dedicada a "Canales de notificación" permite al usuario activar/desactivar notificaciones Push, SMS, Correo y alarmas acústicas. Aquí mismo, en el panel "Umbrales de severidad", se configuran manualmente los límites máximos/mínimos de temperatura y los tiempos límite (SLA) para el envío de alertas.
 
-![Umbrales de Alerta  - Wireframe](assets/chapter-4/alerta-wireframe.png)
+![Umbrales de Alerta - Wireframe](assets/chapter-4/alerta-wireframe.png)
 
-*   **Cadena de Custodia, Manifiestos y Reportes:** El flujo de entrega garantiza la seguridad exigiendo la Verificación OTP en destino y trazando todos los eventos en una Línea de Tiempo de Cadena de Custodia. Administrativamente, se generan Manifiestos Digitales de Auditoría inmutables sellados con SHA-256 y se presenta un consolidado analítico para cumplimiento normativo DIGEMID/DIGDOT
+*   **Cadena de Custodia, Manifiestos y Reportes:** El flujo de entrega garantiza la seguridad exigiendo la Verificación OTP en destino y trazando todos los eventos en una Línea de Tiempo de Cadena de Custodia. Administrativamente, se generan Manifiestos Digitales de Auditoría inmutables sellados con SHA-256 y se presenta un consolidado analítico para cumplimiento normativo DIGEMID/DIGDOT.
 
-![Cadena de Custodia  - Wireframe](assets/chapter-4/custodia-wireframe.png)
+![Cadena de Custodia - Wireframe](assets/chapter-4/custodia-wireframe.png)
 
 *   **Administración Institucional y B2B:** La plataforma incluye la gestión integral de la suscripción, facturación B2B, vinculación de unidades vehiculares y el control granular de usuarios organizados en roles operativos de logística o perfiles clínicos.
    
 ![Administracion - Wireframe](assets/chapter-4/administracion-wireframes.png)
 
+#### Adaptabilidad de Wireframes para Mobile Browser
+Para dispositivos móviles de campo (smartphones de personal asistencial y tabletas de ambulancia de 360px a 414px):
+*   **Diseño de Columna Unificada (Single-Column Flow):** La disposición de dos columnas se transforma en un flujo vertical secuencial. En el detalle del traslado, el indicador de temperatura actual y la alerta de batería se colocan en la parte superior fija (*sticky banner*), seguidos del mapa simplificado y las lecturas telemétricas.
+*   **Navegación Móvil por Barra Inferior (Bottom Navigation Bar):** Se reemplaza la barra lateral izquierda por una barra de navegación inferior de 5 accesos directos (*Dashboard*, *Ruta en Vivo*, *SmartBox*, *Alertas* y *Perfil*), facilitando la operación con una sola mano.
+*   **Zona Táctil Aumentada para Emergencias:** Todos los controles críticos, en especial el botón de desbloqueo de emergencia y el teclado numérico en pantalla para validación de OTP, cuentan con dimensiones mínimas de 48x48px con alto contraste, permitiendo su uso rápido incluso con guantes clínicos.
+
+---
+
+### 4.4.2. Web Applications Wireflow Diagrams
+
+El diagrama de wireflow documenta la navegación estructural y las transiciones pantalla a pantalla del sistema web, asociando las vistas esquemáticas con las decisiones del usuario y los eventos del sistema:
+
+```mermaid
+flowchart TD
+    A[Inicio / Login Institucional] -->|Credenciales Válidas| B{2FA Requerido?}
+    B -->|Sí| C[Pantalla Código OTP]
+    C -->|OTP Correcto| D[Dashboard Operativo Principal]
+    B -->|No| D
+    
+    D -->|Seleccionar Ambulancia / Envío| E[Vista Detalle de Traslado y Telemetría]
+    D -->|Notificación Crítica| F[Centro de Alertas e Incidentes]
+    D -->|Menú Administración| G[Gestión de Flota y Contenedores]
+    
+    E -->|Arribo a Destino| H[Pantalla de Desbloqueo OTP y Entrega]
+    H -->|Firma Digital y OTP OK| I[Línea de Tiempo de Cadena de Custodia]
+    I -->|Exportar Acta| J[Generación de Reporte PDF SHA-256]
+    
+    F -->|Documentar Acción Correctiva| E
+```
+
+*Nota: Las decisiones de interfaz y flujos alternativos detallados por cada historia de usuario se formalizan en la sección 4.4.4 mediante los diagramas de User Flow.*
+
+---
+
 ### 4.4.3. Web Applications Mock-ups
 
-Esta imagen presenta el diseño de interfaz de usuario (UI) en alta fidelidad para el flujo de acceso institucional a Medical SmartBox. La vista se divide en dos columnas: el panel izquierdo refuerza la propuesta de valor de la plataforma ("Cadena de frío bajo custodia digital") y muestra estadísticas clave de la flota. El panel derecho contiene el formulario de inicio de sesión, seguido de un flujo obligatorio de Verificación en Dos Pasos (2FA), donde el operador debe ingresar un código OTP de 6 dígitos. Este diseño garantiza un acceso seguro restringido a personal autorizado, manteniendo una estética corporativa e intuitiva.
+#### Diseños de Alta Fidelidad para Desktop Browser
+*   **Acceso Institucional y 2FA:** Interfaz de usuario de alta fidelidad para el flujo de acceso institucional. La vista se divide en dos columnas: el panel izquierdo refuerza la propuesta de valor corporativa y el panel derecho contiene el formulario de acceso seguido de la pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante OTP de 6 dígitos.
 
-![Mockup01 - Wireframe](assets/chapter-4/mockup-1.png)
+![Mockup01 - Autenticacion](assets/chapter-4/mockup-1.png)
 
-Esta imagen detalla el Dashboard General de Operaciones. La interfaz aprovecha el espacio horizontal para presentar una fila superior de indicadores clave de rendimiento (KPIs), como traslados activos, unidades monitorizadas, alertas críticas y cumplimiento térmico. El cuerpo central se divide en dos áreas principales: a la izquierda, un mapa interactivo que ubica la flota en tiempo real dentro de Lima Metropolitana; a la derecha, un panel que consolida las alertas críticas más recientes. En la parte inferior, una tabla estructurada permite visualizar rápidamente los traslados en curso, ofreciendo al operador logístico un centro de control integral en una sola vista.
+*   **Dashboard General de Operaciones:** Interfaz del centro de control integral. Aprovecha el espacio horizontal para presentar la fila superior de KPIs (traslados activos, unidades monitoreadas, alertas y cumplimiento térmico), el mapa interactivo de Lima Metropolitana a la izquierda y el panel de alertas recientes a la derecha, con la tabla de traslados en curso en la parte inferior.
 
-![Mockup02 - Wireframe](assets/chapter-4/mockup-2.png)
+![Mockup02 - Dashboard](assets/chapter-4/mockup-2.png)
 
-Esta imagen ilustra las interfaces dedicadas a la planificación y seguimiento logístico. El diseño incluye una lista navegable de Órdenes de Traslado y un formulario de creación que integra validaciones automáticas de isquemia fría y pre-enfriamiento del contenedor. Destaca el Tablero de Despacho en formato Kanban, que categoriza visualmente el estado de cada viaje (Pendiente, Despachado, En tránsito, Entregado). Además, la vista de detalle de un viaje específico divide la pantalla para mostrar, simultáneamente, la ruta en vivo con el cálculo de ETA dinámico y la telemetría en tiempo real del Smart Container asociado.
+*   **Planificación y Seguimiento Logístico:** Vista de Órdenes de Traslado y formulario de creación con validaciones de isquemia fría y pre-enfriamiento. Incluye el Tablero de Despacho Kanban (Pendiente, Despachado, En tránsito, Entregado) y la vista dividida de ruta en vivo con cálculo dinámico de ETA.
 
-![Mockup03 - Wireframe](assets/chapter-4/mockup-3.png)
+![Mockup03 - Despacho](assets/chapter-4/mockup-3.png)
 
-Esta imagen presenta los módulos de monitoreo y control a nivel de hardware IoT. La interfaz ofrece una vista en cuadrícula de todos los Smart Containers activos. Al inspeccionar una unidad individual (SB-0231), el usuario accede a un panel detallado que muestra medidores circulares (*gauges*) para la temperatura actual y el nivel de batería, junto con un gráfico que traza la curva térmica de las últimas 24 horas. Estos paneles también incluyen herramientas para revisar el historial completo de excursiones térmicas exportable para auditoría, y controles directos para accionar el bloqueo o desbloqueo electromecánico de la tapa del contenedor mediante comandos MQTT.
+*   **Monitoreo y Control IoT de Smart Containers:** Vista en cuadrícula de todos los contenedores y panel individual (SB-0231) con medidores circulares de temperatura y batería, curva térmica continua de 24 horas y comando de desbloqueo electromecánico seguro vía MQTT.
 
-![Mockup04 - Wireframe](assets/chapter-4/mockup-4.png)
+![Mockup04 - Containers](assets/chapter-4/mockup-4.png)
 
-Esta imagen expone el Centro de Alertas Críticas y la gestión de incidentes. La bandeja principal clasifica las notificaciones por severidad, permitiendo al operador priorizar la atención. El detalle de un incidente (por ejemplo, una excursión térmica crítica) presenta una vista estructurada que documenta la temperatura registrada, la duración fuera del umbral, y un registro temporal (*timeline*) del despacho automático de notificaciones vía Push y SMS. La interfaz fomenta la resolución eficiente al incluir un campo de texto donde el operador puede registrar las acciones correctivas tomadas y un botón para marcar la alerta como resuelta.
+*   **Centro de Alertas Críticas e Incidentes:** Bandeja de notificaciones clasificada por severidad. Expone la magnitud de la excursión térmica (temperatura, duración, ubicación satelital), registro cronológico del despacho SMS/Push y registro interactivo de acciones correctivas tomadas por el operador.
 
-![Mockup05 - Wireframe](assets/chapter-4/mockup-5.png)
+![Mockup05 - Incidentes](assets/chapter-4/mockup-5.png)
 
-Esta imagen detalla el panel de Perfil, Configuración y roles de acceso. La interfaz de configuración permite al administrador gestionar los "Canales de notificación", activando o desactivando avisos vía SMS, Push, correo y alarma acústica, así como definir los umbrales de temperatura y SLA críticos. Complementariamente, se incluyen vistas para la gestión del personal, donde se listan los usuarios activos y se asignan permisos granulares a través de perfiles específicos, divididos entre el segmento operativo (Fleet Logistics Dispatcher) y el segmento clínico (Receiving Physician, Health Quality Auditor).
+*   **Perfil, Configuración y Control de Roles:** Administración de canales de notificación (Push, SMS, correo, acústica), umbrales de severidad y asignación granular de permisos entre roles operativos (Fleet Logistics Dispatcher) y perfiles clínicos (Receiving Physician, Health Quality Auditor).
 
-![Mockup06 - Wireframe](assets/chapter-4/mockup-6.png)
+![Mockup06 - Configuracion](assets/chapter-4/mockup-6.png)
 
-Esta imagen muestra los módulos orientados a la auditoría, la trazabilidad y el cumplimiento normativo. Destaca el flujo de entrega, que exige la validación de un código OTP en el punto de destino para desbloquear el contenedor, evento que queda registrado en la Línea de Tiempo de Cadena de Custodia. El sistema genera manifiestos digitales de cada traslado, los cuales son sellados criptográficamente (SHA-256) para garantizar su inmutabilidad. Finalmente, un panel de reportes consolida el rendimiento térmico mensual de las distintas sedes, facilitando la presentación de datos ante entidades regulatorias como DIGEMID.
+*   **Auditoría, Cadena de Custodia y Reportes:** Flujo de validación OTP en destino, registro cronológico inmutable con firma SHA-256 en la cadena de custodia y generación automática de reportes certificados para DIGEMID/SUSALUD.
 
-![Mockup07 - Wireframe](assets/chapter-4/mockup-7.png)
+![Mockup07 - Custodia](assets/chapter-4/mockup-7.png)
+
+#### Adaptabilidad de Mock-ups para Mobile Browser
+En pantallas móviles de smartphones asistenciales (360px a 414px):
+*   **Diseño Modular en Tarjetas Verticales:** Los dashboards multipanel se reorganizan en tarjetas apiladas con scroll vertical fluido. La temperatura actual se resalta con tipografía agrandada (36px, `tabular-nums`) y código de color dinámico (verde para 2-8 °C, rojo parpadeante ante excursión térmica).
+*   **Comandos de Acción en Barra Flotante:** La acción de "Confirmar Entrega y Solicitar OTP" permanece anclada como botón flotante (*sticky bottom*) visible en todo momento durante el trayecto, agilizando el traspaso en quirófano o rampa hospitalaria sin necesidad de desplazarse por menús complejos.
+*   **Modo Nocturno / Alto Contraste para Cabina:** La paleta adopta un fondo oscuro de bajo brillo para no encandilar al paramédico ni al conductor en traslados nocturnos de emergencia.
+
+---
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
@@ -1395,15 +2005,25 @@ El diagrama de flujo de usuario es una representación visual de las acciones se
 
 ![Tercer User Flow](assets/chapter-4/user-flow-3.png)
 
+<div style="page-break-after: always;"></div>
+
 # 4.5. Web Applications Prototyping
 
-El prototipo interactivo consolida la representación visual y la dinámica de interacción de los mock-ups de alta fidelidad para el Landing Page institucional y la Web Application de Medical SMARTBOX, permitiendo realizar recorridos completos de experiencia de usuario antes de la codificación frontend.
+El prototipo interactivo consolida la representación visual y la dinámica de interacción de los mock-ups de alta fidelidad para el Landing Page institucional y la Web Application de **Medical SMARTBOX**, permitiendo realizar recorridos completos de experiencia de usuario previos a la codificación frontend.
 
 Para el desarrollo del prototipo de alta fidelidad se utilizó la herramienta profesional **Figma**, estructurando componentes reutilizables bajo directrices de **Material Design**, estados interactivos (*hover*, *active*, modales de alerta crítica, filtros de tabla y visualizadores de telemetría IoT en tiempo real).
 
-* **Enlace al Prototipo Interactivo en Figma:** [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
-* **Visualización de Recursos:** Ver el Anexo B para el catálogo completo de enlaces a tableros y prototipos.
+Las decisiones de interacción se fundamentaron directamente en la arquitectura de información (Sección 4.2), priorizando la reducción de carga cognitiva en situaciones de emergencia asistencial mediante navegación contextual directa, confirmaciones modales para operaciones críticas y retroalimentación inmediata sobre variables telemétricas.
 
+* **Enlace al Prototipo Interactivo en Figma:** [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
+* **Alcance y Flujos Cubiertos en el Prototipo:**
+  1. **Autenticación y Seguridad:** Acceso de personal médico y de ambulancia mediante verificación de credenciales y doble factor (2FA).
+  2. **Monitoreo y Despacho en Tiempo Real:** Visualización en mapa georreferenciado de unidades vehiculares en tránsito, rutas activas y estado de contenedores inteligentes.
+  3. **Telemetría y Control de Smart Container:** Detalle individual del contenedor (Smart Container SB-0231), curva continua de temperatura, nivel de carga de batería, sensor de peso y comando de apertura electromecánica.
+  4. **Gestión de Incidentes y Excursiones Térmicas:** Notificación inmediata ante anomalías de frío, registro de causa raíz y acciones correctivas inmediatas.
+  5. **Protocolo de Entrega y Cadena de Custodia:** Generación y validación de código de un solo uso (OTP) en centro hospitalario receptor y emisión de acta digital de custodia sellada.
+
+* **Visualización de Recursos:** Ver el [Anexo B](63-anexos.md#anexo-b-tableros-digitales-y-prototipos-interactivos) para el catálogo de enlaces a tableros colaborativos y prototipos interactivos.
 
 <div style="page-break-after: always;"></div>
 
@@ -2407,8 +3027,8 @@ La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores princ
     <tr>
       <td><strong>5. Relational Database</strong></td>
       <td><em>Relational DBMS</em></td>
-      <td><strong>MySQL 8.0 Server</strong> (o PostgreSQL)</td>
-      <td>Almacén de datos relacional transaccional (ACID) administrado mediante migraciones de Entity Framework Core (Puerto TCP 3306). Persiste usuarios, suscripciones, flota de ambulancias, órdenes de traslado, manifiestos digitales y registros de auditoría legal.</td>
+      <td><strong>MySQL 8.0 Server (InnoDB)</strong></td>
+      <td>Almacén de datos relacional transaccional (ACID) administrado mediante migraciones de Entity Framework Core 10.0 (Puerto TCP 3306). Persiste usuarios, suscripciones, flota de ambulancias, órdenes de traslado, manifiestos digitales y registros de auditoría legal.</td>
       <td>Persistencia persistente del sistema</td>
     </tr>
     <tr>
@@ -2614,30 +3234,22 @@ Conforme a las recomendaciones de arquitectura de software para sistemas distrib
 * **IoT Ingestion Background Worker:** Se estructura internamente mediante daemons de servicio (.NET `BackgroundService`) y manejadores de mensajes MQTTnet que enrutan telemetría cruda hacia la Web API y Redis.
 * **Landing Page y Bases de Datos:** La Landing Page está constituida por recursos web estáticos (HTML5/CSS3/JS), mientras que la persistencia relacional en **MySQL 8.0 InnoDB** se especifica con total profundidad en el **Capítulo 4.8 (Database Design)**.
 
-En este capítulo se realiza la descomposición exhaustiva de la **RESTful Web API en ASP.NET Core (C#)**, descomponiéndola bajo los principios de **Clean Architecture / DDD Onion Architecture (Inversión de Dependencias)** para evidenciar cómo se estructuran los módulos que dan soporte operativo al **Segmento 1 (Transporte / Ambulancias)** y al **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**.
+En este capítulo se realiza la descomposición exhaustiva de la **RESTful Web API en ASP.NET Core (.NET 10 LTS, C# 14)**, estructurándola bajo los principios de **Domain-Driven Design (DDD) y Clean Architecture** con estricta inversión de dependencias para evidenciar cómo se organizan los módulos que dan soporte operativo al **Segmento 1 (Transporte / Ambulancias)** y al **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**.
 
 ---
 
-### **2. Arquitectura Interna del Contenedor: Clean / Onion Architecture**
+### **2. Organización en Capas DDD de los Componentes del Contenedor**
 
 Para evitar el acoplamiento directo entre los controladores HTTP y la base de datos MySQL, el contenedor **RESTful Web API** organiza sus componentes en cuatro capas concéntricas regidas por la **Regla de Dependencia** (las dependencias de código fuente solo apuntan hacia adentro, hacia el Dominio):
 
----
-
-![Figura 4.6.4.1 - Diagrama de Arquitectura de Capas Clean / Onion para RESTful Web API](assets/chapter-4/4.6.4-clean-onion-architecture.png)
-
-*Nota: Diagrama de Arquitectura de Capas Clean / Onion para el contenedor RESTful Web API elaborado conforme a los patrones de Clean Architecture y Domain-Driven Design para la plataforma.*
-
----
-
-1. **Presentation Layer (Capa de Controladores REST):**  
-   Recibe las solicitudes HTTP desde la Single Page Application (Vue.js), valida los tokens JWT de autorización y el formato básico de los datos entrantes (DTOs), delegando inmediatamente la ejecución hacia los servicios de aplicación.
+1. **Presentation Layer (Capa de Controladores REST y Hubs):**  
+   Recibe las solicitudes HTTP desde la Single Page Application (Vue.js 3), valida los tokens JWT de autorización y el formato básico de los datos entrantes (DTOs), delegando inmediatamente la ejecución hacia los servicios de aplicación.
 2. **Application Layer (Capa de Aplicación y Casos de Uso):**  
    Orquesta los flujos de negocio y coordina las transacciones sin contener reglas de negocio del dominio. Convierte DTOs en entidades, invoca a los agregados del dominio, interactúa con interfaces de repositorio y coordina adaptadores externos.
 3. **Domain Layer (Capa de Dominio - Núcleo Central Inmutable):**  
    Contiene los Agregados Raíz (*Aggregate Roots*), Entidades, Objetos de Valor (*Value Objects*) y las **invariantes de negocio** que no dependen de ningún framework o base de datos. Define las interfaces de repositorio que la infraestructura debe implementar.
 4. **Infrastructure Layer (Capa de Infraestructura y Persistencia):**  
-   Implementa las interfaces de repositorio utilizando **Entity Framework Core sobre MySQL 8.0**, gestiona el contexto de base de datos (`AppDbContext`) e implementa los adaptadores hacia servicios en la nube externos (TomTom, Firebase, Twilio, AWS S3).
+   Implementa las interfaces de repositorio utilizando **Entity Framework Core 10.0 sobre MySQL Server 8.0 (InnoDB)**, gestiona el contexto de base de datos (`AppDbContext`) e implementa los adaptadores hacia servicios en la nube externos (TomTom, Firebase Cloud Messaging, Twilio, AWS S3).
 
 Conforme a los fundamentos del C4 Model, en este Nivel 3 (Component Diagrams) se modelan los artefactos modulares inyectables en el contenedor de inversión de control (IoC) de ASP.NET Core (Controladores, Servicios de Aplicación, Repositorios, Adaptadores y DbContext). Las entidades de dominio, objetos de valor y estructuras internas de clases corresponden al Nivel 4 (Code / UML Class Diagrams), los cuales se especifican con exhaustividad técnica en el Capítulo 4.7.
 
@@ -2927,7 +3539,6 @@ El **Software Architecture Components Diagram** demuestra la aplicación riguros
 3. **Paso Siguiente:** Habiendo establecido la estructura modular de componentes, el siguiente capítulo (**4.7 Software Object-Oriented Design / 4.7.1 Class Diagrams**) detallará el modelado estático orientado a objetos de estas clases, especificando atributos tipados, modificadores de acceso (`+`, `-`, `#`), métodos con parámetros y tipos de retorno, y relaciones UML con multiplicidades exactas.
 
 ---
-
 
 <div style="page-break-after: always;"></div>
 
@@ -4024,7 +4635,6 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Cadena de Custodia y Trazabilidad.*
 
-
 <div style="page-break-after: always;"></div>
 
 # **4.8. Database Design**
@@ -4333,32 +4943,17 @@ Acta digital de entrega legal sellada criptográficamente con hash SHA-256 para 
 
 ---
 
-#### **3. Matriz de Integridad Referencial y Cardinalidad**
+#### **3. Políticas Globales de Integridad Referencial y Trazabilidad**
 
-La siguiente matriz documenta las **20 relaciones de clave foránea** implementadas en la base de datos, detallando la cardinalidad, las restricciones de clave foránea y las acciones ante eliminación (`ON DELETE`):
+En lugar de redundar en las especificaciones de claves foráneas ya detalladas exhaustivamente en el diccionario de datos de las 11 tablas y en el diagrama físico ER, el motor relacional implementa las siguientes políticas unificadas de integridad referencial para garantizar la trazabilidad médica inmutable y el cumplimiento de las normativas de **DIGEMID** (R.M. N° 833-2015/MINSA) y **SUSALUD**:
 
-| Tabla Primaria (Padre) | Tabla Dependiente (Hija) | Cardinalidad | Columna Clave Foránea (FK) | Regla `ON DELETE` | Justificación Operativa y Regulatoria |
-|---|---|---|---|---|---|
-| `subscription_plans` | `hospital_institutions` | **1 : N** | `subscription_plan_id` | `RESTRICT` | Impide descontinuar o eliminar planes comerciales que posean hospitales asociados activos. |
-| `hospital_institutions` | `users` | **1 : N** | `institution_id` | `RESTRICT` | Protege la filiación institucional de la tripulación y personal médico. |
-| `hospital_institutions` | `transport_orders` (Origen) | **1 : N** | `origin_hospital_id` | `RESTRICT` | Preserva el hospital emisor como parte inmutable de la orden de traslado clínico. |
-| `hospital_institutions` | `transport_orders` (Destino) | **1 : N** | `destination_hospital_id` | `RESTRICT` | Garantiza que el destino del trasplante no sea eliminado de la base de datos histórica. |
-| `hospital_institutions` | `custody_transfers` | **1 : N** | `recipient_hospital_id` | `RESTRICT` | Mantiene la validez legal del hospital receptor del órgano según directiva MINSA. |
-| `users` | `transport_orders` | **1 : N** | `created_by_user_id` | `RESTRICT` | Mantiene la autoría médica del cirujano solicitante para efectos médico-legales. |
-| `users` | `dispatch_trips` (Chofer) | **1 : N** | `assigned_driver_user_id` | `RESTRICT` | Salvaguarda la identidad del chofer asignado a la ambulancia en la hoja de ruta. |
-| `users` | `dispatch_trips` (Paramédico) | **1 : N** | `assigned_paramedic_user_id` | `RESTRICT` | Registra de forma indeleble al paramédico TEM que custodió el contenedor en tránsito. |
-| `users` | `critical_incidents` | **1 : N** | `acknowledged_by_user_id` | `RESTRICT` | Documenta fehacientemente qué operador de despacho atendió y acusó la alerta crítica. |
-| `users` | `contingency_resolutions` | **1 : N** | `resolved_by_user_id` | `RESTRICT` | Fija la responsabilidad del profesional biomédico que dictaminó la resolución correctiva. |
-| `users` | `custody_transfers` | **1 : N** | `authorized_recipient_user_id` | `RESTRICT` | Identifica con precisión al médico receptor que digitó el código OTP en quirófano. |
-| `smart_containers` | `telemetry_logs` | **1 : N** | `container_id` | `RESTRICT` | Protege la integridad de las series temporales físicas emitidas por el hardware IoT. |
-| `smart_containers` | `dispatch_trips` | **1 : N** | `assigned_container_id` | `RESTRICT` | Evita la desvinculación o supresión de un contenedor involucrado en un traslado en curso. |
-| `smart_containers` | `critical_incidents` | **1 : N** | `container_id` | `RESTRICT` | Asegura la trazabilidad técnica histórica del contenedor que experimentó anomalías térmicas. |
-| `transport_orders` | `dispatch_trips` | **1 : 1** | `order_id` | `RESTRICT` | Cada orden clínica tiene exactamente una hoja de despacho operativa para su cumplimiento. |
-| `dispatch_trips` | `telemetry_logs` | **1 : N** | `trip_id` | `SET NULL` | Si un despacho preliminar es cancelado antes de partir, las muestras se conservan vinculadas al contenedor pero desacopladas del viaje. |
-| `dispatch_trips` | `critical_incidents` | **1 : N** | `trip_id` | `RESTRICT` | Impide borrar un viaje de ambulancia que haya tenido incidentes críticos en ruta. |
-| `dispatch_trips` | `custody_transfers` | **1 : 1** | `trip_id` | `RESTRICT` | Cada viaje completado concluye obligatoriamente en un único proceso formal de entrega. |
-| `critical_incidents` | `contingency_resolutions` | **1 : 1** | `incident_id` | `RESTRICT` | Un incidente crítico solo puede tener un dictamen oficial de mitigación de contingencia. |
-| `custody_transfers` | `digital_audit_manifests` | **1 : 1** | `transfer_id` | `RESTRICT` | La transferencia exitosa produce exactamente un acta digital sellada inmutable para DIGEMID. |
+| Regla de Integridad | Cláusula SQL / EF Core | Alcance de Aplicación en el Modelo | Justificación Clínica, Operativa y Legal |
+|---|---|---|---|
+| **Preservación Inmutable de Evidencia** | `ON DELETE RESTRICT` | 19 de las 20 relaciones foráneas (Instituciones, Usuarios, Órdenes, Contenedores, Incidentes, Custodias y Manifiestos). | Prohíbe de forma terminante el borrado en cascada de entidades maestras o transaccionales con histórico clínico asociado, previniendo vacíos probatorios ante litigios médicos o auditorías sanitarias. |
+| **Desacoplamiento de Despachos Cancelados** | `ON DELETE SET NULL` | Relación `dispatch_trips(id)` → `telemetry_logs(trip_id)`. | Si un viaje preliminar es cancelado antes de partir, las muestras sensoriales emitidas por el hardware IoT se conservan intactas vinculadas al contenedor, desvinculando únicamente la referencia al traslado cancelado. |
+| **Propagación Segura de Cambios** | `ON UPDATE CASCADE` | Claves primarias sustitutas basadas en identificadores UUID (`CHAR(36)`). | Garantiza sincronización referencial automática en capas de persistencia y cachés sin requerir operaciones manuales en la base de datos. |
+| **Principio de Custodia Unívoca (Sin N:M)** | Restricciones `1:1` y `1:N` estrictas con `UNIQUE` | Asignación Orden → Despacho → Contenedor → Transferencia de Custodia. | Elimina tablas intermedias de cruce N:M; la normativa sanitaria exige un único custodio legal y un único contenedor responsable por cada traslado de órganos o hemoderivados. |
+| **Inmutabilidad Criptográfica de Cierre** | Columna `is_sealed_and_immutable = 1` y hash SHA-256 | Tabla `digital_audit_manifests` (Manifiesto de Auditoría). | Bloquea a nivel de servicio y regla de base de datos cualquier mutación posterior al sellado de custodia asistencial en destino hospitalario. |
 
 ---
 
@@ -4391,10 +4986,7 @@ El diseño relacional presentado en esta sección concluye la fase arquitectóni
 2. **Satisface las Necesidades de Ambos Segmentos:** Modela fielmente las variables dinámicas de las ambulancias en ruta (Segmento 1) y los requisitos de recepción estéril y tiempos de isquemia de los cirujanos y farmacéuticos (Segmento 2).
 3. **Prepara el Terreno para el Capítulo V:** Con el esquema relacional formalizado y la estructura física de base de datos validada, el equipo técnico queda habilitado para proceder en el **Capítulo V (Product Implementation, Validation & Deployment)** con la configuración del entorno de desarrollo (.NET 10 SDK [net10.0], MySQL 8.0, Vue 3, GitFlow) y la ejecución de los Sprints de desarrollo con Entity Framework Core Code-First Migrations.
 
-
 <div style="page-break-after: always;"></div>
-
-# Capítulo V: Product Implementation, Validation & Deployment
 
 # 5.1. Software Configuration Management
 
@@ -4502,7 +5094,6 @@ El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados
 * **Archivos de Configuración:** En el backend se utiliza `appsettings.json` y `appsettings.Development.json` con sobreescritura mediante variables de entorno para cadenas de conexión seguras.
 * **Variables Frontend:** Variables de configuración de endpoints (`VITE_API_BASE_URL`) centralizadas en archivos `.env` versionados como plantillas (`.env.example`), aislando tokens de producción.
 
-
 <div style="page-break-after: always;"></div>
 
 # 5.2. Landing Page & Services Implementations
@@ -4515,53 +5106,76 @@ En esta sección se detalla la planificación, asignación de responsabilidades 
 
 ### 5.2.1.1. Sprint Planning 1
 
-El **Sprint Planning 1** define los objetivos tácticos, el alcance y la velocidad comprometida por el equipo para el primer ciclo de desarrollo. Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario de este ciclo consistió en implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend y la gobernanza SCM.
+El **Sprint Planning 1** formaliza los aspectos principales de la reunión de planificación del primer ciclo de desarrollo (Sprint 1). Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario consistió en diseñar, implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend en ASP.NET Core 10.0 y la persistencia relacional en MySQL 8.0.
 
-* **Objetivo del Sprint (Sprint Goal):** Diseñar, implementar y desplegar la primera versión del Landing Page institucional en HTML5 semántico, CSS3 modular y JavaScript, presentando la propuesta de valor de la cadena de frío, la tecnología de sensores IoT, planes SaaS y captura de prospectos asistenciales; junto con la especificación de la arquitectura de servicios backend.
-* **Duración:** 2 semanas (Semana 3 a Semana 4).
-* **Velocidad Planificada:** 16 Story Points.
-* **Historias de Usuario Seleccionadas:** `US01`, `US02`, `US03`, `US04`, `US05`, `US06`.
+| Sprint # | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | **Sprint Planning Background** |
+| Date | 2026-09-08 |
+| Time | 19:00 - 21:30 |
+| Location | Sesión virtual sincrónica vía Microsoft Teams / Discord |
+| Prepared By | Jaramillo Peña, Jhon Alexander |
+| Attendees (to planning meeting) | Jaramillo Peña, Jhon Alexander / Espinoza Rojas, Aaron / Gargate Lazo, Santiago / Munayco Pérez, Maria / Santos Sánchez, Renzo |
+| **Sprint n – 1 Review Summary** | **Sprint 0 (Inception):** Se consolidaron las bases del proyecto, necesidad médica, análisis comparativo de competidores (Sensitech, Tracklink Perú, Controlant), investigación de campo con 6 entrevistas a profundidad, User Personas (Javier Soto, Dr. Carlos Mendoza), EventStorming y Style Guidelines. El Product Owner aprobó el alcance inicial del backlog. |
+| **Sprint n – 1 Retrospective Summary** | **Sprint 0 Retrospective:** El equipo identificó una alta cohesión técnica y alineamiento en el dominio. Como oportunidad de mejora, se acordó formalizar el flujo de trabajo en GitFlow (`main`, `develop`, ramas `feature/*`), emplear Conventional Commits desde el primer commit y mantener paridad de versiones tecnológicas en todo el equipo (.NET 10 LTS, MySQL 8.0, Node.js 20+). |
+| **Sprint Goal & User Stories** | **Sprint Goal & User Stories** |
+| Sprint 1 Goal | **Our focus is on** designing, implementing, and deploying the responsive institutional Landing Page for Medical SMARTBOX and specifying the core architectural contracts.<br><br>**We believe it delivers** clear value proposition awareness and digital acquisition channels for medical logistics transport operators and healthcare centers.<br><br>**This will be confirmed when** the Landing Page is publicly deployed on GitHub Pages, visitors can explore smart container features across devices without visual overflow, and submit the B2B demonstration contact form successfully. |
+| Sprint 1 Velocity | 16 Story Points |
+| Sum of Story Points | 16 Story Points (US04: 2 SP, US05: 2 SP, US06: 1 SP, US01: 3 SP, US02: 3 SP, US03: 5 SP) |
 
 ---
 
-### 5.2.1.2. Aspect Leaders and Collaborators (Matriz LACX del Sprint 1)
+### 5.2.1.2. Aspect Leaders and Collaborators
 
-La matriz **LACX** (Lead, Assignee, Complexity, eXpense) define formalmente los roles de liderazgo técnico, ejecución, complejidad y esfuerzo asignado a los integrantes para el cumplimiento de las historias del Sprint 1.
+En esta sección se presenta la matriz **Leadership-and-Collaboration Matrix (LACX)** del Sprint 1, detallando por cada aspecto funcional y técnico del alcance quién ejerce el liderazgo técnico (Leader - L) y quiénes actúan como colaboradores de desarrollo (Collaborator - C).
 
-* **L (Lead):** Integrante responsable de liderar la revisión técnica, arquitectura y aseguramiento de calidad.
-* **A (Assignee):** Integrante encargado de la codificación e implementación directa.
-* **C (Complexity):** Complejidad técnica atribuida (Baja, Media, Alta).
-* **X (eXpense):** Esfuerzo relativo expresado en Story Points según escala Fibonacci (1, 2, 3, 5).
+Los aspectos definidos para este primer ciclo corresponden a los módulos del Landing Page y las especificaciones arquitectónicas base:
+* **Aspecto 1: Landing Page UI & Estructura:** Maquetación semántica HTML5/CSS3 y diseño responsive (US04).
+* **Aspecto 2: Formulario Demo y Captura B2B:** Componentes interactivos de contacto institucional y validación en cliente (US05).
+* **Aspecto 3: FAQ & Cumplimiento Normativo:** Acordeón interactivo de preguntas frecuentes y directivas sanitarias (US06).
+* **Aspecto 4: Registro Institucional & Roles:** Modelado de entidades y flujos de registro de centros de salud (US01).
+* **Aspecto 5: Acceso y Autenticación 2FA:** Especificación de políticas de seguridad, login y token OTP (US02).
+* **Aspecto 6: Especificación API REST & DDD:** Contratos OpenAPI y arquitectura de capas en ASP.NET Core (.NET 10 LTS) (US03).
 
-| User Story ID | Título de la Historia | Lead (L) | Assignee (A) | Complexity (C) | eXpense / Points (X) |
-| :---: | :--- | :--- | :--- | :---: | :---: |
-| **US04** | Exploración de Propuesta de Valor y Solución IoT | Maria Munayco | Santiago Gargate | Baja | 2 |
-| **US05** | Solicitud de Demostración Corporativa y Contacto B2B | Aaron Espinoza | Jhon Jaramillo | Baja | 2 |
-| **US06** | Consulta Interactiva de Preguntas Frecuentes (FAQ) | Santiago Gargate | Maria Munayco | Baja | 1 |
-| **US01** | Registro Institucional de Centros de Salud (Diseño de Flujo) | Jhon Jaramillo | Renzo Santos | Media | 3 |
-| **US02** | Autenticación y Perfil de Personal de Emergencia | Santiago Gargate | Maria Munayco | Baja | 3 |
-| **US03** | Arquitectura y Especificación de Endpoints de Autenticación | Renzo Santos | Aaron Espinoza | Media | 5 |
+| Team Member<br>(Last Name, First Name) | GitHub Username | Aspecto 1:<br>Landing Page UI<br>Leader (L) /<br>Collaborator (C) | Aspecto 2:<br>Formulario Demo<br>Leader (L) /<br>Collaborator (C) | Aspecto 3:<br>FAQ Normativo<br>Leader (L) /<br>Collaborator (C) | Aspecto 4:<br>Registro Centros<br>Leader (L) /<br>Collaborator (C) | Aspecto 5:<br>Acceso & 2FA<br>Leader (L) /<br>Collaborator (C) | Aspecto 6:<br>API REST & DDD<br>Leader (L) /<br>Collaborator (C) |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Jaramillo Mayta, Jhon Jordy | `jhon409` | C | C | C | L | C | C |
+| Espinoza Flores, Aaron André | `AaronEspinoza1` | C | L | C | C | C | C |
+| Gargate Paredes, Santiago | `Santiago-Gargate` | C | C | L | C | L | C |
+| Munayco Apolaya, Maria Luisa | `MunaycoMaria` | L | C | C | C | C | C |
+| Santos Minaya, Renzo Piero | `RenzoSantosUPC` | C | C | C | C | C | L |
 
 ---
 
 ### 5.2.1.3. Sprint Backlog 1
 
-El **Sprint Backlog 1** presenta el desglose técnico de tareas necesarias para satisfacer los criterios de aceptación de cada historia, con sus estimaciones en horas de esfuerzo individual y estado de avance.
+El **Sprint Backlog 1** presenta el desglose detallado de tareas técnicas asociadas a las historias de usuario comprometidas para el Sprint 1. El objetivo principal de la iteración fue la construcción, validación responsive y despliegue del Landing Page institucional, junto con la definición de contratos y modelos para los servicios de autenticación y registro.
 
-| User Story ID | Tareas Técnicas (Technical Tasks) | Estimación (Horas) | Estado de Entrega |
-| :---: | :--- | :---: | :---: |
-| **US04** | • Maquetación HTML5 semántica de las secciones Hero, Propuesta de Valor y Características IoT.<br>• Estilos CSS3 modulares con diseño responsive mobile-first (viewports 375px, 768px, 1440px).<br>• Integración de badges de temperatura y preservación de cadena de frío (+2 °C a +8 °C). | 6 h | **Completado** |
-| **US05** | • Estructuración del formulario de contacto y solicitud de demo corporativa B2B.<br>• Validación en cliente con JavaScript para formatos de correo institucional y teléfono.<br>• Mensajes accesibles de confirmación y estado de envío. | 6 h | **Completado** |
-| **US06** | • Maquetación del acordeón interactivo de Preguntas Frecuentes (FAQ).<br>• Lógica JavaScript para apertura y cierre fluido de paneles con accesibilidad ARIA.<br>• Inclusión de respuestas sobre normativas DIGEMID y sensores biomédicos. | 4 h | **Completado** |
-| **US01** | • Especificación de flujos de registro institucional y modelado en base de datos (`hospital_institutions`).<br>• Validación de invariantes de suscripción y facturación B2B. | 10 h | **Completado** |
-| **US02** | • Diseño y maquetación de la vista de acceso de operadores de emergencia.<br>• Definición de políticas de verificación en dos pasos (2FA) y token OTP. | 8 h | **Completado** |
-| **US03** | • Especificación formal de contratos OpenAPI/Swagger para autenticación en ASP.NET Core (.NET 10 LTS).<br>• Modelado de clases de dominio para usuarios, roles y contraseñas cifradas en C#. | 14 h | **Completado** |
+* **Herramienta de Gestión:** GitHub Projects / Trello.
+* **URL Pública del Board:** [`https://github.com/orgs/NeonCode-UPC/projects/1`](https://github.com/orgs/NeonCode-UPC/projects/1)
 
-**Resumen del Sprint Backlog 1:**
-* **Total de Historias de Usuario:** 6 historias.
-* **Puntos de Historia Totales (Story Points):** 16 SP.
-* **Horas Totales de Trabajo Técnico:** 48 horas.
-* **Estado:** 100% de tareas del Sprint 1 completadas para el hito AV1.
+A continuación se presenta la tabla oficial de control de estado del Sprint 1:
+
+| Sprint # | Sprint 1 | | | | | | |
+|---|---|---|---|---|---|---|---|
+| **User Story** | **User Story** | **Work-Item / Task** | **Work-Item / Task** | **Work-Item / Task** | **Work-Item / Task** | **Work-Item / Task** | **Work-Item / Task** |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco | Done |
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación de layout CSS Grid y Flexbox para viewports móviles (375px a 414px) y tablets. | 4 h | Santiago Gargate | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual de captura de prospectos con inputs institucionales y estilos de marca. | 5 h | Aaron Espinoza | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Lógica JavaScript para validación de RUC, correo corporativo y feedback accesible. | 6 h | Jhon Jaramillo | Done |
+| US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Maquetación y comportamiento toggle ARIA para preguntas sobre normativas DIGEMID y sensores. | 4 h | Maria Munayco | Done |
+| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado entidad institución y base de datos | Definición de esquema relacional `hospital_institutions` en MySQL 8.0 y reglas de RUC único. | 5 h | Jhon Jaramillo | Done |
+| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de endpoints de registro | Diseño de contratos OpenAPI para recepción y validación de datos de centros hospitalarios. | 7 h | Renzo Santos | Done |
+| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación de protocolo de login para operadores y verificación por código OTP de 6 dígitos. | 5 h | Santiago Gargate | Done |
+| US03 | Endpoint de Autenticación de Usuarios (API) | TSK-03-01 | Diseño de contratos OpenAPI de sign-in | Especificación de endpoint POST `/api/v1/authentication/sign-in` y esquemas JWT de sesión. | 6 h | Renzo Santos | Done |
+| US03 | Endpoint de Autenticación de Usuarios (API) | TSK-03-02 | Arquitectura de dominio para identidad (.NET 10) | Modelado de clases de dominio, Value Objects y políticas de cifrado de credenciales en C# 14. | 5 h | Aaron Espinoza | Done |
+
+**Resumen de Cierre del Sprint Backlog 1:**
+* **Historias de Usuario Completadas:** 6 (100% de historias planificadas).
+* **Story Points Entregados:** 16 SP / 16 SP comprometidos.
+* **Horas de Ingeniería Ejecutadas:** 53 horas de desarrollo colaborativo.
+* **Estado Final:** Sprint 1 cerrado satisfactoriamente con despliegue activo en la nube.
 
 ---
 
@@ -4583,20 +5197,70 @@ A continuación se documenta el registro histórico de confirmaciones de cambios
 
 El Landing Page institucional fue desarrollado y validado satisfactoriamente en múltiples entornos de visualización (*mobile*, *tablet* y *desktop*), garantizando una experiencia visual fluida sin desbordamientos horizontales.
 
-#### Vista Principal: Sección Hero y Propuesta de Valor
-Presenta el titular de alto impacto para la preservación de órganos y medicamentos termosensibles, el botón de llamada a la acción (CTA) para solicitud de demostración B2B y la ilustración del contenedor inteligente en ambulancia.
+#### Video de Demostración de Navegación (Landing Page): [Ver video aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
+
+<img width="2028" height="1090" alt="Screenshot 2026-09-28 at 10 33 48 AM" src="https://github.com/user-attachments/assets/7c5733c4-086d-4fd7-8335-7a6b68b379a6" />
+
+### Vista implementada: Landing Page Principal (Hero Section)
+
+**Descripción:** Interfaz de inicio diseñada para captar la atención de empresas de transporte y operadores de cadena de frío. Presenta la propuesta de valor central de Medical SmartBox: el monitoreo, detección de incidencias y trazabilidad de transportes médicos en un solo lugar.
+
+**Componentes y Funcionalidades Clave:**
+* **Barra de navegación funcional:** Menú interactivo con accesos directos a la plataforma, selector de idioma (ES/EN) y botones globales de autenticación (*Log in / Open the Web App*).
+* **Propuesta de valor clara:** Título principal de alto impacto acompañado de una breve descripción del propósito del software.
+* **Llamados a la acción (CTA):** Botones duales contrastados para redirigir rápidamente al usuario hacia la Web App o el formulario de ingreso.
+
+<br>
 
 ![Landing Page - Sección Hero](assets/chapter-4/hero-mockup.png)
 *Nota: Captura de ejecución del Landing Page institucional implementado.*
 
-#### Vista de Solución: Monitoreo Telemático y Alertas Críticas
-Detalla la tecnología de refrigeración activa Peltier, los sensores de temperatura y peso en tiempo real, y los umbrales de alerta temprana ante desvíos térmicos.
+<br>
+
+<img width="669" height="588" alt="Screenshot 2026-09-28 at 10 46 46 AM" src="https://github.com/user-attachments/assets/42d285c0-2ff3-48f9-b89f-d21dc15bc4ff" /> 
+
+### Vista implementada: Formulario de Inicio de Sesión (Login)
+
+**Descripción:** Interfaz correspondiente al módulo de autenticación para la Web Application de Medical SmartBox. Permite el acceso restringido y seguro al personal autorizado (operadores logísticos y centros de salud) mediante credenciales corporativas.
+
+**Componentes Clave:** 
+* **Campos de entrada validados:** Inputs específicos para Correo corporativo (`nombre@organizacion.com`) y Contraseña protegida de manera visual.
+* **Botón de acción directa:** Botón estilizado con los colores de la marca para el envío y validación de las credenciales de usuario (*Iniciar sesión*).
+* **Control de navegación:** Botón de cierre superior (X) para retornar a la Landing Page principal de manera intuitiva.
+
+<br>
+
+<img width="1061" height="894" alt="Screenshot 2026-09-28 at 11 06 33 AM" src="https://github.com/user-attachments/assets/22dc7b3b-5cc6-402a-b381-8ed8964b464b" />
+
+### Vista implementada: Detalle de Monitoreo de Transporte en Tiempo Real
+
+**Descripción:** Vista detallada de un transporte en tránsito activo. Centraliza todas las telemetrías críticas recopiladas por el hardware en una única interfaz unificada para el operador.
+
+**Componentes Clave:**
+* **Panel de Telemetría en Vivo:** Indicadores en tiempo real de Temperatura (5.2 °C), ETA, Nivel de Batería del SmartBox, Combustible, Peso y Estado de la Puerta.
+* **Gráfico de Historial Térmico:** Gráfica lineal automatizada que contrasta las mediciones de las últimas 6 horas frente al rango seguro permitido (2 °C - 8 °C).
+* **Metadatos de Operación:** Tarjetas informativas con los datos asignados del Conductor (M. Quispe) y la Placa del Vehículo (ABQ-742).
+
+<br>
 
 ![Landing Page - Presentación de Características](assets/chapter-4/presentacion-mockup.png)
 *Nota: Sección interactiva de propuesta tecnológica del Landing Page.*
 
-#### Vista de Cierre: Formulario de Contacto Corporativo y Footer
-Permite a directores hospitalarios registrar sus datos de contacto institucional para agendar una prueba de campo. Incluye enlaces a términos de servicio y políticas éticas.
+<br>
+
+<img width="1078" height="704" alt="Screenshot 2026-09-28 at 11 16 31 AM" src="https://github.com/user-attachments/assets/59b725c5-d856-4195-bddc-5b4af7790860" />
+
+### Vista implementada: Módulo de Gestión de Alertas e Incidencias
+
+**Descripción:** Interfaz de control en tiempo real orientada a la detección temprana de riesgos en la cadena de frío, permitiendo al equipo logístico tomar acciones de mitigación inmediatas antes de comprometer la integridad del producto médico.
+
+**Componentes Clave:**
+* **Tarjeta de Incidencia Crítica:** Bloque dinámico que detalla de forma matemática el desvío térmico (8.7 °C detectados frente al rango esperado de 2-8 °C), la ubicación exacta (Panamericana Sur) y la marca de tiempo (13:42).
+* **Gráfico de Monitoreo Lineal:** Visualización de la fluctuación de temperatura de las últimas horas para evaluar la gravedad de la anomalía.
+* **Acciones de Mitigación:** Botones interactivos de respuesta rápida (*Revisar transporte* y *Ver historial*).
+* **Feed Cronológico Histórico:** Listado lateral estructurado por prioridad de eventos y estados logísticos anteriores (Puerta abierta, Batería baja, Desvío resuelto, Entrega confirmada).
+
+<br>
 
 ![Landing Page - Footer y Conversión B2B](assets/chapter-4/cta-footer-mockup.png)
 *Nota: Sección de conversión final y pie de página institucional.*
@@ -4635,17 +5299,6 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 ![Team Collaboration Insights during Sprint](assets/chapter-5/report-insights-av1.png)
 *Nota: Analítica de colaboración, frecuencia de confirmaciones y contribuciones del equipo NeonCode durante el Sprint 1.*
 
-
-<div style="page-break-after: always;"></div>
-
-# 5.3. Validation Interviews
-
-
-<div style="page-break-after: always;"></div>
-
-# 5.4. Video About the Product
-
-
 <div style="page-break-after: always;"></div>
 
 # Conclusiones y Recomendaciones
@@ -4672,7 +5325,6 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 3. **Sprint 4 (Hito TB2 - Release Review):**  
    Integrar la comunicación bidireccional en tiempo real con WebSockets (SignalR) para la actualización en vivo de telemetría y alarmas en cabina de ambulancia, ejecutando pruebas exhaustivas de usabilidad según las 10 heurísticas de Nielsen con personal de salud antes de la liberación final.
 
-
 <div style="page-break-after: always;"></div>
 
 # Bibliografía
@@ -4692,20 +5344,23 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 13. Vue.js Core Team. (2024). *Vue.js Official Style Guide and Component Standards*. Vuejs.org. https://vuejs.org/style-guide/
 14. World Wide Web Consortium [W3C]. (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. W3C Recommendation. https://www.w3.org/TR/WCAG21/
 
-
 <div style="page-break-after: always;"></div>
 
 # Anexos
 
+En esta sección se consolidan los accesos a los repositorios de código fuente, despliegues públicos en la nube, herramientas de diseño colaborativo y registros audiovisuales institucionales correspondientes a la entrega **AV1 (Semana 4)** del proyecto **Medical SMARTBOX (NeonCode)**.
+
 ---
 
-## Anexo A. Repositorios de Código Fuente y Documentación
+## Anexo A. Repositorios de Código Fuente y Despliegues en la Nube
 
 * **Repositorio Central del Informe Técnico (Project Report):**  
   [https://github.com/NeonCode-UPC/report](https://github.com/NeonCode-UPC/report)
 * **Repositorio del Landing Page Institucional (Sprint 1):**  
   [https://github.com/NeonCode-UPC/landing-page](https://github.com/NeonCode-UPC/landing-page)
-* **Organización Oficial en GitHub:**  
+* **Despliegue Público Activo del Landing Page (GitHub Pages):**  
+  [https://neoncode-upc.github.io/landing-page/](https://neoncode-upc.github.io/landing-page/)
+* **Organización Oficial del Proyecto en GitHub:**  
   [https://github.com/NeonCode-UPC](https://github.com/NeonCode-UPC)
 
 ---
@@ -4713,6 +5368,30 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 ## Anexo B. Tableros Digitales y Prototipos Interactivos
 
 * **Lienzo Colaborativo de Big Picture EventStorming (Miro):**  
-  [Medical SMARTBOX - Miro Board](https://miro.com/welcomeonboard/QzJXNzBaN05udzZHdmh1aE1JZmhoa2RtRmNEa0JTaWx2K3NGRE9SVUZPMFR0STZFRzVndVkydkV2SVlWNFZtMEcwU0JBMnpVa0lyMUNJWFIzZmFveU5mVW9TOHc2MXprTGlpMjk2b2V4SWEwdDVOTUxJK0tCb1l5RnA4R1pSS0Z3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=514263093453)
+  [Medical SMARTBOX - Miro Board](https://miro.com/app/board/uXjVHnHEONU=/?share_link_id=336672614310)
 * **Prototipo Interactivo de Alta Fidelidad (Figma):**  
   [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
+* **Tablero Ágil de Gestión del Sprint 1 (GitHub Projects):**  
+  [Tablero Kanban Sprint 1 - NeonCode](https://github.com/orgs/NeonCode-UPC/projects/1)
+
+---
+
+## Anexo C. Grabaciones Audiovisuales y Entrevistas a Profundidad
+
+Todos los recursos audiovisuales se encuentran alojados en la infraestructura institucional de **Microsoft Stream / SharePoint UPC**, configurados con permisos de visualización habilitados para toda la organización (`@upc.edu.pe`).
+
+### Entrevistas a Profundidad (Investigación de Campo - Capítulo 2.2)
+
+| # | Segmento | Participante | Rol / Cargo | Enlace a Grabación Oficial |
+|:---:|:---:|---|---|---|
+| **E1** | Segmento 1 | **Wilbert Toledo** | Estudiante de Medicina / Paramédico en Prácticas | [Ver grabación E1 - Wilbert Toledo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi) |
+| **E2** | Segmento 1 | **Aldair Lazaro** | Paramédico de Transporte Asistido | [Ver grabación E2 - Aldair Lazaro](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd) |
+| **E3** | Segmento 1 | **Renato Calvo Yalan** | Conductor / Paramédico Asistencial | [Ver grabación E3 - Renato Calvo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi) |
+| **E4** | Segmento 2 | **Humberto Arellán** | Transportista Logístico Biomédico | [Ver grabación E4 - Humberto Arellán](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc) |
+| **E5** | Segmento 2 | **Gianfranco Timoteo** | Coordinador de Soporte y Cadena de Frío | [Ver grabación E5 - Gianfranco Timoteo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) |
+| **E6** | Segmento 2 | **Karla Pacheco** | Auxiliar Administrativa de Farmacia y Rutas | [Ver grabación E6 - Karla Pacheco](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) |
+
+### Video Demostrativo de Producto
+
+* **Video de Demostración del Landing Page Desplegado (Sprint 1):**  
+  [Demostración en Video - Landing Page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)

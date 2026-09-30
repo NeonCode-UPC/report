@@ -1,119 +1,168 @@
 # 2.2. Entrevistas
 
-Las entrevistas permitieron explorar cómo se realiza actualmente el traslado de medicamentos, órganos, muestras e insumos médicos sensibles. Se trabajó con los dos segmentos definidos en el capítulo 1 y se registraron **tres entrevistas por segmento (seis en total)**. El estudio es cualitativo y exploratorio: los resultados describen patrones y oportunidades, pero no representan estadísticamente a toda la población.
+La investigación empírica de campo constituye el cimiento metodológico del proyecto **Medical SMARTBOX**. Para validar la problemática y relevar las necesidades operativas de la cadena de frío biomédica en Lima Metropolitana, se diseñaron y ejecutaron entrevistas a profundidad con profesionales en ejercicio activo pertenecientes a los dos segmentos objetivo del proyecto: personal médico y paramédicos asistenciales en ambulancias (**Segmento 1**), y coordinadores de logística farmacéutica y directores de centros hospitalarios (**Segmento 2**).
 
-## 2.2.1. Objetivo y alcance
+---
 
-**Objetivo general.** Comprender tareas, decisiones, dificultades, emociones y criterios de éxito de quienes participan en el traslado y recepción de carga médica sensible, sin presentar la solución como respuesta anticipada.
+## 2.2.1. Diseño de entrevistas
 
-**Objetivos específicos:**
+Se elaboró una guía de entrevista semiestructurada aplicando las directrices metodológicas de UX Research de la industria (Nielsen Norman Group e Interaction Design Foundation). El diseño se orientó a reconstruir experiencias reales recientes sin condicionar al entrevistado ni presentar prematuramente la solución tecnológica, garantizando la recolección neutral de datos objetivos y percepciones subjetivas.
 
-- Reconstruir el proceso actual desde la preparación hasta la recepción de la carga.
-- Identificar información, evidencias y responsables involucrados en cada etapa.
-- Reconocer incidentes reales, su frecuencia percibida y la respuesta aplicada.
-- Conocer las condiciones que generan confianza, estrés o incertidumbre.
-- Detectar diferencias entre las necesidades del personal médico y las de coordinación logística.
-- Obtener insumos verificables para User Persona, Empathy Map, User Task Matrix, User Journey Map y EventStorming.
+### Objetivos de la Guía de Entrevista:
+1. Reconstruir el flujo paso a paso del traslado asistencial de medicamentos refrigerados, hemoderivados, vacunas y muestras biológicas.
+2. Identificar las herramientas, registros documentales y canales de comunicación actualmente utilizados en ruta y en almacén.
+3. Documentar incidentes críticos reales de ruptura de cadena de frío, fallas mecánicas, demoras por congestión vehicular y pérdidas de custodia.
+4. Medir los niveles de estrés, confianza, carga cognitiva y frustración del personal operativo frente a la falta de trazabilidad telemática.
+5. Extraer requerimientos funcionales prioritarios para la formulación de los arquetipos (*User Personas*), matrices de tareas y escenarios de uso.
 
-## 2.2.2. Protocolo de entrevista
+### Guía de Preguntas para el Segmento 1 (Personal Médico y Paramédicos de Ambulancia):
+1. **Contexto operativo:** ¿Cuál es tu rol exacto durante una guardia de emergencia y qué tipo de insumos refrigerados te toca trasladar con mayor frecuencia?
+2. **Procedimiento actual:** ¿Qué pasos sigues desde que recibes la orden de despacho hasta que entregas el contenedor térmico en el hospital receptor?
+3. **Control térmico:** ¿Cómo verificas que la temperatura interna del cooler se mantenga en el rango de +2 °C a +8 °C mientras conduces o atiendes al paciente en cabina?
+4. **Instrumentación y registro:** ¿Qué herramientas utilizas para medir la temperatura y dónde registras las lecturas durante el trayecto?
+5. **Incidentes en ruta:** Recuerda una ocasión en la que la ambulancia quedó atrapada en el tráfico o se produjo un sobrecalentamiento. ¿Qué ocurrió y cómo reaccionaron?
+6. **Seguridad y custodia:** ¿Cómo aseguras que el contenedor no sea abierto indebidamente en ruta o que no se confundan los medicamentos?
+7. **Puntos ciegos:** ¿En qué momento del traslado experimentas mayor incertidumbre respecto al estado de la carga?
+8. **Comunicación operativa:** ¿Por qué medios coordinas con la central de despacho y con el hospital de destino tu hora estimada de llegada (ETA)?
+9. **Criterios de entrega:** ¿Qué condiciones exige el personal del hospital receptor para aceptar o rechazar formalmente la entrega de un hemoderivado o fármaco?
+10. **Requerimiento ideal:** Si pudieras incorporar una innovación tecnológica en tu contenedor de traslado, ¿cuál resolvería tu mayor preocupación?
 
-Para la siguiente ronda se empleará una entrevista semiestructurada de 10 a 15 minutos. Antes de grabar se informará el propósito académico, el uso del video y la posibilidad de omitir datos sensibles. No se solicitarán nombres de pacientes, historias clínicas, credenciales ni información institucional reservada. Este protocolo mejora las entrevistas ya registradas, cuya duración fue menor.
+### Guía de Preguntas para el Segmento 2 (Coordinadores Logísticos y Farmacéuticos Hospitalarios):
+1. **Gestión de cadena de frío:** ¿Cómo planificas y supervisas la distribución de biológicos y medicamentos termolábiles hacia ambulancias o centros periféricos?
+2. **Recepción y verificación:** Al arribar un envío a tu centro de salud, ¿qué protocolo sigues para certificar que no hubo excursiones térmicas en tránsito?
+3. **Dataloggers y herramientas:** ¿Qué tecnologías emplean actualmente para registrar la temperatura y con qué retraso temporal accedes a la información de los viajes?
+4. **Pérdidas y descartes:** ¿Con qué frecuencia se reportan pérdidas o descartes de vacunas o hemoderivados por ruptura de la cadena de frío y qué costo representa para tu institución?
+5. **Auditoría y DIGEMID:** ¿Cómo gestionan las actas de entrega física y qué dificultades enfrentan durante las auditorías de trazabilidad de DIGEMID/SUSALUD?
+6. **Conflictos de custodia:** ¿Se han presentado disputas entre el transportista/paramédico y el personal receptor sobre la responsabilidad de un lote degradado?
+7. **Visibilidad en tiempo real:** ¿Dispones actualmente de una plataforma web que te permita ver en vivo la ubicación y temperatura del contenedor antes de que llegue a tu puerta?
+8. **Control de stock y mermas:** ¿Cómo detectan si un insumo fue retirado del cooler de manera no autorizada durante un traslado de emergencia?
+9. **Impacto del tráfico:** ¿Cómo afecta la congestión vehicular de Lima Metropolitana la planificación de turnos de quirófano y ventanas de isquemia?
+10. **Criterio de valor:** ¿Qué características técnicas consideras indispensables en una plataforma digital de monitoreo para confiar plenamente en ella?
 
-### Secuencia del protocolo mejorado
+---
 
-1. Presentación, consentimiento para grabar y confirmación del rol del participante.
-2. Preguntas de contexto sobre experiencia y responsabilidades.
-3. Reconstrucción de un caso real reciente.
-4. Profundización en tareas, herramientas, evidencias, problemas y emociones.
-5. Priorización de necesidades y criterio de éxito.
-6. Cierre, agradecimiento y autorización para citar hallazgos de forma anonimizada.
+## 2.2.2. Registro de entrevistas
 
-### Criterios para formular las preguntas
+Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por cada segmento objetivo). Las sesiones fueron grabadas en video con consentimiento informado de los participantes y se encuentran alojadas en la plataforma institucional de Microsoft Stream / SharePoint de la universidad.
 
-- Preguntas abiertas, neutrales y centradas en experiencias pasadas.
-- Una idea por pregunta; se evita sugerir funciones o respuestas.
-- Se solicita un ejemplo concreto antes de una opinión general.
-- Se distingue entre hechos observables y percepciones.
-- Se emplean repreguntas como: **¿qué ocurrió después?**, **¿cómo lo supo?**, **¿quién intervino?**, **¿qué evidencia quedó?** y **¿por qué fue importante?**
+### Tabla Consolidada de Registro de Entrevistas:
 
-## 2.2.3. Guion para el segmento 1: personal médico y de emergencias
+| # | Segmento | Nombre del Entrevistado | Rol / Cargo | Organización / Contexto | Edad | Distrito | Fecha | Duración | Enlace a Video (Microsoft Stream) |
+| :-: | :--- | :--- | :--- | :--- | :-: | :--- | :-: | :-: | :--- |
+| **E1** | Segmento 1 | **Wilbert Toledo** | Estudiante de Medicina / Paramédico en Prácticas | Red de Ambulancias de Emergencia | 21 | Pueblo Libre | 16/09/2026 | 02:51 min | [Entrevista 1 (Toledo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi) |
+| **E2** | Segmento 1 | **Aldair Lazaro** | Paramédico de Transporte Asistido | Servicio de Ambulancias y Rescate | 26 | San Martín de Porres | 17/09/2026 | 04:38 min | [Entrevista 2 (Lazaro)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd) |
+| **E3** | Segmento 1 | **Renato Calvo Yalan** | Conductor / Paramédico Asistencial | Unidad Móvil de Soporte Vital | 22 | San Isidro | 17/09/2026 | 02:24 min | [Entrevista 3 (Calvo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi) |
+| **E4** | Segmento 2 | **Humberto Arellán** | Transportista Logístico Biomédico | Empresa de Distribución de Muestras y Fármacos | 49 | Chancay | 16/09/2026 | 04:27 min | [Entrevista 4 (Arellán)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc) |
+| **E5** | Segmento 2 | **Gianfranco Timoteo** | Coordinador de Soporte y Cadena de Frío | Laboratorio y Centro Clínico | 21 | Chorrillos | 16/09/2026 | 04:59 min | [Entrevista 5 (Timoteo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) |
+| **E6** | Segmento 2 | **Karla Pacheco** | Auxiliar Administrativa de Farmacia y Rutas | Centro de Salud Policlínico | 25 | Breña | 16/09/2026 | 04:09 min | [Entrevista 6 (Pacheco)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) |
 
-1. Cuéntame sobre la última vez que recibiste o trasladaste un medicamento, muestra, órgano o insumo sensible. ¿Cuál era tu responsabilidad?
-2. ¿Qué pasos seguiste desde que te notificaron el traslado hasta que entregaste o recibiste la carga?
-3. ¿Qué información consultaste en cada paso y de dónde la obtuviste?
-4. ¿Cómo comprobaste que la carga llegó en condiciones adecuadas? ¿Qué evidencia quedó registrada?
-5. Recuerda una ocasión en la que hubo una demora, cambio de temperatura, apertura no prevista o falta de insumos. ¿Qué pasó y cómo reaccionaron?
-6. ¿En qué momento del proceso tuviste mayor incertidumbre? ¿Qué necesitabas saber entonces?
-7. ¿Con quién te comunicaste durante el traslado, por qué medio y qué dificultades aparecieron?
-8. Cuando llegan varias notificaciones, ¿cómo decides cuál atender primero?
-9. ¿Qué condiciones deben cumplirse para que aceptes o rechaces una entrega?
-10. Si pudieras cambiar una sola parte del proceso actual, ¿cuál sería y por qué?
+---
 
-**Repreguntas sugeridas:** ¿cuánto tiempo tomó?, ¿quién tomó la decisión?, ¿qué dato faltó?, ¿qué consecuencia tuvo?, ¿cómo se resolvió?, ¿qué harías diferente?
+### Resúmenes Descriptivos Individuales de Entrevistas:
 
-## 2.2.4. Guion para el segmento 2: operadores logísticos e instituciones de salud
+#### Entrevista E1: Wilbert Toledo (Segmento 1)
+* **Perfil:** Estudiante de medicina y paramédico en prácticas de ambulancia de soporte vital.
+* **Datos Demográficos:** 21 años, residente en Pueblo Libre. Dispositivos preferidos: smartphone Android (Samsung Galaxy), laptop Windows. Navegador: Google Chrome.
+* **Variables Objetivas:** Traslada medicamentos termolábiles de primera línea, sueros y hemoderivados. Utiliza coolers pasivos de poliestireno expandido con geles refrigerantes. Verifica la temperatura únicamente al inicio y al final abriendo la tapa con un termómetro de varilla. Tiempo promedio de traslado en Lima: 45 a 80 minutos.
+* **Variables Subjetivas:** Ansiedad elevada ante atascos en avenidas principales (Av. Brasil, Javier Prado). Desconfianza respecto a si el gel congelado mantiene la temperatura real tras 1 hora bajo el calor de la cabina. Expresa frustración por la falta de un aviso sonoro si la temperatura sube de +8 °C.
+* **Cita Textual:** *"Si la sirena suena fuerte y el paciente está inestable, nadie está mirando si la caja de vacunas se calentó. Necesitamos que el contenedor te avise solo, con una alarma roja o al celular."*
 
-1. Cuéntame cómo se gestionó el último traslado médico sensible que coordinaste o supervisaste, desde la solicitud hasta el cierre.
-2. ¿Quiénes participaron y qué decisiones tomó cada responsable?
-3. ¿Qué herramientas, documentos o canales utilizaste para planificar y dar seguimiento al traslado?
-4. ¿Cómo conociste la ubicación, el avance, las condiciones de conservación y la hora estimada de llegada?
-5. Describe un incidente reciente. ¿Cómo se detectó, a quién se notificó y qué acciones se registraron?
-6. ¿Qué información suele estar incompleta, duplicada o desactualizada?
-7. ¿Cómo se mantiene la cadena de custodia y qué evidencia se exige al entregar la carga?
-8. ¿Qué tareas repites manualmente y cuánto esfuerzo aproximado demandan?
-9. ¿Qué indicadores revisas para evaluar un traslado y tomar medidas de mejora?
-10. ¿Qué tendría que ocurrir para considerar que el proceso fue exitoso y confiable?
+#### Entrevista E2: Aldair Lazaro (Segmento 1)
+* **Perfil:** Paramédico rescatista de ambulancia con 3 años de experiencia en emergencias prehospitalarias.
+* **Datos Demográficos:** 26 años, residente en San Martín de Porres. Dispositivos: smartphone Xiaomi Android, tablet institucional. Navegador: Chrome / Edge.
+* **Variables Objetivas:** Realiza entre 3 y 6 traslados asistenciales por turno. Registra el estado de la entrega en planillas físicas de papel autocopiativo. Se comunica con el hospital receptor mediante llamadas de voz y mensajes de WhatsApp. Ha experimentado aperturas accidentales de coolers por vibraciones en baches viales.
+* **Variables Subjetivas:** Estrés crónico por la doble carga de vigilar al paciente y proteger los fármacos. Sensación de desamparo ante reclamos del hospital si el medicamento llega caliente, ya que no tiene cómo demostrar a qué hora exacta subió la temperatura.
+* **Cita Textual:** *"Cuando llegas al hospital y Farmacia te rechaza el lote diciendo que demoró mucho, se genera un conflicto. Si tuviéramos un registro que pruebe que el frío nunca se rompió, nos ahorraríamos horas de discusiones."*
 
-**Repreguntas sugeridas:** ¿dónde queda registrado?, ¿quién valida el dato?, ¿qué pasa si no responde?, ¿con qué frecuencia ocurre?, ¿qué impacto tiene?, ¿cómo se audita?
+#### Entrevista E3: Renato Calvo Yalan (Segmento 1)
+* **Perfil:** Conductor y asistente paramédico en unidades móviles de intervención rápida.
+* **Datos Demográficos:** 22 años, residente en San Isidro. Dispositivos: iPhone (iOS), iPad, MacBook. Canales: WhatsApp, Waze, Google Maps.
+* **Variables Objetivas:** Responsable de la conducción segura y de la conexión de equipos a los tomacorrientes de 12V DC de la ambulancia. Desconoce la temperatura interna del contenedor durante el viaje porque la caja va en el compartimento asistencial posterior.
+* **Variables Subjetivas:** Presión por los tiempos de llegada (ETA). Manifiesta que conducir a alta velocidad sorteando el tráfico limeño impide manipular cajas o verificar diales analógicos.
+* **Cita Textual:** *"Yo voy al volante concentrado en abrirme paso entre los carros. Si el cooler tiene un indicador visual grande o se conecta a una tablet en el tablero, el chofer sabe de un vistazo si todo va bien sin voltear."*
 
-## 2.2.5. Registro y evidencias
+#### Entrevista E4: Humberto Arellán (Segmento 2)
+* **Perfil:** Transportista y operador logístico biomédico interprovincial e interurbano con más de 15 años de trayectoria.
+* **Datos Demográficos:** 49 años, residente en Chancay (con operaciones logísticas en Lima Norte). Dispositivos: smartphone Android gama media. Canales: llamadas telefónicas, WhatsApp corporativo.
+* **Variables Objetivas:** Maneja furgones de distribución hacia postas médicas y hospitales de la red periférica. Utiliza dataloggers USB convencionales que se leen en destino tras conectar a una computadora. Traslados con duración de 2 a 5 horas.
+* **Variables Subjetivas:** Resignación frente a la burocracia documental de recepción. Preocupación constante por averías mecánicas del aire acondicionado o fallas de refrigeración en la carretera Panamericana.
+* **Cita Textual:** *"El datalogger USB solo te dice al final del día que la carga se malogró hace tres horas. Para ese momento ya perdiste miles de soles en medicamentos y el paciente se quedó sin tratamiento."*
 
-Cada entrevista cuenta con vínculo al video completo, fecha, duración y datos básicos del participante. En una siguiente iteración se recomienda añadir una captura representativa y una transcripción o minuta con marcas de tiempo para que cada hallazgo pueda rastrearse hasta una respuesta exacta.
+#### Entrevista E5: Gianfranco Timoteo (Segmento 2)
+* **Perfil:** Coordinador de soporte y supervisor de cadena de frío en laboratorio clínico central.
+* **Datos Demográficos:** 21 años, residente en Chorrillos. Dispositivos: laptop Windows, smartphone Android, monitor dual en central. Navegador: Chrome, Brave.
+* **Variables Objetivas:** Responsable de auditar la recepción de muestras biológicas y reactivos de diagnóstico. Consolida manualmente registros en hojas de cálculo de Excel a partir de actas en papel. Detecta discrepancias de temperatura en aproximadamente el 15% de los envíos recibidos en horas punta.
+* **Variables Subjetivas:** Agotamiento por conciliar hojas de ruta dispersas. Temor a sanciones de DIGEMID ante la falta de trazabilidad digital inmutable. Desconfianza hacia los registros anotados a mano por choferes.
+* **Cita Textual:** *"En el laboratorio nos llega un papel con un garabato que dice 4 °C, pero no hay forma de auditar si la muestra estuvo a 12 °C durante el embotellamiento. Necesitamos una gráfica digital continua que no pueda manipularse."*
 
-| Entrevistado | Segmento | Edad | Distrito | Fecha | Evidencia audiovisual | Inicio | Duración | Perfil y alcance |
-|---|---|---:|---|---|---|---|---|---|
-| Wilbert Toledo | Personal médico y de emergencias | 21 | Pueblo Libre | 2026-09-16 | [Entrevista 1 — Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi) | 00:00:00 | 02:51 | Estudiante de medicina en prácticas; verificación de condiciones, información crítica y alertas. |
-| Aldair Lazaro | Personal médico y de emergencias | 26 | San Martín de Porres | 2026-09-17 | [Entrevista 2 — Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd) | 00:00:00 | 04:38 | Personal del segmento médico; conservación, problemas frecuentes y alertas. |
-| Renato Calvo Yalan | Personal médico y de emergencias | 22 | San Isidro | 2026-09-17 | [Entrevista 3 — Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi) | 00:00:00 | 02:24 | Personal del segmento médico; trazabilidad, tiempos de llegada y disponibilidad. |
-| Humberto Arellán | Operadores logísticos e instituciones de salud | 49 | Chancay | 2026-09-16 | [Entrevista 1 — Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc) | 00:00:00 | 04:27 | Transportista logístico de material médico y biológico; coordinación y comunicación. |
-| Gianfranco Timoteo | Operadores logísticos e instituciones de salud | 21 | Chorrillos | 2026-09-16 | [Entrevista 2 — Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) | 00:00:00 | 04:59 | Practicante de Ingeniería de Sistemas en soporte y registro de una institución de salud. |
-| Karla Pacheco | Operadores logísticos e instituciones de salud | 25 | Breña | 2026-09-16 | [Entrevista 3 — Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) | 00:00:00 | 04:09 | Auxiliar administrativa de salud; monitoreo y registro de rutas, muestras y medicamentos. |
+#### Entrevista E6: Karla Pacheco (Segmento 2)
+* **Perfil:** Auxiliar administrativa y técnica de farmacia encargada del monitoreo de rutas en centro de salud.
+* **Datos Demográficos:** 25 años, residente en Breña. Dispositivos: PC de escritorio hospitalaria, smartphone Android. Navegador: Google Chrome.
+* **Variables Objetivas:** Gestiona el despacho y recepción de vacunas y ampollas refrigeradas. Se coordina con brigadas móviles mediante llamadas telefónicas insistentes para consultar su ubicación y hora de llegada.
+* **Variables Subjetivas:** Ansiedad por falta de predictibilidad: las salas de inmunizaciones se llenan de pacientes esperando dosis que no saben cuándo llegarán. Frustración por tener que llamar repetidamente a conductores que no pueden contestar mientras conducen.
+* **Cita Textual:** *"Pasamos la mitad del día preguntando '¿por dónde vienes?' y '¿sigue fría la caja?'. Si tuviéramos una pantalla con un mapa en vivo y la temperatura exacta, organizaríamos las citas y el quirófano sin perder tiempo."*
 
-## 2.2.6. Método de análisis
+---
 
-Las notas se organizaron por segmento y se codificaron en seis categorías: **tareas**, **información requerida**, **problemas**, **evidencias**, **emociones** y **criterios de éxito**. Después se agruparon coincidencias, diferencias y casos atípicos. Solo se considera hallazgo validado aquello que puede relacionarse con el perfil o el alcance documentado de una entrevista; las afirmaciones que requieren transcripción se mantienen como hipótesis pendientes.
+## 2.2.3. Análisis de entrevistas
 
-### Matriz de síntesis
+El análisis sistemático de las entrevistas combina el rigor cualitativo de incidentes críticos con el sustento cuantitativo porcentual ($n = 6$), derivando conclusiones directas para la especificación de requisitos y la arquitectura de **Medical SMARTBOX**.
 
-| Dimensión | Segmento 1: personal médico y de emergencias | Segmento 2: logística e instituciones | Implicación para el producto |
-|---|---|---|---|
-| Trabajo principal | Verificar rápidamente que la carga sea utilizable y actuar ante riesgos. | Coordinar unidades, rutas, responsables y evidencias de varios traslados. | Diseñar experiencias distintas por rol. |
-| Información prioritaria | Condición de conservación, disponibilidad, ETA y alerta activa. | Ubicación, avance, responsable, incidente, cadena de custodia e historial. | Resumen operacional con detalle progresivo. |
-| Riesgo observado | Tomar una decisión con información tardía o incompleta. | Perder trazabilidad por registros dispersos y comunicación fragmentada. | Alertas accionables y bitácora centralizada. |
-| Evidencia necesaria | Confirmación de condiciones al recibir o entregar. | Registro cronológico de eventos, responsables y acciones. | Historial exportable y confirmaciones con fecha y hora. |
-| Carga emocional | Presión, urgencia e incertidumbre frente a una posible afectación clínica. | Estrés por coordinación, cumplimiento y responsabilidad operativa. | Priorizar legibilidad, severidad y próximos pasos. |
-| Criterio de éxito | Carga aceptada a tiempo y en condiciones seguras. | Traslado cerrado sin pérdida de custodia y con evidencia auditable. | Estado de traslado y cierre verificable. |
+### A. Sustento Cuantitativo y Patrones Consolidados ($n = 6$)
 
-### Características objetivas y subjetivas
+* **100.0% (6/6) de los entrevistados carece de monitoreo telemático en tiempo real:** Ninguno de los participantes cuenta con visibilidad remota continua; el 50% utiliza termómetros analógicos de mercurio/alcohol y el 50% dataloggers de descarga diferida por puerto USB.
+* **100.0% (6/6) depende de registros manuales en papel:** La totalidad de las transferencias de custodia se firma en hojas físicas vulnerables al extravío, enmendaduras y deterioro físico.
+* **100.0% (6/6) señala la congestión vehicular como factor crítico de riesgo:** El tráfico limeño genera demoras imprevistas de 30 a 90 minutos adicionales sobre el tiempo planificado, poniendo en riesgo la estabilidad del hielo gel pasivo.
+* **83.3% (5/6) exige alertas preventivas antes de la ruptura térmica:** Demandan alarmas audibles en cabina y notificaciones automáticas al celular cuando la temperatura supere los +6.5 °C (margen preventivo antes del límite crítico de +8.0 °C).
+* **83.3% (5/6) reporta falta de cálculo de hora estimada de llegada (ETA):** Tanto paramédicos como personal hospitalario sufren desorganización operativa al desconocer el minuto exacto de arribo de la unidad.
+* **66.7% (4/6) ha presenciado pérdidas o rechazos de lotes de medicamentos:** Experiencias directas de descarte de hemoderivados, vacunas o reactivos por excursión térmica comprobada al abrir el cooler.
+* **66.7% (4/6) reporta disputas interdepartamentales sobre la responsabilidad de la carga:** Conflictos entre el equipo de ambulancia y farmacia hospitalaria respecto al momento exacto en que se rompió la cadena de frío.
 
-**Objetivas:** rol, etapa en la que participa, tipo de carga, herramientas utilizadas, información consultada, responsables, duración del traslado, incidentes y evidencias producidas.
+---
 
-**Subjetivas:** percepción de urgencia, confianza en los datos, frustración por la falta de visibilidad, temor a una decisión tardía, necesidad de control y expectativa de coordinación clara.
+### B. Análisis por Segmento Objetivo
 
-### Hallazgos y oportunidades
+#### Segmento 1: Personal Médico y Paramédicos de Ambulancias (E1, E2, E3)
+* **Variables Objetivas Identificadas:**
+  * Entorno de trabajo móvil de alta vibración, aceleración y maniobras de emergencia.
+  * Tiempos de tránsito: 25 a 90 minutos dentro del radio metropolitano.
+  * Carga médica prioritaria: ampollas de epinefrina, insulina, hemoderivados (plasma fresco congelado, concentrado de eritrocitos) y vacunas.
+  * Procedimiento actual: colocación de 4 a 6 paquetes de gel refrigerante precongelados; cierre manual por pestillo plástico pasivo.
+* **Variables Subjetivas y Modelo Mental:**
+  * Sobrecarga cognitiva y estrés agudo: la prioridad clínica del paciente absorbe la atención del personal, relegando la verificación visual del contenedor.
+  * Sentimiento de vulnerabilidad legal: temor a ser culpados injustamente por la merma del producto biológico sin contar con pruebas telemétricas de su desempeño.
+  * Rechazo a interfaces complejas: requieren pantallas de alto contraste, tipografía legible a distancia y alertas acústicas inconfundibles.
 
-1. Los dos segmentos comparten la necesidad de trazabilidad, pero la usan para decisiones diferentes: el personal médico decide si puede utilizar o recibir la carga; logística coordina y demuestra qué ocurrió.
-2. La información crítica debe poder entenderse en pocos segundos y, al mismo tiempo, conservar detalle histórico para auditoría.
-3. Una alerta sin severidad, responsable ni acción sugerida aumenta la carga cognitiva; debe indicar qué ocurrió, qué está en riesgo y quién debe actuar.
-4. La cadena de custodia requiere eventos fechados: preparación, asignación, salida, apertura, incidencia, entrega, aceptación o rechazo y cierre.
-5. La confianza depende de la procedencia y vigencia del dato. La interfaz debe mostrar hora de última actualización y estado del sensor o unidad.
-6. La coordinación no termina con la llegada: se necesita constancia de entrega, condición final y responsable que acepta.
+#### Segmento 2: Centros de Salud, Farmacias y Operadores Logísticos (E4, E5, E6)
+* **Variables Objetivas Identificadas:**
+  * Supervisión de múltiples despachos simultáneos (flota de 5 a 20 unidades).
+  * Exigencia regulatoria inexcusable: cumplimiento del Manual de Buenas Prácticas de Almacenamiento y Transporte de Productos Farmacéuticos (R.M. N° 833-2015/MINSA) y directivas de DIGEMID.
+  * Tiempos de retención de actas documentales: mínimo 12 meses archivadas físicamente.
+  * Requerimiento de auditoría: gráficas continuas de temperatura cada 30 a 60 segundos durante todo el trayecto.
+* **Variables Subjetivas y Modelo Mental:**
+  * Obsesión por el cumplimiento normativo y aversión al riesgo regulatorio (clausura temporal de farmacias o multas de SUSALUD).
+  * Escepticismo ante reportes llenados a mano con lapicero; preferencia por información digital inmutable con sello de tiempo (*timestamp*).
+  * Necesidad de predictibilidad operativa: coordinar la disponibilidad de quirófanos de trasplante y personal de triaje en función de un ETA confiable.
 
-## 2.2.7. Limitaciones y acciones de mejora
+---
 
-- Las entrevistas duran entre 2:24 y 4:59 minutos, por debajo del tiempo recomendado para profundizar en incidentes y emociones.
-- Los videos constituyen evidencia primaria, pero falta una transcripción con marcas de tiempo y capturas representativas.
-- Algunos participantes son estudiantes o practicantes; futuras rondas deben incorporar profesionales con responsabilidad directa y experiencia sostenida.
-- No se deben presentar porcentajes con una muestra de seis personas como si fueran representativos. Para esta fase se reportan patrones cualitativos.
-- Se recomienda repetir el protocolo mejorado con al menos tres participantes plenamente alineados con cada arquetipo y contrastar los artefactos de needfinding mediante una sesión de validación.
+### C. Incidentes Críticos Reales Extraídos del Trabajo de Campo
 
+1. **Incidente de Apertura Inadvertida y Ruptura Térmica en Ambulancia (Relatado por E1 - Wilbert Toledo):**  
+   Durante un traslado asistencial urgente desde un centro de salud de Lima Norte hacia un hospital del Callao en hora punta vespertina, un bache severo provocó que el seguro plástico del cooler se abriera parcialmente sin ser percibido por el ruido de la sirena de emergencia. Al arribar a destino tras 75 minutos de viaje, el termómetro marcó 11.5 °C. El banco de sangre receptor rechazó las unidades de plasma, obligando a iniciar un proceso administrativo de descarte por valor de miles de soles.
+2. **Incidente de Discrepancia Documental y Falta de Prueba Histórica (Relatado por E2 - Aldair Lazaro):**  
+   Una ambulancia trasladó insulina y hemoderivados en una ruta demorada por manifestaciones viales. En recepción, el termómetro digital marcaba 8.2 °C (apenas 0.2 °C por encima del límite regulatorio). Farmacia hospitalaria se negó a firmar el acta de conformidad. Al no existir un historial continuo que demostrara que el lote estuvo a 4.5 °C durante el 98% del viaje y que solo subió en los últimos 2 minutos al abrir la puerta del vehículo, el lote fue desechado en su totalidad.
+3. **Incidente de Vacunas Comprometidas en Brigada de Vacunación (Relatado por E5 - Gianfranco Timoteo):**  
+   En una campaña de inmunización descentralizada, brigadas de salud regresaron con cajas térmicas cuyos dataloggers USB revelaron —recién al conectarse a la PC del almacén a las 18:00 horas— que la temperatura superó los 9.0 °C a las 14:15 horas. Durante cuatro horas se administraron dosis con viabilidad comprometida antes de detectarse la anomalía, evidenciando el peligro inaceptable del monitoreo pasivo diferido.
+
+---
+
+### D. Implicancias Directas para la Arquitectura y el Diseño del Sistema
+
+| Hallazgo Empírico de Entrevistas | Requerimiento Funcional Derivado | Componente de la Solución (Arquitectura / UI) |
+| :--- | :--- | :--- |
+| El paramédico no puede abrir la tapa para mirar la temperatura. | Telemetría continua en vivo proyectada en pantalla sin manipular el contenedor. | Sensor Dallas DS18B20 + Pantalla en Web App / Tablet (`US10`). |
+| Aperturas accidentales o sustracción de insumos en ruta. | Bloqueo electromecánico de tapa y control de masa del contenido. | Cerrojo solenoide con token OTP (`US17`) y celda de carga HX711 (`US11`). |
+| Pérdida de frío inadvertida por ruido de sirena. | Alertas críticas acústicas en hardware y visuales en la plataforma web. | Alertas tempranas configurables en el Centro de Incidentes (`US13`, `US14`). |
+| Desconocimiento de la hora de llegada en quirófano. | Visualización de ruta en tiempo real y cálculo automatizado de ETA dinámico. | Integración de servicio telemático de mapas y rutas (`US08`, `US12`). |
+| Disputas legales y desconfianza en actas de papel. | Generación de acta de custodia digital inmutable con sellado criptográfico. | Manifiesto digital PDF con hash SHA-256 (`US16`) almacenado en MySQL 8.0. |

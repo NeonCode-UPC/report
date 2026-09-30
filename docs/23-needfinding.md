@@ -6,18 +6,18 @@ Los artefactos de esta sección se construyen a partir de los dos patrones de co
 
 ---
 
-## 2.3.1. Criterios de Agrupación y Selección
+### Criterios de Agrupación y Selección
 
 Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron por objetivos, tareas, responsabilidad y contexto de uso:
 
 | Conjunto | Participantes que aportan evidencia | Comportamiento común | Arquetipo resultante |
 |---|---|---|---|
-| Decisión clínica-operativa | Wilbert Toledo, Aldair Lazaro y Renato Calvo Yalan | Consulta información crítica, verifica condiciones y necesita responder con rapidez. | Personal médico y paramédicos asistenciales (Javier Soto / Valeria Ramos). |
+| Decisión clínica-operativa | Wilbert Toledo, Aldair Lazaro y Renato Calvo Yalan | Consulta información crítica, verifica condiciones y necesita responder con rapidez. | Personal médico y paramédicos asistenciales (Javier Soto). |
 | Coordinación logística trazable | Humberto Arellán, Gianfranco Timoteo y Karla Pacheco | Monitorea rutas y registros, coordina actores y necesita evidencia auditable. | Coordinador logístico y directores de centros de salud (Dr. Carlos Mendoza). |
 
 ---
 
-## 2.3.2. User Personas
+## 2.3.1. User Personas
 
 A continuación, se presentan las fichas de User Persona elaboradas para cada uno de los dos segmentos objetivo de Medical SMARTBOX, sintetizando arquetipos construidos con base en las entrevistas a profundidad y la investigación de campo.
 
@@ -35,7 +35,7 @@ Representa al personal médico y farmacéutico de destino (cirujanos de trasplan
 
 ---
 
-## 2.3.3. User Task Matrix
+## 2.3.2. User Task Matrix
 
 La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecutan los usuarios en el ecosistema de transporte médico, clasificándolas según su frecuencia de ejecución y su nivel de criticidad o impacto para la viabilidad de la carga y el paciente.
 
@@ -51,7 +51,7 @@ La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecut
 
 ---
 
-## 2.3.4. User Journey Mapping
+## 2.3.3. User Journey Mapping
 
 El **User Journey Mapping** ilustra la secuencia de experiencias, emociones, puntos de dolor y oportunidades de interacción de los usuarios arquetípicos a lo largo de las fases de Antes (despacho y pre-enfriamiento), Durante (tránsito y telemetría activa) y Después (entrega asistencial y custodia final).
 
@@ -69,7 +69,7 @@ Mapea la experiencia desde la coordinación de la solicitud urgente, el seguimie
 
 ---
 
-## 2.3.5. Empathy Mapping
+## 2.3.4. Empathy Mapping
 
 El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones y presiones cotidianas de los dos perfiles de usuario, permitiendo diseñar interfaces y flujos de software acordes con su contexto real de trabajo.
 
@@ -99,7 +99,7 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 
 ---
 
-## 2.3.6. Necesidades Priorizadas
+### Síntesis de Necesidades Priorizadas
 
 | Prioridad | Necesidad | Criterio de validación |
 |:---:|---|---|

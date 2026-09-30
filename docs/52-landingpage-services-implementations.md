@@ -8,53 +8,76 @@ En esta sección se detalla la planificación, asignación de responsabilidades 
 
 ### 5.2.1.1. Sprint Planning 1
 
-El **Sprint Planning 1** define los objetivos tácticos, el alcance y la velocidad comprometida por el equipo para el primer ciclo de desarrollo. Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario de este ciclo consistió en implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend y la gobernanza SCM.
+El **Sprint Planning 1** formaliza los aspectos principales de la reunión de planificación del primer ciclo de desarrollo (Sprint 1). Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario consistió en diseñar, implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend en ASP.NET Core 10.0 y la persistencia relacional en MySQL 8.0.
 
-* **Objetivo del Sprint (Sprint Goal):** Diseñar, implementar y desplegar la primera versión del Landing Page institucional en HTML5 semántico, CSS3 modular y JavaScript, presentando la propuesta de valor de la cadena de frío, la tecnología de sensores IoT, planes SaaS y captura de prospectos asistenciales; junto con la especificación de la arquitectura de servicios backend.
-* **Duración:** 2 semanas (Semana 3 a Semana 4).
-* **Velocidad Planificada:** 16 Story Points.
-* **Historias de Usuario Seleccionadas:** `US01`, `US02`, `US03`, `US04`, `US05`, `US06`.
+| Sprint # | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | **Sprint Planning Background** |
+| Date | 2026-09-08 |
+| Time | 19:00 - 21:30 |
+| Location | Sesión virtual sincrónica vía Microsoft Teams / Discord |
+| Prepared By | Jaramillo Peña, Jhon Alexander |
+| Attendees (to planning meeting) | Jaramillo Peña, Jhon Alexander / Espinoza Rojas, Aaron / Gargate Lazo, Santiago / Munayco Pérez, Maria / Santos Sánchez, Renzo |
+| **Sprint n – 1 Review Summary** | **Sprint 0 (Inception):** Se consolidaron las bases del proyecto, necesidad médica, análisis comparativo de competidores (Sensitech, Tracklink Perú, Controlant), investigación de campo con 6 entrevistas a profundidad, User Personas (Javier Soto, Dr. Carlos Mendoza), EventStorming y Style Guidelines. El Product Owner aprobó el alcance inicial del backlog. |
+| **Sprint n – 1 Retrospective Summary** | **Sprint 0 Retrospective:** El equipo identificó una alta cohesión técnica y alineamiento en el dominio. Como oportunidad de mejora, se acordó formalizar el flujo de trabajo en GitFlow (`main`, `develop`, ramas `feature/*`), emplear Conventional Commits desde el primer commit y mantener paridad de versiones tecnológicas en todo el equipo (.NET 10 LTS, MySQL 8.0, Node.js 20+). |
+| **Sprint Goal & User Stories** | **Sprint Goal & User Stories** |
+| Sprint 1 Goal | **Our focus is on** designing, implementing, and deploying the responsive institutional Landing Page for Medical SMARTBOX and specifying the core architectural contracts.<br><br>**We believe it delivers** clear value proposition awareness and digital acquisition channels for medical logistics transport operators and healthcare centers.<br><br>**This will be confirmed when** the Landing Page is publicly deployed on GitHub Pages, visitors can explore smart container features across devices without visual overflow, and submit the B2B demonstration contact form successfully. |
+| Sprint 1 Velocity | 16 Story Points |
+| Sum of Story Points | 16 Story Points (US04: 2 SP, US05: 2 SP, US06: 1 SP, US01: 3 SP, US02: 3 SP, US03: 5 SP) |
 
 ---
 
-### 5.2.1.2. Aspect Leaders and Collaborators (Matriz LACX del Sprint 1)
+### 5.2.1.2. Aspect Leaders and Collaborators
 
-La matriz **LACX** (Lead, Assignee, Complexity, eXpense) define formalmente los roles de liderazgo técnico, ejecución, complejidad y esfuerzo asignado a los integrantes para el cumplimiento de las historias del Sprint 1.
+En esta sección se presenta la matriz **Leadership-and-Collaboration Matrix (LACX)** del Sprint 1, detallando por cada aspecto funcional y técnico del alcance quién ejerce el liderazgo técnico (Leader - L) y quiénes actúan como colaboradores de desarrollo (Collaborator - C).
 
-* **L (Lead):** Integrante responsable de liderar la revisión técnica, arquitectura y aseguramiento de calidad.
-* **A (Assignee):** Integrante encargado de la codificación e implementación directa.
-* **C (Complexity):** Complejidad técnica atribuida (Baja, Media, Alta).
-* **X (eXpense):** Esfuerzo relativo expresado en Story Points según escala Fibonacci (1, 2, 3, 5).
+Los aspectos definidos para este primer ciclo corresponden a los módulos del Landing Page y las especificaciones arquitectónicas base:
+* **Aspecto 1: Landing Page UI & Estructura:** Maquetación semántica HTML5/CSS3 y diseño responsive (US04).
+* **Aspecto 2: Formulario Demo y Captura B2B:** Componentes interactivos de contacto institucional y validación en cliente (US05).
+* **Aspecto 3: FAQ & Cumplimiento Normativo:** Acordeón interactivo de preguntas frecuentes y directivas sanitarias (US06).
+* **Aspecto 4: Registro Institucional & Roles:** Modelado de entidades y flujos de registro de centros de salud (US01).
+* **Aspecto 5: Acceso y Autenticación 2FA:** Especificación de políticas de seguridad, login y token OTP (US02).
+* **Aspecto 6: Especificación API REST & DDD:** Contratos OpenAPI y arquitectura de capas en ASP.NET Core (.NET 10 LTS) (US03).
 
-| User Story ID | Título de la Historia | Lead (L) | Assignee (A) | Complexity (C) | eXpense / Points (X) |
-| :---: | :--- | :--- | :--- | :---: | :---: |
-| **US04** | Exploración de Propuesta de Valor y Solución IoT | Maria Munayco | Santiago Gargate | Baja | 2 |
-| **US05** | Solicitud de Demostración Corporativa y Contacto B2B | Aaron Espinoza | Jhon Jaramillo | Baja | 2 |
-| **US06** | Consulta Interactiva de Preguntas Frecuentes (FAQ) | Santiago Gargate | Maria Munayco | Baja | 1 |
-| **US01** | Registro Institucional de Centros de Salud (Diseño de Flujo) | Jhon Jaramillo | Renzo Santos | Media | 3 |
-| **US02** | Autenticación y Perfil de Personal de Emergencia | Santiago Gargate | Maria Munayco | Baja | 3 |
-| **US03** | Arquitectura y Especificación de Endpoints de Autenticación | Renzo Santos | Aaron Espinoza | Media | 5 |
+| Team Member<br>(Last Name, First Name) | GitHub Username | Aspecto 1:<br>Landing Page UI<br>Leader (L) /<br>Collaborator (C) | Aspecto 2:<br>Formulario Demo<br>Leader (L) /<br>Collaborator (C) | Aspecto 3:<br>FAQ Normativo<br>Leader (L) /<br>Collaborator (C) | Aspecto 4:<br>Registro Centros<br>Leader (L) /<br>Collaborator (C) | Aspecto 5:<br>Acceso & 2FA<br>Leader (L) /<br>Collaborator (C) | Aspecto 6:<br>API REST & DDD<br>Leader (L) /<br>Collaborator (C) |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Jaramillo Mayta, Jhon Jordy | `jhon409` | C | C | C | L | C | C |
+| Espinoza Flores, Aaron André | `AaronEspinoza1` | C | L | C | C | C | C |
+| Gargate Paredes, Santiago | `Santiago-Gargate` | C | C | L | C | L | C |
+| Munayco Apolaya, Maria Luisa | `MunaycoMaria` | L | C | C | C | C | C |
+| Santos Minaya, Renzo Piero | `RenzoSantosUPC` | C | C | C | C | C | L |
 
 ---
 
 ### 5.2.1.3. Sprint Backlog 1
 
-El **Sprint Backlog 1** presenta el desglose técnico de tareas necesarias para satisfacer los criterios de aceptación de cada historia, con sus estimaciones en horas de esfuerzo individual y estado de avance.
+El **Sprint Backlog 1** presenta el desglose detallado de tareas técnicas asociadas a las historias de usuario comprometidas para el Sprint 1. El objetivo principal de la iteración fue la construcción, validación responsive y despliegue del Landing Page institucional, junto con la definición de contratos y modelos para los servicios de autenticación y registro.
 
-| User Story ID | Tareas Técnicas (Technical Tasks) | Estimación (Horas) | Estado de Entrega |
-| :---: | :--- | :---: | :---: |
-| **US04** | • Maquetación HTML5 semántica de las secciones Hero, Propuesta de Valor y Características IoT.<br>• Estilos CSS3 modulares con diseño responsive mobile-first (viewports 375px, 768px, 1440px).<br>• Integración de badges de temperatura y preservación de cadena de frío (+2 °C a +8 °C). | 6 h | **Completado** |
-| **US05** | • Estructuración del formulario de contacto y solicitud de demo corporativa B2B.<br>• Validación en cliente con JavaScript para formatos de correo institucional y teléfono.<br>• Mensajes accesibles de confirmación y estado de envío. | 6 h | **Completado** |
-| **US06** | • Maquetación del acordeón interactivo de Preguntas Frecuentes (FAQ).<br>• Lógica JavaScript para apertura y cierre fluido de paneles con accesibilidad ARIA.<br>• Inclusión de respuestas sobre normativas DIGEMID y sensores biomédicos. | 4 h | **Completado** |
-| **US01** | • Especificación de flujos de registro institucional y modelado en base de datos (`hospital_institutions`).<br>• Validación de invariantes de suscripción y facturación B2B. | 10 h | **Completado** |
-| **US02** | • Diseño y maquetación de la vista de acceso de operadores de emergencia.<br>• Definición de políticas de verificación en dos pasos (2FA) y token OTP. | 8 h | **Completado** |
-| **US03** | • Especificación formal de contratos OpenAPI/Swagger para autenticación en ASP.NET Core (.NET 10 LTS).<br>• Modelado de clases de dominio para usuarios, roles y contraseñas cifradas en C#. | 14 h | **Completado** |
+* **Herramienta de Gestión:** GitHub Projects / Trello.
+* **URL Pública del Board:** [`https://github.com/orgs/NeonCode-UPC/projects/1`](https://github.com/orgs/NeonCode-UPC/projects/1)
 
-**Resumen del Sprint Backlog 1:**
-* **Total de Historias de Usuario:** 6 historias.
-* **Puntos de Historia Totales (Story Points):** 16 SP.
-* **Horas Totales de Trabajo Técnico:** 48 horas.
-* **Estado:** 100% de tareas del Sprint 1 completadas para el hito AV1.
+A continuación se presenta la tabla oficial de control de estado del Sprint 1:
+
+| Sprint # | Sprint 1 | | | | | | |
+|---|---|---|---|---|---|---|---|
+| **User Story** | **User Story** | **Work-Item / Task** | **Work-Item / Task** | **Work-Item / Task** | **Work-Item / Task** | **Work-Item / Task** | **Work-Item / Task** |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco | Done |
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación de layout CSS Grid y Flexbox para viewports móviles (375px a 414px) y tablets. | 4 h | Santiago Gargate | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual de captura de prospectos con inputs institucionales y estilos de marca. | 5 h | Aaron Espinoza | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Lógica JavaScript para validación de RUC, correo corporativo y feedback accesible. | 6 h | Jhon Jaramillo | Done |
+| US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Maquetación y comportamiento toggle ARIA para preguntas sobre normativas DIGEMID y sensores. | 4 h | Maria Munayco | Done |
+| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado entidad institución y base de datos | Definición de esquema relacional `hospital_institutions` en MySQL 8.0 y reglas de RUC único. | 5 h | Jhon Jaramillo | Done |
+| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de endpoints de registro | Diseño de contratos OpenAPI para recepción y validación de datos de centros hospitalarios. | 7 h | Renzo Santos | Done |
+| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación de protocolo de login para operadores y verificación por código OTP de 6 dígitos. | 5 h | Santiago Gargate | Done |
+| US03 | Endpoint de Autenticación de Usuarios (API) | TSK-03-01 | Diseño de contratos OpenAPI de sign-in | Especificación de endpoint POST `/api/v1/authentication/sign-in` y esquemas JWT de sesión. | 6 h | Renzo Santos | Done |
+| US03 | Endpoint de Autenticación de Usuarios (API) | TSK-03-02 | Arquitectura de dominio para identidad (.NET 10) | Modelado de clases de dominio, Value Objects y políticas de cifrado de credenciales en C# 14. | 5 h | Aaron Espinoza | Done |
+
+**Resumen de Cierre del Sprint Backlog 1:**
+* **Historias de Usuario Completadas:** 6 (100% de historias planificadas).
+* **Story Points Entregados:** 16 SP / 16 SP comprometidos.
+* **Horas de Ingeniería Ejecutadas:** 53 horas de desarrollo colaborativo.
+* **Estado Final:** Sprint 1 cerrado satisfactoriamente con despliegue activo en la nube.
 
 ---
 

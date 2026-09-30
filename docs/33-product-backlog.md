@@ -47,7 +47,7 @@ A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales
 * **TSK-01-03:** Implementación del servicio de envío de correos electrónicos de confirmación de cuenta. **[4 Horas]**
 
 #### **US07: Alta de Unidades de Ambulancia (3 SP)**
-* **TSK-07-01:** Creación del modelo de datos de Ambulancias en la base de datos (PostgreSQL/MySQL). **[4 Horas]**
+* **TSK-07-01:** Creación del modelo de datos de Ambulancias en la base de datos MySQL Server 8.0 (InnoDB) mediante Entity Framework Core 10.0. **[4 Horas]**
 * **TSK-07-02:** Desarrollo de endpoints CRUD para el registro y consulta de vehículos de transporte. **[6 Horas]**
 * **TSK-07-03:** Interfaz web para el formulario de registro y lista de unidades registradas. **[6 Horas]**
 
