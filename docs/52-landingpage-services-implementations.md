@@ -78,20 +78,68 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 
 #### Video de Demostración de Navegación (Landing Page): [Ver video aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
 
-#### Vista Principal: Sección Hero y Propuesta de Valor
-Presenta el titular de alto impacto para la preservación de órganos y medicamentos termosensibles, el botón de llamada a la acción (CTA) para solicitud de demostración B2B y la ilustración del contenedor inteligente en ambulancia.
+<img width="2028" height="1090" alt="Screenshot 2026-09-28 at 10 33 48 AM" src="https://github.com/user-attachments/assets/7c5733c4-086d-4fd7-8335-7a6b68b379a6" />
+
+### Vista implementada: Landing Page Principal (Hero Section)
+
+**Descripción:** Interfaz de inicio diseñada para captar la atención de empresas de transporte y operadores de cadena de frío. Presenta la propuesta de valor central de Medical SmartBox: el monitoreo, detección de incidencias y trazabilidad de transportes médicos en un solo lugar.
+
+**Componentes y Funcionalidades Clave:**
+* **Barra de navegación funcional:** Menú interactivo con accesos directos a la plataforma, selector de idioma (ES/EN) y botones globales de autenticación (*Log in / Open the Web App*).
+* **Propuesta de valor clara:** Título principal de alto impacto acompañado de una breve descripción del propósito del software.
+* **Llamados a la acción (CTA):** Botones duales contrastados para redirigir rápidamente al usuario hacia la Web App o el formulario de ingreso.
+
+<br>
 
 ![Landing Page - Sección Hero](../assets/chapter-4/hero-mockup.png)
 *Nota: Captura de ejecución del Landing Page institucional implementado.*
 
-#### Vista de Solución: Monitoreo Telemático y Alertas Críticas
-Detalla la tecnología de refrigeración activa Peltier, los sensores de temperatura y peso en tiempo real, y los umbrales de alerta temprana ante desvíos térmicos.
+<br>
+
+<img width="669" height="588" alt="Screenshot 2026-09-28 at 10 46 46 AM" src="https://github.com/user-attachments/assets/42d285c0-2ff3-48f9-b89f-d21dc15bc4ff" /> 
+
+### Vista implementada: Formulario de Inicio de Sesión (Login)
+
+**Descripción:** Interfaz correspondiente al módulo de autenticación para la Web Application de Medical SmartBox. Permite el acceso restringido y seguro al personal autorizado (operadores logísticos y centros de salud) mediante credenciales corporativas.
+
+**Componentes Clave:** 
+* **Campos de entrada validados:** Inputs específicos para Correo corporativo (`nombre@organizacion.com`) y Contraseña protegida de manera visual.
+* **Botón de acción directa:** Botón estilizado con los colores de la marca para el envío y validación de las credenciales de usuario (*Iniciar sesión*).
+* **Control de navegación:** Botón de cierre superior (X) para retornar a la Landing Page principal de manera intuitiva.
+
+<br>
+
+<img width="1061" height="894" alt="Screenshot 2026-09-28 at 11 06 33 AM" src="https://github.com/user-attachments/assets/22dc7b3b-5cc6-402a-b381-8ed8964b464b" />
+
+### Vista implementada: Detalle de Monitoreo de Transporte en Tiempo Real
+
+**Descripción:** Vista detallada de un transporte en tránsito activo. Centraliza todas las telemetrías críticas recopiladas por el hardware en una única interfaz unificada para el operador.
+
+**Componentes Clave:**
+* **Panel de Telemetría en Vivo:** Indicadores en tiempo real de Temperatura (5.2 °C), ETA, Nivel de Batería del SmartBox, Combustible, Peso y Estado de la Puerta.
+* **Gráfico de Historial Térmico:** Gráfica lineal automatizada que contrasta las mediciones de las últimas 6 horas frente al rango seguro permitido (2 °C - 8 °C).
+* **Metadatos de Operación:** Tarjetas informativas con los datos asignados del Conductor (M. Quispe) y la Placa del Vehículo (ABQ-742).
+
+<br>
 
 ![Landing Page - Presentación de Características](../assets/chapter-4/presentacion-mockup.png)
 *Nota: Sección interactiva de propuesta tecnológica del Landing Page.*
 
-#### Vista de Cierre: Formulario de Contacto Corporativo y Footer
-Permite a directores hospitalarios registrar sus datos de contacto institucional para agendar una prueba de campo. Incluye enlaces a términos de servicio y políticas éticas.
+<br>
+
+<img width="1078" height="704" alt="Screenshot 2026-09-28 at 11 16 31 AM" src="https://github.com/user-attachments/assets/59b725c5-d856-4195-bddc-5b4af7790860" />
+
+### Vista implementada: Módulo de Gestión de Alertas e Incidencias
+
+**Descripción:** Interfaz de control en tiempo real orientada a la detección temprana de riesgos en la cadena de frío, permitiendo al equipo logístico tomar acciones de mitigación inmediatas antes de comprometer la integridad del producto médico.
+
+**Componentes Clave:**
+* **Tarjeta de Incidencia Crítica:** Bloque dinámico que detalla de forma matemática el desvío térmico (8.7 °C detectados frente al rango esperado de 2-8 °C), la ubicación exacta (Panamericana Sur) y la marca de tiempo (13:42).
+* **Gráfico de Monitoreo Lineal:** Visualización de la fluctuación de temperatura de las últimas horas para evaluar la gravedad de la anomalía.
+* **Acciones de Mitigación:** Botones interactivos de respuesta rápida (*Revisar transporte* y *Ver historial*).
+* **Feed Cronológico Histórico:** Listado lateral estructurado por prioridad de eventos y estados logísticos anteriores (Puerta abierta, Batería baja, Desvío resuelto, Entrega confirmada).
+
+<br>
 
 ![Landing Page - Footer y Conversión B2B](../assets/chapter-4/cta-footer-mockup.png)
 *Nota: Sección de conversión final y pie de página institucional.*
