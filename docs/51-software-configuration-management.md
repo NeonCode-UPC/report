@@ -93,11 +93,49 @@ El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados
 
 ### Entornos de Despliegue
 
-| Entorno | Propósito | Plataforma / Hosting | Rama Git Asociada | Configuración y Acceso |
-| :--- | :--- | :--- | :--- | :--- |
-| **Local (Development)** | Desarrollo individual, maquetado de vistas y pruebas de API. | Servidor local Vite (`localhost:5173`) / Kestrel .NET (`localhost:5000`) | `feature/*` | Acceso exclusivo de los integrantes de desarrollo. |
-| **Staging (Testing / QA)** | Integración continua de funcionalidades completadas en sprint. | GitHub Pages / Vercel Preview | `develop` | Validación interna del equipo y revisión intermedia. |
-| **Production (Live)** | Entorno oficial desplegado para evaluación académica y demostración B2B. | GitHub Pages / Vercel Production | `main` | Acceso público activo vía HTTPS: `https://neoncode-upc.github.io/landing-page/`. |
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 14%;" />
+  <col style="width: 22%;" />
+  <col style="width: 22%;" />
+  <col style="width: 16%;" />
+  <col style="width: 26%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Entorno</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Propósito</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Plataforma / Hosting</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Rama Git Asociada</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Configuración y Acceso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;">**Local (Development)**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Desarrollo individual, maquetado de vistas y pruebas de API.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Servidor local Vite (`localhost:5173`) / Kestrel .NET (`localhost:5000`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>feature/*</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Acceso exclusivo de los integrantes de desarrollo.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;">**Staging (Testing / QA)**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Integración continua de funcionalidades completadas en sprint.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">GitHub Pages / Vercel Preview</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>develop</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Validación interna del equipo y revisión intermedia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;">**Production (Live)**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Entorno oficial desplegado para evaluación académica y demostración B2B.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">GitHub Pages / Vercel Production</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>main</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Acceso público activo vía HTTPS: `https://neoncode-upc.github.io/landing-page/`.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### Gestión de Variables de Entorno y Configuración
 

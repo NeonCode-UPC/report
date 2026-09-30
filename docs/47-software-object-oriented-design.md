@@ -49,8 +49,15 @@ A continuación se detalla la especificación estática de clases para los cinco
 
 A nivel del diseño estático de clases de software, las entidades de identidad, roles institucionales y suscripción SaaS se consolidan en este módulo para garantizar consistencia transaccional inmediata en la validación de licencias y membresías activas. Este contexto centraliza la autenticación mediante tokens JWT, control de acceso basado en roles (RBAC) para los dos segmentos objetivo, registro formal de sedes hospitalarias con código RENIPRESS y gestión del modelo de suscripción SaaS para flotas de contenedores médicos.
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -209,8 +216,15 @@ A nivel del diseño estático de clases de software, las entidades de identidad,
 
 Representa el núcleo físico y sensorial del proyecto. Modela el control activo de frío (+2.0 °C a +8.0 °C) mediante celdas Peltier, el pesaje digital con celda HX711 (&plusmn;5 g), el solenoide electromecánico de la tapa y la supervisión de la toma de 12V vehicular.
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -412,8 +426,15 @@ Representa el núcleo físico y sensorial del proyecto. Modela el control activo
 
 Modela la respuesta operativa del **Segmento 1 (Ambulancias y Despacho)** ante las emergencias: creación de órdenes, asignación de unidades móviles, control de tiempos de isquemia fría y cálculo dinámico de ETA ante el tráfico severo de Lima.
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -563,8 +584,15 @@ Modela la respuesta operativa del **Segmento 1 (Ambulancias y Despacho)** ante l
 
 Modela la detección de contingencias, despacho de alarmas acústicas y visuales a la cabina de ambulancia (Segmento 1) y notificaciones push/SMS a los directores médicos y receptores (Segmento 2).
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -676,8 +704,15 @@ Modela la detección de contingencias, despacho de alarmas acústicas y visuales
 
 Modela la seguridad de custodia en el hospital receptor (**Segmento 2**): validación del **código OTP de un solo uso**, desbloqueo seguro de la tapa y generación inmutable del acta digital con hash criptográfico SHA-256 para auditorías de DIGEMID y DIGDOT.
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -791,8 +826,15 @@ Modela la seguridad de custodia en el hospital receptor (**Segmento 2**): valida
 
 Permiten propagar asíncronamente cambios de estado críticos entre los Bounded Contexts sin generar acoplamiento directo entre Agregados Raíz:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Estructura</th>
       <th>Estereotipo DDD</th>
@@ -880,8 +922,16 @@ Permiten propagar asíncronamente cambios de estado críticos entre los Bounded 
 
 Para asegurar total rigurosidad en la implementación del diagrama UML, la siguiente tabla define todas las relaciones del ecosistema:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 20%;" />
+  <col style="width: 10%;" />
+  <col style="width: 16%;" />
+  <col style="width: 10%;" />
+  <col style="width: 20%;" />
+  <col style="width: 24%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase Origen</th>
       <th>Multiplicidad</th>

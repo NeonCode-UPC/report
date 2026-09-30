@@ -1,0 +1,44 @@
+@page {
+    size: A4 portrait;
+    margin: 20mm 15mm 20mm 15mm;
+}
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: #1e293b;
+}
+table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    margin: 12px 0 16px 0 !important;
+    font-size: 7.2pt;
+    page-break-inside: auto;
+}
+tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+thead {
+    display: table-header-group;
+}
+th, td {
+    border: 0.5pt solid #cbd5e1 !important;
+    padding: 3.5px 4.5px !important;
+    vertical-align: top !important;
+    overflow-wrap: break-word !important;
+}
+th {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+}
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 88%;
+}
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}

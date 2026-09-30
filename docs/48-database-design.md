@@ -74,59 +74,353 @@ Garantiza la autenticación, la asignación de roles médicos y la gestión de p
 ###### **Tabla 1: `subscription_plans`**
 Almacena los niveles de suscripción B2B que determinan la capacidad operativa de ambulancias y contenedores asignados a cada institución cliente.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único del plan en formato UUIDv4. |
-| `name` | `VARCHAR(50)` | **NOT NULL** | — | Nombre comercial del plan (ej. *Plan Red Hospitalaria Integral*). |
-| `code` | `VARCHAR(20)` | **NOT NULL** | `UNIQUE` | Código alfanumérico único para facturación (ej. `HOSP-ENTERPRISE-01`). |
-| `max_ambulances` | `INT` | **NOT NULL** | `DEFAULT 5, CHECK (> 0)` | Límite máximo de ambulancias autorizadas para operar en la red. |
-| `max_smartboxes` | `INT` | **NOT NULL** | `DEFAULT 10, CHECK (> 0)` | Cupo de contenedores inteligentes IoT asignados a la flota. |
-| `monthly_price_usd` | `DECIMAL(10, 2)` | **NOT NULL** | `DEFAULT 0.00, CHECK (>= 0)` | Tarifa mensual en dólares americanos cobrada a la institución. |
-| `support_sla_hours` | `INT` | **NOT NULL** | `DEFAULT 24` | Tiempo máximo garantizado de respuesta técnica para incidentes. |
-| `telemetry_data_retention_months` | `INT` | **NOT NULL** | `DEFAULT 12, CHECK (> 0)` | Período de retención de telemetría histórica conforme a normativa DIGEMID. |
-| `is_active` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Indicador booleano de vigencia comercial del plan. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha y hora UTC de registro del plan en la plataforma. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del plan en formato UUIDv4.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>name</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(50)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nombre comercial del plan (ej. *Plan Red Hospitalaria Integral*).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>code</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Código alfanumérico único para facturación (ej. `HOSP-ENTERPRISE-01`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>max_ambulances</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 5, CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Límite máximo de ambulancias autorizadas para operar en la red.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>max_smartboxes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 10, CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cupo de contenedores inteligentes IoT asignados a la flota.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>monthly_price_usd</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(10, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0.00, CHECK (>= 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tarifa mensual en dólares americanos cobrada a la institución.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>support_sla_hours</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 24</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tiempo máximo garantizado de respuesta técnica para incidentes.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>telemetry_data_retention_months</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 12, CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Período de retención de telemetría histórica conforme a normativa DIGEMID.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_active</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Indicador booleano de vigencia comercial del plan.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha y hora UTC de registro del plan en la plataforma.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 2: `hospital_institutions`**
 Representa los centros de salud, redes hospitalarias, bancos de órganos y operadores logísticos (Segmento 2).
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único de la institución de salud en formato UUIDv4. |
-| `subscription_plan_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `subscription_plans(id)` | Plan de suscripción contratado por la entidad hospitalaria. |
-| `name` | `VARCHAR(150)` | **NOT NULL** | — | Razón social o denominación del hospital/clínica (ej. *Hospital Rebagliati*). |
-| `tax_id_ruc` | `VARCHAR(11)` | **NOT NULL** | `UNIQUE` | Registro Único de Contribuyentes (RUC) fiscal emitido por SUNAT. |
-| `institution_type` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'PublicHospital'` | Tipo: `PublicHospital`, `PrivateClinic`, `AmbulanceNetwork`, `PharmaceuticalLab`. |
-| `health_service_level` | `VARCHAR(20)` | **NOT NULL** | `DEFAULT 'II-2'` | Nivel o categoría de atención asistencial MINSA (I-4, II-2, III-1, III-E). |
-| `address` | `VARCHAR(255)` | **NOT NULL** | — | Dirección física donde operan los puntos de despacho o quirófanos. |
-| `district` | `VARCHAR(100)` | **NOT NULL** | — | Distrito de Lima Metropolitana o región sanitaria de ubicación. |
-| `emergency_phone` | `VARCHAR(20)` | **NOT NULL** | — | Teléfono de contacto de la central de emergencias hospitalarias. |
-| `renipress_code` | `VARCHAR(20)` | **NOT NULL** | `UNIQUE` | Código único nacional del Registro Nacional de IPRESS (SUSALUD / MINSA). |
-| `latitude` | `DECIMAL(10, 8)` | **NOT NULL** | `CHECK (BETWEEN -90 AND 90)` | Coordenada geográfica de latitud del helipuerto o rampa de urgencia. |
-| `longitude` | `DECIMAL(11, 8)` | **NOT NULL** | `CHECK (BETWEEN -180 AND 180)` | Coordenada geográfica de longitud de la sede hospitalaria. |
-| `geofence_radius_meters` | `DECIMAL(6, 2)` | **NOT NULL** | `DEFAULT 2000.00, CHECK (> 0)` | Radio perimétrico virtual (ej. 2 km) que dispara el preaviso y habilita OTP. |
-| `is_active` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Estado de habilitación operativa para programar traslados. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha y hora UTC de alta en el sistema. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Marca temporal UTC de la última actualización de datos institucionales. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único de la institución de salud en formato UUIDv4.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>subscription_plan_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> subscription_plans(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Plan de suscripción contratado por la entidad hospitalaria.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>name</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(150)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Razón social o denominación del hospital/clínica (ej. *Hospital Rebagliati*).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>tax_id_ruc</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(11)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Registro Único de Contribuyentes (RUC) fiscal emitido por SUNAT.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>institution_type</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'PublicHospital'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tipo: `PublicHospital`, `PrivateClinic`, `AmbulanceNetwork`, `PharmaceuticalLab`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>health_service_level</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'II-2'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel o categoría de atención asistencial MINSA (I-4, II-2, III-1, III-E).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>address</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(255)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Dirección física donde operan los puntos de despacho o quirófanos.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>district</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(100)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Distrito de Lima Metropolitana o región sanitaria de ubicación.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>emergency_phone</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Teléfono de contacto de la central de emergencias hospitalarias.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>renipress_code</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Código único nacional del Registro Nacional de IPRESS (SUSALUD / MINSA).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>latitude</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(10, 8)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (BETWEEN -90 AND 90)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordenada geográfica de latitud del helipuerto o rampa de urgencia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>longitude</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(11, 8)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (BETWEEN -180 AND 180)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordenada geográfica de longitud de la sede hospitalaria.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>geofence_radius_meters</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(6, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 2000.00, CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Radio perimétrico virtual (ej. 2 km) que dispara el preaviso y habilita OTP.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_active</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado de habilitación operativa para programar traslados.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha y hora UTC de alta en el sistema.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal UTC de la última actualización de datos institucionales.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 3: `users`**
 Gestiona las credenciales y perfiles profesionales autorizados en ambos segmentos.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador universal del usuario en la plataforma. |
-| `institution_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `hospital_institutions(id)` | Entidad sanitaria a la cual pertenece laboralmente el usuario. |
-| `first_name` | `VARCHAR(80)` | **NOT NULL** | — | Nombres del usuario. |
-| `last_name` | `VARCHAR(80)` | **NOT NULL** | — | Apellidos completos. |
-| `email` | `VARCHAR(120)` | **NOT NULL** | `UNIQUE` | Correo electrónico corporativo utilizado para autenticación JWT. |
-| `password_hash` | `VARCHAR(255)` | **NOT NULL** | — | Contraseña protegida mediante algoritmo de hashing irreversible (BCrypt). |
-| `role` | `ENUM(...)` | **NOT NULL** | — | Rol: `FleetDispatcher`, `AmbulanceDriver`, `Paramedic`, `ClinicalPharmacist`, `ReceivingSurgeon`, `QualityAuditor`, `SystemAdministrator`. |
-| `phone_number` | `VARCHAR(20)` | **NOT NULL** | — | Número móvil para recepción de alertas SMS de contingencia vía Twilio. |
-| `medical_license_number` | `VARCHAR(30)` | NULL | — | Matrícula profesional (CMP para cirujanos, TEM para paramédicos). |
-| `is_active` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Indicador de cuenta activa y habilitada para iniciar sesión. |
-| `last_login_at` | `DATETIME(6)` | NULL | — | Marca temporal UTC del último inicio de sesión autenticado. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Registro inicial de la cuenta de usuario. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de modificación de credenciales o perfil. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal del usuario en la plataforma.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>institution_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> hospital_institutions(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Entidad sanitaria a la cual pertenece laboralmente el usuario.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>first_name</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(80)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nombres del usuario.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>last_name</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(80)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Apellidos completos.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>email</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(120)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Correo electrónico corporativo utilizado para autenticación JWT.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>password_hash</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(255)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contraseña protegida mediante algoritmo de hashing irreversible (BCrypt).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>role</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Rol: `FleetDispatcher`, `AmbulanceDriver`, `Paramedic`, `ClinicalPharmacist`, `ReceivingSurgeon`, `QualityAuditor`, `SystemAdministrator`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>phone_number</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Número móvil para recepción de alertas SMS de contingencia vía Twilio.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>medical_license_number</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(30)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Matrícula profesional (CMP para cirujanos, TEM para paramédicos).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_active</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Indicador de cuenta activa y habilitada para iniciar sesión.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>last_login_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal UTC del último inicio de sesión autenticado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Registro inicial de la cuenta de usuario.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de modificación de credenciales o perfil.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -137,42 +431,250 @@ Modela el contenedor físico inteligente, su estado electromecánico y el flujo 
 ###### **Tabla 4: `smart_containers`**
 Representa la unidad isotérmica física dotada de sensores, solenoide de tapa y refrigeración activa Peltier.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único del contenedor inteligente. |
-| `serial_number` | `VARCHAR(30)` | **NOT NULL** | `UNIQUE` | Número de serie impreso en chasis y quemado en firmware (ej. `SMB-BOX-2026-0042`). |
-| `form_factor` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'StandardBox_20L'` | Tamaño: `SmallBox_5L` (córneas, biopsias) o `StandardBox_20L` (corazones, riñones). |
-| `status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Available'` | Estado operativo: `Available`, `Precooling`, `LockedAndReady`, `InTransit`, `Delivered`, `MaintenanceRequired`. |
-| `lock_state` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Unlocked'` | Posición del cerrojo electromecánico: `Locked`, `Unlocked`, `Tampered`, `Error`. |
-| `current_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | `CHECK (-20.00 TO 60.00)` | Última lectura de temperatura interna (°C). Rango seguro: +2.00 a +8.00 °C. |
-| `tare_weight_grams` | `DECIMAL(8, 2)` | **NOT NULL** | `DEFAULT 0.00, CHECK (>= 0)` | Peso en vacío calibrado con celda de carga HX711 (tara en gramos). |
-| `net_weight_grams` | `DECIMAL(8, 2)` | **NOT NULL** | `DEFAULT 0.00, CHECK (>= 0)` | Peso neto actual del paquete biológico o hemoderivado transportado. |
-| `battery_percentage` | `DECIMAL(5, 2)` | **NOT NULL** | `CHECK (0.00 TO 100.00)` | Nivel remanente de la batería LiFePO4 interna del contenedor. |
-| `is_12v_connected` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 0` | Flag de alimentación auxiliar desde la toma de 12V vehicular de la ambulancia. |
-| `last_telemetry_at` | `DATETIME(6)` | NULL | — | Marca de tiempo del último mensaje MQTT recibido desde el ESP32. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha de fabricación o registro del contenedor en inventario. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de la última sincronización telemétrica o cambio de estado. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del contenedor inteligente.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>serial_number</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(30)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Número de serie impreso en chasis y quemado en firmware (ej. `SMB-BOX-2026-0042`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>form_factor</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'StandardBox_20L'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tamaño: `SmallBox_5L` (córneas, biopsias) o `StandardBox_20L` (corazones, riñones).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Available'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado operativo: `Available`, `Precooling`, `LockedAndReady`, `InTransit`, `Delivered`, `MaintenanceRequired`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>lock_state</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Unlocked'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Posición del cerrojo electromecánico: `Locked`, `Unlocked`, `Tampered`, `Error`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>current_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (-20.00 TO 60.00)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Última lectura de temperatura interna (°C). Rango seguro: +2.00 a +8.00 °C.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>tare_weight_grams</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(8, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0.00, CHECK (>= 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Peso en vacío calibrado con celda de carga HX711 (tara en gramos).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>net_weight_grams</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(8, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0.00, CHECK (>= 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Peso neto actual del paquete biológico o hemoderivado transportado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>battery_percentage</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(5, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (0.00 TO 100.00)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel remanente de la batería LiFePO4 interna del contenedor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_12v_connected</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Flag de alimentación auxiliar desde la toma de 12V vehicular de la ambulancia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>last_telemetry_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca de tiempo del último mensaje MQTT recibido desde el ESP32.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha de fabricación o registro del contenedor en inventario.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de la última sincronización telemétrica o cambio de estado.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 5: `telemetry_logs`**
 Serie temporal de lecturas sensoriales emitidas en ráfagas cada 5 segundos durante el transporte de emergencia.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `BIGINT UNSIGNED` | **NOT NULL** | `PRIMARY KEY, AUTO_INCREMENT` | Identificador numérico monótono para optimización de inserciones continuas. |
-| `container_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `smart_containers(id)` | Contenedor inteligente emisor de la trama sensorial. |
-| `trip_id` | `CHAR(36)` | NULL | `FOREIGN KEY` -> `dispatch_trips(id)` | Viaje de ambulancia activo durante el registro telemétrico. |
-| `timestamp_utc` | `DATETIME(6)` | **NOT NULL** | — | Marca temporal UTC provista por el reloj RTC del microcontrolador. |
-| `temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura en la cámara biológica medida por el sensor Dallas DS18B20. |
-| `ambient_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura ambiente dentro de la cabina de la ambulancia. |
-| `weight_grams` | `DECIMAL(8, 2)` | **NOT NULL** | — | Peso bruto medido por la celda HX711 (detecta aperturas o sustracciones). |
-| `battery_percentage` | `DECIMAL(5, 2)` | **NOT NULL** | `CHECK (0.00 TO 100.00)` | Carga porcentual de la batería interna en el instante de la muestra. |
-| `is_12v_connected` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 0` | Estado del circuito de alimentación de 12V de la ambulancia. |
-| `peltier_power_pct` | `INT` | **NOT NULL** | `CHECK (0 TO 100)` | Potencia PWM aplicada a las celdas Peltier de enfriamiento. |
-| `lid_lock_engaged` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Verificación de contacto magnético de tapa (1: sellado, 0: abierto). |
-| `latitude` | `DECIMAL(10, 8)` | NULL | — | Coordenada GPS latitudinal transmitida por el módem SIM7600G. |
-| `longitude` | `DECIMAL(11, 8)` | NULL | — | Coordenada GPS longitudinal del vehículo en ruta. |
-| `firmware_signature` | `VARCHAR(128)` | **NOT NULL** | — | Hash de validación criptográfica de la trama generada por el ESP32. |
-| `is_thermal_excursion` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 0` | Flag de desvío: marcado con 1 si la temperatura sale de +2.0°C a +8.0°C. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>BIGINT UNSIGNED</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY, AUTO_INCREMENT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador numérico monótono para optimización de inserciones continuas.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>container_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> smart_containers(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contenedor inteligente emisor de la trama sensorial.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trip_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> dispatch_trips(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Viaje de ambulancia activo durante el registro telemétrico.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>timestamp_utc</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal UTC provista por el reloj RTC del microcontrolador.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura en la cámara biológica medida por el sensor Dallas DS18B20.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>ambient_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura ambiente dentro de la cabina de la ambulancia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>weight_grams</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(8, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Peso bruto medido por la celda HX711 (detecta aperturas o sustracciones).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>battery_percentage</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(5, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (0.00 TO 100.00)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Carga porcentual de la batería interna en el instante de la muestra.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_12v_connected</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado del circuito de alimentación de 12V de la ambulancia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>peltier_power_pct</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (0 TO 100)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Potencia PWM aplicada a las celdas Peltier de enfriamiento.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>lid_lock_engaged</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Verificación de contacto magnético de tapa (1: sellado, 0: abierto).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>latitude</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(10, 8)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordenada GPS latitudinal transmitida por el módem SIM7600G.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>longitude</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(11, 8)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordenada GPS longitudinal del vehículo en ruta.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>firmware_signature</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(128)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hash de validación criptográfica de la trama generada por el ESP32.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_thermal_excursion</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Flag de desvío: marcado con 1 si la temperatura sale de +2.0°C a +8.0°C.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -183,44 +685,264 @@ Articula las órdenes de traslado clínico y su asignación a los recursos móvi
 ###### **Tabla 6: `transport_orders`**
 Solicitudes clínicas de transporte emitidas por cirujanos o químicos farmacéuticos (Segmento 2).
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador universal de la orden clínica. |
-| `order_code` | `VARCHAR(20)` | **NOT NULL** | `UNIQUE` | Código legible de seguimiento clínico (ej. `ORD-2026-TRP-001`). |
-| `origin_hospital_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `hospital_institutions(id)` | Centro hospitalario emisor de la carga médica (donante/banco). |
-| `destination_hospital_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `hospital_institutions(id)` | Centro hospitalario receptor (sala de operaciones de trasplante). |
-| `cargo_type` | `ENUM(...)` | **NOT NULL** | — | Carga: `HeartOrgan`, `LiverOrgan`, `KidneyOrgan`, `BloodPlasmaPack`, `ThermolabileVaccine`, `BiopsySample`. |
-| `cargo_description` | `VARCHAR(255)` | **NOT NULL** | — | Especificación clínica detallada (ej. *Corazón en solución Custodiol*). |
-| `max_ischemia_hours` | `DECIMAL(4, 2)` | **NOT NULL** | `CHECK (> 0)` | Límite máximo de isquemia fría tolerable según Directiva 152/MINSA. |
-| `ischemia_warning_hours` | `DECIMAL(4, 2)` | **NOT NULL** | `CHECK (> 0)` | Umbral preventivo para disparo de alertas de tráfico severo. |
-| `clinical_priority` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'StatEmergency'` | Prioridad médica de despacho: `Routine`, `Urgent`, `StatEmergency`. |
-| `status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Pending'` | Ciclo de vida: `Pending`, `Assigned`, `InTransit`, `Completed`, `Cancelled`. |
-| `created_by_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Cirujano de trasplante o coordinador médico emisor. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de emisión de la orden de traslado. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Marca temporal de última modificación o reasignación. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal de la orden clínica.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>order_code</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Código legible de seguimiento clínico (ej. `ORD-2026-TRP-001`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>origin_hospital_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> hospital_institutions(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Centro hospitalario emisor de la carga médica (donante/banco).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>destination_hospital_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> hospital_institutions(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Centro hospitalario receptor (sala de operaciones de trasplante).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>cargo_type</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Carga: `HeartOrgan`, `LiverOrgan`, `KidneyOrgan`, `BloodPlasmaPack`, `ThermolabileVaccine`, `BiopsySample`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>cargo_description</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(255)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Especificación clínica detallada (ej. *Corazón en solución Custodiol*).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>max_ischemia_hours</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Límite máximo de isquemia fría tolerable según Directiva 152/MINSA.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>ischemia_warning_hours</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Umbral preventivo para disparo de alertas de tráfico severo.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>clinical_priority</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'StatEmergency'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Prioridad médica de despacho: `Routine`, `Urgent`, `StatEmergency`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Pending'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Ciclo de vida: `Pending`, `Assigned`, `InTransit`, `Completed`, `Cancelled`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_by_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cirujano de trasplante o coordinador médico emisor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de emisión de la orden de traslado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal de última modificación o reasignación.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 7: `dispatch_trips`**
 Ejecución del traslado por la ambulancia, tripulación y contenedor asignados (Segmento 1).
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único del viaje de despacho. |
-| `order_id` | `CHAR(36)` | **NOT NULL** | `UNIQUE, FOREIGN KEY` -> `transport_orders(id)` | Orden de transporte vinculada (relación 1 a 1 estricta). |
-| `assigned_container_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `smart_containers(id)` | Contenedor físico precriado asignado para el traslado. |
-| `assigned_driver_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Chofer de ambulancia responsable del desplazamiento. |
-| `assigned_paramedic_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Paramédico TEM a bordo encargado de la custodia del contenedor. |
-| `assigned_vehicle_plate` | `VARCHAR(10)` | **NOT NULL** | — | Placa oficial de rodaje de la ambulancia asignada (ej. `EUG-418`). |
-| `status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Scheduled'` | Estado: `Scheduled`, `ResourcesAssigned`, `PrecoolingVerified`, `InTransit`, `ArrivedAtDestination`, `Completed`, `Cancelled`. |
-| `scheduled_departure_time` | `DATETIME(6)` | **NOT NULL** | — | Hora programada de salida del hospital de origen. |
-| `actual_departure_time` | `DATETIME(6)` | NULL | — | Hora real de partida una vez validado el pre-enfriamiento a 4.0 °C. |
-| `estimated_arrival_time` | `DATETIME(6)` | **NOT NULL** | — | ETA inicial recalculado dinámicamente según TomTom Traffic API. |
-| `actual_arrival_time` | `DATETIME(6)` | NULL | — | Hora exacta de arribo físico a la puerta de emergencia hospitalaria. |
-| `distance_km` | `DECIMAL(6, 2)` | **NOT NULL** | `DEFAULT 0.00` | Distancia total recorrida por la ambulancia en kilómetros. |
-| `planned_duration_minutes` | `INT` | **NOT NULL** | `DEFAULT 0` | Duración prevista calculada en el ruteo inicial. |
-| `current_delay_minutes` | `INT` | **NOT NULL** | `DEFAULT 0` | Retraso acumulado inducido por congestión vehicular en Lima. |
-| `polyline_coordinates` | `TEXT` | NULL | — | Cadena codificada de la ruta geográfica recorrida. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Momento de creación de la hoja de despacho. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de la última actualización telemétrica o de ETA. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del viaje de despacho.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>order_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE, FOREIGN KEY -> transport_orders(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Orden de transporte vinculada (relación 1 a 1 estricta).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>assigned_container_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> smart_containers(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contenedor físico precriado asignado para el traslado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>assigned_driver_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Chofer de ambulancia responsable del desplazamiento.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>assigned_paramedic_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico TEM a bordo encargado de la custodia del contenedor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>assigned_vehicle_plate</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(10)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Placa oficial de rodaje de la ambulancia asignada (ej. `EUG-418`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Scheduled'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado: `Scheduled`, `ResourcesAssigned`, `PrecoolingVerified`, `InTransit`, `ArrivedAtDestination`, `Completed`, `Cancelled`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>scheduled_departure_time</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hora programada de salida del hospital de origen.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>actual_departure_time</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hora real de partida una vez validado el pre-enfriamiento a 4.0 °C.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>estimated_arrival_time</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ETA inicial recalculado dinámicamente según TomTom Traffic API.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>actual_arrival_time</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hora exacta de arribo físico a la puerta de emergencia hospitalaria.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>distance_km</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(6, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0.00</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Distancia total recorrida por la ambulancia en kilómetros.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>planned_duration_minutes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Duración prevista calculada en el ruteo inicial.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>current_delay_minutes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Retraso acumulado inducido por congestión vehicular en Lima.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>polyline_coordinates</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TEXT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cadena codificada de la ruta geográfica recorrida.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Momento de creación de la hoja de despacho.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de la última actualización telemétrica o de ETA.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -231,34 +953,194 @@ Registra y escala contingencias en ruta ante desvíos térmicos o fallas eléctr
 ###### **Tabla 8: `critical_incidents`**
 Incidencias generadas automáticamente ante violaciones térmicas o manipulaciones indebidas.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador universal del incidente crítico. |
-| `trip_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `dispatch_trips(id)` | Viaje de ambulancia en el cual ocurrió la anomalía. |
-| `container_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `smart_containers(id)` | Contenedor que experimentó el desvío sensorial. |
-| `severity` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'CriticalEmergency'` | Nivel: `LowWarning`, `ModerateAlert`, `CriticalEmergency`, `CatastrophicFailure`. |
-| `incident_type` | `ENUM(...)` | **NOT NULL** | — | Tipo: `ColdChainBreachHigh`, `ColdChainBreachLow`, `Auxiliary12VPowerLost`, `PayloadTamperingSuspected`, `SevereTrafficDelayExceeded`. |
-| `triggered_at` | `DATETIME(6)` | **NOT NULL** | — | Momento UTC exacto en que se detectó la violación del umbral. |
-| `trigger_temperature_celsius` | `DECIMAL(4, 2)` | NULL | — | Temperatura registrada al momento de la alarma (opcional si el incidente es por tráfico o manipulación). |
-| `trigger_battery_percentage` | `DECIMAL(5, 2)` | NULL | — | Nivel de batería al momento del incidente (opcional en contingencias no eléctricas). |
-| `status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Triggered'` | Estado: `Triggered`, `Acknowledged`, `Escalated`, `Resolved`. |
-| `escalation_level` | `INT` | **NOT NULL** | `DEFAULT 1, CHECK (1 TO 3)` | Nivel de escalamiento (1: Operador, 2: Paramédico, 3: Director Médico). |
-| `acknowledged_at` | `DATETIME(6)` | NULL | — | Timestamp en que el operador de flota confirmó la alerta. |
-| `acknowledged_by_user_id` | `CHAR(36)` | NULL | `FOREIGN KEY` -> `users(id)` | Operador que tomó control del incidente. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha de persistencia del incidente. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal del incidente crítico.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trip_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> dispatch_trips(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Viaje de ambulancia en el cual ocurrió la anomalía.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>container_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> smart_containers(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contenedor que experimentó el desvío sensorial.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>severity</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'CriticalEmergency'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel: `LowWarning`, `ModerateAlert`, `CriticalEmergency`, `CatastrophicFailure`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>incident_type</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tipo: `ColdChainBreachHigh`, `ColdChainBreachLow`, `Auxiliary12VPowerLost`, `PayloadTamperingSuspected`, `SevereTrafficDelayExceeded`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>triggered_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Momento UTC exacto en que se detectó la violación del umbral.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trigger_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura registrada al momento de la alarma (opcional si el incidente es por tráfico o manipulación).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trigger_battery_percentage</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(5, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel de batería al momento del incidente (opcional en contingencias no eléctricas).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Triggered'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado: `Triggered`, `Acknowledged`, `Escalated`, `Resolved`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>escalation_level</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1, CHECK (1 TO 3)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel de escalamiento (1: Operador, 2: Paramédico, 3: Director Médico).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>acknowledged_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp en que el operador de flota confirmó la alerta.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>acknowledged_by_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Operador que tomó control del incidente.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha de persistencia del incidente.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 9: `contingency_resolutions`**
 Medidas correctivas aplicadas y validadas para mitigar el incidente y proteger el tejido clínico.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único de la resolución de contingencia. |
-| `incident_id` | `CHAR(36)` | **NOT NULL** | `UNIQUE, FOREIGN KEY` -> `critical_incidents(id)` | Incidente mitigado (relación 1 a 1 estricta). |
-| `mitigation_action` | `VARCHAR(500)` | **NOT NULL** | — | Acción operativa (ej. *Reconexión de arnés 12V vehicular y refuerzo criogénico*). |
-| `was_thermal_integrity_restored` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Certificación de retorno a la franja de +2.0 °C a +8.0 °C. |
-| `quality_signoff_notes` | `TEXT` | **NOT NULL** | — | Dictamen técnico obligatorio firmado por el especialista biomédico. |
-| `resolved_by_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Profesional biomédico o médico de guardia responsable. |
-| `resolved_at` | `DATETIME(6)` | **NOT NULL** | — | Marca temporal del cierre satisfactorio de la contingencia. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único de la resolución de contingencia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>incident_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE, FOREIGN KEY -> critical_incidents(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Incidente mitigado (relación 1 a 1 estricta).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>mitigation_action</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(500)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Acción operativa (ej. *Reconexión de arnés 12V vehicular y refuerzo criogénico*).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>was_thermal_integrity_restored</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Certificación de retorno a la franja de +2.0 °C a +8.0 °C.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>quality_signoff_notes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TEXT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Dictamen técnico obligatorio firmado por el especialista biomédico.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>resolved_by_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Profesional biomédico o médico de guardia responsable.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>resolved_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal del cierre satisfactorio de la contingencia.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -269,38 +1151,222 @@ Garantiza la inmutabilidad de la custodia médica mediante autenticación OTP y 
 ###### **Tabla 10: `custody_transfers`**
 Protocolo de entrega hospitalaria con autenticación de apertura mediante código OTP de un solo uso.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador universal de la transferencia de custodia. |
-| `trip_id` | `CHAR(36)` | **NOT NULL** | `UNIQUE, FOREIGN KEY` -> `dispatch_trips(id)` | Viaje de ambulancia culminado (relación 1 a 1 estricta). |
-| `recipient_hospital_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `hospital_institutions(id)` | Hospital de destino donde se realiza la entrega física. |
-| `authorized_recipient_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Cirujano o farmacéutico facultado para recibir el contenedor. |
-| `handover_status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'PendingOtpVerification'` | Estado: `PendingOtpVerification`, `OtpVerifiedLidUnlocked`, `CompletedAccepted`, `RejectedThermalExcursion`, `RejectedTampering`. |
-| `otp_code_hash` | `VARCHAR(128)` | **NOT NULL** | — | Hash HMAC-SHA256 del token OTP efímero de 6 dígitos generado por el sistema. |
-| `otp_expires_at` | `DATETIME(6)` | **NOT NULL** | — | Límite temporal de vigencia del token (15 minutos tras el arribo). |
-| `otp_attempt_count` | `INT` | **NOT NULL** | `DEFAULT 0, CHECK (0 TO 3)` | Contador de intentos de digitación (bloqueo automático al 3er fallo). |
-| `otp_verified_at` | `DATETIME(6)` | NULL | — | Marca temporal exacta de la validación y liberación del solenoide. |
-| `recipient_notes` | `VARCHAR(500)` | NULL | — | Observaciones clínicas del receptor en la mesa quirúrgica. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Momento de generación del token OTP al llegar la ambulancia. |
-| `completed_at` | `DATETIME(6)` | NULL | — | Timestamp de aceptación y firma final de la custodia. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal de la transferencia de custodia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trip_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE, FOREIGN KEY -> dispatch_trips(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Viaje de ambulancia culminado (relación 1 a 1 estricta).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>recipient_hospital_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> hospital_institutions(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hospital de destino donde se realiza la entrega física.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>authorized_recipient_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cirujano o farmacéutico facultado para recibir el contenedor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>handover_status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'PendingOtpVerification'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado: `PendingOtpVerification`, `OtpVerifiedLidUnlocked`, `CompletedAccepted`, `RejectedThermalExcursion`, `RejectedTampering`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>otp_code_hash</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(128)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hash HMAC-SHA256 del token OTP efímero de 6 dígitos generado por el sistema.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>otp_expires_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Límite temporal de vigencia del token (15 minutos tras el arribo).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>otp_attempt_count</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0, CHECK (0 TO 3)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contador de intentos de digitación (bloqueo automático al 3er fallo).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>otp_verified_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal exacta de la validación y liberación del solenoide.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>recipient_notes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(500)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Observaciones clínicas del receptor en la mesa quirúrgica.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Momento de generación del token OTP al llegar la ambulancia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>completed_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de aceptación y firma final de la custodia.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 11: `digital_audit_manifests`**
 Acta digital de entrega legal sellada criptográficamente con hash SHA-256 para auditorías de DIGEMID (R.M. 833-2015).
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único del acta digital. |
-| `transfer_id` | `CHAR(36)` | **NOT NULL** | `UNIQUE, FOREIGN KEY` -> `custody_transfers(id)` | Transferencia de custodia certificada (relación 1 a 1 estricta). |
-| `manifest_code` | `VARCHAR(30)` | **NOT NULL** | `UNIQUE` | Código oficial del manifiesto clínico (ej. `MAN-2026-MINSA-0089`). |
-| `cryptographic_hash_sha256` | `CHAR(64)` | **NOT NULL** | — | Hash SHA-256 del PDF y de la serie completa de telemetría del viaje. |
-| `cloud_storage_pdf_url` | `VARCHAR(500)` | **NOT NULL** | — | Enlace inmutable hacia el repositorio S3 / Azure Blob Storage cifrado. |
-| `is_sealed_and_immutable` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Bandera de inmutabilidad jurídica; impide modificaciones o reaperturas. |
-| `average_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura promedio consolidada durante todo el traslado (°C). |
-| `min_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura mínima registrada en la cámara durante el viaje. |
-| `max_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura máxima alcanzada en el contenedor. |
-| `total_excursion_seconds` | `INT` | **NOT NULL** | `DEFAULT 0, CHECK (>= 0)` | Tiempo acumulado en segundos fuera del rango regulatorio (+2°C a +8°C). |
-| `minsa_compliance_verified` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Certificación booleana de cumplimiento de la Directiva Sanitaria 152/MINSA. |
-| `sealed_at` | `DATETIME(6)` | **NOT NULL** | — | Fecha y hora UTC del sellado criptográfico del acta. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del acta digital.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>transfer_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE, FOREIGN KEY -> custody_transfers(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Transferencia de custodia certificada (relación 1 a 1 estricta).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>manifest_code</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(30)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Código oficial del manifiesto clínico (ej. `MAN-2026-MINSA-0089`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>cryptographic_hash_sha256</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(64)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hash SHA-256 del PDF y de la serie completa de telemetría del viaje.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>cloud_storage_pdf_url</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(500)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Enlace inmutable hacia el repositorio S3 / Azure Blob Storage cifrado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_sealed_and_immutable</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Bandera de inmutabilidad jurídica; impide modificaciones o reaperturas.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>average_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura promedio consolidada durante todo el traslado (°C).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>min_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura mínima registrada en la cámara durante el viaje.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>max_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura máxima alcanzada en el contenedor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>total_excursion_seconds</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0, CHECK (>= 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tiempo acumulado en segundos fuera del rango regulatorio (+2°C a +8°C).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>minsa_compliance_verified</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Certificación booleana de cumplimiento de la Directiva Sanitaria 152/MINSA.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>sealed_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha y hora UTC del sellado criptográfico del acta.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 

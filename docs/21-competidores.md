@@ -18,21 +18,109 @@ Para el relevamiento de la competencia se investigaron tres empresas con presenc
 
 El análisis comparativo adopta estrictamente la estructura normativa del cuadro de **Competitive Analysis Landscape** prescrita en las **páginas 10 y 11 del Enunciado Oficial del Trabajo Final**, evaluando a NeonCode frente a los tres competidores reales en sus 11 dimensiones:
 
-| Competitive Analysis Landscape | | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| **¿Por qué llevar a cabo este análisis?** | **¿Cuál es la propuesta de valor diferenciada de Medical SMARTBOX frente a las soluciones globales y locales de monitoreo de cadena de frío para unidades de soporte vital y traslados biomédicos en Lima Metropolitana?** | | | |
-| **(Nombre y Logo)** | **Medical SMARTBOX (NeonCode)** | **Sensitech (Carrier Global)** | **Tracklink Perú (Motorlink S.A.C.)** | **Controlant** |
-| **Perfil: Overview** | Plataforma IoT y contenedor biomédico inteligente con telemetría activa en tiempo real (temperatura, peso neto, GPS) y control de acceso físico mediante solenoide con token OTP para ambulancias y triaje prehospitalario. | Líder multinacional en visibilidad de cadena de frío mediante dataloggers USB y dispositivos celulares para pallets y contenedores de carga farmacéutica masiva transcontinental. | Proveedor nacional líder en seguridad vehicular, monitoreo GPS de flotas y telemetría de furgones frigoríficos mediante sensores en la computadora de abordo del camión. | Innovador global en visibilidad de cadena de frío en tiempo real mediante balizas IoT celulares y plataforma en la nube para fabricantes biofarmacéuticos. |
-| **Perfil: Ventaja competitiva ¿Qué valor ofrece a los clientes?** | Protección activa en el último tramo prehospitalario (ambulancia a cama del paciente), cerradura solenoide anti-apertura no autorizada con token OTP y monitoreo de peso digital para evitar adulteración o mermas. | Marca de referencia mundial con cumplimiento regulatorio estricto FDA 21 CFR Part 11 y certificación de calibración individual con trazabilidad metrológica NIST. | Central de monitoreo 24/7 y cobertura de red celular en las 24 regiones del Perú, con servicio técnico, instalación y soporte presencial en talleres a nivel nacional. | Automatización analítica de extremo a extremo, monitoreo de ultracongelación (-80 °C) y validación en distribución global de biológicos y vacunas críticas. |
-| **Perfil de Marketing: Mercado objetivo** | Empresas de transporte asistido, ambulancias públicas (SAMU) y privadas, bancos de sangre, policlínicos y laboratorios de análisis clínicos en el Perú. | Grandes laboratorios farmacéuticos transnacionales y distribuidores logísticos globales de medicamentos y vacunas. | Empresas de transporte de carga refrigerada, distribuidores mayoristas de alimentos perecibles y operadores logísticos interprovinciales. | Fabricantes multinacionales biofarmacéuticos, centros de investigación de ensayos clínicos y cadenas globales de ultracongelación. |
-| **Perfil de Marketing: Estrategias de marketing** | Posicionamiento como solución HaaS (Hardware as a Service) especializada en emergencias prehospitalarias, alianzas con redes clínicas y venta consultiva técnica. | Marketing B2B corporativo basado en certificaciones globales, presencia en ferias farmacéuticas mundiales y licitaciones masivas corporativas. | Fuerza de ventas corporativa de flotas, campañas de telemática vehicular, y venta cruzada con servicios de recuperación antirrobo vehicular. | Marketing relacional y alianzas estratégicas globales con farmacéuticas de primera línea (ej. Pfizer) y organismos internacionales de salud. |
-| **Perfil de Producto: Productos & Servicios** | Dispositivo IoT Medical SMARTBOX (ESP32, DS18B20, celda de carga HX711, solenoide), Web App Vue.js/PrimeVue y REST API en ASP.NET Core 10.0. | Dataloggers TempTale Ultra (USB), TempTale GEO LTE (celular en tiempo real) y software de analítica ColdStream SaaS. | Hardware telemático vehicular Tracklink Cold Chain, sensores de temperatura para furgón y portal web de rastreo de flota. | Controlant Saga Card / Saga Mobile (sensores celulares compactos) y plataforma cloud de visibilidad predictiva Aurora. |
-| **Perfil de Producto: Precios & Costos** | Suscripción mensual SaaS por Smartbox activo ($30 - $45 USD/mes) + hardware en comodato o costo accesible de entrada ($180 USD). | Alto costo por datalogger desechable ($25 - $40 USD/unidad) o reutilizable ($150 - $250 USD) más licencias corporativas anuales de software. | Costo de instalación de hardware vehicular ($350 - $500 USD por camión) + cuota de servicio mensual ($35 - $50 USD por vehículo). | Servicio corporativo cerrado por viaje o suscripción de alto valor ($500+ USD mensuales por lote monitorizado), logística inversa obligatoria. |
-| **Perfil de Producto: Canales de distribución (Web y/o Móvil)** | Web Application responsive (optimizada para desktop y tablets de ambulancia) y Landing Page comercial con portal de cotización. | Plataforma web corporativa ColdStream (Web SaaS) y herramientas de configuración desktop/USB para lectura de reportes PDF. | Plataforma Web de rastreo de flotas y Aplicación Móvil (Android/iOS) para gestión y ubicación satelital de vehículos. | Plataforma Web Aurora Cloud Platform y servicios API de integración empresarial con ERPs/WMS. |
-| **Análisis SWOT: Fortalezas** | Control activo físico solenoide con OTP, monitoreo de peso digital, diseño adaptado a ambulancias de Lima, arquitectura moderna en .NET 10 y MySQL 8.0. | Máxima reputación regulatoria mundial, precisión metrológica certificada, plataforma cloud robusta para millones de envíos farmacéuticos. | Infraestructura operativa local consolidada, red de soporte 24/7 en Perú, integración con rastreo antirrobo y botón de pánico vehicular. | Tecnología IoT de vanguardia (NB-IoT/Cat-M1), analítica predictiva avanzada, cobertura global sin intervención del operador. |
-| **Análisis SWOT: Debilidades** | Startup emergente sin marca posicionada en el sector salud público, dependencia inicial de autofinanciamiento de prototipos. | Monitoreo pasivo en modelos estándar (requiere conectar USB al final), sin cerradura inteligente de seguridad, sin sensor de peso. | Monitoreo a nivel de vehículo completo y no del contenedor individual, sin integración con flujos clínicos prehospitalarios ni control de custodia digital. | Barrera de costos restrictiva para el mercado peruano, complejidad de logística inversa de recolección de tarjetas, sin protección física local (OTP). |
-| **Análisis SWOT: Oportunidades** | Exigencias crecientes de DIGEMID y MINSA para trazabilidad de cadena de frío en emergencias; alta tasa de mermas por tráfico vehicular en Lima. | Incremento en la demanda mundial de medicamentos biológicos sensibles a variaciones de temperatura. | Crecimiento del comercio farmacéutico electrónico y requerimientos de trazabilidad en transporte logístico local. | Expansión de requerimientos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica. |
-| **Análisis SWOT: Amenazas** | Burocracia y lentitud en licitaciones del sector salud público (EsSalud/MINSA); resistencia al cambio del personal paramédico ante el registro digital. | Nuevos entrantes en tecnología IoT celular de bajo costo que presionan a la baja los márgenes de hardware. | Competidores de rastreo satelital genérico que ofrecen sensores de temperatura básicos como commodity a bajo precio. | Tensiones geopolíticas y disrupciones en la cadena global de suministro de componentes electrónicos semiconductores para hardware IoT. |
+<div style="margin: 14px 0 18px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 21%;" />
+  <col style="width: 21%;" />
+  <col style="width: 20.5%;" />
+  <col style="width: 20.5%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #e2e8f0;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">¿Por qué llevar a cabo este análisis?</th>
+  <th colspan="4" style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: 500; font-style: italic;">¿Cuál es la propuesta de valor diferenciada de Medical SMARTBOX frente a las soluciones globales y locales de monitoreo de cadena de frío para unidades de soporte vital y traslados biomédicos en Lima Metropolitana?</th>
+</tr>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; color: #0f172a;">(Nombre y Logo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; background-color: #e0f2fe; color: #0369a1;">Medical SMARTBOX (NeonCode)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; color: #0f172a;">Sensitech (Carrier Global)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; color: #0f172a;">Tracklink Perú (Motorlink S.A.C.)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; color: #0f172a;">Controlant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil: Overview</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Plataforma IoT y contenedor biomédico inteligente con telemetría activa en tiempo real (temperatura, peso neto, GPS) y control de acceso físico mediante solenoide con token OTP para ambulancias y triaje prehospitalario.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Líder multinacional en visibilidad de cadena de frío mediante dataloggers USB y dispositivos celulares para pallets y contenedores de carga farmacéutica masiva transcontinental.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Proveedor nacional líder en seguridad vehicular, monitoreo GPS de flotas y telemetría de furgones frigoríficos mediante sensores en la computadora de abordo del camión.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Innovador global en visibilidad de cadena de frío en tiempo real mediante balizas IoT celulares y plataforma en la nube para fabricantes biofarmacéuticos.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil: Ventaja competitiva ¿Qué valor ofrece a los clientes?</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Protección activa en el último tramo prehospitalario (ambulancia a cama del paciente), cerradura solenoide anti-apertura no autorizada con token OTP y monitoreo de peso digital para evitar adulteración o mermas.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca de referencia mundial con cumplimiento regulatorio estricto FDA 21 CFR Part 11 y certificación de calibración individual con trazabilidad metrológica NIST.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Central de monitoreo 24/7 y cobertura de red celular en las 24 regiones del Perú, con servicio técnico, instalación y soporte presencial en talleres a nivel nacional.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Automatización analítica de extremo a extremo, monitoreo de ultracongelación (-80 °C) y validación en distribución global de biológicos y vacunas críticas.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Marketing: Mercado objetivo</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Empresas de transporte asistido, ambulancias públicas (SAMU) y privadas, bancos de sangre, policlínicos y laboratorios de análisis clínicos en el Perú.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Grandes laboratorios farmacéuticos transnacionales y distribuidores logísticos globales de medicamentos y vacunas.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Empresas de transporte de carga refrigerada, distribuidores mayoristas de alimentos perecibles y operadores logísticos interprovinciales.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fabricantes multinacionales biofarmacéuticos, centros de investigación de ensayos clínicos y cadenas globales de ultracongelación.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Marketing: Estrategias de marketing</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Posicionamiento como solución HaaS (Hardware as a Service) especializada en emergencias prehospitalarias, alianzas con redes clínicas y venta consultiva técnica.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marketing B2B corporativo basado en certificaciones globales, presencia en ferias farmacéuticas mundiales y licitaciones masivas corporativas.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fuerza de ventas corporativa de flotas, campañas de telemática vehicular, y venta cruzada con servicios de recuperación antirrobo vehicular.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marketing relacional y alianzas estratégicas globales con farmacéuticas de primera línea (ej. Pfizer) y organismos internacionales de salud.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Producto: Productos & Servicios</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Dispositivo IoT Medical SMARTBOX (ESP32, DS18B20, celda de carga HX711, solenoide), Web App Vue.js/PrimeVue y REST API en ASP.NET Core 10.0.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Dataloggers TempTale Ultra (USB), TempTale GEO LTE (celular en tiempo real) y software de analítica ColdStream SaaS.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware telemático vehicular Tracklink Cold Chain, sensores de temperatura para furgón y portal web de rastreo de flota.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Controlant Saga Card / Saga Mobile (sensores celulares compactos) y plataforma cloud de visibilidad predictiva Aurora.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Producto: Precios & Costos</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Suscripción mensual SaaS por Smartbox activo ($30 - $45 USD/mes) + hardware en comodato o costo accesible de entrada ($180 USD).</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Alto costo por datalogger desechable ($25 - $40 USD/unidad) o reutilizable ($150 - $250 USD) más licencias corporativas anuales de software.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Costo de instalación de hardware vehicular ($350 - $500 USD por camión) + cuota de servicio mensual ($35 - $50 USD por vehículo).</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Servicio corporativo cerrado por viaje o suscripción de alto valor ($500+ USD mensuales por lote monitorizado), logística inversa obligatoria.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Producto: Canales de distribución (Web y/o Móvil)</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Web Application responsive (optimizada para desktop y tablets de ambulancia) y Landing Page comercial con portal de cotización.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Plataforma web corporativa ColdStream (Web SaaS) y herramientas de configuración desktop/USB para lectura de reportes PDF.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Plataforma Web de rastreo de flotas y Aplicación Móvil (Android/iOS) para gestión y ubicación satelital de vehículos.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Plataforma Web Aurora Cloud Platform y servicios API de integración empresarial con ERPs/WMS.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Fortalezas</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Control activo físico solenoide con OTP, monitoreo de peso digital, diseño adaptado a ambulancias de Lima, arquitectura moderna en .NET 10 y MySQL 8.0.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Máxima reputación regulatoria mundial, precisión metrológica certificada, plataforma cloud robusta para millones de envíos farmacéuticos.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Infraestructura operativa local consolidada, red de soporte 24/7 en Perú, integración con rastreo antirrobo y botón de pánico vehicular.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tecnología IoT de vanguardia (NB-IoT/Cat-M1), analítica predictiva avanzada, cobertura global sin intervención del operador.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Debilidades</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Startup emergente sin marca posicionada en el sector salud público, dependencia inicial de autofinanciamiento de prototipos.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Monitoreo pasivo en modelos estándar (requiere conectar USB al final), sin cerradura inteligente de seguridad, sin sensor de peso.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Monitoreo a nivel de vehículo completo y no del contenedor individual, sin integración con flujos clínicos prehospitalarios ni control de custodia digital.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Barrera de costos restrictiva para el mercado peruano, complejidad de logística inversa de recolección de tarjetas, sin protección física local (OTP).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Oportunidades</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Exigencias crecientes de DIGEMID y MINSA para trazabilidad de cadena de frío en emergencias; alta tasa de mermas por tráfico vehicular en Lima.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Incremento en la demanda mundial de medicamentos biológicos sensibles a variaciones de temperatura.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Crecimiento del comercio farmacéutico electrónico y requerimientos de trazabilidad en transporte logístico local.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Expansión de requerimientos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Amenazas</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Burocracia y lentitud en licitaciones del sector salud público (EsSalud/MINSA); resistencia al cambio del personal paramédico ante el registro digital.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nuevos entrantes en tecnología IoT celular de bajo costo que presionan a la baja los márgenes de hardware.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Competidores de rastreo satelital genérico que ofrecen sensores de temperatura básicos como commodity a bajo precio.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tensiones geopolíticas y disrupciones en la cadena global de suministro de componentes electrónicos semiconductores para hardware IoT.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 

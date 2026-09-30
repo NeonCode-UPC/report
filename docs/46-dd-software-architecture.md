@@ -52,8 +52,15 @@ Bajo los principios de Domain-Driven Design para arquitecturas SaaS en entornos 
 
 A diferencia de la exploración macro de Big Picture (Capítulo 2.4), en esta etapa de diseño detallado se independizó el contexto **Subscription & Fleet Provisioning** como un *Subdominio de Soporte*. Esta separación aísla los contratos comerciales de suscripción B2B, la tarificación modular por factor de forma (*Small Box* de 5L vs. *Standard Box* de 20L) y la vinculación telemática de activos vehiculares del flujo clínico asistencial de los *Core Domains*, garantizando alta cohesión y bajo acoplamiento para los **dos segmentos objetivo** del proyecto:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 17%;" />
+  <col style="width: 28%;" />
+  <col style="width: 20%;" />
+  <col style="width: 18%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Bounded Context</th>
       <th>Clasificación Estratégica</th>
@@ -112,8 +119,14 @@ A diferencia de la exploración macro de Big Picture (Capítulo 2.4), en esta et
 
 Para corroborar la cobertura integral del modelo respecto a los requisitos de plataformas SaaS para salud y logística crítica, la siguiente matriz correlaciona los subdominios de la taxonomía SaaS estándar con la partición arquitectónica en Bounded Contexts adoptada en **Medical SMARTBOX**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 25%;" />
+  <col style="width: 20%;" />
+  <col style="width: 30%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Subdominio SaaS Estándar</th>
       <th>Bounded Context Asignado</th>
@@ -209,57 +222,91 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto IAM
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetUserProfileQuery</code></td>
-      <td><code>LoginCredentialsView</code></td>
-      <td>Cualquier Usuario</td>
-      <td><code>AuthenticateUser</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>UserAuthenticated</code></td>
-      <td><em>Whenever [UserAuthenticated] THEN [SendTwoFactorChallengeCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>ValidateUserCredentialsQuery</code></td>
-      <td><code>OtpChallengeView</code></td>
-      <td>Paramédico / Médico</td>
-      <td><code>ValidateTwoFactorToken</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>SessionAccessGranted</code></td>
-      <td><em>Whenever [SessionAccessGranted] THEN [IssueScopedJwtTokenCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAssignedRolesQuery</code></td>
-      <td><code>DriverRegistryView</code></td>
-      <td>Coordinador Flota (Seg. 1)</td>
-      <td><code>RegisterDriverProfile</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>DriverProfileEnrolled</code></td>
-      <td><em>Whenever [DriverProfileEnrolled] THEN [AuthorizeEmergencyVehicleBindingCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetMedicalOrganizationByRenipressQuery</code></td>
-      <td><code>OrganizationProfileView</code></td>
-      <td>Administrador Clínico (Seg. 2)</td>
-      <td><code>RegisterMedicalOrganization</code></td>
-      <td><code>MedicalOrganization</code></td>
-      <td><code>MedicalOrganizationEnrolled</code></td>
-      <td><em>Whenever [MedicalOrganizationEnrolled] THEN [ValidateRenipressRegistrationCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto IAM</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cualquier Usuario</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetUserProfileQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>LoginCredentialsView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Médico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateUserCredentialsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OtpChallengeView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordinador Flota (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAssignedRolesQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DriverRegistryView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Administrador Clínico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetMedicalOrganizationByRenipressQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OrganizationProfileView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
+
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto IAM</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuthenticateUser</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAuthenticated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [UserAuthenticated] THEN [SendTwoFactorChallengeCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateTwoFactorToken</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SessionAccessGranted</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [SessionAccessGranted] THEN [IssueScopedJwtTokenCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterDriverProfile</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DriverProfileEnrolled</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DriverProfileEnrolled] THEN [AuthorizeEmergencyVehicleBindingCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterMedicalOrganization</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalOrganization</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalOrganizationEnrolled</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [MedicalOrganizationEnrolled] THEN [ValidateRenipressRegistrationCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -283,48 +330,80 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Subscription & Fleet Provisioning
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetActiveSubscriptionPlanQuery</code></td>
-      <td><code>SubscriptionTiersView</code></td>
-      <td>Director Médico (Seg. 2)</td>
-      <td><code>SubscribeToPlan</code></td>
-      <td><code>SubscriptionPlan</code></td>
-      <td><code>SubscriptionActivated</code></td>
-      <td><em>Whenever [SubscriptionActivated] THEN [ProvisionContainerAllocationCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContainerDeviceStatusQuery</code></td>
-      <td><code>DeviceInventoryView</code></td>
-      <td>Técnico Logístico</td>
-      <td><code>ProvisionContainerHardware</code></td>
-      <td><code>ContainerDevice</code></td>
-      <td><code>ContainerHardwareProvisioned</code></td>
-      <td><em>Whenever [ContainerHardwareProvisioned] THEN [EnableTelemetrySensorsCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetVehicleBindingQuery</code></td>
-      <td><code>FleetPairingView</code></td>
-      <td>Paramédico / Despachador (Seg. 1)</td>
-      <td><code>BindContainerToVehicle</code></td>
-      <td><code>VehicleBinding</code></td>
-      <td><code>ContainerBoundToVehicle</code></td>
-      <td><em>Whenever [ContainerBoundToVehicle] THEN [Activate12VPowerTelemetryCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Subscription & Fleet Provisioning</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Director Médico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetActiveSubscriptionPlanQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionTiersView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Técnico Logístico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerDeviceStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DeviceInventoryView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Despachador (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetVehicleBindingQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FleetPairingView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
+
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Subscription & Fleet Provisioning</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscribeToPlan</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionPlan</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionActivated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [SubscriptionActivated] THEN [ProvisionContainerAllocationCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ProvisionContainerHardware</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerDevice</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerHardwareProvisioned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerHardwareProvisioned] THEN [EnableTelemetrySensorsCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>BindContainerToVehicle</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VehicleBinding</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerBoundToVehicle</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerBoundToVehicle] THEN [Activate12VPowerTelemetryCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -349,66 +428,102 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Transport Planning & Dispatching
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetTransportOrderDetailsQuery</code></td>
-      <td><code>OrderCreationFormView</code></td>
-      <td>Químico Farmacéutico (Seg. 2)</td>
-      <td><code>CreateTransportOrder</code></td>
-      <td><code>TransportOrder</code></td>
-      <td><code>TransportOrderPlaced</code></td>
-      <td><em>Whenever [TransportOrderPlaced] THEN [EvaluateFleetAvailabilityCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetFleetDispatchBoardQuery</code></td>
-      <td><code>FleetDispatchBoardView</code></td>
-      <td>Despachador Flota (Seg. 1)</td>
-      <td><code>AssignVehicleAndBoxToTrip</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>TripResourcesAssigned</code></td>
-      <td><em>Whenever [TripResourcesAssigned] THEN [RequestContainerPrecoolingCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetActiveTripMonitorQuery</code></td>
-      <td><code>ActiveTripMonitorView</code></td>
-      <td>Chofer Ambulancia (Seg. 1)</td>
-      <td><code>StartDispatchedTrip</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>DispatchedTripStarted</code></td>
-      <td><em>Whenever [DispatchedTripStarted] THEN [LockContainerElectromechanicalLidCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>CalculateDynamicRouteEtaQuery</code></td>
-      <td><code>ActiveTripMonitorView</code></td>
-      <td>Sistema / TomTom API</td>
-      <td><code>UpdateDynamicEta</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>DynamicEtaRecalculated</code></td>
-      <td><em>Whenever [DynamicEtaRecalculated] AND delay > 15m THEN [NotifyHospitalRampCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetDestinationGeofenceStatusQuery</code></td>
-      <td><code>DestinationArrivalView</code></td>
-      <td>Chofer Ambulancia (Seg. 1) / Sistema GPS</td>
-      <td><code>RegisterDestinationArrival</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>TripDestinationReached</code></td>
-      <td><em>Whenever [TripDestinationReached] THEN [NotifyHospitalReceivingTeamCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Transport Planning & Dispatching</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTransportOrderDetailsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OrderCreationFormView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Despachador Flota (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetFleetDispatchBoardQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FleetDispatchBoardView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Chofer Ambulancia (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetActiveTripMonitorQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ActiveTripMonitorView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Sistema / TomTom API</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalculateDynamicRouteEtaQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ActiveTripMonitorView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Chofer Ambulancia (Seg. 1) / Sistema GPS</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetDestinationGeofenceStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DestinationArrivalView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
+
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Transport Planning & Dispatching</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CreateTransportOrder</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TransportOrder</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TransportOrderPlaced</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TransportOrderPlaced] THEN [EvaluateFleetAvailabilityCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AssignVehicleAndBoxToTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TripResourcesAssigned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TripResourcesAssigned] THEN [RequestContainerPrecoolingCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>StartDispatchedTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchedTripStarted</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DispatchedTripStarted] THEN [LockContainerElectromechanicalLidCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UpdateDynamicEta</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DynamicEtaRecalculated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DynamicEtaRecalculated] AND delay > 15m THEN [NotifyHospitalRampCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterDestinationArrival</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TripDestinationReached</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TripDestinationReached] THEN [NotifyHospitalReceivingTeamCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -432,57 +547,91 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Smart Container & Telemetry
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetContainerTelemetrySnapshotQuery</code></td>
-      <td><code>ContainerSensorsLiveView</code></td>
-      <td>ESP32 / Sensores IoT</td>
-      <td><code>RecordTelemetrySnapshot</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>TelemetrySnapshotRecorded</code></td>
-      <td><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetTareCalibrationStatusQuery</code></td>
-      <td><code>TareCalibrationView</code></td>
-      <td>Químico Farmacéutico (Seg. 2)</td>
-      <td><code>CalibrateTareAndPayloadWeight</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>PayloadWeightRegistered</code></td>
-      <td><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetPowerStatusQuery</code></td>
-      <td><code>PowerStatusView</code></td>
-      <td>Hardware ESP32</td>
-      <td><code>SwitchToInternalBatteryPower</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>AuxiliaryBatteryEngaged</code></td>
-      <td><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContainerLockStateQuery</code></td>
-      <td><code>ContainerLockView</code></td>
-      <td>Custodio Receptor (Seg. 2)</td>
-      <td><code>UnlockElectromechanicalLid</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>ContainerLidUnlocked</code></td>
-      <td><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ESP32 / Sensores IoT</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerTelemetrySnapshotQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerSensorsLiveView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTareCalibrationStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TareCalibrationView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware ESP32</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetPowerStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PowerStatusView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerLockStateQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLockView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
+
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RecordTelemetrySnapshot</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TelemetrySnapshotRecorded</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalibrateTareAndPayloadWeight</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PayloadWeightRegistered</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SwitchToInternalBatteryPower</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuxiliaryBatteryEngaged</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UnlockElectromechanicalLid</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLidUnlocked</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -508,57 +657,91 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Critical Alerting & Incident Response
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetLiveAlertsQuery</code></td>
-      <td><code>LiveAlertsBannerView</code></td>
-      <td>Sistema Reactivo</td>
-      <td><code>TriggerCriticalAlert</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>CriticalAlertTriggered</code></td>
-      <td><em>Whenever [CriticalAlertTriggered] THEN [DispatchPushNotificationCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetIncidentDetailQuery</code></td>
-      <td><code>IncidentDetailModalView</code></td>
-      <td>Paramédico / Chofer (Seg. 1)</td>
-      <td><code>AcknowledgeAlert</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>AlertAcknowledgedByOperator</code></td>
-      <td><em>Whenever [AlertAcknowledged] THEN [SilenceCabinBuzzerCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContingencyResolutionsQuery</code></td>
-      <td><code>ContingencyResolutionView</code></td>
-      <td>Paramédico / Farmacéutico</td>
-      <td><code>ResolveIncidentWithMitigation</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>IncidentResolved</code></td>
-      <td><em>Whenever [IncidentResolved] THEN [AppendToAuditManifestCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAlertRuleThresholdsQuery</code></td>
-      <td><code>AlertConfigurationView</code></td>
-      <td>Director Farmacéutico (Seg. 2)</td>
-      <td><code>ConfigureAlertThresholds</code></td>
-      <td><code>AlertRule</code></td>
-      <td><code>AlertThresholdsConfigured</code></td>
-      <td><em>Whenever [AlertThresholdsConfigured] THEN [SyncThermalMonitoringParametersCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Critical Alerting & Incident Response</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Sistema Reactivo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetLiveAlertsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>LiveAlertsBannerView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Chofer (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetIncidentDetailQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>IncidentDetailModalView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Farmacéutico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContingencyResolutionsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContingencyResolutionView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Director Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAlertRuleThresholdsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertConfigurationView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
+
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Critical Alerting & Incident Response</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TriggerCriticalAlert</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalAlertTriggered</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [CriticalAlertTriggered] THEN [DispatchPushNotificationCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AcknowledgeAlert</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertAcknowledgedByOperator</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AlertAcknowledged] THEN [SilenceCabinBuzzerCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ResolveIncidentWithMitigation</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>IncidentResolved</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [IncidentResolved] THEN [AppendToAuditManifestCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ConfigureAlertThresholds</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertRule</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertThresholdsConfigured</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AlertThresholdsConfigured] THEN [SyncThermalMonitoringParametersCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -582,57 +765,91 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Chain of Custody & Traceability
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetDispatchVerificationQuery</code></td>
-      <td><code>DispatchVerificationView</code></td>
-      <td>Químico Farmacéutico Remitente</td>
-      <td><code>SignInitialCustodyHandover</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>InitialCustodySigned</code></td>
-      <td><em>Whenever [InitialCustodySigned] THEN [IssueRecipientOtpCodeCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>ValidateDeliveryOtpQuery</code></td>
-      <td><code>OtpVerificationModalView</code></td>
-      <td>Médico / Químico Receptor (Seg. 2)</td>
-      <td><code>VerifyDeliveryOtpCode</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>DeliveryOtpVerified</code></td>
-      <td><em>Whenever [DeliveryOtpVerified] THEN [UnlockSmartContainerCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetFinalInspectionReportQuery</code></td>
-      <td><code>FinalInspectionReportView</code></td>
-      <td>Custodio Receptor (Seg. 2)</td>
-      <td><code>AcceptMedicalDelivery</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>MedicalCustodyTransferred</code></td>
-      <td><em>Whenever [MedicalCustodyTransferred] THEN [SealDigitalAuditManifestCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAuditManifestCertifiedPdfQuery</code></td>
-      <td><code>AuditManifestDownloadView</code></td>
-      <td>Auditor DIGEMID / MINSA</td>
-      <td><code>GenerateCertifiedPdfManifest</code></td>
-      <td><code>DigitalAuditManifest</code></td>
-      <td><code>AuditManifestSealedWithHash</code></td>
-      <td><em>Whenever [AuditManifestSealedWithHash] THEN [ArchiveInCloudStorageCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Chain of Custody & Traceability</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico Remitente</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetDispatchVerificationQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchVerificationView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Médico / Químico Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateDeliveryOtpQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OtpVerificationModalView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetFinalInspectionReportQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FinalInspectionReportView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Auditor DIGEMID / MINSA</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAuditManifestCertifiedPdfQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuditManifestDownloadView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
+
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Chain of Custody & Traceability</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SignInitialCustodyHandover</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>InitialCustodySigned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [InitialCustodySigned] THEN [IssueRecipientOtpCodeCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VerifyDeliveryOtpCode</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DeliveryOtpVerified</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DeliveryOtpVerified] THEN [UnlockSmartContainerCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AcceptMedicalDelivery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalCustodyTransferred</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [MedicalCustodyTransferred] THEN [SealDigitalAuditManifestCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GenerateCertifiedPdfManifest</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DigitalAuditManifest</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuditManifestSealedWithHash</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuditManifestSealedWithHash] THEN [ArchiveInCloudStorageCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
@@ -645,14 +862,76 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 Para garantizar que la arquitectura DDD soporte adecuadamente la reactividad en tiempo real entre microservicios/módulos, se formalizan las **políticas de negocio transversales** que gobiernan el comportamiento del sistema, detallando el canal de desacoplamiento asíncrono y la estrategia de consistencia:
 
-| Política / Regla de Negocio | Evento Disparador (Triggering Domain Event) | Bounded Context Emisor | Comando Consecuente (Resulting Command) | Bounded Context Receptor | Canal de Integración / Event Bus | Estrategia de Consistencia |
-|---|---|---|---|---|---|---|
-| **POL-01: Control Térmico Reactivo** | TelemetrySnapshotRecorded (Temp < 2.0°C o > 8.0°C) | *Smart Container IoT* | TriggerCriticalAlert | *Critical Alerting* | Redis Pub/Sub: smartbox.telemetry.excursions | Consistencia Eventual (< 500 ms) |
-| **POL-02: Escalación por Tráfico de Lima** | DynamicEtaRecalculated (Retraso ETA > 15 min) | *Transport Planning* | NotifyHospitalRampDelay | *Transport Planning / IAM* | Internal Event Bus (MediatR): trips.eta.delays | Consistencia Eventual (< 2 s) |
-| **POL-03: Bloqueo Automático en Despacho** | DispatchedTripStarted | *Transport Planning* | EngageSolenoidLock | *Smart Container IoT* | Internal Event Bus (MediatR): trips.dispatched | Consistencia Fuerte / Inmediata |
-| **POL-04: Seguridad de Energía Vehicular** | ExternalPowerSourceLost (Toma 12V desconectada) | *Smart Container IoT* | TriggerPowerWarningAlert | *Critical Alerting* | Redis Pub/Sub: smartbox.power.alerts | Consistencia Eventual (< 500 ms) |
-| **POL-05: Autorización de Apertura en Rampa** | DeliveryOtpVerified | *Chain of Custody* | UnlockElectromechanicalLid | *Smart Container IoT* | Internal MediatR (intra-API) → Redis Pub/Sub: smartbox.commands.actuators → MQTT TLS 8883 | Consistencia Fuerte / Inmediata |
-| **POL-06: Cierre Inmutable de Manifiesto** | MedicalCustodyTransferred | *Chain of Custody* | SealDigitalAuditManifest | *Chain of Custody* | Internal Event Bus (MediatR): custody.completed | Consistencia Fuerte (Transaccional) |
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; margin: 12px 0; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 21%;" />
+  <col style="width: 18%;" />
+  <col style="width: 16%;" />
+  <col style="width: 16%;" />
+  <col style="width: 12%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla de Negocio</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Evento Disparador (Domain Event)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Flujo Bounded Contexts</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Consecuente</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Canal / Event Bus</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Consistencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-01: Control Térmico Reactivo**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TelemetrySnapshotRecorded (Temp < 2.0°C o > 8.0°C)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Smart Container IoT</em> &rarr; <em>Critical Alerting</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TriggerCriticalAlert</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Redis Pub/Sub: smartbox.telemetry.excursions</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 500 ms)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-02: Escalación por Tráfico de Lima**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DynamicEtaRecalculated (Retraso ETA > 15 min)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Transport Planning</em> &rarr; <em>Transport Planning / IAM</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">NotifyHospitalRampDelay</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): trips.eta.delays</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 2 s)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-03: Bloqueo Automático en Despacho**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DispatchedTripStarted</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Transport Planning</em> &rarr; <em>Smart Container IoT</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">EngageSolenoidLock</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): trips.dispatched</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte / Inmediata</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-04: Seguridad de Energía Vehicular**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ExternalPowerSourceLost (Toma 12V desconectada)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Smart Container IoT</em> &rarr; <em>Critical Alerting</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TriggerPowerWarningAlert</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Redis Pub/Sub: smartbox.power.alerts</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 500 ms)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-05: Autorización de Apertura en Rampa**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DeliveryOtpVerified</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Chain of Custody</em> &rarr; <em>Smart Container IoT</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">UnlockElectromechanicalLid</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal MediatR (intra-API) → Redis Pub/Sub: smartbox.commands.actuators → MQTT TLS 8883</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte / Inmediata</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-06: Cierre Inmutable de Manifiesto**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">MedicalCustodyTransferred</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Chain of Custody</em> &rarr; <em>Chain of Custody</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">SealDigitalAuditManifest</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): custody.completed</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte (Transaccional)</td>
+</tr>
+</tbody>
+</table>
 
 ***
 
@@ -697,8 +976,15 @@ El objetivo esencial del Diagrama de Contexto es **establecer las fronteras oper
 
 Los usuarios del sistema se articulan de manera estricta con los **dos segmentos objetivo** modelados en la sección **1.3**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 18%;" />
+  <col style="width: 18%;" />
+  <col style="width: 22%;" />
+  <col style="width: 18%;" />
+  <col style="width: 24%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Actor / Persona</th>
       <th>Segmento Objetivo</th>
@@ -752,8 +1038,14 @@ Los usuarios del sistema se articulan de manera estricta con los **dos segmentos
 
 La plataforma se conecta con siete sistemas de software externos y dispositivos de hardware distribuido:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 22%;" />
+  <col style="width: 18%;" />
+  <col style="width: 35%;" />
+  <col style="width: 25%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Sistema Externo / Hardware</th>
       <th>Tipo de Sistema</th>
@@ -813,8 +1105,15 @@ La plataforma se conecta con siete sistemas de software externos y dispositivos 
 
 Para garantizar que el modelado técnico no deje ambigüedades sobre las tecnologías de comunicación, la siguiente tabla detalla cada una de las flechas de interacción del diagrama de contexto:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 8%;" />
+  <col style="width: 18%;" />
+  <col style="width: 18%;" />
+  <col style="width: 34%;" />
+  <col style="width: 22%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Flujo #</th>
       <th>Origen (Source)</th>
@@ -956,8 +1255,15 @@ Tras haber delimitado en el Capítulo 4.6.2 la plataforma central `Medical SMART
 
 La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores principales**, articulando las necesidades del **Segmento 1 (Transporte / Ambulancias)** y del **Segmento 2 (Centros de Salud / Farmacéuticas)**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 18%;" />
+  <col style="width: 16%;" />
+  <col style="width: 20%;" />
+  <col style="width: 30%;" />
+  <col style="width: 16%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Contenedor C4</th>
       <th>Tipo de Unidad</th>
@@ -1018,8 +1324,16 @@ La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores princ
 
 Para garantizar el cumplimiento de los estándares de conectividad segura e interoperabilidad exigidos por la industria médica, se formaliza la siguiente matriz de integración:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 15%;" />
+  <col style="width: 15%;" />
+  <col style="width: 14%;" />
+  <col style="width: 8%;" />
+  <col style="width: 16%;" />
+  <col style="width: 32%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Origen (Source)</th>
       <th>Destino (Target)</th>

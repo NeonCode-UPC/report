@@ -41,7 +41,14 @@ La pizarra colaborativa desarrollada en Miro articula el flujo de izquierda a de
 
 La siguiente matriz sintetiza los problemas operativos reales identificados en la red hospitalaria de Lima y las soluciones de ingeniería de software e IoT implementadas:
 
-<table border="1" cellpadding="6" cellspacing="0">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 14%;" />
+  <col style="width: 26%;" />
+  <col style="width: 12%;" />
+  <col style="width: 28%;" />
+  <col style="width: 20%;" />
+</colgroup>
   <thead>
     <tr>
       <th>Fase Operativa</th>
@@ -158,22 +165,126 @@ Para complementar la visión macro del lienzo y facilitar la transición hacia e
 
 #### Flujo Secuencial de Eventos de Extremo a Extremo
 
-| N.° | Actor / Sistema | Comando | Evento de Dominio Resultante | Read Model o Evidencia Generada |
-|---:|---|---|---|---|
-| 1 | Institución de origen | `SolicitarTraslado` | `TrasladoSolicitado` | Registro de solicitud con tipo de carga médica, origen, destino y prioridad clínica. |
-| 2 | Coordinador de despacho | `ValidarSolicitud` | `SolicitudValidada` | Verificación de viabilidad, disponibilidad horaria y requerimiento térmico (2 °C - 8 °C). |
-| 3 | Coordinador de despacho | `AsignarRecursosTraslado` | `RecursosAsignados` | Asignación de unidad móvil, contenedor inteligente y tripulación asistencial. |
-| 4 | Paramédico asistencial | `VerificarPreparacion` | `PreparacionVerificada` | Lista de chequeo previa: estado de batería LiFePO4, calibración y conexión 12V. |
-| 5 | Personal médico emisor | `RegistrarCargaYSellar` | `CargaRegistrada` / `ContenedorSellado` | Registro de masa inicial en celda HX711 (tara automática) y bloqueo electromecánico de solenoide. |
-| 6 | Paramédico asistencial | `IniciarTraslado` | `TrasladoIniciado` | Registro de hora exacta de salida, geocerca inicial y cálculo dinámico de ETA. |
-| 7 | Contenedor IoT (ESP32) | `PublicarTelemetria` | `TelemetriaRegistrada` | Ingesta de temperatura ambiente/interna, nivel de batería, estado de tapa y coordenadas GPS. |
-| 8 | Motor de Reglas de Negocio | `EvaluarCondiciones` | `CondicionEvaluada` | Validación de cumplimiento estricto del rango térmico e integridad de la ruta. |
-| 9 | Coordinador de despacho | `SupervisarMonitoreo` | `MonitoreoConfirmado` | Tablero de control de flota en tiempo real con semaforización de riesgo. |
-| 10 | Conductor de ambulancia | `RegistrarArribo` | `UnidadArribadaADestino` | Activación de geocerca hospitalaria de pre-arribo (radio ≤ 2 km / 10 min). |
-| 11 | Cirujano / Farmacéutico receptor | `VerificarCarga` | `CondicionFinalVerificada` | Inspección de integridad celular, historial térmico continuo y balance de peso. |
-| 12 | Cirujano / Farmacéutico receptor | `AceptarORechazarEntrega` | `EntregaAceptada` / `EntregaRechazada` | Desbloqueo mediante token dinámico OTP en geocerca y registro de observaciones clínicas. |
-| 13 | Coordinador de despacho | `CerrarTraslado` | `TrasladoCerrado` | Sellado de la línea de tiempo inmutable de custodia. |
-| 14 | Plataforma Web | `GenerarExpedienteAuditoria` | `ExpedienteAuditoriaGenerado` | Exportación de reporte técnico PDF sellado con hash criptográfico SHA-256 para DIGEMID. |
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 6%;" />
+  <col style="width: 20%;" />
+  <col style="width: 24%;" />
+  <col style="width: 25%;" />
+  <col style="width: 25%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">N.°</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Sistema</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Evento de Dominio Resultante</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model o Evidencia Generada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Institución de origen</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`SolicitarTraslado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoSolicitado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de solicitud con tipo de carga médica, origen, destino y prioridad clínica.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`ValidarSolicitud`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`SolicitudValidada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Verificación de viabilidad, disponibilidad horaria y requerimiento térmico (2 °C - 8 °C).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">3</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`AsignarRecursosTraslado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`RecursosAsignados`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Asignación de unidad móvil, contenedor inteligente y tripulación asistencial.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">4</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Paramédico asistencial</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`VerificarPreparacion`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`PreparacionVerificada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Lista de chequeo previa: estado de batería LiFePO4, calibración y conexión 12V.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">5</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Personal médico emisor</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`RegistrarCargaYSellar`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CargaRegistrada` / `ContenedorSellado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de masa inicial en celda HX711 (tara automática) y bloqueo electromecánico de solenoide.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">6</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Paramédico asistencial</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`IniciarTraslado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoIniciado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de hora exacta de salida, geocerca inicial y cálculo dinámico de ETA.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">7</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Contenedor IoT (ESP32)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`PublicarTelemetria`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TelemetriaRegistrada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Ingesta de temperatura ambiente/interna, nivel de batería, estado de tapa y coordenadas GPS.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">8</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Motor de Reglas de Negocio</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`EvaluarCondiciones`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CondicionEvaluada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Validación de cumplimiento estricto del rango térmico e integridad de la ruta.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">9</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`SupervisarMonitoreo`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`MonitoreoConfirmado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Tablero de control de flota en tiempo real con semaforización de riesgo.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">10</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Conductor de ambulancia</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`RegistrarArribo`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`UnidadArribadaADestino`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Activación de geocerca hospitalaria de pre-arribo (radio ≤ 2 km / 10 min).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">11</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Cirujano / Farmacéutico receptor</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`VerificarCarga`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CondicionFinalVerificada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Inspección de integridad celular, historial térmico continuo y balance de peso.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">12</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Cirujano / Farmacéutico receptor</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`AceptarORechazarEntrega`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`EntregaAceptada` / `EntregaRechazada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Desbloqueo mediante token dinámico OTP en geocerca y registro de observaciones clínicas.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">13</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`CerrarTraslado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoCerrado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Sellado de la línea de tiempo inmutable de custodia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">14</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Plataforma Web</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`GenerarExpedienteAuditoria`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`ExpedienteAuditoriaGenerado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Exportación de reporte técnico PDF sellado con hash criptográfico SHA-256 para DIGEMID.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 #### Políticas y Rutas Alternativas de Contingencia
 

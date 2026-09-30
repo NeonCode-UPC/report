@@ -47,14 +47,110 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 
 ### Tabla Consolidada de Registro de Entrevistas:
 
-| # | Segmento | Nombre del Entrevistado | Rol / Cargo | Organización / Contexto | Edad | Distrito | Fecha | Duración | Enlace a Video (Microsoft Stream) |
-| :-: | :--- | :--- | :--- | :--- | :-: | :--- | :-: | :-: | :--- |
-| **E1** | Segmento 1 | **Wilbert Toledo** | Estudiante de Medicina / Paramédico en Prácticas | Red de Ambulancias de Emergencia | 21 | Pueblo Libre | 16/09/2026 | 02:51 min | [Entrevista 1 (Toledo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi) |
-| **E2** | Segmento 1 | **Aldair Lazaro** | Paramédico de Transporte Asistido | Servicio de Ambulancias y Rescate | 26 | San Martín de Porres | 17/09/2026 | 04:38 min | [Entrevista 2 (Lazaro)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd) |
-| **E3** | Segmento 1 | **Renato Calvo Yalan** | Conductor / Paramédico Asistencial | Unidad Móvil de Soporte Vital | 22 | San Isidro | 17/09/2026 | 02:24 min | [Entrevista 3 (Calvo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi) |
-| **E4** | Segmento 2 | **Humberto Arellán** | Transportista Logístico Biomédico | Empresa de Distribución de Muestras y Fármacos | 49 | Chancay | 16/09/2026 | 04:27 min | [Entrevista 4 (Arellán)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc) |
-| **E5** | Segmento 2 | **Gianfranco Timoteo** | Coordinador de Soporte y Cadena de Frío | Laboratorio y Centro Clínico | 21 | Chorrillos | 16/09/2026 | 04:59 min | [Entrevista 5 (Timoteo)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) |
-| **E6** | Segmento 2 | **Karla Pacheco** | Auxiliar Administrativa de Farmacia y Rutas | Centro de Salud Policlínico | 25 | Breña | 16/09/2026 | 04:09 min | [Entrevista 6 (Pacheco)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) |
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.2pt; line-height: 1.2; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 5%;" />
+  <col style="width: 10%;" />
+  <col style="width: 14%;" />
+  <col style="width: 16%;" />
+  <col style="width: 16%;" />
+  <col style="width: 6%;" />
+  <col style="width: 11%;" />
+  <col style="width: 8%;" />
+  <col style="width: 6%;" />
+  <col style="width: 8%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">#</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Segmento</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Entrevistado</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Rol / Cargo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Organización</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Edad</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Distrito</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Fecha</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Dur.</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Video</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E1**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Wilbert Toledo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Estudiante de Medicina / Paramédico en Prácticas</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Red de Ambulancias de Emergencia</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">21</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Pueblo Libre</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">02:51 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E2**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Aldair Lazaro</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Paramédico de Transporte Asistido</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Servicio de Ambulancias y Rescate</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">26</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">San Martín de Porres</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">17/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:38 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E3**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Renato Calvo Yalan</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Conductor / Paramédico Asistencial</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Unidad Móvil de Soporte Vital</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">22</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">San Isidro</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">17/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">02:24 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E4**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Humberto Arellán</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Transportista Logístico Biomédico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Empresa de Distribución de Muestras y Fármacos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">49</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Chancay</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:27 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E5**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Gianfranco Timoteo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Coordinador de Soporte y Cadena de Frío</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Laboratorio y Centro Clínico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">21</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Chorrillos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:59 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E6**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Karla Pacheco</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Auxiliar Administrativa de Farmacia y Rutas</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Centro de Salud Policlínico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">25</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Breña</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:09 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC">Ver</a></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ***
 
