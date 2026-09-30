@@ -71,3 +71,13 @@ img {
 .cover-page th:last-child, .cover-page td:last-child {
     padding-right: 0 !important;
 }
+
+/* User Flow Diagrams */
+.user-flow-diagram {
+    max-height: 185mm !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    margin: 3mm auto !important;
+}

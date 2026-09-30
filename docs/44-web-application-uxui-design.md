@@ -144,24 +144,40 @@ En pantallas móviles de smartphones asistenciales (360px a 414px):
 
 ***
 
+<div style="page-break-before: always;"></div>
+
 ### 4.4.4. Web Applications User Flow Diagrams
 
 El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que un operador logístico, supervisor hospitalario o personal médico realiza al interactuar con el ecosistema digital de NeonCode. A continuación se presentan tres diagramas de flujo clave adaptados a las historias de usuario de la plataforma, detallando el *Happy Path* (ruta ideal) y las ramificaciones alternativas (errores de validación, fallas de conectividad IoT y desviaciones en la cadena de frío).
 
 **User Flow 1: Autenticación de Personal y Acceso al Panel**
+
 *   **User Stories relacionadas:** US01, US02
 *   **Flujos incluidos:** *Happy Path* (autenticación exitosa y acceso al panel), credenciales inválidas, cuenta institucional no activada, campos incompletos y reintentos de sesión.
 
-![Primer User Flow](assets/chapter-4/user-flow-1.png)
+<div align="center" style="text-align: center; margin: 3mm auto;">
+<img src="assets/chapter-4/user-flow-1.png" alt="Primer User Flow" class="user-flow-diagram" style="max-height: 140mm !important; max-width: 100% !important; height: auto !important; width: auto !important; display: block; margin: 0 auto;" />
+</div>
+
+<div style="page-break-before: always;"></div>
 
 **User Flow 2: Alta de Ambulancia y Vinculación de Contenedor Inteligente**
+
 *   **User Stories relacionadas:** US07, US08
 *   **Flujos incluidos:** *Happy Path* (registro de vehículo y asignación telemétrica de contenedor), matrícula de ambulancia duplicada, ID de contenedor no encontrado, contenedor previamente asignado a otro vehículo y falla de enlace telemétrico inicial.
 
-![Segundo User Flow](assets/chapter-4/user-flow-2.png)
+<div align="center" style="text-align: center; margin: 3mm auto;">
+<img src="assets/chapter-4/user-flow-2.png" alt="Segundo User Flow" class="user-flow-diagram" style="max-height: 180mm !important; max-width: 100% !important; height: auto !important; width: auto !important; display: block; margin: 0 auto;" />
+</div>
+
+<div style="page-break-before: always;"></div>
 
 **User Flow 3: Monitoreo Térmico en Ruta, Gestión de Alertas y Cierre de Custodia**
+
 *   **User Stories relacionadas:** US10, US11, US13, US14, US17
 *   **Flujos incluidos:** *Happy Path* (monitoreo en tiempo real, recepción de alerta por variación térmica, acción correctiva y confirmación de entrega), pérdida de señal del contenedor, umbral térmico no configurado, variación de stock por sensores de peso e incidencia no resuelta en ruta.
 
-![Tercer User Flow](assets/chapter-4/user-flow-3.png)
+<div align="center" style="text-align: center; margin: 3mm auto;">
+<img src="assets/chapter-4/user-flow-3.png" alt="Tercer User Flow" class="user-flow-diagram" style="max-height: 185mm !important; max-width: 100% !important; height: auto !important; width: auto !important; display: block; margin: 0 auto;" />
+</div>
+
