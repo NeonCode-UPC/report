@@ -1,6 +1,12 @@
 # 2.3. Needfinding
 
-El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de **Medical SMARTBOX**. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones en Lima Metropolitana, se elaboraron artefactos empáticos centrados en el usuario conforme a las pautas de diseño UX de la industria (Nielsen Norman Group, Interaction Design Foundation), los cuales constituyen el cimiento empírico de las especificaciones y el diseño de la solución.
+
+El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y dificultades de los dos segmentos objetivo de Medical SMARTBOX. Se partió de las seis entrevistas de la sección Entrevistas y de su análisis. Con esa evidencia se construyeron los siguientes artefactos: User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y As-Is Scenario Mapping, siguiendo las pautas de Nielsen Norman Group y de Interaction Design Foundation.
+
+Los segmentos usados en todo el informe son:
+
+- **Segmento 1:** personal médico y de emergencias (paramédicos, enfermeros, médicos y técnicos que trasladan o reciben productos médicos).
+- **Segmento 2:** operadores logísticos e instituciones de salud (coordinadores, responsables de transporte, personal administrativo y de
 
 Los artefactos de esta sección se construyen a partir de los dos patrones de comportamiento identificados en las entrevistas a profundidad (Capítulo 2.2): **decisión clínica-operativa inmediata** y **coordinación logística trazable**. Las personas descritas son arquetipos compuestos sintetizados a partir de los participantes de la investigación de campo.
 
