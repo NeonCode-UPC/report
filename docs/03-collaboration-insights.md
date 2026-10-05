@@ -5,7 +5,7 @@ El informe del proyecto **Medical SMARTBOX** ha sido elaborado de manera estrict
 **URL del Repositorio Oficial del Informe:**  
 <https://github.com/NeonCode-UPC/report>
 
----
+***
 
 ## 1. Gobernanza y Flujo de Trabajo en el Repositorio
 
@@ -18,7 +18,7 @@ Para garantizar la integridad estructural, la trazabilidad histórica de los cam
 * **Estándar Conventional Commits 1.0.0:** Todos los registros de confirmación se estructuraron bajo prefijos canónicos (`docs(...)`, `feat(...)`, `fix(...)`, `chore(...)`), especificando el alcance del cambio y facilitando la auditoría cruzada.
 * **Políticas de Pull Requests (PR) y Code/Doc Review:** La incorporación de contenido hacia `develop` y `main` requirió la revisión cruzada de al menos un miembro del equipo para verificar el cumplimiento de las guías de estilo Markdown y la integridad de los enlaces y tablas.
 
----
+***
 
 ## 2. Participación del Equipo en el Informe Técnico (Hito AV1)
 
@@ -32,7 +32,7 @@ La siguiente matriz resume la distribución formal de responsabilidades y las ap
 | **Munayco Apolaya, Maria Luisa** | `@malumunayco` | UX/UI Designer | **Capítulo II:**<br>• 2.3 Needfinding (Personas, Task Matrix, Journey Maps, Empathy)<br>**Capítulo IV:**<br>• 4.1 Style Guidelines<br>• 4.2 Information Architecture<br>• 4.3 a 4.5 UI/UX Wireframes & Mockups | Creación de User Personas y mapas de empatía en UXPressia; definición del Design System clínico y Guías de Estilo; arquitectura de la información (SEO, taxonomía, navegación); diseño interactivo de wireframes y mockups de alta fidelidad en Figma. |
 | **Santos Minaya, Renzo Piero** | `@psure` / `@pisure` | Product Owner / Scrum Master | **Capítulo III completo:**<br>• 3.1 User Stories (Gherkin)<br>• 3.2 Impact Mapping<br>• 3.3 Product Backlog<br>**Capítulo V:**<br>• 5.1 SCM (5.1.1 a 5.1.4)<br>• 5.2.1 Sprint 1 (5.2.1.1 a 5.2.1.3) | Redacción de User Stories con criterios de aceptación Gherkin (Given-When-Then); matriz de Impact Mapping y priorización de Backlog; documentación de gobernanza SCM (GitFlow, SemVer); facilitación del Sprint Planning 1, Matriz LACX y Sprint Backlog 1. |
 
----
+***
 
 ## 3. AV1 – Sprint Review (Semana 4)
 
@@ -62,7 +62,7 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
 
 <div align="center">
 
-![Project Contributors Graph](../assets/chapter-5/report-insights-av1.png)
+![Project Contributors Graph](assets/chapter-5/report-insights-av1.png)
 
 *Figura 0.1 - Histograma de frecuencia de commits y distribución de aportes por colaborador en el repositorio de documentación (Fuente: GitHub Insights).*
 
@@ -74,10 +74,10 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
 * **Semana 3 (14/09/2026):** Consolidación de sesiones de modelado colaborativo de dominio (EventStorming) y especificación de historias de usuario.
 * **Semana 4 (16/09/2026 - 17/09/2026):** Fase de máxima convergencia técnica: integración de arquitectura C4, modelo de clases, persistencia física de base de datos, evidencias de despliegue del Landing Page y auditoría final del informe AV1.
 
----
+***
 
 ## 4. Proyección de Colaboración para Siguientes Hitos
 
 * **TB1 – Stage Review (Semana 7):** Incorporación de la documentación del Sprint 2 (Frontend Web Application en Vue.js / PrimeVue), levantamiento de observaciones del docente y actualización de métricas de contribución.
-* **AV2 – Sprint Review (Semana 12):** Documentación del Sprint 3 (Backend RESTful API en ASP.NET Core y persistencia en PostgreSQL/SQL Server), entrevistas de validación con usuarios clínicos y métricas de integración.
+* **AV2 – Sprint Review (Semana 12):** Documentación del Sprint 3 (Backend RESTful API en ASP.NET Core 10.0 y persistencia en MySQL Server 8.0 [InnoDB] mediante EF Core 10.0), entrevistas de validación con usuarios clínicos y métricas de integración.
 * **TB2 – Release Review (Semana 15):** Consolidación final del Sprint 4 (seguridad JWT, pruebas integradas, despliegue global en la nube), producción audiovisual y auditoría final de contribuciones.

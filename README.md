@@ -1,57 +1,68 @@
-<a id="carátula"></a>
-<a id="caratula"></a>
-<div align="center">
-
-![Logo](assets/images/logo_upc.png)
-
-#### Universidad Peruana de Ciencias Aplicadas
-
-#### Carrera de Ingeniería de Software
-
-----
-
-### 1ASI0730 
-### Aplicaciones Web 
-#### NRC 
-### 8150
-
-## Informe del Trabajo Final
-
-----
-
-#### Docente
-### Velásquez Núñez, Ángel Augusto
-
-----
-
-#### Equipo
-### NeonCode
-
-#### Proyecto
-### Medical SMARTBOX
-
-----
-
-#### Integrantes:
-
-u202222859 - Espinoza Flores, Aaron André
-
-u20211b556 - Gargate Paredes, Santiago
-
-u202520310 - Jaramillo Mayta, Jhon Jordy
-
-u20231c995 - Munayco Apolaya, Maria Luisa
-
-u202114790 - Santos Minaya, Renzo Piero
-
-----
-
-#### Período 202620
-
-#### Septiembre 2026
-
+<div class="cover-page" align="center" style="text-align: center; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.25;">
+<div align="center" style="margin: 0 0 8mm 0;">
+<img src="assets/images/logo_upc.png" alt="UPC Logo" class="cover-logo" width="52" height="52" style="width: 13.5mm !important; height: 13.5mm !important; display: block; margin: 0 auto;" />
 </div>
-
+<div align="center" style="margin: 0 0 13mm 0; line-height: 1.35;">
+<div style="font-size: 10.5pt; color: #1e293b; margin: 0;">Universidad Peruana de Ciencias Aplicadas</div>
+<div style="font-size: 10.5pt; color: #1e293b; margin: 3px 0 0 0;">Carrera de Ingeniería de Software</div>
+</div>
+<div align="center" style="margin: 0 0 7mm 0; line-height: 1.25;">
+<div style="font-size: 11pt; font-weight: bold; color: #000; margin: 0;"><b>1ASI0730</b></div>
+<div style="font-size: 13pt; font-weight: bold; color: #000; margin: 3.5px 0 0 0;"><b>Aplicaciones Web</b></div>
+<div style="font-size: 9pt; color: #334155; margin: 5px 0 0 0;">NRC</div>
+<div style="font-size: 11pt; font-weight: bold; color: #000; margin: 2.5px 0 0 0;"><b>8150</b></div>
+</div>
+<div align="center" style="margin: 0 0 7mm 0;">
+<div style="font-size: 14pt; font-weight: bold; color: #000; margin: 0;"><b>Informe del Trabajo Final</b></div>
+</div>
+<div align="center" style="margin: 0 0 13mm 0; line-height: 1.25;">
+<div style="font-size: 9pt; color: #334155; margin: 0;">Docente</div>
+<div style="font-size: 11.5pt; font-weight: bold; color: #000; margin: 3px 0 0 0;"><b>Velásquez Núñez, Ángel Augusto</b></div>
+</div>
+<div align="center" style="margin: 0 0 13mm 0; line-height: 1.25;">
+<div style="font-size: 9pt; color: #334155; margin: 0;">Equipo</div>
+<div style="font-size: 12.5pt; font-weight: bold; color: #000; margin: 3px 0 0 0;"><b>NeonCode</b></div>
+<div style="font-size: 9pt; color: #334155; margin: 5px 0 0 0;">Proyecto</div>
+<div style="font-size: 12.5pt; font-weight: bold; color: #000; margin: 3px 0 0 0;"><b>Medical SMARTBOX</b></div>
+</div>
+<div align="center" style="margin: 0 0 13mm 0;">
+<div style="font-size: 10.5pt; font-weight: bold; color: #000; margin: 0 0 5mm 0;"><b>Integrantes</b></div>
+<table class="integrantes-table" align="center" style="width: auto !important; margin: 0 auto !important; border: none !important; border-collapse: collapse !important; font-size: 9pt; line-height: 1.25; text-align: left;">
+<thead>
+<tr>
+<th align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 4px 0; font-weight: bold; color: #000; text-align: left;">Código</th>
+<th align="left" style="border: none !important; background: transparent !important; padding: 3px 0 4px 0; font-weight: bold; color: #000; text-align: left;">Apellidos y Nombres</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u202222859</td>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Espinoza Flores, Aaron André</td>
+</tr>
+<tr>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u20211b556</td>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Gargate Paredes, Santiago</td>
+</tr>
+<tr>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u202520310</td>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Jaramillo Mayta, Jhon Jordy</td>
+</tr>
+<tr>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u20231c995</td>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Munayco Apolaya, Maria Luisa</td>
+</tr>
+<tr>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u202114790</td>
+<td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Santos Minaya, Renzo Piero</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div align="center" style="line-height: 1.3;">
+<div style="font-size: 10pt; font-weight: bold; color: #000; margin: 0 0 13mm 0;"><b>Período 202620</b></div>
+<div style="font-size: 10pt; font-weight: bold; color: #000; margin: 0;"><b>Septiembre 2026</b></div>
+</div>
+</div>
 
 <div style="page-break-after: always;"></div>
 
@@ -59,18 +70,16 @@ u202114790 - Santos Minaya, Renzo Piero
 
 El presente Registro de Versiones del Informe documenta la trazabilidad evolutiva, iterativa y colaborativa de la memoria técnica del proyecto **Medical SMARTBOX** a lo largo de su ciclo de vida de desarrollo. En estricta observancia del estándar de versionado semántico (*Semantic Versioning 2.0.0*) y de los criterios de evaluación de la asignatura **1ASI0730 Aplicaciones Web**, se registran de forma estructurada las incorporaciones de secciones, diagramas de arquitectura, modelos de dominio, historias de usuario, especificaciones de bases de datos y evidencias de implementación del primer ciclo ágil (Sprint 1) junto con el despliegue del Landing Page institucional, así como las mejoras producto de las revisiones internas de calidad del equipo **NeonCode** para la entrega oficial del **Avance 1 (AV1 - Semana 4)**, complementado con la hoja de ruta planificada para los hitos sucesivos del proyecto.
 
-| Entregable | Versión | Fecha | Autor(es) | Descripción de modificación |
-| :---: | :---: | :---: | :--- | :--- |
-| **AV1** | **V0.1.0** | 08/09/2026 | NeonCode Team | **Inicialización del Repositorio y Andamiaje Documental:** Creación de la estructura base del repositorio en la organización pública de GitHub (`NeonCode-UPC/report`). Configuración del modelo de ramificación GitFlow (`main`, `develop`), convenciones Conventional Commits y estructura de directorios `docs/` y `assets/`. Elaboración de la Carátula institucional según las directrices y modelo del docente Velásquez Núñez, y generación del esqueleto Markdown para todos los capítulos. |
-| **AV1** | **V0.2.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Relevamiento de Requisitos, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (antecedentes y problemática 5W2H sustentada en incidentes de transporte asistencial en Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial SAMU 106 y Segmento 2: centros sanitarios y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo frente a Cryoport, Ransa, Talma y SAMU) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de sesiones y análisis de hallazgos cualitativos). |
-| **AV1** | **V0.3.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio Preliminar y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos, User Task Matrix priorizada, User Journey Mapping As-Is/To-Be y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal con 30 términos canónicos en inglés con definición clínica y técnica en español). Desarrollo del Capítulo III completo: 3.1 User Stories (historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal → Actor → Impact → Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
-| **AV1** | **V0.4.0** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando seis Bounded Contexts: Smart Container IoT, Emergency Fleet Logistics, Clinical Quality Assurance, Chain of Custody, Critical Alerting y Access Governance). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Web API, Telemetry Consumer, Base de Datos, Broker MQTT, Redis Cache y Web App) y 4.6.4 Component Diagrams. Desarrollo del Capítulo 4.7 (Class Diagrams UML modelando un dominio rico con entidades, value objects, agregados y servicios de dominio) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
-| **AV1** | **V0.5.0** | 16/09/2026 | Gargate Paredes, Santiago<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 9, Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en Vercel/GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). |
-| **AV1** | **V1.0.0** | 17/09/2026 | NeonCode Team | **Consolidación Oficial del Entregable AV1:** Integración armonizada de todos los capítulos del informe (Cap. I, II, III, IV y V: 5.1 y 5.2.1). Incorporación formal de la sección 01 (Carátula según modelo docente), sección 02 (Registro de Versiones del Informe), sección 03 (Project Report Collaboration Insights con métricas analíticas de GitHub y trazabilidad de commits de AV1), sección 04 (Tabla de Contenidos a 4 niveles de jerarquía con hipervínculos funcionales) y sección 05 (Student Outcome ABET EAC 5 detallado con sustentos individuales para los 5 integrantes y conclusiones de avance). Conclusiones preliminares, Bibliografía en formato APA y Anexos normativos. |
-| **TB1** | **V2.0.0** | *(Planificado)* | NeonCode Team | **Incorporación del Sprint 2 y Primer Incremento de Web Application:** Documentación del Sprint 2 (5.2.2 completo: Sprint Planning 2, Aspect Leaders Matrix, Sprint Backlog 2, evidencias de desarrollo del frontend en Vue.js / PrimeVue, gestión de estado Pinia, evidencias de despliegue y collaboration insights). Levantamiento de observaciones formuladas por el docente evaluador sobre la entrega AV1. Actualización de conclusiones y Student Outcome para el hito TB1. |
-| **AV2** | **V3.0.0** | *(Planificado)* | NeonCode Team | **Integración de Web Services RESTful API y Sprint 3:** Documentación del Sprint 3 (5.2.3 completo: servicios backend en ASP.NET Core (.NET 9) bajo Clean Architecture y DDD, documentación Swagger/OpenAPI, base de datos relacional y telemetría IoT en tiempo real). Incorporación de la sección 5.3 (Validation Interviews y evaluaciones según heurísticas de Nielsen) y 5.4 (Video About-the-Product). Actualización de Student Outcome para AV2. |
-| **TB2** | **V4.0.0** | *(Planificado)* | NeonCode Team | **Cierre del Producto Final, Sprint 4 y Release Review:** Documentación del Sprint 4 (5.2.4 completo: consolidación de seguridad JWT, control de acceso basado en roles RBAC, integración completa frontend-backend y pruebas de estrés). Incorporación del video About-the-Team, informe de desempeño del equipo (Participant Performance Report), anexos consolidados y preparación de la versión final para la sustentación sincrónica del trabajo de fin de curso. |
-
+| Versión | Fecha | Autor | Descripción de modificación |
+| :---: | :---: | :--- | :--- |
+| **V1.0.0** | 08/09/2026 | NeonCode Team | **Inicialización del Repositorio y Andamiaje Documental:** Creación de la estructura base del repositorio en la organización pública de GitHub (`NeonCode-UPC/report`). Configuración del modelo de ramificación GitFlow (`main`, `develop`), convenciones Conventional Commits y estructura de directorios `docs/` y `assets/`. Elaboración de la Carátula institucional según las directrices y modelo del docente Velásquez Núñez, y generación del esqueleto Markdown para todos los capítulos. |
+| **V1.1.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Relevamiento de Requisitos, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial y ambulancias, y Segmento 2: centros sanitarios, bancos de sangre y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo de mercado real frente a Sensitech, Tracklink Perú y Controlant) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de 6 sesiones con enlaces a video y análisis de hallazgos cualitativos). |
+| **V1.2.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos: Paramédico Javier Soto y Dr. Carlos Mendoza; User Task Matrix priorizada, User Journey Mapping As-Is y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal categorizado por Bounded Contexts). Desarrollo del Capítulo III completo: 3.1 User Stories (18 historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then en español con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal → Actor → Impact → Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
+| **V1.2.5** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando seis Bounded Contexts: Smart Container IoT, Emergency Fleet Logistics, Clinical Quality Assurance, Chain of Custody, Critical Alerting y Access Governance). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Web API, Telemetry Worker, MySQL 8.0, Broker MQTT, Redis Cache y Web App) y 4.6.4 Component Diagrams en capas DDD. Desarrollo del Capítulo 4.7 (Class Diagrams UML) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF en MySQL 8.0 InnoDB, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
+| **V1.3.0** | 16/09/2026 | Gargate Paredes, Santiago<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 10 LTS [`net10.0`], Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), servicios backend proyectados (5.2.1.6) y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). Conclusiones preliminares, Bibliografía en formato APA y Anexos normativos. |
+| **V2.0.0** | *(Planificado)* | NeonCode Team | **Incorporación del Sprint 2 y Primer Incremento de Web Application (Hito TB1 - Semana 7):** Documentación del Sprint 2 (5.2.2 completo: Sprint Planning 2, Aspect Leaders Matrix, Sprint Backlog 2, evidencias de desarrollo del frontend en Vue.js / PrimeVue, gestión de estado Pinia, evidencias de despliegue y collaboration insights). Levantamiento de observaciones formuladas por el docente evaluador sobre la entrega AV1. Actualización de conclusiones y Student Outcome para el hito TB1. |
+| **V3.0.0** | *(Planificado)* | NeonCode Team | **Integración de Web Services RESTful API y Sprint 3 (Hito AV2 - Semana 12):** Documentación del Sprint 3 (5.2.3 completo: servicios backend en ASP.NET Core 10.0 [.NET 10 LTS, C# 14] bajo arquitectura DDD por capas, documentación OpenAPI/Scalar, base de datos relacional MySQL 8.0 y telemetría IoT en tiempo real). Incorporación de la sección 5.3 (Validation Interviews y evaluaciones según heurísticas de Nielsen) y 5.4 (Video About-the-Product). Actualización de Student Outcome para AV2. |
+| **V4.0.0** | *(Planificado)* | NeonCode Team | **Cierre del Producto Final, Sprint 4 y Release Review (Hito TB2 - Semana 15):** Documentación del Sprint 4 (5.2.4 completo: consolidación de seguridad JWT, control de acceso basado en roles RBAC, integración completa frontend-backend y pruebas de estrés). Incorporación del video About-the-Team, informe de desempeño del equipo (Participant Performance Report), anexos consolidados y preparación de la versión final para la sustentación sincrónica del trabajo de fin de curso. |
 
 <div style="page-break-after: always;"></div>
 
@@ -81,7 +90,7 @@ El informe del proyecto **Medical SMARTBOX** ha sido elaborado de manera estrict
 **URL del Repositorio Oficial del Informe:**  
 <https://github.com/NeonCode-UPC/report>
 
----
+***
 
 ## 1. Gobernanza y Flujo de Trabajo en el Repositorio
 
@@ -94,7 +103,7 @@ Para garantizar la integridad estructural, la trazabilidad histórica de los cam
 * **Estándar Conventional Commits 1.0.0:** Todos los registros de confirmación se estructuraron bajo prefijos canónicos (`docs(...)`, `feat(...)`, `fix(...)`, `chore(...)`), especificando el alcance del cambio y facilitando la auditoría cruzada.
 * **Políticas de Pull Requests (PR) y Code/Doc Review:** La incorporación de contenido hacia `develop` y `main` requirió la revisión cruzada de al menos un miembro del equipo para verificar el cumplimiento de las guías de estilo Markdown y la integridad de los enlaces y tablas.
 
----
+***
 
 ## 2. Participación del Equipo en el Informe Técnico (Hito AV1)
 
@@ -108,7 +117,7 @@ La siguiente matriz resume la distribución formal de responsabilidades y las ap
 | **Munayco Apolaya, Maria Luisa** | `@malumunayco` | UX/UI Designer | **Capítulo II:**<br>• 2.3 Needfinding (Personas, Task Matrix, Journey Maps, Empathy)<br>**Capítulo IV:**<br>• 4.1 Style Guidelines<br>• 4.2 Information Architecture<br>• 4.3 a 4.5 UI/UX Wireframes & Mockups | Creación de User Personas y mapas de empatía en UXPressia; definición del Design System clínico y Guías de Estilo; arquitectura de la información (SEO, taxonomía, navegación); diseño interactivo de wireframes y mockups de alta fidelidad en Figma. |
 | **Santos Minaya, Renzo Piero** | `@psure` / `@pisure` | Product Owner / Scrum Master | **Capítulo III completo:**<br>• 3.1 User Stories (Gherkin)<br>• 3.2 Impact Mapping<br>• 3.3 Product Backlog<br>**Capítulo V:**<br>• 5.1 SCM (5.1.1 a 5.1.4)<br>• 5.2.1 Sprint 1 (5.2.1.1 a 5.2.1.3) | Redacción de User Stories con criterios de aceptación Gherkin (Given-When-Then); matriz de Impact Mapping y priorización de Backlog; documentación de gobernanza SCM (GitFlow, SemVer); facilitación del Sprint Planning 1, Matriz LACX y Sprint Backlog 1. |
 
----
+***
 
 ## 3. AV1 – Sprint Review (Semana 4)
 
@@ -150,14 +159,13 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
 * **Semana 3 (14/09/2026):** Consolidación de sesiones de modelado colaborativo de dominio (EventStorming) y especificación de historias de usuario.
 * **Semana 4 (16/09/2026 - 17/09/2026):** Fase de máxima convergencia técnica: integración de arquitectura C4, modelo de clases, persistencia física de base de datos, evidencias de despliegue del Landing Page y auditoría final del informe AV1.
 
----
+***
 
 ## 4. Proyección de Colaboración para Siguientes Hitos
 
 * **TB1 – Stage Review (Semana 7):** Incorporación de la documentación del Sprint 2 (Frontend Web Application en Vue.js / PrimeVue), levantamiento de observaciones del docente y actualización de métricas de contribución.
-* **AV2 – Sprint Review (Semana 12):** Documentación del Sprint 3 (Backend RESTful API en ASP.NET Core y persistencia en PostgreSQL/SQL Server), entrevistas de validación con usuarios clínicos y métricas de integración.
+* **AV2 – Sprint Review (Semana 12):** Documentación del Sprint 3 (Backend RESTful API en ASP.NET Core 10.0 y persistencia en MySQL Server 8.0 [InnoDB] mediante EF Core 10.0), entrevistas de validación con usuarios clínicos y métricas de integración.
 * **TB2 – Release Review (Semana 15):** Consolidación final del Sprint 4 (seguridad JWT, pruebas integradas, despliegue global en la nube), producción audiovisual y auditoría final de contribuciones.
-
 
 <div style="page-break-after: always;"></div>
 
@@ -195,7 +203,6 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-    - [2.3.5. As-Is Scenario Mapping](#235-as-is-scenario-mapping)
   - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
@@ -246,44 +253,12 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
       - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
       - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
       - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
-    - [5.2.2. Sprint 2 (Proyección TB1)](#522-sprint-2)
-      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
-      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
-      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
-      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
-      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
-      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
-      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
-      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
-    - [5.2.3. Sprint 3 (Proyección AV2)](#523-sprint-3)
-      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
-      - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
-      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
-      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
-      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
-      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
-      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
-      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
-    - [5.2.4. Sprint 4 (Proyección TB2)](#524-sprint-4)
-      - [5.2.4.1. Sprint Planning 4](#5241-sprint-planning-4)
-      - [5.2.4.2. Aspect Leaders and Collaborators](#5242-aspect-leaders-and-collaborators)
-      - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-4)
-      - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
-      - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
-      - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
-      - [5.2.4.7. Software Deployment Evidence for Sprint Review](#5247-software-deployment-evidence-for-sprint-review)
-      - [5.2.4.8. Team Collaboration Insights during Sprint](#5248-team-collaboration-insights-during-sprint)
-  - [5.3. Validation Interviews](#53-validation-interviews)
-    - [5.3.1. Diseño de entrevistas](#531-diseño-de-entrevistas)
-    - [5.3.2. Registro de entrevistas](#532-registro-de-entrevistas)
-    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
-  - [5.4. Video About-the-Product](#54-video-about-the-product)
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
   - [Anexo A. Repositorios de Código Fuente y Documentación](#anexo-a-repositorios-de-código-fuente-y-documentación)
   - [Anexo B. Tableros Digitales y Prototipos Interactivos](#anexo-b-tableros-digitales-y-prototipos-interactivos)
-
+  - [Anexo C. Registro Audiovisual de Entrevistas y Demostración](#anexo-c-registro-audiovisual-de-entrevistas-y-demostración)
 
 <div style="page-break-after: always;"></div>
 
@@ -301,33 +276,29 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 | **5.c.1 Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Lideró la definición de la visión de negocio y el relevamiento de requisitos asistenciales para la plataforma Medical SMARTBOX. Condujo la estructuración del Capítulo I (Problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación de Lean UX Canvas y delimitación de los dos segmentos objetivo: operadores de transporte asistencial SAMU 106 y directores de centros hospitalarios/farmacéuticos). Asimismo, encabezó el análisis competitivo del mercado telemático de salud (Cap. 2.1) y el diseño y conducción de las entrevistas a profundidad a paramédicos y especialistas en logística biomédica (Cap. 2.2), asegurando que los requisitos del producto respondan a dolores reales y no a supuestos infundados.<br><hr>**Gargate Paredes, Santiago**<br><br>**AV1:** Asumió el liderazgo técnico del frente de desarrollo y despliegue del Landing Page institucional de Medical SMARTBOX correspondiente al Sprint 1. Estableció la arquitectura semántica en HTML5, CSS3 modular y JavaScript, asegurando un diseño totalmente responsive (*mobile-first*) orientado a la conversión B2B de instituciones de salud. Lideró la implementación del pipeline de integración y despliegue continuo (CI/CD) alojado en la nube (Vercel/GitHub Pages), auditó los tiempos de carga y accesibilidad web conforme a las pautas WCAG, y documentó exhaustivamente las evidencias de desarrollo, ejecución y despliegue para la revisión de sprint (Capítulos 5.2.1.4 a 5.2.1.7).<br><hr>**Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Ejerció el liderazgo en la definición de la arquitectura de software y el modelado orientado al dominio (DDD). Facilitó la sesión colaborativa de Big Picture EventStorming (Cap. 2.4) unificando la comprensión de los flujos de telemetría, custodia y alertas críticas entre todos los miembros. Formuló el glosario canónico de Ubiquitous Language (Cap. 2.5) y lideró el diseño táctico mediante Design-Level EventStorming delimitando seis Bounded Contexts. Diseñó los diagramas del Modelo C4 (Contexto, Contenedores y Componentes) integrando Web API, bróker MQTT y WebSockets SignalR, y formalizó el Diagrama de Clases de Dominio UML (Cap. 4.7) y el Diagrama Físico de Base de Datos Relacional normalizado (Cap. 4.8) para garantizar consistencia transaccional y cumplimiento de las normativas DIGEMID/MINSA.<br><hr>**Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Lideró la estrategia de Experiencia de Usuario (UX) y Diseño de Interfaz (UI) del ecosistema Medical SMARTBOX. Dirigió el proceso de Needfinding (Cap. 2.3) coordinando la síntesis de hallazgos empíricos en User Personas (Dr. Carlos Mendoza y Paramédico Javier Soto), User Task Matrix y mapas de empatía. Estableció el Sistema de Diseño visual y las Guías de Estilo (Cap. 4.1), definiendo una paleta cromática clínica accesible y componentes UI atómicos. Asimismo, encabezó la arquitectura de información y la concepción de wireframes y mockups de alta fidelidad tanto para el Landing Page institucional como para el portal web operativo de monitoreo telemático (Capítulos 4.2 a 4.5), garantizando una experiencia coherente, intuitiva y libre de fricción para los operadores de emergencia.<br><hr>**Santos Minaya, Renzo Piero**<br><br>**AV1:** Ejerció el rol de liderazgo como Product Owner y Scrum Master del equipo. Condujo la transformación de los dolores y requisitos de negocio en artefactos ágiles formales, estructurando el catálogo completo de User Stories con criterios de aceptación rigurosamente formulados bajo sintaxis Gherkin (Scenario, Given, When, Then) organizados en Epics, junto con el Impact Mapping y el Product Backlog priorizado por valor clínico (Capítulo 3). En el ámbito de gestión, lideró la gobernanza de configuración de software (SCM) estableciendo el modelo de ramificación GitFlow, convenciones de Conventional Commits y guías de estilo para C# y Vue.js (Cap. 5.1). Asimismo, facilitó la sesión de Sprint Planning 1, coordinó la asignación de roles mediante la Matriz LACX y gestionó el Sprint Backlog 1 (Cap. 5.2.1.1 a 5.2.1.3), asegurando el ritmo de avance y el cumplimiento del cronograma académico. | **AV1:**<br>Durante este primer hito del proyecto, el equipo demostró un ejercicio de liderazgo horizontal y distribuido de alta efectividad. En lugar de centralizar la toma de decisiones en una sola figura, cada integrante asumió el liderazgo autónomo y especializado de un pilar fundamental de la solución: investigación empírica de mercado (Aaron Espinoza), experiencia y prototipado visual UX/UI (Maria Luisa Munayco), arquitectura de software y persistencia de datos (Jhon Jaramillo), gestión ágil y especificación de requisitos (Renzo Santos), y desarrollo frontend con despliegue en la nube (Santiago Gargate).<br><br>Esta delegación basada en competencias técnicas permitió avanzar en paralelo sobre frentes complejos y altamente interconectados sin generar cuellos de botella. Las disyuntivas de diseño técnico —tales como la selección de protocolos telemáticos para IoT (MQTT vs. WebSockets) o la delimitación de fronteras transaccionales en los Bounded Contexts— fueron debatidas y consensuadas con base en evidencia normativa (DIGEMID/MINSA) y criterios de ingeniería, logrando una cohesión técnica integral que sentó las bases para el éxito de las entregas posteriores. |
 | **5.c.2 Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Fomentó activamente un entorno inclusivo al incorporar la voz y las perspectivas de los profesionales de salud en el diseño de la solución, evitando sesgos técnicos aislados. Colaboró en la definición del objetivo central del proyecto a través del Lean UX Canvas, asegurando que las metas de investigación se descompusieran en actividades concretas (diseño de guías semiestructuradas, calendarización de entrevistas y tabulación cualitativa). Participó en las ceremonias de sincronización semanal del equipo, aportando insumos críticos que permitieron al diseñador UX y al arquitecto de software alinear las interfaces y los eventos de dominio con las necesidades operativas reales de las ambulancias en Lima.<br><hr>**Gargate Paredes, Santiago**<br><br>**AV1:** Contribuyó al entorno colaborativo mediante una comunicación transparente y continua sobre el progreso de la implementación del Landing Page. Participó en la estimación de tiempos del Sprint Backlog 1, comprometiéndose a cumplir con las metas de entrega y despliegue dentro de los plazos estipulados. Mantuvo un flujo riguroso de commits conforme a Conventional Commits, integró su código en la rama `develop` mediante Pull Requests evaluados en conjunto y colaboró activamente con el Product Owner en la redacción de la sección de Collaboration Insights del Sprint 1 (Cap. 5.2.1.8), garantizando total trazabilidad y cumplimiento de los objetivos del hito.<br><hr>**Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Impulsó un espacio colaborativo técnico promoviendo el modelado colaborativo visual mediante Miro y Structurizr DSL, lo que permitió que integrantes con roles no técnicos participaran en la validación de la lógica del sistema. Estableció metas técnicas claras para el sprint (entrega de diagramas de arquitectura C4, modelo de clases y script SQL normalizado de base de datos), desglosando las actividades de diagramación en tareas medibles en el tablero ágil. Atendió oportunamente las dudas de sus compañeros respecto a la estructura de microservicios y persistencia relacional, asegurando la consistencia conceptual del informe y cumpliendo al 100% las metas arquitectónicas asignadas para la entrega AV1.<br><hr>**Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Promovió un entorno inclusivo al transformar los hallazgos de las entrevistas en artefactos de empatía compartidos con todo el equipo, facilitando que cada miembro comprendiera las necesidades emocionales y laborales de los usuarios finales. Planificó minuciosamente el cronograma de diseño en Figma y UXPressia, estableciendo hitos de revisión intermedia (wireframes de baja fidelidad seguidos de mockups de alta fidelidad interactivos). Integró activamente el feedback de sus compañeros y del Product Owner sobre usabilidad y densidad de información clínica, cumpliendo a cabalidad con la entrega de todos los flujos de navegación requeridos para el Landing Page y la Web Application.<br><hr>**Santos Minaya, Renzo Piero**<br><br>**AV1:** Estableció y dinamizó el entorno colaborativo del equipo a través de la configuración del tablero ágil en Trello/Jira y el canal de coordinación en Discord, garantizando canales de comunicación abiertos, respetuosos y transparentes. Lideró la ceremonia de Sprint Planning 1, guiando al equipo en la estimación colectiva de esfuerzos en horas hombre para cada User Story y tarea técnica. Monitoreó el cumplimiento de las metas semanales mediante revisiones de progreso, identificó y removió impedimentos operativos, y aseguró que cada miembro entregara su sección del informe en formato Markdown respetando la fecha límite institucional, logrando así el cumplimiento riguroso de todos los objetivos trazados para el avance AV1. | **AV1:**<br>El establecimiento de un entorno de trabajo colaborativo, inclusivo y altamente disciplinado constituyó el factor determinante para el éxito de la entrega AV1. A través de la adopción del marco de trabajo Scrum, complementado con tableros Kanban interactivos y el flujo GitFlow en GitHub, el equipo logró transformar un enunciado académico de alta complejidad en un plan de acción estructurado con metas semanales claras y alcanzables.<br><br>Se fomentó la inclusión multidisciplinaria, donde las observaciones clínicas de investigación, las directrices de diseño visual y las restricciones de arquitectura fueron escuchadas y ponderadas con igual valor técnico. La comunicación asertiva y periódica evitó la duplicidad de esfuerzos y permitió resolver de manera proactiva los bloqueos de integración. Como resultado tangible, el equipo cumplió con el 100% de los entregables planificados para el Sprint 1 y la documentación técnica de los Capítulos I al V (secciones 5.1 y 5.2.1), demostrando un desempeño maduro, coordinado y alineado con los estándares internacionales de acreditación profesional ABET. |
 
-
 <div style="page-break-after: always;"></div>
-
-# Capítulo I: Introducción
 
 # 1.1. Startup Profile
 
 ## 1.1.1. Descripción de la Startup
 
-[Nombre de la startup] es una iniciativa orientada al diseño de soluciones tecnológicas para el sector salud, enfocada en mejorar la seguridad, trazabilidad y eficiencia del transporte de medicamentos, órganos e insumos médicos sensibles. La startup surge ante la necesidad de reducir riesgos durante los traslados médicos, especialmente cuando los productos requieren condiciones controladas de temperatura, monitoreo continuo y disponibilidad inmediata para la atención de pacientes.
+NeonCode es una iniciativa orientada al diseño de soluciones tecnológicas para el sector salud, enfocada en mejorar la seguridad, trazabilidad y eficiencia del transporte de medicamentos, órganos e insumos médicos sensibles. La startup surge ante la necesidad de reducir riesgos durante los traslados médicos, especialmente cuando los productos requieren condiciones controladas de temperatura, monitoreo continuo y disponibilidad inmediata para la atención de pacientes.
 
 La propuesta de la startup se basa en integrar tecnologías web, sensores IoT y servicios de geolocalización para ofrecer una plataforma que permita supervisar en tiempo real el estado de contenedores inteligentes instalados en ambulancias o unidades de transporte médico. Estos contenedores están diseñados para conservar la carga en condiciones adecuadas, detectar variaciones críticas, registrar el stock mediante sensores de peso y reportar información relevante sobre la ubicación y el estado operativo del vehículo.
 
-El enfoque de [Nombre de la startup] combina innovación tecnológica con responsabilidad social, debido a que el transporte seguro de productos médicos puede impactar directamente en la calidad de la atención sanitaria. Por ello, la solución busca apoyar a personal médico, operadores logísticos y entidades de salud en la toma de decisiones oportunas, reduciendo la incertidumbre durante los traslados y fortaleciendo la cadena de custodia de los productos transportados.
+El enfoque de NeonCode combina innovación tecnológica con responsabilidad social, debido a que el transporte seguro de productos médicos puede impactar directamente en la calidad de la atención sanitaria. Por ello, la solución busca apoyar a personal médico, operadores logísticos y entidades de salud en la toma de decisiones oportunas, reduciendo la incertidumbre durante los traslados y fortaleciendo la cadena de custodia de los productos transportados.
 
 ## 1.1.2. Perfiles de integrantes del equipo
 
 En esta sección se presentarán los perfiles de los integrantes del equipo, incluyendo fotografía, código de estudiante, nombres y apellidos, carrera, principales conocimientos técnicos y habilidades que aportan al desarrollo del proyecto. Cada integrante deberá evidenciar su participación en la investigación, documentación, diseño, implementación, pruebas y despliegue de la solución.
 
-| Integrante | Código | Carrera | Perfil y aporte al proyecto |
-|---|---|---|---|
-| Renzo Piero Santos Minaya | u202114790 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-| Aaron André Espinoza Flores | u202222859 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-| Jhon Jordy Jaramillo Mayta | u202520310 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-| Santiago Gargate Paredes | u20211b556 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-| Maria Luisa Munayco Apolaya | u20231c995 | Ingeniería de Software | Integrante del equipo responsable de colaborar en las actividades de investigación, documentación, diseño, implementación, pruebas y despliegue de la solución. |
-
+| Foto | Integrante | Código | Carrera | Perfil y aporte al proyecto |
+| :---: | --- | :---: | :---: | --- |
+| <img src="assets/chapter-1/renzo.jpg" alt="Renzo Piero Santos Minaya" width="100"/> | **Renzo Piero Santos Minaya** | u202114790 | Ingeniería de Software | Estudiante de Ingeniería de Software con conocimientos en arquitectura orientada al dominio (DDD), backend en ASP.NET Core (.NET 10) y modelado relacional en MySQL. Aporta en el diseño arquitectónico C4, especificación de contratos OpenAPI y servicios de backend. |
+| <img src="assets/chapter-1/aaron.jpg" alt="Aaron André Espinoza Flores" width="100"/> | **Aaron André Espinoza Flores** | u202222859 | Ingeniería de Software | Estudiante de Ingeniería de Software con experiencia en diseño de interacción, historias de usuario en Gherkin y maquetación frontend. Lidera el desarrollo de componentes de captura en el Landing Page y colabora en Needfinding. |
+| <img src="assets/chapter-1/jhon.png" alt="Jhon Jordy Jaramillo Mayta" width="100"/> | **Jhon Jordy Jaramillo Mayta** | u202520310 | Ingeniería de Software | Estudiante de Ingeniería de Software con enfoque en gestión de identidad, control de acceso y seguridad web. Aporta en el modelado del Bounded Context de IAM, flujos de autenticación segura 2FA/OTP y despliegue del Landing Page. |
+| <img src="assets/chapter-1/santiago.jpg" alt="Santiago Gargate Paredes" width="100"/> | **Santiago Gargate Paredes** | u20211b556 | Ingeniería de Software | Estudiante de Ingeniería de Software enfocado en gestión de configuración de software (SCM), normativas clínicas y desarrollo frontend. Aporta en las guías de estilo, cumplimiento normativo (DIGEMID/DIGDOT) y diseño de interacción asistencial. |
+| <img src="assets/chapter-1/maria.jpg" alt="Maria Luisa Munayco Apolaya" width="100"/> | **Maria Luisa Munayco Apolaya** | u20231c995 | Ingeniería de Software | Estudiante de Ingeniería de Software con fortalezas en diseño UI/UX en Figma, accesibilidad WCAG y desarrollo HTML5/CSS3. Lidera la maquetación semántica y adaptación responsive mobile-first del Landing Page y prototipado interactivo. |
 
 <div style="page-break-after: always;"></div>
 
@@ -416,7 +387,6 @@ We will know we are successful when users can monitor active medical transports 
 | Most important thing to learn first | Validar si los usuarios consideran prioritario integrar temperatura, ubicación, stock y ETA en una sola plataforma. |
 | Least amount of work to learn it | Prototipo navegable con dashboard de contenedores, alertas, detalle de traslado y registro histórico básico. |
 
-
 <div style="page-break-after: always;"></div>
 
 # 1.3. Segmentos Objetivo
@@ -437,88 +407,420 @@ Los operadores logísticos e instituciones de salud necesitan visibilidad sobre 
 
 Para este segmento, la solución debe ofrecer un dashboard centralizado, filtros de búsqueda, priorización de alertas, trazabilidad histórica, reportes de operación, registros de temperatura, ubicación, responsables, horarios de apertura del contenedor, incidentes y acciones tomadas durante cada traslado.
 
-
 <div style="page-break-after: always;"></div>
-
-# Capítulo II: Requirements Elicitation & Analysis
 
 # 2.1. Competidores
 
-Esta sección identifica competidores directos e indirectos relacionados con el monitoreo de cadena de frío, rastreo logístico, transporte médico y gestión de activos IoT. El análisis permite reconocer alternativas existentes, comparar capacidades y definir estrategias que diferencien la propuesta de [Nombre del producto].
+En esta sección se realiza la identificación, evaluación multidimensional y contraste estratégico de los principales competidores directos e indirectos que operan en el mercado global y nacional de monitoreo telemático y preservación de cadena de frío farmacéutica. El propósito fundamental de este análisis es evidenciar cómo **Medical SMARTBOX (NeonCode)** se posiciona de forma diferenciada y competitiva en el sector salud peruano, resolviendo las brechas operativas críticas del transporte asistencial en ambulancias que las soluciones convencionales no atienden.
+
+***
 
 ## 2.1.1. Análisis competitivo
 
-Para el análisis se consideran soluciones de monitoreo de temperatura, plataformas de rastreo vehicular y sistemas de gestión logística médica. Aunque algunas alternativas cubren parcialmente el problema, no siempre integran en una sola experiencia la temperatura del contenedor, stock por peso, ubicación GPS, estado del vehículo, ETA y trazabilidad de cadena de custodia.
+Para el relevamiento de la competencia se investigaron tres empresas con presencia tecnológica real en el transporte de productos biológicos y seguimiento de activos:
 
-| Criterio | Nuestra solución | Competidor 1: Monitoreo de cadena de frío | Competidor 2: Rastreo vehicular GPS | Competidor 3: Gestión logística médica |
-|---|---|---|---|---|
-| Perfil | Plataforma IoT para contenedores médicos inteligentes en ambulancias. | Solución enfocada en sensores de temperatura para productos refrigerados. | Plataforma orientada a localización y control de flotas. | Sistema para coordinar entregas e inventario médico. |
-| Valor para clientes | Integra conservación, stock, ubicación, vehículo y trazabilidad. | Permite conocer condiciones térmicas. | Permite conocer ubicación y ruta. | Organiza procesos logísticos e inventario. |
-| Mercado objetivo | Hospitales, clínicas, ambulancias y operadores de transporte médico. | Empresas con cadena de frío. | Empresas con flotas vehiculares. | Instituciones con operaciones logísticas. |
-| Productos y servicios | Contenedor IoT, aplicación web, API RESTful, alertas y reportes. | Sensores, registradores y panel de temperatura. | GPS, mapas, alertas de ruta y reportes de flota. | Módulos de despacho, inventario y seguimiento. |
-| Ventaja competitiva | Visión integral del traslado médico crítico. | Especialización térmica. | Seguimiento vehicular consolidado. | Gestión administrativa del proceso. |
-| Debilidad identificada | Requiere integración con hardware y vehículos. | No gestiona stock ni vehículo. | No controla condiciones internas del contenedor. | Puede no integrarse con sensores físicos en tiempo real. |
+1. **Sensitech Inc. (Carrier Global Corporation):** Referente mundial indiscutido en la visibilidad de la cadena de frío farmacéutica y monitoreo de carga biofarmacéutica a granel (pallets, contenedores aéreos y fletes transcontinentales) mediante registradores de datos (*dataloggers*) de temperatura USB (*TempTale Ultra*) y balizas celulares en tiempo real (*TempTale GEO LTE*), respaldados por la plataforma en la nube *ColdStream SaaS*.
+2. **Tracklink Perú (Motorlink S.A.C.):** Empresa líder nacional en seguridad vehicular, monitoreo GPS satelital y telemática de flotas con más de 20 años de trayectoria y central de operaciones 24/7 en el Perú. Ofrece la solución *Tracklink Cold Chain Control*, orientada al monitoreo de temperatura en la cabina o furgón frigorífico del camión.
+3. **Controlant:** Empresa global pionera en soluciones de visibilidad de cadena de frío en tiempo real para medicamentos biológicos y vacunas de ultracongelación (-80 °C a +25 °C), reconocida por la gestión de la cadena de frío global de las vacunas Pfizer-BioNTech COVID-19 mediante sus dispositivos celulares *Saga Card* / *Saga Mobile* y la plataforma analítica predictiva *Aurora Cloud Platform*.
+
+***
+
+### Competitive Analysis Landscape
+
+El análisis comparativo adopta estrictamente la estructura normativa del cuadro de **Competitive Analysis Landscape** prescrita en las **páginas 10 y 11 del Enunciado Oficial del Trabajo Final**, evaluando a NeonCode frente a los tres competidores reales en sus 11 dimensiones:
+
+<div style="margin: 14px 0 18px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 21%;" />
+  <col style="width: 21%;" />
+  <col style="width: 20.5%;" />
+  <col style="width: 20.5%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #e2e8f0;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">¿Por qué llevar a cabo este análisis?</th>
+  <th colspan="4" style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: 500; font-style: italic;">¿Cuál es la propuesta de valor diferenciada de Medical SMARTBOX frente a las soluciones globales y locales de monitoreo de cadena de frío para unidades de soporte vital y traslados biomédicos en Lima Metropolitana?</th>
+</tr>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; color: #0f172a;">(Nombre y Logo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; background-color: #e0f2fe; color: #0369a1;">Medical SMARTBOX (NeonCode)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; color: #0f172a;">Sensitech (Carrier Global)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; color: #0f172a;">Tracklink Perú (Motorlink S.A.C.)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold; color: #0f172a;">Controlant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil: Overview</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Plataforma IoT y contenedor biomédico inteligente con telemetría activa en tiempo real (temperatura, peso neto, GPS) y control de acceso físico mediante solenoide con token OTP para ambulancias y triaje prehospitalario.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Líder multinacional en visibilidad de cadena de frío mediante dataloggers USB y dispositivos celulares para pallets y contenedores de carga farmacéutica masiva transcontinental.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Proveedor nacional líder en seguridad vehicular, monitoreo GPS de flotas y telemetría de furgones frigoríficos mediante sensores en la computadora de abordo del camión.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Innovador global en visibilidad de cadena de frío en tiempo real mediante balizas IoT celulares y plataforma en la nube para fabricantes biofarmacéuticos.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil: Ventaja competitiva ¿Qué valor ofrece a los clientes?</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Protección activa en el último tramo prehospitalario (ambulancia a cama del paciente), cerradura solenoide anti-apertura no autorizada con token OTP y monitoreo de peso digital para evitar adulteración o mermas.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca de referencia mundial con cumplimiento regulatorio estricto FDA 21 CFR Part 11 y certificación de calibración individual con trazabilidad metrológica NIST.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Central de monitoreo 24/7 y cobertura de red celular en las 24 regiones del Perú, con servicio técnico, instalación y soporte presencial en talleres a nivel nacional.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Automatización analítica de extremo a extremo, monitoreo de ultracongelación (-80 °C) y validación en distribución global de biológicos y vacunas críticas.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Marketing: Mercado objetivo</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Empresas de transporte asistido, ambulancias públicas (SAMU) y privadas, bancos de sangre, policlínicos y laboratorios de análisis clínicos en el Perú.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Grandes laboratorios farmacéuticos transnacionales y distribuidores logísticos globales de medicamentos y vacunas.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Empresas de transporte de carga refrigerada, distribuidores mayoristas de alimentos perecibles y operadores logísticos interprovinciales.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fabricantes multinacionales biofarmacéuticos, centros de investigación de ensayos clínicos y cadenas globales de ultracongelación.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Marketing: Estrategias de marketing</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Posicionamiento como solución HaaS (Hardware as a Service) especializada en emergencias prehospitalarias, alianzas con redes clínicas y venta consultiva técnica.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marketing B2B corporativo basado en certificaciones globales, presencia en ferias farmacéuticas mundiales y licitaciones masivas corporativas.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fuerza de ventas corporativa de flotas, campañas de telemática vehicular, y venta cruzada con servicios de recuperación antirrobo vehicular.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marketing relacional y alianzas estratégicas globales con farmacéuticas de primera línea (ej. Pfizer) y organismos internacionales de salud.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Producto: Productos & Servicios</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Dispositivo IoT Medical SMARTBOX (ESP32, DS18B20, celda de carga HX711, solenoide), Web App Vue.js/PrimeVue y REST API en ASP.NET Core 10.0.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Dataloggers TempTale Ultra (USB), TempTale GEO LTE (celular en tiempo real) y software de analítica ColdStream SaaS.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware telemático vehicular Tracklink Cold Chain, sensores de temperatura para furgón y portal web de rastreo de flota.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Controlant Saga Card / Saga Mobile (sensores celulares compactos) y plataforma cloud de visibilidad predictiva Aurora.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Producto: Precios & Costos</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Suscripción mensual SaaS por Smartbox activo ($30 - $45 USD/mes) + hardware en comodato o costo accesible de entrada ($180 USD).</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Alto costo por datalogger desechable ($25 - $40 USD/unidad) o reutilizable ($150 - $250 USD) más licencias corporativas anuales de software.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Costo de instalación de hardware vehicular ($350 - $500 USD por camión) + cuota de servicio mensual ($35 - $50 USD por vehículo).</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Servicio corporativo cerrado por viaje o suscripción de alto valor ($500+ USD mensuales por lote monitorizado), logística inversa obligatoria.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Perfil de Producto: Canales de distribución (Web y/o Móvil)</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Web Application responsive (optimizada para desktop y tablets de ambulancia) y Landing Page comercial con portal de cotización.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Plataforma web corporativa ColdStream (Web SaaS) y herramientas de configuración desktop/USB para lectura de reportes PDF.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Plataforma Web de rastreo de flotas y Aplicación Móvil (Android/iOS) para gestión y ubicación satelital de vehículos.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Plataforma Web Aurora Cloud Platform y servicios API de integración empresarial con ERPs/WMS.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Fortalezas</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Control activo físico solenoide con OTP, monitoreo de peso digital, diseño adaptado a ambulancias de Lima, arquitectura moderna en .NET 10 y MySQL 8.0.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Máxima reputación regulatoria mundial, precisión metrológica certificada, plataforma cloud robusta para millones de envíos farmacéuticos.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Infraestructura operativa local consolidada, red de soporte 24/7 en Perú, integración con rastreo antirrobo y botón de pánico vehicular.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tecnología IoT de vanguardia (NB-IoT/Cat-M1), analítica predictiva avanzada, cobertura global sin intervención del operador.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Debilidades</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Startup emergente sin marca posicionada en el sector salud público, dependencia inicial de autofinanciamiento de prototipos.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Monitoreo pasivo en modelos estándar (requiere conectar USB al final), sin cerradura inteligente de seguridad, sin sensor de peso.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Monitoreo a nivel de vehículo completo y no del contenedor individual, sin integración con flujos clínicos prehospitalarios ni control de custodia digital.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Barrera de costos restrictiva para el mercado peruano, complejidad de logística inversa de recolección de tarjetas, sin protección física local (OTP).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Oportunidades</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Exigencias crecientes de DIGEMID y MINSA para trazabilidad de cadena de frío en emergencias; alta tasa de mermas por tráfico vehicular en Lima.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Incremento en la demanda mundial de medicamentos biológicos sensibles a variaciones de temperatura.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Crecimiento del comercio farmacéutico electrónico y requerimientos de trazabilidad en transporte logístico local.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Expansión de requerimientos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Amenazas</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Burocracia y lentitud en licitaciones del sector salud público (EsSalud/MINSA); resistencia al cambio del personal paramédico ante el registro digital.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nuevos entrantes en tecnología IoT celular de bajo costo que presionan a la baja los márgenes de hardware.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Competidores de rastreo satelital genérico que ofrecen sensores de temperatura básicos como commodity a bajo precio.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tensiones geopolíticas y disrupciones en la cadena global de suministro de componentes electrónicos semiconductores para hardware IoT.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
 
 ## 2.1.2. Estrategias y tácticas frente a competidores
 
-La estrategia principal de la startup será diferenciarse mediante una solución integrada para transporte médico crítico, evitando competir únicamente como plataforma de GPS o como registrador de temperatura. La propuesta busca unir información clínica-operativa relevante en una sola aplicación web.
+A partir del análisis de fortalezas, debilidades y oportunidades de la competencia, NeonCode establece las siguientes estrategias y tácticas comerciales y tecnológicas para consolidar su ventaja competitiva en el mercado asistencial:
 
-Las tácticas iniciales serán:
+1. **Estrategia de Especialización en el Último Tramo Prehospitalario (*Last-Mile Emergency*):**  
+   * *Diagnóstico:* Sensitech y Controlant diseñan productos para pallets de comercio exterior aéreo o marítimo, mientras que Tracklink monitorea la posición del camión entero. Ninguno protege el insumo médico en el transbordo manual desde la ambulancia hasta la rampa de trauma shock o quirófano.
+   * *Táctica:* Posicionar a Medical SMARTBOX como un contenedor isotérmico móvil autónomo que acompaña el medicamento o hemoderivado de forma ininterrumpida hasta la entrega final al médico especialista receptor.
 
-- Priorizar escenarios de alto valor, como transporte de medicamentos refrigerados, órganos, sangre y muestras biológicas.
-- Ofrecer trazabilidad completa del traslado, incluyendo temperatura, ubicación, apertura del contenedor, stock estimado y eventos relevantes.
-- Integrar mapas y estimación de llegada mediante servicios externos para mejorar la coordinación operativa.
-- Diseñar alertas simples y priorizadas para que el personal médico pueda actuar sin sobrecarga de información.
-- Generar reportes históricos que apoyen auditorías, mejora continua y responsabilidad profesional.
+2. **Táctica de Seguridad Activa mediante Cerrojo Solenoide y Clave Dinámica OTP:**  
+   * *Diagnóstico:* Los competidores alertan sobre aperturas de puerta únicamente mediante sensores de luz ambiental o contactos magnéticos en la carrocería del vehículo, sin capacidad de impedir físicamente el acceso no autorizado.
+   * *Táctica:* Incorporar un mecanismo de cerrojo solenoide controlado electromecánicamente mediante microcontrolador ESP32. La caja solo se desbloquea en destino cuando el receptor autorizado ingresa un código de un solo uso (OTP) despachado a la aplicación web, garantizando una cadena de custodia inviolable con valor probatorio ante DIGEMID.
 
+3. **Estrategia de Accesibilidad Económica mediante Modelo Hardware as a Service (HaaS):**  
+   * *Diagnóstico:* Las soluciones internacionales implican costos elevados en moneda extranjera y tarifas de consultoría corporativa inaccesibles para servicios de ambulancias privadas y policlínicos peruanos.
+   * *Táctica:* Ofrecer una tarifa de suscripción mensual accesible en moneda local (S/ 110 – S/ 160 por contenedor activo), incluyendo el hardware en comodato, el acceso a la plataforma web de monitoreo en tiempo real y el soporte técnico, eliminando la barrera inicial de inversión de capital (*CapEx*).
+
+4. **Táctica de Control de Stock Automatizado por Celda de Carga (HX711):**  
+   * *Diagnóstico:* Ningún competidor del mercado cuenta con detección de masa o peso interno en cajas térmicas, obligando al conteo manual de viales y ampollas.
+   * *Táctica:* Integrar una celda de carga con convertidor analógico-digital HX711 en la base del compartimento clínico. Al detectar una reducción abrupta de peso sin registro de parada médica autorizada, la plataforma genera una alerta inmediata de posible sustracción o pérdida de carga.
 
 <div style="page-break-after: always;"></div>
 
 # 2.2. Entrevistas
 
-Las entrevistas permitirán obtener información cualitativa sobre las necesidades, frustraciones y expectativas de los segmentos objetivo. El objetivo es validar si el problema identificado representa una necesidad real y si las funcionalidades propuestas aportan valor durante el transporte de medicamentos, órganos e insumos médicos sensibles.
+La investigación empírica de campo constituye el cimiento metodológico del proyecto **Medical SMARTBOX**. Para validar la problemática y relevar las necesidades operativas de la cadena de frío biomédica en Lima Metropolitana, se diseñaron y ejecutaron entrevistas a profundidad con profesionales en ejercicio activo pertenecientes a los dos segmentos objetivo del proyecto: personal médico y paramédicos asistenciales en ambulancias (**Segmento 1**), y coordinadores de logística farmacéutica y directores de centros hospitalarios (**Segmento 2**).
+
+***
 
 ## 2.2.1. Diseño de entrevistas
 
-Las entrevistas estarán dirigidas a personal médico de emergencia, operadores logísticos de salud, representantes de instituciones médicas y áreas especializadas. Las preguntas se formularán evitando inducir respuestas y buscando comprender experiencias previas, tareas actuales, problemas frecuentes y criterios de éxito.
+Se elaboró una guía de entrevista semiestructurada aplicando las directrices metodológicas de UX Research de la industria (Nielsen Norman Group e Interaction Design Foundation). El diseño se orientó a reconstruir experiencias reales recientes sin condicionar al entrevistado ni presentar prematuramente la solución tecnológica, garantizando la recolección neutral de datos objetivos y percepciones subjetivas.
 
-### Preguntas para personal médico y de emergencias
+### Objetivos de la Guía de Entrevista:
+1. Reconstruir el flujo paso a paso del traslado asistencial de medicamentos refrigerados, hemoderivados, vacunas y muestras biológicas.
+2. Identificar las herramientas, registros documentales y canales de comunicación actualmente utilizados en ruta y en almacén.
+3. Documentar incidentes críticos reales de ruptura de cadena de frío, fallas mecánicas, demoras por congestión vehicular y pérdidas de custodia.
+4. Medir los niveles de estrés, confianza, carga cognitiva y frustración del personal operativo frente a la falta de trazabilidad telemática.
+5. Extraer requerimientos funcionales prioritarios para la formulación de los arquetipos (*User Personas*), matrices de tareas y escenarios de uso.
 
-1. ¿Qué tipo de medicamentos, insumos u otros elementos sensibles suele trasladar o recibir durante una emergencia?
-2. ¿Cómo verifica actualmente que la carga transportada se mantuvo en condiciones adecuadas?
-3. ¿Qué información considera crítica durante el traslado de un medicamento u órgano?
-4. ¿Qué problemas ha observado relacionados con temperatura, tiempo de llegada o disponibilidad de insumos?
-5. ¿Cómo debería presentarse una alerta para que sea útil durante una situación de emergencia?
+### Guía de Preguntas para el Segmento 1 (Personal Médico y Paramédicos de Ambulancia):
+1. **Contexto operativo:** ¿Cuál es tu rol exacto durante una guardia de emergencia y qué tipo de insumos refrigerados te toca trasladar con mayor frecuencia?
+2. **Procedimiento actual:** ¿Qué pasos sigues desde que recibes la orden de despacho hasta que entregas el contenedor térmico en el hospital receptor?
+3. **Control térmico:** ¿Cómo verificas que la temperatura interna del cooler se mantenga en el rango de +2 °C a +8 °C mientras conduces o atiendes al paciente en cabina?
+4. **Instrumentación y registro:** ¿Qué herramientas utilizas para medir la temperatura y dónde registras las lecturas durante el trayecto?
+5. **Incidentes en ruta:** Recuerda una ocasión en la que la ambulancia quedó atrapada en el tráfico o se produjo un sobrecalentamiento. ¿Qué ocurrió y cómo reaccionaron?
+6. **Seguridad y custodia:** ¿Cómo aseguras que el contenedor no sea abierto indebidamente en ruta o que no se confundan los medicamentos?
+7. **Puntos ciegos:** ¿En qué momento del traslado experimentas mayor incertidumbre respecto al estado de la carga?
+8. **Comunicación operativa:** ¿Por qué medios coordinas con la central de despacho y con el hospital de destino tu hora estimada de llegada (ETA)?
+9. **Criterios de entrega:** ¿Qué condiciones exige el personal del hospital receptor para aceptar o rechazar formalmente la entrega de un hemoderivado o fármaco?
+10. **Requerimiento ideal:** Si pudieras incorporar una innovación tecnológica en tu contenedor de traslado, ¿cuál resolvería tu mayor preocupación?
 
-### Preguntas para operadores logísticos e instituciones de salud
+### Guía de Preguntas para el Segmento 2 (Coordinadores Logísticos y Farmacéuticos Hospitalarios):
+1. **Gestión de cadena de frío:** ¿Cómo planificas y supervisas la distribución de biológicos y medicamentos termolábiles hacia ambulancias o centros periféricos?
+2. **Recepción y verificación:** Al arribar un envío a tu centro de salud, ¿qué protocolo sigues para certificar que no hubo excursiones térmicas en tránsito?
+3. **Dataloggers y herramientas:** ¿Qué tecnologías emplean actualmente para registrar la temperatura y con qué retraso temporal accedes a la información de los viajes?
+4. **Pérdidas y descartes:** ¿Con qué frecuencia se reportan pérdidas o descartes de vacunas o hemoderivados por ruptura de la cadena de frío y qué costo representa para tu institución?
+5. **Auditoría y DIGEMID:** ¿Cómo gestionan las actas de entrega física y qué dificultades enfrentan durante las auditorías de trazabilidad de DIGEMID/SUSALUD?
+6. **Conflictos de custodia:** ¿Se han presentado disputas entre el transportista/paramédico y el personal receptor sobre la responsabilidad de un lote degradado?
+7. **Visibilidad en tiempo real:** ¿Dispones actualmente de una plataforma web que te permita ver en vivo la ubicación y temperatura del contenedor antes de que llegue a tu puerta?
+8. **Control de stock y mermas:** ¿Cómo detectan si un insumo fue retirado del cooler de manera no autorizada durante un traslado de emergencia?
+9. **Impacto del tráfico:** ¿Cómo afecta la congestión vehicular de Lima Metropolitana la planificación de turnos de quirófano y ventanas de isquemia?
+10. **Criterio de valor:** ¿Qué características técnicas consideras indispensables en una plataforma digital de monitoreo para confiar plenamente en ella?
 
-1. ¿Cómo se planifican actualmente las rutas, asignaciones de ambulancias o unidades de transporte médico y la recepción de productos sensibles?
-2. ¿Qué herramientas utilizan para conocer ubicación, estado del vehículo, condiciones de la carga y tiempo estimado de llegada?
-3. ¿Qué información falta normalmente durante un traslado médico sensible o al momento de recibir medicamentos, órganos o muestras biológicas?
-4. ¿Cómo se registran incidentes relacionados con demoras, conservación, cadena de custodia o entrega de productos?
-5. ¿Qué requisitos de trazabilidad y evidencias deben cumplirse ante una incidencia durante el traslado?
-6. ¿Qué indicadores y reportes serían útiles para mejorar la operación, evaluar la calidad de los traslados y reducir riesgos?
-7. ¿Qué condiciones debería cumplir una solución digital para ser adoptada por operadores logísticos e instituciones de salud?
+***
 
 ## 2.2.2. Registro de entrevistas
 
-Para cada segmento objetivo se registrarán entre tres y cinco entrevistas. Cada registro incluirá nombres y apellidos del entrevistado, edad, distrito, segmento al que pertenece, fecha de entrevista, captura representativa del video, URL del video publicado en Microsoft Stream, minuto de inicio y duración.
+Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por cada segmento objetivo). Las sesiones fueron grabadas en video con consentimiento informado de los participantes y se encuentran alojadas en la plataforma institucional de Microsoft Stream / SharePoint de la universidad.
 
-| Entrevistado | Segmento | Edad | Distrito | Fecha | URL del video | Inicio | Duración | Resumen |
-|---|---|---:|---|---|---|---|---|---|
-| Wilbert Toledo | Personal médico y de emergencias | 21 | Pueblo Libre | 2026-09-16 | [Entrevista1_Segmento1_AaronEspinoza.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi) | 00:00:00 | 02:51 | Entrevista a un estudiante de medicina que se encuentra realizando prácticas, orientada a validar necesidades del personal médico y de emergencias sobre el traslado de medicamentos, órganos e insumos sensibles, considerando verificación de condiciones, información crítica, problemas de temperatura, tiempos de llegada, disponibilidad de insumos y utilidad de alertas. |
-| Aldair Lazaro | Personal médico y de emergencias | 26 | San Martín de Porres | 2026-09-17 | [Entrevista2_Segmento1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd) | 00:00:00 | 04:38 | Entrevista del Segmento 1 orientada a recopilar respuestas de personal médico y de emergencias sobre el traslado de productos médicos sensibles, la verificación de condiciones de conservación, la información crítica requerida, los problemas frecuentes y la utilidad de alertas durante situaciones de emergencia. |
-| Renato Calvo Yalan | Personal médico y de emergencias | 22 | San Isidro | 2026-09-17 | [Entrevista3_Segmento1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi) | 00:00:00 | 02:24 | Entrevista del Segmento 1 enfocada en recopilar información sobre experiencias, necesidades y problemas del personal médico y de emergencias durante el traslado de productos médicos sensibles, considerando condiciones de conservación, trazabilidad, tiempos de llegada, disponibilidad de insumos y respuesta ante alertas. |
-| Humberto Arellán | Operadores logísticos e instituciones de salud | 49 | Chancay | 2026-09-16 | [Entrevista1_Segmento2_Santiago.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc) | 00:00:00 | 04:27 | Entrevista del Segmento 2 enfocada en los requisitos a tomar en cuenta para mejorar la comunicación dentro del recorrido en instituciones de salud a un transportista logístico de material médico y biológico. |
-| Gianfranco Timoteo | Operadores logísticos e instituciones de salud | 21 | Chorrillos | 2026-09-16 | [Entrevista2_Segmento2_Santiago.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4) | 00:00:00 | 04:59 | Entrevista del segmento 2 a un practicante de la carrera de Ingenería de Sistemas que ejerce del área técnologíca al soporte y registro en una institución de salud.  |
-| Karla Pacheco | Operadores logísticos e instituciones de salud | 25 | Breña | 2003-09-16 | [Entrevista3_Segmento2_Santiago.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC) | 00:00:00 | 04:09 | Entrevista del Segmento 2 a una axuliar administrativa del área de la salud encargada del monitoreo y registro de las rutas de ambulancias y recolección de muestras o medicamentos. |
+### Tabla Consolidada de Registro de Entrevistas:
+
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.2pt; line-height: 1.2; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 5%;" />
+  <col style="width: 10%;" />
+  <col style="width: 14%;" />
+  <col style="width: 16%;" />
+  <col style="width: 16%;" />
+  <col style="width: 6%;" />
+  <col style="width: 11%;" />
+  <col style="width: 8%;" />
+  <col style="width: 6%;" />
+  <col style="width: 8%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">#</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Segmento</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Entrevistado</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Rol / Cargo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Organización</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Edad</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Distrito</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Fecha</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Dur.</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Video</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E1**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Wilbert Toledo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Estudiante de Medicina / Paramédico en Prácticas</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Red de Ambulancias de Emergencia</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">21</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Pueblo Libre</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">02:51 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E2**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Aldair Lazaro</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Paramédico de Transporte Asistido</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Servicio de Ambulancias y Rescate</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">26</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">San Martín de Porres</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">17/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:38 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E3**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Renato Calvo Yalan</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Conductor / Paramédico Asistencial</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Unidad Móvil de Soporte Vital</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">22</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">San Isidro</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">17/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">02:24 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E4**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Humberto Arellán</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Transportista Logístico Biomédico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Empresa de Distribución de Muestras y Fármacos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">49</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Chancay</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:27 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E5**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Gianfranco Timoteo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Coordinador de Soporte y Cadena de Frío</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Laboratorio y Centro Clínico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">21</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Chorrillos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:59 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4">Ver</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center; font-weight: bold;">**E6**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; font-weight: 600;">Karla Pacheco</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Auxiliar Administrativa de Farmacia y Rutas</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Centro de Salud Policlínico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">25</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Breña</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:09 min</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC">Ver</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
+
+### Resúmenes Descriptivos Individuales de Entrevistas:
+
+#### Entrevista E1: Wilbert Toledo (Segmento 1)
+* **Perfil:** Estudiante de medicina y paramédico en prácticas de ambulancia de soporte vital.
+* **Datos Demográficos:** 21 años, residente en Pueblo Libre. Dispositivos preferidos: smartphone Android (Samsung Galaxy), laptop Windows. Navegador: Google Chrome.
+* **Variables Objetivas:** Traslada medicamentos termolábiles de primera línea, sueros y hemoderivados. Utiliza coolers pasivos de poliestireno expandido con geles refrigerantes. Verifica la temperatura únicamente al inicio y al final abriendo la tapa con un termómetro de varilla. Tiempo promedio de traslado en Lima: 45 a 80 minutos.
+* **Variables Subjetivas:** Ansiedad elevada ante atascos en avenidas principales (Av. Brasil, Javier Prado). Desconfianza respecto a si el gel congelado mantiene la temperatura real tras 1 hora bajo el calor de la cabina. Expresa frustración por la falta de un aviso sonoro si la temperatura sube de +8 °C.
+* **Cita Textual:** *"Si la sirena suena fuerte y el paciente está inestable, nadie está mirando si la caja de vacunas se calentó. Necesitamos que el contenedor te avise solo, con una alarma roja o al celular."*
+
+#### Entrevista E2: Aldair Lazaro (Segmento 1)
+* **Perfil:** Paramédico rescatista de ambulancia con 3 años de experiencia en emergencias prehospitalarias.
+* **Datos Demográficos:** 26 años, residente en San Martín de Porres. Dispositivos: smartphone Xiaomi Android, tablet institucional. Navegador: Chrome / Edge.
+* **Variables Objetivas:** Realiza entre 3 y 6 traslados asistenciales por turno. Registra el estado de la entrega en planillas físicas de papel autocopiativo. Se comunica con el hospital receptor mediante llamadas de voz y mensajes de WhatsApp. Ha experimentado aperturas accidentales de coolers por vibraciones en baches viales.
+* **Variables Subjetivas:** Estrés crónico por la doble carga de vigilar al paciente y proteger los fármacos. Sensación de desamparo ante reclamos del hospital si el medicamento llega caliente, ya que no tiene cómo demostrar a qué hora exacta subió la temperatura.
+* **Cita Textual:** *"Cuando llegas al hospital y Farmacia te rechaza el lote diciendo que demoró mucho, se genera un conflicto. Si tuviéramos un registro que pruebe que el frío nunca se rompió, nos ahorraríamos horas de discusiones."*
+
+#### Entrevista E3: Renato Calvo Yalan (Segmento 1)
+* **Perfil:** Conductor y asistente paramédico en unidades móviles de intervención rápida.
+* **Datos Demográficos:** 22 años, residente en San Isidro. Dispositivos: iPhone (iOS), iPad, MacBook. Canales: WhatsApp, Waze, Google Maps.
+* **Variables Objetivas:** Responsable de la conducción segura y de la conexión de equipos a los tomacorrientes de 12V DC de la ambulancia. Desconoce la temperatura interna del contenedor durante el viaje porque la caja va en el compartimento asistencial posterior.
+* **Variables Subjetivas:** Presión por los tiempos de llegada (ETA). Manifiesta que conducir a alta velocidad sorteando el tráfico limeño impide manipular cajas o verificar diales analógicos.
+* **Cita Textual:** *"Yo voy al volante concentrado en abrirme paso entre los carros. Si el cooler tiene un indicador visual grande o se conecta a una tablet en el tablero, el chofer sabe de un vistazo si todo va bien sin voltear."*
+
+#### Entrevista E4: Humberto Arellán (Segmento 2)
+* **Perfil:** Transportista y operador logístico biomédico interprovincial e interurbano con más de 15 años de trayectoria.
+* **Datos Demográficos:** 49 años, residente en Chancay (con operaciones logísticas en Lima Norte). Dispositivos: smartphone Android gama media. Canales: llamadas telefónicas, WhatsApp corporativo.
+* **Variables Objetivas:** Maneja furgones de distribución hacia postas médicas y hospitales de la red periférica. Utiliza dataloggers USB convencionales que se leen en destino tras conectar a una computadora. Traslados con duración de 2 a 5 horas.
+* **Variables Subjetivas:** Resignación frente a la burocracia documental de recepción. Preocupación constante por averías mecánicas del aire acondicionado o fallas de refrigeración en la carretera Panamericana.
+* **Cita Textual:** *"El datalogger USB solo te dice al final del día que la carga se malogró hace tres horas. Para ese momento ya perdiste miles de soles en medicamentos y el paciente se quedó sin tratamiento."*
+
+#### Entrevista E5: Gianfranco Timoteo (Segmento 2)
+* **Perfil:** Coordinador de soporte y supervisor de cadena de frío en laboratorio clínico central.
+* **Datos Demográficos:** 21 años, residente en Chorrillos. Dispositivos: laptop Windows, smartphone Android, monitor dual en central. Navegador: Chrome, Brave.
+* **Variables Objetivas:** Responsable de auditar la recepción de muestras biológicas y reactivos de diagnóstico. Consolida manualmente registros en hojas de cálculo de Excel a partir de actas en papel. Detecta discrepancias de temperatura en aproximadamente el 15% de los envíos recibidos en horas punta.
+* **Variables Subjetivas:** Agotamiento por conciliar hojas de ruta dispersas. Temor a sanciones de DIGEMID ante la falta de trazabilidad digital inmutable. Desconfianza hacia los registros anotados a mano por choferes.
+* **Cita Textual:** *"En el laboratorio nos llega un papel con un garabato que dice 4 °C, pero no hay forma de auditar si la muestra estuvo a 12 °C durante el embotellamiento. Necesitamos una gráfica digital continua que no pueda manipularse."*
+
+#### Entrevista E6: Karla Pacheco (Segmento 2)
+* **Perfil:** Auxiliar administrativa y técnica de farmacia encargada del monitoreo de rutas en centro de salud.
+* **Datos Demográficos:** 25 años, residente en Breña. Dispositivos: PC de escritorio hospitalaria, smartphone Android. Navegador: Google Chrome.
+* **Variables Objetivas:** Gestiona el despacho y recepción de vacunas y ampollas refrigeradas. Se coordina con brigadas móviles mediante llamadas telefónicas insistentes para consultar su ubicación y hora de llegada.
+* **Variables Subjetivas:** Ansiedad por falta de predictibilidad: las salas de inmunizaciones se llenan de pacientes esperando dosis que no saben cuándo llegarán. Frustración por tener que llamar repetidamente a conductores que no pueden contestar mientras conducen.
+* **Cita Textual:** *"Pasamos la mitad del día preguntando '¿por dónde vienes?' y '¿sigue fría la caja?'. Si tuviéramos una pantalla con un mapa en vivo y la temperatura exacta, organizaríamos las citas y el quirófano sin perder tiempo."*
+
+***
 
 ## 2.2.3. Análisis de entrevistas
 
-El análisis de entrevistas permitirá identificar patrones comunes por segmento. Se evaluarán necesidades relacionadas con visibilidad del traslado, conservación de la carga, trazabilidad, disponibilidad de stock, tiempos de llegada y respuesta ante alertas.
+El análisis sistemático de las entrevistas combina el rigor cualitativo de incidentes críticos con el sustento cuantitativo porcentual ($n = 6$), derivando conclusiones directas para la especificación de requisitos y la arquitectura de **Medical SMARTBOX**.
 
-Los resultados esperados del análisis deberán expresar porcentajes y hallazgos sustentados en las entrevistas registradas. Por ejemplo, se podrá identificar qué proporción de entrevistados considera crítica la temperatura, qué porcentaje necesita conocer la ubicación en tiempo real y qué problemas se repiten durante la coordinación entre ambulancias e instituciones de salud.
+### A. Sustento Cuantitativo y Patrones Consolidados ($n = 6$)
 
+* **100.0% (6/6) de los entrevistados carece de monitoreo telemático en tiempo real:** Ninguno de los participantes cuenta con visibilidad remota continua; el 50% utiliza termómetros analógicos de mercurio/alcohol y el 50% dataloggers de descarga diferida por puerto USB.
+* **100.0% (6/6) depende de registros manuales en papel:** La totalidad de las transferencias de custodia se firma en hojas físicas vulnerables al extravío, enmendaduras y deterioro físico.
+* **100.0% (6/6) señala la congestión vehicular como factor crítico de riesgo:** El tráfico limeño genera demoras imprevistas de 30 a 90 minutos adicionales sobre el tiempo planificado, poniendo en riesgo la estabilidad del hielo gel pasivo.
+* **83.3% (5/6) exige alertas preventivas antes de la ruptura térmica:** Demandan alarmas audibles en cabina y notificaciones automáticas al celular cuando la temperatura supere los +6.5 °C (margen preventivo antes del límite crítico de +8.0 °C).
+* **83.3% (5/6) reporta falta de cálculo de hora estimada de llegada (ETA):** Tanto paramédicos como personal hospitalario sufren desorganización operativa al desconocer el minuto exacto de arribo de la unidad.
+* **66.7% (4/6) ha presenciado pérdidas o rechazos de lotes de medicamentos:** Experiencias directas de descarte de hemoderivados, vacunas o reactivos por excursión térmica comprobada al abrir el cooler.
+* **66.7% (4/6) reporta disputas interdepartamentales sobre la responsabilidad de la carga:** Conflictos entre el equipo de ambulancia y farmacia hospitalaria respecto al momento exacto en que se rompió la cadena de frío.
+
+***
+
+### B. Análisis por Segmento Objetivo
+
+#### Segmento 1: Personal Médico y Paramédicos de Ambulancias (E1, E2, E3)
+* **Variables Objetivas Identificadas:**
+  * Entorno de trabajo móvil de alta vibración, aceleración y maniobras de emergencia.
+  * Tiempos de tránsito: 25 a 90 minutos dentro del radio metropolitano.
+  * Carga médica prioritaria: ampollas de epinefrina, insulina, hemoderivados (plasma fresco congelado, concentrado de eritrocitos) y vacunas.
+  * Procedimiento actual: colocación de 4 a 6 paquetes de gel refrigerante precongelados; cierre manual por pestillo plástico pasivo.
+* **Variables Subjetivas y Modelo Mental:**
+  * Sobrecarga cognitiva y estrés agudo: la prioridad clínica del paciente absorbe la atención del personal, relegando la verificación visual del contenedor.
+  * Sentimiento de vulnerabilidad legal: temor a ser culpados injustamente por la merma del producto biológico sin contar con pruebas telemétricas de su desempeño.
+  * Rechazo a interfaces complejas: requieren pantallas de alto contraste, tipografía legible a distancia y alertas acústicas inconfundibles.
+
+#### Segmento 2: Centros de Salud, Farmacias y Operadores Logísticos (E4, E5, E6)
+* **Variables Objetivas Identificadas:**
+  * Supervisión de múltiples despachos simultáneos (flota de 5 a 20 unidades).
+  * Exigencia regulatoria inexcusable: cumplimiento del Manual de Buenas Prácticas de Almacenamiento y Transporte de Productos Farmacéuticos (R.M. N° 833-2015/MINSA) y directivas de DIGEMID.
+  * Tiempos de retención de actas documentales: mínimo 12 meses archivadas físicamente.
+  * Requerimiento de auditoría: gráficas continuas de temperatura cada 30 a 60 segundos durante todo el trayecto.
+* **Variables Subjetivas y Modelo Mental:**
+  * Obsesión por el cumplimiento normativo y aversión al riesgo regulatorio (clausura temporal de farmacias o multas de SUSALUD).
+  * Escepticismo ante reportes llenados a mano con lapicero; preferencia por información digital inmutable con sello de tiempo (*timestamp*).
+  * Necesidad de predictibilidad operativa: coordinar la disponibilidad de quirófanos de trasplante y personal de triaje en función de un ETA confiable.
+
+***
+
+### C. Incidentes Críticos Reales Extraídos del Trabajo de Campo
+
+1. **Incidente de Apertura Inadvertida y Ruptura Térmica en Ambulancia (Relatado por E1 - Wilbert Toledo):**  
+   Durante un traslado asistencial urgente desde un centro de salud de Lima Norte hacia un hospital del Callao en hora punta vespertina, un bache severo provocó que el seguro plástico del cooler se abriera parcialmente sin ser percibido por el ruido de la sirena de emergencia. Al arribar a destino tras 75 minutos de viaje, el termómetro marcó 11.5 °C. El banco de sangre receptor rechazó las unidades de plasma, obligando a iniciar un proceso administrativo de descarte por valor de miles de soles.
+2. **Incidente de Discrepancia Documental y Falta de Prueba Histórica (Relatado por E2 - Aldair Lazaro):**  
+   Una ambulancia trasladó insulina y hemoderivados en una ruta demorada por manifestaciones viales. En recepción, el termómetro digital marcaba 8.2 °C (apenas 0.2 °C por encima del límite regulatorio). Farmacia hospitalaria se negó a firmar el acta de conformidad. Al no existir un historial continuo que demostrara que el lote estuvo a 4.5 °C durante el 98% del viaje y que solo subió en los últimos 2 minutos al abrir la puerta del vehículo, el lote fue desechado en su totalidad.
+3. **Incidente de Vacunas Comprometidas en Brigada de Vacunación (Relatado por E5 - Gianfranco Timoteo):**  
+   En una campaña de inmunización descentralizada, brigadas de salud regresaron con cajas térmicas cuyos dataloggers USB revelaron —recién al conectarse a la PC del almacén a las 18:00 horas— que la temperatura superó los 9.0 °C a las 14:15 horas. Durante cuatro horas se administraron dosis con viabilidad comprometida antes de detectarse la anomalía, evidenciando el peligro inaceptable del monitoreo pasivo diferido.
+
+***
+
+### D. Implicancias Directas para la Arquitectura y el Diseño del Sistema
+
+| Hallazgo Empírico de Entrevistas | Requerimiento Funcional Derivado | Componente de la Solución (Arquitectura / UI) |
+| :--- | :--- | :--- |
+| El paramédico no puede abrir la tapa para mirar la temperatura. | Telemetría continua en vivo proyectada en pantalla sin manipular el contenedor. | Sensor Dallas DS18B20 + Pantalla en Web App / Tablet (`US10`). |
+| Aperturas accidentales o sustracción de insumos en ruta. | Bloqueo electromecánico de tapa y control de masa del contenido. | Cerrojo solenoide con token OTP (`US17`) y celda de carga HX711 (`US11`). |
+| Pérdida de frío inadvertida por ruido de sirena. | Alertas críticas acústicas en hardware y visuales en la plataforma web. | Alertas tempranas configurables en el Centro de Incidentes (`US13`, `US14`). |
+| Desconocimiento de la hora de llegada en quirófano. | Visualización de ruta en tiempo real y cálculo automatizado de ETA dinámico. | Integración de servicio telemático de mapas y rutas (`US08`, `US12`). |
+| Disputas legales y desconfianza en actas de papel. | Generación de acta de custodia digital inmutable con sellado criptográfico. | Manifiesto digital PDF con hash SHA-256 (`US16`) almacenado en MySQL 8.0. |
 
 <div style="page-break-after: always;"></div>
 
@@ -526,7 +828,20 @@ Los resultados esperados del análisis deberán expresar porcentajes y hallazgos
 
 El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de **Medical SMARTBOX**. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones en Lima Metropolitana, se elaboraron artefactos empáticos centrados en el usuario conforme a las pautas de diseño UX de la industria (Nielsen Norman Group, Interaction Design Foundation), los cuales constituyen el cimiento empírico de las especificaciones y el diseño de la solución.
 
----
+Los artefactos de esta sección se construyen a partir de los dos patrones de comportamiento identificados en las entrevistas a profundidad (Capítulo 2.2): **decisión clínica-operativa inmediata** y **coordinación logística trazable**. Las personas descritas son arquetipos compuestos sintetizados a partir de los participantes de la investigación de campo.
+
+***
+
+### Criterios de Agrupación y Selección
+
+Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron por objetivos, tareas, responsabilidad y contexto de uso:
+
+| Conjunto | Participantes que aportan evidencia | Comportamiento común | Arquetipo resultante |
+|---|---|---|---|
+| Decisión clínica-operativa | Wilbert Toledo, Aldair Lazaro y Renato Calvo Yalan | Consulta información crítica, verifica condiciones y necesita responder con rapidez. | Personal médico y paramédicos asistenciales (Javier Soto). |
+| Coordinación logística trazable | Humberto Arellán, Gianfranco Timoteo y Karla Pacheco | Monitorea rutas y registros, coordina actores y necesita evidencia auditable. | Coordinador logístico y directores de centros de salud (Dr. Carlos Mendoza). |
+
+***
 
 ## 2.3.1. User Personas
 
@@ -544,7 +859,7 @@ Representa al personal médico y farmacéutico de destino (cirujanos de trasplan
 ![User Persona - Dr. Carlos Mendoza](assets/chapter-2/user-persona-healthcare.png)
 *Nota: Elaboración propia en UXPressia para el Segmento 2 (Centros de Salud y Farmacéuticas).*
 
----
+***
 
 ## 2.3.2. User Task Matrix
 
@@ -560,7 +875,7 @@ La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecut
 | **T06** | **Firma y validación del acta digital de transferencia de custodia** | Ambos Segmentos | Baja (Cierre de viaje) | **Crítica** | Sustituir actas en papel por registros inmutables con sellado criptográfico para DIGEMID/SUSALUD. |
 | **T07** | **Consulta de reportes históricos de excursión térmica para auditoría** | Segmento 2 (Auditoría) | Media (Mensual / Semanal) | **Media-Alta** | Certificar trazabilidad técnica ante auditorías hospitalarias e inspecciones regulatorias. |
 
----
+***
 
 ## 2.3.3. User Journey Mapping
 
@@ -578,7 +893,7 @@ Mapea la experiencia desde la coordinación de la solicitud urgente, el seguimie
 ![User Journey Map - Centros de Salud](assets/chapter-2/user-journey-logistics-healthcare.png)
 *Nota: Elaboración propia en UXPressia detallando los puntos de contacto clínicos y la mitigación de tiempos muertos.*
 
----
+***
 
 ## 2.3.4. Empathy Mapping
 
@@ -608,6 +923,17 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 * **Dolores (Pains):** Incertidumbre ("caja negra") sobre el trato térmico de la muestra durante el trayecto; pérdida de tiempo por actas manuscritas ilegibles.
 * **Necesidades (Gains):** Certificación digital de que la temperatura nunca superó los 8 °C; apertura con token OTP exclusivo y acta PDF con firma criptográfica.
 
+***
+
+### Síntesis de Necesidades Priorizadas
+
+| Prioridad | Necesidad | Criterio de validación |
+|:---:|---|---|
+| 1 | Conocer condición y ubicación de la carga en tiempo casi real. | El usuario identifica estado, vigencia y riesgo sin recurrir a otro canal. |
+| 2 | Recibir alertas accionables y priorizadas. | Cada alerta muestra severidad, causa, impacto, responsable y próximo paso. |
+| 3 | Mantener cadena de custodia verificable. | Cada evento registra fecha, hora, actor y evidencia. |
+| 4 | Coordinar incidentes en un único flujo. | Se asigna responsable, se registra acción y se confirma resolución. |
+| 5 | Cerrar y auditar el traslado. | Se obtiene una línea de tiempo y un reporte de cumplimiento/excepciones. |
 
 <div style="page-break-after: always;"></div>
 
@@ -629,12 +955,12 @@ El taller se desarrolló ejecutando rigurosamente los nueve (9) pasos estructura
 8. **Narración Inversa y Detección de Brechas (*Reverse Storytelling*):** Se ejecutó una lectura en sentido inverso, comenzando desde el evento final (`Muestra aceptada formalmente como viable` / `Acta final de entrega firmada digitalmente`) y preguntando repetidamente: *¿Qué condición previa tuvo que cumplirse para que ocurriera este hecho?* Este análisis retrospectivo descubrió eventos faltantes de bioseguridad, validaciones de pre-enfriamiento y protocolos de contingencia ante caídas de la toma vehicular de 12V.
 9. **Cierre, Consenso y Síntesis de Oportunidades (*Closing and Synthesis*):** Se consolidó el entendimiento compartido del dominio, se extrajo el vocabulario fundamental para la construcción del Lenguaje Ubicuo (Sección 2.5) y se priorizaron en notas verdes las oportunidades de solución de software e IoT (tara automática con celda de carga HX711, algoritmo predictivo de desvíos de ETA y acta digital inmutable con firma QR).
 
----
+***
 
 ![Figura 2.4 - Big Picture EventStorming: Fases de Origen, Tránsito y Destino](assets/chapter-2/smart-medical-container-eventstorming.jpg)  
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo de Alberto Brandolini para el transporte asistencial de muestras médicas y órganos en Lima Metropolitana.*
 
----
+***
 
 ### **2.4.1. Análisis del Dominio y Hallazgos de la Sesión**
 
@@ -654,7 +980,14 @@ La pizarra colaborativa desarrollada en Miro articula el flujo de izquierda a de
 
 La siguiente matriz sintetiza los problemas operativos reales identificados en la red hospitalaria de Lima y las soluciones de ingeniería de software e IoT implementadas:
 
-<table border="1" cellpadding="6" cellspacing="0">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 14%;" />
+  <col style="width: 26%;" />
+  <col style="width: 12%;" />
+  <col style="width: 28%;" />
+  <col style="width: 20%;" />
+</colgroup>
   <thead>
     <tr>
       <th>Fase Operativa</th>
@@ -738,7 +1071,7 @@ La siguiente matriz sintetiza los problemas operativos reales identificados en l
   </tbody>
 </table>
 
----
+***
 
 #### 3. Validación por Storytelling y Reverse Storytelling
 La validación del recorrido de extremo a extremo confirmó la coherencia del ciclo asistencial entre ambos segmentos. Mediante la narrativa directa se verificó la transición sin fricciones de custodia entre el médico emisor, el paramédico y el cirujano receptor. Complementariamente, el análisis retrospectivo desde el hito `Muestra aceptada formalmente como viable` (`Acta final de entrega firmada digitalmente`) comprobó que ninguna entrega puede consumarse sin la confluencia de tres condiciones inviolables: desbloqueo por OTP dentro de la geocerca hospitalaria, preservación térmica continua (2 °C a 8 °C) garantizada por el respaldo LiFePO4, y descarga íntegra de la telemetría resguardada en el búfer flash local tras cruzar túneles.
@@ -751,7 +1084,173 @@ La sesión exploratoria preliminar del Big Picture permitió delimitar cinco (5)
 4. **Chain of Custody & Traceability:** Verificación de token OTP en geocerca, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
 5. **Identity, Access & Subscriptions (IAM):** Gestión de instituciones hospitalarias, planes SaaS B2B, autenticación JWT basada en roles y trazabilidad de licencias médicas.
 
+***
 
+### **2.4.2. Flujo Detallado de Comandos, Eventos y Políticas de Dominio**
+
+Para complementar la visión macro del lienzo y facilitar la transición hacia el diseño táctico (DDD) y los contratos de software, a continuación se especifican los artefactos canónicos de la técnica:
+
+#### Leyenda de Modelado
+
+| Elemento | Significado | Ejemplo en el Dominio |
+|---|---|---|
+| **Actor** | Persona o rol que inicia una intención o toma una decisión. | Coordinador logístico, Paramédico TEM, Cirujano receptor. |
+| **Comando** | Intención de acción que busca modificar el estado del sistema. | `AsignarRecursosTraslado`, `RegistrarLecturaTelemetria`. |
+| **Evento de Dominio** | Hecho relevante consumado e inmutable expresado en tiempo pasado. | `TrasladoIniciado`, `ExcursionTermicaDetectada`. |
+| **Política / Regla** | Reacción automática ante un evento (*Whenever [Event] Then [Action]*). | Si la temperatura supera 8.0 °C por >2 min, emitir alerta crítica. |
+| **Read Model** | Proyección de datos optimizada para la toma de decisiones. | Tablero de telemetría en vivo, Línea de tiempo de custodia. |
+| **Sistema Externo** | Plataforma de terceros fuera de la frontera transaccional. | GPS / TomTom API, Bróker MQTT, Pasarela Twilio SMS. |
+| **Hotspot** | Riesgo operacional, vacío normativo o punto de fricción técnica. | Falla de señal celular 4G en zanjas viales o túneles de Lima. |
+
+#### Flujo Secuencial de Eventos de Extremo a Extremo
+
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 6%;" />
+  <col style="width: 20%;" />
+  <col style="width: 24%;" />
+  <col style="width: 25%;" />
+  <col style="width: 25%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">N.°</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Sistema</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Evento de Dominio Resultante</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model o Evidencia Generada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Institución de origen</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`SolicitarTraslado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoSolicitado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de solicitud con tipo de carga médica, origen, destino y prioridad clínica.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`ValidarSolicitud`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`SolicitudValidada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Verificación de viabilidad, disponibilidad horaria y requerimiento térmico (2 °C - 8 °C).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">3</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`AsignarRecursosTraslado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`RecursosAsignados`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Asignación de unidad móvil, contenedor inteligente y tripulación asistencial.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">4</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Paramédico asistencial</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`VerificarPreparacion`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`PreparacionVerificada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Lista de chequeo previa: estado de batería LiFePO4, calibración y conexión 12V.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">5</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Personal médico emisor</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`RegistrarCargaYSellar`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CargaRegistrada` / `ContenedorSellado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de masa inicial en celda HX711 (tara automática) y bloqueo electromecánico de solenoide.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">6</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Paramédico asistencial</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`IniciarTraslado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoIniciado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de hora exacta de salida, geocerca inicial y cálculo dinámico de ETA.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">7</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Contenedor IoT (ESP32)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`PublicarTelemetria`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TelemetriaRegistrada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Ingesta de temperatura ambiente/interna, nivel de batería, estado de tapa y coordenadas GPS.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">8</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Motor de Reglas de Negocio</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`EvaluarCondiciones`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CondicionEvaluada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Validación de cumplimiento estricto del rango térmico e integridad de la ruta.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">9</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`SupervisarMonitoreo`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`MonitoreoConfirmado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Tablero de control de flota en tiempo real con semaforización de riesgo.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">10</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Conductor de ambulancia</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`RegistrarArribo`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`UnidadArribadaADestino`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Activación de geocerca hospitalaria de pre-arribo (radio ≤ 2 km / 10 min).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">11</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Cirujano / Farmacéutico receptor</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`VerificarCarga`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CondicionFinalVerificada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Inspección de integridad celular, historial térmico continuo y balance de peso.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">12</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Cirujano / Farmacéutico receptor</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`AceptarORechazarEntrega`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`EntregaAceptada` / `EntregaRechazada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Desbloqueo mediante token dinámico OTP en geocerca y registro de observaciones clínicas.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">13</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`CerrarTraslado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoCerrado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Sellado de la línea de tiempo inmutable de custodia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">14</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Plataforma Web</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`GenerarExpedienteAuditoria`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`ExpedienteAuditoriaGenerado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Exportación de reporte técnico PDF sellado con hash criptográfico SHA-256 para DIGEMID.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+#### Políticas y Rutas Alternativas de Contingencia
+
+* **Desviación Térmica (Excursión Térmica):**
+  * *Evento desencadenante:* `TemperaturaFueraDeRango`.
+  * *Política reactiva:* Si la temperatura interna excede los 8.0 °C o desciende de 2.0 °C durante más de 120 segundos continuos, disparar de inmediato alerta acústica/visual en cabina vehicular y remitir notificación push de máxima severidad a los médicos del hospital receptor.
+  * *Acción correctiva:* Paramédico verifica ventilación y suministro eléctrico del contenedor; se registra la intervención en la bitácora telemática.
+* **Pérdida de Conectividad Celular (Túneles y Zonas de Sombra 4G):**
+  * *Evento desencadenante:* `TelemetriaInterrumpida`.
+  * *Política reactiva:* El microcontrolador ESP32 conmuta autónomamente al búfer de memoria flash interna no volátil (almacenando hasta 5,000 muestras con marca de tiempo del RTC), marcando el read model web con advertencia de última lectura conocida. Al reconectar la red celular 4G, se gatilla `TelemetriaRestablecida` y sincronización secuencial en bloque.
+* **Retraso Crítico por Congestión Vehicular:**
+  * *Evento desencadenante:* `ETAEscedido`.
+  * *Política reactiva:* Reevaluación del tráfico en tiempo real mediante TomTom Traffic API. Si la demora supera los 15 minutos respecto a la ventana de viabilidad del órgano, notificar a la central de despacho para gestionar apoyo vial policial o advertir al equipo quirúrgico receptor.
+* **Apertura No Autorizada de Escotilla:**
+  * *Evento desencadenante:* `AperturaFueraDeGeocercaDetectada`.
+  * *Política reactiva:* Si el sensor magnético detecta separación de la tapa fuera del radio hospitalario autorizado, marcar `CadenaDeCustodiaComprometida`, activar sirena local de seguridad y registrar el incidente con coordenadas geográficas inmediatas.
+
+#### Agregados y Límites del Dominio
+
+| Agregado | Responsabilidad Principal | Eventos de Dominio Clave |
+|---|---|---|
+| **MedicalTransport** | Orquestar el ciclo de vida del traslado, tripulación, ruta y tiempos comprometidos. | `TrasladoSolicitado`, `TrasladoIniciado`, `UnidadArribadaADestino`, `TrasladoCerrado`. |
+| **SmartContainer** | Gestionar el estado operativo del hardware, precinto electromecánico y calibración de sensores. | `ContenedorSellado`, `TapaAperturada`, `SuministroConmutadoLiFePO4`. |
+| **MedicalPayload** | Salvaguardar la identificación de la carga biológica, condiciones requeridas y verificación médica. | `CargaRegistrada`, `CondicionFinalVerificada`, `EntregaAceptada`. |
+| **TelemetryMonitoring**| Ingestar series temporales de temperatura, humedad, peso neto HX711 y posicionamiento GPS. | `TelemetriaRegistrada`, `CondicionEvaluada`, `MuestraSincronizada`. |
+| **IncidentAlert** | Gestionar el ciclo de vida de anomalías térmicas y operativas, asignación de responsables y mitigación. | `AlertaGenerada`, `AccionMitigacionRegistrada`, `IncidenteResuelto`. |
+| **ChainOfCustody** | Preservar el registro inmutable de transferencias de custodia con firmas electrónicas y token OTP. | `CustodiaTransferida`, `EntregaConfirmada`, `ActaFirmada`. |
 
 <div style="page-break-after: always;"></div>
 
@@ -795,7 +1294,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | 28 | **Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)** | Smart Container & Telemetry Monitoring | Value Object / Domain Event |
 | 29 | **Weight-Based Medical Stock (Stock Médico Ponderal)** | Smart Container & Telemetry Monitoring | Value Object |
 
----
+***
 
 ### **2.5.1. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
@@ -831,7 +1330,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.2. Bounded Context: Medical Transport Planning & Dispatching**
 
@@ -887,7 +1386,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.3. Bounded Context: Smart Container & Telemetry Monitoring**
 
@@ -943,7 +1442,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.4. Bounded Context: Critical Alerting & Incident Response**
 
@@ -979,7 +1478,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.5. Bounded Context: Chain of Custody & Traceability**
 
@@ -1020,10 +1519,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
-
 <div style="page-break-after: always;"></div>
-
-# Capítulo III: Requirements Specification
 
 # 3.1. User Stories
 
@@ -1043,21 +1539,341 @@ Todos los criterios de aceptación siguen la especificación **Gherkin** (Dado q
 | **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial, deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | **Dado que** el visitante ingresa al centro de ayuda del sitio web,<br>**Cuando** selecciona la categoría de hardware y sensores IoT,<br>**Entonces** el sistema muestra las respuestas estructuradas sobre la cadena de frío y conectividad. | EP02 |
 | **EP03** | Container & Ambulance Provisioning | Épica para el alta, configuración y vinculación de contenedores IoT y unidades de ambulancia. | N/A | N/A |
 | **US07** | Alta de Unidades de Ambulancia | Como operador logístico de salud, deseo registrar vehículos de transporte en el sistema para asociarles contenedores de insumos. | **Dado que** el operador logístico ha iniciado sesión,<br>**Cuando** ingresa los datos de identificación y matrícula de la ambulancia,<br>**Entonces** el sistema registra el vehículo en el inventario activo de la institución. | EP03 |
-| **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión de la carga. | **Dado que** el operador selecciona una ambulancia disponible,<br>**When** ingresa el identificador único del contenedor inteligente,<br>**Then** el sistema asigna el dispositivo al vehículo y habilita la recepción de telemetría. | EP03 |
-| **US09** | Ingesta de Telemetría IoT (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/containers/{containerId}/telemetry` para registrar datos térmicos y de estado. | **Dado que** el contenedor transmite un payload con temperatura, peso, apertura y batería,<br>**When** la API valida y procesa la estructura de datos,<br>**Then** almacena la lectura en la base de datos y responde con HTTP 201 Created. | EP03 |
+| **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión de la carga. | **Dado que** el operador selecciona una ambulancia disponible,<br>**Cuando** ingresa el identificador único del contenedor inteligente,<br>**Entonces** el sistema asigna el dispositivo al vehículo y habilita la recepción de telemetría. | EP03 |
+| **US09** | Ingesta de Telemetría IoT (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/containers/{containerId}/telemetry` para registrar datos térmicos y de estado. | **Dado que** el contenedor transmite un payload con temperatura, peso, apertura y batería,<br>**Cuando** la API valida y procesa la estructura de datos,<br>**Entonces** almacena la lectura en la base de datos y responde con HTTP 201 Created. | EP03 |
 | **EP04** | Real-Time Environmental & Fleet Monitoring | Épica centrada en la supervisión continua de temperatura, inventario por peso, GPS, combustible y ETA. | N/A | N/A |
-| **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | **Dado que** la ambulancia se encuentra en ruta de traslado,<br>**When** los sensores del contenedor registran cambios térmicos o de escotilla,<br>**Then** la plataforma actualiza de forma inmediata las lecturas en la vista de monitoreo. | EP04 |
-| **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia, deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | **Dado que** el usuario médico consulta el detalle del contenedor,<br>**When** se retira o ingresa un insumo médico,<br>**Then** el sistema calcula la diferencia de masa y actualiza el estimado de stock en la plataforma. | EP04 |
-| **US12** | Consulta de Telemetría e Indicadores (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/containers/{containerId}/metrics` para alimentar la vista del panel web. | **Dado que** el cliente web solicita el estado actual de un contenedor,<br>**When** la API procesa la petición con un identificador válido,<br>**Then** responde con código HTTP 200 y el objeto JSON con las últimas mediciones. | EP04 |
+| **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | **Dado que** la ambulancia se encuentra en ruta de traslado,<br>**Cuando** los sensores del contenedor registran cambios térmicos o de escotilla,<br>**Entonces** la plataforma actualiza de forma inmediata las lecturas en la vista de monitoreo. | EP04 |
+| **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia, deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | **Dado que** el usuario médico consulta el detalle del contenedor,<br>**Cuando** se retira o ingresa un insumo médico,<br>**Entonces** el sistema calcula la diferencia de masa y actualiza el estimado de stock en la plataforma. | EP04 |
+| **US12** | Consulta de Telemetría e Indicadores (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/containers/{containerId}/metrics` para alimentar la vista del panel web. | **Dado que** el cliente web solicita el estado actual de un contenedor,<br>**Cuando** la API procesa la petición con un identificador válido,<br>**Entonces** responde con código HTTP 200 y el objeto JSON con las últimas mediciones. | EP04 |
 | **EP05** | Incident Alerts & Medical Dispatch | Épica para la gestión y notificación de incidentes críticos como variaciones térmicas o retrasos. | N/A | N/A |
-| **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | **Dado que** el supervisor edita los parámetros de conservación de una carga sensible,<br>**When** guarda los límites mínimos y máximos de temperatura,<br>**Then** el sistema registra la regla de negocio para la emisión de alertas. | EP05 |
-| **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud, deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | **Dado que** un sensor detecta una anomalía de temperatura o nivel crítico de batería,<br>**When** el evento es registrado por el sistema,<br>**Then** la plataforma notifica la alerta priorizada en el panel del operador. | EP05 |
-| **US15** | Servicio de Despacho de Alertas (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/alerts/dispatch` para procesar notificaciones de emergencia. | **Dado que** la regla de negocio detecta la ruptura de la cadena de frío,<br>**When** la API ejecuta el servicio de despacho,<br>**Then** genera la notificación correspondiente y retorna un código HTTP 202 Accepted. | EP05 |
+| **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | **Dado que** el supervisor edita los parámetros de conservación de una carga sensible,<br>**Cuando** guarda los límites mínimos y máximos de temperatura,<br>**Entonces** el sistema registra la regla de negocio para la emisión de alertas. | EP05 |
+| **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud, deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | **Dado que** un sensor detecta una anomalía de temperatura o nivel crítico de batería,<br>**Cuando** el evento es registrado por el sistema,<br>**Entonces** la plataforma notifica la alerta priorizada en el panel del operador. | EP05 |
+| **US15** | Servicio de Despacho de Alertas (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/alerts/dispatch` para procesar notificaciones de emergencia. | **Dado que** la regla de negocio detecta la ruptura de la cadena de frío,<br>**Cuando** la API ejecuta el servicio de despacho,<br>**Entonces** genera la notificación correspondiente y retorna un código HTTP 202 Accepted. | EP05 |
 | **EP06** | Chain of Custody & Audit Reports | Épica orientada al registro histórico, trazabilidad de la cadena de custodia y reportes de auditoría. | N/A | N/A |
-| **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario, deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | **Dado que** un traslado médico ha finalizado,<br>**When** el supervisor solicita la consolidación del informe de auditoría,<br>**Then** el sistema genera un reporte con la gráfica de temperatura, aperturas y tiempos de traslado. | EP06 |
-| **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia, deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | **Dado que** la ambulancia arriba a la institución de destino,<br>**When** el profesional de salud confirma la recepción satisfactoria de la carga,<br>**Then** el sistema sella el registro histórico con fecha, hora y responsable de recepción. | EP06 |
-| **US18** | Consulta de Historial de Traslados (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría. | **Dado que** se requiere auditar un traslado finalizado,<br>**When** la API procesa la consulta con el identificador de traslado,<br>**Then** devuelve un código HTTP 200 con el historial de eventos y datos de telemetría. | EP06 |
+| **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario, deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | **Dado que** un traslado médico ha finalizado,<br>**Cuando** el supervisor solicita la consolidación del informe de auditoría,<br>**Entonces** el sistema genera un reporte con la gráfica de temperatura, aperturas y tiempos de traslado. | EP06 |
+| **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia, deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | **Dado que** la ambulancia arriba a la institución de destino,<br>**Cuando** el profesional de salud confirma la recepción satisfactoria de la carga,<br>**Entonces** el sistema sella el registro histórico con fecha, hora y responsable de recepción. | EP06 |
+| **US18** | Consulta de Historial de Traslados (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría. | **Dado que** se requiere auditar un traslado finalizado,<br>**Cuando** la API procesa la consulta con el identificador de traslado,<br>**Entonces** devuelve un código HTTP 200 con el historial de eventos y datos de telemetría. | EP06 |
 
+
+En esta sección se especifican las 18 historias de usuario (User Stories) que definen el alcance funcional del ecosistema **NeonCode**. La arquitectura funcional abarca la plataforma web responsive para supervisión hospitalaria y logística, el sitio web público (Landing Page) orientado a la captación de clientes institucionales, y los servicios backend RESTful API para la ingesta y procesamiento de telemetría IoT de contenedores médicos inteligentes.
+
+Todos los criterios de aceptación están redactados en español bajo el estándar **Gherkin** (Dado que / Cuando / Entonces), estructurados en modo orientado a escenarios (*scenario-oriented*), cubriendo flujos exitosos, excepciones y reglas del dominio de la salud.
+
+***
+
+### Epic 01: Identity & Access Management (EP01)
+
+#### **US01: Registro de Institución de Salud**
+* **Título:** Registro de Institución de Salud.
+* **Descripción:** Como supervisor hospitalario, deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores térmicos inteligentes.
+* **Relacionado con:** EP01
+* **Criterios de Aceptación:**
+    * **Escenario 1: Registro exitoso de institución (Happy Path)**
+        * **Dado que** la institución de salud no cuenta con una cuenta previa en el sistema.
+        * **Cuando** el usuario ingresa una Razón Social válida, el número de identificación tributaria (RUC) activo, una dirección de correo institucional corporativo y establece una contraseña que cumpla con los estándares de seguridad (mínimo 8 caracteres, mayúscula, número y carácter especial).
+        * **Entonces** el sistema crea la cuenta institucional en estado pendiente de verificación y despacha un correo electrónico con un enlace de confirmación al correo proporcionado.
+    * **Escenario 2: Intento de registro con identificación tributaria duplicada**
+        * **Dado que** ya existe un centro médico registrado con el mismo RUC en la base de datos.
+        * **Cuando** el usuario intenta registrarse utilizando dicho número de RUC.
+        * **Entonces** el sistema rechaza la solicitud, no genera registros nuevos y notifica que la institución ya se encuentra registrada en la plataforma.
+    * **Escenario 3: Validación de formato de correo no corporativo**
+        * **Dado que** el usuario ingresa un correo de un dominio público no permitido (ej. @gmail.com, @hotmail.com).
+        * **Cuando** intenta enviar el formulario de registro.
+        * **Entonces** el sistema bloquea el registro e indica que debe utilizar un dominio de correo institucional.
+
+***
+
+#### **US02: Autenticación de Personal de Emergencia**
+* **Título:** Autenticación de Personal de Emergencia.
+* **Descripción:** Como personal médico de emergencia, deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real durante un traslado.
+* **Relacionado con:** EP01
+* **Criterios de Aceptación:**
+    * **Escenario 1: Inicio de sesión exitoso**
+        * **Dado que** el usuario médico cuenta con credenciales activas y confirmadas.
+        * **Cuando** ingresa su usuario registrado y contraseña correcta.
+        * **Entonces** el sistema valida la identidad, inicia la sesión de usuario y concede acceso inmediato al panel de supervisión de unidades asignadas.
+    * **Escenario 2: Intento de acceso con contraseña errónea**
+        * **Dado que** el usuario ingresa una contraseña incorrecta para una cuenta existente.
+        * **Cuando** solicita iniciar sesión.
+        * **Entonces** el sistema deniega el acceso y muestra un mensaje genérico de credenciales inválidas.
+    * **Escenario 3: Bloqueo de cuenta por intentos fallidos recurrentes**
+        * **Dado que** un usuario acumula 5 intentos fallidos consecutivos de inicio de sesión.
+        * **Cuando** realiza el quinto intento incorrecto.
+        * **Entonces** el sistema bloquea temporalmente la cuenta por un periodo de 15 minutos y envía una alerta de seguridad al correo registrado.
+
+***
+
+#### **US03: Endpoint de Autenticación de Usuarios (API)**
+* **Título:** Endpoint de Autenticación de Usuarios (API).
+* **Descripción:** Como Developer, deseo disponer de un endpoint `POST /api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión seguros para las aplicaciones clientes.
+* **Relacionado con:** EP01
+* **Criterios de Aceptación:**
+    * **Escenario 1: Petición de autenticación válida**
+        * **Dado que** la aplicación cliente envía una solicitud `POST /api/v1/authentication/sign-in` con un cuerpo JSON conteniendo `username` y `password` válidos.
+        * **Cuando** la API procesa y verifica las credenciales en la base de datos.
+        * **Entonces** responde con un código `HTTP 200 OK`, retornando en la respuesta un objeto JSON con el token JWT de sesión, la fecha de expiración y los roles asociados.
+    * **Escenario 2: Credenciales inválidas o inexistentes**
+        * **Dado que** el cuerpo de la solicitud contiene credenciales que no coinciden con ningún usuario activo.
+        * **Cuando** la API procesa la petición.
+        * **Entonces** responde con un código `HTTP 401 Unauthorized` y una estructura JSON estándar de error detallando la denegación de acceso.
+    * **Escenario 3: Solicitud con estructura de payload malformada**
+        * **Dado que** el cliente envía una petición omitiendo campos requeridos en el JSON.
+        * **Cuando** la API ejecuta la validación de entrada.
+        * **Entonces** responde con un código `HTTP 400 Bad Request` indicando las reglas de validación no cumplidas.
+
+***
+
+### Epic 02: Landing Page & Brand Awareness (EP02)
+
+#### **US04: Exploración de Propuesta de Valor Logística**
+* **Título:** Exploración de Propuesta de Valor Logística.
+* **Descripción:** Como visitante comercial, deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación en mi centro de salud.
+* **Relacionado con:** EP02
+* **Criterios de Aceptación:**
+    * **Escenario 1: Despliegue de especificaciones técnicas e información de solución**
+        * **Dado que** el visitante ingresa al portal público de NeonCode.
+        * **Cuando** explora la sección de soluciones para transporte y conservación médica.
+        * **Entonces** el sistema presenta la información sobre el rango de control térmico (-20°C a +8°C), autonomía energética, capacidad de sensores de masa/apertura y los planes de suscripción disponibles.
+    * **Escenario 2: Disponibilidad y tiempo de respuesta del portal**
+        * **Dado que** el visitante solicita la navegación dentro de la plataforma pública.
+        * **Cuando** la página carga sus contenidos.
+        * **Entonces** los activos de información sobre las características IoT deben renderizarse completamente en un tiempo no mayor a 2 segundos bajo conexiones estándar.
+
+***
+
+#### **US05: Solicitud de Demostración Corporativa**
+* **Título:** Solicitud de Demostración Corporativa.
+* **Descripción:** Como visitante comercial, deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario.
+* **Relacionado con:** EP02
+* **Criterios de Aceptación:**
+    * **Escenario 1: Envío exitoso de solicitud de demo**
+        * **Dado que** el visitante completa los campos obligatorios del formulario (Nombre, Cargo, Nombre de la Institución, Correo Corporativo, Teléfono y Tamaño de Flota).
+        * **Cuando** ejecuta el envío del formulario.
+        * **Entonces** el sistema almacena los datos en el módulo de prospectos y envía automáticamente un correo de confirmación de recepción al visitante y una notificación al equipo de ventas.
+    * **Escenario 2: Intento de envío con datos incompletos**
+        * **Dado que** el visitante omite llenar alguno de los campos obligatorios.
+        * **Cuando** intenta enviar el formulario de contacto.
+        * **Entonces** el sistema detiene el proceso de envío y notifica de manera específica cuáles campos deben ser completados.
+
+***
+
+#### **US06: Consulta de Preguntas Frecuentes (FAQ)**
+* **Título:** Consulta de Preguntas Frecuentes.
+* **Descripción:** Como visitante comercial, deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración del hardware IoT en ambulancias.
+* **Relacionado con:** EP02
+* **Criterios de Aceptación:**
+    * **Escenario 1: Filtrado y visualización de categorías de ayuda**
+        * **Dado que** el visitante accede a la sección de soporte del Landing Page.
+        * **Cuando** selecciona la categoría de "Hardware y Sensores IoT".
+        * **Entonces** el sistema despliega las preguntas y respuestas vinculadas a la homologación de la batería, calibración de sensores de temperatura y soporte de conectividad móvil en ambulancias.
+    * **Escenario 2: Búsqueda de palabras clave en el centro de ayuda**
+        * **Dado que** el usuario ingresa un término de búsqueda (ej. "Cadena de frío").
+        * **Cuando** procesa la consulta en la barra de búsqueda de FAQ.
+        * **Entonces** el sistema filtra y expone únicamente aquellos elementos cuya pregunta o respuesta contengan la palabra clave consultada.
+
+***
+
+### Epic 03: Container & Ambulance Provisioning (EP03)
+
+#### **US07: Alta de Unidades de Ambulancia**
+* **Título:** Alta de Unidades de Ambulancia.
+* **Descripción:** Como operador logístico de salud, deseo registrar vehículos de transporte en el sistema para asociarles posteriormente contenedores de insumos.
+* **Relacionado con:** EP03
+* **Criterios de Aceptación:**
+    * **Escenario 1: Registro exitoso de ambulancia**
+        * **Dado que** el operador logístico se encuentra autenticado con un rol con permisos de gestión de inventario.
+        * **Cuando** registra el código de placa del vehículo, el tipo de unidad (SVA/SVB) y el modelo de la ambulancia.
+        * **Entonces** el sistema valida que la placa no esté registrada previamente, guarda el nuevo vehículo y le asigna el estado "Disponible sin contenedor".
+    * **Escenario 2: Intento de registro con placa duplicada**
+        * **Dado que** la placa de la ambulancia ya se encuentra registrada para la misma institución.
+        * **Cuando** el operador intenta guardar el registro.
+        * **Entonces** el sistema impide la creación del duplicado y envía una alerta de conflicto de identificación del vehículo.
+
+***
+
+#### **US08: Vinculación de Contenedor Inteligente**
+* **Título:** Vinculación de Contenedor Inteligente.
+* **Descripción:** Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión activa de la carga médica.
+* **Relacionado con:** EP03
+* **Criterios de Aceptación:**
+    * **Escenario 1: Vinculación exitosa de contenedor a vehículo**
+        * **Dado que** se dispone de una ambulancia registrada en estado "Disponible sin contenedor" y un contenedor inteligente en estado "Inactivo/Desvinculado".
+        * **Cuando** el operador selecciona la unidad de ambulancia y digita el identificador físico (UUID/MAC) del contenedor IoT.
+        * **Entonces** el sistema establece la relación entre ambos componentes, cambia el estado de la ambulancia a "Monitoreo Activo" y habilita la recepción de paquetes de telemetría para dicha combinación.
+    * **Escenario 2: Intento de vinculación de un contenedor previamente asignado**
+        * **Dado que** el contenedor IoT ya se encuentra asignado a otra unidad activa.
+        * **Cuando** el operador intenta asociarlo a una nueva ambulancia.
+        * **Entonces** el sistema rechaza la operación e indica que el contenedor debe ser desvinculado de su unidad origen antes de una nueva asignación.
+
+***
+
+#### **US09: Ingesta de Telemetría IoT (API)**
+* **Título:** Ingesta de Telemetría IoT (API).
+* **Descripción:** Como Developer, deseo contar con un endpoint `POST /api/v1/containers/{containerId}/telemetry` para registrar periódicamente datos térmicos, de peso y estado del contenedor.
+* **Relacionado con:** EP03
+* **Criterios de Aceptación:**
+    * **Escenario 1: Recepción e ingesta de payload de telemetría válido**
+        * **Dado que** un contenedor IoT autenticado transmite un `POST` al endpoint especificando un `{containerId}` válido y un payload con `temperature`, `weight`, `doorStatus`, `batteryLevel` y `timestamp`.
+        * **Cuando** la API procesa y valida que los valores numéricos están dentro de rangos físicamente posibles.
+        * **Entonces** registra la lectura en la base de datos de series temporales y responde con un código `HTTP 201 Created`.
+    * **Escenario 2: Envío de lectura con identificador de contenedor inexistente**
+        * **Dado que** el hardware transmite datos utilizando un `{containerId}` no registrado en la plataforma.
+        * **Cuando** la API evalúa la solicitud.
+        * **Entonces** descarta el registro y responde con un código `HTTP 404 Not Found`.
+    * **Escenario 3: Petición sin token de autenticación de dispositivo**
+        * **Dado que** la solicitud HTTP carece de la cabecera de autenticación del dispositivo IoT (`X-Device-Token`).
+        * **Cuando** la API recibe la transmisión.
+        * **Entonces** rechaza la conexión con un código `HTTP 401 Unauthorized`.
+
+***
+
+### Epic 04: Real-Time Environmental & Fleet Monitoring (EP04)
+
+#### **US10: Monitoreo Térmico y de Apertura**
+* **Título:** Monitoreo Térmico y de Apertura.
+* **Descripción:** Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de la escotilla del contenedor para garantizar la conservación del paquete médico durante el trayecto.
+* **Relacionado con:** EP04
+* **Criterios de Aceptación:**
+    * **Escenario 1: Visualización en tiempo real de variables ambientales**
+        * **Dado que** el contenedor inteligente está vinculado a una ambulancia en ruta.
+        * **Cuando** los sensores del dispositivo emiten una nueva lectura de temperatura o detectan el cambio en la escotilla (abierta/cerrada).
+        * **Entonces** el sistema procesa el evento y actualiza de manera inmediata la información expuesta en el panel de supervisión sin requerir la recarga manual de la página.
+    * **Escenario 2: Indicación visual de pérdida de señal de telemetría**
+        * **Dado que** un contenedor activo deja de transmitir telemetría durante más de 3 minutos debido a fallas de cobertura.
+        * **Cuando** se cumple el tiempo límite de inactividad.
+        * **Entonces** el sistema marca el estado de la conexión como "Sin Señal / Desconectado" y registra la hora de última lectura recibida.
+
+***
+
+#### **US11: Control de Stock por Sensores de Peso**
+* **Título:** Control de Stock por Sensores de Peso.
+* **Descripción:** Como personal médico de emergencia, deseo verificar la disponibilidad y retiro de insumos mediante sensores de peso para confirmar existencias en tiempo real.
+* **Relacionado con:** EP04
+* **Criterios de Aceptación:**
+    * **Escenario 1: Detección y cálculo de retiro de insumo médico**
+        * **Dado que** el contenedor tiene registrado un inventario con un peso base total de 5.00 kg.
+        * **Cuando** el personal médico abre la escotilla y retira un paquete de insumos de 0.50 kg.
+        * **Entonces** el sistema detecta la variación de peso tras el cierre de la escotilla, calcula la diferencia de masa y descuenta la unidad del inventario estimado.
+    * **Escenario 2: Notificación por inconsistencia de masa no registrada**
+        * **Dado que** la variación de peso registrada no coincide con el peso promedio de los insumos parametrizados.
+        * **Cuando** se procesa la lectura.
+        * **Entonces** el sistema genera una observación en la bitácora de la ruta indicando "Divergencia de peso no clasificada".
+
+***
+
+#### **US12: Consulta de Telemetría e Indicadores (API)**
+* **Título:** Consulta de Telemetría e Indicadores (API).
+* **Descripción:** Como Developer, deseo disponer de un endpoint `GET /api/v1/containers/{containerId}/metrics` para proveer las últimas mediciones consolidadas a la interfaz de usuario.
+* **Relacionado con:** EP04
+* **Criterios de Aceptación:**
+    * **Escenario 1: Consulta exitosa de métricas actuales**
+        * **Dado que** la aplicación de supervisión consulta la API con un `{containerId}` válido y activo.
+        * **Cuando** la API procesa la petición de lectura.
+        * **Entonces** responde con un código `HTTP 200 OK` retornando un objeto JSON con la última lectura de temperatura, nivel de batería, estado de escotilla, peso y fecha/hora de sincronización.
+    * **Escenario 2: Consulta sobre contenedor sin lecturas previas**
+        * **Dado que** el contenedor existe pero no ha registrado aún lecturas de telemetría.
+        * **Cuando** se ejecuta la consulta GET al endpoint.
+        * **Entonces** la API responde con un código `HTTP 200 OK` entregando la estructura con valores nulos y un indicador de estado "Sin datos registrados".
+
+***
+
+### Epic 05: Incident Alerts & Medical Dispatch (EP05)
+
+#### **US13: Configuración de Umbrales Térmicos Críticos**
+* **Título:** Configuración de Umbrales Térmicos Críticos.
+* **Descripción:** Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos (mínimo y máximo) para recibir avisos preventivos ante desviaciones en la cadena de frío.
+* **Relacionado con:** EP05
+* **Criterios de Aceptación:**
+    * **Escenario 1: Guardado correcto de límites de tolerancia térmica**
+        * **Dado que** el supervisor accede a la configuración de parámetros de conservación de una carga sensible (ej. Órganos o vacunas).
+        * **Cuando** define una temperatura mínima de 2°C y una temperatura máxima de 8°C y solicita guardar la regla.
+        * **Entonces** el sistema almacena la configuración de umbrales y la asocia a las evaluaciones en tiempo real del contenedor asignado.
+    * **Escenario 2: Validación de rango térmico inconsistente**
+        * **Dado que** el supervisor intenta ingresar un valor de temperatura mínima que es igual o mayor a la temperatura máxima definida.
+        * **Cuando** procesa la solicitud de guardado.
+        * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser strictly menor al límite máximo.
+
+***
+
+#### **US14: Visualización de Alertas en Ruta**
+* **Título:** Visualización de Alertas en Ruta.
+* **Descripción:** Como operador logístico de salud, deseo recibir avisos prioritarios de variaciones térmicas o apertura no autorizada para ejecutar acciones correctivas inmediatas.
+* **Relacionado con:** EP05
+* **Criterios de Aceptación:**
+    * **Escenario 1: Generación de alerta por ruptura de la cadena de frío**
+        * **Dado que** el contenedor tiene un rango configurado entre 2°C y 8°C.
+        * **Cuando** la telemetría reporta una lectura de 9.5°C persistente durante más de 60 segundos.
+        * **Entonces** el sistema genera una alerta de prioridad alta "Ruptura de Cadena de Frío", la registra en la bitácora del traslado y la notifica en el panel del operador.
+    * **Escenario 2: Generación de alerta por apertura prolongada de escotilla**
+        * **Dado que** el contenedor se encuentra en traslado con la escotilla en estado "Abierta".
+        * **Cuando** el tiempo de apertura continua excede los 120 segundos.
+        * **Entonces** el sistema emite una alerta de advertencia "Escotilla Abierta Prolongada" dirigida al personal médico de la unidad.
+
+***
+
+#### **US15: Servicio de Despacho de Alertas (API)**
+* **Título:** Servicio de Despacho de Alertas (API).
+* **Descripción:** Como Developer, deseo contar con un endpoint `POST /api/v1/alerts/dispatch` para procesar y canalizar notificaciones de eventos críticos hacia servicios externos.
+* **Relacionado con:** EP05
+* **Criterios de Aceptación:**
+    * **Escenario 1: Procesamiento y despacho exitoso de evento de alerta**
+        * **Dado que** el motor de reglas detecta un evento anómalo y envía la estructura JSON de la alerta con el nivel de severidad, ID de contenedor y tipo de anomalía.
+        * **Cuando** la API procesa la solicitud de despacho.
+        * **Entonces** registra la incidencia en la base de datos, encola el envío de correo/SMS y responde con un código `HTTP 202 Accepted`.
+    * **Escenario 2: Petición de despacho con campos obligatorios faltantes**
+        * **Dado que** la solicitud omitió el nivel de severidad (`severityLevel`) o el identificador del evento (`eventId`).
+        * **Cuando** la API evalúa la estructura del mensaje.
+        * **Entonces** detiene la ejecución y devuelve un código `HTTP 400 Bad Request`.
+
+***
+
+### Epic 06: Chain of Custody & Audit Reports (EP06)
+
+#### **US16: Generación de Reportes de Trazabilidad**
+* **Título:** Generación de Reportes de Trazabilidad.
+* **Descripción:** Como supervisor hospitalario, deseo exportar el informe consolidado del traslado médico para certificar el cumplimiento normativo de la cadena de frío.
+* **Relacionado con:** EP06
+* **Criterios de Aceptación:**
+    * **Escenario 1: Exportación exitosa de informe de trazabilidad**
+        * **Dado que** un traslado médico ha sido marcado como "Finalizado".
+        * **Cuando** el supervisor solicita la generación del reporte consolidado de trazabilidad en formato PDF.
+        * **Entonces** el sistema compila la gráfica temporal de variaciones de temperatura, el registro de apertura de escotillas, el historial de peso y el resumen de alertas emitidas durante la ruta.
+    * **Escenario 2: Intento de generación de reporte en traslado en curso**
+        * **Dado que** el traslado aún se encuentra en estado "En Ruta / Activo".
+        * **Cuando** el supervisor intenta consolidar el reporte final de auditoría.
+        * **Entonces** el sistema bloquea la emisión final e indica que únicamente se pueden generar reportes parciales o preliminares mientras el traslado siga abierto.
+
+***
+
+#### **US17: Confirmación de Entrega y Cadena de Custodia**
+* **Título:** Confirmación de Entrega y Cadena de Custodia.
+* **Descripción:** Como personal médico de emergencia, deseo registrar la recepción del contenedor en el punto de destino para cerrar formalmente la cadena de custodia del envío.
+* **Relacionado con:** EP06
+* **Criterios de Aceptación:**
+    * **Escenario 1: Cierre exitoso y sellado de cadena de custodia**
+        * **Dado que** la ambulancia ha arribado al centro hospitalario de destino.
+        * **Cuando** el profesional médico receptor valida el paquete, firma digitalmente la recepción y confirma la entrega en el sistema.
+        * **Entonces** la plataforma actualiza el estado del traslado a "Entregado", sella el registro histórico inmutable con la fecha, hora exacta y la identidad del receptor, liberando el contenedor para una nueva asignación.
+    * **Escenario 2: Cierre de traslado con alertas no resueltas**
+        * **Dado que** el traslado cuenta con alertas de temperatura críticas sin justificación o resolución previa.
+        * **Cuando** se intenta cerrar la cadena de custodia.
+        * **Entonces** el sistema exige al usuario ingresar una observación de cierre obligatoria detallando las condiciones en las que se recibe la carga antes de permitir la finalización del servicio.
+
+***
+
+#### **US18: Consulta de Historial de Traslados (API)**
+* **Título:** Consulta de Historial de Traslados (API).
+* **Descripción:** Como Developer, deseo disponer de un endpoint `GET /api/v1/transfers/{transferId}/audit` para recuperar el registro completo de auditoría y eventos de un traslado.
+* **Relacionado con:** EP06
+* **Criterios de Aceptación:**
+    * **Escenario 1: Recuperación de registro de auditoría completo**
+        * **Dado que** se requiere auditar un traslado con un `{transferId}` existente.
+        * **Cuando** la API procesa la solicitud `GET /api/v1/transfers/{transferId}/audit` con credenciales de auditor o supervisor.
+        * **Entonces** devuelve un código `HTTP 200 OK` con un objeto JSON conteniendo el resumen del trayecto, tiempos de inicio y fin, datos del receptor y la serie temporal completa de la telemetría registrada.
+    * **Escenario 2: Intento de consulta de auditoría con identificador inexistente**
+        * **Dado que** la solicitud utiliza un `{transferId}` que no existe en el registro histórico.
+        * **Cuando** la API busca el expediente.
+        * **Entonces** responde con un código `HTTP 404 Not Found` notificando la inexistencia del registro.
 
 <div style="page-break-after: always;"></div>
 
@@ -1073,7 +1889,7 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 3. **Impact:** Los cambios conductuales o beneficios esperados en los actores.
 4. **Deliverables & User Stories:** Los entregables digitales y las historias de usuario asociadas que provocan dichos impactos.
 
----
+***
 
 ### Mapeo Completo por Objetivos de Negocio (Business Goals)
 
@@ -1092,7 +1908,7 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
             * **US01:** Registro de Institución de Salud.
             * **US07:** Alta de Unidades de Ambulancia.
 
----
+***
 
 #### Goal 2: Reducir en un 40% las incidencias de pérdida de insumos médicos y ruptura de la cadena de frío durante los traslados en el primer año.
 
@@ -1116,16 +1932,15 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
             * **US13:** Configuración de Umbrales Térmicos Críticos.
             * **US16:** Generación de Reportes de Trazabilidad.
 
----
+***
 
 ### Captura de los Artefactos en UXPressia
 
 #### Impact Map Goal 1
-<img src="assets/chapter-3/impact-map-goal-1.png" alt="Impact Map Goal 1" width="600">
+![Impact Map Goal 1](assets/chapter-3/impact-map-goal-1.png)
 
 #### Impact Map Goal 2
-<img src="assets/chapter-3/impact-map-goal-2.png" alt="Impact Map Goal 2" width="600">
-
+![Impact Map Goal 2](assets/chapter-3/impact-map-goal-2.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -1156,57 +1971,95 @@ El backlog se encuentra organizado secuencialmente para guiar el desarrollo de l
 | **17** | EP06 | **US16** | Generación de Reportes de Trazabilidad | 8 | Sprint 4 |
 | **18** | EP06 | **US17** | Confirmación de Entrega y Cadena de Custodia | 3 | Sprint 4 |
 
----
+***
 
-### Resumen de Estimación y Velocidad por Sprint
+### 3.3.1. Engineering Tasks
 
-* **Sprint 1 (Fundación e Identidad):** 16 Story Points (US01, US02, US03, US04, US05, US06)
-* **Sprint 2 (Ingesta IoT y Monitoreo Base):** 29 Story Points (US07, US08, US09, US10, US12)
-* **Sprint 3 (Alertas e Inventario Avanzado):** 21 Story Points (US11, US13, US14, US15)
-* **Sprint 4 (Trazabilidad y Auditoría):** 16 Story Points (US16, US17, US18)
-* **Total del Product Backlog:** 82 Story Points
+A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales) en tareas de ingeniería (*Engineering Tasks*). Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
 
+#### **US04: Exploración de Propuesta de Valor Logística (2 SP)**
+* **TSK-04-01:** Maquetación responsive de la sección "Soluciones Logísticas" en el Landing Page (HTML5 / Tailwind CSS). **[6 Horas]**
+* **TSK-04-02:** Integración de componentes visuales interactivos para especificaciones técnicas del contenedor inteligente. **[4 Horas]**
+
+#### **US05: Solicitud de Demostración Corporativa (2 SP)**
+* **TSK-05-01:** Desarrollo del formulario de contacto para clientes corporativos con validación de campos en cliente (JavaScript/TypeScript). **[5 Horas]**
+* **TSK-05-02:** Configuración del servicio backend/mailing para la recepción y reenvío de prospectos a ventas. **[6 Horas]**
+
+#### **US06: Consulta de Preguntas Frecuentes (1 SP)**
+* **TSK-06-01:** Implementación del componente acordeón de FAQ y buscador por palabra clave en el Landing Page. **[4 Horas]**
+
+#### **US01: Registro de Institución de Salud (3 SP)**
+* **TSK-01-01:** Diseño y maquetación del formulario web de registro institucional hospitalario. **[5 Horas]**
+* **TSK-01-02:** Creación de endpoints en API REST para recepción de datos de registro y validación de RUC duplicado. **[7 Horas]**
+* **TSK-01-03:** Implementación del servicio de envío de correos electrónicos de confirmación de cuenta. **[4 Horas]**
+
+#### **US07: Alta de Unidades de Ambulancia (3 SP)**
+* **TSK-07-01:** Creación del modelo de datos de Ambulancias en la base de datos MySQL Server 8.0 (InnoDB) mediante Entity Framework Core 10.0. **[4 Horas]**
+* **TSK-07-02:** Desarrollo de endpoints CRUD para el registro y consulta de vehículos de transporte. **[6 Horas]**
+* **TSK-07-03:** Interfaz web para el formulario de registro y lista de unidades registradas. **[6 Horas]**
+
+#### **US08: Vinculación de Contenedor Inteligente (5 SP)**
+* **TSK-08-01:** Desarrollo del módulo backend de asignación física (relación 1:1 entre ambulancia y contenedor IoT). **[8 Horas]**
+* **TSK-08-02:** Validación de estados del dispositivo (bloqueo de reasignación si está ocupado). **[5 Horas]**
+* **TSK-08-03:** Interfaz web para vinculación mediante lectura o digitación del UUID/MAC del contenedor. **[6 Horas]**
 
 <div style="page-break-after: always;"></div>
 
-# Capítulo IV: Product Design
-
 # 4.1. Style Guidelines
-Un "Style Guideline" es un conjunto de directrices y normas que establecen los estándares y criterios a seguir en la redacción, diseño y presentación de documentos, contenido web, software y otros productos creativos. A continuación, se presentan las especificaciones detalladas de los parámetros implementados en la estructura de **Medical SmartBox**.
+
+Un *Style Guideline* es un conjunto de directrices y normas que establecen los estándares visuales, de interacción y de presentación que rigen el ecosistema digital de **Medical SMARTBOX**. Las especificaciones aseguran coherencia estética, usabilidad rigurosa y máxima legibilidad de datos telemétricos críticos tanto en la aplicación web de monitoreo como en el sitio web de divulgación comercial (Landing Page).
 
 ## 4.1.1. General Style Guidelines
 
 ### Branding
-Para el desarrollo de la identidad de Medical SmartBox, hemos elegido un diseño que encapsula la esencia de la logística médica y la monitorización de precisión. El logotipo y la interfaz presentan una estética limpia y tecnológica, aportando modernidad y máxima legibilidad. La identidad visual fusiona la salud con la tecnología IoT, simbolizando el control total y la trazabilidad de la cadena de frío. La elección de colores, en una combinación de azul marino, verde cerceta (teal) y acentos en coral/rojo, transmite una sensación de confianza, estabilidad técnica y la capacidad de alerta inmediata frente a incidencias. 
+Para el desarrollo de la identidad de **Medical SMARTBOX**, se definió una estética limpia, clínica y altamente tecnológica que sintetiza la convergencia entre logística médica asistencial y telemetría de precisión IoT. La identidad visual simboliza el control integral y la custodia ininterrumpida de la cadena de frío para hemoderivados, órganos y medicamentos biológicos. La composición cromática —basada en Azul Marino Profundo, Verde Cerceta (Teal), Verde Menta y acentos de Alerta en Coral/Rojo— transmite confiabilidad médica, estabilidad operativa y capacidad inmediata de advertencia frente a excursiones térmicas.
 
-![Medical SmartBox - Logo](assets/chapter-4/logo.png)
+![Medical SMARTBOX - Logo](assets/chapter-4/logo.png)
+*Nota: Logotipo oficial de Medical SMARTBOX, representando la custodia térmica inteligente.*
 
 ### Typography
-Para el diseño tipográfico de Medical SmartBox, se ha seleccionado una combinación de fuentes que refleja modernidad y claridad de datos, priorizando la lectura rápida en dashboards operativos.
-*   **Bricolage Grotesque:** Fue elegida como la tipografía principal para nuestros encabezados (`h1`, `h2`, `h3`). Su estructura sólida y geométrica otorga al diseño un aire profesional, tecnológico y contemporáneo.
-*   **Inter:** Para los párrafos, etiquetas de la interfaz y la visualización de datos numéricos (como telemetría y temperaturas), hemos optado por Inter, una fuente destacada por su altísima legibilidad en pantallas digitales e interfaces ricas en datos, favoreciendo una lectura ágil para los operadores logísticos y personal de salud.
+El sistema tipográfico prioriza la jerarquía visual y la decodificación instantánea de telemetría numérica en entornos de alta exigencia cognitiva (ej. cabina de ambulancia o supervisión en central de emergencias). Se implementa una escala tipográfica modular basada en las siguientes fuentes de Google Fonts:
+
+*   **Bricolage Grotesque:** Empleada como tipografía corporativa para encabezados primarios y secundarios (`h1`, `h2`, `h3`). Su estructura geométrica contemporánea con remates técnicos otorga autoridad visual, solidez institucional y modernidad tecnológica.
+*   **Inter:** Empleada para textos de párrafo, microcopia de interfaz, tablas de auditoría y visualización de telemetría numérica. Su excelente renderizado subpíxel y variantes tabulares numéricas (`font-variant-numeric: tabular-nums`) garantizan una lectura nítida de decimales de temperatura y porcentajes de batería sin oscilaciones visuales.
 
 ![Bricolage Grotesque - Font](assets/chapter-4/bricolage-font.png)
 ![Inter - Font](assets/chapter-4/inter-font.png)
+*Nota: Muestrarios tipográficos de Bricolage Grotesque (titulares) e Inter (cuerpo y datos numéricos).*
 
 ### Colors
-La paleta de colores de Medical SmartBox fue seleccionada para reflejar los valores de seguridad, precisión técnica y prevención operativa.
-*   **Verde Cerceta (Teal - `#0F7A70`) y Verde Claro (`#B9DDA0`):** Representan el estado óptimo, la salud y las operaciones estables ("En rango").
-*   **Azul Marino (`#10312F` / `#1F3C77`):** Evocan profesionalismo, tecnología y la solidez institucional del sector médico.
-*   **Coral / Rojo (`#E05A46`):** Utilizado estratégicamente como color de acento para alertas críticas (ej. "Temperatura fuera de rango" o "Batería baja"), garantizando que los incidentes destaquen inmediatamente visualmente.
+La paleta cromática se seleccionó bajo criterios de contraste accesible (cumplimiento WCAG 2.1 Nivel AA) y codificación semántica para estados operativos clínicos:
+
+*   **Azul Marino Corporativo (`#10312F` / `#1F3C77`):** Color dominante institucional que proyecta solidez, seriedad médica y rigor de ingeniería.
+*   **Verde Cerceta / Teal (`#0F7A70`):** Color primario de acción y estado óptimo ("En Rango", carga refrigerada entre 2 °C y 8 °C, telemetría activa).
+*   **Verde Menta (`#B9DDA0`):** Fondo suave de soporte para indicadores de éxito y tarjetas de estado estable.
+*   **Coral / Rojo Alerta (`#E05A46`):** Tono semántico de alta prioridad reservado exclusivamente para situaciones críticas (temperatura fuera de umbral, desconexión de energía de 12V, batería residual < 15%, apertura no autorizada de tapa).
+*   **Gris Neutro Frío (`#F4F7F6` / `#E2E8F0`):** Fondos de interfaz y delimitadores de paneles modulares para reducir la fatiga visual en turnos prolongados.
 
 ![Paleta de Colores](assets/chapter-4/paleta.png)
+*Nota: Muestra de la paleta de colores corporativa y semántica de Medical SMARTBOX.*
 
 ### Spacing
-El espaciado en Medical SmartBox está cuidadosamente definido para garantizar una interfaz limpia, enfocada en la visualización de métricas. Se emplea un diseño modular con separaciones claras (paneles y tarjetas flotantes), lo que mejora la jerarquía de la telemetría en vivo, evita confusiones al monitorear múltiples transportes y aporta equilibrio visual en vistas saturadas de datos.
+El espaciado se fundamenta en un sistema de rejilla base modular de **8 píxeles** (8-point grid system: 4px, 8px, 16px, 24px, 32px, 48px, 64px). Este estándar asegura consistencia entre paneles modulares, tarjetas de telemetría telemática (*telemetry cards*) y botones de acción rápida, previniendo el hacinamiento de información y reduciendo la tasa de error por toques accidentales en pantallas táctiles de cabina.
 
-# 4.1.2. Web Style Guidelines
+***
 
-Medical SmartBox cuenta con un diseño web responsivo para garantizar una experiencia fluida en cualquier dispositivo, permitiendo su uso tanto en paneles de control (operadores logísticos) como en dispositivos móviles (centros de salud recibiendo despachos). Se utiliza un diseño lineal con un "Route Rail" (navegación vertical) que guía al usuario por la narrativa del producto. La barra de navegación superior (pegajosa) mantiene el logotipo a la izquierda, y los controles críticos como el cambio de idioma (ES/EN), el inicio de sesión y el llamado a la acción ("Ir a la Web App") a la derecha.
+## 4.1.2. Web Style Guidelines
 
----
+Las directrices web definen la estructura adaptativa, componentes interactivos y comportamiento responsivo de la plataforma:
 
-## 4.2. Information Architecture
+*   **Estrategia Responsive y Adaptabilidad Multi-dispositivo:**
+    *   **Desktop / Estaciones Hospitalarias (Viewport ≥ 1280px):** Disposición de cuadrícula fluida de 12 columnas. Aprovecha el ancho panorámico para mostrar simultáneamente el mapa de flota satelital en vivo, gráficos telemétricos continuos y panel lateral de incidentes activos.
+    *   **Tablet / Terminales de Cabina (Viewport 768px a 1024px):** Cuadrícula adaptativa de 6 columnas. Los paneles secundarios se condensan en pestañas (*tabs*) o cajones laterales (*drawers*) accesibles mediante gestos táctiles.
+    *   **Mobile Browser / Smartphones Médicos (Viewport 360px a 414px):** Colapso a una columna única fluida (1 columna, 100% de ancho con márgenes laterales de 16px). La barra de navegación superior colapsa en un menú tipo hamburguesa/drawer lateral; los mapas de ruta alternan a pantalla completa modal; las tarjetas de métricas telemétricas se apilan verticalmente; y los botones de acción rápida (ej. "Reconocer Alerta", "Solicitar OTP") cuentan con una altura mínima de **48px** para garantizar un área táctil ergonómica (*touch target*) según directrices de Google Material Design y Apple Human Interface Guidelines.
+*   **Navegación y Patrones de Interacción:**
+    *   **Sticky Header:** Barra de navegación superior fija que mantiene visible el logotipo institucional, estado de conexión en tiempo real (indicador verde de latencia de red), conmutador de idioma (ES/EN) y botón de acceso rápido al perfil de usuario.
+    *   **Route Rail (Navegación Vertical de Seguimiento):** En el Landing Page, un indicador lateral animado (*scrollspy*) sitúa visualmente al visitante a lo largo de las secciones informativas del producto.
+    *   **Retroalimentación Inmediata de Estados:** Cada microinteracción (hover en escritorio, active state en móvil) ofrece respuestas visuales no mayores a 150ms mediante transiciones CSS fluidas (`ease-in-out`), confirmando visualmente cada comando emitido.
+
+<div style="page-break-after: always;"></div>
+
+# 4.2. Information Architecture
 
 ### 4.2.1. Organization Systems
 
@@ -1259,13 +2112,16 @@ Para asegurar que los usuarios encuentren la unidad o el dato exacto al instante
 *   **Controles de Autenticación y Demostración:** Botones persistentes en el encabezado y menús laterales (Drawer) para "Iniciar sesión" o abrir la "Web App" completa.
 *   **Selector de Idioma:** Un interruptor claro (Toggle ES/EN) que permite cambiar la internacionalización de la plataforma sin recargar, crucial para equipos logísticos internacionales.
 
-## 4.3. Landing Page UI Design
-El diseño de la interfaz de usuario en la landing page de **Medical SmartBox** es clave para causar una primera impresión positiva y transmitir la innovación tecnológica y el rigor que respalda a nuestra solución de monitoreo de la cadena de frío médica. Buscamos ofrecer una experiencia visual limpia, profesional y altamente funcional que inspire confianza e invite a los operadores logísticos, gerentes de distribución farmacéutica y administradores de centros de salud a solicitar una demostración y explorar nuestro ecosistema de monitoreo IoT y trazabilidad en tiempo real.
+<div style="page-break-after: always;"></div>
+
+# 4.3. Landing Page UI Design
+
+El diseño de la interfaz de usuario en la landing page de **Medical SMARTBOX** es clave para causar una primera impresión positiva y transmitir la innovación tecnológica y el rigor que respalda a nuestra solución de monitoreo de la cadena de frío médica. Buscamos ofrecer una experiencia visual limpia, profesional y altamente funcional que inspire confianza e invite a los operadores logísticos, gerentes de distribución farmacéutica y administradores de centros de salud a solicitar una demostración y explorar nuestro ecosistema de monitoreo IoT y trazabilidad en tiempo real.
 
 ### 4.3.1. Landing Page Wireframe
 
-*   **Landing Page para Desktop Browser:**
-    *   **Hero Section:** Boceto estructural de la sección principal (Hero Section), definiendo un diseño de dos columnas para ubicar la propuesta de valor centrada en la protección de insumos médicos a la izquierda, y un elemento visual destacado a la derecha (preview interactivo del contenedor SmartBox y su telemetría).
+#### Diseño para Desktop Browser
+*   **Hero Section:** Boceto estructural de la sección principal (Hero Section), definiendo un diseño de dos columnas para ubicar la propuesta de valor centrada en la protección de insumos médicos a la izquierda, y un elemento visual destacado a la derecha (preview interactivo del contenedor SmartBox y su telemetría).
 
 ![Hero - Wireframe](assets/chapter-4/hero-wireframe.png)
 
@@ -1273,7 +2129,7 @@ El diseño de la interfaz de usuario en la landing page de **Medical SmartBox** 
 
 ![Caracteristicas - Wireframe](assets/chapter-4/caracteristicas-wireframe.png)
 
-*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SmartBox. Define una cuadrícula adaptable (responsive grid) con cinco espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
+*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SMARTBOX. Define una cuadrícula adaptable (responsive grid) con cinco espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
 
 ![Presentacion - Wireframe](assets/chapter-4/presentacion-wireframe.png)
 
@@ -1281,129 +2137,244 @@ El diseño de la interfaz de usuario en la landing page de **Medical SmartBox** 
 
 ![CTA-footer - Wireframe](assets/chapter-4/cta-footer-wireframe.png)
 
+#### Adaptabilidad para Mobile Browser
+Para dispositivos móviles (viewports de 360px a 414px), la estructura de wireframe implementa una adaptación fluida de una columna:
+*   **Navegación Móvil:** El menú horizontal superior se condensa en un botón de menú tipo hamburguesa ubicado en la esquina superior derecha, desplegando un panel Drawer lateral con los enlaces a Soluciones, Características, Equipo y Formulario de Contacto.
+*   **Hero Section Vertical:** La disposición de dos columnas colapsa linealmente, colocando el titular persuasivo y el botón CTA prioritario en la parte superior, seguido del elemento gráfico representativo del SmartBox.
+*   **Cuadrícula de Tarjetas Apiladas:** Las tarjetas de características y perfiles de equipo se reorganizan en una pila vertical (1 tarjeta por fila) con espaciado vertical de 16px, facilitando el desplazamiento vertical con el pulgar.
+*   **Ergonomía Táctil:** Todos los botones de acción e inputs de formulario adoptan un ancho del 100% y una altura mínima de 48px con espaciado interactivo para evitar pulsaciones erróneas.
+
+***
+
 ### 4.3.2. Landing Page Mock-up
 
+#### Diseño de Alta Fidelidad para Desktop Browser
 *   **Hero Section:** Interfaz final del Hero Section. Destaca la integración de la paleta de colores corporativa (Azul Marino `#10312F`, Verde Cerceta `#0F7A70` y Verde Claro `#B9DDA0`), la tipografía moderna (**Bricolage Grotesque** para titulares e **Inter** para cuerpo de texto) y una composición visual de un operador logístico inspeccionando un envío médico con telemetría activa en un dispositivo SmartBox, logrando captar la atención del usuario inmediatamente.
   
-* ![Hero - Mockup](assets/chapter-4/hero-mockup.png)
+![Hero - Mockup](assets/chapter-4/hero-mockup.png)
 
 *   **Tarjetas de Servicios:** Implementación final de las tarjetas de servicio (*Telemetría IoT en Vivo*, *Mapeo de Ruta Térmica* y *Alertas Predictivas de Excursión de Temperatura*). Se incorporaron imágenes fotográficas de alta calidad y un diseño de tarjeta limpia (*Clean UI*) con sombras suaves y bordes redondeados para facilitar la lectura de métricas clave.
 
 ![Servicios - Mockup](assets/chapter-4/servicios-mockup.png)
 
-*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cinco ingenieros de software del equipo de Medical SmartBox, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
+*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cinco ingenieros de software del equipo de Medical SMARTBOX, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
 
 ![Presentacion - Mockup](assets/chapter-4/presentacion-mockup.png)
 
 *   **Formulario "Únete a Medical SmartBox":** Versión construida del formulario "Ir a la Web App". Utiliza el fondo azul marino oscuro de la marca para generar un alto contraste con los campos de entrada e incentivar la conversión, cerrando la página con un footer minimalista con políticas de privacidad, certificaciones sanitarias y enlaces legales.
 
 ![CTA-footer - Mockup](assets/chapter-4/cta-footer-mockup.png)
----
+
+#### Adaptabilidad de Alta Fidelidad para Mobile Browser
+En la versión móvil de alta fidelidad, se aplican los estándares visuales de diseño responsivo definidos en las guías de estilo:
+*   **Alineación Tipográfica y Tamaños Proporcionales:** Los encabezados `h1` reducen su tamaño de 48px a 32px con interlineado ajustado a 1.2, evitando desbordes horizontales y garantizando lectura cómoda sin zoom.
+*   **Interacciones Táctiles y Controles:** Los formularios de contacto optimizan los campos de entrada para teclados virtuales nativos de iOS y Android (input types `email`, `tel`, `text`), y los botones principales disponen de microinteracciones activas táctiles (`active:scale-95`).
+*   **Optimización de Carga y Recursos Gráficos:** Las imágenes de presentación y mockups emplean renderizado responsivo con densidades optimizadas, reduciendo el consumo de datos celulares en redes móviles de transporte asistencial.
+
+<div style="page-break-after: always;"></div>
 
 # 4.4. Web Applications UX/UI Design
 
-El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) en la plataforma web de **Medical SmartBox** busca crear una herramienta digital intuitiva, accesible y altamente funcional para operadores logísticos, conductores de transporte médico y personal receptor en hospitales o farmacias. La UX se enfoca en comprender la urgencia y precisión requeridas en la cadena de frío, diseñando flujos de interacción eficientes para monitorear cargas térmicamente sensibles, reaccionar ante desvíos de temperatura y configurar sensores IoT sin fricción.
+El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) en la plataforma web de **Medical SMARTBOX** busca crear una herramienta digital intuitiva, accesible y altamente funcional para operadores logísticos, conductores de transporte médico y personal receptor en hospitales o farmacias. La UX se enfoca en comprender la urgencia y precisión requeridas en la cadena de frío, diseñando flujos de interacción eficientes para monitorear cargas térmicamente sensibles, reaccionar ante desvíos de temperatura y configurar sensores IoT sin fricción.
 
-Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemétricos en tiempo real, trazabilidad por hitos de envío, gráficos de estabilidad térmica y sistemas de alertas predictivas. Un diseño UX/UI exitoso en Medical SmartBox fusiona una estética tecnológica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logísticas rápidas que salvan vidas y evitan la merma de medicamentos.
+Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemétricos en tiempo real, trazabilidad por hitos de envío, gráficos de estabilidad térmica y sistemas de alertas predictivas. Un diseño UX/UI exitoso en Medical SMARTBOX fusiona una estética tecnológica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logísticas rápidas que salvan vidas y evitan la merma de medicamentos.
+
+***
 
 ### 4.4.1. Web Applications Wireframes
-*   **Acceso y Autenticación Segura:** El flujo de inicio de sesión presenta un diseño *desktop* de dos columnas ("auth-shell"). La izquierda actúa como un panel informativo destacando la propuesta de valor ("Cadena de frío bajo custodia digital") y estadísticas de la flota, mientras que la derecha contiene el formulario de acceso institucional que solicita RUC/Correo y Contraseña. A esto le sigue una pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante un código OTP de 6 dígitos
+
+#### Wireframes para Desktop Browser
+*   **Acceso y Autenticación Segura:** El flujo de inicio de sesión presenta un diseño *desktop* de dos columnas ("auth-shell"). La izquierda actúa como un panel informativo destacando la propuesta de valor ("Cadena de frío bajo custodia digital") y estadísticas de la flota, mientras que la derecha contiene el formulario de acceso institucional que solicita RUC/Correo y Contraseña. A esto le sigue una pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante un código OTP de 6 dígitos.
 
 ![Autenticacion - Wireframe](assets/chapter-4/autenticacion-wireframe.png)
 
-*   **Núcleo Operativo - Dashboard Principal:** El Dashboard general organiza la vista del operador comenzando con una fila de KPIs (unidades en ruta, monitorizadas, alertas críticas y cumplimiento DIGEMID). En el cuerpo central, se emplea una estructura de cuadrícula (`grid-2`) que muestra un mapa de "Flota en tiempo real" a la izquierda y un panel consolidado de "Alertas críticas recientes" a la derecha, finalizando con una tabla inferior para los "Traslados en curso"
+*   **Núcleo Operativo - Dashboard Principal:** El Dashboard general organiza la vista del operador comenzando con una fila de KPIs (unidades en ruta, monitorizadas, alertas críticas y cumplimiento DIGEMID). En el cuerpo central, se emplea una estructura de cuadrícula (`grid-2`) que muestra un mapa de "Flota en tiempo real" a la izquierda y un panel consolidado de "Alertas críticas recientes" a la derecha, finalizando con una tabla inferior para los "Traslados en curso".
 
-![Nucleo Operativo  - Wireframe](assets/chapter-4/nucleo-wireframe.png)
+![Nucleo Operativo - Wireframe](assets/chapter-4/nucleo-wireframe.png)
 
-*   **Gestión de Envíos y Tablero de Despacho:** El sistema incluye una lista maestra de "Órdenes de traslado" y un formulario completo para crear una nueva orden validando ventana de isquemia fría y precooling. Además, presenta un Tablero de Despacho en formato Kanban que categoriza los viajes en Pendientes, Despachados, En tránsito y Entregados
+*   **Gestión de Envíos y Tablero de Despacho:** El sistema incluye una lista maestra de "Órdenes de traslado" y un formulario completo para crear una nueva orden validando ventana de isquemia fría y precooling. Además, presenta un Tablero de Despacho en formato Kanban que categoriza los viajes en Pendientes, Despachados, En tránsito y Entregados.
 
-![Gestion de Envios  - Wireframe](assets/chapter-4/envios-wireframe.png)
+![Gestion de Envios - Wireframe](assets/chapter-4/envios-wireframe.png)
 
 *   **Vista Detallada de Telemetría y Ruta:** La inspección individual de un envío presenta un *stepper* de estado en la parte superior. Debajo, se divide en dos módulos: a la izquierda, el mapa de trazabilidad y ruta en vivo con cálculo de ETA dinámico; a la derecha, las tarjetas telemétricas y medidores (*gauges*) mostrando la temperatura interna en tiempo real (ej. 4.3°C), nivel de batería, estado de cierre y lecturas recientes.
 
-![Vista de Ruta  - Wireframe](assets/chapter-4/ruta-wireframe.png)
+![Vista de Ruta - Wireframe](assets/chapter-4/ruta-wireframe.png)
 
 *   **Monitoreo y Control de Smart Containers:** Se incluye un módulo visual tipo *grid* para monitorear todos los contenedores de la flota y una vista de detalle por Smart Container que incluye una curva gráfica de temperatura de las últimas 24 horas. Complementariamente, el sistema permite enviar comandos de desbloqueo remoto de la tapa mediante interacción electromecánica y visualizar el historial completo de excursiones térmicas.
 
-![Monitoreo de Containers  - Wireframe](assets/chapter-4/containers-wireframe.png)
+![Monitoreo de Containers - Wireframe](assets/chapter-4/containers-wireframe.png)
 
 *   **Centro de Alertas y Respuesta a Incidentes:** La plataforma cuenta con una bandeja centralizada para gestionar notificaciones. El detalle de una alerta crítica expone la magnitud de la excursión térmica (temperatura, duración, ubicación), el registro temporal del despacho de alertas (vía SMS y Push) y una sección para que el operador documente las acciones correctivas.
 
-![Centro de Alertas  - Wireframe](assets/chapter-4/incidentes-wireframe.png)
+![Centro de Alertas - Wireframe](assets/chapter-4/incidentes-wireframe.png)
 
 *   **Configuración y Umbrales de Alerta:** Una pantalla de administración dedicada a "Canales de notificación" permite al usuario activar/desactivar notificaciones Push, SMS, Correo y alarmas acústicas. Aquí mismo, en el panel "Umbrales de severidad", se configuran manualmente los límites máximos/mínimos de temperatura y los tiempos límite (SLA) para el envío de alertas.
 
-![Umbrales de Alerta  - Wireframe](assets/chapter-4/alerta-wireframe.png)
+![Umbrales de Alerta - Wireframe](assets/chapter-4/alerta-wireframe.png)
 
-*   **Cadena de Custodia, Manifiestos y Reportes:** El flujo de entrega garantiza la seguridad exigiendo la Verificación OTP en destino y trazando todos los eventos en una Línea de Tiempo de Cadena de Custodia. Administrativamente, se generan Manifiestos Digitales de Auditoría inmutables sellados con SHA-256 y se presenta un consolidado analítico para cumplimiento normativo DIGEMID/DIGDOT
+*   **Cadena de Custodia, Manifiestos y Reportes:** El flujo de entrega garantiza la seguridad exigiendo la Verificación OTP en destino y trazando todos los eventos en una Línea de Tiempo de Cadena de Custodia. Administrativamente, se generan Manifiestos Digitales de Auditoría inmutables sellados con SHA-256 y se presenta un consolidado analítico para cumplimiento normativo DIGEMID/DIGDOT.
 
-![Cadena de Custodia  - Wireframe](assets/chapter-4/custodia-wireframe.png)
+![Cadena de Custodia - Wireframe](assets/chapter-4/custodia-wireframe.png)
 
 *   **Administración Institucional y B2B:** La plataforma incluye la gestión integral de la suscripción, facturación B2B, vinculación de unidades vehiculares y el control granular de usuarios organizados en roles operativos de logística o perfiles clínicos.
    
 ![Administracion - Wireframe](assets/chapter-4/administracion-wireframes.png)
 
+#### Adaptabilidad de Wireframes para Mobile Browser
+Para dispositivos móviles de campo (smartphones de personal asistencial y tabletas de ambulancia de 360px a 414px):
+*   **Diseño de Columna Unificada (Single-Column Flow):** La disposición de dos columnas se transforma en un flujo vertical secuencial. En el detalle del traslado, el indicador de temperatura actual y la alerta de batería se colocan en la parte superior fija (*sticky banner*), seguidos del mapa simplificado y las lecturas telemétricas.
+*   **Navegación Móvil por Barra Inferior (Bottom Navigation Bar):** Se reemplaza la barra lateral izquierda por una barra de navegación inferior de 5 accesos directos (*Dashboard*, *Ruta en Vivo*, *SmartBox*, *Alertas* y *Perfil*), facilitando la operación con una sola mano.
+*   **Zona Táctil Aumentada para Emergencias:** Todos los controles críticos, en especial el botón de desbloqueo de emergencia y el teclado numérico en pantalla para validación de OTP, cuentan con dimensiones mínimas de 48x48px con alto contraste, permitiendo su uso rápido incluso con guantes clínicos.
+
+***
+
+### 4.4.2. Web Applications Wireflow Diagrams
+
+La especificación del Wireflow de la aplicación web articula la navegación estructural y las transiciones pantalla a pantalla del sistema **Medical SMARTBOX**, vinculando las vistas esquemáticas desarrolladas en la sección precedente con las decisiones operativas del usuario, los eventos de telemetría IoT y las reglas de negocio clínicas.
+
+#### Estructura de Navegación y Rutas Principales
+
+El flujo de interacción del sistema se organiza a través de los siguientes recorridos clave:
+
+1. **Ruta de Acceso y Seguridad Institucional:**
+   * **Inicio / Login Institucional:** El usuario introduce sus credenciales corporativas (RUC/correo y contraseña).
+   * **Validación de Doble Factor (2FA):** Si la cuenta exige verificación reforzada o detecta un nuevo dispositivo, el flujo transita hacia la pantalla de ingreso del código OTP de 6 dígitos enviado al canal autorizado.
+   * **Ingreso al Panel:** Tras la validación conforme del token temporal (o si la sesión previa de confianza se encuentra activa), se concede acceso y se redirige automáticamente al Dashboard Operativo Principal.
+
+2. **Ruta de Monitoreo Telemétrico de Traslado:**
+   * **Dashboard Operativo Principal:** Presenta la matriz de flota activa, KPIs de cumplimiento térmico y mapa en vivo.
+   * **Vista Detalle de Traslado y Telemetría:** Al seleccionar una ambulancia o envío en curso, el despachador accede a la vista especializada con trazabilidad cartográfica en vivo, cálculo dinámico de ETA, nivel de batería del Smart Container y gráfica térmica continua de las últimas 24 horas.
+
+3. **Ruta de Atención Prioritaria a Incidentes Térmicos:**
+   * **Detección de Excursión:** Si un sensor telemétrico reporta una temperatura fuera del rango normativo de cadena de frío (menor a 2 °C o superior a 8 °C), el sistema dispara una alerta visual destacada en cabecera.
+   * **Centro de Alertas e Incidentes:** Al accionar la notificación crítica, el operador transita hacia la bandeja de incidentes para evaluar la severidad, geolocalización y duración de la desviación.
+   * **Retorno Contextual:** Una vez registrada y documentada la acción correctiva (ej. reajuste térmico o cambio de ruta), el operador retorna a la vista de detalle del traslado para verificar la estabilización de los parámetros biológicos.
+
+4. **Ruta de Arribo, Desbloqueo y Cierre de Custodia:**
+   * **Llegada a Destino:** La confirmación de geocerca en el centro hospitalario o banco de sangre receptor habilita la pantalla de entrega y desbloqueo seguro.
+   * **Validación OTP de Recepción:** El personal receptor facultado introduce el código OTP de desbloqueo, validando su identidad clínica.
+   * **Línea de Tiempo de Cadena de Custodia:** El sistema registra inmutablemente el evento de apertura electromecánica de la tapa y la firma digital del acta de entrega.
+   * **Exportación de Acta Oficial:** Concluido el protocolo, se genera el reporte de custodia en formato PDF sellado con firma digital SHA-256 para auditoría sanitaria ante DIGEMID y SUSALUD.
+
+5. **Ruta de Administración de Activos y Parametrización:**
+   * **Gestión de Flota y Contenedores:** Desde el menú lateral del Dashboard, los administradores acceden a la configuración del parque de ambulancias, inventario de Smart Containers IoT, umbrales de severidad y políticas de notificación.
+
+#### Matriz de Transiciones de Pantalla (Wireflow Transitions)
+
+La siguiente matriz documenta las transiciones sistemáticas entre las interfaces de usuario del sistema web:
+
+| Pantalla Origen (Wireframe) | Disparador / Acción del Usuario | Condición de Control / Regla de Negocio | Pantalla Destino | Tipo de Transición |
+| :--- | :--- | :--- | :--- | :--- |
+| **Inicio / Login Institucional** | Ingreso de credenciales de acceso | Credenciales válidas; requiere doble factor | **Pantalla de Verificación OTP (2FA)** | Condicional de seguridad |
+| **Inicio / Login Institucional** | Ingreso de credenciales de acceso | Credenciales válidas; sesión de confianza activa | **Dashboard Operativo Principal** | Redirección directa |
+| **Pantalla de Verificación OTP** | Envío de código numérico de 6 dígitos | Token OTP vigente y validado correctamente | **Dashboard Operativo Principal** | Autorización concedida |
+| **Dashboard Operativo Principal** | Clic en ambulancia o envío en la tabla | Selección de unidad telemétrica en tránsito | **Vista Detalle de Traslado y Telemetría** | Navegación a detalle |
+| **Dashboard Operativo Principal** | Clic en notificación crítica en cabecera | Registro telemétrico fuera de rango (2 °C - 8 °C) | **Centro de Alertas e Incidentes** | Interrupción prioritaria |
+| **Centro de Alertas e Incidentes** | Registro y guardado de acción correctiva | Formulario de contingencia validado y guardado | **Vista Detalle de Traslado y Telemetría** | Retorno contextual |
+| **Dashboard Operativo Principal** | Selección de "Gestión de Flota" en menú | Usuario con privilegios de Administrador / Logística | **Gestión de Flota y Contenedores** | Navegación modular |
+| **Vista Detalle de Traslado** | Detección de arribo al punto de destino | Geocerca de destino alcanzada por ambulancia | **Pantalla de Desbloqueo OTP y Entrega** | Disparo por hito de ruta |
+| **Pantalla de Desbloqueo OTP** | Validación de código OTP por médico receptor | Firma digital y token de apertura verificados | **Línea de Tiempo de Cadena de Custodia** | Confirmación de custodia |
+| **Línea de Tiempo de Cadena de Custodia** | Clic en "Exportar Acta de Entrega" | Cierre exitoso del traslado con hash SHA-256 | **Generación de Reporte PDF Certificado** | Descarga documental |
+
+*Nota: Las decisiones de interfaz y flujos alternativos detallados por cada historia de usuario se formalizan en la sección 4.4.4 mediante los diagramas de User Flow.*
+
+***
+
 ### 4.4.3. Web Applications Mock-ups
 
-Esta imagen presenta el diseño de interfaz de usuario (UI) en alta fidelidad para el flujo de acceso institucional a Medical SmartBox. La vista se divide en dos columnas: el panel izquierdo refuerza la propuesta de valor de la plataforma ("Cadena de frío bajo custodia digital") y muestra estadísticas clave de la flota. El panel derecho contiene el formulario de inicio de sesión, seguido de un flujo obligatorio de Verificación en Dos Pasos (2FA), donde el operador debe ingresar un código OTP de 6 dígitos. Este diseño garantiza un acceso seguro restringido a personal autorizado, manteniendo una estética corporativa e intuitiva.
+#### Diseños de Alta Fidelidad para Desktop Browser
+*   **Acceso Institucional y 2FA:** Interfaz de usuario de alta fidelidad para el flujo de acceso institucional. La vista se divide en dos columnas: el panel izquierdo refuerza la propuesta de valor corporativa y el panel derecho contiene el formulario de acceso seguido de la pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante OTP de 6 dígitos.
 
-![Mockup01 - Wireframe](assets/chapter-4/mockup-1.png)
+![Mockup01 - Autenticacion](assets/chapter-4/mockup-1.png)
 
-Esta imagen detalla el Dashboard General de Operaciones. La interfaz aprovecha el espacio horizontal para presentar una fila superior de indicadores clave de rendimiento (KPIs), como traslados activos, unidades monitorizadas, alertas críticas y cumplimiento térmico. El cuerpo central se divide en dos áreas principales: a la izquierda, un mapa interactivo que ubica la flota en tiempo real dentro de Lima Metropolitana; a la derecha, un panel que consolida las alertas críticas más recientes. En la parte inferior, una tabla estructurada permite visualizar rápidamente los traslados en curso, ofreciendo al operador logístico un centro de control integral en una sola vista.
+*   **Dashboard General de Operaciones:** Interfaz del centro de control integral. Aprovecha el espacio horizontal para presentar la fila superior de KPIs (traslados activos, unidades monitoreadas, alertas y cumplimiento térmico), el mapa interactivo de Lima Metropolitana a la izquierda y el panel de alertas recientes a la derecha, con la tabla de traslados en curso en la parte inferior.
 
-![Mockup02 - Wireframe](assets/chapter-4/mockup-2.png)
+![Mockup02 - Dashboard](assets/chapter-4/mockup-2.png)
 
-Esta imagen ilustra las interfaces dedicadas a la planificación y seguimiento logístico. El diseño incluye una lista navegable de Órdenes de Traslado y un formulario de creación que integra validaciones automáticas de isquemia fría y pre-enfriamiento del contenedor. Destaca el Tablero de Despacho en formato Kanban, que categoriza visualmente el estado de cada viaje (Pendiente, Despachado, En tránsito, Entregado). Además, la vista de detalle de un viaje específico divide la pantalla para mostrar, simultáneamente, la ruta en vivo con el cálculo de ETA dinámico y la telemetría en tiempo real del Smart Container asociado.
+*   **Planificación y Seguimiento Logístico:** Vista de Órdenes de Traslado y formulario de creación con validaciones de isquemia fría y pre-enfriamiento. Incluye el Tablero de Despacho Kanban (Pendiente, Despachado, En tránsito, Entregado) y la vista dividida de ruta en vivo con cálculo dinámico de ETA.
 
-![Mockup03 - Wireframe](assets/chapter-4/mockup-3.png)
+![Mockup03 - Despacho](assets/chapter-4/mockup-3.png)
 
-Esta imagen presenta los módulos de monitoreo y control a nivel de hardware IoT. La interfaz ofrece una vista en cuadrícula de todos los Smart Containers activos. Al inspeccionar una unidad individual (SB-0231), el usuario accede a un panel detallado que muestra medidores circulares (*gauges*) para la temperatura actual y el nivel de batería, junto con un gráfico que traza la curva térmica de las últimas 24 horas. Estos paneles también incluyen herramientas para revisar el historial completo de excursiones térmicas exportable para auditoría, y controles directos para accionar el bloqueo o desbloqueo electromecánico de la tapa del contenedor mediante comandos MQTT.
+*   **Monitoreo y Control IoT de Smart Containers:** Vista en cuadrícula de todos los contenedores y panel individual (SB-0231) con medidores circulares de temperatura y batería, curva térmica continua de 24 horas y comando de desbloqueo electromecánico seguro vía MQTT.
 
-![Mockup04 - Wireframe](assets/chapter-4/mockup-4.png)
+![Mockup04 - Containers](assets/chapter-4/mockup-4.png)
 
-Esta imagen expone el Centro de Alertas Críticas y la gestión de incidentes. La bandeja principal clasifica las notificaciones por severidad, permitiendo al operador priorizar la atención. El detalle de un incidente (por ejemplo, una excursión térmica crítica) presenta una vista estructurada que documenta la temperatura registrada, la duración fuera del umbral, y un registro temporal (*timeline*) del despacho automático de notificaciones vía Push y SMS. La interfaz fomenta la resolución eficiente al incluir un campo de texto donde el operador puede registrar las acciones correctivas tomadas y un botón para marcar la alerta como resuelta.
+*   **Centro de Alertas Críticas e Incidentes:** Bandeja de notificaciones clasificada por severidad. Expone la magnitud de la excursión térmica (temperatura, duración, ubicación satelital), registro cronológico del despacho SMS/Push y registro interactivo de acciones correctivas tomadas por el operador.
 
-![Mockup05 - Wireframe](assets/chapter-4/mockup-5.png)
+![Mockup05 - Incidentes](assets/chapter-4/mockup-5.png)
 
-Esta imagen detalla el panel de Perfil, Configuración y roles de acceso. La interfaz de configuración permite al administrador gestionar los "Canales de notificación", activando o desactivando avisos vía SMS, Push, correo y alarma acústica, así como definir los umbrales de temperatura y SLA críticos. Complementariamente, se incluyen vistas para la gestión del personal, donde se listan los usuarios activos y se asignan permisos granulares a través de perfiles específicos, divididos entre el segmento operativo (Fleet Logistics Dispatcher) y el segmento clínico (Receiving Physician, Health Quality Auditor).
+*   **Perfil, Configuración y Control de Roles:** Administración de canales de notificación (Push, SMS, correo, acústica), umbrales de severidad y asignación granular de permisos entre roles operativos (Fleet Logistics Dispatcher) y perfiles clínicos (Receiving Physician, Health Quality Auditor).
 
-![Mockup06 - Wireframe](assets/chapter-4/mockup-6.png)
+![Mockup06 - Configuracion](assets/chapter-4/mockup-6.png)
 
-Esta imagen muestra los módulos orientados a la auditoría, la trazabilidad y el cumplimiento normativo. Destaca el flujo de entrega, que exige la validación de un código OTP en el punto de destino para desbloquear el contenedor, evento que queda registrado en la Línea de Tiempo de Cadena de Custodia. El sistema genera manifiestos digitales de cada traslado, los cuales son sellados criptográficamente (SHA-256) para garantizar su inmutabilidad. Finalmente, un panel de reportes consolida el rendimiento térmico mensual de las distintas sedes, facilitando la presentación de datos ante entidades regulatorias como DIGEMID.
+*   **Auditoría, Cadena de Custodia y Reportes:** Flujo de validación OTP en destino, registro cronológico inmutable con firma SHA-256 en la cadena de custodia y generación automática de reportes certificados para DIGEMID/SUSALUD.
 
-![Mockup07 - Wireframe](assets/chapter-4/mockup-7.png)
+![Mockup07 - Custodia](assets/chapter-4/mockup-7.png)
+
+#### Adaptabilidad de Mock-ups para Mobile Browser
+En pantallas móviles de smartphones asistenciales (360px a 414px):
+*   **Diseño Modular en Tarjetas Verticales:** Los dashboards multipanel se reorganizan en tarjetas apiladas con scroll vertical fluido. La temperatura actual se resalta con tipografía agrandada (36px, `tabular-nums`) y código de color dinámico (verde para 2-8 °C, rojo parpadeante ante excursión térmica).
+*   **Comandos de Acción en Barra Flotante:** La acción de "Confirmar Entrega y Solicitar OTP" permanece anclada como botón flotante (*sticky bottom*) visible en todo momento durante el trayecto, agilizando el traspaso en quirófano o rampa hospitalaria sin necesidad de desplazarse por menús complejos.
+*   **Modo Nocturno / Alto Contraste para Cabina:** La paleta adopta un fondo oscuro de bajo brillo para no encandilar al paramédico ni al conductor en traslados nocturnos de emergencia.
+
+***
+
+<div style="page-break-before: always;"></div>
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
 El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que un operador logístico, supervisor hospitalario o personal médico realiza al interactuar con el ecosistema digital de NeonCode. A continuación se presentan tres diagramas de flujo clave adaptados a las historias de usuario de la plataforma, detallando el *Happy Path* (ruta ideal) y las ramificaciones alternativas (errores de validación, fallas de conectividad IoT y desviaciones en la cadena de frío).
 
 **User Flow 1: Autenticación de Personal y Acceso al Panel**
+
 *   **User Stories relacionadas:** US01, US02
 *   **Flujos incluidos:** *Happy Path* (autenticación exitosa y acceso al panel), credenciales inválidas, cuenta institucional no activada, campos incompletos y reintentos de sesión.
 
-![Primer User Flow](assets/chapter-4/user-flow-1.png)
+<div align="center" style="text-align: center; margin: 3mm auto;">
+<img src="assets/chapter-4/user-flow-1.png" alt="Primer User Flow" class="user-flow-diagram" style="max-height: 140mm !important; max-width: 100% !important; height: auto !important; width: auto !important; display: block; margin: 0 auto;" />
+</div>
+
+<div style="page-break-before: always;"></div>
 
 **User Flow 2: Alta de Ambulancia y Vinculación de Contenedor Inteligente**
+
 *   **User Stories relacionadas:** US07, US08
 *   **Flujos incluidos:** *Happy Path* (registro de vehículo y asignación telemétrica de contenedor), matrícula de ambulancia duplicada, ID de contenedor no encontrado, contenedor previamente asignado a otro vehículo y falla de enlace telemétrico inicial.
 
-![Segundo User Flow](assets/chapter-4/user-flow-2.png)
+<div align="center" style="text-align: center; margin: 3mm auto;">
+<img src="assets/chapter-4/user-flow-2.png" alt="Segundo User Flow" class="user-flow-diagram" style="max-height: 180mm !important; max-width: 100% !important; height: auto !important; width: auto !important; display: block; margin: 0 auto;" />
+</div>
+
+<div style="page-break-before: always;"></div>
 
 **User Flow 3: Monitoreo Térmico en Ruta, Gestión de Alertas y Cierre de Custodia**
+
 *   **User Stories relacionadas:** US10, US11, US13, US14, US17
 *   **Flujos incluidos:** *Happy Path* (monitoreo en tiempo real, recepción de alerta por variación térmica, acción correctiva y confirmación de entrega), pérdida de señal del contenedor, umbral térmico no configurado, variación de stock por sensores de peso e incidencia no resuelta en ruta.
 
-![Tercer User Flow](assets/chapter-4/user-flow-3.png)
+<div align="center" style="text-align: center; margin: 3mm auto;">
+<img src="assets/chapter-4/user-flow-3.png" alt="Tercer User Flow" class="user-flow-diagram" style="max-height: 185mm !important; max-width: 100% !important; height: auto !important; width: auto !important; display: block; margin: 0 auto;" />
+</div>
+
+<div style="page-break-after: always;"></div>
 
 # 4.5. Web Applications Prototyping
 
-El prototipo interactivo consolida la representación visual y la dinámica de interacción de los mock-ups de alta fidelidad para el Landing Page institucional y la Web Application de Medical SMARTBOX, permitiendo realizar recorridos completos de experiencia de usuario antes de la codificación frontend.
+El prototipo interactivo consolida la representación visual y la dinámica de interacción de los mock-ups de alta fidelidad para el Landing Page institucional y la Web Application de **Medical SMARTBOX**, permitiendo realizar recorridos completos de experiencia de usuario previos a la codificación frontend.
 
 Para el desarrollo del prototipo de alta fidelidad se utilizó la herramienta profesional **Figma**, estructurando componentes reutilizables bajo directrices de **Material Design**, estados interactivos (*hover*, *active*, modales de alerta crítica, filtros de tabla y visualizadores de telemetría IoT en tiempo real).
 
-* **Enlace al Prototipo Interactivo en Figma:** [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
-* **Visualización de Recursos:** Ver el Anexo B para el catálogo completo de enlaces a tableros y prototipos.
+Las decisiones de interacción se fundamentaron directamente en la arquitectura de información (Sección 4.2), priorizando la reducción de carga cognitiva en situaciones de emergencia asistencial mediante navegación contextual directa, confirmaciones modales para operaciones críticas y retroalimentación inmediata sobre variables telemétricas.
 
+* **Enlace al Prototipo Interactivo en Figma:** [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
+* **Alcance y Flujos Cubiertos en el Prototipo:**
+  1. **Autenticación y Seguridad:** Acceso de personal médico y de ambulancia mediante verificación de credenciales y doble factor (2FA).
+  2. **Monitoreo y Despacho en Tiempo Real:** Visualización en mapa georreferenciado de unidades vehiculares en tránsito, rutas activas y estado de contenedores inteligentes.
+  3. **Telemetría y Control de Smart Container:** Detalle individual del contenedor (Smart Container SB-0231), curva continua de temperatura, nivel de carga de batería, sensor de peso y comando de apertura electromecánica.
+  4. **Gestión de Incidentes y Excursiones Térmicas:** Notificación inmediata ante anomalías de frío, registro de causa raíz y acciones correctivas inmediatas.
+  5. **Protocolo de Entrega y Cadena de Custodia:** Generación y validación de código de un solo uso (OTP) en centro hospitalario receptor y emisión de acta digital de custodia sellada.
+
+* **Visualización de Recursos:** Ver el [Anexo B](63-anexos.md#anexo-b-tableros-digitales-y-prototipos-interactivos) para el catálogo de enlaces a tableros colaborativos y prototipos interactivos.
 
 <div style="page-break-after: always;"></div>
 
@@ -1417,7 +2388,7 @@ Para representar la arquitectura de forma rigurosa, comprensible y estandarizada
 * **4.6.3. Software Architecture Container Level Diagrams (C4 Nivel 2):** Descomposición en unidades ejecutables independientes y tecnologías del stack oficial.
 * **4.6.4. Software Architecture Component Level Diagrams (C4 Nivel 3):** Diseño modular interno bajo los principios de Clean Architecture e Inversión de Dependencias.
 
----
+***
 
 ## **4.6.1. Design-Level EventStorming**
 
@@ -1453,7 +2424,7 @@ Durante el taller colaborativo se aplicó el código de colores estandarizado in
 | **External System / IoT** | Rosa / Fucsia (`#F48FB1`) | Nombre del sistema / hardware | Entidad ajena a la plataforma (`ESP32 Hardware`, `OBD-II Telemetry`, `FCM/Twilio`). |
 | **Hotspot / Risk / Exception** | Rojo / Magenta (`#E53935`) | Problema o riesgo crítico | Fricción del entorno operativo de Lima (`12V Socket Disconnect`, `TomTom Traffic Delay`). |
 
----
+***
 
 ### **2. Matriz Estratégica de Clasificación de Bounded Contexts**
 
@@ -1461,8 +2432,15 @@ Bajo los principios de Domain-Driven Design para arquitecturas SaaS en entornos 
 
 A diferencia de la exploración macro de Big Picture (Capítulo 2.4), en esta etapa de diseño detallado se independizó el contexto **Subscription & Fleet Provisioning** como un *Subdominio de Soporte*. Esta separación aísla los contratos comerciales de suscripción B2B, la tarificación modular por factor de forma (*Small Box* de 5L vs. *Standard Box* de 20L) y la vinculación telemática de activos vehiculares del flujo clínico asistencial de los *Core Domains*, garantizando alta cohesión y bajo acoplamiento para los **dos segmentos objetivo** del proyecto:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 17%;" />
+  <col style="width: 28%;" />
+  <col style="width: 20%;" />
+  <col style="width: 18%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Bounded Context</th>
       <th>Clasificación Estratégica</th>
@@ -1521,8 +2499,14 @@ A diferencia de la exploración macro de Big Picture (Capítulo 2.4), en esta et
 
 Para corroborar la cobertura integral del modelo respecto a los requisitos de plataformas SaaS para salud y logística crítica, la siguiente matriz correlaciona los subdominios de la taxonomía SaaS estándar con la partición arquitectónica en Bounded Contexts adoptada en **Medical SMARTBOX**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 25%;" />
+  <col style="width: 20%;" />
+  <col style="width: 30%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Subdominio SaaS Estándar</th>
       <th>Bounded Context Asignado</th>
@@ -1584,24 +2568,24 @@ Para corroborar la cobertura integral del modelo respecto a los requisitos de pl
 
 A nivel de descomposición analítica de dominio, la gestión contractual de flotas (`Subscription & Fleet Provisioning`) se modela tácticamente como un subdominio de soporte independiente de la autenticación pura de usuarios (`IAM`). En la posterior fase de diseño de clases y persistencia relacional, ambos contextos se agrupan de forma cohesionada bajo un esquema unificado (`IAM & Subscriptions`). Dicha decisión de ingeniería optimiza las transacciones de validación de cuotas multi-inquilino (*multi-tenancy*), garantizando que las credenciales del personal médico y la disponibilidad de cajas inteligentes se resuelvan dentro de la misma frontera transaccional en la base de datos.
 
----
+***
 
 ### **3. Diagrama Panorámico de Integración de Bounded Contexts**
 
 Este diagrama macro ilustra cómo interactúan los seis contextos mediante el intercambio de eventos de dominio asíncronos y comandos de orquestación, asegurando un desacoplamiento de bajo acoplamiento y alta cohesión.
 
----
+***
 
 ![Figura 4.6.1.1 - Mapa de Integración entre Bounded Contexts (DLES)](assets/chapter-4/4.6.1-dles-macro-context-map.jpg)  
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo Design-Level EventStorming para Medical SMARTBOX.*
 
----
+***
 
 ### **4. Desglose Exhaustivo por Bounded Context**
 
 A continuación se detalla la especificación transaccional completa para cada uno de los seis Bounded Contexts, definiendo sus responsabilidades de negocio, agregados, invariantes inviolables, matrices de artefactos DDD y flujos de ejecución.
 
----
+***
 
 #### **4.6.1.1. Bounded Context 1: Identity & Access Management (IAM)**
 
@@ -1618,64 +2602,98 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto IAM
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetUserProfileQuery</code></td>
-      <td><code>LoginCredentialsView</code></td>
-      <td>Cualquier Usuario</td>
-      <td><code>AuthenticateUser</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>UserAuthenticated</code></td>
-      <td><em>Whenever [UserAuthenticated] THEN [SendTwoFactorChallengeCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>ValidateUserCredentialsQuery</code></td>
-      <td><code>OtpChallengeView</code></td>
-      <td>Paramédico / Médico</td>
-      <td><code>ValidateTwoFactorToken</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>SessionAccessGranted</code></td>
-      <td><em>Whenever [SessionAccessGranted] THEN [IssueScopedJwtTokenCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAssignedRolesQuery</code></td>
-      <td><code>DriverRegistryView</code></td>
-      <td>Coordinador Flota (Seg. 1)</td>
-      <td><code>RegisterDriverProfile</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>DriverProfileEnrolled</code></td>
-      <td><em>Whenever [DriverProfileEnrolled] THEN [AuthorizeEmergencyVehicleBindingCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetMedicalOrganizationByRenipressQuery</code></td>
-      <td><code>OrganizationProfileView</code></td>
-      <td>Administrador Clínico (Seg. 2)</td>
-      <td><code>RegisterMedicalOrganization</code></td>
-      <td><code>MedicalOrganization</code></td>
-      <td><code>MedicalOrganizationEnrolled</code></td>
-      <td><em>Whenever [MedicalOrganizationEnrolled] THEN [ValidateRenipressRegistrationCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto IAM</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cualquier Usuario</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetUserProfileQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>LoginCredentialsView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Médico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateUserCredentialsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OtpChallengeView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordinador Flota (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAssignedRolesQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DriverRegistryView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Administrador Clínico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetMedicalOrganizationByRenipressQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OrganizationProfileView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto IAM</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuthenticateUser</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAuthenticated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [UserAuthenticated] THEN [SendTwoFactorChallengeCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateTwoFactorToken</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SessionAccessGranted</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [SessionAccessGranted] THEN [IssueScopedJwtTokenCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterDriverProfile</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DriverProfileEnrolled</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DriverProfileEnrolled] THEN [AuthorizeEmergencyVehicleBindingCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterMedicalOrganization</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalOrganization</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalOrganizationEnrolled</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [MedicalOrganizationEnrolled] THEN [ValidateRenipressRegistrationCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
 
 ![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context IAM](assets/chapter-4/4.6.1-dles-iam-context.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity & Access Management (IAM).*
 
----
+***
 
 #### **4.6.1.2. Bounded Context 2: Subscription & Fleet Provisioning**
 
@@ -1692,55 +2710,87 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Subscription & Fleet Provisioning
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetActiveSubscriptionPlanQuery</code></td>
-      <td><code>SubscriptionTiersView</code></td>
-      <td>Director Médico (Seg. 2)</td>
-      <td><code>SubscribeToPlan</code></td>
-      <td><code>SubscriptionPlan</code></td>
-      <td><code>SubscriptionActivated</code></td>
-      <td><em>Whenever [SubscriptionActivated] THEN [ProvisionContainerAllocationCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContainerDeviceStatusQuery</code></td>
-      <td><code>DeviceInventoryView</code></td>
-      <td>Técnico Logístico</td>
-      <td><code>ProvisionContainerHardware</code></td>
-      <td><code>ContainerDevice</code></td>
-      <td><code>ContainerHardwareProvisioned</code></td>
-      <td><em>Whenever [ContainerHardwareProvisioned] THEN [EnableTelemetrySensorsCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetVehicleBindingQuery</code></td>
-      <td><code>FleetPairingView</code></td>
-      <td>Paramédico / Despachador (Seg. 1)</td>
-      <td><code>BindContainerToVehicle</code></td>
-      <td><code>VehicleBinding</code></td>
-      <td><code>ContainerBoundToVehicle</code></td>
-      <td><em>Whenever [ContainerBoundToVehicle] THEN [Activate12VPowerTelemetryCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Subscription & Fleet Provisioning</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Director Médico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetActiveSubscriptionPlanQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionTiersView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Técnico Logístico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerDeviceStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DeviceInventoryView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Despachador (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetVehicleBindingQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FleetPairingView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Subscription & Fleet Provisioning</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscribeToPlan</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionPlan</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionActivated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [SubscriptionActivated] THEN [ProvisionContainerAllocationCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ProvisionContainerHardware</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerDevice</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerHardwareProvisioned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerHardwareProvisioned] THEN [EnableTelemetrySensorsCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>BindContainerToVehicle</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VehicleBinding</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerBoundToVehicle</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerBoundToVehicle] THEN [Activate12VPowerTelemetryCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
 
 ![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Subscription & Fleet Provisioning](assets/chapter-4/4.6.1-dles-subscription-fleet.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Subscription & Fleet Provisioning.*
 
----
+***
 
 #### **4.6.1.3. Bounded Context 3: Medical Transport Planning & Dispatching**
 
@@ -1758,73 +2808,109 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Transport Planning & Dispatching
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetTransportOrderDetailsQuery</code></td>
-      <td><code>OrderCreationFormView</code></td>
-      <td>Químico Farmacéutico (Seg. 2)</td>
-      <td><code>CreateTransportOrder</code></td>
-      <td><code>TransportOrder</code></td>
-      <td><code>TransportOrderPlaced</code></td>
-      <td><em>Whenever [TransportOrderPlaced] THEN [EvaluateFleetAvailabilityCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetFleetDispatchBoardQuery</code></td>
-      <td><code>FleetDispatchBoardView</code></td>
-      <td>Despachador Flota (Seg. 1)</td>
-      <td><code>AssignVehicleAndBoxToTrip</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>TripResourcesAssigned</code></td>
-      <td><em>Whenever [TripResourcesAssigned] THEN [RequestContainerPrecoolingCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetActiveTripMonitorQuery</code></td>
-      <td><code>ActiveTripMonitorView</code></td>
-      <td>Chofer Ambulancia (Seg. 1)</td>
-      <td><code>StartDispatchedTrip</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>DispatchedTripStarted</code></td>
-      <td><em>Whenever [DispatchedTripStarted] THEN [LockContainerElectromechanicalLidCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>CalculateDynamicRouteEtaQuery</code></td>
-      <td><code>ActiveTripMonitorView</code></td>
-      <td>Sistema / TomTom API</td>
-      <td><code>UpdateDynamicEta</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>DynamicEtaRecalculated</code></td>
-      <td><em>Whenever [DynamicEtaRecalculated] AND delay > 15m THEN [NotifyHospitalRampCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetDestinationGeofenceStatusQuery</code></td>
-      <td><code>DestinationArrivalView</code></td>
-      <td>Chofer Ambulancia (Seg. 1) / Sistema GPS</td>
-      <td><code>RegisterDestinationArrival</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>TripDestinationReached</code></td>
-      <td><em>Whenever [TripDestinationReached] THEN [NotifyHospitalReceivingTeamCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Transport Planning & Dispatching</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTransportOrderDetailsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OrderCreationFormView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Despachador Flota (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetFleetDispatchBoardQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FleetDispatchBoardView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Chofer Ambulancia (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetActiveTripMonitorQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ActiveTripMonitorView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Sistema / TomTom API</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalculateDynamicRouteEtaQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ActiveTripMonitorView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Chofer Ambulancia (Seg. 1) / Sistema GPS</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetDestinationGeofenceStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DestinationArrivalView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Transport Planning & Dispatching</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CreateTransportOrder</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TransportOrder</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TransportOrderPlaced</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TransportOrderPlaced] THEN [EvaluateFleetAvailabilityCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AssignVehicleAndBoxToTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TripResourcesAssigned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TripResourcesAssigned] THEN [RequestContainerPrecoolingCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>StartDispatchedTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchedTripStarted</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DispatchedTripStarted] THEN [LockContainerElectromechanicalLidCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UpdateDynamicEta</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DynamicEtaRecalculated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DynamicEtaRecalculated] AND delay > 15m THEN [NotifyHospitalRampCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterDestinationArrival</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TripDestinationReached</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TripDestinationReached] THEN [NotifyHospitalReceivingTeamCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
 
 ![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
----
+***
 
 #### **4.6.1.4. Bounded Context 4: Smart Container & Telemetry Monitoring**
 
@@ -1841,64 +2927,98 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Smart Container & Telemetry
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetContainerTelemetrySnapshotQuery</code></td>
-      <td><code>ContainerSensorsLiveView</code></td>
-      <td>ESP32 / Sensores IoT</td>
-      <td><code>RecordTelemetrySnapshot</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>TelemetrySnapshotRecorded</code></td>
-      <td><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetTareCalibrationStatusQuery</code></td>
-      <td><code>TareCalibrationView</code></td>
-      <td>Químico Farmacéutico (Seg. 2)</td>
-      <td><code>CalibrateTareAndPayloadWeight</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>PayloadWeightRegistered</code></td>
-      <td><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetPowerStatusQuery</code></td>
-      <td><code>PowerStatusView</code></td>
-      <td>Hardware ESP32</td>
-      <td><code>SwitchToInternalBatteryPower</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>AuxiliaryBatteryEngaged</code></td>
-      <td><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContainerLockStateQuery</code></td>
-      <td><code>ContainerLockView</code></td>
-      <td>Custodio Receptor (Seg. 2)</td>
-      <td><code>UnlockElectromechanicalLid</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>ContainerLidUnlocked</code></td>
-      <td><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ESP32 / Sensores IoT</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerTelemetrySnapshotQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerSensorsLiveView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTareCalibrationStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TareCalibrationView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware ESP32</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetPowerStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PowerStatusView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerLockStateQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLockView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RecordTelemetrySnapshot</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TelemetrySnapshotRecorded</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalibrateTareAndPayloadWeight</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PayloadWeightRegistered</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SwitchToInternalBatteryPower</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuxiliaryBatteryEngaged</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UnlockElectromechanicalLid</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLidUnlocked</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
 
 ![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
----
+***
 
 #### **4.6.1.5. Bounded Context 5: Critical Alerting & Incident Response**
 
@@ -1917,64 +3037,98 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Critical Alerting & Incident Response
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetLiveAlertsQuery</code></td>
-      <td><code>LiveAlertsBannerView</code></td>
-      <td>Sistema Reactivo</td>
-      <td><code>TriggerCriticalAlert</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>CriticalAlertTriggered</code></td>
-      <td><em>Whenever [CriticalAlertTriggered] THEN [DispatchPushNotificationCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetIncidentDetailQuery</code></td>
-      <td><code>IncidentDetailModalView</code></td>
-      <td>Paramédico / Chofer (Seg. 1)</td>
-      <td><code>AcknowledgeAlert</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>AlertAcknowledgedByOperator</code></td>
-      <td><em>Whenever [AlertAcknowledged] THEN [SilenceCabinBuzzerCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContingencyResolutionsQuery</code></td>
-      <td><code>ContingencyResolutionView</code></td>
-      <td>Paramédico / Farmacéutico</td>
-      <td><code>ResolveIncidentWithMitigation</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>IncidentResolved</code></td>
-      <td><em>Whenever [IncidentResolved] THEN [AppendToAuditManifestCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAlertRuleThresholdsQuery</code></td>
-      <td><code>AlertConfigurationView</code></td>
-      <td>Director Farmacéutico (Seg. 2)</td>
-      <td><code>ConfigureAlertThresholds</code></td>
-      <td><code>AlertRule</code></td>
-      <td><code>AlertThresholdsConfigured</code></td>
-      <td><em>Whenever [AlertThresholdsConfigured] THEN [SyncThermalMonitoringParametersCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Critical Alerting & Incident Response</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Sistema Reactivo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetLiveAlertsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>LiveAlertsBannerView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Chofer (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetIncidentDetailQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>IncidentDetailModalView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Farmacéutico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContingencyResolutionsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContingencyResolutionView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Director Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAlertRuleThresholdsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertConfigurationView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Critical Alerting & Incident Response</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TriggerCriticalAlert</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalAlertTriggered</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [CriticalAlertTriggered] THEN [DispatchPushNotificationCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AcknowledgeAlert</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertAcknowledgedByOperator</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AlertAcknowledged] THEN [SilenceCabinBuzzerCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ResolveIncidentWithMitigation</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>IncidentResolved</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [IncidentResolved] THEN [AppendToAuditManifestCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ConfigureAlertThresholds</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertRule</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertThresholdsConfigured</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AlertThresholdsConfigured] THEN [SyncThermalMonitoringParametersCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
 
 ![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
 
----
+***
 
 #### **4.6.1.6. Bounded Context 6: Chain of Custody & Traceability**
 
@@ -1991,79 +3145,175 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Chain of Custody & Traceability
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetDispatchVerificationQuery</code></td>
-      <td><code>DispatchVerificationView</code></td>
-      <td>Químico Farmacéutico Remitente</td>
-      <td><code>SignInitialCustodyHandover</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>InitialCustodySigned</code></td>
-      <td><em>Whenever [InitialCustodySigned] THEN [IssueRecipientOtpCodeCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>ValidateDeliveryOtpQuery</code></td>
-      <td><code>OtpVerificationModalView</code></td>
-      <td>Médico / Químico Receptor (Seg. 2)</td>
-      <td><code>VerifyDeliveryOtpCode</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>DeliveryOtpVerified</code></td>
-      <td><em>Whenever [DeliveryOtpVerified] THEN [UnlockSmartContainerCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetFinalInspectionReportQuery</code></td>
-      <td><code>FinalInspectionReportView</code></td>
-      <td>Custodio Receptor (Seg. 2)</td>
-      <td><code>AcceptMedicalDelivery</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>MedicalCustodyTransferred</code></td>
-      <td><em>Whenever [MedicalCustodyTransferred] THEN [SealDigitalAuditManifestCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAuditManifestCertifiedPdfQuery</code></td>
-      <td><code>AuditManifestDownloadView</code></td>
-      <td>Auditor DIGEMID / MINSA</td>
-      <td><code>GenerateCertifiedPdfManifest</code></td>
-      <td><code>DigitalAuditManifest</code></td>
-      <td><code>AuditManifestSealedWithHash</code></td>
-      <td><em>Whenever [AuditManifestSealedWithHash] THEN [ArchiveInCloudStorageCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Chain of Custody & Traceability</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico Remitente</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetDispatchVerificationQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchVerificationView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Médico / Químico Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateDeliveryOtpQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OtpVerificationModalView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetFinalInspectionReportQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FinalInspectionReportView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Auditor DIGEMID / MINSA</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAuditManifestCertifiedPdfQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuditManifestDownloadView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Chain of Custody & Traceability</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SignInitialCustodyHandover</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>InitialCustodySigned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [InitialCustodySigned] THEN [IssueRecipientOtpCodeCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VerifyDeliveryOtpCode</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DeliveryOtpVerified</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DeliveryOtpVerified] THEN [UnlockSmartContainerCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AcceptMedicalDelivery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalCustodyTransferred</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [MedicalCustodyTransferred] THEN [SealDigitalAuditManifestCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GenerateCertifiedPdfManifest</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DigitalAuditManifest</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuditManifestSealedWithHash</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuditManifestSealedWithHash] THEN [ArchiveInCloudStorageCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
 
 ![Figura 4.6.1.7 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
 
----
+***
 
 ### **5. Matriz Transversal de Políticas de Negocio Reactivas (Event-Driven)**
 
 Para garantizar que la arquitectura DDD soporte adecuadamente la reactividad en tiempo real entre microservicios/módulos, se formalizan las **políticas de negocio transversales** que gobiernan el comportamiento del sistema, detallando el canal de desacoplamiento asíncrono y la estrategia de consistencia:
 
-| Política / Regla de Negocio | Evento Disparador (Triggering Domain Event) | Bounded Context Emisor | Comando Consecuente (Resulting Command) | Bounded Context Receptor | Canal de Integración / Event Bus | Estrategia de Consistencia |
-|---|---|---|---|---|---|---|
-| **POL-01: Control Térmico Reactivo** | TelemetrySnapshotRecorded (Temp < 2.0°C o > 8.0°C) | *Smart Container IoT* | TriggerCriticalAlert | *Critical Alerting* | Redis Pub/Sub: smartbox.telemetry.excursions | Consistencia Eventual (< 500 ms) |
-| **POL-02: Escalación por Tráfico de Lima** | DynamicEtaRecalculated (Retraso ETA > 15 min) | *Transport Planning* | NotifyHospitalRampDelay | *Transport Planning / IAM* | Internal Event Bus (MediatR): trips.eta.delays | Consistencia Eventual (< 2 s) |
-| **POL-03: Bloqueo Automático en Despacho** | DispatchedTripStarted | *Transport Planning* | EngageSolenoidLock | *Smart Container IoT* | Internal Event Bus (MediatR): trips.dispatched | Consistencia Fuerte / Inmediata |
-| **POL-04: Seguridad de Energía Vehicular** | ExternalPowerSourceLost (Toma 12V desconectada) | *Smart Container IoT* | TriggerPowerWarningAlert | *Critical Alerting* | Redis Pub/Sub: smartbox.power.alerts | Consistencia Eventual (< 500 ms) |
-| **POL-05: Autorización de Apertura en Rampa** | DeliveryOtpVerified | *Chain of Custody* | UnlockElectromechanicalLid | *Smart Container IoT* | Internal MediatR (intra-API) → Redis Pub/Sub: smartbox.commands.actuators → MQTT TLS 8883 | Consistencia Fuerte / Inmediata |
-| **POL-06: Cierre Inmutable de Manifiesto** | MedicalCustodyTransferred | *Chain of Custody* | SealDigitalAuditManifest | *Chain of Custody* | Internal Event Bus (MediatR): custody.completed | Consistencia Fuerte (Transaccional) |
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; margin: 12px 0; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 21%;" />
+  <col style="width: 18%;" />
+  <col style="width: 16%;" />
+  <col style="width: 16%;" />
+  <col style="width: 12%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla de Negocio</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Evento Disparador (Domain Event)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Flujo Bounded Contexts</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Consecuente</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Canal / Event Bus</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Consistencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-01: Control Térmico Reactivo**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TelemetrySnapshotRecorded (Temp < 2.0°C o > 8.0°C)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Smart Container IoT</em> &rarr; <em>Critical Alerting</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TriggerCriticalAlert</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Redis Pub/Sub: smartbox.telemetry.excursions</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 500 ms)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-02: Escalación por Tráfico de Lima**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DynamicEtaRecalculated (Retraso ETA > 15 min)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Transport Planning</em> &rarr; <em>Transport Planning / IAM</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">NotifyHospitalRampDelay</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): trips.eta.delays</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 2 s)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-03: Bloqueo Automático en Despacho**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DispatchedTripStarted</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Transport Planning</em> &rarr; <em>Smart Container IoT</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">EngageSolenoidLock</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): trips.dispatched</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte / Inmediata</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-04: Seguridad de Energía Vehicular**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ExternalPowerSourceLost (Toma 12V desconectada)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Smart Container IoT</em> &rarr; <em>Critical Alerting</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TriggerPowerWarningAlert</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Redis Pub/Sub: smartbox.power.alerts</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 500 ms)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-05: Autorización de Apertura en Rampa**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DeliveryOtpVerified</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Chain of Custody</em> &rarr; <em>Smart Container IoT</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">UnlockElectromechanicalLid</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal MediatR (intra-API) → Redis Pub/Sub: smartbox.commands.actuators → MQTT TLS 8883</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte / Inmediata</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-06: Cierre Inmutable de Manifiesto**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">MedicalCustodyTransferred</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Chain of Custody</em> &rarr; <em>Chain of Custody</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">SealDigitalAuditManifest</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): custody.completed</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte (Transaccional)</td>
+</tr>
+</tbody>
+</table>
 
----
+***
 
 ### **6. Conclusiones y Preparación para el C4 Model (Capítulo 4.6.2)**
 
@@ -2073,7 +3323,7 @@ El **Design-Level EventStorming** ha permitido descomponer con total rigor la co
 
 Este modelado funcional establece las fronteras directas para la elaboración del **C4 Model (Context Diagram en 4.6.2, Container Diagram en 4.6.3 y Component Diagrams en 4.6.4)**, así como los cimientos para el **Diagrama de Clases UML (4.7)** y el **Esquema Relacional de Base de Datos (4.8)**.
 
----
+***
 
 ## **4.6.2. Software Architecture Context Diagram**
 
@@ -2089,7 +3339,7 @@ El objetivo esencial del Diagrama de Contexto es **establecer las fronteras oper
 2. **Cuáles son las dependencias externas:** Qué sistemas de software de terceros, hardware embebido y servicios en la nube son requeridos para que la solución funcione.
 3. **Cuáles son los límites de responsabilidad:** Qué funciones ejecuta estrictamente el sistema y qué tareas delega a sistemas especializados del ecosistema de salud y movilidad de Lima Metropolitana.
 
----
+***
 
 ### **2. Definición del Sistema Central (Subject System)**
 
@@ -2100,14 +3350,21 @@ El objetivo esencial del Diagrama de Contexto es **establecer las fronteras oper
 * **Misión Operativa:**  
   Garantizar el "Desperdicio Cero" de órganos para trasplante, hemoderivados, vacunas y muestras biológicas termosensibles durante el trayecto vial, blindando el cumplimiento de la **R.M. N° 833-2015/MINSA** (Manual de BPDT - DIGEMID) y la **Directiva Sanitaria N° 152/MINSA** (DIGDOT), mediante la supervisión en tiempo real de temperatura, energía vehicular (12V) y cálculo dinámico de tiempos de llegada (ETA) frente al tráfico severo de la capital.
 
----
+***
 
 ### **3. Catálogo de Actores y Personas (Segmentos Objetivo)**
 
 Los usuarios del sistema se articulan de manera estricta con los **dos segmentos objetivo** modelados en la sección **1.3**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 18%;" />
+  <col style="width: 18%;" />
+  <col style="width: 22%;" />
+  <col style="width: 18%;" />
+  <col style="width: 24%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Actor / Persona</th>
       <th>Segmento Objetivo</th>
@@ -2155,14 +3412,20 @@ Los usuarios del sistema se articulan de manera estricta con los **dos segmentos
   </tbody>
 </table>
 
----
+***
 
 ### **4. Catálogo de Sistemas Externos e Interfaces Periféricas**
 
 La plataforma se conecta con siete sistemas de software externos y dispositivos de hardware distribuido:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 22%;" />
+  <col style="width: 18%;" />
+  <col style="width: 35%;" />
+  <col style="width: 25%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Sistema Externo / Hardware</th>
       <th>Tipo de Sistema</th>
@@ -2216,14 +3479,21 @@ La plataforma se conecta con siete sistemas de software externos y dispositivos 
   </tbody>
 </table>
 
----
+***
 
 ### **5. Matriz de Interacciones y Protocolos de Comunicación**
 
 Para garantizar que el modelado técnico no deje ambigüedades sobre las tecnologías de comunicación, la siguiente tabla detalla cada una de las flechas de interacción del diagrama de contexto:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 8%;" />
+  <col style="width: 18%;" />
+  <col style="width: 18%;" />
+  <col style="width: 34%;" />
+  <col style="width: 22%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Flujo #</th>
       <th>Origen (Source)</th>
@@ -2327,17 +3597,17 @@ Para garantizar que el modelado técnico no deje ambigüedades sobre las tecnolo
   </tbody>
 </table>
 
----
+***
 
 ### **6. Especificación Visual Oficial y Bloque de Diagramación**
 
----
+***
 
 ![Figura 4.6.2.1 - C4 Model: System Context Diagram (Nivel 1)](assets/chapter-4/4.6.2-c4-context-diagram.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **7. Conclusiones y Transición hacia el Container Diagram (Capítulo 4.6.3)**
 
@@ -2346,7 +3616,7 @@ El **Software Architecture Context Diagram** define formalmente el perímetro de
 2. **Robustez de Integraciones:** El sistema no depende de soluciones mágicas, sino de contratos técnicos específicos: telemetría continua sobre **MQTT/TLS** para el hardware IoT de ultrabajo consumo (ESP32), APIs de geolocalización contra **TomTom** para vencer la congestión de Lima, y almacenamiento inmutable **WORM** para cumplir la regulación de DIGEMID.
 3. **Paso Siguiente:** Habiendo establecido la plataforma central como una caja negra de alcance delimitado, el siguiente capítulo (**4.6.3 Software Architecture Container Diagrams**) "abrirá" esta caja negra para descomponerla en sus unidades ejecutables independientes: **Landing Page estática, Single Page Application en Vue.js + PrimeVue, RESTful Web API en ASP.NET Core C#, IoT Background Ingestion Worker y Base de Datos Relacional MySQL**.
 
----
+***
 
 ## **4.6.3. Software Architecture Container Diagrams**
 
@@ -2359,14 +3629,21 @@ Tras haber delimitado en el Capítulo 4.6.2 la plataforma central `Medical SMART
 2. **Las decisiones y criterios de selección tecnológica:** Adopción estratégica de **HTML5/CSS3/JavaScript** para la Landing Page de captación y difusión; **Vue Framework con PrimeVue** (Material Design) para la Frontend Web Application interactiva de alta densidad operativa; **ASP.NET Core con Entity Framework Core (C#)** para la Web API RESTful de alta concurrencia y procesamiento asíncrono; y **MySQL Server** como RDBMS principal con motor transaccional InnoDB para garantizar consistencia ACID.
 3. **Los patrones y protocolos de comunicación inter-contenedor:** Especificación exacta de canales de transporte (HTTPS, WSS, TCP/MQTT, SQL/TCP) para garantizar alta disponibilidad, baja latencia y tolerancia a fallos.
 
----
+***
 
 ### **2. Catálogo de Contenedores de Software (Arquitectura de Despliegue)**
 
 La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores principales**, articulando las necesidades del **Segmento 1 (Transporte / Ambulancias)** y del **Segmento 2 (Centros de Salud / Farmacéuticas)**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 18%;" />
+  <col style="width: 16%;" />
+  <col style="width: 20%;" />
+  <col style="width: 30%;" />
+  <col style="width: 16%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Contenedor C4</th>
       <th>Tipo de Unidad</th>
@@ -2407,8 +3684,8 @@ La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores princ
     <tr>
       <td><strong>5. Relational Database</strong></td>
       <td><em>Relational DBMS</em></td>
-      <td><strong>MySQL 8.0 Server</strong> (o PostgreSQL)</td>
-      <td>Almacén de datos relacional transaccional (ACID) administrado mediante migraciones de Entity Framework Core (Puerto TCP 3306). Persiste usuarios, suscripciones, flota de ambulancias, órdenes de traslado, manifiestos digitales y registros de auditoría legal.</td>
+      <td><strong>MySQL 8.0 Server (InnoDB)</strong></td>
+      <td>Almacén de datos relacional transaccional (ACID) administrado mediante migraciones de Entity Framework Core 10.0 (Puerto TCP 3306). Persiste usuarios, suscripciones, flota de ambulancias, órdenes de traslado, manifiestos digitales y registros de auditoría legal.</td>
       <td>Persistencia persistente del sistema</td>
     </tr>
     <tr>
@@ -2421,14 +3698,22 @@ La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores princ
   </tbody>
 </table>
 
----
+***
 
 ### **3. Matriz de Protocolos de Comunicación y Conectividad Inter-Contenedor**
 
 Para garantizar el cumplimiento de los estándares de conectividad segura e interoperabilidad exigidos por la industria médica, se formaliza la siguiente matriz de integración:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 15%;" />
+  <col style="width: 15%;" />
+  <col style="width: 14%;" />
+  <col style="width: 8%;" />
+  <col style="width: 16%;" />
+  <col style="width: 32%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Origen (Source)</th>
       <th>Destino (Target)</th>
@@ -2570,7 +3855,7 @@ Para garantizar el cumplimiento de los estándares de conectividad segura e inte
   </tbody>
 </table>
 
----
+***
 
 ### **4. Decisiones de Arquitectura y Trade-offs Técnicos**
 
@@ -2581,17 +3866,17 @@ Para garantizar el cumplimiento de los estándares de conectividad segura e inte
 3. **Persistencia Relacional en MySQL Server:**  
    * *Justificación:* El transporte asistencial exige estricta integridad referencial (ACID) para auditorías de DIGEMID: no puede existir un viaje sin una orden médica, ni un acta firmada sin un custodio validado. **MySQL 8.0 administrado por Entity Framework Core** provee el control transaccional requerido.
 
----
+***
 
 ### **5. Especificación Visual Oficial y Bloque de Diagramación**
 
----
+***
 
 ![Figura 4.6.3.1 - C4 Model: Container Diagram (Nivel 2)](assets/chapter-4/4.6.3-c4-container-diagram.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **6. Conclusiones y Transición hacia el Component Diagram (Capítulo 4.6.4)**
 
@@ -2600,7 +3885,7 @@ El **Software Architecture Container Diagram** formaliza la distribución físic
 2. **Desacoplamiento de Carga:** La separación entre la **RESTful Web API** (orientada a transacciones de usuario) y el **IoT Ingestion Worker** (orientado a ráfagas continuas de telemetría MQTT) garantiza que la plataforma soporte cientos de ambulancias concurrentes en Lima sin degradar el rendimiento.
 3. **Paso Siguiente:** Habiendo descompuesto el sistema en contenedores ejecutables, el siguiente capítulo (**4.6.4 Software Architecture Components Diagrams**) profundizará en la arquitectura interna del contenedor central más complejo: la **RESTful Web API en ASP.NET Core**, desglosándola bajo los principios de **Clean Architecture / Onion Architecture DDD** (Controllers, Application Handlers, Domain Aggregates e Infrastructure Repositories).
 
----
+***
 
 ## **4.6.4. Software Architecture Components Diagrams**
 
@@ -2614,230 +3899,227 @@ Conforme a las recomendaciones de arquitectura de software para sistemas distrib
 * **IoT Ingestion Background Worker:** Se estructura internamente mediante daemons de servicio (.NET `BackgroundService`) y manejadores de mensajes MQTTnet que enrutan telemetría cruda hacia la Web API y Redis.
 * **Landing Page y Bases de Datos:** La Landing Page está constituida por recursos web estáticos (HTML5/CSS3/JS), mientras que la persistencia relacional en **MySQL 8.0 InnoDB** se especifica con total profundidad en el **Capítulo 4.8 (Database Design)**.
 
-En este capítulo se realiza la descomposición exhaustiva de la **RESTful Web API en ASP.NET Core (C#)**, descomponiéndola bajo los principios de **Clean Architecture / DDD Onion Architecture (Inversión de Dependencias)** para evidenciar cómo se estructuran los módulos que dan soporte operativo al **Segmento 1 (Transporte / Ambulancias)** y al **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**.
+En este capítulo se realiza la descomposición exhaustiva de la **RESTful Web API en ASP.NET Core (.NET 10 LTS, C# 14)**, estructurándola bajo los principios de **Domain-Driven Design (DDD) y Clean Architecture** con estricta inversión de dependencias para evidenciar cómo se organizan los módulos que dan soporte operativo al **Segmento 1 (Transporte / Ambulancias)** y al **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**.
 
----
+***
 
-### **2. Arquitectura Interna del Contenedor: Clean / Onion Architecture**
+### **2. Organización en Capas DDD de los Componentes del Contenedor**
 
 Para evitar el acoplamiento directo entre los controladores HTTP y la base de datos MySQL, el contenedor **RESTful Web API** organiza sus componentes en cuatro capas concéntricas regidas por la **Regla de Dependencia** (las dependencias de código fuente solo apuntan hacia adentro, hacia el Dominio):
 
----
-
-![Figura 4.6.4.1 - Diagrama de Arquitectura de Capas Clean / Onion para RESTful Web API](assets/chapter-4/4.6.4-clean-onion-architecture.png)
-
-*Nota: Diagrama de Arquitectura de Capas Clean / Onion para el contenedor RESTful Web API elaborado conforme a los patrones de Clean Architecture y Domain-Driven Design para la plataforma.*
-
----
-
-1. **Presentation Layer (Capa de Controladores REST):**  
-   Recibe las solicitudes HTTP desde la Single Page Application (Vue.js), valida los tokens JWT de autorización y el formato básico de los datos entrantes (DTOs), delegando inmediatamente la ejecución hacia los servicios de aplicación.
+1. **Presentation Layer (Capa de Controladores REST y Hubs):**  
+   Recibe las solicitudes HTTP desde la Single Page Application (Vue.js 3), valida los tokens JWT de autorización y el formato básico de los datos entrantes (DTOs), delegando inmediatamente la ejecución hacia los servicios de aplicación.
 2. **Application Layer (Capa de Aplicación y Casos de Uso):**  
    Orquesta los flujos de negocio y coordina las transacciones sin contener reglas de negocio del dominio. Convierte DTOs en entidades, invoca a los agregados del dominio, interactúa con interfaces de repositorio y coordina adaptadores externos.
 3. **Domain Layer (Capa de Dominio - Núcleo Central Inmutable):**  
    Contiene los Agregados Raíz (*Aggregate Roots*), Entidades, Objetos de Valor (*Value Objects*) y las **invariantes de negocio** que no dependen de ningún framework o base de datos. Define las interfaces de repositorio que la infraestructura debe implementar.
 4. **Infrastructure Layer (Capa de Infraestructura y Persistencia):**  
-   Implementa las interfaces de repositorio utilizando **Entity Framework Core sobre MySQL 8.0**, gestiona el contexto de base de datos (`AppDbContext`) e implementa los adaptadores hacia servicios en la nube externos (TomTom, Firebase, Twilio, AWS S3).
+   Implementa las interfaces de repositorio utilizando **Entity Framework Core 10.0 sobre MySQL Server 8.0 (InnoDB)**, gestiona el contexto de base de datos (`AppDbContext`) e implementa los adaptadores hacia servicios en la nube externos (TomTom, Firebase Cloud Messaging, Twilio, AWS S3).
 
 Conforme a los fundamentos del C4 Model, en este Nivel 3 (Component Diagrams) se modelan los artefactos modulares inyectables en el contenedor de inversión de control (IoC) de ASP.NET Core (Controladores, Servicios de Aplicación, Repositorios, Adaptadores y DbContext). Las entidades de dominio, objetos de valor y estructuras internas de clases corresponden al Nivel 4 (Code / UML Class Diagrams), los cuales se especifican con exhaustividad técnica en el Capítulo 4.7.
 
----
+***
+
+<div style="page-break-before: always;"></div>
 
 ### **3. Catálogo Detallado de Componentes de la RESTful Web API**
 
 A continuación se detallan los componentes estructurados por capa para los Bounded Contexts principales:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Capa Arquitectónica</th>
-      <th>Componente C4</th>
-      <th>Tecnología / Framework</th>
-      <th>Responsabilidades Técnicas y de Negocio</th>
-      <th>Dependencias Inyectadas</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-    <tr>
-      <td rowspan="7"><strong>Presentation<br>(Controllers & Hubs)</strong></td>
-      <td><code>AuthController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para autenticación JWT, renovación de tokens, registro de usuarios institucionales y roles.</td>
-      <td><code>IIdentityService</code></td>
-    </tr>
-    <tr>
-      <td><code>SubscriptionsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para planes SaaS B2B, cupos de contenedores (5L/20L) y vinculación de ambulancias.</td>
-      <td><code>ISubscriptionService</code></td>
-    </tr>
-    <tr>
-      <td><code>TransportsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints REST para crear órdenes de traslado de emergencia, asignar ambulancias (Seg. 1) y consultar rutas activas.</td>
-      <td><code>ITransportService</code></td>
-    </tr>
-    <tr>
-      <td><code>ContainersController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para calibración de tara y pesaje neto con celda HX711, y envío de comandos de bloqueo solenoide.</td>
-      <td><code>ITelemetryService</code></td>
-    </tr>
-    <tr>
-      <td><code>AlertsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para acuse de recibo de alarmas acústicas en cabina (Seg. 1) y registro de mitigación ante excursión térmica.</td>
-      <td><code>IIncidentService</code></td>
-    </tr>
-    <tr>
-      <td><code>CustodyController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para validar el <strong>código OTP de un solo uso</strong> en rampa hospitalaria (Seg. 2) y descargar el acta digital certificada.</td>
-      <td><code>ICustodyService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryHub</code></td>
-      <td>ASP.NET Core SignalR Hub, Authorize Attribute</td>
-      <td>Expone el endpoint de WebSockets (<code>/hubs/telemetry</code>) para suscripción en tiempo real a curvas térmicas, estado de 12V y posición GPS de SmartBoxes.</td>
-      <td><code>IRealTimeCacheService</code></td>
-    </tr>
-    
-    <tr>
-      <td rowspan="7"><strong>Application<br>(Services / Use Cases)</strong></td>
-      <td><code>IdentityService</code></td>
-      <td>C# Service Class, JWT Bearer Handler</td>
-      <td>Valida credenciales con hashing BCrypt, emite tokens criptográficos JWT y verifica permisos RBAC de ambos segmentos.</td>
-      <td><code>IUserRepository</code>,<br><code>ITokenGeneratorService</code></td>
-    </tr>
-    <tr>
-      <td><code>SubscriptionService</code></td>
-      <td>C# Service Class</td>
-      <td>Gestiona planes institucionales B2B, valida cupos de SmartBoxes activos por institución y acuerdos de soporte SLA.</td>
-      <td><code>ISubscriptionRepository</code></td>
-    </tr>
-    <tr>
-      <td><code>TransportApplicationService</code></td>
-      <td>C# Service Class, FluentValidation</td>
-      <td>Orquesta la planificación del viaje, valida tiempos de isquemia fría (&lt;4h corazón, &lt;8h hígado) y consulta a TomTom para recalcular ETA dinámico.</td>
-      <td><code>ITransportRepository</code>,<br><code>ITrafficRoutingService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryProcessingService</code></td>
-      <td>C# Service Class, MediatR</td>
-      <td>Valida snapshots de telemetría, comprueba rango térmico (+2.0 °C a +8.0 °C), detecta desconexión de energía de 12V y persiste periódicamente bloques consolidados en MySQL vía <code>ISmartContainerRepository</code> para alimentar las actas de DIGEMID.</td>
-      <td><code>ISmartContainerRepository</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryAlertSubscriber</code></td>
-      <td>BackgroundService (C#), IHostedService</td>
-      <td>Servicio continuo en segundo plano que escucha los canales Redis Pub/Sub (<code>smartbox.alerts.critical</code> y <code>smartbox.telemetry.batch</code>); mediante <code>IServiceScope</code>, delega de forma segura el manejo de alertas a <code>IncidentResponseService</code> y la persistencia de lotes a <code>TelemetryProcessingService</code>.</td>
-      <td><code>IServiceScopeFactory</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    <tr>
-      <td><code>IncidentResponseService</code></td>
-      <td>C# Service Class</td>
-      <td>Evalúa severidad de desviaciones térmicas y orquesta el despacho omnicanal de alertas push y SMS hacia la tripulación y médicos.</td>
-      <td><code>IIncidentRepository</code>,<br><code>INotificationService</code></td>
-    </tr>
-    <tr>
-      <td><code>CustodyVerificationService</code></td>
-      <td>C# Service Class</td>
-      <td>Comprueba la validez temporal del OTP, comanda el desbloqueo electromecánico de la tapa y genera el manifiesto sellado con SHA-256.</td>
-      <td><code>ICustodyRepository</code>,<br><code>IStorageService</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    
-    <tr>
-      <td rowspan="5"><strong>Domain<br>(Core Business)</strong><br><small style="color: #666;"><em>(Límites de dominio orquestados por Aplicación; modelado estructural de clases detallado en Capítulo 4.7)</em></small></td>
-      <td><code>UserAccount</code> & <code>SubscriptionPlan</code></td>
-      <td>Plain C# (POCO), Domain Entities</td>
-      <td>Representan las identidades, roles clínicos, límites de flota de SmartBoxes y acuerdos comerciales B2B.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>SmartContainer</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Encapsula el estado electromecánico de la tapa, celda Peltier, batería LiFePO4 y el historial telemétrico.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>TransportOrder</code> & <code>DispatchTrip</code></td>
-      <td>DDD Aggregate Roots</td>
-      <td>Modelan la solicitud clínica de traslado, asignación de paramédico/ambulancia y ruta con isquemia fría controlada.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>CriticalIncident</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Modela anomalías térmicas y de energía auxiliar, gobernando las reglas de escalamiento y resoluciones de mitigación.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>CustodyTransfer</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Gobernado por la máquina de estados de entrega, validación de clave OTP temporal y manifiesto inmutable DIGEMID.</td>
-      <td>—</td>
-    </tr>
-    
-    <tr>
-      <td rowspan="9"><strong>Infrastructure<br>(Persistence & Adapters)</strong></td>
-      <td><code>AppDbContext</code></td>
-      <td>Entity Framework Core 10.0 (.NET 10 LTS), Pomelo MySQL / Oracle MySQL EF Core</td>
-      <td>Contexto de base de datos que mapea las entidades del dominio hacia el esquema relacional en MySQL 8.0 (TCP 3306).</td>
-      <td><code>DbContextOptions</code></td>
-    </tr>
-    <tr>
-      <td><code>EF Repositories Implementations</code></td>
-      <td>EF Core Repositories (C#)</td>
-      <td>Implementan <code>IUserRepository</code>, <code>ISubscriptionRepository</code>, <code>ITransportRepository</code>, <code>ISmartContainerRepository</code>, etc.</td>
-      <td><code>AppDbContext</code></td>
-    </tr>
-    <tr>
-      <td><code>TomTomRoutingAdapter</code></td>
-      <td>HttpClient, Polly (Retry/CircuitBreaker)</td>
-      <td>Consume la API de TomTom para obtener matrices de tiempo considerando el tráfico vehicular en avenidas de Lima.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>FirebaseTwilioNotificationAdapter</code></td>
-      <td>FirebaseAdmin SDK, Twilio REST API</td>
-      <td>Despacha notificaciones push a la PWA móvil y mensajes de texto SMS a los teléfonos de la guardia médica.</td>
-      <td><code>IOptions&lt;NotificationSettings&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>AwsS3StorageAdapter</code></td>
-      <td>AWSSDK.S3 (C#)</td>
-      <td>Sube los manifiestos de viaje en PDF generados con sellado SHA-256 a buckets con retención WORM inmutable.</td>
-      <td><code>IAmazonS3</code></td>
-    </tr>
-    <tr>
-      <td><code>CulqiPaymentAdapter</code></td>
-      <td>HttpClient, Polly (Resilience)</td>
-      <td>Implementa <code>IPaymentGateway</code> para procesamiento automatizado de débitos B2B y validación de comprobantes de pago.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>HospitalFhirAdapter</code></td>
-      <td>HttpClient, HL7.Fhir.R4</td>
-      <td>Implementa <code>IHospitalInteroperabilityService</code> para sincronización de preavisos con el HIS hospitalario y consulta de habilitación RENIPRESS.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>JwtTokenGeneratorAdapter</code></td>
-      <td>System.IdentityModel.Tokens.Jwt, C# Class</td>
-      <td>Implementa <code>ITokenGeneratorService</code> para generar y firmar criptográficamente tokens JWT con claims institucionales.</td>
-      <td><code>IOptions&lt;JwtSettings&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>RedisRealTimeCacheAdapter</code></td>
-      <td>StackExchange.Redis (C#)</td>
-      <td>Implementa <code>IRealTimeCacheService</code> para gestión de estado volátil en memoria y suscripción a canales Pub/Sub.</td>
-      <td><code>IConnectionMultiplexer</code></td>
-    </tr>
-  </tbody>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; font-size: 6.8pt; table-layout: fixed; border: 1px solid #777;">
+<colgroup>
+<col style="width: 14%;" />
+<col style="width: 17%;" />
+<col style="width: 20%;" />
+<col style="width: 32%;" />
+<col style="width: 17%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f0f0f0;">
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Capa Arquitectónica</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Componente C4</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Tecnología / Framework</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Responsabilidades Técnicas y de Negocio</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Dependencias Inyectadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="7" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Presentation<br />(Controllers &amp; Hubs)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AuthController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para autenticación JWT, renovación de tokens, registro de usuarios institucionales y roles.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIdentityService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SubscriptionsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para planes SaaS B2B, cupos de contenedores (5L/20L) y vinculación de ambulancias.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISubscriptionService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints REST para crear órdenes de traslado de emergencia, asignar ambulancias (Seg. 1) y consultar rutas activas.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITransportService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ContainersController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para calibración de tara y pesaje neto con celda HX711, y envío de comandos de bloqueo solenoide.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITelemetryService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AlertsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para acuse de recibo de alarmas acústicas en cabina (Seg. 1) y registro de mitigación ante excursión térmica.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIncidentService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para validar el <strong>código OTP de un solo uso</strong> en rampa hospitalaria (Seg. 2) y descargar el acta digital certificada.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ICustodyService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryHub</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core SignalR Hub, Authorize Attribute</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone el endpoint de WebSockets (<code>/hubs/telemetry</code>) para suscripción en tiempo real a curvas térmicas, estado de 12V y posición GPS de SmartBoxes.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td rowspan="7" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Application<br />(Services / Use Cases)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IdentityService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, JWT Bearer Handler</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Valida credenciales con hashing BCrypt, emite tokens criptográficos JWT y verifica permisos RBAC de ambos segmentos.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IUserRepository</code>,<br /><code>ITokenGeneratorService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SubscriptionService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Gestiona planes institucionales B2B, valida cupos de SmartBoxes activos por institución y acuerdos de soporte SLA.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISubscriptionRepository</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportApplicationService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, FluentValidation</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Orquesta la planificación del viaje, valida tiempos de isquemia fría (&lt;4h corazón, &lt;8h hígado) y consulta a TomTom para recalcular ETA dinámico.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITransportRepository</code>,<br /><code>ITrafficRoutingService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryProcessingService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, MediatR</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Valida snapshots de telemetría, comprueba rango térmico (+2.0 °C a +8.0 °C), detecta desconexión de energía de 12V y persiste periódicamente bloques consolidados en MySQL vía <code>ISmartContainerRepository</code> para alimentar las actas de DIGEMID.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISmartContainerRepository</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryAlertSubscriber</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">BackgroundService (C#), IHostedService</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Servicio continuo en segundo plano que escucha los canales Redis Pub/Sub (<code>smartbox.alerts.critical</code> y <code>smartbox.telemetry.batch</code>); mediante <code>IServiceScope</code>, delega de forma segura el manejo de alertas a <code>IncidentResponseService</code> y la persistencia de lotes a <code>TelemetryProcessingService</code>.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IServiceScopeFactory</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IncidentResponseService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Evalúa severidad de desviaciones térmicas y orquesta el despacho omnicanal de alertas push y SMS hacia la tripulación y médicos.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIncidentRepository</code>,<br /><code>INotificationService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyVerificationService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Comprueba la validez temporal del OTP, comanda el desbloqueo electromecánico de la tapa y genera el manifiesto sellado con SHA-256.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ICustodyRepository</code>,<br /><code>IStorageService</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td rowspan="5" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Domain<br />(Core Business)</strong><br /><small style="color: #666;"><em>(Límites de dominio orquestados por Aplicación; modelado estructural de clases detallado en Capítulo 4.7)</em></small></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>UserAccount</code> &amp; <code>SubscriptionPlan</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Plain C# (POCO), Domain Entities</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Representan las identidades, roles clínicos, límites de flota de SmartBoxes y acuerdos comerciales B2B.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SmartContainer</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Encapsula el estado electromecánico de la tapa, celda Peltier, batería LiFePO4 y el historial telemétrico.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportOrder</code> &amp; <code>DispatchTrip</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Roots</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Modelan la solicitud clínica de traslado, asignación de paramédico/ambulancia y ruta con isquemia fría controlada.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CriticalIncident</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Modela anomalías térmicas y de energía auxiliar, gobernando las reglas de escalamiento y resoluciones de mitigación.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyTransfer</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Gobernado por la máquina de estados de entrega, validación de clave OTP temporal y manifiesto inmutable DIGEMID.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td rowspan="9" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Infrastructure<br />(Persistence &amp; Adapters)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AppDbContext</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Entity Framework Core 10.0 (.NET 10 LTS), Pomelo MySQL / Oracle MySQL EF Core</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Contexto de base de datos que mapea las entidades del dominio hacia el esquema relacional en MySQL 8.0 (TCP 3306).</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>DbContextOptions</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>EF Repositories Implementations</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">EF Core Repositories (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementan <code>IUserRepository</code>, <code>ISubscriptionRepository</code>, <code>ITransportRepository</code>, <code>ISmartContainerRepository</code>, etc.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AppDbContext</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TomTomRoutingAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, Polly (Retry/CircuitBreaker)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Consume la API de TomTom para obtener matrices de tiempo considerando el tráfico vehicular en avenidas de Lima.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>FirebaseTwilioNotificationAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">FirebaseAdmin SDK, Twilio REST API</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Despacha notificaciones push a la PWA móvil y mensajes de texto SMS a los teléfonos de la guardia médica.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IOptions&lt;NotificationSettings&gt;</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AwsS3StorageAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">AWSSDK.S3 (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Sube los manifiestos de viaje en PDF generados con sellado SHA-256 a buckets con retención WORM inmutable.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IAmazonS3</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CulqiPaymentAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, Polly (Resilience)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IPaymentGateway</code> para procesamiento automatizado de débitos B2B y validación de comprobantes de pago.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>HospitalFhirAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, HL7.Fhir.R4</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IHospitalInteroperabilityService</code> para sincronización de preavisos con el HIS hospitalario y consulta de habilitación RENIPRESS.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>JwtTokenGeneratorAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">System.IdentityModel.Tokens.Jwt, C# Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>ITokenGeneratorService</code> para generar y firmar criptográficamente tokens JWT con claims institucionales.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IOptions&lt;JwtSettings&gt;</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>RedisRealTimeCacheAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">StackExchange.Redis (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IRealTimeCacheService</code> para gestión de estado volátil en memoria y suscripción a canales Pub/Sub.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IConnectionMultiplexer</code></td>
+</tr>
+</tbody>
 </table>
 
----
+***
 
 ### **4. Matriz de Inyección de Dependencias y Ciclos de Vida (IoC Container)**
 
@@ -2868,17 +4150,17 @@ Siguiendo las convenciones oficiales de desarrollo para ASP.NET Core de Microsof
 | `IRealTimeCacheService` | `RedisRealTimeCacheAdapter` | `Singleton` | Administra la conexión multiplexada persistente hacia Redis para telemetría en tiempo real y canales SignalR Pub/Sub. |
 | `MapHub<TelemetryHub>` | `TelemetryHub` (SignalR) | `Transient` / *Per-Invocation* | Endpoint WebSockets (`/hubs/telemetry`) para distribución reactiva de eventos y telemetría hacia los clientes SPA conectados. |
 
----
+***
 
 ### **5. Especificación Visual Oficial y Bloque de Diagramación del Backend RESTful API**
 
----
+***
 
 ![Figura 4.6.4.2 - C4 Model: Component Diagram (Nivel 3 - Backend RESTful Web API)](assets/chapter-4/4.6.4-c4-component-backend-api.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **6. Desglose Componencial de Contenedores Satélites (SPA y Ingestion Worker)**
 
@@ -2896,13 +4178,13 @@ Para complementar la visión integral de la arquitectura en el Nivel 3 (Componen
   * `OtpHandoverDialog`: Interfaz modal para ingreso del código OTP de 6 dígitos con teclado numérico accesible para cirujanos y farmacéuticos en quirófano.
 * **HTTP Client & Resiliency (Axios ApiClient):** Instancia de Axios configurada con interceptores para inyección automática del encabezado `Authorization: Bearer <token>` y captura uniforme de errores RFC 7807 (ProblemDetails).
 
----
+***
 
 ![Figura 4.6.4.3 - C4 Model: Component Diagram (Single Page Application Vue.js)](assets/chapter-4/4.6.4-c4-component-spa-vue.png)
 
 *Nota: Elaboración propia en Structurizr conforme a la notación C4 Model (Nivel 3: Componentes) de Simon Brown.*
 
----
+***
 
 #### **6.2. IoT Telemetry Ingestion Worker (.NET BackgroundService)**
 * **MqttTelemetryConsumer:** Servicio residente en segundo plano basado en `MQTTnet` que mantiene una conexión persistente bidireccional sobre TLS (puerto 8883) suscrito al tópico canónico `smartbox/+/telemetry`.
@@ -2911,13 +4193,13 @@ Para complementar la visión integral de la arquitectura en el Nivel 3 (Componen
 * **RedisTelemetryPublisher:** Publica las lecturas normalizadas en el canal Pub/Sub de Redis para su propagación inmediata a la Web API y clientes conectados mediante SignalR Hubs.
 * **MqttCommandDispatcher:** Componente residente que se suscribe al canal Redis Pub/Sub (`smartbox.commands.actuators`) para consumir comandos de bloqueo y desbloqueo emitidos por `CustodyVerificationService`, publicando mensajes firmados vía MQTT sobre TLS (puerto 8883) hacia el actuador del cerrojo electromecánico en el microcontrolador ESP32 (`smartbox/{boxId}/commands`).
 
----
+***
 
 ![Figura 4.6.4.4 - C4 Model: Component Diagram (IoT Ingestion Background Worker)](assets/chapter-4/4.6.4-c4-component-iot-worker.png)
 
 *Nota: Elaboración propia en Structurizr conforme a la notación C4 Model (Nivel 3: Componentes) de Simon Brown.*
 
----
+***
 
 ### **7. Conclusiones y Transición hacia el Diseño Orientado a Objetos (Capítulo 4.7)**
 
@@ -2926,8 +4208,7 @@ El **Software Architecture Components Diagram** demuestra la aplicación riguros
 2. **Alta Cohesión:** Cada Bounded Context cuenta con su tríada de Controlador, Servicio de Aplicación y Repositorio, garantizando mantenibilidad y escalabilidad.
 3. **Paso Siguiente:** Habiendo establecido la estructura modular de componentes, el siguiente capítulo (**4.7 Software Object-Oriented Design / 4.7.1 Class Diagrams**) detallará el modelado estático orientado a objetos de estas clases, especificando atributos tipados, modificadores de acceso (`+`, `-`, `#`), métodos con parámetros y tipos de retorno, y relaciones UML con multiplicidades exactas.
 
----
-
+***
 
 <div style="page-break-after: always;"></div>
 
@@ -2970,20 +4251,27 @@ En estricta observancia de los patrones Domain-Driven Design (DDD), las clases d
 * `DigitalAuditManifest.CloudStorageUrl` → columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
 Esta separación formal preserva la expresividad del lenguaje ubicuo en el código fuente de dominio sin acoplarlo rígidamente a los identificadores físicos de almacenamiento.
 
----
+***
 
 ### **2. Desglose Exhaustivo de Clases por Bounded Context**
 
 A continuación se detalla la especificación estática de clases para los cinco Bounded Contexts del sistema que articulan el **Segmento 1 (Transporte y Flota Logística)** y el **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**:
 
----
+***
 
 #### **4.7.1.0. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
 A nivel del diseño estático de clases de software, las entidades de identidad, roles institucionales y suscripción SaaS se consolidan en este módulo para garantizar consistencia transaccional inmediata en la validación de licencias y membresías activas. Este contexto centraliza la autenticación mediante tokens JWT, control de acceso basado en roles (RBAC) para los dos segmentos objetivo, registro formal de sedes hospitalarias con código RENIPRESS y gestión del modelo de suscripción SaaS para flotas de contenedores médicos.
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -3136,14 +4424,21 @@ A nivel del diseño estático de clases de software, las entidades de identidad,
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.1. Bounded Context A: Smart Container & Telemetry Monitoring (IoT)**
 
 Representa el núcleo físico y sensorial del proyecto. Modela el control activo de frío (+2.0 °C a +8.0 °C) mediante celdas Peltier, el pesaje digital con celda HX711 (&plusmn;5 g), el solenoide electromecánico de la tapa y la supervisión de la toma de 12V vehicular.
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -3339,14 +4634,21 @@ Representa el núcleo físico y sensorial del proyecto. Modela el control activo
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.2. Bounded Context B: Medical Transport Planning & Dispatching (Segmento 1)**
 
 Modela la respuesta operativa del **Segmento 1 (Ambulancias y Despacho)** ante las emergencias: creación de órdenes, asignación de unidades móviles, control de tiempos de isquemia fría y cálculo dinámico de ETA ante el tráfico severo de Lima.
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -3490,14 +4792,21 @@ Modela la respuesta operativa del **Segmento 1 (Ambulancias y Despacho)** ante l
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.3. Bounded Context C: Critical Alerting & Incident Response (Segmentos 1 y 2)**
 
 Modela la detección de contingencias, despacho de alarmas acústicas y visuales a la cabina de ambulancia (Segmento 1) y notificaciones push/SMS a los directores médicos y receptores (Segmento 2).
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -3603,14 +4912,21 @@ Modela la detección de contingencias, despacho de alarmas acústicas y visuales
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.4. Bounded Context D: Chain of Custody & Traceability (Segmento 2 - Clínico y Legal)**
 
 Modela la seguridad de custodia en el hospital receptor (**Segmento 2**): validación del **código OTP de un solo uso**, desbloqueo seguro de la tapa y generación inmutable del acta digital con hash criptográfico SHA-256 para auditorías de DIGEMID y DIGDOT.
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Interfaz / Enum</th>
       <th>Estereotipo DDD</th>
@@ -3718,14 +5034,21 @@ Modela la seguridad de custodia en el hospital receptor (**Segmento 2**): valida
   </tbody>
 </table>
 
----
+***
 
 #### **4.7.1.5. Domain Events y Clases Transversales (Shared Kernel)**
 
 Permiten propagar asíncronamente cambios de estado críticos entre los Bounded Contexts sin generar acoplamiento directo entre Agregados Raíz:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 13%;" />
+  <col style="width: 29%;" />
+  <col style="width: 24%;" />
+  <col style="width: 17%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase / Estructura</th>
       <th>Estereotipo DDD</th>
@@ -3807,14 +5130,22 @@ Permiten propagar asíncronamente cambios de estado críticos entre los Bounded 
   </tbody>
 </table>
 
----
+***
 
 ### **3. Matriz de Relaciones y Cardinalidades del Modelo de Clases**
 
 Para asegurar total rigurosidad en la implementación del diagrama UML, la siguiente tabla define todas las relaciones del ecosistema:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 20%;" />
+  <col style="width: 10%;" />
+  <col style="width: 16%;" />
+  <col style="width: 10%;" />
+  <col style="width: 20%;" />
+  <col style="width: 24%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Clase Origen</th>
       <th>Multiplicidad</th>
@@ -3980,7 +5311,7 @@ Para asegurar total rigurosidad en la implementación del diagrama UML, la sigui
   </tbody>
 </table>
 
----
+***
 
 ### **4. Diagramas de Clases por Bounded Context**
 
@@ -3992,7 +5323,7 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de IAM y Suscripciones.*
 
----
+***
 
 #### **4.2. Bounded Context: Smart Container & Telemetry Monitoring**
 
@@ -4000,7 +5331,7 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Contenedores Inteligentes y Telemetría.*
 
----
+***
 
 #### **4.3. Bounded Context: Medical Transport Planning & Dispatching**
 
@@ -4008,7 +5339,7 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Transporte y Despacho.*
 
----
+***
 
 #### **4.4. Bounded Context: Critical Alerting & Incident Response**
 
@@ -4016,14 +5347,13 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Alertas Críticas e Incidentes.*
 
----
+***
 
 #### **4.5. Bounded Context: Chain of Custody & Traceability**
 
 ![Figura 4.7.1.5 - Diagrama de Clases: Chain of Custody & Traceability](assets/chapter-4/4.7.1-class-diagram-chain-of-custody.png)
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Cadena de Custodia y Trazabilidad.*
-
 
 <div style="page-break-after: always;"></div>
 
@@ -4068,7 +5398,7 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * `DigitalAuditManifest.GeneratedAt` → `sealed_at` (tabla `digital_audit_manifests`).
    * `DigitalAuditManifest.CloudStorageUrl` → `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
 
----
+***
 
 ### **4.8.1. Database Diagrams**
 
@@ -4088,13 +5418,13 @@ El modelo de datos relacional de Medical SMARTBOX ha sido diseñado bajo una est
 * **Principio de Custodia Unívoca y Ausencia de Tablas N:M:**  
   A diferencia de aplicaciones comerciales genéricas, el modelo relacional descarta de forma deliberada el uso de tablas intermedias de descomposición muchos a muchos (N:M). Bajo la normativa de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva Sanitaria N° 152), el transporte asistencial de órganos, hemoderivados y vacunas críticas opera bajo el **Principio de Custodia Unívoca (1 Orden de Traslado → 1 Despacho → 1 Contenedor Inteligente → 1 Custodio Receptor Acreditado)**. Establecer asignaciones múltiples concurrentes (N:M) introduciría vacíos de trazabilidad médico-legal y riesgo inaceptable de contaminación cruzada o confusión de muestras biológicas, por lo que el esquema relacional refuerza estrictamente relaciones 1:1 y 1:N con integridad referencial restrictiva.
 
----
+***
 
 #### **2. Diccionario de Datos Exhaustivo por Bounded Context**
 
 A continuación se detalla la especificación formal de las 11 tablas del sistema relacional agrupadas por sus Bounded Contexts, cubriendo de forma estricta las necesidades operativas del **Segmento 1 (Ambulancias y Logística)** y el **Segmento 2 (Hospitales y Laboratorios B2B)**:
 
----
+***
 
 ##### **4.8.1.1. Bounded Context: IAM & Subscriptions (Soporte B2B y Acceso)**
 
@@ -4103,61 +5433,355 @@ Garantiza la autenticación, la asignación de roles médicos y la gestión de p
 ###### **Tabla 1: `subscription_plans`**
 Almacena los niveles de suscripción B2B que determinan la capacidad operativa de ambulancias y contenedores asignados a cada institución cliente.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único del plan en formato UUIDv4. |
-| `name` | `VARCHAR(50)` | **NOT NULL** | — | Nombre comercial del plan (ej. *Plan Red Hospitalaria Integral*). |
-| `code` | `VARCHAR(20)` | **NOT NULL** | `UNIQUE` | Código alfanumérico único para facturación (ej. `HOSP-ENTERPRISE-01`). |
-| `max_ambulances` | `INT` | **NOT NULL** | `DEFAULT 5, CHECK (> 0)` | Límite máximo de ambulancias autorizadas para operar en la red. |
-| `max_smartboxes` | `INT` | **NOT NULL** | `DEFAULT 10, CHECK (> 0)` | Cupo de contenedores inteligentes IoT asignados a la flota. |
-| `monthly_price_usd` | `DECIMAL(10, 2)` | **NOT NULL** | `DEFAULT 0.00, CHECK (>= 0)` | Tarifa mensual en dólares americanos cobrada a la institución. |
-| `support_sla_hours` | `INT` | **NOT NULL** | `DEFAULT 24` | Tiempo máximo garantizado de respuesta técnica para incidentes. |
-| `telemetry_data_retention_months` | `INT` | **NOT NULL** | `DEFAULT 12, CHECK (> 0)` | Período de retención de telemetría histórica conforme a normativa DIGEMID. |
-| `is_active` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Indicador booleano de vigencia comercial del plan. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha y hora UTC de registro del plan en la plataforma. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del plan en formato UUIDv4.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>name</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(50)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nombre comercial del plan (ej. *Plan Red Hospitalaria Integral*).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>code</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Código alfanumérico único para facturación (ej. `HOSP-ENTERPRISE-01`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>max_ambulances</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 5, CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Límite máximo de ambulancias autorizadas para operar en la red.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>max_smartboxes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 10, CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cupo de contenedores inteligentes IoT asignados a la flota.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>monthly_price_usd</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(10, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0.00, CHECK (>= 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tarifa mensual en dólares americanos cobrada a la institución.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>support_sla_hours</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 24</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tiempo máximo garantizado de respuesta técnica para incidentes.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>telemetry_data_retention_months</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 12, CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Período de retención de telemetría histórica conforme a normativa DIGEMID.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_active</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Indicador booleano de vigencia comercial del plan.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha y hora UTC de registro del plan en la plataforma.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 2: `hospital_institutions`**
 Representa los centros de salud, redes hospitalarias, bancos de órganos y operadores logísticos (Segmento 2).
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único de la institución de salud en formato UUIDv4. |
-| `subscription_plan_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `subscription_plans(id)` | Plan de suscripción contratado por la entidad hospitalaria. |
-| `name` | `VARCHAR(150)` | **NOT NULL** | — | Razón social o denominación del hospital/clínica (ej. *Hospital Rebagliati*). |
-| `tax_id_ruc` | `VARCHAR(11)` | **NOT NULL** | `UNIQUE` | Registro Único de Contribuyentes (RUC) fiscal emitido por SUNAT. |
-| `institution_type` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'PublicHospital'` | Tipo: `PublicHospital`, `PrivateClinic`, `AmbulanceNetwork`, `PharmaceuticalLab`. |
-| `health_service_level` | `VARCHAR(20)` | **NOT NULL** | `DEFAULT 'II-2'` | Nivel o categoría de atención asistencial MINSA (I-4, II-2, III-1, III-E). |
-| `address` | `VARCHAR(255)` | **NOT NULL** | — | Dirección física donde operan los puntos de despacho o quirófanos. |
-| `district` | `VARCHAR(100)` | **NOT NULL** | — | Distrito de Lima Metropolitana o región sanitaria de ubicación. |
-| `emergency_phone` | `VARCHAR(20)` | **NOT NULL** | — | Teléfono de contacto de la central de emergencias hospitalarias. |
-| `renipress_code` | `VARCHAR(20)` | **NOT NULL** | `UNIQUE` | Código único nacional del Registro Nacional de IPRESS (SUSALUD / MINSA). |
-| `latitude` | `DECIMAL(10, 8)` | **NOT NULL** | `CHECK (BETWEEN -90 AND 90)` | Coordenada geográfica de latitud del helipuerto o rampa de urgencia. |
-| `longitude` | `DECIMAL(11, 8)` | **NOT NULL** | `CHECK (BETWEEN -180 AND 180)` | Coordenada geográfica de longitud de la sede hospitalaria. |
-| `geofence_radius_meters` | `DECIMAL(6, 2)` | **NOT NULL** | `DEFAULT 2000.00, CHECK (> 0)` | Radio perimétrico virtual (ej. 2 km) que dispara el preaviso y habilita OTP. |
-| `is_active` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Estado de habilitación operativa para programar traslados. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha y hora UTC de alta en el sistema. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Marca temporal UTC de la última actualización de datos institucionales. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único de la institución de salud en formato UUIDv4.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>subscription_plan_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> subscription_plans(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Plan de suscripción contratado por la entidad hospitalaria.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>name</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(150)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Razón social o denominación del hospital/clínica (ej. *Hospital Rebagliati*).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>tax_id_ruc</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(11)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Registro Único de Contribuyentes (RUC) fiscal emitido por SUNAT.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>institution_type</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'PublicHospital'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tipo: `PublicHospital`, `PrivateClinic`, `AmbulanceNetwork`, `PharmaceuticalLab`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>health_service_level</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'II-2'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel o categoría de atención asistencial MINSA (I-4, II-2, III-1, III-E).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>address</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(255)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Dirección física donde operan los puntos de despacho o quirófanos.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>district</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(100)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Distrito de Lima Metropolitana o región sanitaria de ubicación.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>emergency_phone</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Teléfono de contacto de la central de emergencias hospitalarias.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>renipress_code</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Código único nacional del Registro Nacional de IPRESS (SUSALUD / MINSA).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>latitude</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(10, 8)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (BETWEEN -90 AND 90)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordenada geográfica de latitud del helipuerto o rampa de urgencia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>longitude</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(11, 8)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (BETWEEN -180 AND 180)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordenada geográfica de longitud de la sede hospitalaria.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>geofence_radius_meters</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(6, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 2000.00, CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Radio perimétrico virtual (ej. 2 km) que dispara el preaviso y habilita OTP.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_active</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado de habilitación operativa para programar traslados.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha y hora UTC de alta en el sistema.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal UTC de la última actualización de datos institucionales.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 3: `users`**
 Gestiona las credenciales y perfiles profesionales autorizados en ambos segmentos.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador universal del usuario en la plataforma. |
-| `institution_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `hospital_institutions(id)` | Entidad sanitaria a la cual pertenece laboralmente el usuario. |
-| `first_name` | `VARCHAR(80)` | **NOT NULL** | — | Nombres del usuario. |
-| `last_name` | `VARCHAR(80)` | **NOT NULL** | — | Apellidos completos. |
-| `email` | `VARCHAR(120)` | **NOT NULL** | `UNIQUE` | Correo electrónico corporativo utilizado para autenticación JWT. |
-| `password_hash` | `VARCHAR(255)` | **NOT NULL** | — | Contraseña protegida mediante algoritmo de hashing irreversible (BCrypt). |
-| `role` | `ENUM(...)` | **NOT NULL** | — | Rol: `FleetDispatcher`, `AmbulanceDriver`, `Paramedic`, `ClinicalPharmacist`, `ReceivingSurgeon`, `QualityAuditor`, `SystemAdministrator`. |
-| `phone_number` | `VARCHAR(20)` | **NOT NULL** | — | Número móvil para recepción de alertas SMS de contingencia vía Twilio. |
-| `medical_license_number` | `VARCHAR(30)` | NULL | — | Matrícula profesional (CMP para cirujanos, TEM para paramédicos). |
-| `is_active` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Indicador de cuenta activa y habilitada para iniciar sesión. |
-| `last_login_at` | `DATETIME(6)` | NULL | — | Marca temporal UTC del último inicio de sesión autenticado. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Registro inicial de la cuenta de usuario. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de modificación de credenciales o perfil. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal del usuario en la plataforma.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>institution_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> hospital_institutions(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Entidad sanitaria a la cual pertenece laboralmente el usuario.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>first_name</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(80)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nombres del usuario.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>last_name</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(80)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Apellidos completos.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>email</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(120)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Correo electrónico corporativo utilizado para autenticación JWT.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>password_hash</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(255)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contraseña protegida mediante algoritmo de hashing irreversible (BCrypt).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>role</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Rol: `FleetDispatcher`, `AmbulanceDriver`, `Paramedic`, `ClinicalPharmacist`, `ReceivingSurgeon`, `QualityAuditor`, `SystemAdministrator`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>phone_number</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Número móvil para recepción de alertas SMS de contingencia vía Twilio.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>medical_license_number</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(30)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Matrícula profesional (CMP para cirujanos, TEM para paramédicos).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_active</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Indicador de cuenta activa y habilitada para iniciar sesión.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>last_login_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal UTC del último inicio de sesión autenticado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Registro inicial de la cuenta de usuario.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de modificación de credenciales o perfil.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
----
+***
 
 ##### **4.8.1.2. Bounded Context: Smart Container & Telemetry Monitoring (Core IoT)**
 
@@ -4166,44 +5790,252 @@ Modela el contenedor físico inteligente, su estado electromecánico y el flujo 
 ###### **Tabla 4: `smart_containers`**
 Representa la unidad isotérmica física dotada de sensores, solenoide de tapa y refrigeración activa Peltier.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único del contenedor inteligente. |
-| `serial_number` | `VARCHAR(30)` | **NOT NULL** | `UNIQUE` | Número de serie impreso en chasis y quemado en firmware (ej. `SMB-BOX-2026-0042`). |
-| `form_factor` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'StandardBox_20L'` | Tamaño: `SmallBox_5L` (córneas, biopsias) o `StandardBox_20L` (corazones, riñones). |
-| `status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Available'` | Estado operativo: `Available`, `Precooling`, `LockedAndReady`, `InTransit`, `Delivered`, `MaintenanceRequired`. |
-| `lock_state` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Unlocked'` | Posición del cerrojo electromecánico: `Locked`, `Unlocked`, `Tampered`, `Error`. |
-| `current_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | `CHECK (-20.00 TO 60.00)` | Última lectura de temperatura interna (°C). Rango seguro: +2.00 a +8.00 °C. |
-| `tare_weight_grams` | `DECIMAL(8, 2)` | **NOT NULL** | `DEFAULT 0.00, CHECK (>= 0)` | Peso en vacío calibrado con celda de carga HX711 (tara en gramos). |
-| `net_weight_grams` | `DECIMAL(8, 2)` | **NOT NULL** | `DEFAULT 0.00, CHECK (>= 0)` | Peso neto actual del paquete biológico o hemoderivado transportado. |
-| `battery_percentage` | `DECIMAL(5, 2)` | **NOT NULL** | `CHECK (0.00 TO 100.00)` | Nivel remanente de la batería LiFePO4 interna del contenedor. |
-| `is_12v_connected` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 0` | Flag de alimentación auxiliar desde la toma de 12V vehicular de la ambulancia. |
-| `last_telemetry_at` | `DATETIME(6)` | NULL | — | Marca de tiempo del último mensaje MQTT recibido desde el ESP32. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha de fabricación o registro del contenedor en inventario. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de la última sincronización telemétrica o cambio de estado. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del contenedor inteligente.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>serial_number</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(30)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Número de serie impreso en chasis y quemado en firmware (ej. `SMB-BOX-2026-0042`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>form_factor</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'StandardBox_20L'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tamaño: `SmallBox_5L` (córneas, biopsias) o `StandardBox_20L` (corazones, riñones).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Available'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado operativo: `Available`, `Precooling`, `LockedAndReady`, `InTransit`, `Delivered`, `MaintenanceRequired`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>lock_state</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Unlocked'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Posición del cerrojo electromecánico: `Locked`, `Unlocked`, `Tampered`, `Error`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>current_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (-20.00 TO 60.00)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Última lectura de temperatura interna (°C). Rango seguro: +2.00 a +8.00 °C.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>tare_weight_grams</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(8, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0.00, CHECK (>= 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Peso en vacío calibrado con celda de carga HX711 (tara en gramos).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>net_weight_grams</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(8, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0.00, CHECK (>= 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Peso neto actual del paquete biológico o hemoderivado transportado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>battery_percentage</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(5, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (0.00 TO 100.00)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel remanente de la batería LiFePO4 interna del contenedor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_12v_connected</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Flag de alimentación auxiliar desde la toma de 12V vehicular de la ambulancia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>last_telemetry_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca de tiempo del último mensaje MQTT recibido desde el ESP32.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha de fabricación o registro del contenedor en inventario.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de la última sincronización telemétrica o cambio de estado.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 5: `telemetry_logs`**
 Serie temporal de lecturas sensoriales emitidas en ráfagas cada 5 segundos durante el transporte de emergencia.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `BIGINT UNSIGNED` | **NOT NULL** | `PRIMARY KEY, AUTO_INCREMENT` | Identificador numérico monótono para optimización de inserciones continuas. |
-| `container_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `smart_containers(id)` | Contenedor inteligente emisor de la trama sensorial. |
-| `trip_id` | `CHAR(36)` | NULL | `FOREIGN KEY` -> `dispatch_trips(id)` | Viaje de ambulancia activo durante el registro telemétrico. |
-| `timestamp_utc` | `DATETIME(6)` | **NOT NULL** | — | Marca temporal UTC provista por el reloj RTC del microcontrolador. |
-| `temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura en la cámara biológica medida por el sensor Dallas DS18B20. |
-| `ambient_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura ambiente dentro de la cabina de la ambulancia. |
-| `weight_grams` | `DECIMAL(8, 2)` | **NOT NULL** | — | Peso bruto medido por la celda HX711 (detecta aperturas o sustracciones). |
-| `battery_percentage` | `DECIMAL(5, 2)` | **NOT NULL** | `CHECK (0.00 TO 100.00)` | Carga porcentual de la batería interna en el instante de la muestra. |
-| `is_12v_connected` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 0` | Estado del circuito de alimentación de 12V de la ambulancia. |
-| `peltier_power_pct` | `INT` | **NOT NULL** | `CHECK (0 TO 100)` | Potencia PWM aplicada a las celdas Peltier de enfriamiento. |
-| `lid_lock_engaged` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Verificación de contacto magnético de tapa (1: sellado, 0: abierto). |
-| `latitude` | `DECIMAL(10, 8)` | NULL | — | Coordenada GPS latitudinal transmitida por el módem SIM7600G. |
-| `longitude` | `DECIMAL(11, 8)` | NULL | — | Coordenada GPS longitudinal del vehículo en ruta. |
-| `firmware_signature` | `VARCHAR(128)` | **NOT NULL** | — | Hash de validación criptográfica de la trama generada por el ESP32. |
-| `is_thermal_excursion` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 0` | Flag de desvío: marcado con 1 si la temperatura sale de +2.0°C a +8.0°C. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>BIGINT UNSIGNED</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY, AUTO_INCREMENT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador numérico monótono para optimización de inserciones continuas.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>container_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> smart_containers(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contenedor inteligente emisor de la trama sensorial.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trip_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> dispatch_trips(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Viaje de ambulancia activo durante el registro telemétrico.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>timestamp_utc</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal UTC provista por el reloj RTC del microcontrolador.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura en la cámara biológica medida por el sensor Dallas DS18B20.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>ambient_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura ambiente dentro de la cabina de la ambulancia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>weight_grams</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(8, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Peso bruto medido por la celda HX711 (detecta aperturas o sustracciones).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>battery_percentage</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(5, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (0.00 TO 100.00)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Carga porcentual de la batería interna en el instante de la muestra.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_12v_connected</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado del circuito de alimentación de 12V de la ambulancia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>peltier_power_pct</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (0 TO 100)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Potencia PWM aplicada a las celdas Peltier de enfriamiento.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>lid_lock_engaged</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Verificación de contacto magnético de tapa (1: sellado, 0: abierto).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>latitude</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(10, 8)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordenada GPS latitudinal transmitida por el módem SIM7600G.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>longitude</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(11, 8)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordenada GPS longitudinal del vehículo en ruta.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>firmware_signature</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(128)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hash de validación criptográfica de la trama generada por el ESP32.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_thermal_excursion</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Flag de desvío: marcado con 1 si la temperatura sale de +2.0°C a +8.0°C.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
----
+***
 
 ##### **4.8.1.3. Bounded Context: Medical Transport Planning & Dispatching (Core Operativo)**
 
@@ -4212,46 +6044,266 @@ Articula las órdenes de traslado clínico y su asignación a los recursos móvi
 ###### **Tabla 6: `transport_orders`**
 Solicitudes clínicas de transporte emitidas por cirujanos o químicos farmacéuticos (Segmento 2).
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador universal de la orden clínica. |
-| `order_code` | `VARCHAR(20)` | **NOT NULL** | `UNIQUE` | Código legible de seguimiento clínico (ej. `ORD-2026-TRP-001`). |
-| `origin_hospital_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `hospital_institutions(id)` | Centro hospitalario emisor de la carga médica (donante/banco). |
-| `destination_hospital_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `hospital_institutions(id)` | Centro hospitalario receptor (sala de operaciones de trasplante). |
-| `cargo_type` | `ENUM(...)` | **NOT NULL** | — | Carga: `HeartOrgan`, `LiverOrgan`, `KidneyOrgan`, `BloodPlasmaPack`, `ThermolabileVaccine`, `BiopsySample`. |
-| `cargo_description` | `VARCHAR(255)` | **NOT NULL** | — | Especificación clínica detallada (ej. *Corazón en solución Custodiol*). |
-| `max_ischemia_hours` | `DECIMAL(4, 2)` | **NOT NULL** | `CHECK (> 0)` | Límite máximo de isquemia fría tolerable según Directiva 152/MINSA. |
-| `ischemia_warning_hours` | `DECIMAL(4, 2)` | **NOT NULL** | `CHECK (> 0)` | Umbral preventivo para disparo de alertas de tráfico severo. |
-| `clinical_priority` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'StatEmergency'` | Prioridad médica de despacho: `Routine`, `Urgent`, `StatEmergency`. |
-| `status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Pending'` | Ciclo de vida: `Pending`, `Assigned`, `InTransit`, `Completed`, `Cancelled`. |
-| `created_by_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Cirujano de trasplante o coordinador médico emisor. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de emisión de la orden de traslado. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Marca temporal de última modificación o reasignación. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal de la orden clínica.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>order_code</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(20)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Código legible de seguimiento clínico (ej. `ORD-2026-TRP-001`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>origin_hospital_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> hospital_institutions(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Centro hospitalario emisor de la carga médica (donante/banco).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>destination_hospital_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> hospital_institutions(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Centro hospitalario receptor (sala de operaciones de trasplante).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>cargo_type</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Carga: `HeartOrgan`, `LiverOrgan`, `KidneyOrgan`, `BloodPlasmaPack`, `ThermolabileVaccine`, `BiopsySample`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>cargo_description</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(255)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Especificación clínica detallada (ej. *Corazón en solución Custodiol*).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>max_ischemia_hours</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Límite máximo de isquemia fría tolerable según Directiva 152/MINSA.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>ischemia_warning_hours</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHECK (> 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Umbral preventivo para disparo de alertas de tráfico severo.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>clinical_priority</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'StatEmergency'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Prioridad médica de despacho: `Routine`, `Urgent`, `StatEmergency`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Pending'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Ciclo de vida: `Pending`, `Assigned`, `InTransit`, `Completed`, `Cancelled`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_by_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cirujano de trasplante o coordinador médico emisor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de emisión de la orden de traslado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal de última modificación o reasignación.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 7: `dispatch_trips`**
 Ejecución del traslado por la ambulancia, tripulación y contenedor asignados (Segmento 1).
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único del viaje de despacho. |
-| `order_id` | `CHAR(36)` | **NOT NULL** | `UNIQUE, FOREIGN KEY` -> `transport_orders(id)` | Orden de transporte vinculada (relación 1 a 1 estricta). |
-| `assigned_container_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `smart_containers(id)` | Contenedor físico precriado asignado para el traslado. |
-| `assigned_driver_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Chofer de ambulancia responsable del desplazamiento. |
-| `assigned_paramedic_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Paramédico TEM a bordo encargado de la custodia del contenedor. |
-| `assigned_vehicle_plate` | `VARCHAR(10)` | **NOT NULL** | — | Placa oficial de rodaje de la ambulancia asignada (ej. `EUG-418`). |
-| `status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Scheduled'` | Estado: `Scheduled`, `ResourcesAssigned`, `PrecoolingVerified`, `InTransit`, `ArrivedAtDestination`, `Completed`, `Cancelled`. |
-| `scheduled_departure_time` | `DATETIME(6)` | **NOT NULL** | — | Hora programada de salida del hospital de origen. |
-| `actual_departure_time` | `DATETIME(6)` | NULL | — | Hora real de partida una vez validado el pre-enfriamiento a 4.0 °C. |
-| `estimated_arrival_time` | `DATETIME(6)` | **NOT NULL** | — | ETA inicial recalculado dinámicamente según TomTom Traffic API. |
-| `actual_arrival_time` | `DATETIME(6)` | NULL | — | Hora exacta de arribo físico a la puerta de emergencia hospitalaria. |
-| `distance_km` | `DECIMAL(6, 2)` | **NOT NULL** | `DEFAULT 0.00` | Distancia total recorrida por la ambulancia en kilómetros. |
-| `planned_duration_minutes` | `INT` | **NOT NULL** | `DEFAULT 0` | Duración prevista calculada en el ruteo inicial. |
-| `current_delay_minutes` | `INT` | **NOT NULL** | `DEFAULT 0` | Retraso acumulado inducido por congestión vehicular en Lima. |
-| `polyline_coordinates` | `TEXT` | NULL | — | Cadena codificada de la ruta geográfica recorrida. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Momento de creación de la hoja de despacho. |
-| `updated_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de la última actualización telemétrica o de ETA. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del viaje de despacho.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>order_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE, FOREIGN KEY -> transport_orders(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Orden de transporte vinculada (relación 1 a 1 estricta).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>assigned_container_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> smart_containers(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contenedor físico precriado asignado para el traslado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>assigned_driver_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Chofer de ambulancia responsable del desplazamiento.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>assigned_paramedic_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico TEM a bordo encargado de la custodia del contenedor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>assigned_vehicle_plate</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(10)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Placa oficial de rodaje de la ambulancia asignada (ej. `EUG-418`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Scheduled'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado: `Scheduled`, `ResourcesAssigned`, `PrecoolingVerified`, `InTransit`, `ArrivedAtDestination`, `Completed`, `Cancelled`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>scheduled_departure_time</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hora programada de salida del hospital de origen.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>actual_departure_time</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hora real de partida una vez validado el pre-enfriamiento a 4.0 °C.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>estimated_arrival_time</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ETA inicial recalculado dinámicamente según TomTom Traffic API.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>actual_arrival_time</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hora exacta de arribo físico a la puerta de emergencia hospitalaria.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>distance_km</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(6, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0.00</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Distancia total recorrida por la ambulancia en kilómetros.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>planned_duration_minutes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Duración prevista calculada en el ruteo inicial.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>current_delay_minutes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Retraso acumulado inducido por congestión vehicular en Lima.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>polyline_coordinates</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TEXT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cadena codificada de la ruta geográfica recorrida.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Momento de creación de la hoja de despacho.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>updated_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de la última actualización telemétrica o de ETA.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
----
+***
 
 ##### **4.8.1.4. Bounded Context: Critical Alerting & Incident Response (Soporte Reactivo)**
 
@@ -4260,36 +6312,196 @@ Registra y escala contingencias en ruta ante desvíos térmicos o fallas eléctr
 ###### **Tabla 8: `critical_incidents`**
 Incidencias generadas automáticamente ante violaciones térmicas o manipulaciones indebidas.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador universal del incidente crítico. |
-| `trip_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `dispatch_trips(id)` | Viaje de ambulancia en el cual ocurrió la anomalía. |
-| `container_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `smart_containers(id)` | Contenedor que experimentó el desvío sensorial. |
-| `severity` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'CriticalEmergency'` | Nivel: `LowWarning`, `ModerateAlert`, `CriticalEmergency`, `CatastrophicFailure`. |
-| `incident_type` | `ENUM(...)` | **NOT NULL** | — | Tipo: `ColdChainBreachHigh`, `ColdChainBreachLow`, `Auxiliary12VPowerLost`, `PayloadTamperingSuspected`, `SevereTrafficDelayExceeded`. |
-| `triggered_at` | `DATETIME(6)` | **NOT NULL** | — | Momento UTC exacto en que se detectó la violación del umbral. |
-| `trigger_temperature_celsius` | `DECIMAL(4, 2)` | NULL | — | Temperatura registrada al momento de la alarma (opcional si el incidente es por tráfico o manipulación). |
-| `trigger_battery_percentage` | `DECIMAL(5, 2)` | NULL | — | Nivel de batería al momento del incidente (opcional en contingencias no eléctricas). |
-| `status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'Triggered'` | Estado: `Triggered`, `Acknowledged`, `Escalated`, `Resolved`. |
-| `escalation_level` | `INT` | **NOT NULL** | `DEFAULT 1, CHECK (1 TO 3)` | Nivel de escalamiento (1: Operador, 2: Paramédico, 3: Director Médico). |
-| `acknowledged_at` | `DATETIME(6)` | NULL | — | Timestamp en que el operador de flota confirmó la alerta. |
-| `acknowledged_by_user_id` | `CHAR(36)` | NULL | `FOREIGN KEY` -> `users(id)` | Operador que tomó control del incidente. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha de persistencia del incidente. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal del incidente crítico.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trip_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> dispatch_trips(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Viaje de ambulancia en el cual ocurrió la anomalía.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>container_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> smart_containers(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contenedor que experimentó el desvío sensorial.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>severity</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'CriticalEmergency'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel: `LowWarning`, `ModerateAlert`, `CriticalEmergency`, `CatastrophicFailure`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>incident_type</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tipo: `ColdChainBreachHigh`, `ColdChainBreachLow`, `Auxiliary12VPowerLost`, `PayloadTamperingSuspected`, `SevereTrafficDelayExceeded`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>triggered_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Momento UTC exacto en que se detectó la violación del umbral.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trigger_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura registrada al momento de la alarma (opcional si el incidente es por tráfico o manipulación).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trigger_battery_percentage</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(5, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel de batería al momento del incidente (opcional en contingencias no eléctricas).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'Triggered'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado: `Triggered`, `Acknowledged`, `Escalated`, `Resolved`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>escalation_level</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1, CHECK (1 TO 3)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Nivel de escalamiento (1: Operador, 2: Paramédico, 3: Director Médico).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>acknowledged_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp en que el operador de flota confirmó la alerta.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>acknowledged_by_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Operador que tomó control del incidente.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha de persistencia del incidente.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 9: `contingency_resolutions`**
 Medidas correctivas aplicadas y validadas para mitigar el incidente y proteger el tejido clínico.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único de la resolución de contingencia. |
-| `incident_id` | `CHAR(36)` | **NOT NULL** | `UNIQUE, FOREIGN KEY` -> `critical_incidents(id)` | Incidente mitigado (relación 1 a 1 estricta). |
-| `mitigation_action` | `VARCHAR(500)` | **NOT NULL** | — | Acción operativa (ej. *Reconexión de arnés 12V vehicular y refuerzo criogénico*). |
-| `was_thermal_integrity_restored` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Certificación de retorno a la franja de +2.0 °C a +8.0 °C. |
-| `quality_signoff_notes` | `TEXT` | **NOT NULL** | — | Dictamen técnico obligatorio firmado por el especialista biomédico. |
-| `resolved_by_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Profesional biomédico o médico de guardia responsable. |
-| `resolved_at` | `DATETIME(6)` | **NOT NULL** | — | Marca temporal del cierre satisfactorio de la contingencia. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único de la resolución de contingencia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>incident_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE, FOREIGN KEY -> critical_incidents(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Incidente mitigado (relación 1 a 1 estricta).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>mitigation_action</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(500)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Acción operativa (ej. *Reconexión de arnés 12V vehicular y refuerzo criogénico*).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>was_thermal_integrity_restored</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Certificación de retorno a la franja de +2.0 °C a +8.0 °C.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>quality_signoff_notes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TEXT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Dictamen técnico obligatorio firmado por el especialista biomédico.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>resolved_by_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Profesional biomédico o médico de guardia responsable.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>resolved_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal del cierre satisfactorio de la contingencia.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
----
+***
 
 ##### **4.8.1.5. Bounded Context: Chain of Custody & Traceability (Core Regulatorio)**
 
@@ -4298,69 +6510,238 @@ Garantiza la inmutabilidad de la custodia médica mediante autenticación OTP y 
 ###### **Tabla 10: `custody_transfers`**
 Protocolo de entrega hospitalaria con autenticación de apertura mediante código OTP de un solo uso.
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador universal de la transferencia de custodia. |
-| `trip_id` | `CHAR(36)` | **NOT NULL** | `UNIQUE, FOREIGN KEY` -> `dispatch_trips(id)` | Viaje de ambulancia culminado (relación 1 a 1 estricta). |
-| `recipient_hospital_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `hospital_institutions(id)` | Hospital de destino donde se realiza la entrega física. |
-| `authorized_recipient_user_id` | `CHAR(36)` | **NOT NULL** | `FOREIGN KEY` -> `users(id)` | Cirujano o farmacéutico facultado para recibir el contenedor. |
-| `handover_status` | `ENUM(...)` | **NOT NULL** | `DEFAULT 'PendingOtpVerification'` | Estado: `PendingOtpVerification`, `OtpVerifiedLidUnlocked`, `CompletedAccepted`, `RejectedThermalExcursion`, `RejectedTampering`. |
-| `otp_code_hash` | `VARCHAR(128)` | **NOT NULL** | — | Hash HMAC-SHA256 del token OTP efímero de 6 dígitos generado por el sistema. |
-| `otp_expires_at` | `DATETIME(6)` | **NOT NULL** | — | Límite temporal de vigencia del token (15 minutos tras el arribo). |
-| `otp_attempt_count` | `INT` | **NOT NULL** | `DEFAULT 0, CHECK (0 TO 3)` | Contador de intentos de digitación (bloqueo automático al 3er fallo). |
-| `otp_verified_at` | `DATETIME(6)` | NULL | — | Marca temporal exacta de la validación y liberación del solenoide. |
-| `recipient_notes` | `VARCHAR(500)` | NULL | — | Observaciones clínicas del receptor en la mesa quirúrgica. |
-| `created_at` | `DATETIME(6)` | **NOT NULL** | `DEFAULT CURRENT_TIMESTAMP(6)` | Momento de generación del token OTP al llegar la ambulancia. |
-| `completed_at` | `DATETIME(6)` | NULL | — | Timestamp de aceptación y firma final de la custodia. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal de la transferencia de custodia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trip_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE, FOREIGN KEY -> dispatch_trips(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Viaje de ambulancia culminado (relación 1 a 1 estricta).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>recipient_hospital_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> hospital_institutions(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hospital de destino donde se realiza la entrega física.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>authorized_recipient_user_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FOREIGN KEY -> users(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cirujano o farmacéutico facultado para recibir el contenedor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>handover_status</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ENUM(...)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 'PendingOtpVerification'</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estado: `PendingOtpVerification`, `OtpVerifiedLidUnlocked`, `CompletedAccepted`, `RejectedThermalExcursion`, `RejectedTampering`.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>otp_code_hash</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(128)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hash HMAC-SHA256 del token OTP efímero de 6 dígitos generado por el sistema.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>otp_expires_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Límite temporal de vigencia del token (15 minutos tras el arribo).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>otp_attempt_count</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0, CHECK (0 TO 3)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Contador de intentos de digitación (bloqueo automático al 3er fallo).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>otp_verified_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca temporal exacta de la validación y liberación del solenoide.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>recipient_notes</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(500)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Observaciones clínicas del receptor en la mesa quirúrgica.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT CURRENT_TIMESTAMP(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Momento de generación del token OTP al llegar la ambulancia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>completed_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Timestamp de aceptación y firma final de la custodia.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ###### **Tabla 11: `digital_audit_manifests`**
 Acta digital de entrega legal sellada criptográficamente con hash SHA-256 para auditorías de DIGEMID (R.M. 833-2015).
 
-| Columna | Tipo de Dato MySQL | Nulo | Restricciones / Constraints | Descripción y Regla de Negocio |
-|---|---|---|---|---|
-| `id` | `CHAR(36)` | **NOT NULL** | `PRIMARY KEY` | Identificador único del acta digital. |
-| `transfer_id` | `CHAR(36)` | **NOT NULL** | `UNIQUE, FOREIGN KEY` -> `custody_transfers(id)` | Transferencia de custodia certificada (relación 1 a 1 estricta). |
-| `manifest_code` | `VARCHAR(30)` | **NOT NULL** | `UNIQUE` | Código oficial del manifiesto clínico (ej. `MAN-2026-MINSA-0089`). |
-| `cryptographic_hash_sha256` | `CHAR(64)` | **NOT NULL** | — | Hash SHA-256 del PDF y de la serie completa de telemetría del viaje. |
-| `cloud_storage_pdf_url` | `VARCHAR(500)` | **NOT NULL** | — | Enlace inmutable hacia el repositorio S3 / Azure Blob Storage cifrado. |
-| `is_sealed_and_immutable` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Bandera de inmutabilidad jurídica; impide modificaciones o reaperturas. |
-| `average_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura promedio consolidada durante todo el traslado (°C). |
-| `min_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura mínima registrada en la cámara durante el viaje. |
-| `max_temperature_celsius` | `DECIMAL(4, 2)` | **NOT NULL** | — | Temperatura máxima alcanzada en el contenedor. |
-| `total_excursion_seconds` | `INT` | **NOT NULL** | `DEFAULT 0, CHECK (>= 0)` | Tiempo acumulado en segundos fuera del rango regulatorio (+2°C a +8°C). |
-| `minsa_compliance_verified` | `TINYINT(1)` | **NOT NULL** | `DEFAULT 1` | Certificación booleana de cumplimiento de la Directiva Sanitaria 152/MINSA. |
-| `sealed_at` | `DATETIME(6)` | **NOT NULL** | — | Fecha y hora UTC del sellado criptográfico del acta. |
+<div style="margin: 10px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 15%;" />
+  <col style="width: 9%;" />
+  <col style="width: 19%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Columna</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Tipo MySQL</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Nulo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Restricciones</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción y Regla de Negocio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del acta digital.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>transfer_id</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE, FOREIGN KEY -> custody_transfers(id)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Transferencia de custodia certificada (relación 1 a 1 estricta).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>manifest_code</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(30)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UNIQUE</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Código oficial del manifiesto clínico (ej. `MAN-2026-MINSA-0089`).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>cryptographic_hash_sha256</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(64)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hash SHA-256 del PDF y de la serie completa de telemetría del viaje.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>cloud_storage_pdf_url</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VARCHAR(500)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Enlace inmutable hacia el repositorio S3 / Azure Blob Storage cifrado.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>is_sealed_and_immutable</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Bandera de inmutabilidad jurídica; impide modificaciones o reaperturas.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>average_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura promedio consolidada durante todo el traslado (°C).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>min_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura mínima registrada en la cámara durante el viaje.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>max_temperature_celsius</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DECIMAL(4, 2)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Temperatura máxima alcanzada en el contenedor.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>total_excursion_seconds</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>INT</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 0, CHECK (>= 0)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Tiempo acumulado en segundos fuera del rango regulatorio (+2°C a +8°C).</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>minsa_compliance_verified</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TINYINT(1)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DEFAULT 1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Certificación booleana de cumplimiento de la Directiva Sanitaria 152/MINSA.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>sealed_at</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Fecha y hora UTC del sellado criptográfico del acta.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
----
+***
 
-#### **3. Matriz de Integridad Referencial y Cardinalidad**
+#### **3. Políticas Globales de Integridad Referencial y Trazabilidad**
 
-La siguiente matriz documenta las **20 relaciones de clave foránea** implementadas en la base de datos, detallando la cardinalidad, las restricciones de clave foránea y las acciones ante eliminación (`ON DELETE`):
+En lugar de redundar en las especificaciones de claves foráneas ya detalladas exhaustivamente en el diccionario de datos de las 11 tablas y en el diagrama físico ER, el motor relacional implementa las siguientes políticas unificadas de integridad referencial para garantizar la trazabilidad médica inmutable y el cumplimiento de las normativas de **DIGEMID** (R.M. N° 833-2015/MINSA) y **SUSALUD**:
 
-| Tabla Primaria (Padre) | Tabla Dependiente (Hija) | Cardinalidad | Columna Clave Foránea (FK) | Regla `ON DELETE` | Justificación Operativa y Regulatoria |
-|---|---|---|---|---|---|
-| `subscription_plans` | `hospital_institutions` | **1 : N** | `subscription_plan_id` | `RESTRICT` | Impide descontinuar o eliminar planes comerciales que posean hospitales asociados activos. |
-| `hospital_institutions` | `users` | **1 : N** | `institution_id` | `RESTRICT` | Protege la filiación institucional de la tripulación y personal médico. |
-| `hospital_institutions` | `transport_orders` (Origen) | **1 : N** | `origin_hospital_id` | `RESTRICT` | Preserva el hospital emisor como parte inmutable de la orden de traslado clínico. |
-| `hospital_institutions` | `transport_orders` (Destino) | **1 : N** | `destination_hospital_id` | `RESTRICT` | Garantiza que el destino del trasplante no sea eliminado de la base de datos histórica. |
-| `hospital_institutions` | `custody_transfers` | **1 : N** | `recipient_hospital_id` | `RESTRICT` | Mantiene la validez legal del hospital receptor del órgano según directiva MINSA. |
-| `users` | `transport_orders` | **1 : N** | `created_by_user_id` | `RESTRICT` | Mantiene la autoría médica del cirujano solicitante para efectos médico-legales. |
-| `users` | `dispatch_trips` (Chofer) | **1 : N** | `assigned_driver_user_id` | `RESTRICT` | Salvaguarda la identidad del chofer asignado a la ambulancia en la hoja de ruta. |
-| `users` | `dispatch_trips` (Paramédico) | **1 : N** | `assigned_paramedic_user_id` | `RESTRICT` | Registra de forma indeleble al paramédico TEM que custodió el contenedor en tránsito. |
-| `users` | `critical_incidents` | **1 : N** | `acknowledged_by_user_id` | `RESTRICT` | Documenta fehacientemente qué operador de despacho atendió y acusó la alerta crítica. |
-| `users` | `contingency_resolutions` | **1 : N** | `resolved_by_user_id` | `RESTRICT` | Fija la responsabilidad del profesional biomédico que dictaminó la resolución correctiva. |
-| `users` | `custody_transfers` | **1 : N** | `authorized_recipient_user_id` | `RESTRICT` | Identifica con precisión al médico receptor que digitó el código OTP en quirófano. |
-| `smart_containers` | `telemetry_logs` | **1 : N** | `container_id` | `RESTRICT` | Protege la integridad de las series temporales físicas emitidas por el hardware IoT. |
-| `smart_containers` | `dispatch_trips` | **1 : N** | `assigned_container_id` | `RESTRICT` | Evita la desvinculación o supresión de un contenedor involucrado en un traslado en curso. |
-| `smart_containers` | `critical_incidents` | **1 : N** | `container_id` | `RESTRICT` | Asegura la trazabilidad técnica histórica del contenedor que experimentó anomalías térmicas. |
-| `transport_orders` | `dispatch_trips` | **1 : 1** | `order_id` | `RESTRICT` | Cada orden clínica tiene exactamente una hoja de despacho operativa para su cumplimiento. |
-| `dispatch_trips` | `telemetry_logs` | **1 : N** | `trip_id` | `SET NULL` | Si un despacho preliminar es cancelado antes de partir, las muestras se conservan vinculadas al contenedor pero desacopladas del viaje. |
-| `dispatch_trips` | `critical_incidents` | **1 : N** | `trip_id` | `RESTRICT` | Impide borrar un viaje de ambulancia que haya tenido incidentes críticos en ruta. |
-| `dispatch_trips` | `custody_transfers` | **1 : 1** | `trip_id` | `RESTRICT` | Cada viaje completado concluye obligatoriamente en un único proceso formal de entrega. |
-| `critical_incidents` | `contingency_resolutions` | **1 : 1** | `incident_id` | `RESTRICT` | Un incidente crítico solo puede tener un dictamen oficial de mitigación de contingencia. |
-| `custody_transfers` | `digital_audit_manifests` | **1 : 1** | `transfer_id` | `RESTRICT` | La transferencia exitosa produce exactamente un acta digital sellada inmutable para DIGEMID. |
+| Regla de Integridad | Cláusula SQL / EF Core | Alcance de Aplicación en el Modelo | Justificación Clínica, Operativa y Legal |
+|---|---|---|---|
+| **Preservación Inmutable de Evidencia** | `ON DELETE RESTRICT` | 19 de las 20 relaciones foráneas (Instituciones, Usuarios, Órdenes, Contenedores, Incidentes, Custodias y Manifiestos). | Prohíbe de forma terminante el borrado en cascada de entidades maestras o transaccionales con histórico clínico asociado, previniendo vacíos probatorios ante litigios médicos o auditorías sanitarias. |
+| **Desacoplamiento de Despachos Cancelados** | `ON DELETE SET NULL` | Relación `dispatch_trips(id)` → `telemetry_logs(trip_id)`. | Si un viaje preliminar es cancelado antes de partir, las muestras sensoriales emitidas por el hardware IoT se conservan intactas vinculadas al contenedor, desvinculando únicamente la referencia al traslado cancelado. |
+| **Propagación Segura de Cambios** | `ON UPDATE CASCADE` | Claves primarias sustitutas basadas en identificadores UUID (`CHAR(36)`). | Garantiza sincronización referencial automática en capas de persistencia y cachés sin requerir operaciones manuales en la base de datos. |
+| **Principio de Custodia Unívoca (Sin N:M)** | Restricciones `1:1` y `1:N` estrictas con `UNIQUE` | Asignación Orden → Despacho → Contenedor → Transferencia de Custodia. | Elimina tablas intermedias de cruce N:M; la normativa sanitaria exige un único custodio legal y un único contenedor responsable por cada traslado de órganos o hemoderivados. |
+| **Inmutabilidad Criptográfica de Cierre** | Columna `is_sealed_and_immutable = 1` y hash SHA-256 | Tabla `digital_audit_manifests` (Manifiesto de Auditoría). | Bloquea a nivel de servicio y regla de base de datos cualquier mutación posterior al sellado de custodia asistencial en destino hospitalario. |
 
----
+***
 
 #### **4. Estrategia de Indexación y Optimización de Consultas IoT**
 
@@ -4375,14 +6756,20 @@ Para procesar ráfagas continuas de telemetría provenientes de múltiples ambul
 4. **`idx_critical_incidents_status_severity (status, severity)`:**  
    *Propósito:* Prioriza las alertas no resueltas (`Open`) de mayor severidad (`CriticalEmergency`, `CatastrophicFailure`) para despachar notificaciones inmediatas mediante push y SMS a la central médica.
 
----
+***
+
+<div style="page-break-before: always;"></div>
 
 #### **5. Diagrama Físico de Base de Datos (Entity Relationship Diagram)**
 
-![Figura 4.8.1 - Database Physical Data Model (Entity Relationship Diagram)](assets/chapter-4/4.8.1-database-diagram.png)  
-*Nota: Diagrama Relacional Físico de Base de Datos generado mediante Reverse Engineering en MySQL Workbench 8.0 bajo motor InnoDB.*
+<p align="center" style="text-align: center; margin: 4px 0 6px 0;">
+  <img src="assets/chapter-4/4.8.1-database-diagram.png" alt="Figura 4.8.1 - Database Physical Data Model (Entity Relationship Diagram)" style="max-height: 228mm; width: auto; max-width: 98%; margin: 2px auto; display: block;" />
+  <em style="font-size: 8pt;">Nota: Diagrama Relacional Físico de Base de Datos generado mediante Reverse Engineering en MySQL Workbench 8.0 bajo motor InnoDB.</em>
+</p>
 
----
+***
+
+<div style="page-break-before: always;"></div>
 
 #### **6. Conclusiones y Transición hacia el Capítulo V (Implementación y Validación)**
 
@@ -4391,16 +6778,13 @@ El diseño relacional presentado en esta sección concluye la fase arquitectóni
 2. **Satisface las Necesidades de Ambos Segmentos:** Modela fielmente las variables dinámicas de las ambulancias en ruta (Segmento 1) y los requisitos de recepción estéril y tiempos de isquemia de los cirujanos y farmacéuticos (Segmento 2).
 3. **Prepara el Terreno para el Capítulo V:** Con el esquema relacional formalizado y la estructura física de base de datos validada, el equipo técnico queda habilitado para proceder en el **Capítulo V (Product Implementation, Validation & Deployment)** con la configuración del entorno de desarrollo (.NET 10 SDK [net10.0], MySQL 8.0, Vue 3, GitFlow) y la ejecución de los Sprints de desarrollo con Entity Framework Core Code-First Migrations.
 
-
 <div style="page-break-after: always;"></div>
-
-# Capítulo V: Product Implementation, Validation & Deployment
 
 # 5.1. Software Configuration Management
 
 En esta sección se detallan la configuración del entorno de desarrollo, la estrategia de gestión del código fuente, las convenciones de estilo adoptadas por el equipo de desarrollo de **NeonCode** y la infraestructura empleada para el despliegue del sistema de supervisión de contenedores médicos inteligentes conforme a las exigencias oficiales de la asignatura.
 
----
+***
 
 ### 5.1.1. Software Development Environment Configuration
 
@@ -4418,7 +6802,7 @@ Para garantizar un flujo de trabajo uniforme y minimizar discrepancias entre las
     * **NuGet:** Gestor oficial de dependencias y paquetes para la solución ASP.NET Core (`Microsoft.EntityFrameworkCore`, `Swashbuckle.AspNetCore`, `BCrypt.Net-Next`).
     * **npm (v10.x):** Gestor de paquetes empleado para la administración de bibliotecas y plugins de desarrollo frontend.
 
----
+***
 
 ### 5.1.2. Source Code Management
 
@@ -4447,7 +6831,7 @@ git flow feature publish landing-hero-section
 git flow feature finish landing-hero-section
 ```
 
----
+***
 
 ## 5.1.3. Source Code Style Guide & Conventions
 
@@ -4483,7 +6867,7 @@ Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la
 * **`test`:** Adición o actualización de pruebas unitarias o de integración.
 * **`chore`:** Tareas de mantenimiento, configuración de build o dependencias.
 
----
+***
 
 ## 5.1.4. Software Deployment Configuration
 
@@ -4491,17 +6875,54 @@ El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados
 
 ### Entornos de Despliegue
 
-| Entorno | Propósito | Plataforma / Hosting | Rama Git Asociada | Configuración y Acceso |
-| :--- | :--- | :--- | :--- | :--- |
-| **Local (Development)** | Desarrollo individual, maquetado de vistas y pruebas de API. | Servidor local Vite (`localhost:5173`) / Kestrel .NET (`localhost:5000`) | `feature/*` | Acceso exclusivo de los integrantes de desarrollo. |
-| **Staging (Testing / QA)** | Integración continua de funcionalidades completadas en sprint. | GitHub Pages / Vercel Preview | `develop` | Validación interna del equipo y revisión intermedia. |
-| **Production (Live)** | Entorno oficial desplegado para evaluación académica y demostración B2B. | GitHub Pages / Vercel Production | `main` | Acceso público activo vía HTTPS: `https://neoncode-upc.github.io/landing-page/`. |
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 14%;" />
+  <col style="width: 22%;" />
+  <col style="width: 22%;" />
+  <col style="width: 16%;" />
+  <col style="width: 26%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Entorno</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Propósito</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Plataforma / Hosting</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Rama Git Asociada</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Configuración y Acceso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;">**Local (Development)**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Desarrollo individual, maquetado de vistas y pruebas de API.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Servidor local Vite (`localhost:5173`) / Kestrel .NET (`localhost:5000`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>feature/*</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Acceso exclusivo de los integrantes de desarrollo.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;">**Staging (Testing / QA)**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Integración continua de funcionalidades completadas en sprint.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">GitHub Pages / Vercel Preview</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>develop</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Validación interna del equipo y revisión intermedia.</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;">**Production (Live)**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Entorno oficial desplegado para evaluación académica y demostración B2B.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">GitHub Pages / Vercel Production</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>main</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Acceso público activo vía HTTPS: `https://neoncode-upc.github.io/landing-page/`.</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### Gestión de Variables de Entorno y Configuración
 
 * **Archivos de Configuración:** En el backend se utiliza `appsettings.json` y `appsettings.Development.json` con sobreescritura mediante variables de entorno para cadenas de conexión seguras.
 * **Variables Frontend:** Variables de configuración de endpoints (`VITE_API_BASE_URL`) centralizadas en archivos `.env` versionados como plantillas (`.env.example`), aislando tokens de producción.
-
 
 <div style="page-break-after: always;"></div>
 
@@ -4511,97 +6932,413 @@ El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados
 
 En esta sección se detalla la planificación, asignación de responsabilidades y desglose de tareas técnicas para la ejecución del primer ciclo de desarrollo (Sprint 1) del ecosistema **Medical SMARTBOX (NeonCode)**, así como las evidencias correspondientes a la implementación, ejecución de vistas, especificación de servicios, despliegue activo en la nube y colaboración del equipo mediante control de versiones.
 
----
+***
 
 ### 5.2.1.1. Sprint Planning 1
 
-El **Sprint Planning 1** define los objetivos tácticos, el alcance y la velocidad comprometida por el equipo para el primer ciclo de desarrollo. Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario de este ciclo consistió en implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend y la gobernanza SCM.
+El **Sprint Planning 1** formaliza los aspectos principales de la reunión de planificación del primer ciclo de desarrollo (Sprint 1). Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario consistió en diseñar, implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend en ASP.NET Core 10.0 y la persistencia relacional en MySQL 8.0.
 
-* **Objetivo del Sprint (Sprint Goal):** Diseñar, implementar y desplegar la primera versión del Landing Page institucional en HTML5 semántico, CSS3 modular y JavaScript, presentando la propuesta de valor de la cadena de frío, la tecnología de sensores IoT, planes SaaS y captura de prospectos asistenciales; junto con la especificación de la arquitectura de servicios backend.
-* **Duración:** 2 semanas (Semana 3 a Semana 4).
-* **Velocidad Planificada:** 16 Story Points.
-* **Historias de Usuario Seleccionadas:** `US01`, `US02`, `US03`, `US04`, `US05`, `US06`.
+| Sprint # | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | **Sprint Planning Background** |
+| Date | 2026-09-08 |
+| Time | 19:00 - 21:30 |
+| Location | Sesión virtual sincrónica vía Microsoft Teams / Discord |
+| Prepared By | Jaramillo Peña, Jhon Alexander |
+| Attendees (to planning meeting) | Jaramillo Peña, Jhon Alexander / Espinoza Rojas, Aaron / Gargate Lazo, Santiago / Munayco Pérez, Maria / Santos Sánchez, Renzo |
+| **Sprint n – 1 Review Summary** | **Sprint 0 (Inception):** Se consolidaron las bases del proyecto, necesidad médica, análisis comparativo de competidores (Sensitech, Tracklink Perú, Controlant), investigación de campo con 6 entrevistas a profundidad, User Personas (Javier Soto, Dr. Carlos Mendoza), EventStorming y Style Guidelines. El Product Owner aprobó el alcance inicial del backlog. |
+| **Sprint n – 1 Retrospective Summary** | **Sprint 0 Retrospective:** El equipo identificó una alta cohesión técnica y alineamiento en el dominio. Como oportunidad de mejora, se acordó formalizar el flujo de trabajo en GitFlow (`main`, `develop`, ramas `feature/*`), emplear Conventional Commits desde el primer commit y mantener paridad de versiones tecnológicas en todo el equipo (.NET 10 LTS, MySQL 8.0, Node.js 20+). |
+| **Sprint Goal & User Stories** | **Sprint Goal & User Stories** |
+| Sprint 1 Goal | **Our focus is on** designing, implementing, and deploying the responsive institutional Landing Page for Medical SMARTBOX and specifying the core architectural contracts.<br><br>**We believe it delivers** clear value proposition awareness and digital acquisition channels for medical logistics transport operators and healthcare centers.<br><br>**This will be confirmed when** the Landing Page is publicly deployed on GitHub Pages, visitors can explore smart container features across devices without visual overflow, and submit the B2B demonstration contact form successfully. |
+| Sprint 1 Velocity | 16 Story Points |
+| Sum of Story Points | 16 Story Points (US04: 2 SP, US05: 2 SP, US06: 1 SP, US01: 3 SP, US02: 3 SP, US03: 5 SP) |
 
----
+***
 
-### 5.2.1.2. Aspect Leaders and Collaborators (Matriz LACX del Sprint 1)
+### 5.2.1.2. Aspect Leaders and Collaborators
 
-La matriz **LACX** (Lead, Assignee, Complexity, eXpense) define formalmente los roles de liderazgo técnico, ejecución, complejidad y esfuerzo asignado a los integrantes para el cumplimiento de las historias del Sprint 1.
+En esta sección se presenta la matriz **Leadership-and-Collaboration Matrix (LACX)** del Sprint 1, detallando por cada aspecto funcional y técnico del alcance quién ejerce el liderazgo técnico (Leader - L) y quiénes actúan como colaboradores de desarrollo (Collaborator - C).
 
-* **L (Lead):** Integrante responsable de liderar la revisión técnica, arquitectura y aseguramiento de calidad.
-* **A (Assignee):** Integrante encargado de la codificación e implementación directa.
-* **C (Complexity):** Complejidad técnica atribuida (Baja, Media, Alta).
-* **X (eXpense):** Esfuerzo relativo expresado en Story Points según escala Fibonacci (1, 2, 3, 5).
+Los aspectos definidos para este primer ciclo corresponden a los módulos del Landing Page y las especificaciones arquitectónicas base:
+* **Aspecto 1: Landing Page UI & Estructura:** Maquetación semántica HTML5/CSS3 y diseño responsive (US04).
+* **Aspecto 2: Formulario Demo y Captura B2B:** Componentes interactivos de contacto institucional y validación en cliente (US05).
+* **Aspecto 3: FAQ & Cumplimiento Normativo:** Acordeón interactivo de preguntas frecuentes y directivas sanitarias (US06).
+* **Aspecto 4: Registro Institucional & Roles:** Modelado de entidades y flujos de registro de centros de salud (US01).
+* **Aspecto 5: Acceso y Autenticación 2FA:** Especificación de políticas de seguridad, login y token OTP (US02).
+* **Aspecto 6: Especificación API REST & DDD:** Contratos OpenAPI y arquitectura de capas en ASP.NET Core (.NET 10 LTS) (US03).
 
-| User Story ID | Título de la Historia | Lead (L) | Assignee (A) | Complexity (C) | eXpense / Points (X) |
-| :---: | :--- | :--- | :--- | :---: | :---: |
-| **US04** | Exploración de Propuesta de Valor y Solución IoT | Maria Munayco | Santiago Gargate | Baja | 2 |
-| **US05** | Solicitud de Demostración Corporativa y Contacto B2B | Aaron Espinoza | Jhon Jaramillo | Baja | 2 |
-| **US06** | Consulta Interactiva de Preguntas Frecuentes (FAQ) | Santiago Gargate | Maria Munayco | Baja | 1 |
-| **US01** | Registro Institucional de Centros de Salud (Diseño de Flujo) | Jhon Jaramillo | Renzo Santos | Media | 3 |
-| **US02** | Autenticación y Perfil de Personal de Emergencia | Santiago Gargate | Maria Munayco | Baja | 3 |
-| **US03** | Arquitectura y Especificación de Endpoints de Autenticación | Renzo Santos | Aaron Espinoza | Media | 5 |
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 22%;" />
+  <col style="width: 16%;" />
+  <col style="width: 10.3%;" />
+  <col style="width: 10.3%;" />
+  <col style="width: 10.3%;" />
+  <col style="width: 10.3%;" />
+  <col style="width: 10.3%;" />
+  <col style="width: 10.5%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Team Member<br>(Last Name, First Name)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">GitHub Username</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Aspecto 1:<br>Landing UI<br>(L / C)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Aspecto 2:<br>Form Demo<br>(L / C)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Aspecto 3:<br>FAQ Norm.<br>(L / C)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Aspecto 4:<br>Reg. Centros<br>(L / C)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Aspecto 5:<br>Acceso 2FA<br>(L / C)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Aspecto 6:<br>REST &amp; DDD<br>(L / C)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Jaramillo Mayta, Jhon Jordy</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>jhon409</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Espinoza Flores, Aaron André</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>AaronEspinoza1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Gargate Paredes, Santiago</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>Santiago-Gargate</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Munayco Apolaya, Maria Luisa</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>MunaycoMaria</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Santos Minaya, Renzo Piero</strong></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>RenzoSantosUPC</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
+</tr>
+</tbody>
+</table>
+</div>
 
----
+***
 
 ### 5.2.1.3. Sprint Backlog 1
 
-El **Sprint Backlog 1** presenta el desglose técnico de tareas necesarias para satisfacer los criterios de aceptación de cada historia, con sus estimaciones en horas de esfuerzo individual y estado de avance.
+El **Sprint Backlog 1** presenta el desglose detallado de tareas técnicas asociadas a las historias de usuario comprometidas para el Sprint 1. El objetivo principal de la iteración fue la construcción, validación responsive y despliegue del Landing Page institucional, junto con la definición de contratos y modelos para los servicios de autenticación y registro.
 
-| User Story ID | Tareas Técnicas (Technical Tasks) | Estimación (Horas) | Estado de Entrega |
-| :---: | :--- | :---: | :---: |
-| **US04** | • Maquetación HTML5 semántica de las secciones Hero, Propuesta de Valor y Características IoT.<br>• Estilos CSS3 modulares con diseño responsive mobile-first (viewports 375px, 768px, 1440px).<br>• Integración de badges de temperatura y preservación de cadena de frío (+2 °C a +8 °C). | 6 h | **Completado** |
-| **US05** | • Estructuración del formulario de contacto y solicitud de demo corporativa B2B.<br>• Validación en cliente con JavaScript para formatos de correo institucional y teléfono.<br>• Mensajes accesibles de confirmación y estado de envío. | 6 h | **Completado** |
-| **US06** | • Maquetación del acordeón interactivo de Preguntas Frecuentes (FAQ).<br>• Lógica JavaScript para apertura y cierre fluido de paneles con accesibilidad ARIA.<br>• Inclusión de respuestas sobre normativas DIGEMID y sensores biomédicos. | 4 h | **Completado** |
-| **US01** | • Especificación de flujos de registro institucional y modelado en base de datos (`hospital_institutions`).<br>• Validación de invariantes de suscripción y facturación B2B. | 10 h | **Completado** |
-| **US02** | • Diseño y maquetación de la vista de acceso de operadores de emergencia.<br>• Definición de políticas de verificación en dos pasos (2FA) y token OTP. | 8 h | **Completado** |
-| **US03** | • Especificación formal de contratos OpenAPI/Swagger para autenticación en ASP.NET Core (.NET 10 LTS).<br>• Modelado de clases de dominio para usuarios, roles y contraseñas cifradas en C#. | 14 h | **Completado** |
+A continuación se presenta la tabla oficial de control de estado del Sprint 1:
 
-**Resumen del Sprint Backlog 1:**
-* **Total de Historias de Usuario:** 6 historias.
-* **Puntos de Historia Totales (Story Points):** 16 SP.
-* **Horas Totales de Trabajo Técnico:** 48 horas.
-* **Estado:** 100% de tareas del Sprint 1 completadas para el hito AV1.
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.5pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 7%;" />
+  <col style="width: 18%;" />
+  <col style="width: 8%;" />
+  <col style="width: 16%;" />
+  <col style="width: 27%;" />
+  <col style="width: 6%;" />
+  <col style="width: 11%;" />
+  <col style="width: 7%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #0f172a; color: #ffffff;">
+  <th colspan="2" style="border: 1px solid #334155; padding: 4px; text-align: left; font-weight: bold;">User Story</th>
+  <th colspan="6" style="border: 1px solid #334155; padding: 4px; text-align: left; font-weight: bold;">Work-Item / Task (Sprint 1)</th>
+</tr>
+<tr style="background-color: #f1f5f9; color: #0f172a;">
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Story Id</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Story Title</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Id</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Title</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Description</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Horas</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Assigned To</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US04</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Exploración de Propuesta de Valor Logística</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-04-01</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación HTML5/CSS3 de secciones Hero y Propuesta</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Estructuración semántica de Hero, badges térmicos y características de contenedores IoT.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maria Munayco</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US04</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Exploración de Propuesta de Valor Logística</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-04-02</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Integración de diseño responsive mobile-first</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Adaptación de layout CSS Grid y Flexbox para viewports móviles (375px a 414px) y tablets.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">4 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Santiago Gargate</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US05</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Solicitud de Demostración Corporativa</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-05-01</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación de formulario B2B</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Estructura visual de captura de prospectos con inputs institucionales y estilos de marca.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Aaron Espinoza</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US05</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Solicitud de Demostración Corporativa</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-05-02</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Validación en cliente y retroalimentación</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Lógica JavaScript para validación de RUC, correo corporativo y feedback accesible.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Jhon Jaramillo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US06</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Consulta de Preguntas Frecuentes</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-06-01</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Componente interactivo acordeón FAQ</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación y comportamiento toggle ARIA para preguntas sobre normativas DIGEMID y sensores.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">4 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maria Munayco</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US01</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Registro de Institución de Salud</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-01-01</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Modelado entidad institución y base de datos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Definición de esquema relacional `hospital_institutions` en MySQL 8.0 y reglas de RUC único.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Jhon Jaramillo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US01</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Registro de Institución de Salud</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-01-02</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de endpoints de registro</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de contratos OpenAPI para recepción y validación de datos de centros hospitalarios.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">7 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Renzo Santos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US02</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Autenticación de Personal de Emergencia</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-02-01</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de flujo de autenticación 2FA</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de protocolo de login para operadores y verificación por código OTP de 6 dígitos.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Santiago Gargate</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US03</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Endpoint de Autenticación de Usuarios (API)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-03-01</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de contratos OpenAPI de sign-in</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de endpoint POST `/api/v1/authentication/sign-in` y esquemas JWT de sesión.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Renzo Santos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US03</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Endpoint de Autenticación de Usuarios (API)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-03-02</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Arquitectura de dominio para identidad (.NET 10)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Modelado de clases de dominio, Value Objects y políticas de cifrado de credenciales en C# 14.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Aaron Espinoza</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
+</tr>
+</tbody>
+</table>
+</div>
 
----
+**Resumen de Cierre del Sprint Backlog 1:**
+* **Historias de Usuario Completadas:** 6 (100% de historias planificadas).
+* **Story Points Entregados:** 16 SP / 16 SP comprometidos.
+* **Horas de Ingeniería Ejecutadas:** 53 horas de desarrollo colaborativo.
+* **Estado Final:** Sprint 1 cerrado satisfactoriamente con despliegue activo en la nube.
+
+***
 
 ### 5.2.1.4. Development Evidence for Sprint Review
 
 A continuación se documenta el registro histórico de confirmaciones de cambios (commits) realizadas en el repositorio oficial del Landing Page (`NeonCode-UPC/landing-page`), evidenciando el cumplimiento estricto del estándar **Conventional Commits** y el trabajo colaborativo en ramas de GitFlow:
 
-| Repositorio | Rama | Commit ID | Mensaje del Commit | Descripción / Cuerpo del Cambio | Fecha |
-| :--- | :--- | :---: | :--- | :--- | :---: |
-| `landing-page` | `main` | `bc109d7` | `feat(traceability): implement event milestones rendering and fleet selector interactivity` | Implementación de renderizado dinámico de hitos de cadena de custodia y selector interactivo de ambulancias. | 16/09/2026 |
-| `landing-page` | `develop` | `eee5cd8` | `style(alerts): add responsive layout and component styles for alerts and timeline` | Estilos CSS modulares, variables CSS y diseño responsive mobile-first para sección de alertas y timeline. | 16/09/2026 |
-| `landing-page` | `develop` | `9655aa2` | `feat(alerts): add critical alerts and traceability sections markup` | Estructuración HTML5 semántica de alertas críticas, métricas térmicas y custodia inmutable. | 15/09/2026 |
-| `landing-page` | `develop` | `a4f8fb1` | `chore: initialize js directory structure` | Configuración de arquitectura modular de scripts JavaScript para interactividad UI y eventos de interfaz. | 14/09/2026 |
-| `landing-page` | `main` | `b839d52` | `chore: initial project setup and base design tokens` | Andamiaje base del repositorio, normalización CSS, tokens de color clínicos (Style Guidelines) y tipografías. | 08/09/2026 |
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 14%;" />
+  <col style="width: 11%;" />
+  <col style="width: 11%;" />
+  <col style="width: 25%;" />
+  <col style="width: 27%;" />
+  <col style="width: 12%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Repositorio</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Rama</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Commit ID</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Mensaje del Commit</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Descripción / Cuerpo del Cambio</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">Fecha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>landing-page</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>main</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;"><code>bc109d7</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 500;">`feat(traceability): implement event milestones rendering and fleet selector interactivity`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Implementación de renderizado dinámico de hitos de cadena de custodia y selector interactivo de ambulancias.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;">16/09/2026</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>landing-page</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>develop</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;"><code>eee5cd8</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 500;">`style(alerts): add responsive layout and component styles for alerts and timeline`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estilos CSS modulares, variables CSS y diseño responsive mobile-first para sección de alertas y timeline.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;">16/09/2026</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>landing-page</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>develop</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;"><code>9655aa2</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 500;">`feat(alerts): add critical alerts and traceability sections markup`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Estructuración HTML5 semántica de alertas críticas, métricas térmicas y custodia inmutable.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;">15/09/2026</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>landing-page</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>develop</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;"><code>a4f8fb1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 500;">`chore: initialize js directory structure`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Configuración de arquitectura modular de scripts JavaScript para interactividad UI y eventos de interfaz.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;">14/09/2026</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>landing-page</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>main</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;"><code>b839d52</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 500;">`chore: initial project setup and base design tokens`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Andamiaje base del repositorio, normalización CSS, tokens de color clínicos (Style Guidelines) y tipografías.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center;">08/09/2026</td>
+</tr>
+</tbody>
+</table>
+</div>
 
----
+***
 
 ### 5.2.1.5. Execution Evidence for Sprint Review
 
 El Landing Page institucional fue desarrollado y validado satisfactoriamente en múltiples entornos de visualización (*mobile*, *tablet* y *desktop*), garantizando una experiencia visual fluida sin desbordamientos horizontales.
 
-#### Vista Principal: Sección Hero y Propuesta de Valor
-Presenta el titular de alto impacto para la preservación de órganos y medicamentos termosensibles, el botón de llamada a la acción (CTA) para solicitud de demostración B2B y la ilustración del contenedor inteligente en ambulancia.
+#### Video de Demostración de Navegación (Landing Page): [Ver video aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
+
+<img width="2028" height="1090" alt="Screenshot 2026-09-28 at 10 33 48 AM" src="https://github.com/user-attachments/assets/7c5733c4-086d-4fd7-8335-7a6b68b379a6" />
+
+### Vista implementada: Landing Page Principal (Hero Section)
+
+**Descripción:** Interfaz de inicio diseñada para captar la atención de empresas de transporte y operadores de cadena de frío. Presenta la propuesta de valor central de Medical SmartBox: el monitoreo, detección de incidencias y trazabilidad de transportes médicos en un solo lugar.
+
+**Componentes y Funcionalidades Clave:**
+* **Barra de navegación funcional:** Menú interactivo con accesos directos a la plataforma, selector de idioma (ES/EN) y botones globales de autenticación (*Log in / Open the Web App*).
+* **Propuesta de valor clara:** Título principal de alto impacto acompañado de una breve descripción del propósito del software.
+* **Llamados a la acción (CTA):** Botones duales contrastados para redirigir rápidamente al usuario hacia la Web App o el formulario de ingreso.
+
+<br />
 
 ![Landing Page - Sección Hero](assets/chapter-4/hero-mockup.png)
 *Nota: Captura de ejecución del Landing Page institucional implementado.*
 
-#### Vista de Solución: Monitoreo Telemático y Alertas Críticas
-Detalla la tecnología de refrigeración activa Peltier, los sensores de temperatura y peso en tiempo real, y los umbrales de alerta temprana ante desvíos térmicos.
+<br />
+
+<img width="669" height="588" alt="Screenshot 2026-09-28 at 10 46 46 AM" src="https://github.com/user-attachments/assets/42d285c0-2ff3-48f9-b89f-d21dc15bc4ff" />
+
+### Vista implementada: Formulario de Inicio de Sesión (Login)
+
+**Descripción:** Interfaz correspondiente al módulo de autenticación para la Web Application de Medical SmartBox. Permite el acceso restringido y seguro al personal autorizado (operadores logísticos y centros de salud) mediante credenciales corporativas.
+
+**Componentes Clave:** 
+* **Campos de entrada validados:** Inputs específicos para Correo corporativo (`nombre@organizacion.com`) y Contraseña protegida de manera visual.
+* **Botón de acción directa:** Botón estilizado con los colores de la marca para el envío y validación de las credenciales de usuario (*Iniciar sesión*).
+* **Control de navegación:** Botón de cierre superior (X) para retornar a la Landing Page principal de manera intuitiva.
+
+<br />
+
+<img width="1061" height="894" alt="Screenshot 2026-09-28 at 11 06 33 AM" src="https://github.com/user-attachments/assets/22dc7b3b-5cc6-402a-b381-8ed8964b464b" />
+
+### Vista implementada: Detalle de Monitoreo de Transporte en Tiempo Real
+
+**Descripción:** Vista detallada de un transporte en tránsito activo. Centraliza todas las telemetrías críticas recopiladas por el hardware en una única interfaz unificada para el operador.
+
+**Componentes Clave:**
+* **Panel de Telemetría en Vivo:** Indicadores en tiempo real de Temperatura (5.2 °C), ETA, Nivel de Batería del SmartBox, Combustible, Peso y Estado de la Puerta.
+* **Gráfico de Historial Térmico:** Gráfica lineal automatizada que contrasta las mediciones de las últimas 6 horas frente al rango seguro permitido (2 °C - 8 °C).
+* **Metadatos de Operación:** Tarjetas informativas con los datos asignados del Conductor (M. Quispe) y la Placa del Vehículo (ABQ-742).
+
+<br />
 
 ![Landing Page - Presentación de Características](assets/chapter-4/presentacion-mockup.png)
 *Nota: Sección interactiva de propuesta tecnológica del Landing Page.*
 
-#### Vista de Cierre: Formulario de Contacto Corporativo y Footer
-Permite a directores hospitalarios registrar sus datos de contacto institucional para agendar una prueba de campo. Incluye enlaces a términos de servicio y políticas éticas.
+<br />
+
+<img width="1078" height="704" alt="Screenshot 2026-09-28 at 11 16 31 AM" src="https://github.com/user-attachments/assets/59b725c5-d856-4195-bddc-5b4af7790860" />
+
+### Vista implementada: Módulo de Gestión de Alertas e Incidencias
+
+**Descripción:** Interfaz de control en tiempo real orientada a la detección temprana de riesgos en la cadena de frío, permitiendo al equipo logístico tomar acciones de mitigación inmediatas antes de comprometer la integridad del producto médico.
+
+**Componentes Clave:**
+* **Tarjeta de Incidencia Crítica:** Bloque dinámico que detalla de forma matemática el desvío térmico (8.7 °C detectados frente al rango esperado de 2-8 °C), la ubicación exacta (Panamericana Sur) y la marca de tiempo (13:42).
+* **Gráfico de Monitoreo Lineal:** Visualización de la fluctuación de temperatura de las últimas horas para evaluar la gravedad de la anomalía.
+* **Acciones de Mitigación:** Botones interactivos de respuesta rápida (*Revisar transporte* y *Ver historial*).
+* **Feed Cronológico Histórico:** Listado lateral estructurado por prioridad de eventos y estados logísticos anteriores (Puerta abierta, Batería baja, Desvío resuelto, Entrega confirmada).
+
+<br />
 
 ![Landing Page - Footer y Conversión B2B](assets/chapter-4/cta-footer-mockup.png)
 *Nota: Sección de conversión final y pie de página institucional.*
 
----
+***
 
 ### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -4614,7 +7351,7 @@ La arquitectura de servicios backend (**RESTful Web API en ASP.NET Core 10.0 con
 
 La codificación activa de los controladores, endpoints y la generación interactiva de documentación mediante **Swagger UI / OpenAPI** forman parte del Sprint 2 y Sprint 3 (hitos TB1 y AV2).
 
----
+***
 
 ### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
@@ -4626,7 +7363,7 @@ En estricta observancia del requisito rector del hito AV1 (*"A nivel de implemen
 * **Plataforma de Alojamiento:** GitHub Pages / Vercel (Producción con protocolo seguro HTTPS y compresión gzip/brotli).
 * **Estado de Disponibilidad:** Activo, con tiempo de carga inferior a 1.2 segundos y cumplimiento de accesibilidad WCAG.
 
----
+***
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint
 
@@ -4634,17 +7371,6 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 
 ![Team Collaboration Insights during Sprint](assets/chapter-5/report-insights-av1.png)
 *Nota: Analítica de colaboración, frecuencia de confirmaciones y contribuciones del equipo NeonCode durante el Sprint 1.*
-
-
-<div style="page-break-after: always;"></div>
-
-# 5.3. Validation Interviews
-
-
-<div style="page-break-after: always;"></div>
-
-# 5.4. Video About the Product
-
 
 <div style="page-break-after: always;"></div>
 
@@ -4672,7 +7398,6 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 3. **Sprint 4 (Hito TB2 - Release Review):**  
    Integrar la comunicación bidireccional en tiempo real con WebSockets (SignalR) para la actualización en vivo de telemetría y alarmas en cabina de ambulancia, ejecutando pruebas exhaustivas de usabilidad según las 10 heurísticas de Nielsen con personal de salud antes de la liberación final.
 
-
 <div style="page-break-after: always;"></div>
 
 # Bibliografía
@@ -4692,27 +7417,108 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 13. Vue.js Core Team. (2024). *Vue.js Official Style Guide and Component Standards*. Vuejs.org. https://vuejs.org/style-guide/
 14. World Wide Web Consortium [W3C]. (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. W3C Recommendation. https://www.w3.org/TR/WCAG21/
 
-
 <div style="page-break-after: always;"></div>
 
 # Anexos
 
----
+En esta sección se consolidan los accesos a los repositorios de código fuente, despliegues públicos en la nube, herramientas de diseño colaborativo y registros audiovisuales institucionales correspondientes a la entrega **AV1 (Semana 4)** del proyecto **Medical SMARTBOX (NeonCode)**.
 
-## Anexo A. Repositorios de Código Fuente y Documentación
+***
+
+## Anexo A. Repositorios de Código Fuente y Despliegues en la Nube
 
 * **Repositorio Central del Informe Técnico (Project Report):**  
   [https://github.com/NeonCode-UPC/report](https://github.com/NeonCode-UPC/report)
 * **Repositorio del Landing Page Institucional (Sprint 1):**  
   [https://github.com/NeonCode-UPC/landing-page](https://github.com/NeonCode-UPC/landing-page)
-* **Organización Oficial en GitHub:**  
+* **Despliegue Público Activo del Landing Page (GitHub Pages):**  
+  [https://neoncode-upc.github.io/landing-page/](https://neoncode-upc.github.io/landing-page/)
+* **Organización Oficial del Proyecto en GitHub:**  
   [https://github.com/NeonCode-UPC](https://github.com/NeonCode-UPC)
 
----
+***
 
 ## Anexo B. Tableros Digitales y Prototipos Interactivos
 
 * **Lienzo Colaborativo de Big Picture EventStorming (Miro):**  
-  [Medical SMARTBOX - Miro Board](https://miro.com/welcomeonboard/QzJXNzBaN05udzZHdmh1aE1JZmhoa2RtRmNEa0JTaWx2K3NGRE9SVUZPMFR0STZFRzVndVkydkV2SVlWNFZtMEcwU0JBMnpVa0lyMUNJWFIzZmFveU5mVW9TOHc2MXprTGlpMjk2b2V4SWEwdDVOTUxJK0tCb1l5RnA4R1pSS0Z3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=514263093453)
+  [Medical SMARTBOX - Miro Board](https://miro.com/app/board/uXjVHnHEONU=/?share_link_id=336672614310)
 * **Prototipo Interactivo de Alta Fidelidad (Figma):**  
   [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
+
+***
+
+## Anexo C. Grabaciones Audiovisuales y Entrevistas a Profundidad
+
+Todos los recursos audiovisuales se encuentran alojados en la infraestructura institucional de **Microsoft Stream / SharePoint UPC**, configurados con permisos de visualización habilitados para toda la organización (`@upc.edu.pe`).
+
+### Entrevistas a Profundidad (Investigación de Campo - Capítulo 2.2)
+
+<div style="margin: 12px 0 16px 0; width: 100%;">
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 6%;" />
+  <col style="width: 16%;" />
+  <col style="width: 22%;" />
+  <col style="width: 32%;" />
+  <col style="width: 24%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: center; font-weight: bold;">#</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Segmento</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Participante</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Rol / Cargo</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Enlace a Grabación Oficial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">**E1**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 600;">Wilbert Toledo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Estudiante de Medicina / Paramédico en Prácticas</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi">Ver grabación E1 - Wilbert Toledo</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">**E2**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 600;">Aldair Lazaro</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Paramédico de Transporte Asistido</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd">Ver grabación E2 - Aldair Lazaro</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">**E3**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Segmento 1</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 600;">Renato Calvo Yalan</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Conductor / Paramédico Asistencial</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi">Ver grabación E3 - Renato Calvo</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">**E4**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 600;">Humberto Arellán</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Transportista Logístico Biomédico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc">Ver grabación E4 - Humberto Arellán</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">**E5**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 600;">Gianfranco Timoteo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de Soporte y Cadena de Frío</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4">Ver grabación E5 - Gianfranco Timoteo</a></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">**E6**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Segmento 2</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 600;">Karla Pacheco</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Auxiliar Administrativa de Farmacia y Rutas</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC">Ver grabación E6 - Karla Pacheco</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+### Video Demostrativo de Producto
+
+* **Video de Demostración del Landing Page Desplegado (Sprint 1):**  
+  [Demostración en Video - Landing Page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)

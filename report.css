@@ -1,0 +1,83 @@
+@page {
+    size: A4 portrait;
+    margin: 20mm 15mm 20mm 15mm;
+}
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: #1e293b;
+}
+table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    margin: 12px 0 16px 0 !important;
+    font-size: 7.2pt;
+    page-break-inside: auto;
+}
+tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+thead {
+    display: table-header-group;
+}
+th, td {
+    border: 0.5pt solid #cbd5e1 !important;
+    padding: 3.5px 4.5px !important;
+    vertical-align: top !important;
+    overflow-wrap: break-word !important;
+}
+th {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+}
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 88%;
+}
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Cover page specific styles */
+.cover-page {
+    page-break-inside: avoid !important;
+}
+.cover-page img, .cover-page .cover-logo {
+    width: 13.5mm !important;
+    height: 13.5mm !important;
+    max-width: 13.5mm !important;
+    max-height: 13.5mm !important;
+    display: block !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+}
+.cover-page table, .cover-page .integrantes-table {
+    width: auto !important;
+    table-layout: auto !important;
+    margin: 0 auto !important;
+    border: none !important;
+    border-collapse: collapse !important;
+}
+.cover-page th, .cover-page td {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 2.5px 30px 2.5px 0 !important;
+}
+.cover-page th:last-child, .cover-page td:last-child {
+    padding-right: 0 !important;
+}
+
+/* User Flow Diagrams */
+.user-flow-diagram {
+    max-height: 185mm !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    margin: 3mm auto !important;
+}

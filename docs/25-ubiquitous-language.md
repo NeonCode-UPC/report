@@ -1,4 +1,4 @@
-﻿# 2.5. Ubiquitous Language
+# 2.5. Ubiquitous Language
 
 En esta sección se establece el glosario formal de términos y conceptos del dominio del negocio (*Smart Medical Container*), garantizando una comunicación unívoca, rigurosa y libre de ambigüedades entre los dos segmentos clave del negocio (las **empresas de transporte y operadores logísticos de cadena de frío**, y los **centros de salud y cadenas farmacéuticas** receptoras), las entidades reguladoras peruanas (MINSA, DIGEMID, DIGDOT) y el equipo de desarrollo de software.
 
@@ -38,7 +38,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | 28 | **Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)** | Smart Container & Telemetry Monitoring | Value Object / Domain Event |
 | 29 | **Weight-Based Medical Stock (Stock Médico Ponderal)** | Smart Container & Telemetry Monitoring | Value Object |
 
----
+***
 
 ### **2.5.1. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
@@ -74,7 +74,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.2. Bounded Context: Medical Transport Planning & Dispatching**
 
@@ -130,7 +130,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.3. Bounded Context: Smart Container & Telemetry Monitoring**
 
@@ -186,7 +186,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.4. Bounded Context: Critical Alerting & Incident Response**
 
@@ -222,7 +222,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.5. Bounded Context: Chain of Custody & Traceability**
 

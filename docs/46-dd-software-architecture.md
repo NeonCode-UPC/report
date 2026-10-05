@@ -8,7 +8,7 @@ Para representar la arquitectura de forma rigurosa, comprensible y estandarizada
 * **4.6.3. Software Architecture Container Level Diagrams (C4 Nivel 2):** Descomposición en unidades ejecutables independientes y tecnologías del stack oficial.
 * **4.6.4. Software Architecture Component Level Diagrams (C4 Nivel 3):** Diseño modular interno bajo los principios de Clean Architecture e Inversión de Dependencias.
 
----
+***
 
 ## **4.6.1. Design-Level EventStorming**
 
@@ -44,7 +44,7 @@ Durante el taller colaborativo se aplicó el código de colores estandarizado in
 | **External System / IoT** | Rosa / Fucsia (`#F48FB1`) | Nombre del sistema / hardware | Entidad ajena a la plataforma (`ESP32 Hardware`, `OBD-II Telemetry`, `FCM/Twilio`). |
 | **Hotspot / Risk / Exception** | Rojo / Magenta (`#E53935`) | Problema o riesgo crítico | Fricción del entorno operativo de Lima (`12V Socket Disconnect`, `TomTom Traffic Delay`). |
 
----
+***
 
 ### **2. Matriz Estratégica de Clasificación de Bounded Contexts**
 
@@ -52,8 +52,15 @@ Bajo los principios de Domain-Driven Design para arquitecturas SaaS en entornos 
 
 A diferencia de la exploración macro de Big Picture (Capítulo 2.4), en esta etapa de diseño detallado se independizó el contexto **Subscription & Fleet Provisioning** como un *Subdominio de Soporte*. Esta separación aísla los contratos comerciales de suscripción B2B, la tarificación modular por factor de forma (*Small Box* de 5L vs. *Standard Box* de 20L) y la vinculación telemática de activos vehiculares del flujo clínico asistencial de los *Core Domains*, garantizando alta cohesión y bajo acoplamiento para los **dos segmentos objetivo** del proyecto:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 17%;" />
+  <col style="width: 28%;" />
+  <col style="width: 20%;" />
+  <col style="width: 18%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Bounded Context</th>
       <th>Clasificación Estratégica</th>
@@ -112,8 +119,14 @@ A diferencia de la exploración macro de Big Picture (Capítulo 2.4), en esta et
 
 Para corroborar la cobertura integral del modelo respecto a los requisitos de plataformas SaaS para salud y logística crítica, la siguiente matriz correlaciona los subdominios de la taxonomía SaaS estándar con la partición arquitectónica en Bounded Contexts adoptada en **Medical SMARTBOX**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 25%;" />
+  <col style="width: 20%;" />
+  <col style="width: 30%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Subdominio SaaS Estándar</th>
       <th>Bounded Context Asignado</th>
@@ -175,24 +188,24 @@ Para corroborar la cobertura integral del modelo respecto a los requisitos de pl
 
 A nivel de descomposición analítica de dominio, la gestión contractual de flotas (`Subscription & Fleet Provisioning`) se modela tácticamente como un subdominio de soporte independiente de la autenticación pura de usuarios (`IAM`). En la posterior fase de diseño de clases y persistencia relacional, ambos contextos se agrupan de forma cohesionada bajo un esquema unificado (`IAM & Subscriptions`). Dicha decisión de ingeniería optimiza las transacciones de validación de cuotas multi-inquilino (*multi-tenancy*), garantizando que las credenciales del personal médico y la disponibilidad de cajas inteligentes se resuelvan dentro de la misma frontera transaccional en la base de datos.
 
----
+***
 
 ### **3. Diagrama Panorámico de Integración de Bounded Contexts**
 
 Este diagrama macro ilustra cómo interactúan los seis contextos mediante el intercambio de eventos de dominio asíncronos y comandos de orquestación, asegurando un desacoplamiento de bajo acoplamiento y alta cohesión.
 
----
+***
 
-![Figura 4.6.1.1 - Mapa de Integración entre Bounded Contexts (DLES)](../assets/chapter-4/4.6.1-dles-macro-context-map.jpg)  
+![Figura 4.6.1.1 - Mapa de Integración entre Bounded Contexts (DLES)](assets/chapter-4/4.6.1-dles-macro-context-map.jpg)  
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo Design-Level EventStorming para Medical SMARTBOX.*
 
----
+***
 
 ### **4. Desglose Exhaustivo por Bounded Context**
 
 A continuación se detalla la especificación transaccional completa para cada uno de los seis Bounded Contexts, definiendo sus responsabilidades de negocio, agregados, invariantes inviolables, matrices de artefactos DDD y flujos de ejecución.
 
----
+***
 
 #### **4.6.1.1. Bounded Context 1: Identity & Access Management (IAM)**
 
@@ -209,64 +222,98 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto IAM
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetUserProfileQuery</code></td>
-      <td><code>LoginCredentialsView</code></td>
-      <td>Cualquier Usuario</td>
-      <td><code>AuthenticateUser</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>UserAuthenticated</code></td>
-      <td><em>Whenever [UserAuthenticated] THEN [SendTwoFactorChallengeCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>ValidateUserCredentialsQuery</code></td>
-      <td><code>OtpChallengeView</code></td>
-      <td>Paramédico / Médico</td>
-      <td><code>ValidateTwoFactorToken</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>SessionAccessGranted</code></td>
-      <td><em>Whenever [SessionAccessGranted] THEN [IssueScopedJwtTokenCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAssignedRolesQuery</code></td>
-      <td><code>DriverRegistryView</code></td>
-      <td>Coordinador Flota (Seg. 1)</td>
-      <td><code>RegisterDriverProfile</code></td>
-      <td><code>UserAccount</code></td>
-      <td><code>DriverProfileEnrolled</code></td>
-      <td><em>Whenever [DriverProfileEnrolled] THEN [AuthorizeEmergencyVehicleBindingCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetMedicalOrganizationByRenipressQuery</code></td>
-      <td><code>OrganizationProfileView</code></td>
-      <td>Administrador Clínico (Seg. 2)</td>
-      <td><code>RegisterMedicalOrganization</code></td>
-      <td><code>MedicalOrganization</code></td>
-      <td><code>MedicalOrganizationEnrolled</code></td>
-      <td><em>Whenever [MedicalOrganizationEnrolled] THEN [ValidateRenipressRegistrationCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto IAM</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Cualquier Usuario</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetUserProfileQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>LoginCredentialsView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Médico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateUserCredentialsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OtpChallengeView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Coordinador Flota (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAssignedRolesQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DriverRegistryView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Administrador Clínico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetMedicalOrganizationByRenipressQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OrganizationProfileView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto IAM</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuthenticateUser</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAuthenticated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [UserAuthenticated] THEN [SendTwoFactorChallengeCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateTwoFactorToken</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SessionAccessGranted</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [SessionAccessGranted] THEN [IssueScopedJwtTokenCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterDriverProfile</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UserAccount</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DriverProfileEnrolled</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DriverProfileEnrolled] THEN [AuthorizeEmergencyVehicleBindingCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterMedicalOrganization</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalOrganization</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalOrganizationEnrolled</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [MedicalOrganizationEnrolled] THEN [ValidateRenipressRegistrationCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context IAM](../assets/chapter-4/4.6.1-dles-iam-context.jpg)  
+***
+
+![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context IAM](assets/chapter-4/4.6.1-dles-iam-context.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity & Access Management (IAM).*
 
----
+***
 
 #### **4.6.1.2. Bounded Context 2: Subscription & Fleet Provisioning**
 
@@ -283,55 +330,87 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Subscription & Fleet Provisioning
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetActiveSubscriptionPlanQuery</code></td>
-      <td><code>SubscriptionTiersView</code></td>
-      <td>Director Médico (Seg. 2)</td>
-      <td><code>SubscribeToPlan</code></td>
-      <td><code>SubscriptionPlan</code></td>
-      <td><code>SubscriptionActivated</code></td>
-      <td><em>Whenever [SubscriptionActivated] THEN [ProvisionContainerAllocationCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContainerDeviceStatusQuery</code></td>
-      <td><code>DeviceInventoryView</code></td>
-      <td>Técnico Logístico</td>
-      <td><code>ProvisionContainerHardware</code></td>
-      <td><code>ContainerDevice</code></td>
-      <td><code>ContainerHardwareProvisioned</code></td>
-      <td><em>Whenever [ContainerHardwareProvisioned] THEN [EnableTelemetrySensorsCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetVehicleBindingQuery</code></td>
-      <td><code>FleetPairingView</code></td>
-      <td>Paramédico / Despachador (Seg. 1)</td>
-      <td><code>BindContainerToVehicle</code></td>
-      <td><code>VehicleBinding</code></td>
-      <td><code>ContainerBoundToVehicle</code></td>
-      <td><em>Whenever [ContainerBoundToVehicle] THEN [Activate12VPowerTelemetryCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Subscription & Fleet Provisioning</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Director Médico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetActiveSubscriptionPlanQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionTiersView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Técnico Logístico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerDeviceStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DeviceInventoryView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Despachador (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetVehicleBindingQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FleetPairingView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Subscription & Fleet Provisioning</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscribeToPlan</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionPlan</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SubscriptionActivated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [SubscriptionActivated] THEN [ProvisionContainerAllocationCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ProvisionContainerHardware</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerDevice</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerHardwareProvisioned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerHardwareProvisioned] THEN [EnableTelemetrySensorsCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>BindContainerToVehicle</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VehicleBinding</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerBoundToVehicle</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerBoundToVehicle] THEN [Activate12VPowerTelemetryCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Subscription & Fleet Provisioning](../assets/chapter-4/4.6.1-dles-subscription-fleet.jpg)  
+***
+
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Subscription & Fleet Provisioning](assets/chapter-4/4.6.1-dles-subscription-fleet.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Subscription & Fleet Provisioning.*
 
----
+***
 
 #### **4.6.1.3. Bounded Context 3: Medical Transport Planning & Dispatching**
 
@@ -349,73 +428,109 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Transport Planning & Dispatching
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetTransportOrderDetailsQuery</code></td>
-      <td><code>OrderCreationFormView</code></td>
-      <td>Químico Farmacéutico (Seg. 2)</td>
-      <td><code>CreateTransportOrder</code></td>
-      <td><code>TransportOrder</code></td>
-      <td><code>TransportOrderPlaced</code></td>
-      <td><em>Whenever [TransportOrderPlaced] THEN [EvaluateFleetAvailabilityCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetFleetDispatchBoardQuery</code></td>
-      <td><code>FleetDispatchBoardView</code></td>
-      <td>Despachador Flota (Seg. 1)</td>
-      <td><code>AssignVehicleAndBoxToTrip</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>TripResourcesAssigned</code></td>
-      <td><em>Whenever [TripResourcesAssigned] THEN [RequestContainerPrecoolingCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetActiveTripMonitorQuery</code></td>
-      <td><code>ActiveTripMonitorView</code></td>
-      <td>Chofer Ambulancia (Seg. 1)</td>
-      <td><code>StartDispatchedTrip</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>DispatchedTripStarted</code></td>
-      <td><em>Whenever [DispatchedTripStarted] THEN [LockContainerElectromechanicalLidCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>CalculateDynamicRouteEtaQuery</code></td>
-      <td><code>ActiveTripMonitorView</code></td>
-      <td>Sistema / TomTom API</td>
-      <td><code>UpdateDynamicEta</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>DynamicEtaRecalculated</code></td>
-      <td><em>Whenever [DynamicEtaRecalculated] AND delay > 15m THEN [NotifyHospitalRampCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetDestinationGeofenceStatusQuery</code></td>
-      <td><code>DestinationArrivalView</code></td>
-      <td>Chofer Ambulancia (Seg. 1) / Sistema GPS</td>
-      <td><code>RegisterDestinationArrival</code></td>
-      <td><code>DispatchTrip</code></td>
-      <td><code>TripDestinationReached</code></td>
-      <td><em>Whenever [TripDestinationReached] THEN [NotifyHospitalReceivingTeamCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Transport Planning & Dispatching</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTransportOrderDetailsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OrderCreationFormView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Despachador Flota (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetFleetDispatchBoardQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FleetDispatchBoardView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Chofer Ambulancia (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetActiveTripMonitorQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ActiveTripMonitorView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Sistema / TomTom API</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalculateDynamicRouteEtaQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ActiveTripMonitorView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Chofer Ambulancia (Seg. 1) / Sistema GPS</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetDestinationGeofenceStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DestinationArrivalView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Transport Planning & Dispatching</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CreateTransportOrder</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TransportOrder</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TransportOrderPlaced</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TransportOrderPlaced] THEN [EvaluateFleetAvailabilityCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AssignVehicleAndBoxToTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TripResourcesAssigned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TripResourcesAssigned] THEN [RequestContainerPrecoolingCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>StartDispatchedTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchedTripStarted</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DispatchedTripStarted] THEN [LockContainerElectromechanicalLidCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UpdateDynamicEta</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DynamicEtaRecalculated</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DynamicEtaRecalculated] AND delay > 15m THEN [NotifyHospitalRampCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RegisterDestinationArrival</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchTrip</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TripDestinationReached</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TripDestinationReached] THEN [NotifyHospitalReceivingTeamCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](../assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
+***
+
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
----
+***
 
 #### **4.6.1.4. Bounded Context 4: Smart Container & Telemetry Monitoring**
 
@@ -432,64 +547,98 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Smart Container & Telemetry
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetContainerTelemetrySnapshotQuery</code></td>
-      <td><code>ContainerSensorsLiveView</code></td>
-      <td>ESP32 / Sensores IoT</td>
-      <td><code>RecordTelemetrySnapshot</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>TelemetrySnapshotRecorded</code></td>
-      <td><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetTareCalibrationStatusQuery</code></td>
-      <td><code>TareCalibrationView</code></td>
-      <td>Químico Farmacéutico (Seg. 2)</td>
-      <td><code>CalibrateTareAndPayloadWeight</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>PayloadWeightRegistered</code></td>
-      <td><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetPowerStatusQuery</code></td>
-      <td><code>PowerStatusView</code></td>
-      <td>Hardware ESP32</td>
-      <td><code>SwitchToInternalBatteryPower</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>AuxiliaryBatteryEngaged</code></td>
-      <td><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContainerLockStateQuery</code></td>
-      <td><code>ContainerLockView</code></td>
-      <td>Custodio Receptor (Seg. 2)</td>
-      <td><code>UnlockElectromechanicalLid</code></td>
-      <td><code>SmartContainer</code></td>
-      <td><code>ContainerLidUnlocked</code></td>
-      <td><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ESP32 / Sensores IoT</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerTelemetrySnapshotQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerSensorsLiveView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTareCalibrationStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TareCalibrationView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware ESP32</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetPowerStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PowerStatusView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerLockStateQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLockView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RecordTelemetrySnapshot</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TelemetrySnapshotRecorded</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalibrateTareAndPayloadWeight</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PayloadWeightRegistered</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SwitchToInternalBatteryPower</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuxiliaryBatteryEngaged</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UnlockElectromechanicalLid</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLidUnlocked</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](../assets/chapter-4/4.6.1-dles-smart-container.jpg)  
+***
+
+![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
----
+***
 
 #### **4.6.1.5. Bounded Context 5: Critical Alerting & Incident Response**
 
@@ -508,64 +657,98 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Critical Alerting & Incident Response
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetLiveAlertsQuery</code></td>
-      <td><code>LiveAlertsBannerView</code></td>
-      <td>Sistema Reactivo</td>
-      <td><code>TriggerCriticalAlert</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>CriticalAlertTriggered</code></td>
-      <td><em>Whenever [CriticalAlertTriggered] THEN [DispatchPushNotificationCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetIncidentDetailQuery</code></td>
-      <td><code>IncidentDetailModalView</code></td>
-      <td>Paramédico / Chofer (Seg. 1)</td>
-      <td><code>AcknowledgeAlert</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>AlertAcknowledgedByOperator</code></td>
-      <td><em>Whenever [AlertAcknowledged] THEN [SilenceCabinBuzzerCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetContingencyResolutionsQuery</code></td>
-      <td><code>ContingencyResolutionView</code></td>
-      <td>Paramédico / Farmacéutico</td>
-      <td><code>ResolveIncidentWithMitigation</code></td>
-      <td><code>CriticalIncident</code></td>
-      <td><code>IncidentResolved</code></td>
-      <td><em>Whenever [IncidentResolved] THEN [AppendToAuditManifestCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAlertRuleThresholdsQuery</code></td>
-      <td><code>AlertConfigurationView</code></td>
-      <td>Director Farmacéutico (Seg. 2)</td>
-      <td><code>ConfigureAlertThresholds</code></td>
-      <td><code>AlertRule</code></td>
-      <td><code>AlertThresholdsConfigured</code></td>
-      <td><em>Whenever [AlertThresholdsConfigured] THEN [SyncThermalMonitoringParametersCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Critical Alerting & Incident Response</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Sistema Reactivo</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetLiveAlertsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>LiveAlertsBannerView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Chofer (Seg. 1)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetIncidentDetailQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>IncidentDetailModalView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Paramédico / Farmacéutico</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContingencyResolutionsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContingencyResolutionView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Director Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAlertRuleThresholdsQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertConfigurationView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Critical Alerting & Incident Response</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TriggerCriticalAlert</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalAlertTriggered</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [CriticalAlertTriggered] THEN [DispatchPushNotificationCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AcknowledgeAlert</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertAcknowledgedByOperator</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AlertAcknowledged] THEN [SilenceCabinBuzzerCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ResolveIncidentWithMitigation</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CriticalIncident</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>IncidentResolved</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [IncidentResolved] THEN [AppendToAuditManifestCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ConfigureAlertThresholds</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertRule</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AlertThresholdsConfigured</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AlertThresholdsConfigured] THEN [SyncThermalMonitoringParametersCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](../assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
+***
+
+![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
 
----
+***
 
 #### **4.6.1.6. Bounded Context 6: Chain of Custody & Traceability**
 
@@ -582,79 +765,175 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ##### Matriz de Artefactos DDD - Contexto Chain of Custody & Traceability
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Query CQRS (Cian)</th>
-      <th>Read Model (Verde)</th>
-      <th>Actor (Amarillo)</th>
-      <th>Command (Azul)</th>
-      <th>Aggregate (Ocre)</th>
-      <th>Domain Event (Naranja)</th>
-      <th>Policy / Regla Reactiva (Morada)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>GetDispatchVerificationQuery</code></td>
-      <td><code>DispatchVerificationView</code></td>
-      <td>Químico Farmacéutico Remitente</td>
-      <td><code>SignInitialCustodyHandover</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>InitialCustodySigned</code></td>
-      <td><em>Whenever [InitialCustodySigned] THEN [IssueRecipientOtpCodeCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>ValidateDeliveryOtpQuery</code></td>
-      <td><code>OtpVerificationModalView</code></td>
-      <td>Médico / Químico Receptor (Seg. 2)</td>
-      <td><code>VerifyDeliveryOtpCode</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>DeliveryOtpVerified</code></td>
-      <td><em>Whenever [DeliveryOtpVerified] THEN [UnlockSmartContainerCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetFinalInspectionReportQuery</code></td>
-      <td><code>FinalInspectionReportView</code></td>
-      <td>Custodio Receptor (Seg. 2)</td>
-      <td><code>AcceptMedicalDelivery</code></td>
-      <td><code>CustodyTransfer</code></td>
-      <td><code>MedicalCustodyTransferred</code></td>
-      <td><em>Whenever [MedicalCustodyTransferred] THEN [SealDigitalAuditManifestCommand]</em></td>
-    </tr>
-    <tr>
-      <td><code>GetAuditManifestCertifiedPdfQuery</code></td>
-      <td><code>AuditManifestDownloadView</code></td>
-      <td>Auditor DIGEMID / MINSA</td>
-      <td><code>GenerateCertifiedPdfManifest</code></td>
-      <td><code>DigitalAuditManifest</code></td>
-      <td><code>AuditManifestSealedWithHash</code></td>
-      <td><em>Whenever [AuditManifestSealedWithHash] THEN [ArchiveInCloudStorageCommand]</em></td>
-    </tr>
-  </tbody>
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Chain of Custody & Traceability</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico Remitente</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetDispatchVerificationQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DispatchVerificationView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Médico / Químico Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ValidateDeliveryOtpQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>OtpVerificationModalView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetFinalInspectionReportQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>FinalInspectionReportView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Auditor DIGEMID / MINSA</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetAuditManifestCertifiedPdfQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuditManifestDownloadView</code></td>
+</tr>
+</tbody>
 </table>
+</div>
 
----
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Chain of Custody & Traceability</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SignInitialCustodyHandover</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>InitialCustodySigned</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [InitialCustodySigned] THEN [IssueRecipientOtpCodeCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>VerifyDeliveryOtpCode</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DeliveryOtpVerified</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [DeliveryOtpVerified] THEN [UnlockSmartContainerCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AcceptMedicalDelivery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CustodyTransfer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>MedicalCustodyTransferred</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [MedicalCustodyTransferred] THEN [SealDigitalAuditManifestCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GenerateCertifiedPdfManifest</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DigitalAuditManifest</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuditManifestSealedWithHash</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuditManifestSealedWithHash] THEN [ArchiveInCloudStorageCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-![Figura 4.6.1.7 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](../assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
+***
+
+![Figura 4.6.1.7 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
 
----
+***
 
 ### **5. Matriz Transversal de Políticas de Negocio Reactivas (Event-Driven)**
 
 Para garantizar que la arquitectura DDD soporte adecuadamente la reactividad en tiempo real entre microservicios/módulos, se formalizan las **políticas de negocio transversales** que gobiernan el comportamiento del sistema, detallando el canal de desacoplamiento asíncrono y la estrategia de consistencia:
 
-| Política / Regla de Negocio | Evento Disparador (Triggering Domain Event) | Bounded Context Emisor | Comando Consecuente (Resulting Command) | Bounded Context Receptor | Canal de Integración / Event Bus | Estrategia de Consistencia |
-|---|---|---|---|---|---|---|
-| **POL-01: Control Térmico Reactivo** | TelemetrySnapshotRecorded (Temp < 2.0°C o > 8.0°C) | *Smart Container IoT* | TriggerCriticalAlert | *Critical Alerting* | Redis Pub/Sub: smartbox.telemetry.excursions | Consistencia Eventual (< 500 ms) |
-| **POL-02: Escalación por Tráfico de Lima** | DynamicEtaRecalculated (Retraso ETA > 15 min) | *Transport Planning* | NotifyHospitalRampDelay | *Transport Planning / IAM* | Internal Event Bus (MediatR): trips.eta.delays | Consistencia Eventual (< 2 s) |
-| **POL-03: Bloqueo Automático en Despacho** | DispatchedTripStarted | *Transport Planning* | EngageSolenoidLock | *Smart Container IoT* | Internal Event Bus (MediatR): trips.dispatched | Consistencia Fuerte / Inmediata |
-| **POL-04: Seguridad de Energía Vehicular** | ExternalPowerSourceLost (Toma 12V desconectada) | *Smart Container IoT* | TriggerPowerWarningAlert | *Critical Alerting* | Redis Pub/Sub: smartbox.power.alerts | Consistencia Eventual (< 500 ms) |
-| **POL-05: Autorización de Apertura en Rampa** | DeliveryOtpVerified | *Chain of Custody* | UnlockElectromechanicalLid | *Smart Container IoT* | Internal MediatR (intra-API) → Redis Pub/Sub: smartbox.commands.actuators → MQTT TLS 8883 | Consistencia Fuerte / Inmediata |
-| **POL-06: Cierre Inmutable de Manifiesto** | MedicalCustodyTransferred | *Chain of Custody* | SealDigitalAuditManifest | *Chain of Custody* | Internal Event Bus (MediatR): custody.completed | Consistencia Fuerte (Transaccional) |
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; margin: 12px 0; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 17%;" />
+  <col style="width: 21%;" />
+  <col style="width: 18%;" />
+  <col style="width: 16%;" />
+  <col style="width: 16%;" />
+  <col style="width: 12%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla de Negocio</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Evento Disparador (Domain Event)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Flujo Bounded Contexts</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Consecuente</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Canal / Event Bus</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Consistencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-01: Control Térmico Reactivo**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TelemetrySnapshotRecorded (Temp < 2.0°C o > 8.0°C)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Smart Container IoT</em> &rarr; <em>Critical Alerting</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TriggerCriticalAlert</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Redis Pub/Sub: smartbox.telemetry.excursions</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 500 ms)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-02: Escalación por Tráfico de Lima**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DynamicEtaRecalculated (Retraso ETA > 15 min)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Transport Planning</em> &rarr; <em>Transport Planning / IAM</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">NotifyHospitalRampDelay</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): trips.eta.delays</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 2 s)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-03: Bloqueo Automático en Despacho**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DispatchedTripStarted</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Transport Planning</em> &rarr; <em>Smart Container IoT</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">EngageSolenoidLock</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): trips.dispatched</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte / Inmediata</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-04: Seguridad de Energía Vehicular**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ExternalPowerSourceLost (Toma 12V desconectada)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Smart Container IoT</em> &rarr; <em>Critical Alerting</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">TriggerPowerWarningAlert</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Redis Pub/Sub: smartbox.power.alerts</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Eventual (< 500 ms)</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-05: Autorización de Apertura en Rampa**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">DeliveryOtpVerified</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Chain of Custody</em> &rarr; <em>Smart Container IoT</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">UnlockElectromechanicalLid</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal MediatR (intra-API) → Redis Pub/Sub: smartbox.commands.actuators → MQTT TLS 8883</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte / Inmediata</td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">**POL-06: Cierre Inmutable de Manifiesto**</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">MedicalCustodyTransferred</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Chain of Custody</em> &rarr; <em>Chain of Custody</em></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">SealDigitalAuditManifest</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Internal Event Bus (MediatR): custody.completed</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Consistencia Fuerte (Transaccional)</td>
+</tr>
+</tbody>
+</table>
 
----
+***
 
 ### **6. Conclusiones y Preparación para el C4 Model (Capítulo 4.6.2)**
 
@@ -664,7 +943,7 @@ El **Design-Level EventStorming** ha permitido descomponer con total rigor la co
 
 Este modelado funcional establece las fronteras directas para la elaboración del **C4 Model (Context Diagram en 4.6.2, Container Diagram en 4.6.3 y Component Diagrams en 4.6.4)**, así como los cimientos para el **Diagrama de Clases UML (4.7)** y el **Esquema Relacional de Base de Datos (4.8)**.
 
----
+***
 
 ## **4.6.2. Software Architecture Context Diagram**
 
@@ -680,7 +959,7 @@ El objetivo esencial del Diagrama de Contexto es **establecer las fronteras oper
 2. **Cuáles son las dependencias externas:** Qué sistemas de software de terceros, hardware embebido y servicios en la nube son requeridos para que la solución funcione.
 3. **Cuáles son los límites de responsabilidad:** Qué funciones ejecuta estrictamente el sistema y qué tareas delega a sistemas especializados del ecosistema de salud y movilidad de Lima Metropolitana.
 
----
+***
 
 ### **2. Definición del Sistema Central (Subject System)**
 
@@ -691,14 +970,21 @@ El objetivo esencial del Diagrama de Contexto es **establecer las fronteras oper
 * **Misión Operativa:**  
   Garantizar el "Desperdicio Cero" de órganos para trasplante, hemoderivados, vacunas y muestras biológicas termosensibles durante el trayecto vial, blindando el cumplimiento de la **R.M. N° 833-2015/MINSA** (Manual de BPDT - DIGEMID) y la **Directiva Sanitaria N° 152/MINSA** (DIGDOT), mediante la supervisión en tiempo real de temperatura, energía vehicular (12V) y cálculo dinámico de tiempos de llegada (ETA) frente al tráfico severo de la capital.
 
----
+***
 
 ### **3. Catálogo de Actores y Personas (Segmentos Objetivo)**
 
 Los usuarios del sistema se articulan de manera estricta con los **dos segmentos objetivo** modelados en la sección **1.3**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 18%;" />
+  <col style="width: 18%;" />
+  <col style="width: 22%;" />
+  <col style="width: 18%;" />
+  <col style="width: 24%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Actor / Persona</th>
       <th>Segmento Objetivo</th>
@@ -746,14 +1032,20 @@ Los usuarios del sistema se articulan de manera estricta con los **dos segmentos
   </tbody>
 </table>
 
----
+***
 
 ### **4. Catálogo de Sistemas Externos e Interfaces Periféricas**
 
 La plataforma se conecta con siete sistemas de software externos y dispositivos de hardware distribuido:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 22%;" />
+  <col style="width: 18%;" />
+  <col style="width: 35%;" />
+  <col style="width: 25%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Sistema Externo / Hardware</th>
       <th>Tipo de Sistema</th>
@@ -807,14 +1099,21 @@ La plataforma se conecta con siete sistemas de software externos y dispositivos 
   </tbody>
 </table>
 
----
+***
 
 ### **5. Matriz de Interacciones y Protocolos de Comunicación**
 
 Para garantizar que el modelado técnico no deje ambigüedades sobre las tecnologías de comunicación, la siguiente tabla detalla cada una de las flechas de interacción del diagrama de contexto:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 8%;" />
+  <col style="width: 18%;" />
+  <col style="width: 18%;" />
+  <col style="width: 34%;" />
+  <col style="width: 22%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Flujo #</th>
       <th>Origen (Source)</th>
@@ -918,17 +1217,17 @@ Para garantizar que el modelado técnico no deje ambigüedades sobre las tecnolo
   </tbody>
 </table>
 
----
+***
 
 ### **6. Especificación Visual Oficial y Bloque de Diagramación**
 
----
+***
 
-![Figura 4.6.2.1 - C4 Model: System Context Diagram (Nivel 1)](../assets/chapter-4/4.6.2-c4-context-diagram.png)
+![Figura 4.6.2.1 - C4 Model: System Context Diagram (Nivel 1)](assets/chapter-4/4.6.2-c4-context-diagram.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **7. Conclusiones y Transición hacia el Container Diagram (Capítulo 4.6.3)**
 
@@ -937,7 +1236,7 @@ El **Software Architecture Context Diagram** define formalmente el perímetro de
 2. **Robustez de Integraciones:** El sistema no depende de soluciones mágicas, sino de contratos técnicos específicos: telemetría continua sobre **MQTT/TLS** para el hardware IoT de ultrabajo consumo (ESP32), APIs de geolocalización contra **TomTom** para vencer la congestión de Lima, y almacenamiento inmutable **WORM** para cumplir la regulación de DIGEMID.
 3. **Paso Siguiente:** Habiendo establecido la plataforma central como una caja negra de alcance delimitado, el siguiente capítulo (**4.6.3 Software Architecture Container Diagrams**) "abrirá" esta caja negra para descomponerla en sus unidades ejecutables independientes: **Landing Page estática, Single Page Application en Vue.js + PrimeVue, RESTful Web API en ASP.NET Core C#, IoT Background Ingestion Worker y Base de Datos Relacional MySQL**.
 
----
+***
 
 ## **4.6.3. Software Architecture Container Diagrams**
 
@@ -950,14 +1249,21 @@ Tras haber delimitado en el Capítulo 4.6.2 la plataforma central `Medical SMART
 2. **Las decisiones y criterios de selección tecnológica:** Adopción estratégica de **HTML5/CSS3/JavaScript** para la Landing Page de captación y difusión; **Vue Framework con PrimeVue** (Material Design) para la Frontend Web Application interactiva de alta densidad operativa; **ASP.NET Core con Entity Framework Core (C#)** para la Web API RESTful de alta concurrencia y procesamiento asíncrono; y **MySQL Server** como RDBMS principal con motor transaccional InnoDB para garantizar consistencia ACID.
 3. **Los patrones y protocolos de comunicación inter-contenedor:** Especificación exacta de canales de transporte (HTTPS, WSS, TCP/MQTT, SQL/TCP) para garantizar alta disponibilidad, baja latencia y tolerancia a fallos.
 
----
+***
 
 ### **2. Catálogo de Contenedores de Software (Arquitectura de Despliegue)**
 
 La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores principales**, articulando las necesidades del **Segmento 1 (Transporte / Ambulancias)** y del **Segmento 2 (Centros de Salud / Farmacéuticas)**:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7.2pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 18%;" />
+  <col style="width: 16%;" />
+  <col style="width: 20%;" />
+  <col style="width: 30%;" />
+  <col style="width: 16%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Contenedor C4</th>
       <th>Tipo de Unidad</th>
@@ -998,8 +1304,8 @@ La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores princ
     <tr>
       <td><strong>5. Relational Database</strong></td>
       <td><em>Relational DBMS</em></td>
-      <td><strong>MySQL 8.0 Server</strong> (o PostgreSQL)</td>
-      <td>Almacén de datos relacional transaccional (ACID) administrado mediante migraciones de Entity Framework Core (Puerto TCP 3306). Persiste usuarios, suscripciones, flota de ambulancias, órdenes de traslado, manifiestos digitales y registros de auditoría legal.</td>
+      <td><strong>MySQL 8.0 Server (InnoDB)</strong></td>
+      <td>Almacén de datos relacional transaccional (ACID) administrado mediante migraciones de Entity Framework Core 10.0 (Puerto TCP 3306). Persiste usuarios, suscripciones, flota de ambulancias, órdenes de traslado, manifiestos digitales y registros de auditoría legal.</td>
       <td>Persistencia persistente del sistema</td>
     </tr>
     <tr>
@@ -1012,14 +1318,22 @@ La solución **Medical SMARTBOX** se descompone en **seis (6) contenedores princ
   </tbody>
 </table>
 
----
+***
 
 ### **3. Matriz de Protocolos de Comunicación y Conectividad Inter-Contenedor**
 
 Para garantizar el cumplimiento de los estándares de conectividad segura e interoperabilidad exigidos por la industria médica, se formaliza la siguiente matriz de integración:
 
-<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; border: 1px solid #cbd5e1; margin: 12px 0;">
+<colgroup>
+  <col style="width: 15%;" />
+  <col style="width: 15%;" />
+  <col style="width: 14%;" />
+  <col style="width: 8%;" />
+  <col style="width: 16%;" />
+  <col style="width: 32%;" />
+</colgroup>
+<thead>
     <tr>
       <th>Origen (Source)</th>
       <th>Destino (Target)</th>
@@ -1161,7 +1475,7 @@ Para garantizar el cumplimiento de los estándares de conectividad segura e inte
   </tbody>
 </table>
 
----
+***
 
 ### **4. Decisiones de Arquitectura y Trade-offs Técnicos**
 
@@ -1172,17 +1486,17 @@ Para garantizar el cumplimiento de los estándares de conectividad segura e inte
 3. **Persistencia Relacional en MySQL Server:**  
    * *Justificación:* El transporte asistencial exige estricta integridad referencial (ACID) para auditorías de DIGEMID: no puede existir un viaje sin una orden médica, ni un acta firmada sin un custodio validado. **MySQL 8.0 administrado por Entity Framework Core** provee el control transaccional requerido.
 
----
+***
 
 ### **5. Especificación Visual Oficial y Bloque de Diagramación**
 
----
+***
 
-![Figura 4.6.3.1 - C4 Model: Container Diagram (Nivel 2)](../assets/chapter-4/4.6.3-c4-container-diagram.png)
+![Figura 4.6.3.1 - C4 Model: Container Diagram (Nivel 2)](assets/chapter-4/4.6.3-c4-container-diagram.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **6. Conclusiones y Transición hacia el Component Diagram (Capítulo 4.6.4)**
 
@@ -1191,7 +1505,7 @@ El **Software Architecture Container Diagram** formaliza la distribución físic
 2. **Desacoplamiento de Carga:** La separación entre la **RESTful Web API** (orientada a transacciones de usuario) y el **IoT Ingestion Worker** (orientado a ráfagas continuas de telemetría MQTT) garantiza que la plataforma soporte cientos de ambulancias concurrentes en Lima sin degradar el rendimiento.
 3. **Paso Siguiente:** Habiendo descompuesto el sistema en contenedores ejecutables, el siguiente capítulo (**4.6.4 Software Architecture Components Diagrams**) profundizará en la arquitectura interna del contenedor central más complejo: la **RESTful Web API en ASP.NET Core**, desglosándola bajo los principios de **Clean Architecture / Onion Architecture DDD** (Controllers, Application Handlers, Domain Aggregates e Infrastructure Repositories).
 
----
+***
 
 ## **4.6.4. Software Architecture Components Diagrams**
 
@@ -1205,230 +1519,227 @@ Conforme a las recomendaciones de arquitectura de software para sistemas distrib
 * **IoT Ingestion Background Worker:** Se estructura internamente mediante daemons de servicio (.NET `BackgroundService`) y manejadores de mensajes MQTTnet que enrutan telemetría cruda hacia la Web API y Redis.
 * **Landing Page y Bases de Datos:** La Landing Page está constituida por recursos web estáticos (HTML5/CSS3/JS), mientras que la persistencia relacional en **MySQL 8.0 InnoDB** se especifica con total profundidad en el **Capítulo 4.8 (Database Design)**.
 
-En este capítulo se realiza la descomposición exhaustiva de la **RESTful Web API en ASP.NET Core (C#)**, descomponiéndola bajo los principios de **Clean Architecture / DDD Onion Architecture (Inversión de Dependencias)** para evidenciar cómo se estructuran los módulos que dan soporte operativo al **Segmento 1 (Transporte / Ambulancias)** y al **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**.
+En este capítulo se realiza la descomposición exhaustiva de la **RESTful Web API en ASP.NET Core (.NET 10 LTS, C# 14)**, estructurándola bajo los principios de **Domain-Driven Design (DDD) y Clean Architecture** con estricta inversión de dependencias para evidenciar cómo se organizan los módulos que dan soporte operativo al **Segmento 1 (Transporte / Ambulancias)** y al **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**.
 
----
+***
 
-### **2. Arquitectura Interna del Contenedor: Clean / Onion Architecture**
+### **2. Organización en Capas DDD de los Componentes del Contenedor**
 
 Para evitar el acoplamiento directo entre los controladores HTTP y la base de datos MySQL, el contenedor **RESTful Web API** organiza sus componentes en cuatro capas concéntricas regidas por la **Regla de Dependencia** (las dependencias de código fuente solo apuntan hacia adentro, hacia el Dominio):
 
----
-
-![Figura 4.6.4.1 - Diagrama de Arquitectura de Capas Clean / Onion para RESTful Web API](../assets/chapter-4/4.6.4-clean-onion-architecture.png)
-
-*Nota: Diagrama de Arquitectura de Capas Clean / Onion para el contenedor RESTful Web API elaborado conforme a los patrones de Clean Architecture y Domain-Driven Design para la plataforma.*
-
----
-
-1. **Presentation Layer (Capa de Controladores REST):**  
-   Recibe las solicitudes HTTP desde la Single Page Application (Vue.js), valida los tokens JWT de autorización y el formato básico de los datos entrantes (DTOs), delegando inmediatamente la ejecución hacia los servicios de aplicación.
+1. **Presentation Layer (Capa de Controladores REST y Hubs):**  
+   Recibe las solicitudes HTTP desde la Single Page Application (Vue.js 3), valida los tokens JWT de autorización y el formato básico de los datos entrantes (DTOs), delegando inmediatamente la ejecución hacia los servicios de aplicación.
 2. **Application Layer (Capa de Aplicación y Casos de Uso):**  
    Orquesta los flujos de negocio y coordina las transacciones sin contener reglas de negocio del dominio. Convierte DTOs en entidades, invoca a los agregados del dominio, interactúa con interfaces de repositorio y coordina adaptadores externos.
 3. **Domain Layer (Capa de Dominio - Núcleo Central Inmutable):**  
    Contiene los Agregados Raíz (*Aggregate Roots*), Entidades, Objetos de Valor (*Value Objects*) y las **invariantes de negocio** que no dependen de ningún framework o base de datos. Define las interfaces de repositorio que la infraestructura debe implementar.
 4. **Infrastructure Layer (Capa de Infraestructura y Persistencia):**  
-   Implementa las interfaces de repositorio utilizando **Entity Framework Core sobre MySQL 8.0**, gestiona el contexto de base de datos (`AppDbContext`) e implementa los adaptadores hacia servicios en la nube externos (TomTom, Firebase, Twilio, AWS S3).
+   Implementa las interfaces de repositorio utilizando **Entity Framework Core 10.0 sobre MySQL Server 8.0 (InnoDB)**, gestiona el contexto de base de datos (`AppDbContext`) e implementa los adaptadores hacia servicios en la nube externos (TomTom, Firebase Cloud Messaging, Twilio, AWS S3).
 
 Conforme a los fundamentos del C4 Model, en este Nivel 3 (Component Diagrams) se modelan los artefactos modulares inyectables en el contenedor de inversión de control (IoC) de ASP.NET Core (Controladores, Servicios de Aplicación, Repositorios, Adaptadores y DbContext). Las entidades de dominio, objetos de valor y estructuras internas de clases corresponden al Nivel 4 (Code / UML Class Diagrams), los cuales se especifican con exhaustividad técnica en el Capítulo 4.7.
 
----
+***
+
+<div style="page-break-before: always;"></div>
 
 ### **3. Catálogo Detallado de Componentes de la RESTful Web API**
 
 A continuación se detallan los componentes estructurados por capa para los Bounded Contexts principales:
 
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Capa Arquitectónica</th>
-      <th>Componente C4</th>
-      <th>Tecnología / Framework</th>
-      <th>Responsabilidades Técnicas y de Negocio</th>
-      <th>Dependencias Inyectadas</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-    <tr>
-      <td rowspan="7"><strong>Presentation<br>(Controllers & Hubs)</strong></td>
-      <td><code>AuthController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para autenticación JWT, renovación de tokens, registro de usuarios institucionales y roles.</td>
-      <td><code>IIdentityService</code></td>
-    </tr>
-    <tr>
-      <td><code>SubscriptionsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para planes SaaS B2B, cupos de contenedores (5L/20L) y vinculación de ambulancias.</td>
-      <td><code>ISubscriptionService</code></td>
-    </tr>
-    <tr>
-      <td><code>TransportsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints REST para crear órdenes de traslado de emergencia, asignar ambulancias (Seg. 1) y consultar rutas activas.</td>
-      <td><code>ITransportService</code></td>
-    </tr>
-    <tr>
-      <td><code>ContainersController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para calibración de tara y pesaje neto con celda HX711, y envío de comandos de bloqueo solenoide.</td>
-      <td><code>ITelemetryService</code></td>
-    </tr>
-    <tr>
-      <td><code>AlertsController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para acuse de recibo de alarmas acústicas en cabina (Seg. 1) y registro de mitigación ante excursión térmica.</td>
-      <td><code>IIncidentService</code></td>
-    </tr>
-    <tr>
-      <td><code>CustodyController</code></td>
-      <td>ASP.NET Core ControllerBase, Swagger Attributes</td>
-      <td>Expone endpoints para validar el <strong>código OTP de un solo uso</strong> en rampa hospitalaria (Seg. 2) y descargar el acta digital certificada.</td>
-      <td><code>ICustodyService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryHub</code></td>
-      <td>ASP.NET Core SignalR Hub, Authorize Attribute</td>
-      <td>Expone el endpoint de WebSockets (<code>/hubs/telemetry</code>) para suscripción en tiempo real a curvas térmicas, estado de 12V y posición GPS de SmartBoxes.</td>
-      <td><code>IRealTimeCacheService</code></td>
-    </tr>
-    
-    <tr>
-      <td rowspan="7"><strong>Application<br>(Services / Use Cases)</strong></td>
-      <td><code>IdentityService</code></td>
-      <td>C# Service Class, JWT Bearer Handler</td>
-      <td>Valida credenciales con hashing BCrypt, emite tokens criptográficos JWT y verifica permisos RBAC de ambos segmentos.</td>
-      <td><code>IUserRepository</code>,<br><code>ITokenGeneratorService</code></td>
-    </tr>
-    <tr>
-      <td><code>SubscriptionService</code></td>
-      <td>C# Service Class</td>
-      <td>Gestiona planes institucionales B2B, valida cupos de SmartBoxes activos por institución y acuerdos de soporte SLA.</td>
-      <td><code>ISubscriptionRepository</code></td>
-    </tr>
-    <tr>
-      <td><code>TransportApplicationService</code></td>
-      <td>C# Service Class, FluentValidation</td>
-      <td>Orquesta la planificación del viaje, valida tiempos de isquemia fría (&lt;4h corazón, &lt;8h hígado) y consulta a TomTom para recalcular ETA dinámico.</td>
-      <td><code>ITransportRepository</code>,<br><code>ITrafficRoutingService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryProcessingService</code></td>
-      <td>C# Service Class, MediatR</td>
-      <td>Valida snapshots de telemetría, comprueba rango térmico (+2.0 °C a +8.0 °C), detecta desconexión de energía de 12V y persiste periódicamente bloques consolidados en MySQL vía <code>ISmartContainerRepository</code> para alimentar las actas de DIGEMID.</td>
-      <td><code>ISmartContainerRepository</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    <tr>
-      <td><code>TelemetryAlertSubscriber</code></td>
-      <td>BackgroundService (C#), IHostedService</td>
-      <td>Servicio continuo en segundo plano que escucha los canales Redis Pub/Sub (<code>smartbox.alerts.critical</code> y <code>smartbox.telemetry.batch</code>); mediante <code>IServiceScope</code>, delega de forma segura el manejo de alertas a <code>IncidentResponseService</code> y la persistencia de lotes a <code>TelemetryProcessingService</code>.</td>
-      <td><code>IServiceScopeFactory</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    <tr>
-      <td><code>IncidentResponseService</code></td>
-      <td>C# Service Class</td>
-      <td>Evalúa severidad de desviaciones térmicas y orquesta el despacho omnicanal de alertas push y SMS hacia la tripulación y médicos.</td>
-      <td><code>IIncidentRepository</code>,<br><code>INotificationService</code></td>
-    </tr>
-    <tr>
-      <td><code>CustodyVerificationService</code></td>
-      <td>C# Service Class</td>
-      <td>Comprueba la validez temporal del OTP, comanda el desbloqueo electromecánico de la tapa y genera el manifiesto sellado con SHA-256.</td>
-      <td><code>ICustodyRepository</code>,<br><code>IStorageService</code>,<br><code>IRealTimeCacheService</code></td>
-    </tr>
-    
-    <tr>
-      <td rowspan="5"><strong>Domain<br>(Core Business)</strong><br><small style="color: #666;"><em>(Límites de dominio orquestados por Aplicación; modelado estructural de clases detallado en Capítulo 4.7)</em></small></td>
-      <td><code>UserAccount</code> & <code>SubscriptionPlan</code></td>
-      <td>Plain C# (POCO), Domain Entities</td>
-      <td>Representan las identidades, roles clínicos, límites de flota de SmartBoxes y acuerdos comerciales B2B.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>SmartContainer</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Encapsula el estado electromecánico de la tapa, celda Peltier, batería LiFePO4 y el historial telemétrico.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>TransportOrder</code> & <code>DispatchTrip</code></td>
-      <td>DDD Aggregate Roots</td>
-      <td>Modelan la solicitud clínica de traslado, asignación de paramédico/ambulancia y ruta con isquemia fría controlada.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>CriticalIncident</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Modela anomalías térmicas y de energía auxiliar, gobernando las reglas de escalamiento y resoluciones de mitigación.</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><code>CustodyTransfer</code></td>
-      <td>DDD Aggregate Root</td>
-      <td>Gobernado por la máquina de estados de entrega, validación de clave OTP temporal y manifiesto inmutable DIGEMID.</td>
-      <td>—</td>
-    </tr>
-    
-    <tr>
-      <td rowspan="9"><strong>Infrastructure<br>(Persistence & Adapters)</strong></td>
-      <td><code>AppDbContext</code></td>
-      <td>Entity Framework Core 10.0 (.NET 10 LTS), Pomelo MySQL / Oracle MySQL EF Core</td>
-      <td>Contexto de base de datos que mapea las entidades del dominio hacia el esquema relacional en MySQL 8.0 (TCP 3306).</td>
-      <td><code>DbContextOptions</code></td>
-    </tr>
-    <tr>
-      <td><code>EF Repositories Implementations</code></td>
-      <td>EF Core Repositories (C#)</td>
-      <td>Implementan <code>IUserRepository</code>, <code>ISubscriptionRepository</code>, <code>ITransportRepository</code>, <code>ISmartContainerRepository</code>, etc.</td>
-      <td><code>AppDbContext</code></td>
-    </tr>
-    <tr>
-      <td><code>TomTomRoutingAdapter</code></td>
-      <td>HttpClient, Polly (Retry/CircuitBreaker)</td>
-      <td>Consume la API de TomTom para obtener matrices de tiempo considerando el tráfico vehicular en avenidas de Lima.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>FirebaseTwilioNotificationAdapter</code></td>
-      <td>FirebaseAdmin SDK, Twilio REST API</td>
-      <td>Despacha notificaciones push a la PWA móvil y mensajes de texto SMS a los teléfonos de la guardia médica.</td>
-      <td><code>IOptions&lt;NotificationSettings&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>AwsS3StorageAdapter</code></td>
-      <td>AWSSDK.S3 (C#)</td>
-      <td>Sube los manifiestos de viaje en PDF generados con sellado SHA-256 a buckets con retención WORM inmutable.</td>
-      <td><code>IAmazonS3</code></td>
-    </tr>
-    <tr>
-      <td><code>CulqiPaymentAdapter</code></td>
-      <td>HttpClient, Polly (Resilience)</td>
-      <td>Implementa <code>IPaymentGateway</code> para procesamiento automatizado de débitos B2B y validación de comprobantes de pago.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>HospitalFhirAdapter</code></td>
-      <td>HttpClient, HL7.Fhir.R4</td>
-      <td>Implementa <code>IHospitalInteroperabilityService</code> para sincronización de preavisos con el HIS hospitalario y consulta de habilitación RENIPRESS.</td>
-      <td><code>IHttpClientFactory</code></td>
-    </tr>
-    <tr>
-      <td><code>JwtTokenGeneratorAdapter</code></td>
-      <td>System.IdentityModel.Tokens.Jwt, C# Class</td>
-      <td>Implementa <code>ITokenGeneratorService</code> para generar y firmar criptográficamente tokens JWT con claims institucionales.</td>
-      <td><code>IOptions&lt;JwtSettings&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>RedisRealTimeCacheAdapter</code></td>
-      <td>StackExchange.Redis (C#)</td>
-      <td>Implementa <code>IRealTimeCacheService</code> para gestión de estado volátil en memoria y suscripción a canales Pub/Sub.</td>
-      <td><code>IConnectionMultiplexer</code></td>
-    </tr>
-  </tbody>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; font-size: 6.8pt; table-layout: fixed; border: 1px solid #777;">
+<colgroup>
+<col style="width: 14%;" />
+<col style="width: 17%;" />
+<col style="width: 20%;" />
+<col style="width: 32%;" />
+<col style="width: 17%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f0f0f0;">
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Capa Arquitectónica</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Componente C4</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Tecnología / Framework</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Responsabilidades Técnicas y de Negocio</th>
+<th style="border: 1px solid #777; padding: 3px; text-align: left;">Dependencias Inyectadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="7" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Presentation<br />(Controllers &amp; Hubs)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AuthController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para autenticación JWT, renovación de tokens, registro de usuarios institucionales y roles.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIdentityService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SubscriptionsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para planes SaaS B2B, cupos de contenedores (5L/20L) y vinculación de ambulancias.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISubscriptionService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints REST para crear órdenes de traslado de emergencia, asignar ambulancias (Seg. 1) y consultar rutas activas.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITransportService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ContainersController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para calibración de tara y pesaje neto con celda HX711, y envío de comandos de bloqueo solenoide.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITelemetryService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AlertsController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para acuse de recibo de alarmas acústicas en cabina (Seg. 1) y registro de mitigación ante excursión térmica.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIncidentService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyController</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core ControllerBase, Swagger Attributes</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone endpoints para validar el <strong>código OTP de un solo uso</strong> en rampa hospitalaria (Seg. 2) y descargar el acta digital certificada.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ICustodyService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryHub</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">ASP.NET Core SignalR Hub, Authorize Attribute</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Expone el endpoint de WebSockets (<code>/hubs/telemetry</code>) para suscripción en tiempo real a curvas térmicas, estado de 12V y posición GPS de SmartBoxes.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td rowspan="7" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Application<br />(Services / Use Cases)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IdentityService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, JWT Bearer Handler</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Valida credenciales con hashing BCrypt, emite tokens criptográficos JWT y verifica permisos RBAC de ambos segmentos.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IUserRepository</code>,<br /><code>ITokenGeneratorService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SubscriptionService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Gestiona planes institucionales B2B, valida cupos de SmartBoxes activos por institución y acuerdos de soporte SLA.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISubscriptionRepository</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportApplicationService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, FluentValidation</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Orquesta la planificación del viaje, valida tiempos de isquemia fría (&lt;4h corazón, &lt;8h hígado) y consulta a TomTom para recalcular ETA dinámico.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ITransportRepository</code>,<br /><code>ITrafficRoutingService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryProcessingService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class, MediatR</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Valida snapshots de telemetría, comprueba rango térmico (+2.0 °C a +8.0 °C), detecta desconexión de energía de 12V y persiste periódicamente bloques consolidados en MySQL vía <code>ISmartContainerRepository</code> para alimentar las actas de DIGEMID.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ISmartContainerRepository</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TelemetryAlertSubscriber</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">BackgroundService (C#), IHostedService</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Servicio continuo en segundo plano que escucha los canales Redis Pub/Sub (<code>smartbox.alerts.critical</code> y <code>smartbox.telemetry.batch</code>); mediante <code>IServiceScope</code>, delega de forma segura el manejo de alertas a <code>IncidentResponseService</code> y la persistencia de lotes a <code>TelemetryProcessingService</code>.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IServiceScopeFactory</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IncidentResponseService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Evalúa severidad de desviaciones térmicas y orquesta el despacho omnicanal de alertas push y SMS hacia la tripulación y médicos.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IIncidentRepository</code>,<br /><code>INotificationService</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyVerificationService</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">C# Service Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Comprueba la validez temporal del OTP, comanda el desbloqueo electromecánico de la tapa y genera el manifiesto sellado con SHA-256.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>ICustodyRepository</code>,<br /><code>IStorageService</code>,<br /><code>IRealTimeCacheService</code></td>
+</tr>
+<tr>
+<td rowspan="5" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Domain<br />(Core Business)</strong><br /><small style="color: #666;"><em>(Límites de dominio orquestados por Aplicación; modelado estructural de clases detallado en Capítulo 4.7)</em></small></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>UserAccount</code> &amp; <code>SubscriptionPlan</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Plain C# (POCO), Domain Entities</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Representan las identidades, roles clínicos, límites de flota de SmartBoxes y acuerdos comerciales B2B.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>SmartContainer</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Encapsula el estado electromecánico de la tapa, celda Peltier, batería LiFePO4 y el historial telemétrico.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TransportOrder</code> &amp; <code>DispatchTrip</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Roots</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Modelan la solicitud clínica de traslado, asignación de paramédico/ambulancia y ruta con isquemia fría controlada.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CriticalIncident</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Modela anomalías térmicas y de energía auxiliar, gobernando las reglas de escalamiento y resoluciones de mitigación.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CustodyTransfer</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">DDD Aggregate Root</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Gobernado por la máquina de estados de entrega, validación de clave OTP temporal y manifiesto inmutable DIGEMID.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">—</td>
+</tr>
+<tr>
+<td rowspan="9" style="border: 1px solid #777; padding: 3px; vertical-align: top;"><strong>Infrastructure<br />(Persistence &amp; Adapters)</strong></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AppDbContext</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Entity Framework Core 10.0 (.NET 10 LTS), Pomelo MySQL / Oracle MySQL EF Core</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Contexto de base de datos que mapea las entidades del dominio hacia el esquema relacional en MySQL 8.0 (TCP 3306).</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>DbContextOptions</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>EF Repositories Implementations</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">EF Core Repositories (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementan <code>IUserRepository</code>, <code>ISubscriptionRepository</code>, <code>ITransportRepository</code>, <code>ISmartContainerRepository</code>, etc.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AppDbContext</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>TomTomRoutingAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, Polly (Retry/CircuitBreaker)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Consume la API de TomTom para obtener matrices de tiempo considerando el tráfico vehicular en avenidas de Lima.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>FirebaseTwilioNotificationAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">FirebaseAdmin SDK, Twilio REST API</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Despacha notificaciones push a la PWA móvil y mensajes de texto SMS a los teléfonos de la guardia médica.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IOptions&lt;NotificationSettings&gt;</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>AwsS3StorageAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">AWSSDK.S3 (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Sube los manifiestos de viaje en PDF generados con sellado SHA-256 a buckets con retención WORM inmutable.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IAmazonS3</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>CulqiPaymentAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, Polly (Resilience)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IPaymentGateway</code> para procesamiento automatizado de débitos B2B y validación de comprobantes de pago.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>HospitalFhirAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">HttpClient, HL7.Fhir.R4</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IHospitalInteroperabilityService</code> para sincronización de preavisos con el HIS hospitalario y consulta de habilitación RENIPRESS.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IHttpClientFactory</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>JwtTokenGeneratorAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">System.IdentityModel.Tokens.Jwt, C# Class</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>ITokenGeneratorService</code> para generar y firmar criptográficamente tokens JWT con claims institucionales.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IOptions&lt;JwtSettings&gt;</code></td>
+</tr>
+<tr>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>RedisRealTimeCacheAdapter</code></td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">StackExchange.Redis (C#)</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;">Implementa <code>IRealTimeCacheService</code> para gestión de estado volátil en memoria y suscripción a canales Pub/Sub.</td>
+<td style="border: 1px solid #777; padding: 3px; vertical-align: top;"><code>IConnectionMultiplexer</code></td>
+</tr>
+</tbody>
 </table>
 
----
+***
 
 ### **4. Matriz de Inyección de Dependencias y Ciclos de Vida (IoC Container)**
 
@@ -1459,17 +1770,17 @@ Siguiendo las convenciones oficiales de desarrollo para ASP.NET Core de Microsof
 | `IRealTimeCacheService` | `RedisRealTimeCacheAdapter` | `Singleton` | Administra la conexión multiplexada persistente hacia Redis para telemetría en tiempo real y canales SignalR Pub/Sub. |
 | `MapHub<TelemetryHub>` | `TelemetryHub` (SignalR) | `Transient` / *Per-Invocation* | Endpoint WebSockets (`/hubs/telemetry`) para distribución reactiva de eventos y telemetría hacia los clientes SPA conectados. |
 
----
+***
 
 ### **5. Especificación Visual Oficial y Bloque de Diagramación del Backend RESTful API**
 
----
+***
 
-![Figura 4.6.4.2 - C4 Model: Component Diagram (Nivel 3 - Backend RESTful Web API)](../assets/chapter-4/4.6.4-c4-component-backend-api.png)
+![Figura 4.6.4.2 - C4 Model: Component Diagram (Nivel 3 - Backend RESTful Web API)](assets/chapter-4/4.6.4-c4-component-backend-api.png)
 
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
----
+***
 
 ### **6. Desglose Componencial de Contenedores Satélites (SPA y Ingestion Worker)**
 
@@ -1487,13 +1798,13 @@ Para complementar la visión integral de la arquitectura en el Nivel 3 (Componen
   * `OtpHandoverDialog`: Interfaz modal para ingreso del código OTP de 6 dígitos con teclado numérico accesible para cirujanos y farmacéuticos en quirófano.
 * **HTTP Client & Resiliency (Axios ApiClient):** Instancia de Axios configurada con interceptores para inyección automática del encabezado `Authorization: Bearer <token>` y captura uniforme de errores RFC 7807 (ProblemDetails).
 
----
+***
 
-![Figura 4.6.4.3 - C4 Model: Component Diagram (Single Page Application Vue.js)](../assets/chapter-4/4.6.4-c4-component-spa-vue.png)
+![Figura 4.6.4.3 - C4 Model: Component Diagram (Single Page Application Vue.js)](assets/chapter-4/4.6.4-c4-component-spa-vue.png)
 
 *Nota: Elaboración propia en Structurizr conforme a la notación C4 Model (Nivel 3: Componentes) de Simon Brown.*
 
----
+***
 
 #### **6.2. IoT Telemetry Ingestion Worker (.NET BackgroundService)**
 * **MqttTelemetryConsumer:** Servicio residente en segundo plano basado en `MQTTnet` que mantiene una conexión persistente bidireccional sobre TLS (puerto 8883) suscrito al tópico canónico `smartbox/+/telemetry`.
@@ -1502,13 +1813,13 @@ Para complementar la visión integral de la arquitectura en el Nivel 3 (Componen
 * **RedisTelemetryPublisher:** Publica las lecturas normalizadas en el canal Pub/Sub de Redis para su propagación inmediata a la Web API y clientes conectados mediante SignalR Hubs.
 * **MqttCommandDispatcher:** Componente residente que se suscribe al canal Redis Pub/Sub (`smartbox.commands.actuators`) para consumir comandos de bloqueo y desbloqueo emitidos por `CustodyVerificationService`, publicando mensajes firmados vía MQTT sobre TLS (puerto 8883) hacia el actuador del cerrojo electromecánico en el microcontrolador ESP32 (`smartbox/{boxId}/commands`).
 
----
+***
 
-![Figura 4.6.4.4 - C4 Model: Component Diagram (IoT Ingestion Background Worker)](../assets/chapter-4/4.6.4-c4-component-iot-worker.png)
+![Figura 4.6.4.4 - C4 Model: Component Diagram (IoT Ingestion Background Worker)](assets/chapter-4/4.6.4-c4-component-iot-worker.png)
 
 *Nota: Elaboración propia en Structurizr conforme a la notación C4 Model (Nivel 3: Componentes) de Simon Brown.*
 
----
+***
 
 ### **7. Conclusiones y Transición hacia el Diseño Orientado a Objetos (Capítulo 4.7)**
 
@@ -1517,4 +1828,4 @@ El **Software Architecture Components Diagram** demuestra la aplicación riguros
 2. **Alta Cohesión:** Cada Bounded Context cuenta con su tríada de Controlador, Servicio de Aplicación y Repositorio, garantizando mantenibilidad y escalabilidad.
 3. **Paso Siguiente:** Habiendo establecido la estructura modular de componentes, el siguiente capítulo (**4.7 Software Object-Oriented Design / 4.7.1 Class Diagrams**) detallará el modelado estático orientado a objetos de estas clases, especificando atributos tipados, modificadores de acceso (`+`, `-`, `#`), métodos con parámetros y tipos de retorno, y relaciones UML con multiplicidades exactas.
 
----
+***
