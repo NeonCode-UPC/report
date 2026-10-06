@@ -67,7 +67,7 @@ A continuación se detalla la especificación formal de las 11 tablas del sistem
 
 ***
 
-##### **4.8.1.1. Bounded Context: IAM & Subscriptions (Soporte B2B y Acceso)**
+##### **4.8.1.1. Bounded Context 1: Identity, Access & Subscriptions (IAM) (Supporting Subdomain)**
 
 Garantiza la autenticación, la asignación de roles médicos y la gestión de planes SaaS para clínicas y flotas de ambulancias.
 
@@ -424,7 +424,7 @@ Gestiona las credenciales y perfiles profesionales autorizados en ambos segmento
 
 ***
 
-##### **4.8.1.2. Bounded Context: Smart Container & Telemetry Monitoring (Core IoT)**
+##### **4.8.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring (Core Domain)**
 
 Modela el contenedor físico inteligente, su estado electromecánico y el flujo continuo de lecturas sensoriales emitidas desde la ambulancia.
 
@@ -678,7 +678,7 @@ Serie temporal de lecturas sensoriales emitidas en ráfagas cada 5 segundos dura
 
 ***
 
-##### **4.8.1.3. Bounded Context: Medical Transport Planning & Dispatching (Core Operativo)**
+##### **4.8.1.3. Bounded Context 3: Medical Transport Planning & Dispatching (Core Domain)**
 
 Articula las órdenes de traslado clínico y su asignación a los recursos móviles (ambulancia, chofer y paramédico).
 
@@ -946,7 +946,7 @@ Ejecución del traslado por la ambulancia, tripulación y contenedor asignados (
 
 ***
 
-##### **4.8.1.4. Bounded Context: Critical Alerting & Incident Response (Soporte Reactivo)**
+##### **4.8.1.4. Bounded Context 4: Critical Alerting & Incident Response (Core Domain)**
 
 Registra y escala contingencias en ruta ante desvíos térmicos o fallas eléctricas de la ambulancia.
 
@@ -1144,7 +1144,7 @@ Medidas correctivas aplicadas y validadas para mitigar el incidente y proteger e
 
 ***
 
-##### **4.8.1.5. Bounded Context: Chain of Custody & Traceability (Core Regulatorio)**
+##### **4.8.1.5. Bounded Context 5: Chain of Custody & Traceability (Core Domain)**
 
 Garantiza la inmutabilidad de la custodia médica mediante autenticación OTP y actas digitales para MINSA/DIGEMID.
 

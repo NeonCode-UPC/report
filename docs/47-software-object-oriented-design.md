@@ -45,9 +45,9 @@ A continuación se detalla la especificación estática de clases para los cinco
 
 ***
 
-#### **4.7.1.0. Bounded Context: Identity, Access & Subscriptions (IAM)**
+#### **4.7.1.1. Bounded Context 1: Identity, Access & Subscriptions (IAM)**
 
-A nivel del diseño estático de clases de software, las entidades de identidad, roles institucionales y suscripción SaaS se consolidan en este módulo para garantizar consistencia transaccional inmediata en la validación de licencias y membresías activas. Este contexto centraliza la autenticación mediante tokens JWT, control de acceso basado en roles (RBAC) para los dos segmentos objetivo, registro formal de sedes hospitalarias con código RENIPRESS y gestión del modelo de suscripción SaaS para flotas de contenedores médicos.
+Este contexto centraliza la autenticación mediante tokens JWT, control de acceso basado en roles (RBAC) para los dos segmentos objetivo, registro formal de sedes hospitalarias con código RENIPRESS y gestión del modelo de suscripción SaaS para flotas de contenedores médicos, garantizando consistencia transaccional inmediata en la validación de licencias, membresías activas y cuotas de aprovisionamiento de cajas inteligentes.
 
 <table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1; margin: 12px 0;">
 <colgroup>
@@ -212,7 +212,7 @@ A nivel del diseño estático de clases de software, las entidades de identidad,
 
 ***
 
-#### **4.7.1.1. Bounded Context A: Smart Container & Telemetry Monitoring (IoT)**
+#### **4.7.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring (IoT)**
 
 Representa el núcleo físico y sensorial del proyecto. Modela el control activo de frío (+2.0 °C a +8.0 °C) mediante celdas Peltier, el pesaje digital con celda HX711 (&plusmn;5 g), el solenoide electromecánico de la tapa y la supervisión de la toma de 12V vehicular.
 
@@ -422,7 +422,7 @@ Representa el núcleo físico y sensorial del proyecto. Modela el control activo
 
 ***
 
-#### **4.7.1.2. Bounded Context B: Medical Transport Planning & Dispatching (Segmento 1)**
+#### **4.7.1.3. Bounded Context 3: Medical Transport Planning & Dispatching (Segmento 1)**
 
 Modela la respuesta operativa del **Segmento 1 (Ambulancias y Despacho)** ante las emergencias: creación de órdenes, asignación de unidades móviles, control de tiempos de isquemia fría y cálculo dinámico de ETA ante el tráfico severo de Lima.
 
@@ -580,7 +580,7 @@ Modela la respuesta operativa del **Segmento 1 (Ambulancias y Despacho)** ante l
 
 ***
 
-#### **4.7.1.3. Bounded Context C: Critical Alerting & Incident Response (Segmentos 1 y 2)**
+#### **4.7.1.4. Bounded Context 4: Critical Alerting & Incident Response (Segmentos 1 y 2)**
 
 Modela la detección de contingencias, despacho de alarmas acústicas y visuales a la cabina de ambulancia (Segmento 1) y notificaciones push/SMS a los directores médicos y receptores (Segmento 2).
 
@@ -700,7 +700,7 @@ Modela la detección de contingencias, despacho de alarmas acústicas y visuales
 
 ***
 
-#### **4.7.1.4. Bounded Context D: Chain of Custody & Traceability (Segmento 2 - Clínico y Legal)**
+#### **4.7.1.5. Bounded Context 5: Chain of Custody & Traceability (Segmento 2 - Clínico y Legal)**
 
 Modela la seguridad de custodia en el hospital receptor (**Segmento 2**): validación del **código OTP de un solo uso**, desbloqueo seguro de la tapa y generación inmutable del acta digital con hash criptográfico SHA-256 para auditorías de DIGEMID y DIGDOT.
 
@@ -822,7 +822,7 @@ Modela la seguridad de custodia en el hospital receptor (**Segmento 2**): valida
 
 ***
 
-#### **4.7.1.5. Domain Events y Clases Transversales (Shared Kernel)**
+#### **4.7.1.6. Domain Events y Clases Transversales (Shared Kernel)**
 
 Permiten propagar asíncronamente cambios de estado críticos entre los Bounded Contexts sin generar acoplamiento directo entre Agregados Raíz:
 
