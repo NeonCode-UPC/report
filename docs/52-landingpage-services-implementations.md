@@ -122,151 +122,31 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
 
 ### 5.2.1.3. Sprint Backlog 1
 
-El **Sprint Backlog 1** presenta el desglose detallado de tareas técnicas asociadas a las historias de usuario comprometidas para el Sprint 1. El objetivo principal de la iteración fue la construcción, validación responsive y despliegue del Landing Page institucional, junto con la definición de contratos y modelos para los servicios de autenticación y registro.
+El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para el Sprint 1 y las tareas técnicas resultantes de su descomposición. El objetivo principal del Sprint fue desarrollar y desplegar la primera versión responsive del Landing Page institucional de Medical SMARTBOX, complementando este trabajo con la especificación de los componentes arquitectónicos correspondientes a identidad, registro institucional y servicios.
 
-A continuación se presenta la tabla oficial de control de estado del Sprint 1:
+**Board del Sprint 1:**
 
-<div style="margin: 12px 0 16px 0; width: 100%;">
-<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.5pt; line-height: 1.25; border: 1px solid #cbd5e1;">
-<colgroup>
-  <col style="width: 7%;" />
-  <col style="width: 18%;" />
-  <col style="width: 8%;" />
-  <col style="width: 16%;" />
-  <col style="width: 27%;" />
-  <col style="width: 6%;" />
-  <col style="width: 11%;" />
-  <col style="width: 7%;" />
-</colgroup>
-<thead>
-<tr style="background-color: #0f172a; color: #ffffff;">
-  <th colspan="2" style="border: 1px solid #334155; padding: 4px; text-align: left; font-weight: bold;">User Story</th>
-  <th colspan="6" style="border: 1px solid #334155; padding: 4px; text-align: left; font-weight: bold;">Work-Item / Task (Sprint 1)</th>
-</tr>
-<tr style="background-color: #f1f5f9; color: #0f172a;">
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Story Id</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Story Title</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Id</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Title</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Description</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Horas</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Assigned To</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US04</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Exploración de Propuesta de Valor Logística</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-04-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación HTML5/CSS3 de secciones Hero y Propuesta</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Estructuración semántica de Hero, badges térmicos y características de contenedores IoT.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maria Munayco</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US04</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Exploración de Propuesta de Valor Logística</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-04-02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Integración de diseño responsive mobile-first</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Adaptación de layout CSS Grid y Flexbox para viewports móviles (375px a 414px) y tablets.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">4 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Santiago Gargate</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US05</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Solicitud de Demostración Corporativa</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-05-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación de formulario B2B</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Estructura visual de captura de prospectos con inputs institucionales y estilos de marca.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Aaron Espinoza</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US05</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Solicitud de Demostración Corporativa</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-05-02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Validación en cliente y retroalimentación</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Lógica JavaScript para validación de RUC, correo corporativo y feedback accesible.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Jhon Jaramillo</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US06</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Consulta de Preguntas Frecuentes</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-06-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Componente interactivo acordeón FAQ</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación y comportamiento toggle ARIA para preguntas sobre normativas DIGEMID y sensores.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">4 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maria Munayco</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Registro de Institución de Salud</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-01-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Modelado entidad institución y base de datos</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Definición de esquema relacional `hospital_institutions` en MySQL 8.0 y reglas de RUC único.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Jhon Jaramillo</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Registro de Institución de Salud</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-01-02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de endpoints de registro</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de contratos OpenAPI para recepción y validación de datos de centros hospitalarios.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">7 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Renzo Santos</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Autenticación de Personal de Emergencia</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-02-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de flujo de autenticación 2FA</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de protocolo de login para operadores y verificación por código OTP de 6 dígitos.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Santiago Gargate</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US03</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Endpoint de Autenticación de Usuarios (API)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-03-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de contratos OpenAPI de sign-in</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de endpoint POST `/api/v1/authentication/sign-in` y esquemas JWT de sesión.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Renzo Santos</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US03</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Endpoint de Autenticación de Usuarios (API)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-03-02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Arquitectura de dominio para identidad (.NET 10)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Modelado de clases de dominio, Value Objects y políticas de cifrado de credenciales en C# 14.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Aaron Espinoza</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-</tbody>
-</table>
-</div>
+![Sprint 1 Board](<img width="1192" height="596" alt="Captura de pantalla 2026-10-06 231628" src="https://github.com/user-attachments/assets/42b12d34-98ea-4d2c-811f-8b958b2884df" />)
 
-**Resumen de Cierre del Sprint Backlog 1:**
-* **Historias de Usuario Completadas:** 6 (100% de historias planificadas).
-* **Story Points Entregados:** 16 SP / 16 SP comprometidos.
-* **Horas de Ingeniería Ejecutadas:** 53 horas de desarrollo colaborativo.
-* **Estado Final:** Sprint 1 cerrado satisfactoriamente con despliegue activo en la nube.
 
-***
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1))
 
+| Sprint # | Sprint 1 |
+|---|---|
+| **User Story** | **Work-Item / Task** |
+
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In Process / To Review / Done)** |
+|---|---|---|---|---|---:|---|---|
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco | Done |
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación del layout para diferentes tamaños de pantalla. | 4 h | Santiago Gargate | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Validación de RUC, correo corporativo y mensajes de retroalimentación. | 6 h | Jhon Jaramillo | Done |
+| US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Implementación visual e interacción del acordeón de preguntas frecuentes. | 4 h | Maria Munayco | Done |
+| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado de entidad institución | Definición del modelo de datos para instituciones de salud. | 5 h | Jhon Jaramillo | Done |
+| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de registro institucional | Definición de los contratos y reglas de registro institucional. | 7 h | Renzo Santos | Done |
+| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación del flujo de autenticación y verificación mediante OTP. | 5 h | Santiago Gargate | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-01 | Diseño de contratos OpenAPI | Especificación del contrato de autenticación y estructura de respuesta. | 6 h | Renzo Santos | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-02 | Arquitectura de dominio para identidad | Definición de clases de dominio, Value Objects y reglas de identidad. | 5 h | Aaron Espinoza | Done |
 ### 5.2.1.4. Development Evidence for Sprint Review
 
 A continuación se documenta el registro histórico de confirmaciones de cambios (commits) realizadas en el repositorio oficial del Landing Page (`NeonCode-UPC/landing-page`), evidenciando el cumplimiento estricto del estándar **Conventional Commits** y el trabajo colaborativo en ramas de GitFlow:
@@ -443,3 +323,325 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 
 ![Team Collaboration Insights during Sprint](assets/chapter-5/report-insights-av1.png)
 *Nota: Analítica de colaboración, frecuencia de confirmaciones y contribuciones del equipo NeonCode durante el Sprint 1.*
+
+## 5.2.2. Sprint 2
+
+En esta sección se detalla nuestra organizacion para el segundo avance de este segundo entregable (TB1), asignación de responsabilidades y desglose de tareas técnicas para la ejecución del primer ciclo de desarrollo (Sprint 1) del ecosistema **Medical SMARTBOX (NeonCode)**, así como las evidencias correspondientes a la implementación, ejecución de vistas, especificación de servicios, despliegue activo en la nube y colaboración del equipo mediante control de versiones.
+
+***
+
+### 5.2.2.1. Sprint Planning 2
+
+El Sprint Planning 2 tuvo como propósito establecer el objetivo, alcance y responsabilidades del segundo ciclo de desarrollo. El equipo priorizó las historias de usuario relacionadas con el registro de unidades de ambulancia, la vinculación de contenedores inteligentes y la gestión de información de telemetría.
+
+| **Sprint #** | **Sprint 2** |
+|---|---|
+| **Sprint Planning Background** | **Sprint Planning 2** |
+| **Date** | 2026-10-06 |
+| **Time** | 20:30 PM |
+| **Location** | Reunión virtual mediante Google Meet |
+| **Prepared By** | Santiago Gargate |
+| **Attendees (to planning meeting)** | Santiago Gargate / Maria Munayco / Aaron Espinoza / Jhon Jaramillo / Renzo Santos |
+| **Sprint Goal & User Stories** | **Sprint 2 Goal:** Implementar e integrar las funcionalidades necesarias para registrar unidades de ambulancia, vincular contenedores inteligentes y gestionar la información de telemetría requerida para su monitoreo. |
+| **Sprint 2 Velocity** | 29 Story Points |
+| **Sum of Story Points** | 29 Story Points |
+
+El Sprint 2 comprende las siguientes historias de usuario:
+
+- **US07:** Alta de Unidades de Ambulancia — **3 SP**
+- **US08:** Vinculación de Contenedor Inteligente — **5 SP**
+- **US09:** Ingesta de Telemetría IoT (API) — **8 SP**
+- **US10:** Monitoreo Térmico y de Apertura — **8 SP**
+- **US12:** Consulta de Telemetría e Indicadores (API) — **5 SP**
+
+**Total: 29 Story Points.**
+
+### 5.2.2.2. Aspect Leaders and Collaborators
+
+Para el Sprint 2 se estableció la matriz de liderazgo y colaboración considerando los cinco aspectos principales definidos para la solución. El integrante responsable de cada bounded context asume el rol de **Lead (L)**, mientras que los demás integrantes participan como **Collaborators (C)** en las actividades de desarrollo e integración.
+
+**L = Lead / C = Collaborator**
+
+| **Integrante** | **Aspecto 1:** Smart Container & Telemetry Monitoring **(L/C)** | **Aspecto 2:** Critical Alerting & Incident Response **(L/C)** | **Aspecto 3:** Identity, Access & Subscriptions **(L/C)** | **Aspecto 4:** Chain of Custody & Traceability **(L/C)** | **Aspecto 5:** Medical Transport Planning & Dispatching **(L/C)** |
+|---|---|---|---|---|---|
+| **Jhon Jaramillo** | **L** | C | C | C | C |
+| **Aaron Espinoza** | C | **L** | C | C | C |
+| **Santiago Gargate** | C | C | **L** | C | C |
+| **Maria Munayco** | C | C | C | **L** | C |
+| **Renzo Santos** | C | C | C | C | **L** |
+
+La distribución permite mantener un responsable principal por aspecto y, al mismo tiempo, conservar el trabajo colaborativo entre los integrantes del equipo.
+
+### 5.2.2.3. Sprint Backlog 2
+
+El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sprint en tareas técnicas que permiten organizar y controlar su implementación. El Sprint contempla **29 Story Points** distribuidos entre US07, US08, US09, US10 y US12.
+
+**Board del Sprint 2:**
+![Sprint 2 Board]<img width="1213" height="500" alt="Captura de pantalla 2026-10-06 222220" src="https://github.com/user-attachments/assets/5287c618-49ef-4306-951e-088e93da075a" />
+
+
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
+
+<table>
+  <tr>
+    <td><strong>Sprint #</strong></td>
+    <td colspan="7"><strong>Sprint 2</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>User Story</strong></td>
+    <td colspan="6"><strong>Work-Item / Task</strong></td>
+  </tr>
+  <tr>
+    <th>Story Id</th>
+    <th>Story Title</th>
+    <th>Task Id</th>
+    <th>Task Title</th>
+    <th>Task Description</th>
+    <th>Estimation<br>(Hours)</th>
+    <th>Assigned To</th>
+    <th>Status<br>(To-do / In Process / To Review / Done)</th>
+  </tr>
+
+  <tr>
+    <td>US09</td>
+    <td>Ingesta de Telemetría IoT</td>
+    <td>TSK-09-01</td>
+    <td>Implementación del endpoint de ingesta</td>
+    <td>Implementación del endpoint POST para recibir datos de temperatura, peso, apertura y batería.</td>
+    <td>8 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US09</td>
+    <td>Ingesta de Telemetría IoT</td>
+    <td>TSK-09-02</td>
+    <td>Validación del payload y autenticación</td>
+    <td>Validación de los datos recibidos y del token de autenticación del dispositivo IoT.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US09</td>
+    <td>Ingesta de Telemetría IoT</td>
+    <td>TSK-09-03</td>
+    <td>Persistencia de lecturas</td>
+    <td>Registro de las lecturas válidas de telemetría.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US07</td>
+    <td>Alta de Unidades de Ambulancia</td>
+    <td>TSK-07-01</td>
+    <td>Creación del modelo de datos de Ambulancias</td>
+    <td>Creación del modelo de datos de ambulancias.</td>
+    <td>4 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US07</td>
+    <td>Alta de Unidades de Ambulancia</td>
+    <td>TSK-07-02</td>
+    <td>Desarrollo de endpoints CRUD</td>
+    <td>Desarrollo de funcionalidades para el registro y consulta de vehículos.</td>
+    <td>6 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US07</td>
+    <td>Alta de Unidades de Ambulancia</td>
+    <td>TSK-07-03</td>
+    <td>Interfaz web para registro</td>
+    <td>Desarrollo del formulario y listado de unidades registradas.</td>
+    <td>6 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US08</td>
+    <td>Vinculación de Contenedor Inteligente</td>
+    <td>TSK-08-01</td>
+    <td>Desarrollo del módulo de asignación</td>
+    <td>Implementación de la relación entre ambulancia y contenedor IoT.</td>
+    <td>8 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US08</td>
+    <td>Vinculación de Contenedor Inteligente</td>
+    <td>TSK-08-02</td>
+    <td>Validación de estados del dispositivo</td>
+    <td>Validación para impedir la reasignación de un contenedor ocupado.</td>
+    <td>5 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US08</td>
+    <td>Vinculación de Contenedor Inteligente</td>
+    <td>TSK-08-03</td>
+    <td>Interfaz web de vinculación</td>
+    <td>Interfaz para vincular el contenedor mediante UUID/MAC.</td>
+    <td>6 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US12</td>
+    <td>Consulta de Telemetría e Indicadores</td>
+    <td>TSK-12-01</td>
+    <td>Endpoint de consulta de métricas</td>
+    <td>Consulta de las últimas mediciones de un contenedor.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US12</td>
+    <td>Consulta de Telemetría e Indicadores</td>
+    <td>TSK-12-02</td>
+    <td>Métricas consolidadas</td>
+    <td>Construcción de la respuesta con temperatura, batería, escotilla, peso y fecha/hora.</td>
+    <td>4 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US10</td>
+    <td>Monitoreo Térmico y de Apertura</td>
+    <td>TSK-10-01</td>
+    <td>Visualización de temperatura y escotilla</td>
+    <td>Visualización de temperatura y estado de apertura del contenedor.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US10</td>
+    <td>Monitoreo Térmico y de Apertura</td>
+    <td>TSK-10-02</td>
+    <td>Actualización de telemetría</td>
+    <td>Actualización de las lecturas del panel.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US10</td>
+    <td>Monitoreo Térmico y de Apertura</td>
+    <td>TSK-10-03</td>
+    <td>Gestión de pérdida de señal</td>
+    <td>Representación del estado de desconexión cuando no se reciben lecturas.</td>
+    <td>4 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+</table>
+
+### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2 se realizaron avances en la implementación e integración de los principales módulos de la solución, incluyendo Identity & Access Management, Alerting, Medical Transport Planning, Chain of Custody y Smart Container & Telemetry. Estos avances se evidencian mediante los commits realizados en el repositorio del frontend durante el 06/10/2026.
+
+| **Repository** | **Branch** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|---|---|---|---|---|
+| frontend | develop | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
+| frontend | develop | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
+| frontend | develop | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
+| frontend | develop | `feat(transport): integrate medical transport planning` | Se integra el módulo de planificación de transporte médico en la aplicación. | 06/10/2026 |
+| frontend | develop | `feat(custody): restore chain of custody feature` | Se restaura la funcionalidad correspondiente a la cadena de custodia y trazabilidad. | 06/10/2026 |
+| frontend | develop | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
+| frontend | develop | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
+| frontend | develop | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
+
+### 5.2.2.5. Execution Evidence for Sprint Review
+
+En el Sprint 2 se logró avanzar en la implementación e integración de las principales funcionalidades de la Web Application correspondientes a los Bounded Contexts definidos para la solución. Durante este Sprint se desarrollaron y consolidaron funcionalidades relacionadas con el monitoreo de contenedores inteligentes y telemetría, gestión de alertas e incidentes, identidad y suscripciones, trazabilidad de cadena de custodia y planificación de transporte médico.
+
+**Video de Demostración de Navegación (Web Application):** [Ver video aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
+
+**Screenshots de Identity, Access & Subscriptions (IAM)**
+
+> [Vista de Usuarios y Roles|500]<img width="1517" height="722" alt="Captura de pantalla 2026-10-06 224724" src="https://github.com/user-attachments/assets/6c2d447e-c8c7-4e98-b8c4-0e68e3b17a84" />
+
+
+> *Vista de Usuarios y Roles*
+
+> [Vista de Suscripción|500]<img width="1488" height="717" alt="Captura de pantalla 2026-10-06 224741" src="https://github.com/user-attachments/assets/12ad1acb-386f-4d1b-af77-285299a52c30" />
+
+
+> *Vista de Suscripción*
+
+### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2 no se desarrollaron ni implementaron servicios web asociados al backend. El alcance de esta entrega estuvo enfocado principalmente en la implementación de la primera versión de las Frontend Web Applications, desarrolladas con Vue.js, PrimeVue y Pinia.
+
+Por este motivo, no se presentan endpoints OpenAPI ni evidencias de interacción con servicios backend en esta sección. La implementación de los Web Services se encuentra contemplada para una etapa posterior del proyecto.
+
+### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2 se realizaron las actividades de despliegue correspondientes a los productos incluidos en el alcance de la entrega TB1. En esta etapa se consideró la nueva versión del Landing Page y la primera versión de las Frontend Web Applications.
+
+#### Landing Page
+
+Se realizó el despliegue de la nueva versión del Landing Page, incorporando las mejoras y correcciones desarrolladas durante los Sprints anteriores.
+
+**URL del Landing Page:**  
+[PEGAR AQUÍ EL LINK](https://neoncode-upc.github.io/landing-page/)
+
+**Evidencia del despliegue:**
+
+> [Captura del Landing Page desplegado]<img width="1410" height="746" alt="Captura de pantalla 2026-10-06 230942" src="https://github.com/user-attachments/assets/f36b0a8d-9ae8-438c-b195-b3550de1193b" />
+
+
+*Landing Page desplegado y disponible para su visualización.*
+
+#### Frontend Web Application
+
+Durante el Sprint 2 se implementó y desplegó la primera versión de la Frontend Web Application de Medical SmartBox. Esta versión integra las funcionalidades desarrolladas por los integrantes del equipo para los diferentes Bounded Contexts.
+
+**URL de la Web Application:**  
+[PEGAR AQUÍ EL LINK]([https://neoncode-upc.github.io/frontend/)](https://neoncode-upc.github.io/frontend/home)
+
+**Evidencia del despliegue:**
+
+> [Captura de la Web Application desplegada]<img width="1533" height="742" alt="Captura de pantalla 2026-10-06 231724" src="https://github.com/user-attachments/assets/0c88bb6c-8c42-44e2-8bb4-feb2ea0cdf43" />
+
+
+*Primera versión de la Frontend Web Application desplegada.*
+
+#### Web Services
+
+Los Web Services no forman parte del despliegue correspondiente a esta entrega, debido a que su primera versión se encuentra contemplada para una etapa posterior del proyecto.
+
+### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el equipo NeonCode trabajó de manera colaborativa en la implementación e integración de las funcionalidades correspondientes a los cinco Bounded Contexts de Medical SmartBox: Smart Container & Telemetry Monitoring, Critical Alerting & Incident Response, Identity, Access & Subscriptions, Chain of Custody & Traceability y Medical Transport Planning & Dispatching.
+
+Cada integrante asumió responsabilidades sobre los diferentes Bounded Contexts, permitiendo desarrollar las funcionalidades en paralelo y avanzar de manera organizada. Se utilizó GitHub como herramienta principal de control de versiones, gestionando el trabajo mediante ramas de funcionalidad y commits individuales para registrar los avances realizados durante el Sprint.
+
+La integración del trabajo se realizó progresivamente, consolidando las funcionalidades desarrolladas por los integrantes en la Web Application y permitiendo disponer de una versión integrada de los diferentes Bounded Contexts al finalizar el Sprint.
+
+**Evidencia de colaboración del equipo**
+
+[Team Collaboration Insights – Sprint 2|500]<img width="833" height="657" alt="Captura de pantalla 2026-10-06 223905" src="https://github.com/user-attachments/assets/38f09b67-f13a-4209-b42c-f9ddb2d2822c" />
+
+*Nota: Evidencia de colaboración del equipo durante el Sprint 2, mostrando la actividad registrada en GitHub mediante commits y contribuciones de los integrantes.*
