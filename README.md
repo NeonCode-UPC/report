@@ -1085,8 +1085,8 @@ La validación del recorrido de extremo a extremo confirmó la coherencia del ci
 #### 4. Delimitación de Contextos Delimitados (Bounded Contexts)
 La sesión de Big Picture permitió delimitar cinco (5) Bounded Contexts de negocio, los cuales constituyen las fronteras transaccionales definitivas del sistema y se preservan de manera consistente a lo largo de toda la arquitectura y diseño de software:
 1. **Identity, Access & Subscriptions (IAM):** Gestión de instituciones hospitalarias acreditadas (RENIPRESS), planes de suscripción SaaS B2B, autenticación JWT basada en roles y trazabilidad de licencias médicas.
-2. **Smart Container & Telemetry Monitoring:** Ingestión de telemetría continua (temperatura, peso neto HX711, batería LiFePO4), control electromecánico de tapa y alta física de dispositivos IoT.
-3. **Medical Transport Planning & Dispatching:** Gestión de solicitudes de traslado urgente, asignación de unidades asistenciales/tripulación, cálculo dinámico de rutas anti-tráfico TomTom y geocercas de pre-arribo.
+2. **Medical Transport Planning & Dispatching:** Gestión de solicitudes de traslado urgente, asignación de unidades asistenciales/tripulación, cálculo dinámico de rutas anti-tráfico TomTom y geocercas de pre-arribo.
+3. **Smart Container & Telemetry Monitoring:** Ingestión de telemetría continua (temperatura, peso neto HX711, batería LiFePO4), control electromecánico de tapa y alta física de dispositivos IoT.
 4. **Critical Alerting & Incident Response:** Detección en tiempo real de excursiones térmicas, disparador de alarmas acústicas en cabina y notificación omnicanal de contingencias.
 5. **Chain of Custody & Traceability:** Verificación de token OTP en geocerca hospitalaria, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
 
@@ -1338,63 +1338,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 
 ***
 
-### **2.5.2. Bounded Context: Smart Container & Telemetry Monitoring**
-
-<table border="1" cellpadding="6" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Ubiquitous Term</th>
-      <th>Domain Definition</th>
-      <th>Role in the System &amp; DDD Mapping</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Automated Maintenance and Sensor Calibration (Mantenimiento y Calibración Automatizada)</strong></td>
-      <td>Protocolo de diagnóstico predictivo y continuo ejecutado de forma autónoma por el contenedor inteligente y la plataforma de monitoreo asistencial para supervisar el desgaste de la celda Peltier, la deriva de calibración de la celda de carga HX711 y los ciclos de vida útil de la batería interna LiFePO4, programando órdenes de servicio preventivo antes de que ocurra una falla operativa en ruta.</td>
-      <td><strong>Domain Policy:</strong> <code>PreventiveMaintenancePolicy</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
-    </tr>
-    <tr>
-      <td><strong>Cold Chain (Cadena de Frío)</strong></td>
-      <td>Proceso logístico ininterrumpido de control y supervisión ambiental que asegura que los insumos biológicos y farmacéuticos se mantengan dentro de los intervalos térmicos normativos reglamentados por el MINSA y la DIGEMID (+2 °C a +4 °C para órganos; +2 °C a +8 °C para hemoderivados y vacunas) durante todas las etapas de custodia y desplazamiento en ambulancia.</td>
-      <td><strong>Domain Policy:</strong> <code>ColdChainPreservationPolicy</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
-    </tr>
-    <tr>
-      <td><strong>Container Autonomy and Telemetry (Telemetría y Autonomía del Contenedor)</strong></td>
-      <td>Flujo periódico de mediciones físicas directas (temperatura interna de cámara, peso en bandeja, estado del sensor magnético de tapa, voltaje y porcentaje de carga de la batería interna LiFePO4) transmitidas de forma continua para garantizar que el soporte térmico se mantenga activo aun ante desconexiones de la red de la ambulancia.</td>
-      <td><strong>Entity:</strong> <code>TelemetryLog</code> / <strong>Value Object:</strong> <code>TelemetrySnapshot</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
-    </tr>
-    <tr>
-      <td><strong>Container Lid Status &amp; Tamper-Evident Lock (Estado de Tapa y Bloqueo Electromecánico de Custodia)</strong></td>
-      <td>Supervisión continua del sellado hermético superior (contacto magnético) y cerrojo electromecánico de alta retención comandado por solenoide, que previene la apertura no autorizada de la tapa durante el tránsito de la ambulancia y habilita su liberación física únicamente cuando el vehículo ingresa a la geocerca hospitalaria de destino y el personal facultado valida su identidad mediante un código OTP de un solo uso.</td>
-      <td><strong>Entity:</strong> <code>ElectromechanicalLock</code> subordinada a <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
-    </tr>
-    <tr>
-      <td><strong>Smart Medical Container (Contenedor Médico Inteligente)</strong></td>
-      <td>Unidad física móvil e isotérmica de grado clínico instalada en el transporte asistido, disponible en diversos factores de forma y capacidades volumétricas modulares según los requisitos de carga, dotada de aislamiento térmico de alta densidad, alimentación energética dual (red fija y toma vehicular de 12V), instrumentación de medición bioambiental continua y mecanismo de cierre electromecánico de seguridad.</td>
-      <td><strong>Aggregate Root:</strong> <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
-    </tr>
-    <tr>
-      <td><strong>Tare Weight &amp; Net Weight (Peso Tara y Peso Neto)</strong></td>
-      <td>Procedimiento metrológico de calibración en origen mediante el cual se descuenta la masa basal del contenedor vacío y sus componentes de fijación (tara), permitiendo cuantificar con precisión (&plusmn;5 g) la masa neta de la carga biológica para detectar variaciones por fugas, sustracción o reemplazo clandestino durante el traslado.</td>
-      <td><strong>Value Object:</strong> <code>ContainerWeightMetrics</code> en <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
-    </tr>
-    <tr>
-      <td><strong>Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)</strong></td>
-      <td>Parámetros operativos capturados desde la unidad móvil de transporte asistencial (estado de suministro eléctrico continuo de 12V en cabina, velocidad de desplazamiento y coordenadas geográficas en tiempo real) que permiten supervisar la estabilidad energética del contenedor y predecir los tiempos de traslado en la red vial de Lima Metropolitana.</td>
-      <td><strong>Value Object:</strong> <code>AuxiliaryPowerTelemetry</code> / <strong>Domain Event:</strong> <code>ExternalPowerLost</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
-    </tr>
-    <tr>
-      <td><strong>Weight-Based Medical Stock (Stock Médico Ponderal)</strong></td>
-      <td>Estimación cuantitativa en tiempo real de la cantidad de medicamentos, ampollas o insumos almacenados dentro del compartimento, calculada a partir de las variaciones de masa registradas continuamente por la celda de carga de precisión, permitiendo prevenir desabastecimientos en ruta o sustracciones clandestinas.</td>
-      <td><strong>Value Object:</strong> <code>PayloadWeight</code> (Invariante de peso en <code>SmartContainer</code>)<br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
-    </tr>
-  </tbody>
-</table>
-
-***
-
-### **2.5.3. Bounded Context: Medical Transport Planning & Dispatching**
+### **2.5.2. Bounded Context: Medical Transport Planning & Dispatching**
 
 <table border="1" cellpadding="6" cellspacing="0">
   <thead>
@@ -1444,6 +1388,62 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
       <td><strong>Transport Mission / Emergency Transport Order (Misión de Transporte Asistido / Orden de Traslado de Emergencia)</strong></td>
       <td>Operación asistencial protocolizada de traslado médico entre un centro de salud o almacén farmacéutico de origen y una institución de destino, gobernada por una ventana temporal crítica, una tripulación técnica asignada y directivas estrictas de conservación bioambiental.</td>
       <td><strong>Aggregate Root:</strong> <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+  </tbody>
+</table>
+
+***
+
+### **2.5.3. Bounded Context: Smart Container & Telemetry Monitoring**
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Ubiquitous Term</th>
+      <th>Domain Definition</th>
+      <th>Role in the System &amp; DDD Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Automated Maintenance and Sensor Calibration (Mantenimiento y Calibración Automatizada)</strong></td>
+      <td>Protocolo de diagnóstico predictivo y continuo ejecutado de forma autónoma por el contenedor inteligente y la plataforma de monitoreo asistencial para supervisar el desgaste de la celda Peltier, la deriva de calibración de la celda de carga HX711 y los ciclos de vida útil de la batería interna LiFePO4, programando órdenes de servicio preventivo antes de que ocurra una falla operativa en ruta.</td>
+      <td><strong>Domain Policy:</strong> <code>PreventiveMaintenancePolicy</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Cold Chain (Cadena de Frío)</strong></td>
+      <td>Proceso logístico ininterrumpido de control y supervisión ambiental que asegura que los insumos biológicos y farmacéuticos se mantengan dentro de los intervalos térmicos normativos reglamentados por el MINSA y la DIGEMID (+2 °C a +4 °C para órganos; +2 °C a +8 °C para hemoderivados y vacunas) durante todas las etapas de custodia y desplazamiento en ambulancia.</td>
+      <td><strong>Domain Policy:</strong> <code>ColdChainPreservationPolicy</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Container Autonomy and Telemetry (Telemetría y Autonomía del Contenedor)</strong></td>
+      <td>Flujo periódico de mediciones físicas directas (temperatura interna de cámara, peso en bandeja, estado del sensor magnético de tapa, voltaje y porcentaje de carga de la batería interna LiFePO4) transmitidas de forma continua para garantizar que el soporte térmico se mantenga activo aun ante desconexiones de la red de la ambulancia.</td>
+      <td><strong>Entity:</strong> <code>TelemetryLog</code> / <strong>Value Object:</strong> <code>TelemetrySnapshot</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Container Lid Status &amp; Tamper-Evident Lock (Estado de Tapa y Bloqueo Electromecánico de Custodia)</strong></td>
+      <td>Supervisión continua del sellado hermético superior (contacto magnético) y cerrojo electromecánico de alta retención comandado por solenoide, que previene la apertura no autorizada de la tapa durante el tránsito de la ambulancia y habilita su liberación física únicamente cuando el vehículo ingresa a la geocerca hospitalaria de destino y el personal facultado valida su identidad mediante un código OTP de un solo uso.</td>
+      <td><strong>Entity:</strong> <code>ElectromechanicalLock</code> subordinada a <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Smart Medical Container (Contenedor Médico Inteligente)</strong></td>
+      <td>Unidad física móvil e isotérmica de grado clínico instalada en el transporte asistido, disponible en diversos factores de forma y capacidades volumétricas modulares según los requisitos de carga, dotada de aislamiento térmico de alta densidad, alimentación energética dual (red fija y toma vehicular de 12V), instrumentación de medición bioambiental continua y mecanismo de cierre electromecánico de seguridad.</td>
+      <td><strong>Aggregate Root:</strong> <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Tare Weight &amp; Net Weight (Peso Tara y Peso Neto)</strong></td>
+      <td>Procedimiento metrológico de calibración en origen mediante el cual se descuenta la masa basal del contenedor vacío y sus componentes de fijación (tara), permitiendo cuantificar con precisión (&plusmn;5 g) la masa neta de la carga biológica para detectar variaciones por fugas, sustracción o reemplazo clandestino durante el traslado.</td>
+      <td><strong>Value Object:</strong> <code>ContainerWeightMetrics</code> en <code>SmartContainer</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)</strong></td>
+      <td>Parámetros operativos capturados desde la unidad móvil de transporte asistencial (estado de suministro eléctrico continuo de 12V en cabina, velocidad de desplazamiento y coordenadas geográficas en tiempo real) que permiten supervisar la estabilidad energética del contenedor y predecir los tiempos de traslado en la red vial de Lima Metropolitana.</td>
+      <td><strong>Value Object:</strong> <code>AuxiliaryPowerTelemetry</code> / <strong>Domain Event:</strong> <code>ExternalPowerLost</code><br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Weight-Based Medical Stock (Stock Médico Ponderal)</strong></td>
+      <td>Estimación cuantitativa en tiempo real de la cantidad de medicamentos, ampollas o insumos almacenados dentro del compartimento, calculada a partir de las variaciones de masa registradas continuamente por la celda de carga de precisión, permitiendo prevenir desabastecimientos en ruta o sustracciones clandestinas.</td>
+      <td><strong>Value Object:</strong> <code>PayloadWeight</code> (Invariante de peso en <code>SmartContainer</code>)<br><em>Bounded Context:</em> Smart Container &amp; Telemetry Monitoring</td>
     </tr>
   </tbody>
 </table>
@@ -2465,18 +2465,18 @@ A diferencia de una arquitectura dispersa, en esta etapa de diseño detallado se
       <td>Segmento 1 (Operadores de transporte) y Segmento 2 (Centros de salud / Contratación B2B).</td>
     </tr>
     <tr>
-      <td><strong>2. Smart Container &amp; Telemetry Monitoring</strong></td>
-      <td><em>Core Domain (Diferenciador)</em></td>
-      <td>Ingesta continua de telemetría IoT desde el ESP32: temperatura Peltier (2°C-8°C), tara/peso neto HX711, bloqueo solenoide, acelerómetro y 12V vehicular.</td>
-      <td><code>SmartContainer</code>, <code>TelemetrySnapshot</code></td>
-      <td>Segmento 1 (Cuidado de energía en ruta) y Segmento 2 (Monitoreo de conservación).</td>
-    </tr>
-    <tr>
-      <td><strong>3. Medical Transport Planning &amp; Dispatching</strong></td>
+      <td><strong>2. Medical Transport Planning &amp; Dispatching</strong></td>
       <td><em>Core Domain</em></td>
       <td>Programación de traslados de emergencia, control de tiempos de isquemia fría, selección de rutas anti-congestión en Lima y cálculo de ETA con despacho y vinculación vehicular.</td>
       <td><code>TransportOrder</code>, <code>DispatchTrip</code></td>
       <td>Segmento 1 (Conducción y despacho) y Segmento 2 (Programación de quirófano).</td>
+    </tr>
+    <tr>
+      <td><strong>3. Smart Container &amp; Telemetry Monitoring</strong></td>
+      <td><em>Core Domain (Diferenciador)</em></td>
+      <td>Ingesta continua de telemetría IoT desde el ESP32: temperatura Peltier (2°C-8°C), tara/peso neto HX711, bloqueo solenoide, acelerómetro y 12V vehicular.</td>
+      <td><code>SmartContainer</code>, <code>TelemetrySnapshot</code></td>
+      <td>Segmento 1 (Cuidado de energía en ruta) y Segmento 2 (Monitoreo de conservación).</td>
     </tr>
     <tr>
       <td><strong>4. Critical Alerting &amp; Incident Response</strong></td>
@@ -2707,115 +2707,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ***
 
-#### **4.6.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring**
-
-* **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
-* **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1**, monitorea la integridad eléctrica en la toma de 12V y estado de la batería de litio interna para evitar descargas accidentales por vibración. Para el **Segmento 2**, certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C con celdas Peltier) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (&plusmn;5 gramos).
-
-##### Agregados Raíz e Invariantes de Negocio
-
-1. **`SmartContainer` (Aggregate Root):**
-   * *Invariante 2.1:* La tapa electromecánica (`ElectromechanicalLock`) no puede ser destrabada si el contenedor se encuentra en viaje activo (`TripStatus == InTransit`), a menos que se reciba un comando firmado de desbloqueo de emergencia o código OTP verificado en destino.
-   * *Invariante 2.2:* Si la celda de carga HX711 detecta una variación de peso neto superior a 15 gramos mientras el contenedor está en ruta cerrada, debe emitirse de forma inmediata un evento de presunta adulteración de carga útil.
-2. **`TelemetrySnapshot` (Aggregate Root):**
-   * *Invariante 2.3:* Todo paquete de telemetría debe contar con una marca de tiempo inmutable sincronizada vía UTC/NTP y una firma criptográfica emitida por el microcontrolador ESP32 para prevenir inyecciones falsas de datos.
-
-##### Matriz de Artefactos DDD - Contexto Smart Container & Telemetry
-
-<div style="margin: 10px 0 14px 0;">
-<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Smart Container & Telemetry</p>
-<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
-<colgroup>
-  <col style="width: 25%;" />
-  <col style="width: 35%;" />
-  <col style="width: 40%;" />
-</colgroup>
-<thead>
-<tr style="background-color: #f1f5f9;">
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ESP32 / Sensores IoT</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerTelemetrySnapshotQuery</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerSensorsLiveView</code></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTareCalibrationStatusQuery</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TareCalibrationView</code></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware ESP32</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetPowerStatusQuery</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PowerStatusView</code></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerLockStateQuery</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLockView</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<div style="margin: 10px 0 16px 0;">
-<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Smart Container & Telemetry</p>
-<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
-<colgroup>
-  <col style="width: 24%;" />
-  <col style="width: 22%;" />
-  <col style="width: 27%;" />
-  <col style="width: 27%;" />
-</colgroup>
-<thead>
-<tr style="background-color: #f1f5f9;">
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RecordTelemetrySnapshot</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TelemetrySnapshotRecorded</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalibrateTareAndPayloadWeight</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PayloadWeightRegistered</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SwitchToInternalBatteryPower</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuxiliaryBatteryEngaged</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UnlockElectromechanicalLid</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLidUnlocked</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
-</tr>
-</tbody>
-</table>
-</div>
-
-***
-
-![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
-*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
-
-***
-
-#### **4.6.1.3. Bounded Context 3: Medical Transport Planning & Dispatching**
+#### **4.6.1.2. Bounded Context 2: Medical Transport Planning & Dispatching**
 
 * **Clasificación:** *Core Domain*  
 * **Alineación con Segmentos:** Articula la necesidad médica del **Segmento 2** (solicitud urgente de insumo con rango térmico de 2°C a 8°C y tiempo de isquemia fría crítico) con la respuesta operativa del **Segmento 1** (asignación de unidad asistencial, cálculo de ruta anti-tráfico en Lima con TomTom y estimación dinámica de ETA).
@@ -2823,12 +2715,12 @@ A continuación se detalla la especificación transaccional completa para cada u
 ##### Agregados Raíz e Invariantes de Negocio
 
 1. **`TransportOrder` (Aggregate Root):**
-   * *Invariante 3.1:* Una orden de traslado de órganos o tejidos no puede ser creada sin declarar el **Tiempo Máximo de Isquemia Fría** (ej. <4 horas para corazón, <8 horas para hígado, conforme a la Directiva Sanitaria N° 152/MINSA).
-   * *Invariante 3.2:* Toda orden debe definir un origen (IPRESS remitente) y destino (IPRESS receptora) con geoceldas GPS verificadas en Lima/Callao.
+   * *Invariante 2.1:* Una orden de traslado de órganos o tejidos no puede ser creada sin declarar el **Tiempo Máximo de Isquemia Fría** (ej. <4 horas para corazón, <8 horas para hígado, conforme a la Directiva Sanitaria N° 152/MINSA).
+   * *Invariante 2.2:* Toda orden debe definir un origen (IPRESS remitente) y destino (IPRESS receptora) con geoceldas GPS verificadas en Lima/Callao.
 2. **`DispatchTrip` (Aggregate Root):**
-   * *Invariante 3.3:* Un viaje no puede iniciar su transición a estado `InTransit` si el contenedor médico asignado no ha alcanzado previamente su temperatura de pre-enfriamiento operativo (+2.0 °C a +8.0 °C).
-   * *Invariante 3.4:* El viaje no puede darse por finalizado si la ambulancia se encuentra fuera del radio perimetral de seguridad (geofence de 100 metros) de la rampa de emergencia del hospital destino.
-   * *Invariante 3.5:* Un contenedor inteligente solo puede estar vinculado telemáticamente a una única ambulancia física a la vez en un viaje de despacho activo, identificada por su placa de rodaje única y código de móvil asistencial (`AssignedVehiclePlate`).
+   * *Invariante 2.3:* Un viaje no puede iniciar su transición a estado `InTransit` si el contenedor médico asignado no ha alcanzado previamente su temperatura de pre-enfriamiento operativo (+2.0 °C a +8.0 °C).
+   * *Invariante 2.4:* El viaje no puede darse por finalizado si la ambulancia se encuentra fuera del radio perimetral de seguridad (geofence de 100 metros) de la rampa de emergencia del hospital destino.
+   * *Invariante 2.5:* Un contenedor inteligente solo puede estar vinculado telemáticamente a una única ambulancia física a la vez en un viaje de despacho activo, identificada por su placa de rodaje única y código de móvil asistencial (`AssignedVehiclePlate`).
 
 ##### Matriz de Artefactos DDD - Contexto Transport Planning & Dispatching
 
@@ -2931,8 +2823,116 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ***
 
-![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
+
+***
+
+#### **4.6.1.3. Bounded Context 3: Smart Container & Telemetry Monitoring**
+
+* **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
+* **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1**, monitorea la integridad eléctrica en la toma de 12V y estado de la batería de litio interna para evitar descargas accidentales por vibración. Para el **Segmento 2**, certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C con celdas Peltier) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (&plusmn;5 gramos).
+
+##### Agregados Raíz e Invariantes de Negocio
+
+1. **`SmartContainer` (Aggregate Root):**
+   * *Invariante 3.1:* La tapa electromecánica (`ElectromechanicalLock`) no puede ser destrabada si el contenedor se encuentra en viaje activo (`TripStatus == InTransit`), a menos que se reciba un comando firmado de desbloqueo de emergencia o código OTP verificado en destino.
+   * *Invariante 3.2:* Si la celda de carga HX711 detecta una variación de peso neto superior a 15 gramos mientras el contenedor está en ruta cerrada, debe emitirse de forma inmediata un evento de presunta adulteración de carga útil.
+2. **`TelemetrySnapshot` (Aggregate Root):**
+   * *Invariante 3.3:* Todo paquete de telemetría debe contar con una marca de tiempo inmutable sincronizada vía UTC/NTP y una firma criptográfica emitida por el microcontrolador ESP32 para prevenir inyecciones falsas de datos.
+
+##### Matriz de Artefactos DDD - Contexto Smart Container & Telemetry
+
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ESP32 / Sensores IoT</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerTelemetrySnapshotQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerSensorsLiveView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTareCalibrationStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TareCalibrationView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware ESP32</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetPowerStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PowerStatusView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerLockStateQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLockView</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RecordTelemetrySnapshot</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TelemetrySnapshotRecorded</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalibrateTareAndPayloadWeight</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PayloadWeightRegistered</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SwitchToInternalBatteryPower</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuxiliaryBatteryEngaged</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UnlockElectromechanicalLid</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLidUnlocked</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
+
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
+*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
 ***
 

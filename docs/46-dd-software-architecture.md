@@ -78,18 +78,18 @@ A diferencia de una arquitectura dispersa, en esta etapa de diseño detallado se
       <td>Segmento 1 (Operadores de transporte) y Segmento 2 (Centros de salud / Contratación B2B).</td>
     </tr>
     <tr>
-      <td><strong>2. Smart Container &amp; Telemetry Monitoring</strong></td>
-      <td><em>Core Domain (Diferenciador)</em></td>
-      <td>Ingesta continua de telemetría IoT desde el ESP32: temperatura Peltier (2°C-8°C), tara/peso neto HX711, bloqueo solenoide, acelerómetro y 12V vehicular.</td>
-      <td><code>SmartContainer</code>, <code>TelemetrySnapshot</code></td>
-      <td>Segmento 1 (Cuidado de energía en ruta) y Segmento 2 (Monitoreo de conservación).</td>
-    </tr>
-    <tr>
-      <td><strong>3. Medical Transport Planning &amp; Dispatching</strong></td>
+      <td><strong>2. Medical Transport Planning &amp; Dispatching</strong></td>
       <td><em>Core Domain</em></td>
       <td>Programación de traslados de emergencia, control de tiempos de isquemia fría, selección de rutas anti-congestión en Lima y cálculo de ETA con despacho y vinculación vehicular.</td>
       <td><code>TransportOrder</code>, <code>DispatchTrip</code></td>
       <td>Segmento 1 (Conducción y despacho) y Segmento 2 (Programación de quirófano).</td>
+    </tr>
+    <tr>
+      <td><strong>3. Smart Container &amp; Telemetry Monitoring</strong></td>
+      <td><em>Core Domain (Diferenciador)</em></td>
+      <td>Ingesta continua de telemetría IoT desde el ESP32: temperatura Peltier (2°C-8°C), tara/peso neto HX711, bloqueo solenoide, acelerómetro y 12V vehicular.</td>
+      <td><code>SmartContainer</code>, <code>TelemetrySnapshot</code></td>
+      <td>Segmento 1 (Cuidado de energía en ruta) y Segmento 2 (Monitoreo de conservación).</td>
     </tr>
     <tr>
       <td><strong>4. Critical Alerting &amp; Incident Response</strong></td>
@@ -320,115 +320,7 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ***
 
-#### **4.6.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring**
-
-* **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
-* **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1**, monitorea la integridad eléctrica en la toma de 12V y estado de la batería de litio interna para evitar descargas accidentales por vibración. Para el **Segmento 2**, certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C con celdas Peltier) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (&plusmn;5 gramos).
-
-##### Agregados Raíz e Invariantes de Negocio
-
-1. **`SmartContainer` (Aggregate Root):**
-   * *Invariante 2.1:* La tapa electromecánica (`ElectromechanicalLock`) no puede ser destrabada si el contenedor se encuentra en viaje activo (`TripStatus == InTransit`), a menos que se reciba un comando firmado de desbloqueo de emergencia o código OTP verificado en destino.
-   * *Invariante 2.2:* Si la celda de carga HX711 detecta una variación de peso neto superior a 15 gramos mientras el contenedor está en ruta cerrada, debe emitirse de forma inmediata un evento de presunta adulteración de carga útil.
-2. **`TelemetrySnapshot` (Aggregate Root):**
-   * *Invariante 2.3:* Todo paquete de telemetría debe contar con una marca de tiempo inmutable sincronizada vía UTC/NTP y una firma criptográfica emitida por el microcontrolador ESP32 para prevenir inyecciones falsas de datos.
-
-##### Matriz de Artefactos DDD - Contexto Smart Container & Telemetry
-
-<div style="margin: 10px 0 14px 0;">
-<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Smart Container & Telemetry</p>
-<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
-<colgroup>
-  <col style="width: 25%;" />
-  <col style="width: 35%;" />
-  <col style="width: 40%;" />
-</colgroup>
-<thead>
-<tr style="background-color: #f1f5f9;">
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ESP32 / Sensores IoT</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerTelemetrySnapshotQuery</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerSensorsLiveView</code></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTareCalibrationStatusQuery</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TareCalibrationView</code></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware ESP32</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetPowerStatusQuery</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PowerStatusView</code></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerLockStateQuery</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLockView</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<div style="margin: 10px 0 16px 0;">
-<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Smart Container & Telemetry</p>
-<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
-<colgroup>
-  <col style="width: 24%;" />
-  <col style="width: 22%;" />
-  <col style="width: 27%;" />
-  <col style="width: 27%;" />
-</colgroup>
-<thead>
-<tr style="background-color: #f1f5f9;">
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
-  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RecordTelemetrySnapshot</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TelemetrySnapshotRecorded</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalibrateTareAndPayloadWeight</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PayloadWeightRegistered</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SwitchToInternalBatteryPower</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuxiliaryBatteryEngaged</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UnlockElectromechanicalLid</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLidUnlocked</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
-</tr>
-</tbody>
-</table>
-</div>
-
-***
-
-![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
-*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
-
-***
-
-#### **4.6.1.3. Bounded Context 3: Medical Transport Planning & Dispatching**
+#### **4.6.1.2. Bounded Context 2: Medical Transport Planning & Dispatching**
 
 * **Clasificación:** *Core Domain*  
 * **Alineación con Segmentos:** Articula la necesidad médica del **Segmento 2** (solicitud urgente de insumo con rango térmico de 2°C a 8°C y tiempo de isquemia fría crítico) con la respuesta operativa del **Segmento 1** (asignación de unidad asistencial, cálculo de ruta anti-tráfico en Lima con TomTom y estimación dinámica de ETA).
@@ -436,12 +328,12 @@ A continuación se detalla la especificación transaccional completa para cada u
 ##### Agregados Raíz e Invariantes de Negocio
 
 1. **`TransportOrder` (Aggregate Root):**
-   * *Invariante 3.1:* Una orden de traslado de órganos o tejidos no puede ser creada sin declarar el **Tiempo Máximo de Isquemia Fría** (ej. <4 horas para corazón, <8 horas para hígado, conforme a la Directiva Sanitaria N° 152/MINSA).
-   * *Invariante 3.2:* Toda orden debe definir un origen (IPRESS remitente) y destino (IPRESS receptora) con geoceldas GPS verificadas en Lima/Callao.
+   * *Invariante 2.1:* Una orden de traslado de órganos o tejidos no puede ser creada sin declarar el **Tiempo Máximo de Isquemia Fría** (ej. <4 horas para corazón, <8 horas para hígado, conforme a la Directiva Sanitaria N° 152/MINSA).
+   * *Invariante 2.2:* Toda orden debe definir un origen (IPRESS remitente) y destino (IPRESS receptora) con geoceldas GPS verificadas en Lima/Callao.
 2. **`DispatchTrip` (Aggregate Root):**
-   * *Invariante 3.3:* Un viaje no puede iniciar su transición a estado `InTransit` si el contenedor médico asignado no ha alcanzado previamente su temperatura de pre-enfriamiento operativo (+2.0 °C a +8.0 °C).
-   * *Invariante 3.4:* El viaje no puede darse por finalizado si la ambulancia se encuentra fuera del radio perimetral de seguridad (geofence de 100 metros) de la rampa de emergencia del hospital destino.
-   * *Invariante 3.5:* Un contenedor inteligente solo puede estar vinculado telemáticamente a una única ambulancia física a la vez en un viaje de despacho activo, identificada por su placa de rodaje única y código de móvil asistencial (`AssignedVehiclePlate`).
+   * *Invariante 2.3:* Un viaje no puede iniciar su transición a estado `InTransit` si el contenedor médico asignado no ha alcanzado previamente su temperatura de pre-enfriamiento operativo (+2.0 °C a +8.0 °C).
+   * *Invariante 2.4:* El viaje no puede darse por finalizado si la ambulancia se encuentra fuera del radio perimetral de seguridad (geofence de 100 metros) de la rampa de emergencia del hospital destino.
+   * *Invariante 2.5:* Un contenedor inteligente solo puede estar vinculado telemáticamente a una única ambulancia física a la vez en un viaje de despacho activo, identificada por su placa de rodaje única y código de móvil asistencial (`AssignedVehiclePlate`).
 
 ##### Matriz de Artefactos DDD - Contexto Transport Planning & Dispatching
 
@@ -544,8 +436,116 @@ A continuación se detalla la especificación transaccional completa para cada u
 
 ***
 
-![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
+
+***
+
+#### **4.6.1.3. Bounded Context 3: Smart Container & Telemetry Monitoring**
+
+* **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
+* **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1**, monitorea la integridad eléctrica en la toma de 12V y estado de la batería de litio interna para evitar descargas accidentales por vibración. Para el **Segmento 2**, certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C con celdas Peltier) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (&plusmn;5 gramos).
+
+##### Agregados Raíz e Invariantes de Negocio
+
+1. **`SmartContainer` (Aggregate Root):**
+   * *Invariante 3.1:* La tapa electromecánica (`ElectromechanicalLock`) no puede ser destrabada si el contenedor se encuentra en viaje activo (`TripStatus == InTransit`), a menos que se reciba un comando firmado de desbloqueo de emergencia o código OTP verificado en destino.
+   * *Invariante 3.2:* Si la celda de carga HX711 detecta una variación de peso neto superior a 15 gramos mientras el contenedor está en ruta cerrada, debe emitirse de forma inmediata un evento de presunta adulteración de carga útil.
+2. **`TelemetrySnapshot` (Aggregate Root):**
+   * *Invariante 3.3:* Todo paquete de telemetría debe contar con una marca de tiempo inmutable sincronizada vía UTC/NTP y una firma criptográfica emitida por el microcontrolador ESP32 para prevenir inyecciones falsas de datos.
+
+##### Matriz de Artefactos DDD - Contexto Smart Container & Telemetry
+
+<div style="margin: 10px 0 14px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #1e3a8a;">A. Flujo de Consulta / CQRS Read Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 25%;" />
+  <col style="width: 35%;" />
+  <col style="width: 40%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Actor / Solicitante (Amarillo)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Query CQRS (Cian)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Read Model Proyectado (Verde)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">ESP32 / Sensores IoT</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerTelemetrySnapshotQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerSensorsLiveView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Químico Farmacéutico (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetTareCalibrationStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TareCalibrationView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Hardware ESP32</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetPowerStatusQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PowerStatusView</code></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Custodio Receptor (Seg. 2)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>GetContainerLockStateQuery</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLockView</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="margin: 10px 0 16px 0;">
+<p style="font-weight: bold; margin-bottom: 5px; font-size: 7.8pt; color: #991b1b;">B. Flujo Transaccional y Eventos / DDD Write Side — Contexto Smart Container & Telemetry</p>
+<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 7pt; margin-bottom: 12px; border: 1px solid #cbd5e1;">
+<colgroup>
+  <col style="width: 24%;" />
+  <col style="width: 22%;" />
+  <col style="width: 27%;" />
+  <col style="width: 27%;" />
+</colgroup>
+<thead>
+<tr style="background-color: #f1f5f9;">
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Comando Ejecutado (Azul)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Agregado / Root (Ocre)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Domain Event Resultante (Naranja)</th>
+  <th style="border: 1px solid #cbd5e1; padding: 4px; text-align: left; font-weight: bold;">Política / Regla Reactiva (Morada)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>RecordTelemetrySnapshot</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>TelemetrySnapshotRecorded</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [TelemetrySnapshotRecorded] THEN [EvaluateThermalLimitsCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CalibrateTareAndPayloadWeight</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PayloadWeightRegistered</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [PayloadWeightRegistered] THEN [EngageSolenoidLockCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SwitchToInternalBatteryPower</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>AuxiliaryBatteryEngaged</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [AuxiliaryBatteryEngaged] THEN [TriggerPowerLossWarningCommand]</em></td>
+</tr>
+<tr>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>UnlockElectromechanicalLid</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>SmartContainer</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>ContainerLidUnlocked</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><em>Whenever [ContainerLidUnlocked] THEN [LogCustodyAccessAuditCommand]</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+***
+
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
+*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
 ***
 

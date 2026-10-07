@@ -140,8 +140,8 @@ La validación del recorrido de extremo a extremo confirmó la coherencia del ci
 #### 4. Delimitación de Contextos Delimitados (Bounded Contexts)
 La sesión de Big Picture permitió delimitar cinco (5) Bounded Contexts de negocio, los cuales constituyen las fronteras transaccionales definitivas del sistema y se preservan de manera consistente a lo largo de toda la arquitectura y diseño de software:
 1. **Identity, Access & Subscriptions (IAM):** Gestión de instituciones hospitalarias acreditadas (RENIPRESS), planes de suscripción SaaS B2B, autenticación JWT basada en roles y trazabilidad de licencias médicas.
-2. **Smart Container & Telemetry Monitoring:** Ingestión de telemetría continua (temperatura, peso neto HX711, batería LiFePO4), control electromecánico de tapa y alta física de dispositivos IoT.
-3. **Medical Transport Planning & Dispatching:** Gestión de solicitudes de traslado urgente, asignación de unidades asistenciales/tripulación, cálculo dinámico de rutas anti-tráfico TomTom y geocercas de pre-arribo.
+2. **Medical Transport Planning & Dispatching:** Gestión de solicitudes de traslado urgente, asignación de unidades asistenciales/tripulación, cálculo dinámico de rutas anti-tráfico TomTom y geocercas de pre-arribo.
+3. **Smart Container & Telemetry Monitoring:** Ingestión de telemetría continua (temperatura, peso neto HX711, batería LiFePO4), control electromecánico de tapa y alta física de dispositivos IoT.
 4. **Critical Alerting & Incident Response:** Detección en tiempo real de excursiones térmicas, disparador de alarmas acústicas en cabina y notificación omnicanal de contingencias.
 5. **Chain of Custody & Traceability:** Verificación de token OTP en geocerca hospitalaria, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
 
