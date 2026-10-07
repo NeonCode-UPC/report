@@ -122,151 +122,31 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
 
 ### 5.2.1.3. Sprint Backlog 1
 
-El **Sprint Backlog 1** presenta el desglose detallado de tareas técnicas asociadas a las historias de usuario comprometidas para el Sprint 1. El objetivo principal de la iteración fue la construcción, validación responsive y despliegue del Landing Page institucional, junto con la definición de contratos y modelos para los servicios de autenticación y registro.
+El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para el Sprint 1 y las tareas técnicas resultantes de su descomposición. El objetivo principal del Sprint fue desarrollar y desplegar la primera versión responsive del Landing Page institucional de Medical SMARTBOX, complementando este trabajo con la especificación de los componentes arquitectónicos correspondientes a identidad, registro institucional y servicios.
 
-A continuación se presenta la tabla oficial de control de estado del Sprint 1:
+**Board del Sprint 1:**
 
-<div style="margin: 12px 0 16px 0; width: 100%;">
-<table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.5pt; line-height: 1.25; border: 1px solid #cbd5e1;">
-<colgroup>
-  <col style="width: 7%;" />
-  <col style="width: 18%;" />
-  <col style="width: 8%;" />
-  <col style="width: 16%;" />
-  <col style="width: 27%;" />
-  <col style="width: 6%;" />
-  <col style="width: 11%;" />
-  <col style="width: 7%;" />
-</colgroup>
-<thead>
-<tr style="background-color: #0f172a; color: #ffffff;">
-  <th colspan="2" style="border: 1px solid #334155; padding: 4px; text-align: left; font-weight: bold;">User Story</th>
-  <th colspan="6" style="border: 1px solid #334155; padding: 4px; text-align: left; font-weight: bold;">Work-Item / Task (Sprint 1)</th>
-</tr>
-<tr style="background-color: #f1f5f9; color: #0f172a;">
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Story Id</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Story Title</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Id</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Title</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Task Description</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Horas</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Assigned To</th>
-  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US04</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Exploración de Propuesta de Valor Logística</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-04-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación HTML5/CSS3 de secciones Hero y Propuesta</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Estructuración semántica de Hero, badges térmicos y características de contenedores IoT.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maria Munayco</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US04</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Exploración de Propuesta de Valor Logística</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-04-02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Integración de diseño responsive mobile-first</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Adaptación de layout CSS Grid y Flexbox para viewports móviles (375px a 414px) y tablets.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">4 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Santiago Gargate</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US05</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Solicitud de Demostración Corporativa</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-05-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación de formulario B2B</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Estructura visual de captura de prospectos con inputs institucionales y estilos de marca.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Aaron Espinoza</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US05</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Solicitud de Demostración Corporativa</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-05-02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Validación en cliente y retroalimentación</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Lógica JavaScript para validación de RUC, correo corporativo y feedback accesible.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Jhon Jaramillo</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US06</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Consulta de Preguntas Frecuentes</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-06-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Componente interactivo acordeón FAQ</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maquetación y comportamiento toggle ARIA para preguntas sobre normativas DIGEMID y sensores.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">4 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Maria Munayco</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Registro de Institución de Salud</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-01-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Modelado entidad institución y base de datos</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Definición de esquema relacional `hospital_institutions` en MySQL 8.0 y reglas de RUC único.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Jhon Jaramillo</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Registro de Institución de Salud</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-01-02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de endpoints de registro</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de contratos OpenAPI para recepción y validación de datos de centros hospitalarios.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">7 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Renzo Santos</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Autenticación de Personal de Emergencia</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-02-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de flujo de autenticación 2FA</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de protocolo de login para operadores y verificación por código OTP de 6 dígitos.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Santiago Gargate</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US03</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Endpoint de Autenticación de Usuarios (API)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-03-01</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Diseño de contratos OpenAPI de sign-in</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Especificación de endpoint POST `/api/v1/authentication/sign-in` y esquemas JWT de sesión.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">6 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Renzo Santos</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: bold;">US03</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Endpoint de Autenticación de Usuarios (API)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; font-weight: 600;">TSK-03-02</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Arquitectura de dominio para identidad (.NET 10)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Modelado de clases de dominio, Value Objects y políticas de cifrado de credenciales en C# 14.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; font-weight: bold;">5 h</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top;">Aaron Espinoza</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px; vertical-align: top; text-align: center; background-color: #ecfdf5; color: #047857; font-weight: bold;">Done</td>
-</tr>
-</tbody>
-</table>
-</div>
+![Sprint 1 Board](<img width="1192" height="596" alt="Captura de pantalla 2026-10-06 231628" src="https://github.com/user-attachments/assets/42b12d34-98ea-4d2c-811f-8b958b2884df" />)
 
-**Resumen de Cierre del Sprint Backlog 1:**
-* **Historias de Usuario Completadas:** 6 (100% de historias planificadas).
-* **Story Points Entregados:** 16 SP / 16 SP comprometidos.
-* **Horas de Ingeniería Ejecutadas:** 53 horas de desarrollo colaborativo.
-* **Estado Final:** Sprint 1 cerrado satisfactoriamente con despliegue activo en la nube.
 
-***
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1))
 
+| Sprint # | Sprint 1 |
+|---|---|
+| **User Story** | **Work-Item / Task** |
+
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In Process / To Review / Done)** |
+|---|---|---|---|---|---:|---|---|
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco | Done |
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación del layout para diferentes tamaños de pantalla. | 4 h | Santiago Gargate | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Validación de RUC, correo corporativo y mensajes de retroalimentación. | 6 h | Jhon Jaramillo | Done |
+| US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Implementación visual e interacción del acordeón de preguntas frecuentes. | 4 h | Maria Munayco | Done |
+| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado de entidad institución | Definición del modelo de datos para instituciones de salud. | 5 h | Jhon Jaramillo | Done |
+| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de registro institucional | Definición de los contratos y reglas de registro institucional. | 7 h | Renzo Santos | Done |
+| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación del flujo de autenticación y verificación mediante OTP. | 5 h | Santiago Gargate | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-01 | Diseño de contratos OpenAPI | Especificación del contrato de autenticación y estructura de respuesta. | 6 h | Renzo Santos | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-02 | Arquitectura de dominio para identidad | Definición de clases de dominio, Value Objects y reglas de identidad. | 5 h | Aaron Espinoza | Done |
 ### 5.2.1.4. Development Evidence for Sprint Review
 
 A continuación se documenta el registro histórico de confirmaciones de cambios (commits) realizadas en el repositorio oficial del Landing Page (`NeonCode-UPC/landing-page`), evidenciando el cumplimiento estricto del estándar **Conventional Commits** y el trabajo colaborativo en ramas de GitFlow:
@@ -725,11 +605,12 @@ Durante el Sprint 2 se realizaron las actividades de despliegue correspondientes
 Se realizó el despliegue de la nueva versión del Landing Page, incorporando las mejoras y correcciones desarrolladas durante los Sprints anteriores.
 
 **URL del Landing Page:**  
-[PEGAR AQUÍ EL LINK]
+[PEGAR AQUÍ EL LINK](https://neoncode-upc.github.io/landing-page/)
 
 **Evidencia del despliegue:**
 
-> [Insertar captura del Landing Page desplegado]
+> [Captura del Landing Page desplegado]<img width="1410" height="746" alt="Captura de pantalla 2026-10-06 230942" src="https://github.com/user-attachments/assets/f36b0a8d-9ae8-438c-b195-b3550de1193b" />
+
 
 *Landing Page desplegado y disponible para su visualización.*
 
@@ -738,11 +619,12 @@ Se realizó el despliegue de la nueva versión del Landing Page, incorporando la
 Durante el Sprint 2 se implementó y desplegó la primera versión de la Frontend Web Application de Medical SmartBox. Esta versión integra las funcionalidades desarrolladas por los integrantes del equipo para los diferentes Bounded Contexts.
 
 **URL de la Web Application:**  
-[PEGAR AQUÍ EL LINK]
+[PEGAR AQUÍ EL LINK]([https://neoncode-upc.github.io/frontend/)](https://neoncode-upc.github.io/frontend/home)
 
 **Evidencia del despliegue:**
 
-> [Insertar captura de la Web Application desplegada]
+> [Captura de la Web Application desplegada]<img width="1533" height="742" alt="Captura de pantalla 2026-10-06 231724" src="https://github.com/user-attachments/assets/0c88bb6c-8c42-44e2-8bb4-feb2ea0cdf43" />
+
 
 *Primera versión de la Frontend Web Application desplegada.*
 
