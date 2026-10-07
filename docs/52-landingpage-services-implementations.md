@@ -126,10 +126,10 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 
 **Board del Sprint 1:**
 
-![Sprint 1 Board](<img width="1192" height="596" alt="Captura de pantalla 2026-10-06 231628" src="https://github.com/user-attachments/assets/42b12d34-98ea-4d2c-811f-8b958b2884df" />)
+<img width="1192" height="596" alt="Sprint 1 Board" src="https://github.com/user-attachments/assets/42b12d34-98ea-4d2c-811f-8b958b2884df" />
 
 
-**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1))
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1)
 
 | Sprint # | Sprint 1 |
 |---|---|
@@ -377,7 +377,7 @@ La distribución permite mantener un responsable principal por aspecto y, al mis
 El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sprint en tareas técnicas que permiten organizar y controlar su implementación. El Sprint contempla **29 Story Points** distribuidos entre US07, US08, US09, US10 y US12.
 
 **Board del Sprint 2:**
-![Sprint 2 Board]<img width="1213" height="500" alt="Captura de pantalla 2026-10-06 222220" src="https://github.com/user-attachments/assets/5287c618-49ef-4306-951e-088e93da075a" />
+<img width="1213" height="500" alt="Sprint 2 Board" src="https://github.com/user-attachments/assets/5287c618-49ef-4306-951e-088e93da075a" />
 
 
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)

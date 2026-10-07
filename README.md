@@ -2556,7 +2556,7 @@ Para corroborar la cobertura integral del modelo respecto a los requisitos de pl
 
 El siguiente esquema general ilustra cómo interactúan los cinco contextos mediante el intercambio de eventos de dominio y comandos de orquestación, asegurando alto desacoplamiento y fronteras transaccionales autónomas:
 
-![Figura 4.6.1.1 - Mapa de Integración entre Bounded Contexts (DLES)](../assets/chapter-4/4.6.1-dles-macro-context-map.jpg)  
+![Figura 4.6.1.1 - Mapa de Integración entre Bounded Contexts (DLES)](assets/chapter-4/4.6.1-dles-macro-context-map.jpg)  
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo Design-Level EventStorming para Medical SMARTBOX.*
 
 ***
@@ -2567,7 +2567,7 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Supporting Subdomain*  
 * **Alineación con Segmentos:** Centraliza la gobernanza de identidades, suscripciones SaaS y control de cuotas de flota para el **Segmento 1** (conductores de ambulancia, paramédicos y despachadores logísticos) y el **Segmento 2** (químicos farmacéuticos, médicos directores de IPRESS y auditores de calidad hospitalaria).
 
-![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context Identity, Access & Subscriptions (IAM)](../assets/chapter-4/4.6.1-dles-iam-context.jpg)  
+![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context Identity, Access & Subscriptions (IAM)](assets/chapter-4/4.6.1-dles-iam-context.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity, Access & Subscriptions (IAM).*
 
 ***
@@ -2576,7 +2576,7 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Core Domain*  
 * **Alineación con Segmentos:** Articula la necesidad médica del **Segmento 2** (solicitud urgente de insumo con rango térmico de +2.0 °C a +8.0 °C y tiempo de isquemia fría crítico) con la respuesta operativa del **Segmento 1** (asignación de ambulancia, cálculo de ruta anti-tráfico en Lima con TomTom y estimación dinámica de ETA).
 
-![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](../assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
 ***
@@ -2585,7 +2585,7 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
 * **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1**, monitorea la integridad eléctrica en la toma de 12V y el nivel de batería interna. Para el **Segmento 2**, certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (±5 g).
 
-![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](../assets/chapter-4/4.6.1-dles-smart-container.jpg)  
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
 ***
@@ -2594,7 +2594,7 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Core Domain*  
 * **Alineación con Segmentos:** Garantiza que las incidencias en ruta se detecten y resuelvan en segundos. Para el **Segmento 1**, dispara alarmas audibles y visuales de alta prioridad en la cabina asistencial. Para el **Segmento 2**, alerta inmediatamente a farmacia y quirófano ante riesgos térmicos o demoras viales.
 
-![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](../assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
+![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
 
 ***
@@ -2603,7 +2603,7 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Core Domain / Cumplimiento Normativo*  
 * **Alineación con Segmentos:** Brinda la certeza sanitaria y legal que exige el **Segmento 2** ante auditorías de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva 152/MINSA). Controla la apertura en destino mediante código OTP de un solo uso y emite el acta digital inmutable con hash SHA-256.
 
-![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](../assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
+![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
 
 ***
@@ -2722,7 +2722,7 @@ Los actores y servicios conectados se consolidan formalmente en las siguientes t
 
 El diagrama de contexto sitúa a la plataforma en el centro del ecosistema, delimitando sus relaciones perimétricas:
 
-![Figura 4.6.2.1 - C4 Model: System Context Diagram (Nivel 1)](../assets/chapter-4/4.6.2-c4-context-diagram.png)  
+![Figura 4.6.2.1 - C4 Model: System Context Diagram (Nivel 1)](assets/chapter-4/4.6.2-c4-context-diagram.png)  
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
 ***
@@ -2852,7 +2852,7 @@ Conforme a las disposiciones rectoras de la cátedra y la rúbrica ABET, la arqu
 
 El siguiente diagrama descompone la solución en sus unidades de software operativas:
 
-![Figura 4.6.3.1 - C4 Model: Container Diagram (Nivel 2)](../assets/chapter-4/4.6.3-c4-container-diagram.png)  
+![Figura 4.6.3.1 - C4 Model: Container Diagram (Nivel 2)](assets/chapter-4/4.6.3-c4-container-diagram.png)  
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
 ***
@@ -2934,7 +2934,7 @@ Los componentes internos de la API se mapean directamente con los **cinco Bounde
 
 El siguiente diagrama detalla la estructura modular interna del servidor de aplicaciones:
 
-![Figura 4.6.4.1 - C4 Model: Component Diagram (Nivel 3 - Backend RESTful Web API)](../assets/chapter-4/4.6.4-c4-component-backend-api.png)  
+![Figura 4.6.4.1 - C4 Model: Component Diagram (Nivel 3 - Backend RESTful Web API)](assets/chapter-4/4.6.4-c4-component-backend-api.png)  
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
 <div style="page-break-after: always;"></div>
@@ -5782,10 +5782,10 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 
 **Board del Sprint 1:**
 
-![Sprint 1 Board](<img width="1192" height="596" alt="Captura de pantalla 2026-10-06 231628" src="https://github.com/user-attachments/assets/42b12d34-98ea-4d2c-811f-8b958b2884df" />)
+<img width="1192" height="596" alt="Sprint 1 Board" src="https://github.com/user-attachments/assets/42b12d34-98ea-4d2c-811f-8b958b2884df" />
 
 
-**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1))
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1)
 
 | Sprint # | Sprint 1 |
 |---|---|
@@ -6033,7 +6033,7 @@ La distribución permite mantener un responsable principal por aspecto y, al mis
 El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sprint en tareas técnicas que permiten organizar y controlar su implementación. El Sprint contempla **29 Story Points** distribuidos entre US07, US08, US09, US10 y US12.
 
 **Board del Sprint 2:**
-![Sprint 2 Board]<img width="1213" height="500" alt="Captura de pantalla 2026-10-06 222220" src="https://github.com/user-attachments/assets/5287c618-49ef-4306-951e-088e93da075a" />
+<img width="1213" height="500" alt="Sprint 2 Board" src="https://github.com/user-attachments/assets/5287c618-49ef-4306-951e-088e93da075a" />
 
 
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
