@@ -700,11 +700,13 @@ En el Sprint 2 se logró avanzar en la implementación e integración de las pri
 
 **Screenshots de Identity, Access & Subscriptions (IAM)**
 
-> [Vista de Usuarios y Roles|500](PEGAR_AQUÍ_EL_LINK_DE_GITHUB_DE_LA_IMAGEN)
+> [Vista de Usuarios y Roles|500]<img width="1517" height="722" alt="Captura de pantalla 2026-10-06 224724" src="https://github.com/user-attachments/assets/6c2d447e-c8c7-4e98-b8c4-0e68e3b17a84" />
+
 
 > *Vista de Usuarios y Roles*
 
-> [Vista de Suscripción|500](PEGAR_AQUÍ_EL_LINK_DE_GITHUB_DE_LA_IMAGEN)
+> [Vista de Suscripción|500]<img width="1488" height="717" alt="Captura de pantalla 2026-10-06 224741" src="https://github.com/user-attachments/assets/12ad1acb-386f-4d1b-af77-285299a52c30" />
+
 
 > *Vista de Suscripción*
 
