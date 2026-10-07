@@ -443,3 +443,97 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 
 ![Team Collaboration Insights during Sprint](assets/chapter-5/report-insights-av1.png)
 *Nota: Analítica de colaboración, frecuencia de confirmaciones y contribuciones del equipo NeonCode durante el Sprint 1.*
+
+## 5.2.2. Sprint 2
+
+En esta sección se detalla nuestra organizacion para el segundo avance de este segundo entregable (TB1), asignación de responsabilidades y desglose de tareas técnicas para la ejecución del primer ciclo de desarrollo (Sprint 1) del ecosistema **Medical SMARTBOX (NeonCode)**, así como las evidencias correspondientes a la implementación, ejecución de vistas, especificación de servicios, despliegue activo en la nube y colaboración del equipo mediante control de versiones.
+
+***
+
+### 5.2.2.1. Sprint Planning 2
+
+El Sprint Planning 2 tuvo como propósito establecer el objetivo, alcance y responsabilidades del segundo ciclo de desarrollo. El equipo priorizó las historias de usuario relacionadas con el registro de unidades de ambulancia, la vinculación de contenedores inteligentes y la gestión de información de telemetría.
+
+| **Sprint #** | **Sprint 2** |
+|---|---|
+| **Sprint Planning Background** | **Sprint Planning 2** |
+| **Date** | 2026-10-06 |
+| **Time** | 20:30 PM |
+| **Location** | Reunión virtual mediante Google Meet |
+| **Prepared By** | Santiago Gargate |
+| **Attendees (to planning meeting)** | Santiago Gargate / Maria Munayco / Aaron Espinoza / Jhon Jaramillo / Renzo Santos |
+| **Sprint Goal & User Stories** | **Sprint 2 Goal:** Implementar e integrar las funcionalidades necesarias para registrar unidades de ambulancia, vincular contenedores inteligentes y gestionar la información de telemetría requerida para su monitoreo. |
+| **Sprint 2 Velocity** | 29 Story Points |
+| **Sum of Story Points** | 29 Story Points |
+
+El Sprint 2 comprende las siguientes historias de usuario:
+
+- **US07:** Alta de Unidades de Ambulancia — **3 SP**
+- **US08:** Vinculación de Contenedor Inteligente — **5 SP**
+- **US09:** Ingesta de Telemetría IoT (API) — **8 SP**
+- **US10:** Monitoreo Térmico y de Apertura — **8 SP**
+- **US12:** Consulta de Telemetría e Indicadores (API) — **5 SP**
+
+**Total: 29 Story Points.**
+
+### 5.2.2.2. Aspect Leaders and Collaborators
+
+Para el Sprint 2 se estableció la matriz de liderazgo y colaboración considerando los cinco aspectos principales definidos para la solución. El integrante responsable de cada bounded context asume el rol de **Lead (L)**, mientras que los demás integrantes participan como **Collaborators (C)** en las actividades de desarrollo e integración.
+
+**L = Lead / C = Collaborator**
+
+| **Integrante** | **Aspecto 1:** Smart Container & Telemetry Monitoring **(L/C)** | **Aspecto 2:** Critical Alerting & Incident Response **(L/C)** | **Aspecto 3:** Identity, Access & Subscriptions **(L/C)** | **Aspecto 4:** Chain of Custody & Traceability **(L/C)** | **Aspecto 5:** Medical Transport Planning & Dispatching **(L/C)** |
+|---|---|---|---|---|---|
+| **Jhon Jaramillo** | **L** | C | C | C | C |
+| **Aaron Espinoza** | C | **L** | C | C | C |
+| **Santiago Gargate** | C | C | **L** | C | C |
+| **Maria Munayco** | C | C | C | **L** | C |
+| **Renzo Santos** | C | C | C | C | **L** |
+
+La distribución permite mantener un responsable principal por aspecto y, al mismo tiempo, conservar el trabajo colaborativo entre los integrantes del equipo.
+
+### 5.2.2.3. Sprint Backlog 2
+
+El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sprint en tareas técnicas que permiten organizar y controlar su implementación. El Sprint contempla **29 Story Points** distribuidos entre US07, US08, US09, US10 y US12.
+
+**Board del Sprint 2:**
+![Sprint 2 Board]<img width="1213" height="500" alt="Captura de pantalla 2026-10-06 222220" src="https://github.com/user-attachments/assets/5287c618-49ef-4306-951e-088e93da075a" />
+
+
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
+
+| **Sprint #** | **Sprint 2** |
+|---|---|
+| **User Story** | **Work-Item / Task** |
+
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+|---|---|---|---|---|---:|---|---|
+| US09 | Ingesta de Telemetría IoT (API) | TSK-09-01 | Implementación del endpoint de ingesta de telemetría | Implementación del endpoint POST para recibir datos de temperatura, peso, apertura, batería y fecha/hora del contenedor. | 8 h | Jhon Jaramillo | Done |
+| US09 | Ingesta de Telemetría IoT (API) | TSK-09-02 | Validación del payload y autenticación del dispositivo | Validación de los datos recibidos y del token de autenticación del dispositivo IoT. | 6 h | Jhon Jaramillo | Done |
+| US09 | Ingesta de Telemetría IoT (API) | TSK-09-03 | Persistencia de lecturas de telemetría | Registro de las lecturas válidas de telemetría en la base de datos. | 6 h | Jhon Jaramillo | Done |
+| US07 | Alta de Unidades de Ambulancia | TSK-07-01 | Creación del modelo de datos de Ambulancias | Creación del modelo de datos de ambulancias en MySQL Server 8.0 mediante Entity Framework Core 10.0. | 4 h | Renzo Santos | Done |
+| US07 | Alta de Unidades de Ambulancia | TSK-07-02 | Desarrollo de endpoints CRUD | Desarrollo de endpoints CRUD para el registro y consulta de vehículos de transporte. | 6 h | Renzo Santos | Done |
+| US07 | Alta de Unidades de Ambulancia | TSK-07-03 | Interfaz web para registro de unidades | Desarrollo del formulario web y listado de unidades registradas. | 6 h | Renzo Santos | Done |
+| US08 | Vinculación de Contenedor Inteligente | TSK-08-01 | Desarrollo del módulo backend de asignación física | Implementación de la relación 1:1 entre la ambulancia y el contenedor IoT. | 8 h | Renzo Santos | Done |
+| US08 | Vinculación de Contenedor Inteligente | TSK-08-02 | Validación de estados del dispositivo | Validación para impedir la reasignación de un contenedor que ya se encuentre ocupado. | 5 h | Renzo Santos | Done |
+| US08 | Vinculación de Contenedor Inteligente | TSK-08-03 | Interfaz web de vinculación | Interfaz para vincular el contenedor mediante UUID/MAC. | 6 h | Renzo Santos | Done |
+| US12 | Consulta de Telemetría e Indicadores (API) | TSK-12-01 | Implementación del endpoint de consulta de métricas | Implementación del endpoint GET para consultar las últimas mediciones de un contenedor. | 6 h | Jhon Jaramillo | Done |
+| US12 | Consulta de Telemetría e Indicadores (API) | TSK-12-02 | Construcción del objeto de métricas consolidadas | Construcción de la respuesta con temperatura, batería, escotilla, peso y fecha/hora de sincronización. | 4 h | Jhon Jaramillo | Done |
+| US10 | Monitoreo Térmico y de Apertura | TSK-10-01 | Visualización de temperatura y estado de escotilla | Implementación de la visualización de temperatura y estado de apertura del contenedor. | 6 h | Jhon Jaramillo | Done |
+| US10 | Monitoreo Térmico y de Apertura | TSK-10-02 | Actualización en tiempo real de telemetría | Actualización de las lecturas en el panel sin requerir recarga manual. | 6 h | Jhon Jaramillo | Done |
+| US10 | Monitoreo Térmico y de Apertura | TSK-10-03 | Gestión visual de pérdida de señal | Representación del estado de desconexión cuando no se reciben lecturas durante el tiempo establecido. | 4 h | Jhon Jaramillo | Done |
+
+### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2 se realizaron avances en la implementación e integración de los principales módulos de la solución, incluyendo Identity & Access Management, Alerting, Medical Transport Planning, Chain of Custody y Smart Container & Telemetry. Estos avances se evidencian mediante los commits realizados en el repositorio del frontend durante el 06/10/2026.
+
+| **Repository** | **Branch** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|---|---|---|---|---|
+| frontend | develop | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
+| frontend | develop | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
+| frontend | develop | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
+| frontend | develop | `feat(transport): integrate medical transport planning` | Se integra el módulo de planificación de transporte médico en la aplicación. | 06/10/2026 |
+| frontend | develop | `feat(custody): restore chain of custody feature` | Se restaura la funcionalidad correspondiente a la cadena de custodia y trazabilidad. | 06/10/2026 |
+| frontend | develop | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
+| frontend | develop | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
+| frontend | develop | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
