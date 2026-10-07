@@ -7,8 +7,8 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
 ### Decisiones Arquitectónicas de Persistencia Relacional:
 1. **Motor de Almacenamiento y Conjunto de Caracteres:**  
    Se selecciona exclusivamente **InnoDB** por su soporte nativo de transacciones compatibles con **ACID**, bloqueo a nivel de fila (*row-level locking*) y soporte de claves foráneas con verificación en tiempo de ejecución. La base de datos opera bajo el conjunto de caracteres `utf8mb4` y la colación `utf8mb4_unicode_ci`, garantizando soporte pleno para caracteres especiales clínicos, acentos en español latinoamericano (`es_419`) y firmas criptográficas sin riesgo de truncamiento.
-2. **Identificadores Universales Únicos (UUID / GUID):**  
-   Para desacoplar la generación de identificadores entre los nodos de borde (ESP32 en ambulancias) y los microservicios sin colisiones ni consultas previas de secuencia, todas las entidades maestras y transaccionales utilizan identificadores únicos universales (`Guid` en C#) persistidos como columnas `CHAR(36)` con formato canónico de guiones (`8-4-4-4-12`). La única excepción son los registros de telemetría sensorial de alta frecuencia (`telemetry_logs`), donde se utiliza un identificador numérico secuencial `BIGINT UNSIGNED AUTO_INCREMENT` como clave primaria física para minimizar la fragmentación de índices B-Tree en inserciones continuas masivas.
+2. **Identificadores Universales Únicos Ordenables Cronológicamente (UUIDv7 / RFC 9562):**  
+   Para desacoplar la generación de identificadores entre los nodos de borde (ESP32 en ambulancias), las capas de dominio y los microservicios sin colisiones ni dependencia de consultas previas a secuencias centrales, todas las entidades maestras y transaccionales utilizan **UUID versión 7 (RFC 9562)** mapeados nativamente en C# (.NET 10 LTS mediante `Guid.CreateVersion7()`) y persistidos como columnas `CHAR(36)` con formato canónico de guiones (`8-4-4-4-12`). La adopción de UUIDv7 frente a UUIDv4 radica en su naturaleza *k-sortable*: al incorporar una marca de tiempo UNIX de 48 bits con resolución de milisegundos en los bits más significativos, las inserciones en MySQL InnoDB se realizan de forma secuencial y monótona al final del árbol B+Tree, eliminando las costosas particiones de páginas (*page splits*) y preservando la eficiencia del *InnoDB Buffer Pool*. A su vez, se descarta el uso de claves puramente incrementales (`AUTO_INCREMENT`) en entidades de negocio para blindar la plataforma contra ataques de enumeración e IDOR en APIs clínicas, garantizar la inmutabilidad jurídica de los registros médicos y permitir la generación segura de identidades en operaciones desconectadas (*offline*) de las ambulancias. Como única excepción técnica, se preserva el tipo secuencial `BIGINT UNSIGNED AUTO_INCREMENT` exclusivamente en la tabla de series temporales de ultra-alta frecuencia (`telemetry_logs`), priorizando la máxima densidad de bytes por página en la persistencia masiva de lecturas IoT.
 3. **Estrategia de Aplanamiento de Value Objects (*Flattening*):**  
    Conforme a los patrones de diseño de arquitectura orientada al dominio formulados por Nick Tune, los *Value Objects* del dominio carecen de identidad propia y representan atributos compuestos inmutables. Para evitar la sobrecarga de uniones relacionales (*JOINs*) en consultas críticas, se aplica la técnica de *Value Object Flattening*:
    * El Value Object `IschemiaTimeLimit` se aplana en las columnas `max_ischemia_hours` e `ischemia_warning_hours` dentro de `transport_orders`.
@@ -67,7 +67,7 @@ A continuación se detalla la especificación formal de las 11 tablas del sistem
 
 ***
 
-##### **4.8.1.1. Bounded Context: IAM & Subscriptions (Soporte B2B y Acceso)**
+##### **4.8.1.1. Bounded Context 1: Identity, Access & Subscriptions (IAM) (Supporting Subdomain)**
 
 Garantiza la autenticación, la asignación de roles médicos y la gestión de planes SaaS para clínicas y flotas de ambulancias.
 
@@ -98,7 +98,7 @@ Almacena los niveles de suscripción B2B que determinan la capacidad operativa d
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del plan en formato UUIDv4.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del plan en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>name</code></td>
@@ -194,7 +194,7 @@ Representa los centros de salud, redes hospitalarias, bancos de órganos y opera
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único de la institución de salud en formato UUIDv4.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único de la institución de salud en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>subscription_plan_id</code></td>
@@ -332,7 +332,7 @@ Gestiona las credenciales y perfiles profesionales autorizados en ambos segmento
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal del usuario en la plataforma.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único universal del usuario en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>institution_id</code></td>
@@ -424,7 +424,7 @@ Gestiona las credenciales y perfiles profesionales autorizados en ambos segmento
 
 ***
 
-##### **4.8.1.2. Bounded Context: Smart Container & Telemetry Monitoring (Core IoT)**
+##### **4.8.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring (Core Domain)**
 
 Modela el contenedor físico inteligente, su estado electromecánico y el flujo continuo de lecturas sensoriales emitidas desde la ambulancia.
 
@@ -455,7 +455,7 @@ Representa la unidad isotérmica física dotada de sensores, solenoide de tapa y
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del contenedor inteligente.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único universal del contenedor inteligente en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>serial_number</code></td>
@@ -678,7 +678,7 @@ Serie temporal de lecturas sensoriales emitidas en ráfagas cada 5 segundos dura
 
 ***
 
-##### **4.8.1.3. Bounded Context: Medical Transport Planning & Dispatching (Core Operativo)**
+##### **4.8.1.3. Bounded Context 3: Medical Transport Planning & Dispatching (Core Domain)**
 
 Articula las órdenes de traslado clínico y su asignación a los recursos móviles (ambulancia, chofer y paramédico).
 
@@ -709,7 +709,7 @@ Solicitudes clínicas de transporte emitidas por cirujanos o químicos farmacéu
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal de la orden clínica.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único universal de la orden clínica en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>order_code</code></td>
@@ -826,7 +826,7 @@ Ejecución del traslado por la ambulancia, tripulación y contenedor asignados (
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del viaje de despacho.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único universal del viaje de despacho en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>order_id</code></td>
@@ -946,7 +946,7 @@ Ejecución del traslado por la ambulancia, tripulación y contenedor asignados (
 
 ***
 
-##### **4.8.1.4. Bounded Context: Critical Alerting & Incident Response (Soporte Reactivo)**
+##### **4.8.1.4. Bounded Context 4: Critical Alerting & Incident Response (Core Domain)**
 
 Registra y escala contingencias en ruta ante desvíos térmicos o fallas eléctricas de la ambulancia.
 
@@ -977,7 +977,7 @@ Incidencias generadas automáticamente ante violaciones térmicas o manipulacion
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal del incidente crítico.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único universal del incidente crítico en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trip_id</code></td>
@@ -1094,7 +1094,7 @@ Medidas correctivas aplicadas y validadas para mitigar el incidente y proteger e
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único de la resolución de contingencia.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único universal de la resolución de contingencia en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>incident_id</code></td>
@@ -1144,7 +1144,7 @@ Medidas correctivas aplicadas y validadas para mitigar el incidente y proteger e
 
 ***
 
-##### **4.8.1.5. Bounded Context: Chain of Custody & Traceability (Core Regulatorio)**
+##### **4.8.1.5. Bounded Context 5: Chain of Custody & Traceability (Core Domain)**
 
 Garantiza la inmutabilidad de la custodia médica mediante autenticación OTP y actas digitales para MINSA/DIGEMID.
 
@@ -1175,7 +1175,7 @@ Protocolo de entrega hospitalaria con autenticación de apertura mediante códig
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador universal de la transferencia de custodia.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único universal de la transferencia de custodia en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>trip_id</code></td>
@@ -1285,7 +1285,7 @@ Acta digital de entrega legal sellada criptográficamente con hash SHA-256 para 
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>CHAR(36)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #fef2f2; color: #dc2626; font-weight: bold;">NOT NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>PRIMARY KEY</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único del acta digital.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Identificador único universal del acta digital en formato UUIDv7 (RFC 9562).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>transfer_id</code></td>
@@ -1378,7 +1378,7 @@ En lugar de redundar en las especificaciones de claves foráneas ya detalladas e
 |---|---|---|---|
 | **Preservación Inmutable de Evidencia** | `ON DELETE RESTRICT` | 19 de las 20 relaciones foráneas (Instituciones, Usuarios, Órdenes, Contenedores, Incidentes, Custodias y Manifiestos). | Prohíbe de forma terminante el borrado en cascada de entidades maestras o transaccionales con histórico clínico asociado, previniendo vacíos probatorios ante litigios médicos o auditorías sanitarias. |
 | **Desacoplamiento de Despachos Cancelados** | `ON DELETE SET NULL` | Relación `dispatch_trips(id)` → `telemetry_logs(trip_id)`. | Si un viaje preliminar es cancelado antes de partir, las muestras sensoriales emitidas por el hardware IoT se conservan intactas vinculadas al contenedor, desvinculando únicamente la referencia al traslado cancelado. |
-| **Propagación Segura de Cambios** | `ON UPDATE CASCADE` | Claves primarias sustitutas basadas en identificadores UUID (`CHAR(36)`). | Garantiza sincronización referencial automática en capas de persistencia y cachés sin requerir operaciones manuales en la base de datos. |
+| **Propagación Segura de Cambios** | `ON UPDATE CASCADE` | Claves primarias sustitutas basadas en identificadores UUIDv7 (`CHAR(36)`). | Garantiza sincronización referencial automática en capas de persistencia y cachés sin requerir operaciones manuales en la base de datos. |
 | **Principio de Custodia Unívoca (Sin N:M)** | Restricciones `1:1` y `1:N` estrictas con `UNIQUE` | Asignación Orden → Despacho → Contenedor → Transferencia de Custodia. | Elimina tablas intermedias de cruce N:M; la normativa sanitaria exige un único custodio legal y un único contenedor responsable por cada traslado de órganos o hemoderivados. |
 | **Inmutabilidad Criptográfica de Cierre** | Columna `is_sealed_and_immutable = 1` y hash SHA-256 | Tabla `digital_audit_manifests` (Manifiesto de Auditoría). | Bloquea a nivel de servicio y regla de base de datos cualquier mutación posterior al sellado de custodia asistencial en destino hospitalario. |
 
