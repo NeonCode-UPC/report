@@ -13,7 +13,7 @@
 <div style="font-size: 11pt; font-weight: bold; color: #000; margin: 2.5px 0 0 0;"><b>8150</b></div>
 </div>
 <div align="center" style="margin: 0 0 7mm 0;">
-<div style="font-size: 14pt; font-weight: bold; color: #000; margin: 0;"><b>Informe del Trabajo Final</b></div>
+<div style="font-size: 14pt; font-weight: bold; color: #000; margin: 0;"><b>Informe del Trabajo Final (TB1)</b></div>
 </div>
 <div align="center" style="margin: 0 0 13mm 0; line-height: 1.25;">
 <div style="font-size: 9pt; color: #334155; margin: 0;">Docente</div>
@@ -60,6 +60,6 @@
 </div>
 <div align="center" style="line-height: 1.3;">
 <div style="font-size: 10pt; font-weight: bold; color: #000; margin: 0 0 13mm 0;"><b>Período 202620</b></div>
-<div style="font-size: 10pt; font-weight: bold; color: #000; margin: 0;"><b>Septiembre 2026</b></div>
+<div style="font-size: 10pt; font-weight: bold; color: #000; margin: 0;"><b>Octubre 2026</b></div>
 </div>
 </div>

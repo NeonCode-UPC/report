@@ -13,7 +13,7 @@
 <div style="font-size: 11pt; font-weight: bold; color: #000; margin: 2.5px 0 0 0;"><b>8150</b></div>
 </div>
 <div align="center" style="margin: 0 0 7mm 0;">
-<div style="font-size: 14pt; font-weight: bold; color: #000; margin: 0;"><b>Informe del Trabajo Final</b></div>
+<div style="font-size: 14pt; font-weight: bold; color: #000; margin: 0;"><b>Informe del Trabajo Final (TB1)</b></div>
 </div>
 <div align="center" style="margin: 0 0 13mm 0; line-height: 1.25;">
 <div style="font-size: 9pt; color: #334155; margin: 0;">Docente</div>
@@ -60,7 +60,7 @@
 </div>
 <div align="center" style="line-height: 1.3;">
 <div style="font-size: 10pt; font-weight: bold; color: #000; margin: 0 0 13mm 0;"><b>Período 202620</b></div>
-<div style="font-size: 10pt; font-weight: bold; color: #000; margin: 0;"><b>Septiembre 2026</b></div>
+<div style="font-size: 10pt; font-weight: bold; color: #000; margin: 0;"><b>Octubre 2026</b></div>
 </div>
 </div>
 
@@ -68,7 +68,7 @@
 
 # Registro de Versiones del Informe
 
-El presente Registro de Versiones del Informe documenta la trazabilidad evolutiva, iterativa y colaborativa de la memoria técnica del proyecto **Medical SMARTBOX** a lo largo de su ciclo de vida de desarrollo. En estricta observancia del estándar de versionado semántico (*Semantic Versioning 2.0.0*) y de los criterios de evaluación de la asignatura **1ASI0730 Aplicaciones Web**, se registran de forma estructurada las incorporaciones de secciones, diagramas de arquitectura, modelos de dominio, historias de usuario, especificaciones de bases de datos y evidencias de implementación del primer ciclo ágil (Sprint 1) junto con el despliegue del Landing Page institucional, así como las mejoras producto de las revisiones internas de calidad del equipo **NeonCode** para la entrega oficial del **Avance 1 (AV1 - Semana 4)**, complementado con la hoja de ruta planificada para los hitos sucesivos del proyecto.
+El presente Registro de Versiones del Informe documenta la trazabilidad evolutiva, iterativa y colaborativa de la memoria técnica del proyecto **Medical SMARTBOX** a lo largo de su ciclo de vida de desarrollo. En estricta observancia del estándar de versionado semántico (*Semantic Versioning 2.0.0*) y de los criterios de evaluación de la asignatura **1ASI0730 Aplicaciones Web**, se registran de forma estructurada las incorporaciones de secciones, diagramas de arquitectura, modelos de dominio, historias de usuario, especificaciones de bases de datos y evidencias de implementación del primer ciclo ágil (Sprint 1) junto con el despliegue del Landing Page institucional, así como las mejoras producto de las revisiones internas de calidad del equipo **NeonCode** para la entrega oficial del **Hito TB1 (Semana 7)**, complementado con la hoja de ruta planificada para los hitos sucesivos del proyecto.
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---: | :---: | :--- | :--- |
@@ -78,7 +78,7 @@ El presente Registro de Versiones del Informe documenta la trazabilidad evolutiv
 | **V1.2.5** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando cinco Bounded Contexts: Identity, Access & Subscriptions, Smart Container & Telemetry Monitoring, Medical Transport Planning & Dispatching, Critical Alerting & Incident Response, y Chain of Custody & Traceability). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Web API, Telemetry Worker, MySQL 8.0, Broker MQTT, Redis Cache y Web App) y 4.6.4 Component Diagrams en capas DDD. Desarrollo del Capítulo 4.7 (Class Diagrams UML) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF en MySQL 8.0 InnoDB, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
 | **V1.3.0** | 16/09/2026 | Gargate Paredes, Santiago<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 10 LTS [`net10.0`], Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), servicios backend proyectados (5.2.1.6) y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). Conclusiones preliminares, Bibliografía en formato APA y Anexos normativos. |
 | **V1.3.1** | 06/10/2026 | Jaramillo Mayta, Jhon Jordy<br>NeonCode Team | **Refactorización y Simplificación Canónica C4 Model:** Reestructuración de la arquitectura de software (Capítulo 4.6) adoptando la topología canónica oficial del C4 Model de Simon Brown. Poda de sobrecomplejidad accidental en 4.6.1 (eliminación de tablas CQRS masivas redundantes), consolidación a 4 contenedores canónicos (Landing Page, Single-Page Application, Backend RESTful Web API y MySQL Database) en 4.6.3, y descomposición modular de la Web API por Bounded Contexts bajo Clean Architecture en 4.6.4, garantizando total coherencia técnica y alineación con la rúbrica ABET. |
-| **V2.0.0** | *(Planificado)* | NeonCode Team | **Incorporación del Sprint 2 y Primer Incremento de Web Application (Hito TB1 - Semana 7):** Documentación del Sprint 2 (5.2.2 completo: Sprint Planning 2, Aspect Leaders Matrix, Sprint Backlog 2, evidencias de desarrollo del frontend en Vue.js / PrimeVue, gestión de estado Pinia, evidencias de despliegue y collaboration insights). Levantamiento de observaciones formuladas por el docente evaluador sobre la entrega AV1. Actualización de conclusiones y Student Outcome para el hito TB1. |
+| **V2.0.0** | 06/10/2026 | NeonCode Team | **Incorporación del Sprint 2 y Primer Incremento de Web Application (Hito TB1 - Semana 7):** Documentación del Sprint 2 (5.2.2 completo: Sprint Planning 2, Aspect Leaders Matrix, Sprint Backlog 2, evidencias de desarrollo del frontend en Vue.js / PrimeVue, gestión de estado Pinia, evidencias de despliegue y collaboration insights). Levantamiento de observaciones formuladas por el docente evaluador sobre la entrega AV1. Actualización de conclusiones y Student Outcome para el hito TB1. |
 | **V3.0.0** | *(Planificado)* | NeonCode Team | **Integración de Web Services RESTful API y Sprint 3 (Hito AV2 - Semana 12):** Documentación del Sprint 3 (5.2.3 completo: servicios backend en ASP.NET Core 10.0 [.NET 10 LTS, C# 14] bajo arquitectura DDD por capas, documentación OpenAPI/Scalar, base de datos relacional MySQL 8.0 y telemetría IoT en tiempo real). Incorporación de la sección 5.3 (Validation Interviews y evaluaciones según heurísticas de Nielsen) y 5.4 (Video About-the-Product). Actualización de Student Outcome para AV2. |
 | **V4.0.0** | *(Planificado)* | NeonCode Team | **Cierre del Producto Final, Sprint 4 y Release Review (Hito TB2 - Semana 15):** Documentación del Sprint 4 (5.2.4 completo: consolidación de seguridad JWT, control de acceso basado en roles RBAC, integración completa frontend-backend y pruebas de estrés). Incorporación del video About-the-Team, informe de desempeño del equipo (Participant Performance Report), anexos consolidados y preparación de la versión final para la sustentación sincrónica del trabajo de fin de curso. |
 
@@ -6236,15 +6236,13 @@ En el Sprint 2 se logró avanzar en la implementación e integración de las pri
 
 **Screenshots de Identity, Access & Subscriptions (IAM)**
 
-> [Vista de Usuarios y Roles|500]<img width="1517" height="722" alt="Captura de pantalla 2026-10-06 224724" src="https://github.com/user-attachments/assets/6c2d447e-c8c7-4e98-b8c4-0e68e3b17a84" />
+<img width="1517" height="722" alt="Vista de Usuarios y Roles" src="https://github.com/user-attachments/assets/6c2d447e-c8c7-4e98-b8c4-0e68e3b17a84" />
 
+*Vista de Usuarios y Roles*
 
-> *Vista de Usuarios y Roles*
+<img width="1488" height="717" alt="Vista de Suscripción" src="https://github.com/user-attachments/assets/12ad1acb-386f-4d1b-af77-285299a52c30" />
 
-> [Vista de Suscripción|500]<img width="1488" height="717" alt="Captura de pantalla 2026-10-06 224741" src="https://github.com/user-attachments/assets/12ad1acb-386f-4d1b-af77-285299a52c30" />
-
-
-> *Vista de Suscripción*
+*Vista de Suscripción*
 
 ### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
@@ -6260,12 +6258,11 @@ Durante el Sprint 2 se realizaron las actividades de despliegue correspondientes
 
 Se realizó el despliegue de la nueva versión del Landing Page, incorporando las mejoras y correcciones desarrolladas durante los Sprints anteriores.
 
-**URL del Landing Page:**  
-[PEGAR AQUÍ EL LINK](https://neoncode-upc.github.io/landing-page/)
+**URL del Landing Page:** [https://neoncode-upc.github.io/landing-page/](https://neoncode-upc.github.io/landing-page/)
 
 **Evidencia del despliegue:**
 
-> [Captura del Landing Page desplegado]<img width="1410" height="746" alt="Captura de pantalla 2026-10-06 230942" src="https://github.com/user-attachments/assets/f36b0a8d-9ae8-438c-b195-b3550de1193b" />
+<img width="1410" height="746" alt="Captura del Landing Page desplegado" src="https://github.com/user-attachments/assets/f36b0a8d-9ae8-438c-b195-b3550de1193b" />
 
 
 *Landing Page desplegado y disponible para su visualización.*
@@ -6274,12 +6271,11 @@ Se realizó el despliegue de la nueva versión del Landing Page, incorporando la
 
 Durante el Sprint 2 se implementó y desplegó la primera versión de la Frontend Web Application de Medical SmartBox. Esta versión integra las funcionalidades desarrolladas por los integrantes del equipo para los diferentes Bounded Contexts.
 
-**URL de la Web Application:**  
-[PEGAR AQUÍ EL LINK]([https://neoncode-upc.github.io/frontend/)](https://neoncode-upc.github.io/frontend/home)
+**URL de la Web Application:** [https://neoncode-upc.github.io/frontend/home](https://neoncode-upc.github.io/frontend/home)
 
 **Evidencia del despliegue:**
 
-> [Captura de la Web Application desplegada]<img width="1533" height="742" alt="Captura de pantalla 2026-10-06 231724" src="https://github.com/user-attachments/assets/0c88bb6c-8c42-44e2-8bb4-feb2ea0cdf43" />
+<img width="1533" height="742" alt="Captura de la Web Application desplegada" src="https://github.com/user-attachments/assets/0c88bb6c-8c42-44e2-8bb4-feb2ea0cdf43" />
 
 
 *Primera versión de la Frontend Web Application desplegada.*
@@ -6298,7 +6294,7 @@ La integración del trabajo se realizó progresivamente, consolidando las funcio
 
 **Evidencia de colaboración del equipo**
 
-[Team Collaboration Insights – Sprint 2|500]<img width="833" height="657" alt="Captura de pantalla 2026-10-06 223905" src="https://github.com/user-attachments/assets/38f09b67-f13a-4209-b42c-f9ddb2d2822c" />
+<img width="833" height="657" alt="Team Collaboration Insights – Sprint 2" src="https://github.com/user-attachments/assets/38f09b67-f13a-4209-b42c-f9ddb2d2822c" />
 
 *Nota: Evidencia de colaboración del equipo durante el Sprint 2, mostrando la actividad registrada en GitHub mediante commits y contribuciones de los integrantes.*
 

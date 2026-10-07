@@ -580,15 +580,13 @@ En el Sprint 2 se logró avanzar en la implementación e integración de las pri
 
 **Screenshots de Identity, Access & Subscriptions (IAM)**
 
-> [Vista de Usuarios y Roles|500]<img width="1517" height="722" alt="Captura de pantalla 2026-10-06 224724" src="https://github.com/user-attachments/assets/6c2d447e-c8c7-4e98-b8c4-0e68e3b17a84" />
+<img width="1517" height="722" alt="Vista de Usuarios y Roles" src="https://github.com/user-attachments/assets/6c2d447e-c8c7-4e98-b8c4-0e68e3b17a84" />
 
+*Vista de Usuarios y Roles*
 
-> *Vista de Usuarios y Roles*
+<img width="1488" height="717" alt="Vista de Suscripción" src="https://github.com/user-attachments/assets/12ad1acb-386f-4d1b-af77-285299a52c30" />
 
-> [Vista de Suscripción|500]<img width="1488" height="717" alt="Captura de pantalla 2026-10-06 224741" src="https://github.com/user-attachments/assets/12ad1acb-386f-4d1b-af77-285299a52c30" />
-
-
-> *Vista de Suscripción*
+*Vista de Suscripción*
 
 ### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
@@ -604,12 +602,11 @@ Durante el Sprint 2 se realizaron las actividades de despliegue correspondientes
 
 Se realizó el despliegue de la nueva versión del Landing Page, incorporando las mejoras y correcciones desarrolladas durante los Sprints anteriores.
 
-**URL del Landing Page:**  
-[PEGAR AQUÍ EL LINK](https://neoncode-upc.github.io/landing-page/)
+**URL del Landing Page:** [https://neoncode-upc.github.io/landing-page/](https://neoncode-upc.github.io/landing-page/)
 
 **Evidencia del despliegue:**
 
-> [Captura del Landing Page desplegado]<img width="1410" height="746" alt="Captura de pantalla 2026-10-06 230942" src="https://github.com/user-attachments/assets/f36b0a8d-9ae8-438c-b195-b3550de1193b" />
+<img width="1410" height="746" alt="Captura del Landing Page desplegado" src="https://github.com/user-attachments/assets/f36b0a8d-9ae8-438c-b195-b3550de1193b" />
 
 
 *Landing Page desplegado y disponible para su visualización.*
@@ -618,12 +615,11 @@ Se realizó el despliegue de la nueva versión del Landing Page, incorporando la
 
 Durante el Sprint 2 se implementó y desplegó la primera versión de la Frontend Web Application de Medical SmartBox. Esta versión integra las funcionalidades desarrolladas por los integrantes del equipo para los diferentes Bounded Contexts.
 
-**URL de la Web Application:**  
-[PEGAR AQUÍ EL LINK]([https://neoncode-upc.github.io/frontend/)](https://neoncode-upc.github.io/frontend/home)
+**URL de la Web Application:** [https://neoncode-upc.github.io/frontend/home](https://neoncode-upc.github.io/frontend/home)
 
 **Evidencia del despliegue:**
 
-> [Captura de la Web Application desplegada]<img width="1533" height="742" alt="Captura de pantalla 2026-10-06 231724" src="https://github.com/user-attachments/assets/0c88bb6c-8c42-44e2-8bb4-feb2ea0cdf43" />
+<img width="1533" height="742" alt="Captura de la Web Application desplegada" src="https://github.com/user-attachments/assets/0c88bb6c-8c42-44e2-8bb4-feb2ea0cdf43" />
 
 
 *Primera versión de la Frontend Web Application desplegada.*
@@ -642,6 +638,6 @@ La integración del trabajo se realizó progresivamente, consolidando las funcio
 
 **Evidencia de colaboración del equipo**
 
-[Team Collaboration Insights – Sprint 2|500]<img width="833" height="657" alt="Captura de pantalla 2026-10-06 223905" src="https://github.com/user-attachments/assets/38f09b67-f13a-4209-b42c-f9ddb2d2822c" />
+<img width="833" height="657" alt="Team Collaboration Insights – Sprint 2" src="https://github.com/user-attachments/assets/38f09b67-f13a-4209-b42c-f9ddb2d2822c" />
 
 *Nota: Evidencia de colaboración del equipo durante el Sprint 2, mostrando la actividad registrada en GitHub mediante commits y contribuciones de los integrantes.*
