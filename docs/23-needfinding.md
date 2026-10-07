@@ -1,8 +1,27 @@
 # 2.3. Needfinding
 
-El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y desafíos de los segmentos objetivo de **Medical SMARTBOX**. A partir del análisis del contexto del transporte de productos médicos sensibles y de los perfiles de usuarios involucrados en dichas operaciones en Lima Metropolitana, se elaboraron artefactos empáticos centrados en el usuario conforme a las pautas de diseño UX de la industria (Nielsen Norman Group, Interaction Design Foundation), los cuales constituyen el cimiento empírico de las especificaciones y el diseño de la solución.
 
----
+El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y dificultades de los dos segmentos objetivo de Medical SMARTBOX. Se partió de las seis entrevistas de la sección Entrevistas y de su análisis. Con esa evidencia se construyeron los siguientes artefactos: User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y As-Is Scenario Mapping, siguiendo las pautas de Nielsen Norman Group y de Interaction Design Foundation.
+
+Los segmentos usados en todo el informe son:
+
+- **Segmento 1:** personal médico y de emergencias (paramédicos, enfermeros, médicos y técnicos que trasladan o reciben productos médicos).
+- **Segmento 2:** operadores logísticos e instituciones de salud (coordinadores, responsables de transporte, personal administrativo y de
+
+Los artefactos de esta sección se construyen a partir de los dos patrones de comportamiento identificados en las entrevistas a profundidad (Capítulo 2.2): **decisión clínica-operativa inmediata** y **coordinación logística trazable**. Las personas descritas son arquetipos compuestos sintetizados a partir de los participantes de la investigación de campo.
+
+***
+
+### Criterios de Agrupación y Selección
+
+Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron por objetivos, tareas, responsabilidad y contexto de uso:
+
+| Conjunto | Participantes que aportan evidencia | Comportamiento común | Arquetipo resultante |
+|---|---|---|---|
+| Decisión clínica-operativa | Wilbert Toledo, Aldair Lazaro y Renato Calvo Yalan | Consulta información crítica, verifica condiciones y necesita responder con rapidez. | Personal médico y paramédicos asistenciales (Javier Soto). |
+| Coordinación logística trazable | Humberto Arellán, Gianfranco Timoteo y Karla Pacheco | Monitorea rutas y registros, coordina actores y necesita evidencia auditable. | Coordinador logístico y directores de centros de salud (Dr. Carlos Mendoza). |
+
+***
 
 ## 2.3.1. User Personas
 
@@ -11,16 +30,16 @@ A continuación, se presentan las fichas de User Persona elaboradas para cada un
 ### User Persona 1: Empresas de Transporte y Operadores Logísticos de Cadena de Frío
 Representa al personal operativo y asistencial en cabina de ambulancia (SAMU / empresas privadas), cuyo día a día enfrenta el congestionamiento limeño, la fatiga por traslados y el riesgo de desconexión accidental del suministro eléctrico de los equipos médicos.
 
-![User Persona - Paramédico Javier Soto](../assets/chapter-2/user-persona-logistics.png)
+![User Persona - Paramédico Javier Soto](assets/chapter-2/user-persona-logistics.png)
 *Nota: Elaboración propia en UXPressia para el Segmento 1 (Operadores de Transporte Asistencial).*
 
 ### User Persona 2: Centros de Salud y Cadenas Farmacéuticas
 Representa al personal médico y farmacéutico de destino (cirujanos de trasplante, patólogos, directores técnicos de farmacia hospitalaria y auditores de calidad), cuya máxima preocupación es la viabilidad biológica celular y el cumplimiento inexcusable de las directivas sanitarias de DIGEMID.
 
-![User Persona - Dr. Carlos Mendoza](../assets/chapter-2/user-persona-healthcare.png)
+![User Persona - Dr. Carlos Mendoza](assets/chapter-2/user-persona-healthcare.png)
 *Nota: Elaboración propia en UXPressia para el Segmento 2 (Centros de Salud y Farmacéuticas).*
 
----
+***
 
 ## 2.3.2. User Task Matrix
 
@@ -36,7 +55,7 @@ La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecut
 | **T06** | **Firma y validación del acta digital de transferencia de custodia** | Ambos Segmentos | Baja (Cierre de viaje) | **Crítica** | Sustituir actas en papel por registros inmutables con sellado criptográfico para DIGEMID/SUSALUD. |
 | **T07** | **Consulta de reportes históricos de excursión térmica para auditoría** | Segmento 2 (Auditoría) | Media (Mensual / Semanal) | **Media-Alta** | Certificar trazabilidad técnica ante auditorías hospitalarias e inspecciones regulatorias. |
 
----
+***
 
 ## 2.3.3. User Journey Mapping
 
@@ -45,16 +64,16 @@ El **User Journey Mapping** ilustra la secuencia de experiencias, emociones, pun
 ### User Journey Map 1: Operador de Transporte Asistencial (Paramédico Javier Soto)
 Mapea el recorrido desde la recepción de la orden de emergencia, la conexión vehicular del contenedor, la navegación en el tráfico limeño asistido por telemetría IoT, hasta la entrega formal en rampa hospitalaria.
 
-![User Journey Map - Operadores Logísticos](../assets/chapter-2/user-journey-medical.png)
+![User Journey Map - Operadores Logísticos](assets/chapter-2/user-journey-medical.png)
 *Nota: Elaboración propia en UXPressia comparando el flujo As-Is (manual con incertidumbre) vs. To-Be (asistido con Medical SMARTBOX).*
 
 ### User Journey Map 2: Director Médico / Químico Farmacéutico (Dr. Carlos Mendoza)
 Mapea la experiencia desde la coordinación de la solicitud urgente, el seguimiento en tiempo real de la temperatura y el ETA en el portal web, hasta la validación de la carga con token OTP en quirófano.
 
-![User Journey Map - Centros de Salud](../assets/chapter-2/user-journey-logistics-healthcare.png)
+![User Journey Map - Centros de Salud](assets/chapter-2/user-journey-logistics-healthcare.png)
 *Nota: Elaboración propia en UXPressia detallando los puntos de contacto clínicos y la mitigación de tiempos muertos.*
 
----
+***
 
 ## 2.3.4. Empathy Mapping
 
@@ -62,7 +81,7 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 
 ### Mapa de Empatía 1: Segmento Transporte y Paramédicos (Javier Soto)
 
-![Empathy Map - Paramédico Javier Soto](../assets/chapter-2/empathy-map-medical.png)
+![Empathy Map - Paramédico Javier Soto](assets/chapter-2/empathy-map-medical.png)
 *Nota: Elaboración propia en UXPressia para el perfil operativo de ambulancias.*
 
 * **¿Qué piensa y siente?** Necesidad de proteger la vida del paciente; preocupación constante por quedar atrapado en el tráfico de Javier Prado o la Vía Expresa mientras traslada insumos perecibles; temor a ser culpado si una muestra se degrada sin que él se entere.
@@ -74,7 +93,7 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 
 ### Mapa de Empatía 2: Segmento Salud y Farmacéutica (Dr. Carlos Mendoza)
 
-![Empathy Map - Dr. Carlos Mendoza](../assets/chapter-2/empathy-map-logistics-healthcare.png)
+![Empathy Map - Dr. Carlos Mendoza](assets/chapter-2/empathy-map-logistics-healthcare.png)
 *Nota: Elaboración propia en UXPressia para el perfil clínico de centros hospitalarios.*
 
 * **¿Qué piensa y siente?** Rigor ético y clínico; angustia ante la posibilidad de implantar un tejido dañado; presión por auditorías de DIGEMID y SUSALUD.
@@ -83,3 +102,15 @@ El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones
 * **¿Qué dice y hace?** Exige reportes de temperatura antes de aceptar cualquier lote; supervisa personalmente la apertura de contenedores críticos.
 * **Dolores (Pains):** Incertidumbre ("caja negra") sobre el trato térmico de la muestra durante el trayecto; pérdida de tiempo por actas manuscritas ilegibles.
 * **Necesidades (Gains):** Certificación digital de que la temperatura nunca superó los 8 °C; apertura con token OTP exclusivo y acta PDF con firma criptográfica.
+
+***
+
+### Síntesis de Necesidades Priorizadas
+
+| Prioridad | Necesidad | Criterio de validación |
+|:---:|---|---|
+| 1 | Conocer condición y ubicación de la carga en tiempo casi real. | El usuario identifica estado, vigencia y riesgo sin recurrir a otro canal. |
+| 2 | Recibir alertas accionables y priorizadas. | Cada alerta muestra severidad, causa, impacto, responsable y próximo paso. |
+| 3 | Mantener cadena de custodia verificable. | Cada evento registra fecha, hora, actor y evidencia. |
+| 4 | Coordinar incidentes en un único flujo. | Se asigna responsable, se registra acción y se confirma resolución. |
+| 5 | Cerrar y auditar el traslado. | Se obtiene una línea de tiempo y un reporte de cumplimiento/excepciones. |

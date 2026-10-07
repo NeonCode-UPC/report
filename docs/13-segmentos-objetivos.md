@@ -1,4 +1,4 @@
-﻿# 1.3. Segmentos Objetivo
+# 1.3. Segmentos Objetivo
 
 La solución propuesta está dirigida a actores que participan directa o indirectamente en el transporte de medicamentos, órganos e insumos médicos sensibles. Estos segmentos requieren información confiable, alertas oportunas y trazabilidad durante el traslado, debido a que las condiciones de conservación y los tiempos de llegada pueden impactar en la continuidad de la atención médica.
 

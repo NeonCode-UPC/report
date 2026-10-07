@@ -1,10 +1,10 @@
-﻿# 2.5. Ubiquitous Language
+# 2.5. Ubiquitous Language
 
 En esta sección se establece el glosario formal de términos y conceptos del dominio del negocio (*Smart Medical Container*), garantizando una comunicación unívoca, rigurosa y libre de ambigüedades entre los dos segmentos clave del negocio (las **empresas de transporte y operadores logísticos de cadena de frío**, y los **centros de salud y cadenas farmacéuticas** receptoras), las entidades reguladoras peruanas (MINSA, DIGEMID, DIGDOT) y el equipo de desarrollo de software.
 
 Conforme a las directrices fundamentales de *Domain-Driven Design* (Eric Evans, Martin Fowler), todos los términos se presentan en idioma inglés con su equivalente formal en español entre paréntesis. Cada definición ha sido redactada rigurosamente desde la perspectiva clínica, operativa y legal del negocio asistencial en Lima Metropolitana, asegurando que el vocabulario permanezca libre de tecnicismos de implementación de software (tales como tablas relacionales, llaves foráneas, APIs, endpoints o controladores).
 
-Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a su correspondiente *Bounded Context*, garantizando que cada concepto posea una semántica unívoca y bien delimitada dentro de las fronteras transaccionales del dominio. Cabe precisar que la estructuración en cinco (5) Bounded Contexts dentro de este glosario refleja los macro-contextos delimitados durante la fase exploratoria de requisitos del Big Picture (Capítulo 2.4), los cuales evolucionan armónicamente hacia seis (6) Bounded Contexts durante la descomposición de diseño táctico (Capítulo 4.6.1) al independizarse modularmente el aprovisionamiento de flota y suscripciones B2B. A continuación, se presenta la tabla consolidada en orden alfabético estricto (A-Z) como índice lexicográfico de referencia rápida, seguida del desglose analítico detallado por cada subdominio:
+Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a su correspondiente *Bounded Context*, garantizando que cada concepto posea una semántica unívoca y bien delimitada dentro de las fronteras transaccionales del dominio. La estructuración en cinco (5) Bounded Contexts dentro de este glosario rige de manera consistente a lo largo de todo el informe técnico, desde los requisitos hasta el diseño orientado a objetos y la base de datos relacional. A continuación, se presenta la tabla consolidada en orden alfabético estricto (A-Z) como índice lexicográfico de referencia rápida, seguida del desglose analítico detallado por cada subdominio según el orden canónico del sistema:
 
 | # | Ubiquitous Term (English / Español) | Bounded Context Asociado | Tipo de Artefacto DDD |
 |:---:|:---|:---|:---|
@@ -38,7 +38,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | 28 | **Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)** | Smart Container & Telemetry Monitoring | Value Object / Domain Event |
 | 29 | **Weight-Based Medical Stock (Stock Médico Ponderal)** | Smart Container & Telemetry Monitoring | Value Object |
 
----
+***
 
 ### **2.5.1. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
@@ -68,13 +68,13 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
     </tr>
     <tr>
       <td><strong>Fleet Container Provisioning (Aprovisionamiento y Vinculación de Flota)</strong></td>
-      <td>Proceso técnico y administrativo mediante el cual se activa, calibra y asocia un Contenedor Médico Inteligente a la flota de una institución acreditada, vinculando su número de serie de fábrica a los límites de membresía contratados.</td>
-      <td><strong>Domain Policy / Entity:</strong> <code>ContainerProvisioning</code> en <code>SmartContainer</code><br><em>Bounded Context:</em> Identity, Access &amp; Subscriptions (IAM)</td>
+      <td>Proceso técnico y administrativo mediante el cual se activa, calibra y asocia un Contenedor Médico Inteligente a la flota de una institución acreditada, supeditado a la regla de cupos comerciales contratados.</td>
+      <td><strong>Domain Policy:</strong> Regla de cupo <code>CanProvisionBox</code> en <code>SubscriptionPlan</code><br><em>Bounded Context:</em> Identity, Access &amp; Subscriptions (IAM)</td>
     </tr>
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.2. Bounded Context: Medical Transport Planning & Dispatching**
 
@@ -130,7 +130,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.3. Bounded Context: Smart Container & Telemetry Monitoring**
 
@@ -186,7 +186,8 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+
+***
 
 ### **2.5.4. Bounded Context: Critical Alerting & Incident Response**
 
@@ -222,7 +223,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
----
+***
 
 ### **2.5.5. Bounded Context: Chain of Custody & Traceability**
 
