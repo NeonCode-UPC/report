@@ -61,6 +61,7 @@ Para mantener la máxima calidad, legibilidad y mantenibilidad del código fuent
     * Clases, interfaces, métodos y propiedades en `PascalCase` (ejemplo: `SmartContainer`, `ITelemetryService`, `RecordTelemetrySnapshot`).
     * Parámetros y variables locales en `camelCase` (ejemplo: `ambientTemperature`, `batteryLevel`).
     * Constantes en `PascalCase` según el estándar de Microsoft (ejemplo: `MaxCriticalTemperatureCelsius`).
+    * Generación de Identidades: Toda instanciación de identificadores de entidades maestras y transaccionales en capas de dominio y factorías implementa la API nativa `Guid.CreateVersion7()` de .NET 10 (RFC 9562), asegurando ordenamiento temporal (*k-sortable*) y compatibilidad con persistencia relacional en MySQL.
 * **Estándar de Formato Frontend (Vue.js / HTML / CSS / JS):** Se aplican *Prettier* y *ESLint* configurados bajo las reglas oficiales de la *Vue 3 Style Guide*:
     * Componentes Single-File (`.vue`) en `PascalCase` (ejemplo: `TelemetryCard.vue`, `AlertBanner.vue`).
     * Funciones y propiedades reactivas en `camelCase`.
