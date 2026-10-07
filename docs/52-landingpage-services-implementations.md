@@ -502,26 +502,180 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
 
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
 
-| **Sprint #** | **Sprint 2** |
-|---|---|
-| **User Story** | **Work-Item / Task** |
+<table>
+  <tr>
+    <td><strong>Sprint #</strong></td>
+    <td colspan="7"><strong>Sprint 2</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>User Story</strong></td>
+    <td colspan="6"><strong>Work-Item / Task</strong></td>
+  </tr>
+  <tr>
+    <th>Story Id</th>
+    <th>Story Title</th>
+    <th>Task Id</th>
+    <th>Task Title</th>
+    <th>Task Description</th>
+    <th>Estimation<br>(Hours)</th>
+    <th>Assigned To</th>
+    <th>Status<br>(To-do / In Process / To Review / Done)</th>
+  </tr>
 
-| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-|---|---|---|---|---|---:|---|---|
-| US09 | Ingesta de Telemetría IoT (API) | TSK-09-01 | Implementación del endpoint de ingesta de telemetría | Implementación del endpoint POST para recibir datos de temperatura, peso, apertura, batería y fecha/hora del contenedor. | 8 h | Jhon Jaramillo | Done |
-| US09 | Ingesta de Telemetría IoT (API) | TSK-09-02 | Validación del payload y autenticación del dispositivo | Validación de los datos recibidos y del token de autenticación del dispositivo IoT. | 6 h | Jhon Jaramillo | Done |
-| US09 | Ingesta de Telemetría IoT (API) | TSK-09-03 | Persistencia de lecturas de telemetría | Registro de las lecturas válidas de telemetría en la base de datos. | 6 h | Jhon Jaramillo | Done |
-| US07 | Alta de Unidades de Ambulancia | TSK-07-01 | Creación del modelo de datos de Ambulancias | Creación del modelo de datos de ambulancias en MySQL Server 8.0 mediante Entity Framework Core 10.0. | 4 h | Renzo Santos | Done |
-| US07 | Alta de Unidades de Ambulancia | TSK-07-02 | Desarrollo de endpoints CRUD | Desarrollo de endpoints CRUD para el registro y consulta de vehículos de transporte. | 6 h | Renzo Santos | Done |
-| US07 | Alta de Unidades de Ambulancia | TSK-07-03 | Interfaz web para registro de unidades | Desarrollo del formulario web y listado de unidades registradas. | 6 h | Renzo Santos | Done |
-| US08 | Vinculación de Contenedor Inteligente | TSK-08-01 | Desarrollo del módulo backend de asignación física | Implementación de la relación 1:1 entre la ambulancia y el contenedor IoT. | 8 h | Renzo Santos | Done |
-| US08 | Vinculación de Contenedor Inteligente | TSK-08-02 | Validación de estados del dispositivo | Validación para impedir la reasignación de un contenedor que ya se encuentre ocupado. | 5 h | Renzo Santos | Done |
-| US08 | Vinculación de Contenedor Inteligente | TSK-08-03 | Interfaz web de vinculación | Interfaz para vincular el contenedor mediante UUID/MAC. | 6 h | Renzo Santos | Done |
-| US12 | Consulta de Telemetría e Indicadores (API) | TSK-12-01 | Implementación del endpoint de consulta de métricas | Implementación del endpoint GET para consultar las últimas mediciones de un contenedor. | 6 h | Jhon Jaramillo | Done |
-| US12 | Consulta de Telemetría e Indicadores (API) | TSK-12-02 | Construcción del objeto de métricas consolidadas | Construcción de la respuesta con temperatura, batería, escotilla, peso y fecha/hora de sincronización. | 4 h | Jhon Jaramillo | Done |
-| US10 | Monitoreo Térmico y de Apertura | TSK-10-01 | Visualización de temperatura y estado de escotilla | Implementación de la visualización de temperatura y estado de apertura del contenedor. | 6 h | Jhon Jaramillo | Done |
-| US10 | Monitoreo Térmico y de Apertura | TSK-10-02 | Actualización en tiempo real de telemetría | Actualización de las lecturas en el panel sin requerir recarga manual. | 6 h | Jhon Jaramillo | Done |
-| US10 | Monitoreo Térmico y de Apertura | TSK-10-03 | Gestión visual de pérdida de señal | Representación del estado de desconexión cuando no se reciben lecturas durante el tiempo establecido. | 4 h | Jhon Jaramillo | Done |
+  <tr>
+    <td>US09</td>
+    <td>Ingesta de Telemetría IoT</td>
+    <td>TSK-09-01</td>
+    <td>Implementación del endpoint de ingesta</td>
+    <td>Implementación del endpoint POST para recibir datos de temperatura, peso, apertura y batería.</td>
+    <td>8 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US09</td>
+    <td>Ingesta de Telemetría IoT</td>
+    <td>TSK-09-02</td>
+    <td>Validación del payload y autenticación</td>
+    <td>Validación de los datos recibidos y del token de autenticación del dispositivo IoT.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US09</td>
+    <td>Ingesta de Telemetría IoT</td>
+    <td>TSK-09-03</td>
+    <td>Persistencia de lecturas</td>
+    <td>Registro de las lecturas válidas de telemetría.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US07</td>
+    <td>Alta de Unidades de Ambulancia</td>
+    <td>TSK-07-01</td>
+    <td>Creación del modelo de datos de Ambulancias</td>
+    <td>Creación del modelo de datos de ambulancias.</td>
+    <td>4 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US07</td>
+    <td>Alta de Unidades de Ambulancia</td>
+    <td>TSK-07-02</td>
+    <td>Desarrollo de endpoints CRUD</td>
+    <td>Desarrollo de funcionalidades para el registro y consulta de vehículos.</td>
+    <td>6 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US07</td>
+    <td>Alta de Unidades de Ambulancia</td>
+    <td>TSK-07-03</td>
+    <td>Interfaz web para registro</td>
+    <td>Desarrollo del formulario y listado de unidades registradas.</td>
+    <td>6 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US08</td>
+    <td>Vinculación de Contenedor Inteligente</td>
+    <td>TSK-08-01</td>
+    <td>Desarrollo del módulo de asignación</td>
+    <td>Implementación de la relación entre ambulancia y contenedor IoT.</td>
+    <td>8 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US08</td>
+    <td>Vinculación de Contenedor Inteligente</td>
+    <td>TSK-08-02</td>
+    <td>Validación de estados del dispositivo</td>
+    <td>Validación para impedir la reasignación de un contenedor ocupado.</td>
+    <td>5 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US08</td>
+    <td>Vinculación de Contenedor Inteligente</td>
+    <td>TSK-08-03</td>
+    <td>Interfaz web de vinculación</td>
+    <td>Interfaz para vincular el contenedor mediante UUID/MAC.</td>
+    <td>6 h</td>
+    <td>Renzo Santos</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US12</td>
+    <td>Consulta de Telemetría e Indicadores</td>
+    <td>TSK-12-01</td>
+    <td>Endpoint de consulta de métricas</td>
+    <td>Consulta de las últimas mediciones de un contenedor.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US12</td>
+    <td>Consulta de Telemetría e Indicadores</td>
+    <td>TSK-12-02</td>
+    <td>Métricas consolidadas</td>
+    <td>Construcción de la respuesta con temperatura, batería, escotilla, peso y fecha/hora.</td>
+    <td>4 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US10</td>
+    <td>Monitoreo Térmico y de Apertura</td>
+    <td>TSK-10-01</td>
+    <td>Visualización de temperatura y escotilla</td>
+    <td>Visualización de temperatura y estado de apertura del contenedor.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US10</td>
+    <td>Monitoreo Térmico y de Apertura</td>
+    <td>TSK-10-02</td>
+    <td>Actualización de telemetría</td>
+    <td>Actualización de las lecturas del panel.</td>
+    <td>6 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US10</td>
+    <td>Monitoreo Térmico y de Apertura</td>
+    <td>TSK-10-03</td>
+    <td>Gestión de pérdida de señal</td>
+    <td>Representación del estado de desconexión cuando no se reciben lecturas.</td>
+    <td>4 h</td>
+    <td>Jhon Jaramillo</td>
+    <td>Done</td>
+  </tr>
+</table>
 
 ### 5.2.2.4. Development Evidence for Sprint Review
 
@@ -537,3 +691,73 @@ Durante el Sprint 2 se realizaron avances en la implementación e integración d
 | frontend | develop | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
 | frontend | develop | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
 | frontend | develop | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
+
+### 5.2.2.5. Execution Evidence for Sprint Review
+
+En el Sprint 2 se logró avanzar en la implementación e integración de las principales funcionalidades de la Web Application correspondientes a los Bounded Contexts definidos para la solución. Durante este Sprint se desarrollaron y consolidaron funcionalidades relacionadas con el monitoreo de contenedores inteligentes y telemetría, gestión de alertas e incidentes, identidad y suscripciones, trazabilidad de cadena de custodia y planificación de transporte médico.
+
+**Video de Demostración de Navegación (Web Application):** [Ver video aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
+
+**Screenshots de Identity, Access & Subscriptions (IAM)**
+
+> [Vista de Usuarios y Roles|500](PEGAR_AQUÍ_EL_LINK_DE_GITHUB_DE_LA_IMAGEN)
+
+> *Vista de Usuarios y Roles*
+
+> [Vista de Suscripción|500](PEGAR_AQUÍ_EL_LINK_DE_GITHUB_DE_LA_IMAGEN)
+
+> *Vista de Suscripción*
+
+### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2 no se desarrollaron ni implementaron servicios web asociados al backend. El alcance de esta entrega estuvo enfocado principalmente en la implementación de la primera versión de las Frontend Web Applications, desarrolladas con Vue.js, PrimeVue y Pinia.
+
+Por este motivo, no se presentan endpoints OpenAPI ni evidencias de interacción con servicios backend en esta sección. La implementación de los Web Services se encuentra contemplada para una etapa posterior del proyecto.
+
+### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2 se realizaron las actividades de despliegue correspondientes a los productos incluidos en el alcance de la entrega TB1. En esta etapa se consideró la nueva versión del Landing Page y la primera versión de las Frontend Web Applications.
+
+#### Landing Page
+
+Se realizó el despliegue de la nueva versión del Landing Page, incorporando las mejoras y correcciones desarrolladas durante los Sprints anteriores.
+
+**URL del Landing Page:**  
+[PEGAR AQUÍ EL LINK]
+
+**Evidencia del despliegue:**
+
+> [Insertar captura del Landing Page desplegado]
+
+*Landing Page desplegado y disponible para su visualización.*
+
+#### Frontend Web Application
+
+Durante el Sprint 2 se implementó y desplegó la primera versión de la Frontend Web Application de Medical SmartBox. Esta versión integra las funcionalidades desarrolladas por los integrantes del equipo para los diferentes Bounded Contexts.
+
+**URL de la Web Application:**  
+[PEGAR AQUÍ EL LINK]
+
+**Evidencia del despliegue:**
+
+> [Insertar captura de la Web Application desplegada]
+
+*Primera versión de la Frontend Web Application desplegada.*
+
+#### Web Services
+
+Los Web Services no forman parte del despliegue correspondiente a esta entrega, debido a que su primera versión se encuentra contemplada para una etapa posterior del proyecto.
+
+### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el equipo NeonCode trabajó de manera colaborativa en la implementación e integración de las funcionalidades correspondientes a los cinco Bounded Contexts de Medical SmartBox: Smart Container & Telemetry Monitoring, Critical Alerting & Incident Response, Identity, Access & Subscriptions, Chain of Custody & Traceability y Medical Transport Planning & Dispatching.
+
+Cada integrante asumió responsabilidades sobre los diferentes Bounded Contexts, permitiendo desarrollar las funcionalidades en paralelo y avanzar de manera organizada. Se utilizó GitHub como herramienta principal de control de versiones, gestionando el trabajo mediante ramas de funcionalidad y commits individuales para registrar los avances realizados durante el Sprint.
+
+La integración del trabajo se realizó progresivamente, consolidando las funcionalidades desarrolladas por los integrantes en la Web Application y permitiendo disponer de una versión integrada de los diferentes Bounded Contexts al finalizar el Sprint.
+
+**Evidencia de colaboración del equipo**
+
+[Team Collaboration Insights – Sprint 2|500]<img width="833" height="657" alt="Captura de pantalla 2026-10-06 223905" src="https://github.com/user-attachments/assets/38f09b67-f13a-4209-b42c-f9ddb2d2822c" />
+
+*Nota: Evidencia de colaboración del equipo durante el Sprint 2, mostrando la actividad registrada en GitHub mediante commits y contribuciones de los integrantes.*
