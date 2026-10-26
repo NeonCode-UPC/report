@@ -57,20 +57,32 @@ Los porcentajes se calculan sobre las tres entrevistas de cada segmento (n = 3).
 
 ***
 
-## 2.3.2. User Task Matrix
+### 2.3.2. User Task Matrix
 
-La **User Task Matrix** consolida y prioriza las tareas fundamentales que ejecutan los usuarios en el ecosistema de transporte médico, clasificándolas según su frecuencia de ejecución y su nivel de criticidad o impacto para la viabilidad de la carga y el paciente.
+La User Task Matrix reúne las tareas que realizan las dos personas para cumplir sus objetivos en el traslado de productos médicos, **independientemente de la existencia de una solución de software**. Para cada tarea se indica la frecuencia con que se realiza y su importancia para el resultado del traslado. Las tareas se identificaron a partir de las entrevistas E1 a E6.
 
-| # | Tarea Clave de Usuario | Segmento Principal | Frecuencia | Criticidad / Importancia | Dolor u Oportunidad Asociada |
-| :-: | :--- | :--- | :---: | :---: | :--- |
-| **T01** | **Monitoreo continuo de temperatura interna del contenedor** | Ambos Segmentos | Alta (Tiempo real) | **Crítica** | Evitar la pérdida irreversible de órganos y hemoderivados por excursiones térmicas inadvertidas. |
-| **T02** | **Supervisión de nivel de batería interna y conexión a 12V DC** | Segmento 1 (Ambulancia) | Alta (En ruta) | **Alta** | Prevenir descargas no detectadas por baches o desconexión del cable de 12V en cabina vehicular. |
-| **T03** | **Recepción y reconocimiento de alertas críticas en cabina** | Segmento 1 (Ambulancia) | Media / Por excepción | **Crítica** | Proveer alarmas audibles y visuales no intrusivas que permitan actuar sin distraer la conducción. |
-| **T04** | **Monitoreo remoto de ruta y tiempo estimado de arribo (ETA)** | Segmento 2 (Hospital) | Alta (En tránsito) | **Alta** | Notificación anticipada (10 min antes) para despejar rampa de trauma shock y alistar quirófano. |
-| **T05** | **Desbloqueo seguro de tapa mediante clave dinámica OTP** | Segmento 2 (Receptor) | Baja (Una vez por viaje) | **Crítica** | Garantizar que únicamente el personal médico autorizado acceda a la carga en destino. |
-| **T06** | **Firma y validación del acta digital de transferencia de custodia** | Ambos Segmentos | Baja (Cierre de viaje) | **Crítica** | Sustituir actas en papel por registros inmutables con sellado criptográfico para DIGEMID/SUSALUD. |
-| **T07** | **Consulta de reportes históricos de excursión térmica para auditoría** | Segmento 2 (Auditoría) | Media (Mensual / Semanal) | **Media-Alta** | Certificar trazabilidad técnica ante auditorías hospitalarias e inspecciones regulatorias. |
+Escala: Alta, Media y Baja. El símbolo "—" indica que la persona no realiza la tarea.
 
+| Tarea | Aldair Lazaro (Segmento 1): Frecuencia | Aldair Lazaro (Segmento 1): Importancia | Gianfranco Timoteo (Segmento 2): Frecuencia | Gianfranco Timoteo (Segmento 2): Importancia |
+|---|---|---|---|---|
+| T01. Verificar la temperatura del contenedor con termómetro | Media | Alta | Media | Alta |
+| T02. Conectar y vigilar los equipos al tomacorriente de 12 V del vehículo | Media | Media | — | — |
+| T03. Conducir o gestionar la ruta en el tráfico para cumplir la hora de llegada | Alta | Alta | Media | Alta |
+| T04. Comunicarse por llamada o WhatsApp para informar o consultar ubicación y hora de llegada | Alta | Media | Alta | Alta |
+| T05. Registrar la entrega en planillas o actas de papel | Alta | Alta | Alta | Alta |
+| T06. Descargar y leer los datos del datalogger USB en destino | — | — | Media | Alta |
+| T07. Consolidar las actas y registros en hojas de cálculo | — | — | Alta | Alta |
+| T08. Auditar la recepción y las discrepancias de temperatura | — | — | Alta | Alta |
+| T09. Gestionar reclamos por lotes rechazados o fuera de rango | Baja | Alta | Media | Alta |
+| T10. Organizar la recepción (citas, quirófano o sala) según la hora de llegada | — | — | Media | Alta |
+
+**Análisis de la matriz**
+
+Para Aldair Lazaro destacan T03, T04 y T05: conducir en el tráfico limeño, comunicarse con el destino y registrar la entrega en papel. Para Gianfranco Timoteo destacan T04, T05, T07 y T08: coordinar la llegada, mantener los registros y auditar las discrepancias.
+
+Ambas personas coinciden en T01, T04, T05 y T09. Es decir, hoy verifican la temperatura de forma manual, se comunican por llamada o mensaje y dependen de registros en papel. Esto concuerda con el hallazgo de la sección 2.2.3, donde 6 de 6 entrevistados dependen de registros manuales.
+
+La diferencia principal es el momento en que actúan: el Segmento 1 se concentra en el tránsito y la entrega, y el Segmento 2 en la preparación de la recepción, la consolidación de registros y la auditoría posterior.
 ***
 
 ## 2.3.3. User Journey Mapping
