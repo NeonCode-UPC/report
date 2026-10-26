@@ -17,7 +17,7 @@ El **Sprint Planning 1** formaliza los aspectos principales de la reunión de pl
 | Time | 19:00 - 21:30 |
 | Location | Sesión virtual sincrónica vía Microsoft Teams / Discord |
 | Prepared By | Jaramillo Peña, Jhon Alexander |
-| Attendees (to planning meeting) | Jaramillo Peña, Jhon Alexander / Espinoza Rojas, Aaron / Gargate Lazo, Santiago / Munayco Pérez, Maria / Santos Sánchez, Renzo |
+| Attendees (to planning meeting) | Jaramillo Peña, Jhon Alexander / Espinoza Rojas, Aaron / Munayco Pérez, Maria / Santos Sánchez, Renzo |
 | **Sprint n – 1 Review Summary** | **Sprint 0 (Inception):** Se consolidaron las bases del proyecto, necesidad médica, análisis comparativo de competidores (Sensitech, Tracklink Perú, Controlant), investigación de campo con 6 entrevistas a profundidad, User Personas (Javier Soto, Dr. Carlos Mendoza), EventStorming y Style Guidelines. El Product Owner aprobó el alcance inicial del backlog. |
 | **Sprint n – 1 Retrospective Summary** | **Sprint 0 Retrospective:** El equipo identificó una alta cohesión técnica y alineamiento en el dominio. Como oportunidad de mejora, se acordó formalizar el flujo de trabajo en GitFlow (`main`, `develop`, ramas `feature/*`), emplear Conventional Commits desde el primer commit y mantener paridad de versiones tecnológicas en todo el equipo (.NET 10 LTS, MySQL 8.0, Node.js 20+). |
 | **Sprint Goal & User Stories** | **Sprint Goal & User Stories** |
@@ -85,16 +85,6 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
 </tr>
 <tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Gargate Paredes, Santiago</strong></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>Santiago-Gargate</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-</tr>
-<tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Munayco Apolaya, Maria Luisa</strong></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>MunaycoMaria</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
@@ -136,17 +126,17 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 | **User Story** | **Work-Item / Task** |
 
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In Process / To Review / Done)** |
-|---|---|---|---|---|---:|---|---|
-| US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco | Done |
-| US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación del layout para diferentes tamaños de pantalla. | 4 h | Santiago Gargate | Done |
-| US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza | Done |
-| US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Validación de RUC, correo corporativo y mensajes de retroalimentación. | 6 h | Jhon Jaramillo | Done |
-| US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Implementación visual e interacción del acordeón de preguntas frecuentes. | 4 h | Maria Munayco | Done |
-| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado de entidad institución | Definición del modelo de datos para instituciones de salud. | 5 h | Jhon Jaramillo | Done |
-| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de registro institucional | Definición de los contratos y reglas de registro institucional. | 7 h | Renzo Santos | Done |
-| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación del flujo de autenticación y verificación mediante OTP. | 5 h | Santiago Gargate | Done |
-| US03 | Endpoint de Autenticación de Usuarios | TSK-03-01 | Diseño de contratos OpenAPI | Especificación del contrato de autenticación y estructura de respuesta. | 6 h | Renzo Santos | Done |
-| US03 | Endpoint de Autenticación de Usuarios | TSK-03-02 | Arquitectura de dominio para identidad | Definición de clases de dominio, Value Objects y reglas de identidad. | 5 h | Aaron Espinoza | Done |
+|---|---|---|---|---|---:|-----------------|---|
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco   | Done |
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación del layout para diferentes tamaños de pantalla. | 4 h | Renzo Santos    | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza  | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Validación de RUC, correo corporativo y mensajes de retroalimentación. | 6 h | Jhon Jaramillo  | Done |
+| US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Implementación visual e interacción del acordeón de preguntas frecuentes. | 4 h | Maria Munayco   | Done |
+| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado de entidad institución | Definición del modelo de datos para instituciones de salud. | 5 h | Jhon Jaramillo  | Done |
+| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de registro institucional | Definición de los contratos y reglas de registro institucional. | 7 h | Renzo Santos    | Done |
+| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación del flujo de autenticación y verificación mediante OTP. | 5 h | Maria Munayco   | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-01 | Diseño de contratos OpenAPI | Especificación del contrato de autenticación y estructura de respuesta. | 6 h | Renzo Santos    | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-02 | Arquitectura de dominio para identidad | Definición de clases de dominio, Value Objects y reglas de identidad. | 5 h | Aaron Espinoza  | Done |
 ### 5.2.1.4. Development Evidence for Sprint Review
 
 A continuación se documenta el registro histórico de confirmaciones de cambios (commits) realizadas en el repositorio oficial del Landing Page (`NeonCode-UPC/landing-page`), evidenciando el cumplimiento estricto del estándar **Conventional Commits** y el trabajo colaborativo en ramas de GitFlow:
@@ -334,17 +324,17 @@ En esta sección se detalla nuestra organizacion para el segundo avance de este 
 
 El Sprint Planning 2 tuvo como propósito establecer el objetivo, alcance y responsabilidades del segundo ciclo de desarrollo. El equipo priorizó las historias de usuario relacionadas con el registro de unidades de ambulancia, la vinculación de contenedores inteligentes y la gestión de información de telemetría.
 
-| **Sprint #** | **Sprint 2** |
-|---|---|
-| **Sprint Planning Background** | **Sprint Planning 2** |
-| **Date** | 2026-10-06 |
-| **Time** | 20:30 PM |
-| **Location** | Reunión virtual mediante Google Meet |
-| **Prepared By** | Santiago Gargate |
-| **Attendees (to planning meeting)** | Santiago Gargate / Maria Munayco / Aaron Espinoza / Jhon Jaramillo / Renzo Santos |
+| **Sprint #** | **Sprint 2**                                                                                                                                                                                                             |
+|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background** | **Sprint Planning 2**                                                                                                                                                                                                    |
+| **Date** | 2026-10-06                                                                                                                                                                                                               |
+| **Time** | 20:30 PM                                                                                                                                                                                                                 |
+| **Location** | Reunión virtual mediante Google Meet                                                                                                                                                                                     |
+| **Prepared By** | Aaron Espinoza                                                                                                                                                                                                           |
+| **Attendees (to planning meeting)** | Maria Munayco / Aaron Espinoza / Jhon Jaramillo / Renzo Santos                                                                                                                                                           |
 | **Sprint Goal & User Stories** | **Sprint 2 Goal:** Implementar e integrar las funcionalidades necesarias para registrar unidades de ambulancia, vincular contenedores inteligentes y gestionar la información de telemetría requerida para su monitoreo. |
-| **Sprint 2 Velocity** | 29 Story Points |
-| **Sum of Story Points** | 29 Story Points |
+| **Sprint 2 Velocity** | 29 Story Points                                                                                                                                                                                                          |
+| **Sum of Story Points** | 29 Story Points                                                                                                                                                                                                          |
 
 El Sprint 2 comprende las siguientes historias de usuario:
 
@@ -363,12 +353,11 @@ Para el Sprint 2 se estableció la matriz de liderazgo y colaboración considera
 **L = Lead / C = Collaborator**
 
 | **Integrante** | **Aspecto 1:** Smart Container & Telemetry Monitoring **(L/C)** | **Aspecto 2:** Critical Alerting & Incident Response **(L/C)** | **Aspecto 3:** Identity, Access & Subscriptions **(L/C)** | **Aspecto 4:** Chain of Custody & Traceability **(L/C)** | **Aspecto 5:** Medical Transport Planning & Dispatching **(L/C)** |
-|---|---|---|---|---|---|
-| **Jhon Jaramillo** | **L** | C | C | C | C |
-| **Aaron Espinoza** | C | **L** | C | C | C |
-| **Santiago Gargate** | C | C | **L** | C | C |
-| **Maria Munayco** | C | C | C | **L** | C |
-| **Renzo Santos** | C | C | C | C | **L** |
+|---|---|---|-----------------------------------------------------------|---|---|
+| **Jhon Jaramillo** | **L** | C | C                                                         | C | C |
+| **Aaron Espinoza** | C | **L** | **L**                                                     | C | C |
+| **Maria Munayco** | C | C | C                                                         | **L** | C |
+| **Renzo Santos** | C | C | C                                                         | C | **L** |
 
 La distribución permite mantener un responsable principal por aspecto y, al mismo tiempo, conservar el trabajo colaborativo entre los integrantes del equipo.
 
