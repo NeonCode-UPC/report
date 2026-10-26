@@ -1,3 +1,5 @@
 report.pdf
 *.pdf
 docs_backup/
+/.idea/indexLayout.xml
+/.idea/projectSettingsUpdater.xml
