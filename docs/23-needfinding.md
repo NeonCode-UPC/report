@@ -1,43 +1,59 @@
-# 2.3. Needfinding
+## 2.3. Needfinding
 
+El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y dificultades de los dos segmentos objetivo de Medical SmartBox. Se partió de las seis entrevistas registradas en la sección 2.2 y de su análisis. Con esa evidencia se construyeron los siguientes artefactos: User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, siguiendo las pautas de Nielsen Norman Group y de Interaction Design Foundation.
 
-El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y dificultades de los dos segmentos objetivo de Medical SMARTBOX. Se partió de las seis entrevistas de la sección Entrevistas y de su análisis. Con esa evidencia se construyeron los siguientes artefactos: User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y As-Is Scenario Mapping, siguiendo las pautas de Nielsen Norman Group y de Interaction Design Foundation.
+Los segmentos usados en todo el informe son los definidos en la sección 1.3:
 
-Los segmentos usados en todo el informe son:
+- **Segmento 1: personal médico y de emergencias.** Incluye paramédicos, enfermeros, médicos de emergencia y técnicos que participan en el traslado o recepción de productos médicos.
+- **Segmento 2: operadores logísticos e instituciones de salud.** Incluye coordinadores de ambulancias, responsables de transporte médico, supervisores de cadena de frío, hospitales, clínicas, bancos de sangre, laboratorios, centros quirúrgicos, áreas de farmacia hospitalaria y personal que planifica, supervisa o recibe traslados médicos entre instituciones de salud.
 
-- **Segmento 1:** personal médico y de emergencias (paramédicos, enfermeros, médicos y técnicos que trasladan o reciben productos médicos).
-- **Segmento 2:** operadores logísticos e instituciones de salud (coordinadores, responsables de transporte, personal administrativo y de
+### Criterios de agrupación y selección
 
-Los artefactos de esta sección se construyen a partir de los dos patrones de comportamiento identificados en las entrevistas a profundidad (Capítulo 2.2): **decisión clínica-operativa inmediata** y **coordinación logística trazable**. Las personas descritas son arquetipos compuestos sintetizados a partir de los participantes de la investigación de campo.
+Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron por objetivos, tareas, responsabilidad y contexto de uso.
 
-***
-
-### Criterios de Agrupación y Selección
-
-Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron por objetivos, tareas, responsabilidad y contexto de uso:
-
-| Conjunto | Participantes que aportan evidencia | Comportamiento común | Arquetipo resultante |
+| Segmento | Entrevistados | Comportamiento común | Persona resultante |
 |---|---|---|---|
-| Decisión clínica-operativa | Wilbert Toledo, Aldair Lazaro y Renato Calvo Yalan | Consulta información crítica, verifica condiciones y necesita responder con rapidez. | Personal médico y paramédicos asistenciales (Javier Soto). |
-| Coordinación logística trazable | Humberto Arellán, Gianfranco Timoteo y Karla Pacheco | Monitorea rutas y registros, coordina actores y necesita evidencia auditable. | Coordinador logístico y directores de centros de salud (Dr. Carlos Mendoza). |
+| Segmento 1: personal médico y de emergencias | E1 Wilbert Toledo, E2 Aldair Lazaro, E3 Renato Calvo Yalan | Trasladan productos médicos en ambulancia mientras atienden al paciente o conducen, y no pueden verificar con frecuencia el estado de la carga. | Aldair Lazaro |
+| Segmento 2: operadores logísticos e instituciones de salud | E4 Humberto Arellán, E5 Gianfranco Timoteo, E6 Karla Pacheco | Coordinan, reciben y auditan traslados, y dependen de llamadas y registros manuales para conocer su estado. | Gianfranco Timoteo |
 
-***
+### 2.3.1. User Personas
 
-## 2.3.1. User Personas
+Se elaboró una ficha de User Persona por segmento en UXPressia. Cada ficha se basa en un entrevistado representativo y en los patrones comunes de su segmento, que se resumen en la tabla de trazabilidad.
 
-A continuación, se presentan las fichas de User Persona elaboradas para cada uno de los dos segmentos objetivo de Medical SMARTBOX, sintetizando arquetipos construidos con base en las entrevistas a profundidad y la investigación de campo.
+**User Persona 1: Aldair Lazaro (Segmento 1: personal médico y de emergencias)**
 
-### User Persona 1: Empresas de Transporte y Operadores Logísticos de Cadena de Frío
-Representa al personal operativo y asistencial en cabina de ambulancia (SAMU / empresas privadas), cuyo día a día enfrenta el congestionamiento limeño, la fatiga por traslados y el riesgo de desconexión accidental del suministro eléctrico de los equipos médicos.
+Aldair tiene 26 años, vive en San Martín de Porres y es paramédico rescatista de ambulancia con 3 años de experiencia en emergencias prehospitalarias. Realiza entre 3 y 6 traslados asistenciales por turno y vigila al paciente y los fármacos a la vez. Registra la entrega en planillas de papel y se comunica con el hospital receptor por llamadas y WhatsApp.
 
-![User Persona - Paramédico Javier Soto](assets/chapter-2/user-persona-logistics.png)
-*Nota: Elaboración propia en UXPressia para el Segmento 1 (Operadores de Transporte Asistencial).*
+![User Persona - Aldair Lazaro](assets/chapter-2/user-persona-aldair.png)
+*Nota: Elaboración propia en UXPressia para el Segmento 1.*
 
-### User Persona 2: Centros de Salud y Cadenas Farmacéuticas
-Representa al personal médico y farmacéutico de destino (cirujanos de trasplante, patólogos, directores técnicos de farmacia hospitalaria y auditores de calidad), cuya máxima preocupación es la viabilidad biológica celular y el cumplimiento inexcusable de las directivas sanitarias de DIGEMID.
+**User Persona 2: Gianfranco Timoteo (Segmento 2: operadores logísticos e instituciones de salud)**
 
-![User Persona - Dr. Carlos Mendoza](assets/chapter-2/user-persona-healthcare.png)
-*Nota: Elaboración propia en UXPressia para el Segmento 2 (Centros de Salud y Farmacéuticas).*
+Gianfranco tiene 21 años, vive en Chorrillos y es coordinador de soporte y supervisor de cadena de frío en un laboratorio clínico. Audita la recepción de muestras biológicas y reactivos, y consolida en Excel las actas recibidas en papel. Detecta discrepancias de temperatura en aproximadamente el 15 % de los envíos que recibe en horas punta.
+
+![User Persona - Gianfranco Timoteo](assets/chapter-2/user-persona-gianfranco.png)
+*Nota: Elaboración propia en UXPressia para el Segmento 2.*
+
+**Trazabilidad entre las entrevistas y las personas**
+
+Los porcentajes se calculan sobre las tres entrevistas de cada segmento (n = 3).
+
+| Característica | Segmento 1 (E1, E2, E3) | Segmento 2 (E4, E5, E6) |
+|---|---|---|
+| Rango de edad | 21 a 26 años (3/3) | 21 a 49 años (3/3) |
+| Distrito | Pueblo Libre, San Martín de Porres y San Isidro (33.3 % cada uno) | Chancay, Chorrillos y Breña (33.3 % cada uno) |
+| Ocupación | Paramédico o asistente paramédico de ambulancia (100 %) | Coordinación, supervisión o monitoreo de logística, cadena de frío o rutas (100 %) |
+| Smartphone | 100 % (Android 66.7 %, iPhone 33.3 %) | 100 % (Android) |
+| Otros dispositivos | Laptop o tablet (100 %) | Laptop o PC (66.7 %) |
+| Navegador | Chrome (66.7 %; un entrevistado no lo indicó) | Chrome (66.7 %; un entrevistado no lo indicó) |
+| Canales de comunicación | WhatsApp (66.7 %), llamadas de voz (33.3 %), Waze y Google Maps (33.3 %) | Llamadas telefónicas (66.7 %), WhatsApp corporativo (33.3 %), Excel para consolidar registros (33.3 %) |
+| Variable subjetiva común | Estrés, ansiedad o presión por el tráfico y los tiempos de llegada (100 %) | Preocupación, ansiedad o agotamiento por falta de visibilidad y trazabilidad (100 %) |
+| Necesidad principal expresada | Aviso o indicador del estado de la carga sin abrir el contenedor (66.7 %) | Información digital de ubicación, hora de llegada y temperatura (100 %) |
+| Marcas e influencias | Samsung, Xiaomi, iPhone, WhatsApp, Waze, Google Maps | Android, Excel, WhatsApp |
+| Personalidad | No relevada en las entrevistas | No relevada en las entrevistas |
+| Estado civil | No relevado en las entrevistas | No relevado en las entrevistas |
+
+*Fuente: registro y resúmenes de entrevistas (sección 2.2.2).*
 
 ***
 
