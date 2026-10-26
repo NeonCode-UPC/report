@@ -44,10 +44,6 @@
 <td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Gargate Paredes, Santiago</td>
 </tr>
 <tr>
-<td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u202520310</td>
-<td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Jaramillo Mayta, Jhon Jordy</td>
-</tr>
-<tr>
 <td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u20231c995</td>
 <td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Munayco Apolaya, Maria Luisa</td>
 </tr>
