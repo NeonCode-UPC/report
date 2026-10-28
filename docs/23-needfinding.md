@@ -85,52 +85,62 @@ Ambas personas coinciden en T01, T04, T05 y T09. Es decir, hoy verifican la temp
 La diferencia principal es el momento en que actúan: el Segmento 1 se concentra en el tránsito y la entrega, y el Segmento 2 en la preparación de la recepción, la consolidación de registros y la auditoría posterior.
 ***
 
-## 2.3.3. User Journey Mapping
+### 2.3.3. User Journey Mapping
 
-El **User Journey Mapping** ilustra la secuencia de experiencias, emociones, puntos de dolor y oportunidades de interacción de los usuarios arquetípicos a lo largo de las fases de Antes (despacho y pre-enfriamiento), Durante (tránsito y telemetría activa) y Después (entrega asistencial y custodia final).
+El User Journey Mapping ilustra el recorrido **actual (As-Is)** de cada persona, es decir, cómo vive el traslado hoy, sin Medical SmartBox. Se organiza en tres fases: Antes (preparación), Durante (tránsito) y Después (entrega y cierre). Cada mapa se elaboró en UXPressia y está vinculado a su User Persona. El contenido se basa en las entrevistas E1 a E6.
 
-### User Journey Map 1: Operador de Transporte Asistencial (Paramédico Javier Soto)
-Mapea el recorrido desde la recepción de la orden de emergencia, la conexión vehicular del contenedor, la navegación en el tráfico limeño asistido por telemetría IoT, hasta la entrega formal en rampa hospitalaria.
+**User Journey Map 1: Aldair Lazaro (Segmento 1)**
 
-![User Journey Map - Operadores Logísticos](assets/chapter-2/user-journey-medical.png)
-*Nota: Elaboración propia en UXPressia comparando el flujo As-Is (manual con incertidumbre) vs. To-Be (asistido con Medical SMARTBOX).*
+| Fase | Acciones | Puntos de contacto | Puntos de dolor |
+|---|---|---|---|
+| Antes | Recibe el traslado, coloca entre 4 y 6 paquetes de gel refrigerante en el cooler y lo cierra con un pestillo plástico. Verifica la temperatura abriendo la tapa solo al inicio. | Cooler pasivo, termómetro de varilla, llamadas y WhatsApp | No sabe si el gel mantendrá la temperatura durante todo el trayecto. |
+| Durante | Conduce o acompaña la ambulancia en el tráfico, atiende al paciente y comunica su avance al hospital. | Celular, compartimento posterior de la ambulancia | No puede ver la temperatura sin abrir la tapa. Los baches pueden abrir el seguro sin que lo note. Estrés por la doble carga de vigilar al paciente y los fármacos. |
+| Después | Entrega la carga, el hospital mide la temperatura y firma la planilla de papel. | Planilla de papel autocopiativo, personal de farmacia | Si el termómetro marca fuera de rango, el lote puede ser rechazado. No puede demostrar a qué hora subió la temperatura. |
 
-### User Journey Map 2: Director Médico / Químico Farmacéutico (Dr. Carlos Mendoza)
-Mapea la experiencia desde la coordinación de la solicitud urgente, el seguimiento en tiempo real de la temperatura y el ETA en el portal web, hasta la validación de la carga con token OTP en quirófano.
+![User Journey Map - Aldair Lazaro](assets/chapter-2/user-journey-aldair.png)
+*Nota: Elaboración propia en UXPressia para la situación actual (As-Is) de Aldair Lazaro.*
 
-![User Journey Map - Centros de Salud](assets/chapter-2/user-journey-logistics-healthcare.png)
-*Nota: Elaboración propia en UXPressia detallando los puntos de contacto clínicos y la mitigación de tiempos muertos.*
+**User Journey Map 2: Gianfranco Timoteo (Segmento 2)**
 
-***
+*Escenario:* recepción de muestras biológicas y reactivos en un laboratorio clínico en hora punta, y su registro para auditoría.
 
-## 2.3.4. Empathy Mapping
+![User Journey Map - Gianfranco Timoteo](assets/chapter-2/user-journey-gianfranco.png)
 
-El **Empathy Mapping** profundiza en el modelo mental, aspiraciones, sensaciones y presiones cotidianas de los dos perfiles de usuario, permitiendo diseñar interfaces y flujos de software acordes con su contexto real de trabajo.
+*Nota: Elaboración propia en UXPressia para la situación actual (As-Is) de Gianfranco Timoteo.*
 
-### Mapa de Empatía 1: Segmento Transporte y Paramédicos (Javier Soto)
+### 2.3.4. Empathy Mapping
 
-![Empathy Map - Paramédico Javier Soto](assets/chapter-2/empathy-map-medical.png)
-*Nota: Elaboración propia en UXPressia para el perfil operativo de ambulancias.*
+El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de cada persona. Para elaborarlo en UXPressia se colocó a la User Persona al centro y cada miembro del equipo agregó observaciones sobre lo que piensa, siente, ve, oye, dice y hace, a partir de las entrevistas. Después se identificaron sus Pains y Gains y se consolidaron en equipo.
 
-* **¿Qué piensa y siente?** Necesidad de proteger la vida del paciente; preocupación constante por quedar atrapado en el tráfico de Javier Prado o la Vía Expresa mientras traslada insumos perecibles; temor a ser culpado si una muestra se degrada sin que él se entere.
-* **¿Qué ve?** Congestión vehicular caótica, baches en pistas, conductores que no ceden el paso a la ambulancia, tableros de instrumentos complejos.
-* **¿Qué oye?** Sirenas de emergencia, indicaciones por radio de la central 106, quejas de familiares y urgencia del personal médico receptor.
-* **¿Qué dice y hace?** Conduce a la defensiva, verifica visualmente los cables cada vez que puede, intenta llegar en el menor tiempo posible sin comprometer la seguridad.
-* **Dolores (Pains):** Falta de visibilidad de la temperatura interna sin abrir la tapa; estrés por desconexiones accidentales de 12V.
-* **Necesidades (Gains):** Señalización sonora clara y automática en cabina; tranquilidad de saber que la carga se mantiene en rango de 2 °C a 8 °C.
+**Mapa de empatía 1: Aldair Lazaro (Segmento 1)**
 
-### Mapa de Empatía 2: Segmento Salud y Farmacéutica (Dr. Carlos Mendoza)
+- **¿Con quién estamos empatizando?** Con Aldair Lazaro, paramédico rescatista de ambulancia de 26 años (E2).
+- **¿Qué necesita hacer?** Trasladar los medicamentos y hemoderivados en buenas condiciones mientras atiende al paciente, y lograr que el hospital acepte la entrega.
+- **¿Qué piensa y siente?** Estrés crónico por la doble carga de vigilar al paciente y proteger los fármacos. Siente desamparo ante los reclamos del hospital cuando el medicamento llega caliente.
+- **¿Qué ve?** Planillas de papel, el cooler cerrado sin forma de ver su temperatura, los baches y el tráfico.
+- **¿Qué oye?** Llamadas y mensajes del hospital receptor, y reclamos de farmacia por la demora.
+- **¿Qué dice?** Que un registro que pruebe que el frío no se rompió evitaría horas de discusiones.
+- **¿Qué hace?** Realiza de 3 a 6 traslados por turno, se comunica con el hospital por llamadas y WhatsApp, y registra cada entrega en papel.
+- **Pains:** No puede demostrar a qué hora subió la temperatura. Los baches abren los coolers sin que se note. Riesgo de rechazo del lote.
+- **Gains:** Contar con un registro que pruebe que la cadena de frío se mantuvo. Menos discusiones con farmacia.
 
-![Empathy Map - Dr. Carlos Mendoza](assets/chapter-2/empathy-map-logistics-healthcare.png)
-*Nota: Elaboración propia en UXPressia para el perfil clínico de centros hospitalarios.*
+![Empathy Map - Aldair Lazaro](assets/chapter-2/empathy-map-aldair.png)
+*Nota: Elaboración propia en UXPressia para Aldair Lazaro.*
 
-* **¿Qué piensa y siente?** Rigor ético y clínico; angustia ante la posibilidad de implantar un tejido dañado; presión por auditorías de DIGEMID y SUSALUD.
-* **¿Qué ve?** Pacientes esperando en lista de trasplante; quirófanos con alto costo por minuto; cajas de tecnopor tradicionales con hielo gel sin telemetría.
-* **¿Qué oye?** Reclamos por retrasos en cirugías programadas; exigencias regulatorias de trazabilidad documental inmutable.
-* **¿Qué dice y hace?** Exige reportes de temperatura antes de aceptar cualquier lote; supervisa personalmente la apertura de contenedores críticos.
-* **Dolores (Pains):** Incertidumbre ("caja negra") sobre el trato térmico de la muestra durante el trayecto; pérdida de tiempo por actas manuscritas ilegibles.
-* **Necesidades (Gains):** Certificación digital de que la temperatura nunca superó los 8 °C; apertura con token OTP exclusivo y acta PDF con firma criptográfica.
+**Mapa de empatía 2: Gianfranco Timoteo (Segmento 2)**
 
+- **¿Con quién estamos empatizando?** Con Gianfranco Timoteo, coordinador de soporte y supervisor de cadena de frío en un laboratorio clínico, de 21 años (E5).
+- **¿Qué necesita hacer?** Auditar la recepción de muestras biológicas y reactivos, y mantener registros confiables ante DIGEMID.
+- **¿Qué piensa y siente?** Agotamiento por conciliar hojas de ruta dispersas, temor a sanciones de DIGEMID por falta de trazabilidad y desconfianza hacia los registros anotados a mano.
+- **¿Qué ve?** Actas en papel con temperaturas manuscritas, hojas de Excel y discrepancias de temperatura en una parte de los envíos.
+- **¿Qué oye?** Comunicaciones de transportistas y brigadas sobre la ubicación y la hora de llegada de los traslados.
+- **¿Qué dice?** Que necesita una gráfica digital continua que no pueda manipularse.
+- **¿Qué hace?** Consolida manualmente en Excel los registros de las actas de papel y revisa las discrepancias de temperatura.
+- **Pains:** No puede auditar la temperatura durante el trayecto. Los registros manuscritos no son confiables. Esfuerzo manual para consolidar la información.
+- **Gains:** Un registro digital continuo y confiable de la temperatura. Menos trabajo manual al consolidar datos.
+
+![Empathy Map - Gianfranco Timoteo](assets/chapter-2/empathy-map-gianfranco.png)
+*Nota: Elaboración propia en UXPressia para Gianfranco Timoteo.*
 ***
 
 ### Síntesis de Necesidades Priorizadas
