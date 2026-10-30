@@ -102,7 +102,13 @@ El User Journey Mapping ilustra el recorrido **actual (As-Is)** de cada persona,
 
 **User Journey Map 2: Gianfranco Timoteo (Segmento 2)**
 
-*Escenario:* recepción de muestras biológicas y reactivos en un laboratorio clínico en hora punta, y su registro para auditoría.
+*Escenario:* recepción de muestras biológicas y reactivos en un laboratorio clínico u hospital receptor en hora punta, y su posterior registro para auditoría sanitaria.
+
+| Fase | Acciones | Puntos de contacto | Puntos de dolor |
+|---|---|---|---|
+| Antes | Recibe el aviso telefónico o mensaje de que un lote de muestras biológicas o hemocomponentes ha salido hacia el centro receptor. | Teléfono fijo, WhatsApp corporativo, hoja de programación diaria | No cuenta con una hora estimada de llegada (ETA) precisa ni visibilidad en vivo de la ruta para alistar el área estéril o el personal de recepción. |
+| Durante | Espera la llegada de la unidad en hora punta llamando reiteradamente al transportista; al arribar la ambulancia, mide puntualmente la temperatura con termómetro infrarrojo o descarga el datalogger USB. | Bahía de recepción, termómetro de punzón/infrarrojo, datalogger USB, acta impresa | Desconoce si hubo excursiones térmicas intermedias o aperturas del cooler en el camino; en el 15 % de los envíos en hora punta detecta desviaciones recién al abrir la caja. |
+| Después | Firma o rechaza el acta en papel, transcribe manualmente las lecturas a una hoja de cálculo Excel y archiva los folios físicos para inspecciones de DIGEMID. | Planillas de papel, computadora de escritorio (Excel), archivadores físicos | Alto desgaste operativo al digitar actas dispersas, riesgo de errores de transcripción o pérdida de hojas físicas y vulnerabilidad ante auditorías de trazabilidad. |
 
 ![User Journey Map - Gianfranco Timoteo](assets/chapter-2/user-journey-gianfranco.png)
 
