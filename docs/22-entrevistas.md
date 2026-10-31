@@ -13,7 +13,7 @@ Se elaboró una guía de entrevista semiestructurada aplicando las directrices m
 2. Identificar las herramientas, registros documentales y canales de comunicación actualmente utilizados en ruta y en almacén.
 3. Documentar incidentes críticos reales de ruptura de cadena de frío, fallas mecánicas, demoras por congestión vehicular y pérdidas de custodia.
 4. Medir los niveles de estrés, confianza, carga cognitiva y frustración del personal operativo frente a la falta de trazabilidad telemática.
-5. Extraer requerimientos funcionales prioritarios para la formulación de los arquetipos (*User Personas*), matrices de tareas y escenarios de uso.
+5. Extraer requisitos funcionales prioritarios para la formulación de los arquetipos (*User Personas*), matrices de tareas y escenarios de uso.
 
 ### Guía de Preguntas para el Segmento 1 (Personal Médico y Paramédicos de Ambulancia):
 1. **Contexto operativo:** ¿Cuál es tu rol exacto durante una guardia de emergencia y qué tipo de insumos refrigerados te toca trasladar con mayor frecuencia?
@@ -25,7 +25,7 @@ Se elaboró una guía de entrevista semiestructurada aplicando las directrices m
 7. **Puntos ciegos:** ¿En qué momento del traslado experimentas mayor incertidumbre respecto al estado de la carga?
 8. **Comunicación operativa:** ¿Por qué medios coordinas con la central de despacho y con el hospital de destino tu hora estimada de llegada (ETA)?
 9. **Criterios de entrega:** ¿Qué condiciones exige el personal del hospital receptor para aceptar o rechazar formalmente la entrega de un hemoderivado o fármaco?
-10. **Requerimiento ideal:** Si pudieras incorporar una innovación tecnológica en tu contenedor de traslado, ¿cuál resolvería tu mayor preocupación?
+10. **Requisito ideal:** Si pudieras incorporar una innovación tecnológica en tu contenedor de traslado, ¿cuál resolvería tu mayor preocupación?
 
 ### Guía de Preguntas para el Segmento 2 (Coordinadores Logísticos y Farmacéuticos Hospitalarios):
 1. **Gestión de cadena de frío:** ¿Cómo planificas y supervisas la distribución de biológicos y medicamentos termolábiles hacia ambulancias o centros periféricos?
@@ -51,15 +51,16 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 <table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.2pt; line-height: 1.2; border: 1px solid #cbd5e1;">
 <colgroup>
   <col style="width: 5%;" />
+  <col style="width: 9%;" />
+  <col style="width: 13%;" />
+  <col style="width: 15%;" />
+  <col style="width: 15%;" />
+  <col style="width: 5%;" />
   <col style="width: 10%;" />
-  <col style="width: 14%;" />
-  <col style="width: 16%;" />
-  <col style="width: 16%;" />
-  <col style="width: 6%;" />
   <col style="width: 11%;" />
-  <col style="width: 8%;" />
-  <col style="width: 6%;" />
-  <col style="width: 8%;" />
+  <col style="width: 7%;" />
+  <col style="width: 5%;" />
+  <col style="width: 5%;" />
 </colgroup>
 <thead>
 <tr style="background-color: #f1f5f9;">
@@ -70,6 +71,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Organización</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Edad</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Distrito</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Entrevistador</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Fecha</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Dur.</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Video</th>
@@ -84,6 +86,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Red de Ambulancias de Emergencia</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">21</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Pueblo Libre</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Aaron Espinoza</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">02:51 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi">Ver</a></td>
@@ -96,6 +99,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Servicio de Ambulancias y Rescate</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">26</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">San Martín de Porres</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Aaron Espinoza</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">17/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:38 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd">Ver</a></td>
@@ -108,6 +112,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Unidad Móvil de Soporte Vital</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">22</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">San Isidro</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Maria Munayco</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">17/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">02:24 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi">Ver</a></td>
@@ -120,6 +125,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Empresa de Distribución de Muestras y Fármacos</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">49</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Chancay</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Jhon Jaramillo</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:27 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc">Ver</a></td>
@@ -132,6 +138,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Laboratorio y Centro Clínico</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">21</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Chorrillos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Jhon Jaramillo</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:59 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4">Ver</a></td>
@@ -144,6 +151,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Centro de Salud Policlínico</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">25</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Breña</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Renzo Santos</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:09 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC">Ver</a></td>
@@ -182,7 +190,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 * **Datos Demográficos:** 49 años, residente en Chancay (con operaciones logísticas en Lima Norte). Dispositivos: smartphone Android gama media. Canales: llamadas telefónicas, WhatsApp corporativo.
 * **Variables Objetivas:** Maneja furgones de distribución hacia postas médicas y hospitales de la red periférica. Utiliza dataloggers USB convencionales que se leen en destino tras conectar a una computadora. Traslados con duración de 2 a 5 horas.
 * **Variables Subjetivas:** Resignación frente a la burocracia documental de recepción. Preocupación constante por averías mecánicas del aire acondicionado o fallas de refrigeración en la carretera Panamericana.
-* **Cita Textual:** *"El datalogger USB solo te dice al final del día que la carga se malogró hace tres horas. Para ese momento ya perdiste miles de soles en medicamentos y el paciente se quedó sin tratamiento."*
+* **Cita Textual:** *"El datalogger USB solo te dice al final del día que la carga se malogró hace tres horas. Para ese momento ya perdivos miles de soles en medicamentos y el paciente se quedó sin tratamiento."*
 
 #### Entrevista E5: Gianfranco Timoteo (Segmento 2)
 * **Perfil:** Coordinador de soporte y supervisor de cadena de frío en laboratorio clínico central.
@@ -234,7 +242,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
   * Supervisión de múltiples despachos simultáneos (flota de 5 a 20 unidades).
   * Exigencia regulatoria inexcusable: cumplimiento del Manual de Buenas Prácticas de Almacenamiento y Transporte de Productos Farmacéuticos (R.M. N° 833-2015/MINSA) y directivas de DIGEMID.
   * Tiempos de retención de actas documentales: mínimo 12 meses archivadas físicamente.
-  * Requerimiento de auditoría: gráficas continuas de temperatura cada 30 a 60 segundos durante todo el trayecto.
+  * Requisito de auditoría: gráficas continuas de temperatura cada 30 a 60 segundos durante todo el trayecto.
 * **Variables Subjetivas y Modelo Mental:**
   * Obsesión por el cumplimiento normativo y aversión al riesgo regulatorio (clausura temporal de farmacias o multas de SUSALUD).
   * Escepticismo ante reportes llenados a mano con lapicero; preferencia por información digital inmutable con sello de tiempo (*timestamp*).
@@ -255,7 +263,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
 
 ### D. Implicancias Directas para la Arquitectura y el Diseño del Sistema
 
-| Hallazgo Empírico de Entrevistas | Requerimiento Funcional Derivado | Componente de la Solución (Arquitectura / UI) |
+| Hallazgo Empírico de Entrevistas | Requisito Funcional Derivado | Componente de la Solución (Arquitectura / UI) |
 | :--- | :--- | :--- |
 | El paramédico no puede abrir la tapa para mirar la temperatura. | Telemetría continua en vivo proyectada en pantalla sin manipular el contenedor. | Sensor Dallas DS18B20 + Pantalla en Web App / Tablet (`US10`). |
 | Aperturas accidentales o sustracción de insumos en ruta. | Bloqueo electromecánico de tapa y control de masa del contenido. | Cerrojo solenoide con token OTP (`US17`) y celda de carga HX711 (`US11`). |
