@@ -29,30 +29,26 @@ El backlog se encuentra organizado secuencialmente bajo un criterio estricto de 
 
 ### 3.3.1. Engineering Tasks
 
-A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales) en tareas de ingeniería (*Engineering Tasks*). Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
+A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales: `US04`, `US05`, `US06`, `US01`, `US02` y `US03`) en tareas de ingeniería (*Engineering Tasks*), en correspondencia exacta con el *Sprint Backlog 1* de la sección `5.2.1.3`. Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
 
 #### **US04: Exploración de Propuesta de Valor Logística (2 SP)**
-* **TSK-04-01:** Maquetación responsive de la sección "Soluciones Logísticas" en el Landing Page (HTML5 / Tailwind CSS). **[6 Horas]**
-* **TSK-04-02:** Integración de componentes visuales interactivos para especificaciones técnicas del contenedor inteligente. **[4 Horas]**
+* **TSK-04-01:** Maquetación HTML5/CSS3 de secciones Hero y Propuesta (estructuración semántica de Hero, badges térmicos y características de contenedores IoT). **[6 Horas]**
+* **TSK-04-02:** Integración de diseño responsive mobile-first (adaptación del layout para diferentes tamaños de pantalla). **[4 Horas]**
 
 #### **US05: Solicitud de Demostración Corporativa (2 SP)**
-* **TSK-05-01:** Desarrollo del formulario de contacto para clientes corporativos con validación de campos en cliente (JavaScript/TypeScript). **[5 Horas]**
-* **TSK-05-02:** Configuración del servicio backend/mailing para la recepción y reenvío de prospectos a ventas. **[6 Horas]**
+* **TSK-05-01:** Maquetación de formulario B2B (estructura visual del formulario de captura de prospectos institucionales). **[5 Horas]**
+* **TSK-05-02:** Validación en cliente y retroalimentación (validación de RUC, correo corporativo y mensajes de retroalimentación). **[6 Horas]**
 
 #### **US06: Consulta de Preguntas Frecuentes (1 SP)**
-* **TSK-06-01:** Implementación del componente acordeón de FAQ y buscador por palabra clave en el Landing Page. **[4 Horas]**
+* **TSK-06-01:** Componente interactivo acordeón FAQ (implementación visual e interacción del acordeón de preguntas frecuentes). **[4 Horas]**
 
 #### **US01: Registro de Institución de Salud (3 SP)**
-* **TSK-01-01:** Diseño y maquetación del formulario web de registro institucional hospitalario. **[5 Horas]**
-* **TSK-01-02:** Creación de endpoints en API REST para recepción de datos de registro y validación de RUC duplicado. **[7 Horas]**
-* **TSK-01-03:** Implementación del servicio de envío de correos electrónicos de confirmación de cuenta. **[4 Horas]**
+* **TSK-01-01:** Modelado de entidad institución (`HospitalOrganization` y definición del modelo de datos para instituciones de salud). **[5 Horas]**
+* **TSK-01-02:** Especificación de registro institucional (definición de los contratos y reglas de validación de RUC e institución). **[7 Horas]**
 
-#### **US07: Alta de Unidades de Ambulancia (3 SP)**
-* **TSK-07-01:** Creación del modelo de datos de Ambulancias en la base de datos MySQL Server 8.0 (InnoDB) mediante Entity Framework Core 10.0. **[4 Horas]**
-* **TSK-07-02:** Desarrollo de endpoints CRUD para el registro y consulta de vehículos de transporte. **[6 Horas]**
-* **TSK-07-03:** Interfaz web para el formulario de registro y lista de unidades registradas. **[6 Horas]**
+#### **US02: Autenticación de Personal de Emergencia (3 SP)**
+* **TSK-02-01:** Diseño de flujo de autenticación 2FA (especificación del flujo de autenticación de personal médico y verificación mediante OTP). **[5 Horas]**
 
-#### **US08: Vinculación de Contenedor Inteligente (5 SP)**
-* **TSK-08-01:** Desarrollo del módulo backend de asignación física (relación 1:1 entre ambulancia y contenedor IoT). **[8 Horas]**
-* **TSK-08-02:** Validación de estados del dispositivo (bloqueo de reasignación si está ocupado). **[5 Horas]**
-* **TSK-08-03:** Interfaz web para vinculación mediante lectura o digitación del UUID/MAC del contenedor. **[6 Horas]**
+#### **US03: Endpoint de Autenticación de Usuarios - API (5 SP)**
+* **TSK-03-01:** Diseño de contratos OpenAPI (`POST /api/v1/authentication/sign-in`, especificación del contrato de autenticación y estructura de respuesta JWT). **[6 Horas]**
+* **TSK-03-02:** Arquitectura de dominio para identidad (definición de clases de dominio `User`, `HospitalOrganization`, Value Objects y reglas de identidad). **[5 Horas]**
