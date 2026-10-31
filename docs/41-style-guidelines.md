@@ -1,6 +1,6 @@
 # 4.1. Style Guidelines
 
-Un *Style Guideline* es un conjunto de directrices y normas que establecen los estándares visuales, de interacción y de presentación que rigen el ecosistema digital de **Medical SMARTBOX**. Las especificaciones aseguran coherencia estética, usabilidad rigurosa y máxima legibilidad de datos telemétricos críticos tanto en la aplicación web de monitoreo como en el sitio web de divulgación comercial (Landing Page).
+Un *Style Guideline* es un conjunto de directrices y normas que establecen los estándares visuales, de interacción, de tono de comunicación y de presentación que rigen el ecosistema digital de **Medical SMARTBOX**. Las especificaciones aseguran coherencia estética, usabilidad rigurosa y máxima legibilidad de datos telemétricos críticos tanto en la aplicación web de monitoreo como en el sitio web de divulgación comercial (Landing Page).
 
 ## 4.1.1. General Style Guidelines
 
@@ -9,6 +9,16 @@ Para el desarrollo de la identidad de **Medical SMARTBOX**, se definió una est�
 
 ![Medical SMARTBOX - Logo](assets/chapter-4/logo.png)
 *Nota: Logotipo oficial de Medical SMARTBOX, representando la custodia térmica inteligente.*
+
+### Voice & Tone (Las 4 Dimensiones de Nielsen Norman Group — NN/g)
+De acuerdo con el marco metodológico de **Nielsen Norman Group (NN/g)** para la definición del tono de voz en productos digitales, la comunicación verbal y microcopia de **Medical SMARTBOX** se adapta a la alta presión cognitiva de nuestros *User Personas* (**Aldair Lazaro**, personal de transporte asistencial en ruta; y **Gianfranco Timoteo**, supervisor hospitalario y coordinador logístico):
+
+| Dimensión NN/g | Posicionamiento de Medical SMARTBOX | Justificación y Aplicación en Interfaz (Microcopy) |
+| :--- | :--- | :--- |
+| **1. Funny vs. Serious**<br>*(Divertido vs. Serio)* | **100% Serious (Serio)** | El transporte de órganos, sangre y biológicos de emergencia es una operación crítica para la vida humana. Se omite cualquier humor, sarcasmo o coloquialismo en estados de error o alertas térmicas. |
+| **2. Formal vs. Casual**<br>*(Formal vs. Casual)* | **Formal-Técnico (Clínico y Directo)** | Se emplea terminología médico-logística estandarizada (*Cadena de frío*, *Excursión térmica*, * Ventana de isquemia*, *Acta SHA-256*, *Cumplimiento DIGEMID*) comprensible al instante por profesionales de salud y operadores de flota. |
+| **3. Respectful vs. Irreverent**<br>*(Respetuoso vs. Irreverente)* | **Altamente Respectful (Respetuoso)** | Respeta el tiempo y la carga de estrés del paramédico (**Aldair Lazaro**) y del receptor hospitalario (**Gianfranco Timoteo**), guiando la resolución de incidentes sin culpabilizar al usuario ante errores de digitación de OTP o pérdidas de cobertura celular. |
+| **4. Enthusiastic vs. Matter-of-fact**<br>*(Entusiasta vs. Objetivo/Práctico)* | **Matter-of-fact (Objetivo y Conciso)** | Prioriza datos cuantitativos exactos sin adornos retóricos. En el Dashboard web predomina la objetividad pura (ej. *"Alerta Crítica: 9.2 °C en SB-0231 — Excede umbral máximo de 8.0 °C por 90 s"*), mientras que en el Landing Page adopta un matiz ligeramente persuasivo pero sustentado en métricas técnicas. |
 
 ### Typography
 El sistema tipográfico prioriza la jerarquía visual y la decodificación instantánea de telemetría numérica en entornos de alta exigencia cognitiva (ej. cabina de ambulancia o supervisión en central de emergencias). Se implementa una escala tipográfica modular basada en las siguientes fuentes de Google Fonts:

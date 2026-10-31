@@ -14,28 +14,55 @@
 
 ### 4.2.2. Labeling Systems
 
-La aplicación utiliza un sistema de etiquetas y terminología adaptado a los dos principales tipos de usuarios: Operadores logísticos y Centros Receptores.
+La aplicación utiliza un sistema de etiquetas y terminología adaptado a los dos principales segmentos de usuarios representados por nuestros *User Personas*:
 
-*   **Para el visitante:** Botones directos como "Ir a la Web App" o "Iniciar sesión".
-*   **Para los Operadores de Transporte:** Se emplea terminología técnica de monitoreo y flota. Etiquetas como "ETA", "Telemetría en vivo", "Combustible (%)", "Batería (%)" y "Temperatura (°C)". Las alertas usan un lenguaje preciso: "Puerta abierta fuera de parada", "Batería baja del SmartBox".
-*   **Para los Centros Receptores (Hospitales/Farmacias):** El enfoque cambia hacia la recepción de paquetes. Etiquetas enfocadas en el estado de llegada: "Envíos entrantes", "Llegan hoy", "Recibido", y confirmaciones como "Conforme".
+*   **Para el Visitante Comercial Institucional (*Gianfranco Timoteo* evaluando la plataforma):** Botones directos como "Ir a la Web App", "Solicitar Demostración" o "Iniciar sesión".
+*   **Para el Personal de Transporte Asistencial y Operadores en Ruta (*Aldair Lazaro* — Segmento 1):** Se emplea terminología técnica de monitoreo y flota. Etiquetas como "ETA", "Telemetría en vivo", "Combustible (%)", "Batería (%)" y "Temperatura (°C)". Las alertas usan un lenguaje preciso: "Puerta abierta fuera de parada", "Batería baja del SmartBox".
+*   **Para los Centros Receptores y Supervisores Hospitalarios (*Gianfranco Timoteo* — Segmento 2: Hospitales/Clínicas):** El enfoque cambia hacia el despacho, auditoría y recepción de paquetes. Etiquetas enfocadas en el estado de llegada y custodia: "Envíos entrantes", "Llegan hoy", "Validar OTP de Recepción", "Recibido" y confirmaciones como "Acta SHA-256 Conforme".
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-Los SEO y meta tags implementados en Medical SmartBox están optimizados para el nicho de logística médica:
+Los SEO y meta tags implementados en el ecosistema **Medical SmartBox** están diferenciados y optimizados según el propósito de indexación del **Landing Page** público y de la **Web Application** operativa:
 
-*   **Title Tag:**
-    `<title>Medical SmartBox — Monitoreo y trazabilidad del transporte médico</title>`
-*   **Meta Description:**
-    `<meta name="description" content="Medical SmartBox es una plataforma para monitorear transportes médicos, detectar incidencias de temperatura en tiempo real y mantener cada envío y cadena de frío bajo control.">`
-*   **Language tag:** (Dinámico vía script, base en inglés y español)
-    `<html lang="es">`
-*   **Meta Viewport:** (Esencial para responsividad en móviles y paneles de campo)
-    `<meta name="viewport" content="width=device-width, initial-scale=1">`
-*   **Author tag:**
-    `<meta name="author" content="Medical SmartBox Team">`
-*   **Canonical Tag:**
-    `<link rel="canonical" href="https://www.medicalsmartbox.com/">`
+#### A. Meta Tags para el Landing Page Público (`NeonCode-UPC/landing-page`)
+Orientados al posicionamiento orgánico (SEO) en motores de búsqueda para captar clínicas, hospitales, laboratorios y operadores de ambulancias:
+
+```html
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical SmartBox — Monitoreo IoT y Trazabilidad de Cadena de Frío Médica</title>
+  <meta name="description" content="Medical SmartBox de NeonCode es una plataforma IoT y SaaS para monitorear contenedores médicos inteligentes en ambulancias, detectar excursiones térmicas en tiempo real y certificar la cadena de custodia ante DIGEMID y SUSALUD." />
+  <meta name="keywords" content="Medical SmartBox, NeonCode, cadena de frío médica, contenedor inteligente IoT, transporte de órganos, hemoderivados, vacunas, telemetría en ambulancias, trazabilidad hospitalaria, DIGEMID, SUSALUD, Perú" />
+  <meta name="author" content="NeonCode Team — Medical SmartBox" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://neoncode-upc.github.io/landing-page/" />
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Medical SmartBox — Custodia Digital para la Cadena de Frío Médica" />
+  <meta property="og:description" content="Supervisión térmica, geolocalización GPS y sellado criptográfico SHA-256 para traslados médicos críticos en tiempo real." />
+  <meta property="og:url" content="https://neoncode-upc.github.io/landing-page/" />
+</head>
+```
+
+#### B. Meta Tags para la Web Application (`NeonCode-UPC/frontend`)
+Orientados a la aplicación web SPA en Vue 3 para operación clínica autenticada, responsividad móvil en cabina y seguridad de sesión:
+
+```html
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Medical SmartBox Console — Panel de Monitoreo Telemétrico y Despacho</title>
+  <meta name="description" content="Consola operativa de Medical SmartBox para la supervisión en tiempo real de contenedores IoT, despacho de ambulancias, gestión de alertas críticas y auditoría de cadena de custodia." />
+  <meta name="keywords" content="dashboard telemetría médica, consola SmartBox, despacho de ambulancias, alertas cadena de frío, custodia OTP, auditoría médica" />
+  <meta name="author" content="NeonCode Team — Medical SmartBox" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#10312F" />
+  <link rel="canonical" href="https://neoncode-upc.github.io/frontend/home" />
+</head>
+```
 
 ### 4.2.4. Searching Systems
 
