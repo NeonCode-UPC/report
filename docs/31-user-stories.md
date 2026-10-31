@@ -1,40 +1,43 @@
 # 3.1. User Stories
 
-En esta sección se detallan las 18 historias de usuario (User Stories) que estructuran el alcance funcional del ecosistema **NeonCode**. La especificación abarca la aplicación web responsive de monitoreo, el sitio web público (Landing Page) y la interfaz de servicios backend (RESTful API) para la supervisión en tiempo real de contenedores médicos inteligentes instalados en ambulancias.
+En esta sección se detallan las 18 historias de usuario (*User Stories*) y historias técnicas (*Technical Stories*) que estructuran el alcance funcional del ecosistema **NeonCode (Medical SmartBox)**. La especificación abarca la aplicación web responsive de monitoreo, el sitio web público (*Landing Page*) y la interfaz de servicios backend (*RESTful API*) para la supervisión en tiempo real de contenedores médicos inteligentes instalados en ambulancias.
 
-Todos los criterios de aceptación siguen la especificación **Gherkin** (Dado que / Cuando / Entonces), redactados en tercera persona, tiempo presente y enfocados en las reglas de negocio del dominio de salud y logística médica, omitiendo referencias a elementos de interfaz de usuario.
+Cada historia de usuario mantiene trazabilidad directa con los *User Personas* definidos en el Capítulo II:
+* **Aldair Lazaro (Segmento 1 — Personal de Transporte Asistencial y Emergencias Médicas):** Representa al rol de *Personal Médico de Emergencia*, encargado de la custodia física en ruta, monitoreo ambiental inmediato y entrega en destino.
+* **Gianfranco Timoteo (Segmento 2 — Hospitales, Clínicas y Centros de Salud Receptores / Emisores):** Representa a los roles de *Supervisor Hospitalario*, *Operador Logístico de Salud* y *Visitante Comercial Institucional*, responsables del aprovisionamiento de contenedores, planificación de despachos, configuración de umbrales térmicos y auditoría de cadena de custodia.
+
+Todos los criterios de aceptación siguen la especificación **Gherkin** (*Dado que / Cuando / Entonces*), redactados en tercera persona, tiempo presente y enfocados en las reglas de negocio del dominio de salud y logística médica, omitiendo referencias a elementos de interfaz de usuario.
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
 | **EP01** | Identity & Access Management | Épica destinada a la gestión de accesos, roles, autenticación segura y perfiles de instituciones de salud. | N/A | N/A |
-| **US01** | Registro de Institución de Salud | Como supervisor hospitalario, deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores. | **Dado que** la institución de salud no cuenta con una cuenta activa,<br>**Cuando** proporciona el registro institucional y credenciales de acceso válidas,<br>**Entonces** el sistema genera la cuenta corporativa y notifica la activación del perfil. | EP01 |
-| **US02** | Autenticación de Personal de Emergencia | Como personal médico de emergencia, deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real. | **Dado que** el usuario médico cuenta con credenciales activas,<br>**Cuando** ingresa sus datos de acceso autorizados,<br>**Entonces** el sistema valida la identidad y concede acceso al panel de supervisión. | EP01 |
+| **US01** | Registro de Institución de Salud | Como supervisor hospitalario (Gianfranco Timoteo), deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores. | **Dado que** la institución de salud no cuenta con una cuenta activa,<br>**Cuando** proporciona el registro institucional y credenciales de acceso válidas,<br>**Entonces** el sistema genera la cuenta corporativa y notifica la activación del perfil. | EP01 |
+| **US02** | Autenticación de Personal de Emergencia | Como personal médico de emergencia (Aldair Lazaro), deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real. | **Dado que** el usuario médico cuenta con credenciales activas,<br>**Cuando** ingresa sus datos de acceso autorizados,<br>**Entonces** el sistema valida la identidad y concede acceso al panel de supervisión. | EP01 |
 | **US03** | Endpoint de Autenticación de Usuarios (API) | Como Developer, deseo disponer de un endpoint POST `/api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión. | **Dado que** la aplicación cliente envía una solicitud POST con credenciales válidas,<br>**Cuando** la API procesa la autenticación,<br>**Entonces** responde con código HTTP 200 y el token JWT de sesión.<br><br>**Dado que** el cliente envía datos de acceso inválidos,<br>**Cuando** la API procesa la petición,<br>**Entonces** responde con un código HTTP 401 Unauthorized. | EP01 |
 | **EP02** | Landing Page & Brand Awareness | Épica orientada a la difusión de la propuesta de valor y captura de prospectos del sector salud. | N/A | N/A |
-| **US04** | Exploración de Propuesta de Valor Logística | Como visitante comercial, deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación. | **Dado que** el visitante navega en el sitio principal de NeonCode,<br>**Cuando** explora la sección de soluciones para transporte médico,<br>**Entonces** el sistema despliega las especificaciones térmicas, de trazabilidad y planes de servicio. | EP02 |
-| **US05** | Solicitud de Demostración Corporativa | Como visitante comercial, deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario. | **Dado que** el visitante completa sus datos institucionales de contacto,<br>**Cuando** efectúa el envío del formulario,<br>**Entonces** el sistema registra el prospecto y despacha un correo de confirmación al usuario. | EP02 |
-| **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial, deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | **Dado que** el visitante ingresa al centro de ayuda del sitio web,<br>**Cuando** selecciona la categoría de hardware y sensores IoT,<br>**Entonces** el sistema muestra las respuestas estructuradas sobre la cadena de frío y conectividad. | EP02 |
-| **EP03** | Container & Ambulance Provisioning | Épica para el alta, configuración y vinculación de contenedores IoT y unidades de ambulancia. | N/A | N/A |
-| **US07** | Alta de Unidades de Ambulancia | Como operador logístico de salud, deseo registrar vehículos de transporte en el sistema para asociarles contenedores de insumos. | **Dado que** el operador logístico ha iniciado sesión,<br>**Cuando** ingresa los datos de identificación y matrícula de la ambulancia,<br>**Entonces** el sistema registra el vehículo en el inventario activo de la institución. | EP03 |
-| **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión de la carga. | **Dado que** el operador selecciona una ambulancia disponible,<br>**Cuando** ingresa el identificador único del contenedor inteligente,<br>**Entonces** el sistema asigna el dispositivo al vehículo y habilita la recepción de telemetría. | EP03 |
+| **US04** | Exploración de Propuesta de Valor Logística | Como visitante comercial institucional (Gianfranco Timoteo), deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación. | **Dado que** el visitante navega en el sitio principal de NeonCode,<br>**Cuando** explora la sección de soluciones para transporte médico,<br>**Entonces** el sistema despliega las especificaciones térmicas, de trazabilidad y planes de servicio. | EP02 |
+| **US05** | Solicitud de Demostración Corporativa | Como visitante comercial institucional (Gianfranco Timoteo), deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario. | **Dado que** el visitante completa sus datos institucionales de contacto,<br>**Cuando** efectúa el envío del formulario,<br>**Entonces** el sistema registra el prospecto y despacha un correo de confirmación al usuario. | EP02 |
+| **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial institucional (Gianfranco Timoteo), deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | **Dado que** el visitante ingresa al centro de ayuda del sitio web,<br>**Cuando** selecciona la categoría de hardware y sensores IoT,<br>**Entonces** el sistema muestra las respuestas estructuradas sobre la cadena de frío y conectividad. | EP02 |
+| **EP03** | Container & Ambulance Provisioning | Épica para el alta, configuración y vinculación de contenedores IoT y unidades de ambulancia en despachos médicos. | N/A | N/A |
+| **US07** | Alta de Unidades de Ambulancia | Como operador logístico de salud (Gianfranco Timoteo), deseo registrar y habilitar matrículas de vehículos de transporte en el sistema para asociarles contenedores de insumos en despachos activos. | **Dado que** el operador logístico ha iniciado sesión,<br>**Cuando** ingresa los datos de identificación y matrícula de la ambulancia (`AssignedVehiclePlate`),<br>**Entonces** el sistema habilita la unidad vehicular para su asignación en despachos de la institución. | EP03 |
+| **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud (Gianfranco Timoteo), deseo vincular un contenedor IoT (`SmartContainer`) a una ambulancia específica en un despacho médico (`DispatchTrip`) para iniciar la supervisión de la carga. | **Dado que** el operador selecciona una unidad de ambulancia disponible,<br>**Cuando** ingresa el identificador de serie del contenedor inteligente (`SerialNumber`),<br>**Entonces** el sistema asocia el dispositivo al despacho vehicular y habilita la recepción de telemetría. | EP03 |
 | **US09** | Ingesta de Telemetría IoT (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/containers/{containerId}/telemetry` para registrar datos térmicos y de estado. | **Dado que** el contenedor transmite un payload con temperatura, peso, apertura y batería,<br>**Cuando** la API valida y procesa la estructura de datos,<br>**Entonces** almacena la lectura en la base de datos y responde con HTTP 201 Created. | EP03 |
 | **EP04** | Real-Time Environmental & Fleet Monitoring | Épica centrada en la supervisión continua de temperatura, inventario por peso, GPS, combustible y ETA. | N/A | N/A |
-| **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | **Dado que** la ambulancia se encuentra en ruta de traslado,<br>**Cuando** los sensores del contenedor registran cambios térmicos o de escotilla,<br>**Entonces** la plataforma actualiza de forma inmediata las lecturas en la vista de monitoreo. | EP04 |
-| **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia, deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | **Dado que** el usuario médico consulta el detalle del contenedor,<br>**Cuando** se retira o ingresa un insumo médico,<br>**Entonces** el sistema calcula la diferencia de masa y actualiza el estimado de stock en la plataforma. | EP04 |
+| **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia (Aldair Lazaro), deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | **Dado que** la ambulancia se encuentra en ruta de traslado,<br>**Cuando** los sensores del contenedor registran cambios térmicos o de escotilla,<br>**Entonces** la plataforma actualiza de forma inmediata las lecturas en la vista de monitoreo. | EP04 |
+| **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia (Aldair Lazaro), deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | **Dado que** el usuario médico consulta el detalle del contenedor,<br>**Cuando** se retira o ingresa un insumo médico,<br>**Entonces** el sistema calcula la diferencia de masa y actualiza el estimado de stock en la plataforma. | EP04 |
 | **US12** | Consulta de Telemetría e Indicadores (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/containers/{containerId}/metrics` para alimentar la vista del panel web. | **Dado que** el cliente web solicita el estado actual de un contenedor,<br>**Cuando** la API procesa la petición con un identificador válido,<br>**Entonces** responde con código HTTP 200 y el objeto JSON con las últimas mediciones. | EP04 |
 | **EP05** | Incident Alerts & Medical Dispatch | Épica para la gestión y notificación de incidentes críticos como variaciones térmicas o retrasos. | N/A | N/A |
-| **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | **Dado que** el supervisor edita los parámetros de conservación de una carga sensible,<br>**Cuando** guarda los límites mínimos y máximos de temperatura,<br>**Entonces** el sistema registra la regla de negocio para la emisión de alertas. | EP05 |
-| **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud, deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | **Dado que** un sensor detecta una anomalía de temperatura o nivel crítico de batería,<br>**Cuando** el evento es registrado por el sistema,<br>**Entonces** la plataforma notifica la alerta priorizada en el panel del operador. | EP05 |
+| **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario (Gianfranco Timoteo), deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | **Dado que** el supervisor edita los parámetros de conservación de una carga sensible,<br>**Cuando** guarda los límites mínimos y máximos de temperatura,<br>**Entonces** el sistema registra la regla de negocio para la emisión de alertas. | EP05 |
+| **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud (Gianfranco Timoteo), deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | **Dado que** un sensor detecta una anomalía de temperatura o nivel crítico de batería,<br>**Cuando** el evento es registrado por el sistema,<br>**Entonces** la plataforma notifica la alerta priorizada en el panel del operador. | EP05 |
 | **US15** | Servicio de Despacho de Alertas (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/alerts/dispatch` para procesar notificaciones de emergencia. | **Dado que** la regla de negocio detecta la ruptura de la cadena de frío,<br>**Cuando** la API ejecuta el servicio de despacho,<br>**Entonces** genera la notificación correspondiente y retorna un código HTTP 202 Accepted. | EP05 |
 | **EP06** | Chain of Custody & Audit Reports | Épica orientada al registro histórico, trazabilidad de la cadena de custodia y reportes de auditoría. | N/A | N/A |
-| **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario, deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | **Dado que** un traslado médico ha finalizado,<br>**Cuando** el supervisor solicita la consolidación del informe de auditoría,<br>**Entonces** el sistema genera un reporte con la gráfica de temperatura, aperturas y tiempos de traslado. | EP06 |
-| **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia, deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | **Dado que** la ambulancia arriba a la institución de destino,<br>**Cuando** el profesional de salud confirma la recepción satisfactoria de la carga,<br>**Entonces** el sistema sella el registro histórico con fecha, hora y responsable de recepción. | EP06 |
+| **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario (Gianfranco Timoteo), deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | **Dado que** un traslado médico ha finalizado,<br>**Cuando** el supervisor solicita la consolidación del informe de auditoría,<br>**Entonces** el sistema genera un reporte con la gráfica de temperatura, aperturas y tiempos de traslado. | EP06 |
+| **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia (Aldair Lazaro), deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | **Dado que** la ambulancia arriba a la institución de destino,<br>**Cuando** el profesional de salud confirma la recepción satisfactoria de la carga,<br>**Entonces** el sistema sella el registro histórico con fecha, hora y responsable de recepción. | EP06 |
 | **US18** | Consulta de Historial de Traslados (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría. | **Dado que** se requiere auditar un traslado finalizado,<br>**Cuando** la API procesa la consulta con el identificador de traslado,<br>**Entonces** devuelve un código HTTP 200 con el historial de eventos y datos de telemetría. | EP06 |
 
+### Especificación Detallada de Escenarios Gherkin por Épica
 
-En esta sección se especifican las 18 historias de usuario (User Stories) que definen el alcance funcional del ecosistema **NeonCode**. La arquitectura funcional abarca la plataforma web responsive para supervisión hospitalaria y logística, el sitio web público (Landing Page) orientado a la captación de clientes institucionales, y los servicios backend RESTful API para la ingesta y procesamiento de telemetría IoT de contenedores médicos inteligentes.
-
-Todos los criterios de aceptación están redactados en español bajo el estándar **Gherkin** (Dado que / Cuando / Entonces), estructurados en modo orientado a escenarios (*scenario-oriented*), cubriendo flujos exitosos, excepciones y reglas del dominio de la salud.
+A continuación se desarrollan los escenarios de aceptación detallados (*scenario-oriented*) para cada una de las 18 historias, cubriendo flujos exitosos (*Happy Path*), excepciones de validación y reglas de negocio del dominio médico-logístico.
 
 ***
 
@@ -42,13 +45,14 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US01: Registro de Institución de Salud**
 * **Título:** Registro de Institución de Salud.
+* **User Persona / Rol:** Gianfranco Timoteo (Supervisor Hospitalario — Segmento 2).
 * **Descripción:** Como supervisor hospitalario, deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores térmicos inteligentes.
 * **Relacionado con:** EP01
 * **Criterios de Aceptación:**
     * **Escenario 1: Registro exitoso de institución (Happy Path)**
         * **Dado que** la institución de salud no cuenta con una cuenta previa en el sistema.
         * **Cuando** el usuario ingresa una Razón Social válida, el número de identificación tributaria (RUC) activo, una dirección de correo institucional corporativo y establece una contraseña que cumpla con los estándares de seguridad (mínimo 8 caracteres, mayúscula, número y carácter especial).
-        * **Entonces** el sistema crea la cuenta institucional en estado pendiente de verificación y despacha un correo electrónico con un enlace de confirmación al correo proporcionado.
+        * **Entonces** el sistema crea la cuenta institucional (`HospitalOrganization`) en estado pendiente de verificación y despacha un correo electrónico con un enlace de confirmación al correo proporcionado.
     * **Escenario 2: Intento de registro con identificación tributaria duplicada**
         * **Dado que** ya existe un centro médico registrado con el mismo RUC en la base de datos.
         * **Cuando** el usuario intenta registrarse utilizando dicho número de RUC.
@@ -62,6 +66,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US02: Autenticación de Personal de Emergencia**
 * **Título:** Autenticación de Personal de Emergencia.
+* **User Persona / Rol:** Aldair Lazaro (Personal Médico de Emergencia — Segmento 1).
 * **Descripción:** Como personal médico de emergencia, deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real durante un traslado.
 * **Relacionado con:** EP01
 * **Criterios de Aceptación:**
@@ -82,6 +87,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US03: Endpoint de Autenticación de Usuarios (API)**
 * **Título:** Endpoint de Autenticación de Usuarios (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo disponer de un endpoint `POST /api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión seguros para las aplicaciones clientes.
 * **Relacionado con:** EP01
 * **Criterios de Aceptación:**
@@ -104,6 +110,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US04: Exploración de Propuesta de Valor Logística**
 * **Título:** Exploración de Propuesta de Valor Logística.
+* **User Persona / Rol:** Gianfranco Timoteo (Visitante Comercial Institucional — Segmento 2).
 * **Descripción:** Como visitante comercial, deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación en mi centro de salud.
 * **Relacionado con:** EP02
 * **Criterios de Aceptación:**
@@ -120,6 +127,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US05: Solicitud de Demostración Corporativa**
 * **Título:** Solicitud de Demostración Corporativa.
+* **User Persona / Rol:** Gianfranco Timoteo (Visitante Comercial Institucional — Segmento 2).
 * **Descripción:** Como visitante comercial, deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario.
 * **Relacionado con:** EP02
 * **Criterios de Aceptación:**
@@ -136,6 +144,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US06: Consulta de Preguntas Frecuentes (FAQ)**
 * **Título:** Consulta de Preguntas Frecuentes.
+* **User Persona / Rol:** Gianfranco Timoteo (Visitante Comercial Institucional — Segmento 2).
 * **Descripción:** Como visitante comercial, deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración del hardware IoT en ambulancias.
 * **Relacionado con:** EP02
 * **Criterios de Aceptación:**
@@ -154,38 +163,41 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US07: Alta de Unidades de Ambulancia**
 * **Título:** Alta de Unidades de Ambulancia.
-* **Descripción:** Como operador logístico de salud, deseo registrar vehículos de transporte en el sistema para asociarles posteriormente contenedores de insumos.
+* **User Persona / Rol:** Gianfranco Timoteo (Operador Logístico de Salud — Segmento 2).
+* **Descripción:** Como operador logístico de salud, deseo registrar y habilitar matrículas de vehículos de transporte en el sistema para asociarles posteriormente contenedores de insumos en los despachos médicos (`DispatchTrip`).
 * **Relacionado con:** EP03
 * **Criterios de Aceptación:**
-    * **Escenario 1: Registro exitoso de ambulancia**
-        * **Dado que** el operador logístico se encuentra autenticado con un rol con permisos de gestión de inventario.
-        * **Cuando** registra el código de placa del vehículo, el tipo de unidad (SVA/SVB) y el modelo de la ambulancia.
-        * **Entonces** el sistema valida que la placa no esté registrada previamente, guarda el nuevo vehículo y le asigna el estado "Disponible sin contenedor".
-    * **Escenario 2: Intento de registro con placa duplicada**
-        * **Dado que** la placa de la ambulancia ya se encuentra registrada para la misma institución.
-        * **Cuando** el operador intenta guardar el registro.
-        * **Entonces** el sistema impide la creación del duplicado y envía una alerta de conflicto de identificación del vehículo.
+    * **Escenario 1: Registro exitoso de unidad de ambulancia para despacho**
+        * **Dado que** el operador logístico se encuentra autenticado con un rol con permisos de gestión de flota y despachos.
+        * **Cuando** registra el código de placa del vehículo (`AssignedVehiclePlate`), el tipo de unidad (SVA/SVB) y el estado operativo de la ambulancia.
+        * **Entonces** el sistema valida que la placa cumpla el formato normativo y no tenga un despacho en curso duplicado, dejando la matrícula habilitada en estado "Disponible sin contenedor".
+    * **Escenario 2: Intento de registro con placa duplicada en despacho activo**
+        * **Dado que** la placa de la ambulancia ya se encuentra asignada a un despacho activo en la misma institución.
+        * **Cuando** el operador intenta registrar un nuevo alta o asignación simultánea con la misma placa.
+        * **Entonces** el sistema impide la duplicidad y envía una alerta de conflicto de identificación del vehículo.
 
 ***
 
 #### **US08: Vinculación de Contenedor Inteligente**
 * **Título:** Vinculación de Contenedor Inteligente.
-* **Descripción:** Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión activa de la carga médica.
+* **User Persona / Rol:** Gianfranco Timoteo (Operador Logístico de Salud — Segmento 2).
+* **Descripción:** Como operador logístico de salud, deseo vincular un contenedor IoT (`SmartContainer`) a una ambulancia específica dentro de una orden de despacho (`DispatchTrip`) para iniciar la supervisión activa de la carga médica.
 * **Relacionado con:** EP03
 * **Criterios de Aceptación:**
-    * **Escenario 1: Vinculación exitosa de contenedor a vehículo**
-        * **Dado que** se dispone de una ambulancia registrada en estado "Disponible sin contenedor" y un contenedor inteligente en estado "Inactivo/Desvinculado".
-        * **Cuando** el operador selecciona la unidad de ambulancia y digita el identificador físico (UUID/MAC) del contenedor IoT.
-        * **Entonces** el sistema establece la relación entre ambos componentes, cambia el estado de la ambulancia a "Monitoreo Activo" y habilita la recepción de paquetes de telemetría para dicha combinación.
+    * **Escenario 1: Vinculación exitosa de contenedor a vehículo en orden de despacho**
+        * **Dado que** se dispone de una unidad de ambulancia habilitada (`AssignedVehiclePlate`) y un contenedor inteligente registrado (`SmartContainer`) en estado operativo `AVAILABLE`.
+        * **Cuando** el operador selecciona la unidad de ambulancia y asocia el identificador único / número de serie (`SerialNumber`) del contenedor IoT al despacho médico (`DispatchTrip`).
+        * **Entonces** el sistema vincula el `ContainerId` con el `DispatchTrip`, cambia el estado operativo del contenedor a `IN_TRANSIT` y habilita la recepción de paquetes de telemetría para dicho traslado.
     * **Escenario 2: Intento de vinculación de un contenedor previamente asignado**
-        * **Dado que** el contenedor IoT ya se encuentra asignado a otra unidad activa.
+        * **Dado que** el contenedor IoT ya se encuentra asignado a otra unidad con un traslado en curso (`IN_TRANSIT`).
         * **Cuando** el operador intenta asociarlo a una nueva ambulancia.
-        * **Entonces** el sistema rechaza la operación e indica que el contenedor debe ser desvinculado de su unidad origen antes de una nueva asignación.
+        * **Entonces** el sistema rechaza la operación e indica que el contenedor debe finalizar su cadena de custodia y ser desvinculado de su unidad origen antes de una nueva asignación.
 
 ***
 
 #### **US09: Ingesta de Telemetría IoT (API)**
 * **Título:** Ingesta de Telemetría IoT (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo contar con un endpoint `POST /api/v1/containers/{containerId}/telemetry` para registrar periódicamente datos térmicos, de peso y estado del contenedor.
 * **Relacionado con:** EP03
 * **Criterios de Aceptación:**
@@ -208,6 +220,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US10: Monitoreo Térmico y de Apertura**
 * **Título:** Monitoreo Térmico y de Apertura.
+* **User Persona / Rol:** Aldair Lazaro (Personal Médico de Emergencia — Segmento 1).
 * **Descripción:** Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de la escotilla del contenedor para garantizar la conservación del paquete médico durante el trayecto.
 * **Relacionado con:** EP04
 * **Criterios de Aceptación:**
@@ -224,6 +237,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US11: Control de Stock por Sensores de Peso**
 * **Título:** Control de Stock por Sensores de Peso.
+* **User Persona / Rol:** Aldair Lazaro (Personal Médico de Emergencia — Segmento 1).
 * **Descripción:** Como personal médico de emergencia, deseo verificar la disponibilidad y retiro de insumos mediante sensores de peso para confirmar existencias en tiempo real.
 * **Relacionado con:** EP04
 * **Criterios de Aceptación:**
@@ -240,6 +254,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US12: Consulta de Telemetría e Indicadores (API)**
 * **Título:** Consulta de Telemetría e Indicadores (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo disponer de un endpoint `GET /api/v1/containers/{containerId}/metrics` para proveer las últimas mediciones consolidadas a la interfaz de usuario.
 * **Relacionado con:** EP04
 * **Criterios de Aceptación:**
@@ -258,6 +273,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US13: Configuración de Umbrales Térmicos Críticos**
 * **Título:** Configuración de Umbrales Térmicos Críticos.
+* **User Persona / Rol:** Gianfranco Timoteo (Supervisor Hospitalario — Segmento 2).
 * **Descripción:** Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos (mínimo y máximo) para recibir avisos preventivos ante desviaciones en la cadena de frío.
 * **Relacionado con:** EP05
 * **Criterios de Aceptación:**
@@ -268,12 +284,13 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
     * **Escenario 2: Validación de rango térmico inconsistente**
         * **Dado que** el supervisor intenta ingresar un valor de temperatura mínima que es igual o mayor a la temperatura máxima definida.
         * **Cuando** procesa la solicitud de guardado.
-        * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser strictly menor al límite máximo.
+        * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser estrictamente menor al límite máximo.
 
 ***
 
 #### **US14: Visualización de Alertas en Ruta**
 * **Título:** Visualización de Alertas en Ruta.
+* **User Persona / Rol:** Gianfranco Timoteo (Operador Logístico de Salud — Segmento 2) y Aldair Lazaro (Personal Médico de Emergencia — Segmento 1).
 * **Descripción:** Como operador logístico de salud, deseo recibir avisos prioritarios de variaciones térmicas o apertura no autorizada para ejecutar acciones correctivas inmediatas.
 * **Relacionado con:** EP05
 * **Criterios de Aceptación:**
@@ -290,6 +307,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US15: Servicio de Despacho de Alertas (API)**
 * **Título:** Servicio de Despacho de Alertas (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo contar con un endpoint `POST /api/v1/alerts/dispatch` para procesar y canalizar notificaciones de eventos críticos hacia servicios externos.
 * **Relacionado con:** EP05
 * **Criterios de Aceptación:**
@@ -308,6 +326,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US16: Generación de Reportes de Trazabilidad**
 * **Título:** Generación de Reportes de Trazabilidad.
+* **User Persona / Rol:** Gianfranco Timoteo (Supervisor Hospitalario — Segmento 2).
 * **Descripción:** Como supervisor hospitalario, deseo exportar el informe consolidado del traslado médico para certificar el cumplimiento normativo de la cadena de frío.
 * **Relacionado con:** EP06
 * **Criterios de Aceptación:**
@@ -324,6 +343,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US17: Confirmación de Entrega y Cadena de Custodia**
 * **Título:** Confirmación de Entrega y Cadena de Custodia.
+* **User Persona / Rol:** Aldair Lazaro (Personal Médico de Emergencia — Segmento 1) y Gianfranco Timoteo (Receptor Hospitalario — Segmento 2).
 * **Descripción:** Como personal médico de emergencia, deseo registrar la recepción del contenedor en el punto de destino para cerrar formalmente la cadena de custodia del envío.
 * **Relacionado con:** EP06
 * **Criterios de Aceptación:**
@@ -340,6 +360,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US18: Consulta de Historial de Traslados (API)**
 * **Título:** Consulta de Historial de Traslados (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo disponer de un endpoint `GET /api/v1/transfers/{transferId}/audit` para recuperar el registro completo de auditoría y eventos de un traslado.
 * **Relacionado con:** EP06
 * **Criterios de Aceptación:**
