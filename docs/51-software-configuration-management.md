@@ -51,11 +51,11 @@ git flow feature finish landing-hero-section
 
 ***
 
-## 5.1.3. Source Code Style Guide & Conventions
+### 5.1.3. Source Code Style Guide & Conventions
 
 Para mantener la máxima calidad, legibilidad y mantenibilidad del código fuente, el equipo sigue guías de estilo estandarizadas en concordancia con las buenas prácticas de la industria:
 
-### Guía de Estilo de Código Fuente
+#### Guía de Estilo de Código Fuente
 
 * **Estándar de Formato Backend (C# / .NET):** Se aplican las directrices oficiales *Microsoft C# Coding Conventions* y *ASP.NET Core Engineering Guidelines*. Análisis estático configurado mediante Roslyn Analyzers y editorconfig institucional:
     * Clases, interfaces, métodos y propiedades en `PascalCase` (ejemplo: `SmartContainer`, `ITelemetryService`, `RecordTelemetrySnapshot`).
@@ -72,7 +72,7 @@ Para mantener la máxima calidad, legibilidad y mantenibilidad del código fuent
     * **Aplicación** en lugar de "aplicativo" o "app".
     * **Desplegar / Probar / Confirmar cambios** en lugar de "deployar", "testear" o "comitear".
 
-### Convención de Mensajes de Confirmación (Conventional Commits)
+#### Convención de Mensajes de Confirmación (Conventional Commits)
 
 Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la especificación **Conventional Commits 1.0.0**:
 
@@ -88,11 +88,11 @@ Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la
 
 ***
 
-## 5.1.4. Software Deployment Configuration
+### 5.1.4. Software Deployment Configuration
 
 El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados para asegurar la disponibilidad operativa y la integridad de las evidencias de revisión:
 
-### Entornos de Despliegue
+#### Entornos de Despliegue
 
 <div style="margin: 12px 0 16px 0; width: 100%;">
 <table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
@@ -132,13 +132,13 @@ El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Entorno oficial desplegado para evaluación académica y demostración B2B.</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">GitHub Pages / Vercel Production</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>main</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Acceso público activo vía HTTPS: `https://neoncode-upc.github.io/landing-page/`.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Landing Page: `https://neoncode-upc.github.io/landing-page/`<br>Web Application: `https://neoncode-upc.github.io/frontend/home`</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-### Gestión de Variables de Entorno y Configuración
+#### Gestión de Variables de Entorno y Configuración
 
 * **Archivos de Configuración:** En el backend se utiliza `appsettings.json` y `appsettings.Development.json` con sobreescritura mediante variables de entorno para cadenas de conexión seguras.
 * **Variables Frontend:** Variables de configuración de endpoints (`VITE_API_BASE_URL`) centralizadas en archivos `.env` versionados como plantillas (`.env.example`), aislando tokens de producción.
