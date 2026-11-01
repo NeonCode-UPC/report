@@ -22,7 +22,7 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * En `dispatch_trips`: se persisten directamente los atributos de ruta calculados `distance_km`, `planned_duration_minutes`, `current_delay_minutes` y `polyline_coordinates`.  
    Esta decisión garantiza un esquema de almacenamiento de alto rendimiento para las consultas operativas en ruta sin comprometer la encapsulación conceptual definida en el diseño orientado a objetos.
 6. **Conversión de Tipos Numéricos entre Dominio y Persistencia (`double` a `DECIMAL`):**  
-   En el modelo de clases de dominio (Capítulo 4.7), las lecturas sensoriales y telemétricas (temperatura, peso neto y coordenadas geográficas) se representan como tipos numéricos en coma flotante para optimizar el rendimiento computacional de cálculos en memoria y procesamiento de flujos IoT. En la persistencia física en MySQL, estos valores se almacenan rigurosamente como tipos de coma fija `DECIMAL(p, s)` (`DECIMAL(4,2)` para temperatura, `DECIMAL(6,2)` para peso en gramos y `DECIMAL(10,8)` / `DECIMAL(11,8)` para latitud/longitud), eliminando cualquier riesgo de discrepancia por redondeo o imprecisión binaria en los registros médicos.
+   En el modelo de clases de dominio (Capítulo 4.7), las lecturas sensoriales y telemétricas (temperatura, peso neto y coordenadas geográficas) se representan como tipos numéricos en coma flotante para optimizar el rendimiento computacional de cálculos en memoria y procesamiento de flujos IoT. En la persistencia física en MySQL, estos valores se almacenan rigurosamente como tipos de coma fija `DECIMAL(p, s)` (`DECIMAL(4,2)` para temperatura, `DECIMAL(8,2)` para peso en gramos y `DECIMAL(10,8)` / `DECIMAL(11,8)` para latitud/longitud), eliminando cualquier riesgo de discrepancia por redondeo o imprecisión binaria en los registros médicos.
 7. **Delimitación de Flota Vehicular y Activos Externos (Segmento 1):**  
    En el modelo SaaS, las ambulancias constituyen activos vehiculares de transporte sanitario operados por terceros (Segmento 1) identificados por su número de placa (`assigned_vehicle_plate`) en las órdenes de despacho (`dispatch_trips`). El control de cuotas comerciales de suscripción (`max_ambulances` en `subscription_plans`) se valida a nivel de servicio contra las unidades móviles simultáneamente activas, preservando el foco del software exclusivamente en la gestión del contenedor médico inteligente y evitando la sobreingeniería de tablas maestras vehiculares internas.
 8. **Invariantes Térmicas de Firmware y Control de Celda Peltier:**  
@@ -37,6 +37,10 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * `TransportOrder.Priority` → `clinical_priority` (tabla `transport_orders`).
    * `CustodyTransfer.TransferredAt` → `completed_at` (tabla `custody_transfers`).
    * `DigitalAuditManifest.GeneratedAt` → `sealed_at` (tabla `digital_audit_manifests`).
+   * `SmartContainer.CurrentTemperature` → `current_temperature_celsius` (tabla `smart_containers`).
+   * `TransportRoute.DistanceKilometers` y `CurrentCongestionDelayMinutes` → `distance_km` y `current_delay_minutes` (tabla `dispatch_trips`).
+   * `CustodyTransfer.Status` → `handover_status` (tabla `custody_transfers`).
+   * `OtpToken.HashedCode`, `ExpiresAtUtc` y `CurrentAttempts` → `otp_code_hash`, `otp_expires_at` y `otp_attempt_count` (tabla `custody_transfers`).
    * `DigitalAuditManifest.CloudStorageUrl` → `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
 
 ***
@@ -525,7 +529,7 @@ Representa la unidad isotérmica física dotada de sensores, solenoide de tapa y
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca de tiempo del último mensaje MQTT recibido desde el ESP32.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca de tiempo de la última petición HTTPS/REST de telemetría recibida desde el ESP32.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
@@ -1386,7 +1390,7 @@ En lugar de redundar en las especificaciones de claves foráneas ya detalladas e
 
 #### **4. Estrategia de Indexación y Optimización de Consultas IoT**
 
-Para procesar ráfagas continuas de telemetría provenientes de múltiples ambulancias sin degradar los tiempos de respuesta del dashboard web en Vue.js ni la transmisión en tiempo real de WebSockets vía SignalR, se implementa una estrategia de **índices B-Tree compuestos**:
+Para procesar ráfagas continuas de telemetría provenientes de múltiples ambulancias sin degradar los tiempos de respuesta del dashboard web en Vue.js ni las consultas RESTful concurrentes en tiempo real, se implementa una estrategia de **índices B-Tree compuestos**:
 
 1. **`idx_telemetry_container_timestamp (container_id, timestamp_utc DESC)`:**  
    *Propósito:* Optimiza la consulta más frecuente del sistema: obtener la última lectura emitida por un contenedor específico para renderizar el termómetro digital, indicador de peso y estado de batería en el frontend. Al estar ordenado descendentemente, el motor MySQL resuelve la consulta en tiempo O(1) sin realizar un escaneo completo de tabla (*Full Table Scan*).

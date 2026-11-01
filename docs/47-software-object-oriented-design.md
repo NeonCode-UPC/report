@@ -34,6 +34,10 @@ En estricta observancia de los patrones Domain-Driven Design (DDD), las clases d
 * `TransportOrder.Priority` → columna `clinical_priority` (definida en tabla `transport_orders`).
 * `CustodyTransfer.TransferredAt` → columna `completed_at` (definida en tabla `custody_transfers`).
 * `DigitalAuditManifest.GeneratedAt` → columna `sealed_at` (definida en tabla `digital_audit_manifests`).
+* `SmartContainer.CurrentTemperature` (`double`) → columna `current_temperature_celsius` (`DECIMAL(4,2)`) en tabla `smart_containers` (`HasPrecision(4, 2)`).
+* `TransportRoute.DistanceKilometers` (`double`) y `CurrentCongestionDelayMinutes` (`int`) → columnas `distance_km` (`DECIMAL(6,2)`) y `current_delay_minutes` (`INT`) aplanadas en tabla `dispatch_trips`.
+* `CustodyTransfer.Status` → columna `handover_status` (definida en tabla `custody_transfers`).
+* `OtpToken.HashedCode`, `ExpiresAtUtc` y `CurrentAttempts` → columnas `otp_code_hash`, `otp_expires_at` y `otp_attempt_count` aplanadas (`OwnsOne`) en tabla `custody_transfers`.
 * `DigitalAuditManifest.CloudStorageUrl` → columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
 Esta separación formal preserva la expresividad del lenguaje ubicuo en el código fuente de dominio sin acoplarlo rígidamente a los identificadores físicos de almacenamiento.
 
