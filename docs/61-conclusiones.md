@@ -1,23 +1,20 @@
 # Conclusiones y Recomendaciones
 
-## Conclusiones del Avance 1 (Hito AV1)
+## Conclusiones de la Entrega TB1 (Sprints 1 y 2)
 
-1. **Rigor Arquitectónico Orientado al Dominio (DDD):**  
-   Mediante la aplicación sistemática de *EventStorming* (Big Picture y Design-Level) se logró delimitar con absoluta claridad cinco *Bounded Contexts* que estructuran el ecosistema de **Medical SMARTBOX**. La descomposición a través del Modelo C4 (Contexto, Contenedores y Componentes) demostró que la separación entre el núcleo transaccional clínico, el servicio de ingesta IoT asíncrono y la interfaz reactiva de usuario optimiza la escalabilidad y garantiza la consistencia eventual y ACID en los puntos críticos de custodia.
+1. **Rigor Arquitectónico Orientado al Dominio (DDD) y Topología Canónica C4:**  
+   Mediante la aplicación sistemática de *EventStorming* (Big Picture y Design-Level) se consolidaron cinco *Bounded Contexts* autónomos (`Identity, Access & Subscriptions`, `Smart Container & Telemetry Monitoring`, `Medical Transport Planning & Dispatching`, `Critical Alerting & Incident Response` y `Chain of Custody & Traceability`) que estructuran el ecosistema **Medical SMARTBOX**. La descomposición a través del Modelo C4 en sus cuatro contenedores canónicos (*Landing Page*, *Single-Page Application en Vue 3*, *Backend RESTful Web API en ASP.NET Core 10.0* y *Database en MySQL 8.0*) garantiza el bajo acoplamiento, la trazabilidad de extremo a extremo y la consistencia transaccional ACID en los puntos críticos de custodia.
 
-2. **Alineación Normativa con la Realidad Asistencial de Lima:**  
-   El proceso de Needfinding y formulación de requisitos empíricos permitió anclar la solución a las directivas sanitarias peruanas (**R.M. N° 833-2015/MINSA** para cadena de frío entre +2.0 °C y +8.0 °C y **Directiva Sanitaria N° 152/MINSA** para tiempos de isquemia fría en trasplantes). La plataforma responde directamente a los desafíos de congestión vehicular limeña (índice TomTom: 34 min/10 km) mediante alertas de preaviso hospitalario (10 min) y protección frente a desconexiones eléctricas vehiculares de 12V.
+2. **Alineación Normativa con la Realidad Asistencial de Lima Metropolitana:**  
+   El proceso de *Needfinding* con entrevistas reales y el modelado de nuestros *User Personas* (**Aldair Lazaro**, personal de transporte asistencial en ruta; y **Gianfranco Timoteo**, supervisor hospitalario y coordinador de cadena de frío) permitieron anclar la solución a las directivas sanitarias peruanas (**R.M. N° 833-2015/MINSA** de DIGEMID para cadena de frío entre +2.0 °C y +8.0 °C y **Directiva Sanitaria N° 152/MINSA** de DIGDOT para tiempos de isquemia fría). La plataforma responde directamente a la congestión vehicular de Lima (índice TomTom: 33 min 10 s por cada 10 km) mediante alertas de preaviso hospitalario, monitoreo de peso neto con celda HX711 y respaldo frente a desconexiones vehiculares de 12V.
 
-3. **Gobernanza de Software y Cumplimiento del Sprint 1:**  
-   Se estableció una disciplina de gestión de configuración de software (SCM) rigurosa, basada en GitFlow, versionado semántico (SemVer 2.0.0) y Conventional Commits. Este marco metodológico permitió implementar y desplegar exitosamente en la nube la primera versión del Landing Page institucional en HTML5, CSS3 y JavaScript bajo directrices *mobile-first*, cumpliendo al 100% con los compromisos técnicos exigidos para el hito AV1.
+3. **Implementación y Despliegue Exitoso del Landing Page y la Frontend Web Application (Sprints 1 y 2):**  
+   Bajo una disciplina de gestión de configuración de software (SCM) basada en GitFlow, versionado semántico (SemVer 2.0.0) y Conventional Commits, el equipo completó satisfactoriamente los **16 Story Points del Sprint 1** (despliegue del Landing Page institucional responsive) y los **29 Story Points del Sprint 2** (construcción y despliegue en producción de la primera versión integrada de la Frontend Web Application en **Vue 3**, **PrimeVue** y **Pinia** estructurada por Bounded Contexts), cumpliendo integralmente los objetivos del hito **TB1**.
 
 ## Recomendaciones para Siguientes Hitos
 
-1. **Sprint 2 (Hito TB1 - Frontend Web Applications):**  
-   Iniciar la construcción de la aplicación web administrativa y operativa utilizando el framework reactivo **Vue 3** complementado con la biblioteca de componentes **PrimeVue** (Material Design). Priorizar los flujos de inicio de sesión seguro, verificación en dos pasos (2FA) y el tablero Kanban de despacho vehicular.
+1. **Sprint 3 (Hito AV2 - Backend RESTful Web Services & Persistencia Relacional):**  
+   Implementar y desplegar los servicios RESTful en **ASP.NET Core 10.0 (.NET 10 LTS)** con C# y **Entity Framework Core 10.0**, ejecutando las migraciones Code-First sobre **MySQL 8.0 (InnoDB)**. Priorizar los endpoints de ingesta periódica de telemetría vía HTTPS/REST desde el nodo ESP32, la evaluación de umbrales térmicos críticos (`US13`, `US14`, `US15`) y la documentación interactiva de contratos OpenAPI con Swagger UI.
 
-2. **Sprint 3 (Hito AV2 - Web Services & Telemetría IoT):**  
-   Codificar los servicios RESTful en **ASP.NET Core 10.0 (.NET 10 LTS)** con C# y Entity Framework Core, conectando la persistencia relacional en MySQL. Implementar el worker en segundo plano para el procesamiento asíncrono de mensajes MQTT provenientes de los contenedores inteligentes y habilitar la documentación interactiva con Swagger UI.
-
-3. **Sprint 4 (Hito TB2 - Release Review):**  
-   Integrar la comunicación bidireccional en tiempo real con WebSockets (SignalR) para la actualización en vivo de telemetría y alarmas en cabina de ambulancia, ejecutando pruebas exhaustivas de usabilidad según las 10 heurísticas de Nielsen con personal de salud antes de la liberación final.
+2. **Sprint 4 (Hito TB2 - Integración Full-Stack, Auditoría SHA-256 y Pruebas de Aceptación):**  
+   Integrar de extremo a extremo la aplicación frontend en Vue 3 con el Backend RESTful Web API desplegado en la nube, habilitando el cierre criptográfico de cadena de custodia mediante token OTP y la exportación de manifiestos de auditoría inmutables sellados con hash SHA-256 (`US16`, `US17`, `US18`), así como la validación integral de los escenarios Gherkin con usuarios representativos de ambos segmentos objetivo.
