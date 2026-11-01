@@ -13,7 +13,7 @@ El diseño de la interfaz de usuario en la landing page de **Medical SMARTBOX** 
 
 ![Caracteristicas - Wireframe](assets/chapter-4/caracteristicas-wireframe.png)
 
-*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SMARTBOX. Define una cuadrícula adaptable (responsive grid) con cinco espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
+*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SMARTBOX. Define una cuadrícula adaptable (responsive grid) con cuatro espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
 
 ![Presentacion - Wireframe](assets/chapter-4/presentacion-wireframe.png)
 
@@ -41,7 +41,7 @@ Para dispositivos móviles (viewports de 360px a 414px), la estructura de wirefr
 
 ![Servicios - Mockup](assets/chapter-4/servicios-mockup.png)
 
-*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cinco ingenieros de software del equipo de Medical SMARTBOX, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
+*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cuatro ingenieros de software del equipo de Medical SMARTBOX, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
 
 ![Presentacion - Mockup](assets/chapter-4/presentacion-mockup.png)
 

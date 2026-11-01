@@ -24,8 +24,8 @@ El objetivo primordial del Design-Level EventStorming es **cerrar la brecha entr
 * **Participantes y Roles:**
   * *Facilitador DDD y Arquitecto de Software:* Moderación del flujo temporal y preservación de fronteras transaccionales.
   * *Especialista en Hardware IoT y Firmware:* Definición de interacción con microcontrolador ESP32, sensores térmicos Peltier y celda HX711.
-  * *Coordinador de Logística Asistencial (Segmento 1):* Modelado de rutas críticas, contingencias en el tráfico de Lima y alimentación de 12V.
-  * *Director Farmacéutico y Auditor Sanitario (Segmento 2):* Definición de límites de isquemia fría, actas inmutables y normativas DIGEMID (R.M. N° 833-2015).
+  * *Coordinador de Logística Asistencial (Segmento 1 — User Persona: Aldair Lazaro):* Modelado de rutas críticas, contingencias en el tráfico de Lima y alimentación de 12V.
+  * *Director Farmacéutico y Auditor Sanitario (Segmento 2 — User Persona: Gianfranco Timoteo):* Definición de límites de isquemia fría, actas inmutables y normativas DIGEMID (R.M. N° 833-2015).
 
 #### Convención Cromática Oficial de Post-its (Notación DDD Estándar)
 
@@ -75,7 +75,7 @@ Bajo los principios de Domain-Driven Design para arquitecturas SaaS en entornos 
       <td><strong>2. Smart Container &amp; Telemetry Monitoring</strong></td>
       <td><em>Core Domain (Diferenciador)</em></td>
       <td>Ingesta continua de telemetría IoT desde el ESP32: temperatura Peltier (+2°C a +8°C), tara/peso neto HX711, bloqueo solenoide, acelerómetro y alimentación vehicular 12V.</td>
-      <td><code>SmartContainer</code>, <code>TelemetrySnapshot</code></td>
+      <td><code>SmartContainer</code>, <code>TelemetrySnapshot</code> (VO), <code>TelemetryLog</code></td>
       <td>Segmento 1 (Energía) y Segmento 2 (Cadena de frío)</td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@ Bajo los principios de Domain-Driven Design para arquitecturas SaaS en entornos 
       <td><strong>4. Critical Alerting &amp; Incident Response</strong></td>
       <td><em>Core Domain</em></td>
       <td>Evaluación de umbrales clínicos en tiempo real, disparo omnicanal de alertas (Push/SMS), acuse de recibo acústico en cabina y mitigación de contingencias.</td>
-      <td><code>AlertRule</code>, <code>CriticalIncident</code></td>
+      <td><code>CriticalIncident</code>, <code>ContingencyResolution</code></td>
       <td>Segmento 1 (Cabina) y Segmento 2 (Supervisión)</td>
     </tr>
     <tr>
@@ -135,16 +135,16 @@ Para corroborar la cobertura integral del modelo respecto a los requisitos de pl
       <td>Gestiona planes institucionales mensuales y cuotas de aprovisionamiento de cajas (5L y 20L).</td>
     </tr>
     <tr>
-      <td><strong>3. Planificación y Despacho Operativo</strong></td>
-      <td>Medical Transport Planning &amp; Dispatching</td>
-      <td><em>Core</em></td>
-      <td>Asigna móviles sanitarios, calcula límites de isquemia y optimiza rutas ante el tráfico de Lima.</td>
-    </tr>
-    <tr>
-      <td><strong>4. Monitoreo e Ingesta Telemática IoT</strong></td>
+      <td><strong>3. Monitoreo e Ingesta Telemática IoT</strong></td>
       <td>Smart Container &amp; Telemetry Monitoring</td>
       <td><em>Core</em></td>
       <td>Procesa flujos periódicos de temperatura, tara/peso y batería, y comanda el cerrojo solenoide.</td>
+    </tr>
+    <tr>
+      <td><strong>4. Planificación y Despacho Operativo</strong></td>
+      <td>Medical Transport Planning &amp; Dispatching</td>
+      <td><em>Core</em></td>
+      <td>Asigna móviles sanitarios, calcula límites de isquemia y optimiza rutas ante el tráfico de Lima.</td>
     </tr>
     <tr>
       <td><strong>5. Gestión de Contingencias y Alertas</strong></td>
@@ -176,34 +176,34 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 
 #### **4.6.1.1. Bounded Context 1: Identity, Access & Subscriptions (IAM)**
 * **Clasificación:** *Supporting Subdomain*  
-* **Alineación con Segmentos:** Centraliza la gobernanza de identidades, suscripciones SaaS y control de cuotas de flota para el **Segmento 1** (conductores de ambulancia, paramédicos y despachadores logísticos) y el **Segmento 2** (químicos farmacéuticos, médicos directores de IPRESS y auditores de calidad hospitalaria).
+* **Alineación con Segmentos:** Centraliza la gobernanza de identidades, suscripciones SaaS y control de cuotas de flota para el **Segmento 1** (conductores de ambulancia, paramédicos y despachadores logísticos — *User Persona:* **Aldair Lazaro**) y el **Segmento 2** (químicos farmacéuticos, médicos directores de IPRESS y auditores de calidad hospitalaria — *User Persona:* **Gianfranco Timoteo**).
 
 ![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context Identity, Access & Subscriptions (IAM)](assets/chapter-4/4.6.1-dles-iam-context.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity, Access & Subscriptions (IAM).*
 
 ***
 
-#### **4.6.1.2. Bounded Context 2: Medical Transport Planning & Dispatching**
-* **Clasificación:** *Core Domain*  
-* **Alineación con Segmentos:** Articula la necesidad médica del **Segmento 2** (solicitud urgente de insumo con rango térmico de +2.0 °C a +8.0 °C y tiempo de isquemia fría crítico) con la respuesta operativa del **Segmento 1** (asignación de ambulancia, cálculo de ruta anti-tráfico en Lima con TomTom y estimación dinámica de ETA).
+#### **4.6.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring**
+* **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
+* **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1** (**Aldair Lazaro**), monitorea la integridad eléctrica en la toma de 12V y el nivel de batería interna. Para el **Segmento 2** (**Gianfranco Timoteo**), certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (±5 g).
 
-![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
-*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
+*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
 ***
 
-#### **4.6.1.3. Bounded Context 3: Smart Container & Telemetry Monitoring**
-* **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
-* **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1**, monitorea la integridad eléctrica en la toma de 12V y el nivel de batería interna. Para el **Segmento 2**, certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (±5 g).
+#### **4.6.1.3. Bounded Context 3: Medical Transport Planning & Dispatching**
+* **Clasificación:** *Core Domain*  
+* **Alineación con Segmentos:** Articula la necesidad médica del **Segmento 2** (**Gianfranco Timoteo**: solicitud urgente de insumo con rango térmico de +2.0 °C a +8.0 °C y tiempo de isquemia fría crítico) con la respuesta operativa del **Segmento 1** (**Aldair Lazaro**: asignación de ambulancia, cálculo de ruta anti-tráfico en Lima con TomTom y estimación dinámica de ETA).
 
-![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
-*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
+*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
 ***
 
 #### **4.6.1.4. Bounded Context 4: Critical Alerting & Incident Response**
 * **Clasificación:** *Core Domain*  
-* **Alineación con Segmentos:** Garantiza que las incidencias en ruta se detecten y resuelvan en segundos. Para el **Segmento 1**, dispara alarmas audibles y visuales de alta prioridad en la cabina asistencial. Para el **Segmento 2**, alerta inmediatamente a farmacia y quirófano ante riesgos térmicos o demoras viales.
+* **Alineación con Segmentos:** Garantiza que las incidencias en ruta se detecten y resuelvan en segundos. Para el **Segmento 1** (**Aldair Lazaro**), dispara alarmas audibles y visuales de alta prioridad en la cabina asistencial. Para el **Segmento 2** (**Gianfranco Timoteo**), alerta inmediatamente a farmacia y quirófano ante riesgos térmicos o demoras viales.
 
 ![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
@@ -212,7 +212,7 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 
 #### **4.6.1.5. Bounded Context 5: Chain of Custody & Traceability**
 * **Clasificación:** *Core Domain / Cumplimiento Normativo*  
-* **Alineación con Segmentos:** Brinda la certeza sanitaria y legal que exige el **Segmento 2** ante auditorías de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva 152/MINSA). Controla la apertura en destino mediante código OTP de un solo uso y emite el acta digital inmutable con hash SHA-256.
+* **Alineación con Segmentos:** Brinda la certeza sanitaria y legal que exige el **Segmento 2** (**Gianfranco Timoteo**) ante auditorías de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva 152/MINSA). Controla la apertura en destino mediante código OTP de un solo uso y emite el acta digital inmutable con hash SHA-256.
 
 ![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
@@ -256,19 +256,19 @@ Los actores y servicios conectados se consolidan formalmente en las siguientes t
   </thead>
   <tbody>
     <tr>
-      <td><strong>Personal de Transporte Asistencial</strong><br><em>(Chofer / Paramédico / Despachador)</em></td>
+      <td><strong>Personal de Transporte Asistencial</strong><br><em>(Chofer / Paramédico / Despachador — User Persona: Aldair Lazaro)</em></td>
       <td><strong>Segmento 1:</strong><br>Operadores de Transporte Sanitario</td>
       <td>Conduce la ambulancia, supervisa la conexión de alimentación de 12V vehicular, asigna unidades móviles y atiende alertas acústicas en cabina.</td>
       <td>Web App (PWA Mobile en tablet / Smartphone y Dashboard Desktop)</td>
     </tr>
     <tr>
-      <td><strong>Personal Clínico y Farmacéutico</strong><br><em>(Químico Farmacéutico / Médico)</em></td>
+      <td><strong>Personal Clínico y Farmacéutico</strong><br><em>(Químico Farmacéutico / Médico — User Persona: Gianfranco Timoteo)</em></td>
       <td><strong>Segmento 2:</strong><br>Centros de Salud y Hospitales</td>
       <td>Acondiciona la carga biológica, tara insumos, autoriza el precinto, monitorea el ETA dinámico y valida la entrega en destino mediante código OTP.</td>
       <td>Web App (Portal Web Hospitalario y Tablet de Quirófano)</td>
     </tr>
     <tr>
-      <td><strong>Auditor de Calidad y Regulador</strong><br><em>(Auditor Hospitalario / Inspector DIGEMID)</em></td>
+      <td><strong>Auditor de Calidad y Regulador</strong><br><em>(Auditor Hospitalario / Inspector DIGEMID — User Persona: Gianfranco Timoteo)</em></td>
       <td><strong>Segmento 2:</strong><br>Centros de Salud y Reguladores</td>
       <td>Fiscaliza la preservación legal de la cadena de frío y descarga actas digitales certificadas en PDF con hash SHA-256.</td>
       <td>Web App (Portal de Auditoría y Cumplimiento)</td>
