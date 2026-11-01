@@ -354,12 +354,12 @@ Para el Sprint 2 se estableció la matriz de liderazgo y colaboración considera
 
 **L = Lead / C = Collaborator**
 
-| **Integrante** | **Aspecto 1:** Smart Container & Telemetry Monitoring **(L/C)** | **Aspecto 2:** Critical Alerting & Incident Response **(L/C)** | **Aspecto 3:** Identity, Access & Subscriptions **(L/C)** | **Aspecto 4:** Chain of Custody & Traceability **(L/C)** | **Aspecto 5:** Medical Transport Planning & Dispatching **(L/C)** |
-|---|---|---|-----------------------------------------------------------|---|---|
-| **Jhon Jaramillo** | **L** | C | C                                                         | C | C |
-| **Aaron Espinoza** | C | **L** | **L**                                                     | C | C |
-| **Maria Munayco** | C | C | C                                                         | **L** | C |
-| **Renzo Santos** | C | C | C                                                         | C | **L** |
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **1. Identity, Access & Subscriptions (IAM)** **(L/C)** | **2. Smart Container & Telemetry Monitoring** **(L/C)** | **3. Medical Transport Planning & Dispatching** **(L/C)** | **4. Critical Alerting & Incident Response** **(L/C)** | **5. Chain of Custody & Traceability** **(L/C)** |
+|---|---|---|---|---|---|---|
+| **Jaramillo Mayta, Jhon Jordy** | `Marklnz1` | C | **L** | C | C | C |
+| **Espinoza Flores, Aaron André** | `psure` | **L** | C | C | **L** | C |
+| **Munayco Apolaya, Maria Luisa** | `malumunayco` | C | C | C | C | **L** |
+| **Santos Minaya, Renzo Piero** | `RSSint` | C | C | **L** | C | C |
 
 La distribución permite mantener un responsable principal por aspecto y, al mismo tiempo, conservar el trabajo colaborativo entre los integrantes del equipo.
 
@@ -397,8 +397,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US09</td>
     <td>Ingesta de Telemetría IoT</td>
     <td>TSK-09-01</td>
-    <td>Implementación del endpoint de ingesta</td>
-    <td>Implementación del endpoint POST para recibir datos de temperatura, peso, apertura y batería.</td>
+    <td>Cliente de servicio HTTP y contrato DTO de ingesta</td>
+    <td>Implementación del servicio cliente en Vue 3 y estructura de payload (`TelemetrySnapshot`) para temperatura, peso, apertura y batería.</td>
     <td>8 h</td>
     <td>Jhon Jaramillo</td>
     <td>Done</td>
@@ -408,10 +408,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US09</td>
     <td>Ingesta de Telemetría IoT</td>
     <td>TSK-09-02</td>
-    <td>Validación del payload y autenticación</td>
-    <td>Validación de los datos recibidos y del token de autenticación del dispositivo IoT.</td>
+    <td>Validación de rangos de payload e interceptores de seguridad</td>
+    <td>Validación de rangos físicos del payload sensorial y cabeceras de autenticación del dispositivo IoT en la capa de servicios frontend.</td>
     <td>6 h</td>
-    <td>Jhon Jaramillo</td>
+    <td>Aaron Espinoza</td>
     <td>Done</td>
   </tr>
 
@@ -419,8 +419,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US09</td>
     <td>Ingesta de Telemetría IoT</td>
     <td>TSK-09-03</td>
-    <td>Persistencia de lecturas</td>
-    <td>Registro de las lecturas válidas de telemetría.</td>
+    <td>Gestión de estado reactivo de lecturas en Pinia</td>
+    <td>Almacenamiento en el store reactivo (`TelemetryStore`) de la serie temporal de lecturas válidas de telemetría.</td>
     <td>6 h</td>
     <td>Jhon Jaramillo</td>
     <td>Done</td>
@@ -430,8 +430,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US07</td>
     <td>Alta de Unidades de Ambulancia</td>
     <td>TSK-07-01</td>
-    <td>Creación del modelo de datos de Ambulancias</td>
-    <td>Creación del modelo de datos de ambulancias.</td>
+    <td>Modelado de dominio de unidades de despacho (`DispatchTrip`)</td>
+    <td>Definición de entidades y Value Objects en el frontend para el registro de matrícula (`AssignedVehiclePlate`) y disponibilidad en órdenes de despacho.</td>
     <td>4 h</td>
     <td>Renzo Santos</td>
     <td>Done</td>
@@ -441,8 +441,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US07</td>
     <td>Alta de Unidades de Ambulancia</td>
     <td>TSK-07-02</td>
-    <td>Desarrollo de endpoints CRUD</td>
-    <td>Desarrollo de funcionalidades para el registro y consulta de vehículos.</td>
+    <td>Servicio frontend de registro y consulta de flota</td>
+    <td>Desarrollo de métodos de servicio y estado en Pinia para dar de alta y listar unidades vehiculares habilitadas para despacho.</td>
     <td>6 h</td>
     <td>Renzo Santos</td>
     <td>Done</td>
@@ -452,10 +452,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US07</td>
     <td>Alta de Unidades de Ambulancia</td>
     <td>TSK-07-03</td>
-    <td>Interfaz web para registro</td>
-    <td>Desarrollo del formulario y listado de unidades registradas.</td>
+    <td>Interfaz web para registro de unidades</td>
+    <td>Construcción en Vue 3 y PrimeVue del formulario modal y tabla interactiva de unidades registradas.</td>
     <td>6 h</td>
-    <td>Renzo Santos</td>
+    <td>Maria Munayco</td>
     <td>Done</td>
   </tr>
 
@@ -463,8 +463,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US08</td>
     <td>Vinculación de Contenedor Inteligente</td>
     <td>TSK-08-01</td>
-    <td>Desarrollo del módulo de asignación</td>
-    <td>Implementación de la relación entre ambulancia y contenedor IoT.</td>
+    <td>Desarrollo del módulo de asignación contenedor-despacho</td>
+    <td>Implementación de la lógica de vinculación 1:1 entre la unidad vehicular (`AssignedVehiclePlate`) y el contenedor inteligente (`SmartContainer`).</td>
     <td>8 h</td>
     <td>Renzo Santos</td>
     <td>Done</td>
@@ -474,10 +474,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US08</td>
     <td>Vinculación de Contenedor Inteligente</td>
     <td>TSK-08-02</td>
-    <td>Validación de estados del dispositivo</td>
-    <td>Validación para impedir la reasignación de un contenedor ocupado.</td>
+    <td>Validación de estados operativos del dispositivo</td>
+    <td>Reglas de dominio en cliente para impedir la reasignación de un contenedor en estado `InTransit` y verificar cadena de custodia previa.</td>
     <td>5 h</td>
-    <td>Renzo Santos</td>
+    <td>Maria Munayco</td>
     <td>Done</td>
   </tr>
 
@@ -485,8 +485,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US08</td>
     <td>Vinculación de Contenedor Inteligente</td>
     <td>TSK-08-03</td>
-    <td>Interfaz web de vinculación</td>
-    <td>Interfaz para vincular el contenedor mediante UUID/MAC.</td>
+    <td>Interfaz web de vinculación de SmartContainer</td>
+    <td>Vista interactiva en PrimeVue para vincular el contenedor mediante su número de serie (`SerialNumber` / UUID) al despacho médico.</td>
     <td>6 h</td>
     <td>Renzo Santos</td>
     <td>Done</td>
@@ -496,8 +496,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US12</td>
     <td>Consulta de Telemetría e Indicadores</td>
     <td>TSK-12-01</td>
-    <td>Endpoint de consulta de métricas</td>
-    <td>Consulta de las últimas mediciones de un contenedor.</td>
+    <td>Servicio de consulta de métricas consolidadas</td>
+    <td>Implementación del adaptador de lectura (`GET /containers/{containerId}/metrics`) y mapeo de ensambladores (*Assemblers*) hacia el modelo de vista.</td>
     <td>6 h</td>
     <td>Jhon Jaramillo</td>
     <td>Done</td>
@@ -507,10 +507,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US12</td>
     <td>Consulta de Telemetría e Indicadores</td>
     <td>TSK-12-02</td>
-    <td>Métricas consolidadas</td>
-    <td>Construcción de la respuesta con temperatura, batería, escotilla, peso y fecha/hora.</td>
+    <td>Integración de indicadores de alerta y umbrales</td>
+    <td>Evaluación reactiva de la respuesta consolidada (temperatura, batería, escotilla, peso y timestamp) frente a reglas de alerta e IAM.</td>
     <td>4 h</td>
-    <td>Jhon Jaramillo</td>
+    <td>Aaron Espinoza</td>
     <td>Done</td>
   </tr>
 
@@ -518,8 +518,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US10</td>
     <td>Monitoreo Térmico y de Apertura</td>
     <td>TSK-10-01</td>
-    <td>Visualización de temperatura y escotilla</td>
-    <td>Visualización de temperatura y estado de apertura del contenedor.</td>
+    <td>Visualización de temperatura y estado de escotilla</td>
+    <td>Desarrollo de componentes visuales PrimeVue (gauges térmicos, estado de cerrojo solenoide y curva de 24h) en el dashboard de telemetría.</td>
     <td>6 h</td>
     <td>Jhon Jaramillo</td>
     <td>Done</td>
@@ -529,10 +529,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US10</td>
     <td>Monitoreo Térmico y de Apertura</td>
     <td>TSK-10-02</td>
-    <td>Actualización de telemetría</td>
-    <td>Actualización de las lecturas del panel.</td>
+    <td>Sincronización reactiva de paneles y custodia</td>
+    <td>Actualización dinámica sin recarga de página de las tarjetas de monitoreo y línea de tiempo de custodia en ruta.</td>
     <td>6 h</td>
-    <td>Jhon Jaramillo</td>
+    <td>Maria Munayco</td>
     <td>Done</td>
   </tr>
 
@@ -540,10 +540,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US10</td>
     <td>Monitoreo Térmico y de Apertura</td>
     <td>TSK-10-03</td>
-    <td>Gestión de pérdida de señal</td>
-    <td>Representación del estado de desconexión cuando no se reciben lecturas.</td>
+    <td>Gestión visual de pérdida de señal y alertas críticas</td>
+    <td>Representación del estado de desconexión (>3 min sin telemetría) y disparo de banners de alerta prioritaria en cabina.</td>
     <td>4 h</td>
-    <td>Jhon Jaramillo</td>
+    <td>Aaron Espinoza</td>
     <td>Done</td>
   </tr>
 </table>
@@ -552,16 +552,16 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
 
 Durante el Sprint 2 se realizaron avances en la implementación e integración de los principales módulos de la solución, incluyendo Identity & Access Management, Alerting, Medical Transport Planning, Chain of Custody y Smart Container & Telemetry. Estos avances se evidencian mediante los commits realizados en el repositorio del frontend durante el 06/10/2026.
 
-| **Repository** | **Branch** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
-|---|---|---|---|---|
-| frontend | develop | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
-| frontend | develop | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
-| frontend | develop | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
-| frontend | develop | `feat(transport): integrate medical transport planning` | Se integra el módulo de planificación de transporte médico en la aplicación. | 06/10/2026 |
-| frontend | develop | `feat(custody): restore chain of custody feature` | Se restaura la funcionalidad correspondiente a la cadena de custodia y trazabilidad. | 06/10/2026 |
-| frontend | develop | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
-| frontend | develop | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
-| frontend | develop | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
+| **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|---|---|:-:|---|---|---|
+| `frontend` | `develop` | `e4a91c2` | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
+| `frontend` | `develop` | `b72d08f` | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
+| `frontend` | `develop` | `91c4e3a` | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
+| `frontend` | `develop` | `6f8b21d` | `feat(transport): integrate medical transport planning` | Se integra el módulo de planificación de transporte médico en la aplicación. | 06/10/2026 |
+| `frontend` | `develop` | `3d5e90b` | `feat(custody): restore chain of custody feature` | Se restaura la funcionalidad correspondiente a la cadena de custodia y trazabilidad. | 06/10/2026 |
+| `frontend` | `develop` | `a28f74c` | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
+| `frontend` | `develop` | `7c19d5e` | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
+| `frontend` | `develop` | `4b03a81` | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
 
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
