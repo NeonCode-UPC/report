@@ -1,0 +1,27 @@
+# 1.3. Segmentos objetivo
+
+La solución **Medical SMARTBOX** está dirigida a dos segmentos claramente diferenciados dentro de la cadena de transporte interhospitalario de medicamentos termolábiles, hemocomponentes, muestras biológicas y órganos en el Perú. Ambos segmentos requieren información confiable, alertas oportunas y trazabilidad continua durante el traslado, debido a que las condiciones de conservación térmica y el cumplimiento de la ventana de isquemia impactan directamente en la viabilidad clínica del insumo y la seguridad del paciente.
+
+## Segmento 1: Personal de Transporte Asistencial (Conductores de Ambulancia, Paramédicos y Técnicos de Urgencias)
+
+Este segmento comprende a los operadores en campo —conductores de unidades móviles de soporte vital (Tipo II y Tipo III), paramédicos, enfermeros de transporte y técnicos de emergencias— pertenecientes al **Sistema de Atención Móvil de Urgencias (SAMU 106 — MINSA)**, al **Servicio de Transporte Asistido de Emergencia (STAE — EsSalud)** y a empresas privadas de ambulancias y logística biomédica.
+
+Sus necesidades operativas se centran en verificar rápidamente que el contenedor haya alcanzado la temperatura de pre-enfriamiento antes de partir, monitorear el estado de la carga sin distraerse de la conducción ni abrir innecesariamente la tapa térmica, recibir alertas sonoras/visuales inmediatas en cabina ante cualquier desconexión de la fuente de 12 V o desviación térmica, y contar con una entrega formal ágil en el hospital de destino que certifique su cumplimiento y deslinde responsabilidades.
+
+### Características Demográficas y Sustento Estadístico (Segmento 1)
+
+* **Perfil Demográfico y Laboral:** Profesionales y técnicos de entre **24 y 48 años**, con formación en atención prehospitalaria, enfermería técnica o conducción certificada de vehículos de emergencia (licencias A-IIb / A-IIIa con capacitación en manejo defensivo y soporte básico de vida BLS). Operan en turnos rotativos de **12 a 24 horas** bajo condiciones de alto estrés vial.
+* **Dimensionamiento de Flota en Lima Metropolitana:** Según registros del **Registro Nacional de Instituciones Prestadoras de Servicios de Salud (RENIPRESS — SUSALUD)** y del **MINSA**, en Lima Metropolitana y el Callao operan más de **450 unidades de ambulancias acreditadas** (entre bases operativas del SAMU, hospitales nacionales del MINSA, redes prestacionales de EsSalud y clínicas privadas).
+* **Impacto del Tráfico Vehicular en Tiempos de Traslado:** De acuerdo con el *TomTom Traffic Index*, Lima Metropolitana registra un nivel de congestión vehicular superior al **45% en horas punta**, incrementando los tiempos de traslado interhospitalario entre **28 y 42 minutos adicionales** por trayecto de 10 km, lo que eleva críticamente el riesgo de agotamiento de geles refrigerantes en cajas pasivas convencionales.
+
+## Segmento 2: Personal Clínico, Operadores Logísticos e Instituciones de Salud Receptoras
+
+Este segmento está conformado por las instituciones prestadoras de servicios de salud (**IPRESS de Categorías II-2, III-1 y III-2**: hospitales nacionales, institutos especializados, clínicas privadas, bancos de sangre Tipo II y laboratorios de referencia) y sus profesionales responsables: coordinadores clínicos de recepción y procura (**DIGDOT — MINSA**), médicos patólogos clínicos, jefes de banco de sangre, químicos farmacéuticos hospitalarios, supervisores de logística médica y auditores de calidad.
+
+Estos actores necesitan visibilidad centralizada sobre múltiples contenedores y traslados en curso, notificaciones automáticas de pre-arribo para alistar quirófanos o áreas estériles antes de que llegue la ambulancia, validación criptográfica de identidad en la recepción (**Geocerca GPS + Token OTP**) y acceso inmediato a manifiestos digitales inmutables que respalden el cumplimiento normativo frente a inspecciones sanitarias.
+
+### Características Demográficas y Sustento Estadístico (Segmento 2)
+
+* **Perfil Demográfico y Profesional:** Profesionales de la salud e ingenieros/administradores logísticos de entre **28 y 58 años**, colegiados y habilitados (**CMP**, **CQFP**, **CEP**), con cargos de jefatura de guardia, coordinación de trasplantes, dirección técnica de farmacia hospitalaria o auditoría de gestión de calidad.
+* **Universo Institucional (Mercado Objetivo B2B):** De acuerdo con datos oficiales de **SUSALUD / RENIPRESS**, el Perú cuenta con más de **820 establecimientos de salud de mediana y alta complejidad** (hospitales y clínicas entre públicos y privados), de los cuales el **54% se concentra en Lima Metropolitana y el Callao**. Asimismo, según el **Programa Nacional de Hemoterapia y Bancos de Sangre (PRONAHEBAS — MINSA)**, en el país operan más de **95 Centros de Hemoterapia y Bancos de Sangre Tipo II** que movilizan diariamente cientos de unidades de paquete globular y plasma fresco.
+* **Estadísticas de Pérdida por Ruptura de Cadena de Frío:** Informes técnicos de la **Organización Mundial de la Salud (OMS)** y la **OPS** documentan que hasta un **20% de los productos biológicos y farmacéuticos termosensibles** sufren degradación durante el transporte debido a excursiones térmicas no detectadas a tiempo. En el ámbito de procura y trasplante supervisado por la **DIGDOT (MINSA)**, cada minuto fuera del rango isotérmico (+2 °C a +8 °C) reduce la viabilidad funcional del injerto y expone a la institución a sanciones administrativas tipificadas en la **RM N.° 833-2015/MINSA (DIGEMID)**.

@@ -1,5 +1,13 @@
-report.pdf
+# Artefactos compilados de Pandoc
+build/*.pdf
+dist/*.pdf
 *.pdf
-docs_backup/
-/.idea/indexLayout.xml
-/.idea/projectSettingsUpdater.xml
+!assets/cover-background.pdf
+
+# Entornos de desarrollo e IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

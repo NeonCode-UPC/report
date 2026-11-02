@@ -1,0 +1,33 @@
+name: Build Project Report PDF (Pandoc Docs-as-Code)
+
+on:
+  push:
+    branches: [ main, develop, "feature/**", "release/**", "hotfix/**" ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build-pdf:
+    name: Compile Markdown Report to PDF
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc & WeasyPrint
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc weasyprint fonts-liberation fonts-dejavu-core make
+
+      - name: Build PDF via Makefile & Pandoc Defaults
+        run: |
+          mkdir -p build
+          make pdf
+
+      - name: Upload Compiled PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: upc-pre-202620-1asi0730-8150-neoncode-report-tb1
+          path: |
+            build/upc-pre-202620-1asi0730-8150-neoncode-report-tb1.pdf
+            build/project-report.pdf
