@@ -5,7 +5,7 @@ En esta sección se presenta el **Product Backlog** priorizado para la plataform
 El backlog se encuentra organizado secuencialmente bajo un criterio estricto de **valor de negocio para nuestros segmentos objetivo**, iniciando con la difusión comercial y captación de prospectos institucionales (*Landing Page*), seguido del onboarding hospitalario y los servicios de monitoreo IoT, aprovisionamiento, alertas críticas y cadena de custodia.
 
 | Order / Priority | Epic ID | User Story ID | Título de la Historia | Descripción | Story Points (Fibonacci) | Sprint Asignado |
-| :---: | :---: | :---: | :--- | :--- | :---: | :---: |
+| :------: | :--------: | :-------: | :------------------- | :---------------------------------- | :------: | :--------: |
 | **01** | EP02 | **US04** | Exploración de Propuesta de Valor Logística | Como visitante comercial institucional (Gianfranco Timoteo), deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación. | 2 | Sprint 1 |
 | **02** | EP02 | **US05** | Solicitud de Demostración Corporativa | Como visitante comercial institucional (Gianfranco Timoteo), deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario. | 2 | Sprint 1 |
 | **03** | EP02 | **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial institucional (Gianfranco Timoteo), deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | 1 | Sprint 1 |

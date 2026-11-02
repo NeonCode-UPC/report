@@ -11,7 +11,7 @@ En esta sección se detalla la planificación, asignación de responsabilidades 
 El **Sprint Planning 1** formaliza los aspectos principales de la reunión de planificación del primer ciclo de desarrollo (Sprint 1). Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario consistió en diseñar, implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend en ASP.NET Core 10.0 y la persistencia relacional en MySQL 8.0.
 
 | Sprint # | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------- | :--------------------------------------------------------------------------- |
 | **Sprint Planning Background** | **Sprint Planning Background**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Date | 2026-09-08                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Time | 19:00 - 21:30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -122,11 +122,11 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1)
 
 | Sprint # | Sprint 1 |
-|---|---|
+| :----------------------- | :--------------------------------------------------------------------------- |
 | **User Story** | **Work-Item / Task** |
 
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In Process / To Review / Done)** |
-|---|---|---|---|---|---:|-----------------|---|
+| :-----: | :------------- | :-------: | :---------------- | :--------------------------- | :-----: | :---------- | :-----: |
 | US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco   | Done |
 | US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación del layout para diferentes tamaños de pantalla. | 4 h | Renzo Santos    | Done |
 | US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza  | Done |
@@ -325,7 +325,7 @@ En esta sección se detalla nuestra organización para el segundo entregable (TB
 El Sprint Planning 2 tuvo como propósito establecer el objetivo, alcance y responsabilidades del segundo ciclo de desarrollo. El equipo priorizó las historias de usuario relacionadas con el registro de unidades de ambulancia, la vinculación de contenedores inteligentes y la gestión de información de telemetría.
 
 | **Sprint #** | **Sprint 2**                                                                                                                                                                                                             |
-|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------- | :--------------------------------------------------------------------------- |
 | **Sprint Planning Background** | **Sprint Planning 2**                                                                                                                                                                                                    |
 | **Date** | 2026-10-06                                                                                                                                                                                                               |
 | **Time** | 20:30 PM                                                                                                                                                                                                                 |
@@ -355,7 +355,7 @@ Para el Sprint 2 se estableció la matriz de liderazgo y colaboración considera
 **L = Lead / C = Collaborator**
 
 | **Team Member (Last Name, First Name)** | **GitHub Username** | **1. Identity, Access & Subscriptions (IAM)** **(L/C)** | **2. Smart Container & Telemetry Monitoring** **(L/C)** | **3. Medical Transport Planning & Dispatching** **(L/C)** | **4. Critical Alerting & Incident Response** **(L/C)** | **5. Chain of Custody & Traceability** **(L/C)** |
-|---|---|---|---|---|---|---|
+| :--------------------- | :------------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | **Jaramillo Mayta, Jhon Jordy** | `Marklnz1` | C | **L** | C | C | C |
 | **Espinoza Flores, Aaron André** | `psure` | **L** | C | C | **L** | C |
 | **Munayco Apolaya, Maria Luisa** | `malumunayco` | C | C | C | C | **L** |
@@ -374,6 +374,7 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
 
 <table>
+  <colgroup><col style="width: 7%;"><col style="width: 14%;"><col style="width: 9%;"><col style="width: 17%;"><col style="width: 28%;"><col style="width: 7%;"><col style="width: 11%;"><col style="width: 7%;"></colgroup>
   <tr>
     <td><strong>Sprint #</strong></td>
     <td colspan="7"><strong>Sprint 2</strong></td>
@@ -553,7 +554,7 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
 Durante el Sprint 2 se realizaron avances en la implementación e integración de los principales módulos de la solución, incluyendo Identity & Access Management, Alerting, Medical Transport Planning, Chain of Custody y Smart Container & Telemetry. Estos avances se evidencian mediante los commits realizados en el repositorio del frontend durante el 06/10/2026.
 
 | **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
-|---|---|:-:|---|---|---|
+| :----------: | :---------: | :--------: | :------------------------- | :---------------------------- | :----------: |
 | `frontend` | `develop` | `e4a91c2` | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
 | `frontend` | `develop` | `b72d08f` | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
 | `frontend` | `develop` | `91c4e3a` | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
