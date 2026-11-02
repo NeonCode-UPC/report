@@ -13,7 +13,7 @@ La solución propuesta, **Medical SMARTBOX**, consiste en una plataforma web Saa
 Para delimitar con precisión el alcance del problema y el perfil de la solución, se aplica la metodología **5W2H** (*What, Why, Who, Where, When, How, How Much*):
 
 | Interrogante (5W2H) | Dimensión de Análisis | Descripción Fundamentada en el Dominio Asistencial |
-| :--- | :--- | :--- |
+| :--------------- | :--------------------- | :------------------------------------------------------------- |
 | **What?** *(¿Qué ocurre?)* | Naturaleza del problema y propuesta tecnológica | Ruptura inadvertida de la cadena de frío ($+2\,^\circ\text{C}$ a $+8\,^\circ\text{C}$), manipulación sin control físico y ausencia de trazabilidad digital en el transporte móvil de muestras biológicas, hemocomponentes y órganos. Se resuelve mediante el ecosistema ciber-físico **Medical SMARTBOX** (contenedor IoT activo + plataforma web en Vue 3 y API RESTful en ASP.NET Core 10). |
 | **Why?** *(¿Por qué ocurre?)* | Causas raíz y justificación normativa | Por el uso generalizado de contenedores isotérmicos pasivos sin telemetría en ruta, el llenado manual de actas en papel vulnerables a extravío o alteración post-facto, y la desconexión entre la ambulancia en tránsito y el equipo clínico receptor. Esto contraviene las exigencias de trazabilidad del **Manual de Buenas Prácticas de Distribución y Transporte (RM N.° 833-2015/MINSA — DIGEMID)**. |
 | **Who?** *(¿Quiénes son los afectados?)* | Actores directos e indirectos | **Segmento 1:** Personal de transporte asistencial (conductores de ambulancia, paramédicos y técnicos del SAMU 106, EsSalud STAE y flotas privadas).<br>**Segmento 2:** Personal clínico receptor, coordinadores de procura de órganos, jefes de banco de sangre, farmacias hospitalarias y auditores de calidad de clínicas e IPRESS de nivel II y III. |
@@ -87,7 +87,7 @@ We will know we are successful when users can monitor active medical transports 
 ### 1.2.2.4. Lean UX Canvas
 
 | Sección | Descripción |
-|---|---|
+| :------------------------ | :--------------------------------------------------------------------------- |
 | Business problem | Las instituciones de salud necesitan transportar medicamentos, órganos e insumos sensibles con mayor control, trazabilidad y capacidad de respuesta ante incidentes. |
 | Business outcomes | Reducir incidentes de conservación, mejorar la visibilidad del traslado, disminuir incertidumbre sobre tiempos de llegada y generar evidencia histórica. |
 | Users | Personal de transporte asistencial (conductores y paramédicos) y personal clínico/logístico de instituciones hospitalarias receptoras. |

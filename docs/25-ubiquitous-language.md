@@ -7,7 +7,7 @@ Conforme a las directrices fundamentales de *Domain-Driven Design* (Eric Evans, 
 Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a su correspondiente *Bounded Context*, garantizando que cada concepto posea una semántica unívoca y bien delimitada dentro de las fronteras transaccionales del dominio. La estructuración en cinco (5) Bounded Contexts dentro de este glosario rige de manera consistente a lo largo de todo el informe técnico, desde los requisitos hasta el diseño orientado a objetos y la base de datos relacional. A continuación, se presenta la tabla consolidada en orden alfabético estricto (A-Z) como índice lexicográfico de referencia rápida, seguida del desglose analítico detallado por cada subdominio según el orden canónico del sistema:
 
 | # | Ubiquitous Term (English / Español) | Bounded Context Asociado | Tipo de Artefacto DDD |
-|:---:|:---|:---|:---|
+| :------: | :--------------------------------- | :----------------------------------- | :--------------------- |
 | 1 | **Acceptable Temperature Range (Rango Térmico Aceptable)** | Medical Transport Planning & Dispatching | Value Object |
 | 2 | **Audit Trail & Digital Manifest (Rastro de Auditoría y Manifiesto Digital)** | Chain of Custody & Traceability | Aggregate Root |
 | 3 | **Automated Maintenance and Sensor Calibration (Mantenimiento y Calibración Automatizada)** | Smart Container & Telemetry Monitoring | Domain Policy |
