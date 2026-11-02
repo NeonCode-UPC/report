@@ -40,10 +40,6 @@
 <td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Espinoza Flores, Aaron André</td>
 </tr>
 <tr>
-<td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u20211b556</td>
-<td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Gargate Paredes, Santiago</td>
-</tr>
-<tr>
 <td align="left" style="border: none !important; background: transparent !important; padding: 3px 32px 3px 0; color: #000;">u202520310</td>
 <td align="left" style="border: none !important; background: transparent !important; padding: 3px 0 3px 0; color: #000;">Jaramillo Mayta, Jhon Jordy</td>
 </tr>
@@ -74,9 +70,9 @@ El presente Registro de Versiones del Informe documenta la trazabilidad evolutiv
 | :---: | :---: | :--- | :--- |
 | **V1.0.0** | 08/09/2026 | NeonCode Team | **Inicialización del Repositorio y Andamiaje Documental:** Creación de la estructura base del repositorio en la organización pública de GitHub (`NeonCode-UPC/report`). Configuración del modelo de ramificación GitFlow (`main`, `develop`), convenciones Conventional Commits y estructura de directorios `docs/` y `assets/`. Elaboración de la Carátula institucional según las directrices y modelo del docente Velásquez Núñez, y generación del esqueleto Markdown para todos los capítulos. |
 | **V1.1.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Relevamiento de Requisitos, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial y ambulancias, y Segmento 2: centros sanitarios, bancos de sangre y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo de mercado real frente a Sensitech, Tracklink Perú y Controlant) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de 6 sesiones con enlaces a video y análisis de hallazgos cualitativos). |
-| **V1.2.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos: Paramédico Javier Soto y Dr. Carlos Mendoza; User Task Matrix priorizada, User Journey Mapping As-Is y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal categorizado por Bounded Contexts). Desarrollo del Capítulo III completo: 3.1 User Stories (18 historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then en español con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal → Actor → Impact → Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
-| **V1.2.5** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando cinco Bounded Contexts: Identity, Access & Subscriptions, Smart Container & Telemetry Monitoring, Medical Transport Planning & Dispatching, Critical Alerting & Incident Response, y Chain of Custody & Traceability). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Web API, Telemetry Worker, MySQL 8.0, Broker MQTT, Redis Cache y Web App) y 4.6.4 Component Diagrams en capas DDD. Desarrollo del Capítulo 4.7 (Class Diagrams UML) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF en MySQL 8.0 InnoDB, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
-| **V1.3.0** | 16/09/2026 | Gargate Paredes, Santiago<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 10 LTS [`net10.0`], Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), servicios backend proyectados (5.2.1.6) y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). Conclusiones preliminares, Bibliografía en formato APA y Anexos normativos. |
+| **V1.2.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos: Aldair Lazaro y Gianfranco Timoteo; User Task Matrix priorizada, User Journey Mapping As-Is y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal categorizado por Bounded Contexts). Desarrollo del Capítulo III completo: 3.1 User Stories (18 historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then en español con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal → Actor → Impact → Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
+| **V1.2.5** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa | **Arquitectura de Software DDD, Diseño Orientado a Objetos y Base de Datos:** Incorporación de wireframes, wireflows y mockups de alta fidelidad para el Landing Page y la Web Application (Capítulos 4.3, 4.4 y 4.5). Modelado táctico del Capítulo 4.6 (Design-Level EventStorming delimitando cinco Bounded Contexts: Identity, Access & Subscriptions, Smart Container & Telemetry Monitoring, Medical Transport Planning & Dispatching, Critical Alerting & Incident Response, y Chain of Custody & Traceability). Elaboración de diagramas C4 bajo estándares de Structurizr: 4.6.2 Context Diagram, 4.6.3 Container Diagram (Static Content Landing Page, Web Application SPA, Backend RESTful Web API y MySQL 8.0 Database) y 4.6.4 Component Diagram en módulos DDD. Desarrollo del Capítulo 4.7 (Class Diagrams UML) y Capítulo 4.8 (Database Design con modelo relacional físico en 3NF en MySQL 8.0 InnoDB, diccionarios de datos, índices para series temporales y compatibilidad con directivas DIGEMID/MINSA). |
+| **V1.3.0** | 16/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Santos Minaya, Renzo Piero | **Gestión de Configuración (SCM) y Ejecución del Sprint 1:** Documentación del Capítulo 5.1 completo: 5.1.1 Configuración del entorno de desarrollo (SDK .NET 10 LTS [`net10.0`], Node.js, Vite, herramientas de análisis de código), 5.1.2 Gestión de código fuente (GitFlow, SemVer y Conventional Commits), 5.1.3 Guías de estilo de código (estándares C# Microsoft y Vue.js/HTML5/CSS3 Google/W3C) y 5.1.4 Configuración de despliegue continuo (CI/CD en GitHub Pages). Documentación del Sprint 1: 5.2.1.1 Sprint Planning 1, 5.2.1.2 Matriz LACX de líderes y colaboradores, 5.2.1.3 Sprint Backlog 1. Registro de evidencias de desarrollo de Landing Page en HTML5/CSS3 semántico y responsive (5.2.1.4), evidencias de ejecución y validación responsive en múltiples viewports (5.2.1.5), servicios backend proyectados (5.2.1.6) y evidencias de despliegue activo en la nube con métricas de performance (5.2.1.7). Conclusiones preliminares, Bibliografía en formato APA y Anexos normativos. |
 | **V1.3.1** | 06/10/2026 | Jaramillo Mayta, Jhon Jordy<br>NeonCode Team | **Refactorización y Simplificación Canónica C4 Model:** Reestructuración de la arquitectura de software (Capítulo 4.6) adoptando la topología canónica oficial del C4 Model de Simon Brown. Poda de sobrecomplejidad accidental en 4.6.1 (eliminación de tablas CQRS masivas redundantes), consolidación a 4 contenedores canónicos (Landing Page, Single-Page Application, Backend RESTful Web API y MySQL Database) en 4.6.3, y descomposición modular de la Web API por Bounded Contexts bajo Clean Architecture en 4.6.4, garantizando total coherencia técnica y alineación con la rúbrica ABET. |
 | **V2.0.0** | 06/10/2026 | NeonCode Team | **Incorporación del Sprint 2 y Primer Incremento de Web Application (Hito TB1 - Semana 7):** Documentación del Sprint 2 (5.2.2 completo: Sprint Planning 2, Aspect Leaders Matrix, Sprint Backlog 2, evidencias de desarrollo del frontend en Vue.js / PrimeVue, gestión de estado Pinia, evidencias de despliegue y collaboration insights). Levantamiento de observaciones formuladas por el docente evaluador sobre la entrega AV1. Actualización de conclusiones y Student Outcome para el hito TB1. |
 | **V3.0.0** | *(Planificado)* | NeonCode Team | **Integración de Web Services RESTful API y Sprint 3 (Hito AV2 - Semana 12):** Documentación del Sprint 3 (5.2.3 completo: servicios backend en ASP.NET Core 10.0 [.NET 10 LTS, C# 14] bajo arquitectura DDD por capas, documentación OpenAPI/Scalar, base de datos relacional MySQL 8.0 y telemetría IoT en tiempo real). Incorporación de la sección 5.3 (Validation Interviews y evaluaciones según heurísticas de Nielsen) y 5.4 (Video About-the-Product). Actualización de Student Outcome para AV2. |
@@ -98,25 +94,24 @@ El informe del proyecto **Medical SMARTBOX** ha sido elaborado de manera estrict
 Para garantizar la integridad estructural, la trazabilidad histórica de los cambios y la no colisión entre los colaboradores, el equipo implementó las siguientes políticas de ingeniería de software:
 
 * **Modelo de Ramificación GitFlow:**  
-  * `main`: Rama de producción documental que aloja exclusivamente las versiones estables consolidadas correspondientes a los hitos evaluativos institucionales (`V1.0.0` para AV1, `V2.0.0` para TB1, etc.).  
+  * `main`: Rama de producción documental que aloja exclusivamente las versiones estables consolidadas correspondientes a los hitos evaluativos institucionales (`V1.3.0` para AV1, `V2.0.0` para TB1, etc.).  
   * `develop`: Rama de integración continua donde convergen las contribuciones revisadas de cada capítulo.  
-  * `feature/*`: Ramas de desarrollo temáticas aisladas (`feature/ch1-startup-solution`, `feature/ch2-needfinding-eventstorming`, `feature/ch3-requirements-backlog`, `feature/ch4-architecture-c4-class-db`, `feature/ch5-scm-sprint1`, `feature/report-management`), creadas individualmente por cada integrante según su asignación.
-* **Estándar Conventional Commits 1.0.0:** Todos los registros de confirmación se estructuraron bajo prefijos canónicos (`docs(...)`, `feat(...)`, `fix(...)`, `chore(...)`), especificando el alcance del cambio y facilitando la auditoría cruzada.
+  * `feature/*`: Ramas de desarrollo temáticas aisladas (`feature/consolidate-5-bounded-contexts`, `feature/needfinding`, `feature/student-outcome`, `feature/tb1-report-delivery`, etc.), creadas individualmente por cada integrante según su asignación.
+* **Estándar Conventional Commits 1.0.0:** Todos los registros de confirmación se estructuraron bajo prefijos canónicos (`docs(...)`, `feat(...)`, `fix(...)`, `refactor(...)`, `style(...)`), especificando el alcance del cambio y facilitando la auditoría cruzada.
 * **Políticas de Pull Requests (PR) y Code/Doc Review:** La incorporación de contenido hacia `develop` y `main` requirió la revisión cruzada de al menos un miembro del equipo para verificar el cumplimiento de las guías de estilo Markdown y la integridad de los enlaces y tablas.
 
 ***
 
-## 2. Participación del Equipo en el Informe Técnico (Hito AV1)
+## 2. Participación del Equipo en el Informe Técnico (Hitos AV1 y TB1)
 
-La siguiente matriz resume la distribución formal de responsabilidades y las aportaciones técnicas destacadas de cada miembro del equipo durante el desarrollo del primer avance:
+La siguiente matriz resume la distribución formal de responsabilidades y las aportaciones técnicas destacadas de cada miembro del equipo durante el desarrollo del primer avance (AV1) y de la primera entrega parcial (TB1):
 
-| Integrante | Usuario GitHub | Rol Principal | Secciones y Capítulos Asignados (AV1) | Aportaciones Técnicas Destacadas |
-| :--- | :---: | :---: | :--- | :--- |
-| **Espinoza Flores, Aaron André** | `@psure` | Research & Entrevistas | **Capítulo I completo:**<br>• 1.1 Startup Profile<br>• 1.2 Solution Profile (5W2H, Lean UX)<br>• 1.3 Segmentos Objetivo<br>**Capítulo II:**<br>• 2.1 Competidores<br>• 2.2 Entrevistas | Formulación de la problemática clínica sustentada en pérdidas de cadena de frío en ambulancias; elaboración del Lean UX Canvas; delimitación cualitativa de los dos segmentos objetivo; diseño y análisis de entrevistas semiestructuradas a personal de salud y logística. |
-| **Gargate Paredes, Santiago** | `@sssantiagoo` | Frontend Developer | **Capítulo V (Sprint 1):**<br>• 5.2.1.4 Development Evidence<br>• 5.2.1.5 Execution Evidence<br>• 5.2.1.7 Software Deployment Evidence<br>• 5.2.1.8 Collaboration Insights | Redacción y consolidación de evidencias del Sprint 1 para el Landing Page; documentación de pruebas de visualización responsive en múltiples viewports; registro de métricas de despliegue continuo en Vercel y métricas de desempeño web. |
-| **Jaramillo Mayta, Jhon Jordy** | `@Marklnz1` | Arquitecto de Software | **Capítulo II:**<br>• 2.4 Big Picture EventStorming<br>• 2.5 Ubiquitous Language<br>**Capítulo IV:**<br>• 4.6 Domain-Driven Architecture (C4)<br>• 4.7 Software OO Design (UML)<br>• 4.8 Database Design (ERD) | Modelado colaborativo en Miro del Big Picture EventStorming; redacción de 29 términos canónicos del dominio; descomposición táctica en 5 Bounded Contexts; diagramas C4 (Contexto, Contenedores, Componentes); Diagrama de Clases UML con agregados ricos y diseño relacional en 3NF. |
-| **Munayco Apolaya, Maria Luisa** | `@malumunayco` | UX/UI Designer | **Capítulo II:**<br>• 2.3 Needfinding (Personas, Task Matrix, Journey Maps, Empathy)<br>**Capítulo IV:**<br>• 4.1 Style Guidelines<br>• 4.2 Information Architecture<br>• 4.3 a 4.5 UI/UX Wireframes & Mockups | Creación de User Personas y mapas de empatía en UXPressia; definición del Design System clínico y Guías de Estilo; arquitectura de la información (SEO, taxonomía, navegación); diseño interactivo de wireframes y mockups de alta fidelidad en Figma. |
-| **Santos Minaya, Renzo Piero** | `@psure` / `@pisure` | Product Owner / Scrum Master | **Capítulo III completo:**<br>• 3.1 User Stories (Gherkin)<br>• 3.2 Impact Mapping<br>• 3.3 Product Backlog<br>**Capítulo V:**<br>• 5.1 SCM (5.1.1 a 5.1.4)<br>• 5.2.1 Sprint 1 (5.2.1.1 a 5.2.1.3) | Redacción de User Stories con criterios de aceptación Gherkin (Given-When-Then); matriz de Impact Mapping y priorización de Backlog; documentación de gobernanza SCM (GitFlow, SemVer); facilitación del Sprint Planning 1, Matriz LACX y Sprint Backlog 1. |
+| Integrante | Usuario GitHub | Rol Principal | Secciones y Capítulos Asignados (AV1 y TB1) | Aportaciones Técnicas Destacadas |
+| :--- |:--------------:| :---: | :--- | :--- |
+| **Espinoza Flores, Aaron André** |    `@psure`    | Research & Entrevistas | **Capítulo I completo:**<br>• 1.1 Startup Profile<br>• 1.2 Solution Profile (5W2H, Lean UX)<br>• 1.3 Segmentos Objetivo<br>**Capítulo II:**<br>• 2.1 Competidores<br>• 2.2 Entrevistas<br>**Sprint 2 (TB1):**<br>• Bounded Contexts *Critical Alerting* e *IAM* | Formulación de la problemática clínica 5W2H sustentada en pérdidas de cadena de frío en ambulancias; elaboración del Lean UX Canvas; delimitación demográfica y cualitativa de los dos segmentos objetivo; diseño y análisis de entrevistas semiestructuradas; desarrollo de módulos de alertas e identidad en Sprint 2. |
+| **Jaramillo Mayta, Jhon Jordy** |  `@Marklnz1`   | Arquitecto de Software | **Capítulo II:**<br>• 2.4 Big Picture EventStorming<br>• 2.5 Ubiquitous Language<br>**Capítulo IV:**<br>• 4.6 Domain-Driven Architecture (C4)<br>• 4.7 Software OO Design (UML)<br>• 4.8 Database Design (ERD)<br>**Sprint 2 (TB1):**<br>• Bounded Context *Smart Container & Telemetry* | Modelado colaborativo en Miro del Big Picture EventStorming; redacción del Ubiquitous Language; consolidación táctica en 5 Bounded Contexts; diagramas C4 canónicos (Contexto, Contenedores, Componentes); Diagramas de Clases UML con agregados ricos y diseño relacional en 3NF con UUIDv7 (RFC 9562). |
+| **Munayco Apolaya, Maria Luisa** | `@malumunayco` | UX/UI Designer | **Capítulo II:**<br>• 2.3 Needfinding (Personas, Task Matrix, Journey Maps, Empathy)<br>**Capítulo IV:**<br>• 4.1 Style Guidelines<br>• 4.2 Information Architecture<br>• 4.3 a 4.5 UI/UX Wireframes & Mockups<br>**Sprint 2 (TB1):**<br>• Bounded Context *Chain of Custody* | Creación de User Personas (Aldair Lazaro y Gianfranco Timoteo), Journey Maps As-Is y mapas de empatía en UXPressia; definición del Design System clínico y Guías de Estilo; arquitectura de la información (SEO, taxonomía, navegación); diseño interactivo en Figma y módulo de custodia en Sprint 2. |
+| **Santos Minaya, Renzo Piero** |   `@RSSint`    | Product Owner / Scrum Master | **Capítulo III completo:**<br>• 3.1 User Stories (Gherkin)<br>• 3.2 Impact Mapping<br>• 3.3 Product Backlog<br>**Capítulo V:**<br>• 5.1 SCM (5.1.1 a 5.1.4)<br>• 5.2.1 Sprint 1 y 5.2.2 Sprint 2<br>**Sprint 2 (TB1):**<br>• Bounded Context *Medical Transport Planning* | Redacción de User Stories con criterios de aceptación Gherkin (Given-When-Then); matriz de Impact Mapping y priorización de Backlog; documentación de gobernanza SCM (GitFlow, SemVer); facilitación del Sprint Planning 1 y 2, Matrices LACX, Sprint Backlogs y módulo de despacho médico. |
 
 ***
 
@@ -124,23 +119,22 @@ La siguiente matriz resume la distribución formal de responsabilidades y las ap
 
 ### 3.1. Dinámica de Trabajo Colaborativo
 
-Durante las cuatro semanas de desarrollo del avance **AV1**, el equipo sincronizó sus esfuerzos mediante una combinación de reuniones presenciales en campus y sesiones virtuales en Discord. La coordinación de tareas se apoyó en un tablero ágil (Trello/Jira) donde cada sección del informe fue modelada como un entregable con criterios de aceptación verificables. 
+Durante las cuatro semanas de desarrollo del avance **AV1**, el equipo sincronizó sus esfuerzos mediante una combinación de reuniones presenciales en campus y sesiones virtuales en Discord. La coordinación de tareas se apoyó en un tablero ágil donde cada sección del informe fue modelada como un entregable con criterios de aceptación verificables. 
 
 Cada integrante trabajó en su respectiva rama `feature/*`, sometiendo sus avances a revisión antes de integrarlos en la rama `develop`. Para la entrega final, se consolidó la rama `main`, sincronizando todos los enlaces cruzados, asegurando que las imágenes referenciadas residan en `assets/` y validando la consistencia semántica entre los capítulos de diseño, arquitectura y gestión ágil.
 
-### 3.2. Métricas de Colaboración y Commits en el Repositorio de Documentación
+### 3.2. Métricas de Colaboración y Commits en el Repositorio de Documentación (AV1)
 
 Los datos cuantitativos extraídos del historial de Git para el repositorio de documentación (`NeonCode-UPC/report`) durante el hito **AV1** evidencian una participación activa y balanceada de todos los miembros:
 
 | Integrante | Ramas Principales de Aporte | Commits Realizados | Líneas de Markdown Agregadas (aprox.) | Archivos Aportados / Editados |
-| :--- | :--- | :---: | :---: | :---: |
+| :--- | :--- | :---: | :---: | :--- |
 | **Aaron André Espinoza Flores** | `feature/ch1-startup-solution`, `feature/ch2-research` | 5 | ~1,200 | `11-startup-profile.md`, `12-solution-profile.md`, `13-segmentos-objetivos.md`, `21-competidores.md`, `22-entrevistas.md` |
-| **Santiago Gargate Paredes** | `feature/ch5-landing-sprint1`, `feature/ch5-insights` | 4 | ~950 | `52-landingpage-services-implementations.md`, `54-video-about-the-product.md` |
 | **Jhon Jordy Jaramillo Mayta** | `feature/ch2-domain-modeling`, `feature/ch4-architecture` | 8 | ~4,800 | `24-big-picture-eventstorming.md`, `25-ubiquitous-language.md`, `46-dd-software-architecture.md`, `47-software-object-oriented-design.md`, `48-database-design.md` |
 | **Maria Luisa Munayco Apolaya** | `feature/ch2-needfinding`, `feature/ch4-ux-ui` | 6 | ~1,950 | `23-needfinding.md`, `41-style-guidelines.md`, `42-information-architecture.md`, `43-landing-page-ui-design.md`, `44-web-application-uxui-design.md`, `45-web-application-prototyping.md` |
 | **Renzo Piero Santos Minaya** | `feature/ch3-backlog`, `feature/ch5-scm-planning`, `feature/report-integration` | 7 | ~2,100 | `01-caratula.md`, `02-registro-versiones.md`, `03-collaboration-insights.md`, `04-contenido.md`, `05-student-outcome.md`, `31-user-stories.md`, `32-impact-mapping.md`, `33-product-backlog.md`, `51-software-configuration-management.md` |
 
-> *Nota: Los commits registrados en esta sección corresponden estrictamente al repositorio del informe técnico (`NeonCode-UPC/report`). Los desarrollos de código fuente correspondientes al Landing Page (`landing-page`), Frontend Web (`medical-smartbox-frontend`) y Backend RESTful API (`medical-smartbox-backend`) se auditan de forma independiente en sus respectivos repositorios.*
+> *Nota: Los commits registrados en esta sección corresponden estrictamente al repositorio del informe técnico (`NeonCode-UPC/report`). Los desarrollos de código fuente correspondientes al Landing Page (`NeonCode-UPC/landing-page`) y Frontend Web Application (`NeonCode-UPC/frontend`) se auditan de forma independiente en sus respectivos repositorios en la sección 5.2.*
 
 ### 3.3. Evidencias Gráficas de Colaboración en GitHub (GitHub Insights)
 
@@ -162,9 +156,18 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
 
 ***
 
-## 4. Proyección de Colaboración para Siguientes Hitos
+## 4. TB1 – Stage Review (Semana 7)
 
-* **TB1 – Stage Review (Semana 7):** Incorporación de la documentación del Sprint 2 (Frontend Web Application en Vue.js / PrimeVue), levantamiento de observaciones del docente y actualización de métricas de contribución.
+Durante las semanas 5 a 7 correspondientes al **Hito TB1 (Sprint 2)**, el equipo ejecutó el levantamiento integral de las observaciones formuladas en el primer avance y documentó la implementación del primer incremento funcional de la **Web Application** en **Vue 3** y **PrimeVue**:
+
+* **Consolidación de Needfinding y Evidencia Empírica (`feature/needfinding`):** Reconstrucción de los perfiles de *User Personas* (**Aldair Lazaro** y **Gianfranco Timoteo**), *User Task Matrix*, *User Journey Maps As-Is* y *Empathy Maps* directamente fundamentados en las seis entrevistas de campo.
+* **Estandarización Arquitectónica y Dominio (`feature/consolidate-5-bounded-contexts`):** Simplificación canónica del modelo C4 a 4 contenedores, unificación táctica de los 5 Bounded Contexts en diagramas DLES, clases UML y esquema relacional MySQL 8.0 con identificadores `UUIDv7` (RFC 9562).
+* **Documentación de Ejecución del Sprint 2 (`feature/sprint-2-report`, `feature/student-outcome`, `feature/tb1-report-delivery`):** Incorporación de la sección `5.2.2. Sprint 2` completa, actualización de la matriz de *Student Outcome* ABET para TB1 y sincronización de conclusiones y anexos con el repositorio del Frontend desplegado.
+
+***
+
+## 5. Proyección de Colaboración para Siguientes Hitos
+
 * **AV2 – Sprint Review (Semana 12):** Documentación del Sprint 3 (Backend RESTful API en ASP.NET Core 10.0 y persistencia en MySQL Server 8.0 [InnoDB] mediante EF Core 10.0), entrevistas de validación con usuarios clínicos y métricas de integración.
 * **TB2 – Release Review (Semana 15):** Consolidación final del Sprint 4 (seguridad JWT, pruebas integradas, despliegue global en la nube), producción audiovisual y auditoría final de contribuciones.
 
@@ -205,11 +208,19 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
   - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
+    - [2.4.1. Leyenda de Elementos del EventStorming (Convención de Colores)](#241-leyenda-de-elementos-del-eventstorming-convención-de-colores)
+    - [2.4.2. Desglose Cronológico del Flujo de Eventos del Dominio](#242-desglose-cronológico-del-flujo-de-eventos-del-dominio)
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
+    - [2.5.1. Bounded Context: Identity, Access & Subscriptions (IAM)](#251-bounded-context-identity-access--subscriptions-iam)
+    - [2.5.2. Bounded Context: Smart Container & Telemetry Monitoring](#252-bounded-context-smart-container--telemetry-monitoring)
+    - [2.5.3. Bounded Context: Medical Transport Planning & Dispatching](#253-bounded-context-medical-transport-planning--dispatching)
+    - [2.5.4. Bounded Context: Critical Alerting & Incident Response](#254-bounded-context-critical-alerting--incident-response)
+    - [2.5.5. Bounded Context: Chain of Custody & Traceability](#255-bounded-context-chain-of-custody--traceability)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
   - [3.1. User Stories](#31-user-stories)
   - [3.2. Impact Mapping](#32-impact-mapping)
   - [3.3. Product Backlog](#33-product-backlog)
+    - [3.3.1. Engineering Tasks (Desglose del Sprint 1)](#331-engineering-tasks-desglose-del-sprint-1)
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
   - [4.1. Style Guidelines](#41-style-guidelines)
     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
@@ -254,12 +265,22 @@ A continuación, se presentan las capturas oficiales de la analítica de colabor
       - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
       - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
       - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
-  - [Anexo A. Repositorios de Código Fuente y Documentación](#anexo-a-repositorios-de-código-fuente-y-documentación)
+  - [Anexo A. Repositorios Oficiales y Despliegues en la Nube](#anexo-a-repositorios-oficiales-y-despliegues-en-la-nube)
   - [Anexo B. Tableros Digitales y Prototipos Interactivos](#anexo-b-tableros-digitales-y-prototipos-interactivos)
-  - [Anexo C. Registro Audiovisual de Entrevistas y Demostración](#anexo-c-registro-audiovisual-de-entrevistas-y-demostración)
+  - [Anexo C. Registro Audiovisual de Entrevistas y Demostración Funcional](#anexo-c-registro-audiovisual-de-entrevistas-y-demostración-funcional)
+  - [Anexo D. Glosario de Acrónimos y Normativa Sanitaria Referencial](#anexo-d-glosario-de-acrónimos-y-normativa-sanitaria-referencial)
 
 <div style="page-break-after: always;"></div>
 
@@ -275,16 +296,14 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :------------------- | :--------------------------------------- | :--------------------------------------- |
-| **5.c.1 Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Lideró la definición de la visión de negocio y el relevamiento de requisitos asistenciales para la plataforma Medical SMARTBOX. Condujo la estructuración del Capítulo I (Problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación de Lean UX Canvas y delimitación de los dos segmentos objetivo: operadores de transporte asistencial SAMU 106 y directores de centros hospitalarios/farmacéuticos). Asimismo, encabezó el análisis competitivo del mercado telemático de salud (Cap. 2.1) y el diseño y conducción de las entrevistas a profundidad a paramédicos y especialistas en logística biomédica (Cap. 2.2), asegurando que los requisitos del producto respondan a dolores reales y no a supuestos infundados.<br><br>**TB1:** Participó en la corrección y mejora del Capítulo I correspondiente al Sprint 1, atendiendo los ajustes necesarios para fortalecer la documentación previamente presentada. Asimismo, participó en la implementación del Bounded Context **Tour Management**, contribuyendo al desarrollo del segundo incremento de la solución y al cumplimiento de las actividades técnicas asignadas para el Sprint 2.<br> | **AV1:**<br>Durante este primer hito del proyecto, el equipo demostró un ejercicio de liderazgo horizontal y distribuido de alta efectividad. En lugar de centralizar la toma de decisiones en una sola figura, cada integrante asumió el liderazgo autónomo y especializado de un pilar fundamental de la solución: investigación empírica de mercado (Aaron Espinoza), experiencia y prototipado visual UX/UI (Maria Luisa Munayco), arquitectura de software y persistencia de datos (Jhon Jaramillo), gestión ágil y especificación de requisitos (Renzo Santos), y desarrollo frontend con despliegue en la nube (Santiago Gargate).<br><br>Esta delegación basada en competencias técnicas permitió avanzar en paralelo sobre frentes complejos y altamente interconectados sin generar cuellos de botella. Las disyuntivas de diseño técnico —tales como la selección de protocolos telemáticos para IoT (MQTT vs. WebSockets) o la delimitación de fronteras transaccionales en los Bounded Contexts— fueron debatidas y consensuadas con base en evidencia normativa (DIGEMID/MINSA) y criterios de ingeniería, logrando una cohesión técnica integral que sentó las bases para el éxito de las entregas posteriores.<br><br>**TB1:** Durante el segundo hito del proyecto, el equipo consolidó el liderazgo distribuido mediante la asignación de responsabilidades específicas para la corrección de los artefactos desarrollados en el Sprint 1 y la implementación de los Bounded Contexts correspondientes al Sprint 2. Cada integrante contribuyó desde un frente específico: Aaron Espinoza con la corrección del Capítulo I y la implementación de *Tour Management*; Santiago Gargate con la corrección del Capítulo V, la implementación del Sprint 2 y el Bounded Context *Identity, Access & Subscriptions*; Jhon Jaramillo con la corrección del Capítulo II y el Bounded Context *Smart Container & Telemetry Monitoring*; Maria Munayco con la corrección del Capítulo V y el Bounded Context *Chain of Custody & Traceability*; y Renzo Santos con la actualización del Capítulo III y el Bounded Context *Medical Transport Planning & Dispatching*. Esta distribución permitió avanzar de manera paralela sobre la documentación y la implementación de la Web Application, contribuyendo al cumplimiento de los objetivos establecidos para el Sprint 2. |
-| **5.c.1** *(cont.)* | **Gargate Paredes, Santiago**<br><br>**AV1:** Asumió el liderazgo técnico del frente de desarrollo y despliegue del Landing Page institucional de Medical SMARTBOX correspondiente al Sprint 1. Estableció la arquitectura semántica en HTML5, CSS3 modular y JavaScript, asegurando un diseño totalmente responsive (*mobile-first*) orientado a la conversión B2B de instituciones de salud. Lideró la implementación del pipeline de integración y despliegue continuo (CI/CD) alojado en la nube (Vercel/GitHub Pages), auditó los tiempos de carga y accesibilidad web conforme a las pautas WCAG, y documentó exhaustivamente las evidencias de desarrollo, ejecución y despliegue para la revisión de sprint (Capítulos 5.2.1.4 a 5.2.1.7).<br><br>**TB1:** Participó en la corrección y mejora del Capítulo V correspondiente al Sprint 1. Asimismo, participó en la implementación y documentación del **Sprint 2** y en el desarrollo del Bounded Context **Identity, Access & Subscriptions**, contribuyendo al avance de la Web Application y al cumplimiento de los objetivos técnicos establecidos para este incremento.<br> |  |
-| **5.c.1** *(cont.)* | **Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Ejerció el liderazgo en la definición de la arquitectura de software y el modelado orientado al dominio (DDD). Facilitó la sesión colaborativa de Big Picture EventStorming (Cap. 2.4) unificando la comprensión de los flujos de telemetría, custodia y alertas críticas entre todos los miembros. Formuló el glosario canónico de Ubiquitous Language (Cap. 2.5) y lideró el diseño táctico mediante Design-Level EventStorming delimitando cinco Bounded Contexts. Diseñó los diagramas del Modelo C4 (Contexto, Contenedores y Componentes) integrando Web API, bróker MQTT y WebSockets SignalR, y formalizó el Diagrama de Clases de Dominio UML (Cap. 4.7) y el Diagrama Físico de Base de Datos Relacional normalizado (Cap. 4.8) para garantizar consistencia transaccional y cumplimiento de las normativas DIGEMID/MINSA.<br><br>**TB1:** Participó en la corrección y mejora del Capítulo II correspondiente al Sprint 1. Asimismo, participó en la implementación del Bounded Context **Smart Container & Telemetry Monitoring**, contribuyendo al desarrollo del componente orientado al monitoreo de los contenedores inteligentes y la telemetría dentro del Sprint 2.<br> |  |
-| **5.c.1** *(cont.)* | **Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Lideró la estrategia de Experiencia de Usuario (UX) y Diseño de Interfaz (UI) del ecosistema Medical SMARTBOX. Dirigió el proceso de Needfinding (Cap. 2.3) coordinando la síntesis de hallazgos empíricos en User Personas (Dr. Carlos Mendoza y Paramédico Javier Soto), User Task Matrix y mapas de empatía. Estableció el Sistema de Diseño visual y las Guías de Estilo (Cap. 4.1), definiendo una paleta cromática clínica accesible y componentes UI atómicos. Asimismo, encabezó la arquitectura de información y la concepción de wireframes y mockups de alta fidelidad tanto para el Landing Page institucional como para el portal web operativo de monitoreo telemático (Capítulos 4.2 a 4.5), garantizando una experiencia coherente, intuitiva y libre de fricción para los operadores de emergencia.<br><br>**TB1:** Participó en la corrección y mejora del Capítulo V correspondiente al Sprint 1. Asimismo, participó en la implementación del Bounded Context **Chain of Custody & Traceability**, contribuyendo al desarrollo de las funcionalidades relacionadas con la trazabilidad y la cadena de custodia de la solución durante el Sprint 2.<br> |  |
-| **5.c.1** *(cont.)* | **Santos Minaya, Renzo Piero**<br><br>**AV1:** Ejerció el rol de liderazgo como Product Owner y Scrum Master del equipo. Condujo la transformación de los dolores y requisitos de negocio en artefactos ágiles formales, estructurando el catálogo completo de User Stories con criterios de aceptación rigurosamente formulados bajo sintaxis Gherkin (Scenario, Given, When, Then) organizados en Epics, junto con el Impact Mapping y el Product Backlog priorizado por valor clínico (Capítulo 3). En el ámbito de gestión, lideró la gobernanza de configuración de software (SCM) estableciendo el modelo de ramificación GitFlow, convenciones de Conventional Commits y guías de estilo para C# y Vue.js (Cap. 5.1). Asimismo, facilitó la sesión de Sprint Planning 1, coordinó la asignación de roles mediante la Matriz LACX y gestionó el Sprint Backlog 1 (Cap. 5.2.1.1 a 5.2.1.3), asegurando el ritmo de avance y el cumplimiento del cronograma académico.<br><br>**TB1:** Participó en la actualización del Capítulo III, realizando los cambios correspondientes sobre los artefactos previamente desarrollados. Asimismo, participó en la implementación del Bounded Context **Medical Transport Planning & Dispatching**, contribuyendo al desarrollo de las funcionalidades relacionadas con la planificación y despacho del transporte médico durante el Sprint 2. |  |
-| **5.c.2 Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Fomentó activamente un entorno inclusivo al incorporar la voz y las perspectivas de los profesionales de salud en el diseño de la solución, evitando sesgos técnicos aislados. Colaboró en la definición del objetivo central del proyecto a través del Lean UX Canvas, asegurando que las metas de investigación se descompusieran en actividades concretas (diseño de guías semiestructuradas, calendarización de entrevistas y tabulación cualitativa). Participó en las ceremonias de sincronización semanal del equipo, aportando insumos críticos que permitieron al diseñador UX y al arquitecto de software alinear las interfaces y los eventos de dominio con las necesidades operativas reales de las ambulancias en Lima.<br><br>**TB1:** Contribuyó al cumplimiento de los objetivos del equipo mediante la corrección del Capítulo I y la implementación del Bounded Context **Tour Management**, atendiendo las actividades asignadas para el Sprint 2 y aportando al avance coordinado de la documentación y del producto.<br> | **AV1:**<br>El establecimiento de un entorno de trabajo colaborativo, inclusivo y altamente disciplinado constituyó el factor determinante para el éxito de la entrega AV1. A través de la adopción del marco de trabajo Scrum, complementado con tableros Kanban interactivos y el flujo GitFlow en GitHub, el equipo logró transformar un enunciado académico de alta complejidad en un plan de acción estructurado con metas semanales claras y alcanzables.<br><br>Se fomentó la inclusión multidisciplinaria, donde las observaciones clínicas de investigación, las directrices de diseño visual y las restricciones de arquitectura fueron escuchadas y ponderadas con igual valor técnico. La comunicación asertiva y periódica evitó la duplicidad de esfuerzos y permitió resolver de manera proactiva los bloqueos de integración. Como resultado tangible, el equipo cumplió con el 100% de los entregables planificados para el Sprint 1 y la documentación técnica de los Capítulos I al V (secciones 5.1 y 5.2.1), demostrando un desempeño maduro, coordinado y alineado con los estándares internacionales de acreditación profesional ABET.<br><br>**TB1:** Durante el segundo hito, el equipo mantuvo un entorno de trabajo colaborativo mediante la distribución de responsabilidades entre la corrección de los capítulos desarrollados durante el Sprint 1 y la implementación de los Bounded Contexts correspondientes al Sprint 2. La asignación de frentes específicos permitió que los integrantes avanzaran de manera paralela en la documentación y en el desarrollo de la Web Application, manteniendo una contribución diferenciada y complementaria. Como resultado, el equipo avanzó desde los artefactos de análisis, diseño y planificación desarrollados en AV1 hacia un primer incremento de la aplicación web, cumpliendo las actividades técnicas y documentales correspondientes al TB1. |
-| **5.c.2** *(cont.)* | **Gargate Paredes, Santiago**<br><br>**AV1:** Contribuyó al entorno colaborativo mediante una comunicación transparente y continua sobre el progreso de la implementación del Landing Page. Participó en la estimación de tiempos del Sprint Backlog 1, comprometiéndose a cumplir con las metas de entrega y despliegue dentro de los plazos estipulados. Mantuvo un flujo riguroso de commits conforme a Conventional Commits, integró su código en la rama `develop` mediante Pull Requests evaluados en conjunto y colaboró activamente con el Product Owner en la redacción de la sección de Collaboration Insights del Sprint 1 (Cap. 5.2.1.8), garantizando total trazabilidad y cumplimiento de los objetivos del hito.<br><br>**TB1:** Contribuyó al cumplimiento de los objetivos del Sprint 2 mediante la corrección del Capítulo V, la implementación del Sprint 2 y el desarrollo del Bounded Context **Identity, Access & Subscriptions**, aportando al avance de la Web Application y a la consolidación de las funcionalidades correspondientes.<br> |  |
-| **5.c.2** *(cont.)* | **Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Impulsó un espacio colaborativo técnico promoviendo el modelado colaborativo visual mediante Miro y Structurizr DSL, lo que permitió que integrantes con roles no técnicos participaran en la validación de la lógica del sistema. Estableció metas técnicas claras para el sprint (entrega de diagramas de arquitectura C4, modelo de clases y script SQL normalizado de base de datos), desglosando las actividades de diagramación en tareas medibles en el tablero ágil. Atendió oportunamente las dudas de sus compañeros respecto a la estructura de microservicios y persistencia relacional, asegurando la consistencia conceptual del informe y cumpliendo al 100% las metas arquitectónicas asignadas para la entrega AV1.<br><br>**TB1:** Contribuyó al cumplimiento de las metas técnicas del Sprint 2 mediante la corrección del Capítulo II y la implementación del Bounded Context **Smart Container & Telemetry Monitoring**, aportando al desarrollo modular de la solución y a la consolidación del componente correspondiente al monitoreo de contenedores inteligentes y telemetría.<br> |  |
-| **5.c.2** *(cont.)* | **Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Promovió un entorno inclusivo al transformar los hallazgos de las entrevistas en artefactos de empatía compartidos con todo el equipo, facilitando que cada miembro comprendiera las necesidades emocionales y laborales de los usuarios finales. Planificó minuciosamente el cronograma de diseño en Figma y UXPressia, estableciendo hitos de revisión intermedia (wireframes de baja fidelidad seguidos de mockups de alta fidelidad interactivos). Integró activamente el feedback de sus compañeros y del Product Owner sobre usabilidad y densidad de información clínica, cumpliendo a cabalidad con la entrega de todos los flujos de navegación requeridos para el Landing Page y la Web Application.<br><br>**TB1:** Contribuyó al cumplimiento de los objetivos del Sprint 2 mediante la corrección del Capítulo V y la implementación del Bounded Context **Chain of Custody & Traceability**, aportando al desarrollo de las funcionalidades relacionadas con la trazabilidad y cadena de custodia de la solución.<br> |  |
-| **5.c.2** *(cont.)* | **Santos Minaya, Renzo Piero**<br><br>**AV1:** Estableció y dinamizó el entorno colaborativo del equipo a través de la configuración del tablero ágil en Trello/Jira y el canal de coordinación en Discord, garantizando canales de comunicación abiertos, respetuosos y transparentes. Lideró la ceremonia de Sprint Planning 1, guiando al equipo en la estimación colectiva de esfuerzos en horas hombre para cada User Story y tarea técnica. Monitoreó el cumplimiento de las metas semanales mediante revisiones de progreso, identificó y removió impedimentos operativos, y aseguró que cada miembro entregara su sección del informe en formato Markdown respetando la fecha límite institucional, logrando así el cumplimiento riguroso de todos los objetivos trazados para el avance AV1.<br><br>**TB1:** Contribuyó al cumplimiento de los objetivos del Sprint 2 mediante la actualización del Capítulo III y la implementación del Bounded Context **Medical Transport Planning & Dispatching**, aportando al desarrollo del componente funcional relacionado con la planificación y despacho de traslados médicos y al avance del incremento correspondiente.<br> |  |
+| **5.c.1 Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Lideró la definición de la visión de negocio y el relevamiento de requisitos asistenciales para la plataforma Medical SMARTBOX. Condujo la estructuración del Capítulo I (Problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación de Lean UX Canvas y delimitación de los dos segmentos objetivo: operadores de transporte asistencial SAMU 106 y directores de centros hospitalarios/farmacéuticos). Asimismo, encabezó el análisis competitivo del mercado telemático de salud (Cap. 2.1) y el diseño y conducción de las entrevistas a profundidad a paramédicos y especialistas en logística biomédica (Cap. 2.2), asegurando que los requisitos del producto respondan a dolores reales y no a supuestos infundados.<br><br>**TB1:** Participó en la corrección y mejora del Capítulo I correspondiente al Sprint 1, atendiendo los ajustes necesarios para fortalecer la documentación previamente presentada. Asimismo, lideró la implementación de los Bounded Contexts **Critical Alerting & Incident Response** e **Identity, Access & Subscriptions (IAM)**, contribuyendo al desarrollo del segundo incremento de la solución y al cumplimiento de las actividades técnicas asignadas para el Sprint 2.<br> | **AV1:**<br>Durante este primer hito del proyecto, el equipo demostró un ejercicio de liderazgo horizontal y distribuido de alta efectividad. En lugar de centralizar la toma de decisiones en una sola figura, cada integrante asumió el liderazgo autónomo y especializado de un pilar fundamental de la solución: investigación empírica de mercado (Aaron Espinoza), experiencia y prototipado visual UX/UI (Maria Luisa Munayco), arquitectura de software, persistencia de datos y despliegue en la nube (Jhon Jaramillo), y gestión ágil y especificación de requisitos (Renzo Santos).<br><br>Esta delegación basada en competencias técnicas permitió avanzar en paralelo sobre frentes complejos y altamente interconectados sin generar cuellos de botella. Las disyuntivas de diseño técnico —tales como la selección de protocolos telemáticos para IoT (HTTPS/REST con payloads JSON firmados) o la delimitación de fronteras transaccionales en los cinco Bounded Contexts— fueron debatidas y consensuadas con base en evidencia normativa (DIGEMID/MINSA) y criterios de ingeniería, logrando una cohesión técnica integral que sentó las bases para el éxito de las entregas posteriores. |
+| **5.c.1** *(cont.)* | **Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Ejerció el liderazgo en la definición de la arquitectura de software y el modelado orientado al dominio (DDD). Facilitó la sesión colaborativa de Big Picture EventStorming (Cap. 2.4) unificando la comprensión de los flujos de telemetría, custodia y alertas críticas entre todos los miembros. Formuló el glosario canónico de Ubiquitous Language (Cap. 2.5) y lideró el diseño táctico mediante Design-Level EventStorming delimitando cinco Bounded Contexts. Diseñó los diagramas del Modelo C4 (Contexto, Contenedores y Componentes) integrando Landing Page, Web Application SPA, Backend RESTful Web API y base de datos relacional MySQL 8.0, y formalizó el Diagrama de Clases de Dominio UML (Cap. 4.7) y el Diagrama Físico de Base de Datos Relacional normalizado (Cap. 4.8) para garantizar consistencia transaccional y cumplimiento de las normativas DIGEMID/MINSA.<br><br>**TB1:** Lideró la consolidación arquitectónica de los cinco Bounded Contexts en el Capítulo IV y participó en la corrección y mejora del Capítulo II. Asimismo, lideró la implementación del Bounded Context **Smart Container & Telemetry Monitoring**, contribuyendo al desarrollo del componente orientado al monitoreo de los contenedores inteligentes y la telemetría dentro del Sprint 2.<br> | **TB1:**<br>Durante el segundo hito del proyecto, el equipo consolidó el liderazgo distribuido mediante la asignación de responsabilidades específicas para la corrección de los artefactos desarrollados en el Sprint 1 y la implementación de los cinco Bounded Contexts correspondientes al Sprint 2. Cada integrante contribuyó desde un frente específico: Aaron Espinoza con la corrección del Capítulo I y la implementación de los Bounded Contexts *Critical Alerting & Incident Response* e *Identity, Access & Subscriptions*; Jhon Jaramillo con la consolidación arquitectónica C4/DDD del Capítulo IV, la mejora del Capítulo II y el Bounded Context *Smart Container & Telemetry Monitoring*; Maria Luisa Munayco con la actualización de Needfinding, la mejora del Capítulo V y el Bounded Context *Chain of Custody & Traceability*; y Renzo Santos con la actualización del Capítulo III y el Bounded Context *Medical Transport Planning & Dispatching*. Esta distribución permitió avanzar de manera paralela sobre la documentación y la implementación de la Web Application, contribuyendo al cumplimiento de los objetivos establecidos para el Sprint 2. |
+| **5.c.1** *(cont.)* | **Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Lideró la estrategia de Experiencia de Usuario (UX) y Diseño de Interfaz (UI) del ecosistema Medical SMARTBOX. Dirigió el proceso de Needfinding (Cap. 2.3) coordinando la síntesis de hallazgos empíricos en User Personas (Aldair Lazaro y Gianfranco Timoteo), User Task Matrix y mapas de empatía. Estableció el Sistema de Diseño visual y las Guías de Estilo (Cap. 4.1), definiendo una paleta cromática clínica accesible y componentes UI atómicos. Asimismo, encabezó la arquitectura de información y la concepción de wireframes y mockups de alta fidelidad tanto para el Landing Page institucional como para el portal web operativo de monitoreo telemático (Capítulos 4.2 a 4.5), garantizando una experiencia coherente, intuitiva y libre de fricción para los operadores de emergencia.<br><br>**TB1:** Participó en la actualización de artefactos de Needfinding y en la mejora del Capítulo V correspondiente al Sprint 1. Asimismo, lideró la implementación del Bounded Context **Chain of Custody & Traceability**, contribuyendo al desarrollo de las funcionalidades relacionadas con la trazabilidad y la cadena de custodia de la solución durante el Sprint 2.<br> |  |
+| **5.c.1** *(cont.)* | **Santos Minaya, Renzo Piero**<br><br>**AV1:** Ejerció el rol de liderazgo como Product Owner y Scrum Master del equipo. Condujo la transformación de los dolores y requisitos de negocio en artefactos ágiles formales, estructurando el catálogo completo de User Stories con criterios de aceptación rigurosamente formulados bajo sintaxis Gherkin (Scenario, Given, When, Then) organizados en Epics, junto con el Impact Mapping y el Product Backlog priorizado por valor clínico (Capítulo 3). En el ámbito de gestión, lideró la gobernanza de configuración de software (SCM) estableciendo el modelo de ramificación GitFlow, convenciones de Conventional Commits y guías de estilo para C# y Vue.js (Cap. 5.1). Asimismo, facilitó la sesión de Sprint Planning 1, coordinó la asignación de roles mediante la Matriz LACX y gestionó el Sprint Backlog 1 (Cap. 5.2.1.1 a 5.2.1.3), asegurando el ritmo de avance y el cumplimiento del cronograma académico.<br><br>**TB1:** Participó en la actualización del Capítulo III, realizando los cambios correspondientes sobre los artefactos previamente desarrollados. Asimismo, lideró la implementación del Bounded Context **Medical Transport Planning & Dispatching**, contribuyendo al desarrollo de las funcionalidades relacionadas con la planificación y despacho del transporte médico durante el Sprint 2. |  |
+| **5.c.2 Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Espinoza Flores, Aaron André**<br><br>**AV1:** Fomentó activamente un entorno inclusivo al incorporar la voz y las perspectivas de los profesionales de salud en el diseño de la solución, evitando sesgos técnicos aislados. Colaboró en la definición del objetivo central del proyecto a través del Lean UX Canvas, asegurando que las metas de investigación se descompusieran en actividades concretas (diseño de guías semiestructuradas, calendarización de entrevistas y tabulación cualitativa). Participó en las ceremonias de sincronización semanal del equipo, aportando insumos críticos que permitieron al diseñador UX y al arquitecto de software alinear las interfaces y los eventos de dominio con las necesidades operativas reales de las ambulancias en Lima.<br><br>**TB1:** Contribuyó al cumplimiento de los objetivos del equipo mediante la corrección del Capítulo I y la implementación de los Bounded Contexts **Critical Alerting & Incident Response** e **Identity, Access & Subscriptions (IAM)**, atendiendo las actividades asignadas para el Sprint 2 y aportando al avance coordinado de la documentación y del producto.<br> | **AV1:**<br>El establecimiento de un entorno de trabajo colaborativo, inclusivo y altamente disciplinado constituyó el factor determinante para el éxito de la entrega AV1. A través de la adopción del marco de trabajo Scrum, complementado con tableros Kanban interactivos y el flujo GitFlow en GitHub, el equipo logró transformar un enunciado académico de alta complejidad en un plan de acción estructurado con metas semanales claras y alcanzables.<br><br>Se fomentó la inclusión multidisciplinaria, donde las observaciones clínicas de investigación, las directrices de diseño visual y las restricciones de arquitectura fueron escuchadas y ponderadas con igual valor técnico. La comunicación asertiva y periódica evitó la duplicidad de esfuerzos y permitió resolver de manera proactiva los bloqueos de integración. Como resultado tangible, el equipo cumplió con el 100% de los entregables planificados para el Sprint 1 y la documentación técnica de los Capítulos I al V (secciones 5.1 y 5.2.1), demostrando un desempeño maduro, coordinado y alineado con los estándares internacionales de acreditación profesional ABET. |
+| **5.c.2** *(cont.)* | **Jaramillo Mayta, Jhon Jordy**<br><br>**AV1:** Impulsó un espacio colaborativo técnico promoviendo el modelado colaborativo visual mediante Miro y Structurizr DSL, lo que permitió que integrantes con roles no técnicos participaran en la validación de la lógica del sistema. Estableció metas técnicas claras para el sprint (entrega de diagramas de arquitectura C4, modelo de clases y script SQL normalizado de base de datos), desglosando las actividades de diagramación en tareas medibles en el tablero ágil. Atendió oportunamente las dudas de sus compañeros respecto a la estructura modular y persistencia relacional, asegurando la consistencia conceptual del informe y cumpliendo al 100% las metas arquitectónicas asignadas para la entrega AV1.<br><br>**TB1:** Contribuyó al cumplimiento de las metas técnicas del Sprint 2 mediante la consolidación arquitectónica del Capítulo IV, la mejora del Capítulo II y la implementación del Bounded Context **Smart Container & Telemetry Monitoring**, aportando al desarrollo modular de la solución y a la consolidación del componente correspondiente al monitoreo de contenedores inteligentes y telemetría.<br> | **TB1:**<br>Durante el segundo hito, el equipo mantuvo un entorno de trabajo colaborativo mediante la distribución de responsabilidades entre la corrección de los capítulos desarrollados durante el Sprint 1 y la implementación de los cinco Bounded Contexts correspondientes al Sprint 2. La asignación de frentes específicos permitió que los cuatro integrantes avanzaran de manera paralela en la documentación y en el desarrollo de la Web Application, manteniendo una contribución diferenciada y complementaria. Como resultado, el equipo avanzó desde los artefactos de análisis, diseño y planificación desarrollados en AV1 hacia un primer incremento funcional de la aplicación web en Vue 3 y PrimeVue, cumpliendo las actividades técnicas y documentales correspondientes al TB1. |
+| **5.c.2** *(cont.)* | **Munayco Apolaya, Maria Luisa**<br><br>**AV1:** Promovió un entorno inclusivo al transformar los hallazgos de las entrevistas en artefactos de empatía compartidos con todo el equipo, facilitando que cada miembro comprendiera las necesidades emocionales y laborales de los usuarios finales. Planificó minuciosamente el cronograma de diseño en Figma y UXPressia, estableciendo hitos de revisión intermedia (wireframes de baja fidelidad seguidos de mockups de alta fidelidad interactivos). Integró activamente el feedback de sus compañeros y del Product Owner sobre usabilidad y densidad de información clínica, cumpliendo a cabalidad con la entrega de todos los flujos de navegación requeridos para el Landing Page y la Web Application.<br><br>**TB1:** Contribuyó al cumplimiento de los objetivos del Sprint 2 mediante la actualización de Needfinding, la corrección del Capítulo V y la implementación del Bounded Context **Chain of Custody & Traceability**, aportando al desarrollo de las funcionalidades relacionadas con la trazabilidad y cadena de custodia de la solución.<br> |  |
+| **5.c.2** *(cont.)* | **Santos Minaya, Renzo Piero**<br><br>**AV1:** Estableció y dinamizó el entorno colaborativo del equipo a través de la configuración del tablero ágil en Trello/Jira y el canal de coordinación en Discord, garantizando canales de comunicación abiertos, respetuosos y transparentes. Lideró la ceremonia de Sprint Planning 1, guiando al equipo en la estimación colectiva de esfuerzos en horas hombre para cada User Story y tarea técnica. Monitoreó el cumplimiento de las metas semanales mediante revisiones de progreso, identificó y removió impedimentos operativos, y aseguró que cada miembro entregara su sección del informe en formato Markdown respetando la fecha límite institucional, logrando así el cumplimiento riguroso de todos los objetivos trazados para el avance AV1.<br><br>**TB1:** Contribuyó al cumplimiento de los objetivos del Sprint 2 mediante la actualización del Capítulo III y la implementación del Bounded Context **Medical Transport Planning & Dispatching**, aportando al desarrollo de las funcionalidades relacionadas con la planificación y despacho de traslados médicos y al avance del incremento correspondiente.<br> |  |
 
 <div style="page-break-after: always;"></div>
 
@@ -307,7 +326,6 @@ En esta sección se presentarán los perfiles de los integrantes del equipo, inc
 | <img src="assets/chapter-1/renzo.jpg" alt="Renzo Piero Santos Minaya" width="100"/> | **Renzo Piero Santos Minaya** | u202114790 | Ingeniería de Software | Estudiante de Ingeniería de Software con conocimientos en arquitectura orientada al dominio (DDD), backend en ASP.NET Core (.NET 10) y modelado relacional en MySQL. Aporta en el diseño arquitectónico C4, especificación de contratos OpenAPI y servicios de backend. |
 | <img src="assets/chapter-1/aaron.jpg" alt="Aaron André Espinoza Flores" width="100"/> | **Aaron André Espinoza Flores** | u202222859 | Ingeniería de Software | Estudiante de Ingeniería de Software con experiencia en diseño de interacción, historias de usuario en Gherkin y maquetación frontend. Lidera el desarrollo de componentes de captura en el Landing Page y colabora en Needfinding. |
 | <img src="assets/chapter-1/jhon.png" alt="Jhon Jordy Jaramillo Mayta" width="100"/> | **Jhon Jordy Jaramillo Mayta** | u202520310 | Ingeniería de Software | Estudiante de Ingeniería de Software con enfoque en gestión de identidad, control de acceso y seguridad web. Aporta en el modelado del Bounded Context de IAM, flujos de autenticación segura 2FA/OTP y despliegue del Landing Page. |
-| <img src="assets/chapter-1/santiago.jpg" alt="Santiago Gargate Paredes" width="100"/> | **Santiago Gargate Paredes** | u20211b556 | Ingeniería de Software | Estudiante de Ingeniería de Software enfocado en gestión de configuración de software (SCM), normativas clínicas y desarrollo frontend. Aporta en las guías de estilo, cumplimiento normativo (DIGEMID/DIGDOT) y diseño de interacción asistencial. |
 | <img src="assets/chapter-1/maria.jpg" alt="Maria Luisa Munayco Apolaya" width="100"/> | **Maria Luisa Munayco Apolaya** | u20231c995 | Ingeniería de Software | Estudiante de Ingeniería de Software con fortalezas en diseño UI/UX en Figma, accesibilidad WCAG y desarrollo HTML5/CSS3. Lidera la maquetación semántica y adaptación responsive mobile-first del Landing Page y prototipado interactivo. |
 
 <div style="page-break-after: always;"></div>
@@ -316,11 +334,25 @@ En esta sección se presentarán los perfiles de los integrantes del equipo, inc
 
 ## 1.2.1. Antecedentes y problemática
 
-El transporte de medicamentos, vacunas, muestras biológicas, sangre y órganos requiere condiciones estrictas de conservación, trazabilidad y control operativo. En muchos escenarios de atención médica, estos elementos son trasladados en ambulancias o unidades especializadas, donde una variación de temperatura, una demora no prevista o una falta de información sobre el contenido transportado puede afectar la calidad del producto médico y, en consecuencia, la seguridad del paciente.
+El transporte de medicamentos termolábiles, vacunas, muestras biológicas, hemocomponentes y órganos para trasplante requiere condiciones estrictas de conservación térmica ($+2\,^\circ\text{C}$ a $+8\,^\circ\text{C}$), trazabilidad continua y control operativo. En los corredores asistenciales de Lima Metropolitana, estos elementos son trasladados en ambulancias o unidades especializadas donde una excursión de temperatura, una demora vial imprevista o la falta de visibilidad sobre la integridad física de la carga comprometen la viabilidad clínica del insumo y, en consecuencia, la vida del paciente receptor.
 
-Actualmente, parte de este proceso puede depender de registros manuales, comunicación telefónica o sistemas aislados que no ofrecen una visión integrada del traslado. Esta situación dificulta conocer en tiempo real la ubicación del contenedor, la temperatura interna, el stock disponible, el estado de apertura, el nivel de combustible del vehículo y el tiempo estimado de llegada. La ausencia de información centralizada incrementa el riesgo de pérdida de medicamentos sensibles, ruptura de la cadena de frío, demoras en emergencias y falta de evidencia para auditorías internas.
+Actualmente, gran parte de este proceso depende de cajas térmicas pasivas (*coolers* de tecnopor con geles refrigerantes), registros manuales en hojas de papel, coordinación informal por mensajería instantánea y sistemas vehiculares aislados que no ofrecen una visión integrada del traslado. Esta fragmentación impide conocer en tiempo real la temperatura interna del contenedor, las variaciones de peso de la carga, el estado del cierre hermético, la autonomía energética y el Tiempo Estimado de Arribo (*ETA*) recalculado según el tráfico. La ausencia de información centralizada incrementa el riesgo de pérdida de bioderivados críticos, ruptura silenciosa de la cadena de frío, demoras en la preparación de quirófanos de destino y carencia de evidencia inmutable para auditorías ante **DIGEMID**, **MINSA** y **SUSALUD**.
 
-La solución propuesta consiste en una plataforma web integrada con contenedores inteligentes basados en IoT, diseñados para el transporte médico en ambulancias. Cada contenedor contará con sensores para monitorear temperatura, peso, apertura, batería y ubicación. Además, la plataforma se conectará con información del vehículo para mostrar nivel de combustible y estimar el tiempo aproximado de llegada. Esta información permitirá a los usuarios autorizados supervisar el traslado, recibir alertas críticas y consultar el historial de cada operación.
+La solución propuesta, **Medical SMARTBOX**, consiste en una plataforma web SaaS B2B integrada con contenedores médicos inteligentes basados en tecnología IoT (microcontrolador **ESP32**, refrigeración termoeléctrica activa por celdas **Peltier**, sensores térmicos **DS18B20**, celda de carga **HX711** y cerradura electromecánica de solenoide). Esta arquitectura permite a las instituciones de salud y operadores de transporte asistencial supervisar cada traslado en tiempo real, recibir alertas preventivas multicanal, recalcular rutas ante congestión vial y sellar digitalmente la cadena de custodia mediante validación criptográfica de doble factor (**Geocerca GPS + Token OTP**).
+
+### Análisis Estructurado de la Problemática (Técnica 5W2H)
+
+Para delimitar con precisión el alcance del problema y el perfil de la solución, se aplica la metodología **5W2H** (*What, Why, Who, Where, When, How, How Much*):
+
+| Interrogante (5W2H) | Dimensión de Análisis | Descripción Fundamentada en el Dominio Asistencial |
+| :--- | :--- | :--- |
+| **What?** *(¿Qué ocurre?)* | Naturaleza del problema y propuesta tecnológica | Ruptura inadvertida de la cadena de frío ($+2\,^\circ\text{C}$ a $+8\,^\circ\text{C}$), manipulación sin control físico y ausencia de trazabilidad digital en el transporte móvil de muestras biológicas, hemocomponentes y órganos. Se resuelve mediante el ecosistema ciber-físico **Medical SMARTBOX** (contenedor IoT activo + plataforma web en Vue 3 y API RESTful en ASP.NET Core 10). |
+| **Why?** *(¿Por qué ocurre?)* | Causas raíz y justificación normativa | Por el uso generalizado de contenedores isotérmicos pasivos sin telemetría en ruta, el llenado manual de actas en papel vulnerables a extravío o alteración post-facto, y la desconexión entre la ambulancia en tránsito y el equipo clínico receptor. Esto contraviene las exigencias de trazabilidad del **Manual de Buenas Prácticas de Distribución y Transporte (RM N.° 833-2015/MINSA — DIGEMID)**. |
+| **Who?** *(¿Quiénes son los afectados?)* | Actores directos e indirectos | **Segmento 1:** Personal de transporte asistencial (conductores de ambulancia, paramédicos y técnicos del SAMU 106, EsSalud STAE y flotas privadas).<br>**Segmento 2:** Personal clínico receptor, coordinadores de procura de órganos, jefes de banco de sangre, farmacias hospitalarias y auditores de calidad de clínicas e IPRESS de nivel II y III. |
+| **Where?** *(¿Dónde se origina?)* | Contexto geográfico y operativo | En los trayectos interhospitalarios de **Lima Metropolitana y el Callao**, caracterizados por alta congestión vehicular, temperaturas ambientales de cabina elevadas en verano (superiores a $35\,^\circ\text{C}$) y zonas de sombra celular (túneles, pasos a desnivel y sótanos hospitalarios). |
+| **When?** *(¿Cuándo se manifiesta?)* | Momento crítico del flujo | Durante las tres fases críticas del traslado médico: (1) **Despacho en origen** (desconocimiento de pre-enfriamiento y carga de batería), (2) **Tránsito vehicular** (excursiones térmicas por desconexión de 12V o atascos viales sin aviso de pre-arribo) y (3) **Entrega en destino** (demoras en guardia y falta de validación formal de recepción). |
+| **How?** *(¿Cómo funciona la solución?)* | Mecanismo técnico e integración | El contenedor inteligente regula activamente su cámara interna con celdas Peltier y transmite telemetría firmada (`HMAC-SHA256`) vía **HTTPS/REST** hacia el backend central. La plataforma web procesa las reglas de umbral térmico e isquemia, recalcula el ETA con **TomTom Traffic API**, dispara alertas con **Twilio/FCM**, exige desbloqueo por **Geocerca + OTP** y genera un manifiesto PDF inmutable en **AWS S3**. |
+| **How Much?** *(¿Cuánto impacta y cuánto cuesta?)* | Impacto económico-clínico y modelo comercial | A nivel global y nacional, las fallas en la cadena de frío deterioran entre el **15% y el 25%** de los insumos biológicos termosensibles transportados sin control activo (OMS/OPS). **Medical SMARTBOX** opera bajo un esquema **SaaS B2B por suscripción mensual escalonada** (*Basic*, *Pro* y *Enterprise*, desde $\$199$ hasta $\$899\text{ USD/mes}$ según el tamaño de la flota de ambulancias y contenedores). |
 
 ## 1.2.2. Lean UX Process
 
@@ -390,7 +422,7 @@ We will know we are successful when users can monitor active medical transports 
 |---|---|
 | Business problem | Las instituciones de salud necesitan transportar medicamentos, órganos e insumos sensibles con mayor control, trazabilidad y capacidad de respuesta ante incidentes. |
 | Business outcomes | Reducir incidentes de conservación, mejorar la visibilidad del traslado, disminuir incertidumbre sobre tiempos de llegada y generar evidencia histórica. |
-| Users | Personal médico de emergencia, operadores logísticos de salud, supervisores hospitalarios y responsables de transporte médico. |
+| Users | Personal de transporte asistencial (conductores y paramédicos) y personal clínico/logístico de instituciones hospitalarias receptoras. |
 | User outcomes | Conocer el estado de la carga, recibir alertas oportunas, confirmar disponibilidad de stock y revisar evidencia del traslado. |
 | Solutions | Contenedor inteligente IoT, aplicación web responsive, RESTful API, alertas, GPS, monitoreo de temperatura, sensores de peso y reportes. |
 | Hypotheses | Si los usuarios monitorean condiciones críticas en tiempo real, podrán reaccionar antes de que el traslado comprometa la seguridad del producto médico. |
@@ -399,23 +431,33 @@ We will know we are successful when users can monitor active medical transports 
 
 <div style="page-break-after: always;"></div>
 
-# 1.3. Segmentos Objetivo
+# 1.3. Segmentos objetivo
 
-La solución propuesta está dirigida a actores que participan directa o indirectamente en el transporte de medicamentos, órganos e insumos médicos sensibles. Estos segmentos requieren información confiable, alertas oportunas y trazabilidad durante el traslado, debido a que las condiciones de conservación y los tiempos de llegada pueden impactar en la continuidad de la atención médica.
+La solución **Medical SMARTBOX** está dirigida a dos segmentos claramente diferenciados dentro de la cadena de transporte interhospitalario de medicamentos termolábiles, hemocomponentes, muestras biológicas y órganos en el Perú. Ambos segmentos requieren información confiable, alertas oportunas y trazabilidad continua durante el traslado, debido a que las condiciones de conservación térmica y el cumplimiento de la ventana de isquemia impactan directamente en la viabilidad clínica del insumo y la seguridad del paciente.
 
-## Segmento 1: Personal médico y de emergencias
+## Segmento 1: Personal de Transporte Asistencial (Conductores de Ambulancia, Paramédicos y Técnicos de Urgencias)
 
-Este segmento incluye paramédicos, enfermeros, médicos de emergencia y técnicos que participan en el traslado o recepción de productos médicos. Sus principales necesidades se relacionan con conocer el estado de la carga, verificar que los productos se mantengan dentro de condiciones seguras y responder rápidamente ante alertas críticas.
+Este segmento comprende a los operadores en campo —conductores de unidades móviles de soporte vital (Tipo II y Tipo III), paramédicos, enfermeros de transporte y técnicos de emergencias— pertenecientes al **Sistema de Atención Móvil de Urgencias (SAMU 106 — MINSA)**, al **Servicio de Transporte Asistido de Emergencia (STAE — EsSalud)** y a empresas privadas de ambulancias y logística biomédica.
 
-El personal médico requiere una interfaz clara, accesible y rápida de consultar, especialmente en escenarios de alta presión. Para este segmento, la solución debe priorizar información esencial como temperatura actual, estado del contenedor, stock disponible, alertas activas y tiempo estimado de llegada.
+Sus necesidades operativas se centran en verificar rápidamente que el contenedor haya alcanzado la temperatura de pre-enfriamiento antes de partir, monitorear el estado de la carga sin distraerse de la conducción ni abrir innecesariamente la tapa térmica, recibir alertas sonoras/visuales inmediatas en cabina ante cualquier desconexión de la fuente de $12\text{ V}$ o desviación térmica, y contar con una entrega formal ágil en el hospital de destino que certifique su cumplimiento y deslinde responsabilidades.
 
-## Segmento 2: Operadores logísticos e instituciones de salud
+### Características Demográficas y Sustento Estadístico (Segmento 1)
 
-Este segmento está conformado por coordinadores de ambulancias, responsables de transporte médico, supervisores de cadena de frío, hospitales, clínicas, bancos de sangre, laboratorios, centros quirúrgicos, áreas de farmacia hospitalaria y personal encargado de planificar, supervisar o recibir traslados médicos entre instituciones de salud.
+* **Perfil Demográfico y Laboral:** Profesionales y técnicos de entre **24 y 48 años**, con formación en atención prehospitalaria, enfermería técnica o conducción certificada de vehículos de emergencia (licencias A-IIb / A-IIIa con capacitación en manejo defensivo y soporte básico de vida BLS). Operan en turnos rotativos de **12 a 24 horas** bajo condiciones de alto estrés vial.
+* **Dimensionamiento de Flota en Lima Metropolitana:** Según registros del **Registro Nacional de Instituciones Prestadoras de Servicios de Salud (RENIPRESS — SUSALUD)** y del **MINSA**, en Lima Metropolitana y el Callao operan más de **450 unidades de ambulancias acreditadas** (entre bases operativas del SAMU, hospitales nacionales del MINSA, redes prestacionales de EsSalud y clínicas privadas).
+* **Impacto del Tráfico Vehicular en Tiempos de Traslado:** De acuerdo con el *TomTom Traffic Index*, Lima Metropolitana registra un nivel de congestión vehicular superior al **45% en horas punta**, incrementando los tiempos de traslado interhospitalario entre **28 y 42 minutos adicionales** por trayecto de $10\text{ km}$, lo que eleva críticamente el riesgo de agotamiento de geles refrigerantes en cajas pasivas convencionales.
 
-Los operadores logísticos e instituciones de salud necesitan visibilidad sobre múltiples unidades, rutas, contenedores y entregas, así como evidencia del cumplimiento de condiciones de transporte para medicamentos refrigerados, órganos, muestras biológicas o insumos de alto valor. Sus principales necesidades se relacionan con monitorear la ubicación de los contenedores, revisar el avance de cada traslado, anticipar demoras, validar disponibilidad de recursos, confirmar entregas y coordinar acciones cuando se presenta una incidencia.
+## Segmento 2: Personal Clínico, Operadores Logísticos e Instituciones de Salud Receptoras
 
-Para este segmento, la solución debe ofrecer un dashboard centralizado, filtros de búsqueda, priorización de alertas, trazabilidad histórica, reportes de operación, registros de temperatura, ubicación, responsables, horarios de apertura del contenedor, incidentes y acciones tomadas durante cada traslado.
+Este segmento está conformado por las instituciones prestadoras de servicios de salud (**IPRESS de Categorías II-2, III-1 y III-2**: hospitales nacionales, institutos especializados, clínicas privadas, bancos de sangre Tipo II y laboratorios de referencia) y sus profesionales responsables: coordinadores clínicos de recepción y procura (**DIGDOT — MINSA**), médicos patólogos clínicos, jefes de banco de sangre, químicos farmacéuticos hospitalarios, supervisores de logística médica y auditores de calidad.
+
+Estos actores necesitan visibilidad centralizada sobre múltiples contenedores y traslados en curso, notificaciones automáticas de pre-arribo para alistar quirófanos o áreas estériles antes de que llegue la ambulancia, validación criptográfica de identidad en la recepción (**Geocerca GPS + Token OTP**) y acceso inmediato a manifiestos digitales inmutables que respalden el cumplimiento normativo frente a inspecciones sanitarias.
+
+### Características Demográficas y Sustento Estadístico (Segmento 2)
+
+* **Perfil Demográfico y Profesional:** Profesionales de la salud e ingenieros/administradores logísticos de entre **28 y 58 años**, colegiados y habilitados (**CMP**, **CQFP**, **CEP**), con cargos de jefatura de guardia, coordinación de trasplantes, dirección técnica de farmacia hospitalaria o auditoría de gestión de calidad.
+* **Universo Institucional (Mercado Objetivo B2B):** De acuerdo con datos oficiales de **SUSALUD / RENIPRESS**, el Perú cuenta con más de **820 establecimientos de salud de mediana y alta complejidad** (hospitales y clínicas entre públicos y privados), de los cuales el **54% se concentra en Lima Metropolitana y el Callao**. Asimismo, según el **Programa Nacional de Hemoterapia y Bancos de Sangre (PRONAHEBAS — MINSA)**, en el país operan más de **95 Centros de Hemoterapia y Bancos de Sangre Tipo II** que movilizan diariamente cientos de unidades de paquete globular y plasma fresco.
+* **Estadísticas de Pérdida por Ruptura de Cadena de Frío:** Informes técnicos de la **Organización Mundial de la Salud (OMS)** y la **OPS** documentan que hasta un **20% de los productos biológicos y farmacéuticos termosensibles** sufren degradación durante el transporte debido a excursiones térmicas no detectadas a tiempo. En el ámbito de procura y trasplante supervisado por la **DIGDOT (MINSA)**, cada minuto fuera del rango isotérmico ($+2\,^\circ\text{C}$ a $+8\,^\circ\text{C}$) reduce la viabilidad funcional del injerto y expone a la institución a sanciones administrativas tipificadas en la **RM N.° 833-2015/MINSA (DIGEMID)**.
 
 <div style="page-break-after: always;"></div>
 
@@ -529,8 +571,8 @@ El análisis comparativo adopta estrictamente la estructura normativa del cuadro
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Oportunidades</strong></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f0fdf4;">Exigencias crecientes de DIGEMID y MINSA para trazabilidad de cadena de frío en emergencias; alta tasa de mermas por tráfico vehicular en Lima.</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Incremento en la demanda mundial de medicamentos biológicos sensibles a variaciones de temperatura.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Crecimiento del comercio farmacéutico electrónico y requerimientos de trazabilidad en transporte logístico local.</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Expansión de requerimientos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Crecimiento del comercio farmacéutico electrónico y requisitos de trazabilidad en transporte logístico local.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Expansión de requisitos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; background-color: #f8fafc;"><strong>Análisis SWOT: Amenazas</strong></td>
@@ -582,7 +624,7 @@ Se elaboró una guía de entrevista semiestructurada aplicando las directrices m
 2. Identificar las herramientas, registros documentales y canales de comunicación actualmente utilizados en ruta y en almacén.
 3. Documentar incidentes críticos reales de ruptura de cadena de frío, fallas mecánicas, demoras por congestión vehicular y pérdidas de custodia.
 4. Medir los niveles de estrés, confianza, carga cognitiva y frustración del personal operativo frente a la falta de trazabilidad telemática.
-5. Extraer requerimientos funcionales prioritarios para la formulación de los arquetipos (*User Personas*), matrices de tareas y escenarios de uso.
+5. Extraer requisitos funcionales prioritarios para la formulación de los arquetipos (*User Personas*), matrices de tareas y escenarios de uso.
 
 ### Guía de Preguntas para el Segmento 1 (Personal Médico y Paramédicos de Ambulancia):
 1. **Contexto operativo:** ¿Cuál es tu rol exacto durante una guardia de emergencia y qué tipo de insumos refrigerados te toca trasladar con mayor frecuencia?
@@ -594,7 +636,7 @@ Se elaboró una guía de entrevista semiestructurada aplicando las directrices m
 7. **Puntos ciegos:** ¿En qué momento del traslado experimentas mayor incertidumbre respecto al estado de la carga?
 8. **Comunicación operativa:** ¿Por qué medios coordinas con la central de despacho y con el hospital de destino tu hora estimada de llegada (ETA)?
 9. **Criterios de entrega:** ¿Qué condiciones exige el personal del hospital receptor para aceptar o rechazar formalmente la entrega de un hemoderivado o fármaco?
-10. **Requerimiento ideal:** Si pudieras incorporar una innovación tecnológica en tu contenedor de traslado, ¿cuál resolvería tu mayor preocupación?
+10. **Requisito ideal:** Si pudieras incorporar una innovación tecnológica en tu contenedor de traslado, ¿cuál resolvería tu mayor preocupación?
 
 ### Guía de Preguntas para el Segmento 2 (Coordinadores Logísticos y Farmacéuticos Hospitalarios):
 1. **Gestión de cadena de frío:** ¿Cómo planificas y supervisas la distribución de biológicos y medicamentos termolábiles hacia ambulancias o centros periféricos?
@@ -620,15 +662,16 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 <table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.2pt; line-height: 1.2; border: 1px solid #cbd5e1;">
 <colgroup>
   <col style="width: 5%;" />
+  <col style="width: 9%;" />
+  <col style="width: 13%;" />
+  <col style="width: 15%;" />
+  <col style="width: 15%;" />
+  <col style="width: 5%;" />
   <col style="width: 10%;" />
-  <col style="width: 14%;" />
-  <col style="width: 16%;" />
-  <col style="width: 16%;" />
-  <col style="width: 6%;" />
   <col style="width: 11%;" />
-  <col style="width: 8%;" />
-  <col style="width: 6%;" />
-  <col style="width: 8%;" />
+  <col style="width: 7%;" />
+  <col style="width: 5%;" />
+  <col style="width: 5%;" />
 </colgroup>
 <thead>
 <tr style="background-color: #f1f5f9;">
@@ -639,6 +682,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Organización</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Edad</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Distrito</th>
+  <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: left; font-weight: bold;">Entrevistador</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Fecha</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Dur.</th>
   <th style="border: 1px solid #cbd5e1; padding: 3px; text-align: center; font-weight: bold;">Video</th>
@@ -653,6 +697,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Red de Ambulancias de Emergencia</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">21</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Pueblo Libre</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Aaron Espinoza</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">02:51 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi">Ver</a></td>
@@ -665,6 +710,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Servicio de Ambulancias y Rescate</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">26</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">San Martín de Porres</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Aaron Espinoza</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">17/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:38 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd">Ver</a></td>
@@ -677,6 +723,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Unidad Móvil de Soporte Vital</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">22</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">San Isidro</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Maria Munayco</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">17/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">02:24 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi">Ver</a></td>
@@ -689,6 +736,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Empresa de Distribución de Muestras y Fármacos</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">49</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Chancay</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Jhon Jaramillo</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:27 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc">Ver</a></td>
@@ -701,6 +749,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Laboratorio y Centro Clínico</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">21</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Chorrillos</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Jhon Jaramillo</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:59 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4">Ver</a></td>
@@ -713,6 +762,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Centro de Salud Policlínico</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">25</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Breña</td>
+  <td style="border: 1px solid #cbd5e1; padding: 2px 3px;">Renzo Santos</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">16/09/2026</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;">04:09 min</td>
   <td style="border: 1px solid #cbd5e1; padding: 2px 3px; text-align: center;"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC">Ver</a></td>
@@ -751,7 +801,7 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 * **Datos Demográficos:** 49 años, residente en Chancay (con operaciones logísticas en Lima Norte). Dispositivos: smartphone Android gama media. Canales: llamadas telefónicas, WhatsApp corporativo.
 * **Variables Objetivas:** Maneja furgones de distribución hacia postas médicas y hospitales de la red periférica. Utiliza dataloggers USB convencionales que se leen en destino tras conectar a una computadora. Traslados con duración de 2 a 5 horas.
 * **Variables Subjetivas:** Resignación frente a la burocracia documental de recepción. Preocupación constante por averías mecánicas del aire acondicionado o fallas de refrigeración en la carretera Panamericana.
-* **Cita Textual:** *"El datalogger USB solo te dice al final del día que la carga se malogró hace tres horas. Para ese momento ya perdiste miles de soles en medicamentos y el paciente se quedó sin tratamiento."*
+* **Cita Textual:** *"El datalogger USB solo te dice al final del día que la carga se malogró hace tres horas. Para ese momento ya perdivos miles de soles en medicamentos y el paciente se quedó sin tratamiento."*
 
 #### Entrevista E5: Gianfranco Timoteo (Segmento 2)
 * **Perfil:** Coordinador de soporte y supervisor de cadena de frío en laboratorio clínico central.
@@ -803,7 +853,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
   * Supervisión de múltiples despachos simultáneos (flota de 5 a 20 unidades).
   * Exigencia regulatoria inexcusable: cumplimiento del Manual de Buenas Prácticas de Almacenamiento y Transporte de Productos Farmacéuticos (R.M. N° 833-2015/MINSA) y directivas de DIGEMID.
   * Tiempos de retención de actas documentales: mínimo 12 meses archivadas físicamente.
-  * Requerimiento de auditoría: gráficas continuas de temperatura cada 30 a 60 segundos durante todo el trayecto.
+  * Requisito de auditoría: gráficas continuas de temperatura cada 30 a 60 segundos durante todo el trayecto.
 * **Variables Subjetivas y Modelo Mental:**
   * Obsesión por el cumplimiento normativo y aversión al riesgo regulatorio (clausura temporal de farmacias o multas de SUSALUD).
   * Escepticismo ante reportes llenados a mano con lapicero; preferencia por información digital inmutable con sello de tiempo (*timestamp*).
@@ -824,7 +874,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
 
 ### D. Implicancias Directas para la Arquitectura y el Diseño del Sistema
 
-| Hallazgo Empírico de Entrevistas | Requerimiento Funcional Derivado | Componente de la Solución (Arquitectura / UI) |
+| Hallazgo Empírico de Entrevistas | Requisito Funcional Derivado | Componente de la Solución (Arquitectura / UI) |
 | :--- | :--- | :--- |
 | El paramédico no puede abrir la tapa para mirar la temperatura. | Telemetría continua en vivo proyectada en pantalla sin manipular el contenedor. | Sensor Dallas DS18B20 + Pantalla en Web App / Tablet (`US10`). |
 | Aperturas accidentales o sustracción de insumos en ruta. | Bloqueo electromecánico de tapa y control de masa del contenido. | Cerrojo solenoide con token OTP (`US17`) y celda de carga HX711 (`US11`). |
@@ -834,7 +884,7 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
 
 <div style="page-break-after: always;"></div>
 
-# 2.3. Needfinding
+## 2.3. Needfinding
 
 El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y dificultades de los dos segmentos objetivo de Medical SmartBox. Se partió de las seis entrevistas registradas en la sección 2.2 y de su análisis. Con esa evidencia se construyeron los siguientes artefactos: User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, siguiendo las pautas de Nielsen Norman Group y de Interaction Design Foundation.
 
@@ -938,7 +988,13 @@ El User Journey Mapping ilustra el recorrido **actual (As-Is)** de cada persona,
 
 **User Journey Map 2: Gianfranco Timoteo (Segmento 2)**
 
-*Escenario:* recepción de muestras biológicas y reactivos en un laboratorio clínico en hora punta, y su registro para auditoría.
+*Escenario:* recepción de muestras biológicas y reactivos en un laboratorio clínico u hospital receptor en hora punta, y su posterior registro para auditoría sanitaria.
+
+| Fase | Acciones | Puntos de contacto | Puntos de dolor |
+|---|---|---|---|
+| Antes | Recibe el aviso telefónico o mensaje de que un lote de muestras biológicas o hemocomponentes ha salido hacia el centro receptor. | Teléfono fijo, WhatsApp corporativo, hoja de programación diaria | No cuenta con una hora estimada de llegada (ETA) precisa ni visibilidad en vivo de la ruta para alistar el área estéril o el personal de recepción. |
+| Durante | Espera la llegada de la unidad en hora punta llamando reiteradamente al transportista; al arribar la ambulancia, mide puntualmente la temperatura con termómetro infrarrojo o descarga el datalogger USB. | Bahía de recepción, termómetro de punzón/infrarrojo, datalogger USB, acta impresa | Desconoce si hubo excursiones térmicas intermedias o aperturas del cooler en el camino; en el 15 % de los envíos en hora punta detecta desviaciones recién al abrir la caja. |
+| Después | Firma o rechaza el acta en papel, transcribe manualmente las lecturas a una hoja de cálculo Excel y archiva los folios físicos para inspecciones de DIGEMID. | Planillas de papel, computadora de escritorio (Excel), archivadores físicos | Alto desgaste operativo al digitar actas dispersas, riesgo de errores de transcripción o pérdida de hojas físicas y vulnerabilidad ante auditorías de trazabilidad. |
 
 ![User Journey Map - Gianfranco Timoteo](assets/chapter-2/user-journey-gianfranco.png)
 
@@ -988,6 +1044,8 @@ El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de 
 | 3 | Mantener cadena de custodia verificable. | Cada evento registra fecha, hora, actor y evidencia. |
 | 4 | Coordinar incidentes en un único flujo. | Se asigna responsable, se registra acción y se confirma resolución. |
 | 5 | Cerrar y auditar el traslado. | Se obtiene una línea de tiempo y un reporte de cumplimiento/excepciones. |
+
+<div style="page-break-after: always;"></div>
 
 # 2.4. Big Picture EventStorming
 
@@ -1126,13 +1184,13 @@ La siguiente matriz sintetiza los problemas operativos reales identificados en l
 ***
 
 #### 3. Validación por Storytelling y Reverse Storytelling
-La validación del recorrido de extremo a extremo confirmó la coherencia del ciclo asistencial entre ambos segmentos. Mediante la narrativa directa se verificó la transición sin fricciones de custodia entre el médico emisor, el paramédico y el cirujano receptor. Complementariamente, el análisis retrospectivo desde el hito `Muestra aceptada formalmente como viable` (`Acta final de entrega firmada digitalmente`) comprobó que ninguna entrega puede consumarse sin la confluencia de tres condiciones inviolables: desbloqueo por OTP dentro de la geocerca hospitalaria, preservación térmica continua (2 °C a 8 °C) garantizada por el respaldo LiFePO4, y descarga íntegra de la telemetría resguardada en el búfer flash local tras cruzar túneles.
+La validación del recorrido de extremo a extremo confirmó la coherencia del ciclo asistencial entre ambos segmentos. Mediante la narrativa directa se verificó la transición sin fricciones de custodia entre el médico emisor, el paramédico (**Aldair Lazaro**) y el coordinador o médico receptor (**Gianfranco Timoteo**). Complementariamente, el análisis retrospectivo desde el hito `Muestra aceptada formalmente como viable` (`Acta final de entrega firmada digitalmente`) comprobó que ninguna entrega puede consumarse sin la confluencia de tres condiciones inviolables: desbloqueo por OTP dentro de la geocerca hospitalaria, preservación térmica continua (2 °C a 8 °C) garantizada por el respaldo LiFePO4, y descarga íntegra de la telemetría resguardada en el búfer flash local tras cruzar túneles.
 
 #### 4. Delimitación de Contextos Delimitados (Bounded Contexts)
-La sesión de Big Picture permitió delimitar cinco (5) Bounded Contexts de negocio, los cuales constituyen las fronteras transaccionales definitivas del sistema y se preservan de manera consistente a lo largo de toda la arquitectura y diseño de software:
+La sesión de Big Picture permitió delimitar cinco (5) Bounded Contexts de negocio, los cuales constituyen las fronteras transaccionales definitivas del sistema y se preservan en el mismo orden canónico a lo largo de toda la arquitectura y diseño de software:
 1. **Identity, Access & Subscriptions (IAM):** Gestión de instituciones hospitalarias acreditadas (RENIPRESS), planes de suscripción SaaS B2B, autenticación JWT basada en roles y trazabilidad de licencias médicas.
-2. **Medical Transport Planning & Dispatching:** Gestión de solicitudes de traslado urgente, asignación de unidades asistenciales/tripulación, cálculo dinámico de rutas anti-tráfico TomTom y geocercas de pre-arribo.
-3. **Smart Container & Telemetry Monitoring:** Ingestión de telemetría continua (temperatura, peso neto HX711, batería LiFePO4), control electromecánico de tapa y alta física de dispositivos IoT.
+2. **Smart Container & Telemetry Monitoring:** Ingestión de telemetría continua (temperatura, peso neto HX711, batería LiFePO4), control electromecánico de tapa y alta física de dispositivos IoT.
+3. **Medical Transport Planning & Dispatching:** Gestión de solicitudes de traslado urgente, asignación de unidades asistenciales/tripulación, cálculo dinámico de rutas anti-tráfico TomTom y geocercas de pre-arribo.
 4. **Critical Alerting & Incident Response:** Detección en tiempo real de excursiones térmicas, disparador de alarmas acústicas en cabina y notificación omnicanal de contingencias.
 5. **Chain of Custody & Traceability:** Verificación de token OTP en geocerca hospitalaria, registro de actas de custodia y sellado inmutable con hash SHA-256 para DIGEMID (R.M. 833-2015).
 
@@ -1147,11 +1205,11 @@ Para complementar la visión macro del lienzo y facilitar la transición hacia e
 | Elemento | Significado | Ejemplo en el Dominio |
 |---|---|---|
 | **Actor** | Persona o rol que inicia una intención o toma una decisión. | Coordinador logístico, Paramédico TEM, Cirujano receptor. |
-| **Comando** | Intención de acción que busca modificar el estado del sistema. | `AsignarRecursosTraslado`, `RegistrarLecturaTelemetria`. |
-| **Evento de Dominio** | Hecho relevante consumado e inmutable expresado en tiempo pasado. | `TrasladoIniciado`, `ExcursionTermicaDetectada`. |
+| **Comando** | Intención de acción que busca modificar el estado del sistema. | `AssignVehicleAndBoxToTrip`, `RecordTelemetrySnapshot`. |
+| **Evento de Dominio** | Hecho relevante consumado e inmutable expresado en tiempo pasado. | `DispatchedTripStarted`, `ThermalExcursionDetected`. |
 | **Política / Regla** | Reacción automática ante un evento (*Whenever [Event] Then [Action]*). | Si la temperatura supera 8.0 °C por >2 min, emitir alerta crítica. |
 | **Read Model** | Proyección de datos optimizada para la toma de decisiones. | Tablero de telemetría en vivo, Línea de tiempo de custodia. |
-| **Sistema Externo** | Plataforma de terceros fuera de la frontera transaccional. | GPS / TomTom API, Bróker MQTT, Pasarela Twilio SMS. |
+| **Sistema Externo** | Plataforma de terceros fuera de la frontera transaccional. | GPS / TomTom API, Nodo IoT ESP32 (HTTPS/REST), Pasarela Twilio SMS. |
 | **Hotspot** | Riesgo operacional, vacío normativo o punto de fricción técnica. | Falla de señal celular 4G en zanjas viales o túneles de Lima. |
 
 #### Flujo Secuencial de Eventos de Extremo a Extremo
@@ -1178,99 +1236,99 @@ Para complementar la visión macro del lienzo y facilitar la transición hacia e
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">1</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Institución de origen</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`SolicitarTraslado`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoSolicitado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`SolicitarTraslado` (`CreateTransportOrder`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoSolicitado` (`TransportOrderPlaced`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de solicitud con tipo de carga médica, origen, destino y prioridad clínica.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">2</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`ValidarSolicitud`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`SolicitudValidada`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Verificación de viabilidad, disponibilidad horaria y requerimiento térmico (2 °C - 8 °C).</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`ValidarSolicitud` (`ValidateTransportOrder`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`SolicitudValidada` (`TransportOrderValidated`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Verificación de viabilidad, disponibilidad horaria y requisito térmico (2 °C - 8 °C).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">3</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`AsignarRecursosTraslado`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`RecursosAsignados`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`AsignarRecursosTraslado` (`AssignVehicleAndBoxToTrip`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`RecursosAsignados` (`TripResourcesAssigned`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Asignación de unidad móvil, contenedor inteligente y tripulación asistencial.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">4</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Paramédico asistencial</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`VerificarPreparacion`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`PreparacionVerificada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`VerificarPreparacion` (`VerifyPrecoolingReadiness`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`PreparacionVerificada` (`PrecoolingVerified`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Lista de chequeo previa: estado de batería LiFePO4, calibración y conexión 12V.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">5</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Personal médico emisor</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`RegistrarCargaYSellar`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CargaRegistrada` / `ContenedorSellado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`RegistrarCargaYSellar` (`EngageSolenoidLock`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`ContenedorSellado` (`ContainerLidLocked`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de masa inicial en celda HX711 (tara automática) y bloqueo electromecánico de solenoide.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">6</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Paramédico asistencial</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`IniciarTraslado`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoIniciado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`IniciarTraslado` (`StartDispatchedTrip`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoIniciado` (`DispatchedTripStarted`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Registro de hora exacta de salida, geocerca inicial y cálculo dinámico de ETA.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">7</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Contenedor IoT (ESP32)</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`PublicarTelemetria`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TelemetriaRegistrada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`PublicarTelemetria` (`RecordTelemetrySnapshot`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TelemetriaRegistrada` (`TelemetryRecorded`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Ingesta de temperatura ambiente/interna, nivel de batería, estado de tapa y coordenadas GPS.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">8</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Motor de Reglas de Negocio</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`EvaluarCondiciones`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CondicionEvaluada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`EvaluarCondiciones` (`EvaluateTelemetryRules`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CondicionEvaluada` (`ThermalExcursionDetected`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Validación de cumplimiento estricto del rango térmico e integridad de la ruta.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">9</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`SupervisarMonitoreo`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`MonitoreoConfirmado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`SupervisarMonitoreo` (`UpdateDynamicEta`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`MonitoreoConfirmado` (`DynamicEtaRecalculated`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Tablero de control de flota en tiempo real con semaforización de riesgo.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">10</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Conductor de ambulancia</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`RegistrarArribo`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`UnidadArribadaADestino`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`RegistrarArribo` (`TriggerPreArrivalGeofence`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`UnidadArribadaADestino` (`HospitalPreArrivalTriggered`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Activación de geocerca hospitalaria de pre-arribo (radio ≤ 2 km / 10 min).</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">11</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Cirujano / Farmacéutico receptor</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`VerificarCarga`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CondicionFinalVerificada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`VerificarCarga` (`VerifyOtpAndGeofence`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`CondicionFinalVerificada` (`ContainerLidUnlocked`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Inspección de integridad celular, historial térmico continuo y balance de peso.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">12</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Cirujano / Farmacéutico receptor</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`AceptarORechazarEntrega`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`EntregaAceptada` / `EntregaRechazada`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`AceptarORechazarEntrega` (`CompleteCustodyHandover`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`EntregaAceptada` (`HandoverCompletedAndSealed`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Desbloqueo mediante token dinámico OTP en geocerca y registro de observaciones clínicas.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">13</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Coordinador de despacho</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`CerrarTraslado`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoCerrado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`CerrarTraslado` (`CompleteDispatchTrip`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`TrasladoCerrado` (`DispatchTripCompleted`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Sellado de la línea de tiempo inmutable de custodia.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; font-weight: bold;">14</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Plataforma Web</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`GenerarExpedienteAuditoria`</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`ExpedienteAuditoriaGenerado`</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; font-weight: 500;">`GenerarExpedienteAuditoria` (`SealDigitalManifest`)</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">`ExpedienteAuditoriaGenerado` (`DigitalManifestSealed`)</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px;">Exportación de reporte técnico PDF sellado con hash criptográfico SHA-256 para DIGEMID.</td>
 </tr>
 </tbody>
@@ -1280,29 +1338,28 @@ Para complementar la visión macro del lienzo y facilitar la transición hacia e
 #### Políticas y Rutas Alternativas de Contingencia
 
 * **Desviación Térmica (Excursión Térmica):**
-  * *Evento desencadenante:* `TemperaturaFueraDeRango`.
+  * *Evento desencadenante:* `TemperaturaFueraDeRango` (`ThermalExcursionDetected`).
   * *Política reactiva:* Si la temperatura interna excede los 8.0 °C o desciende de 2.0 °C durante más de 120 segundos continuos, disparar de inmediato alerta acústica/visual en cabina vehicular y remitir notificación push de máxima severidad a los médicos del hospital receptor.
-  * *Acción correctiva:* Paramédico verifica ventilación y suministro eléctrico del contenedor; se registra la intervención en la bitácora telemática.
+  * *Acción correctiva:* Paramédico verifica ventilación y suministro eléctrico del contenedor; se registra la intervención en la bitácora telemática (`ContingencyResolution`).
 * **Pérdida de Conectividad Celular (Túneles y Zonas de Sombra 4G):**
-  * *Evento desencadenante:* `TelemetriaInterrumpida`.
+  * *Evento desencadenante:* `TelemetriaInterrumpida` (`TelemetryConnectionLost`).
   * *Política reactiva:* El microcontrolador ESP32 conmuta autónomamente al búfer de memoria flash interna no volátil (almacenando hasta 5,000 muestras con marca de tiempo del RTC), marcando el read model web con advertencia de última lectura conocida. Al reconectar la red celular 4G, se gatilla `TelemetriaRestablecida` y sincronización secuencial en bloque.
 * **Retraso Crítico por Congestión Vehicular:**
-  * *Evento desencadenante:* `ETAEscedido`.
+  * *Evento desencadenante:* `ETAExcedido` (`DynamicEtaRecalculated`).
   * *Política reactiva:* Reevaluación del tráfico en tiempo real mediante TomTom Traffic API. Si la demora supera los 15 minutos respecto a la ventana de viabilidad del órgano, notificar a la central de despacho para gestionar apoyo vial policial o advertir al equipo quirúrgico receptor.
 * **Apertura No Autorizada de Escotilla:**
-  * *Evento desencadenante:* `AperturaFueraDeGeocercaDetectada`.
+  * *Evento desencadenante:* `AperturaFueraDeGeocercaDetectada` (`TamperAttemptDetected`).
   * *Política reactiva:* Si el sensor magnético detecta separación de la tapa fuera del radio hospitalario autorizado, marcar `CadenaDeCustodiaComprometida`, activar sirena local de seguridad y registrar el incidente con coordenadas geográficas inmediatas.
 
 #### Agregados y Límites del Dominio
 
-| Agregado | Responsabilidad Principal | Eventos de Dominio Clave |
-|---|---|---|
-| **MedicalTransport** | Orquestar el ciclo de vida del traslado, tripulación, ruta y tiempos comprometidos. | `TrasladoSolicitado`, `TrasladoIniciado`, `UnidadArribadaADestino`, `TrasladoCerrado`. |
-| **SmartContainer** | Gestionar el estado operativo del hardware, precinto electromecánico y calibración de sensores. | `ContenedorSellado`, `TapaAperturada`, `SuministroConmutadoLiFePO4`. |
-| **MedicalPayload** | Salvaguardar la identificación de la carga biológica, condiciones requeridas y verificación médica. | `CargaRegistrada`, `CondicionFinalVerificada`, `EntregaAceptada`. |
-| **TelemetryMonitoring**| Ingestar series temporales de temperatura, humedad, peso neto HX711 y posicionamiento GPS. | `TelemetriaRegistrada`, `CondicionEvaluada`, `MuestraSincronizada`. |
-| **IncidentAlert** | Gestionar el ciclo de vida de anomalías térmicas y operativas, asignación de responsables y mitigación. | `AlertaGenerada`, `AccionMitigacionRegistrada`, `IncidenteResuelto`. |
-| **ChainOfCustody** | Preservar el registro inmutable de transferencias de custodia con firmas electrónicas y token OTP. | `CustodiaTransferida`, `EntregaConfirmada`, `ActaFirmada`. |
+| Agregado Raíz Canónico (`4.6` / `4.7`) | Bounded Context Asociado | Responsabilidad Principal | Eventos de Dominio Clave |
+|---|---|---|---|
+| **`UserAccount` / `HospitalInstitution` / `SubscriptionPlan`** | *1. Identity, Access & Subscriptions (IAM)* | Gobernar la identidad de usuarios clínicos/logísticos, instituciones IPRESS con geocerca y cuotas SaaS B2B. | `InstitutionProvisioned`, `UserAuthenticated`. |
+| **`SmartContainer`** *(con `TelemetryLog`)* | *2. Smart Container & Telemetry Monitoring* | Gestionar el estado operativo del hardware IoT, precinto electromecánico, celda de carga HX711 y series temporales de telemetría. | `ContainerLidLocked`, `TelemetryRecorded`, `ExternalPowerLost`, `ContainerLidUnlocked`. |
+| **`TransportOrder` / `DispatchTrip`** | *3. Medical Transport Planning & Dispatching* | Salvaguardar la orden clínica de traslado (`BiologicalPayload`, `IschemiaTimeLimit`) y orquestar el viaje, ruta, vehículo y ETA dinámico. | `TransportOrderPlaced`, `TripResourcesAssigned`, `DispatchedTripStarted`, `DynamicEtaRecalculated`. |
+| **`CriticalIncident`** *(con `ContingencyResolution`)* | *4. Critical Alerting & Incident Response* | Gestionar el ciclo de vida de anomalías térmicas, ponderales y operativas, escalamiento omnicanal y registro de mitigación. | `ThermalExcursionDetected`, `HospitalPreArrivalTriggered`, `CriticalAlertTriggered`, `IncidentResolved`. |
+| **`CustodyTransfer` / `DigitalAuditManifest`** | *5. Chain of Custody & Traceability* | Preservar el desbloqueo de doble factor (Geocerca + `OtpToken`) y sellar el expediente PDF inmutable con hash SHA-256 para DIGEMID. | `OtpGeneratedForArrival`, `HandoverCompletedAndSealed`, `DigitalManifestSealed`. |
 
 <div style="page-break-after: always;"></div>
 
@@ -1384,63 +1441,7 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 
 ***
 
-### **2.5.2. Bounded Context: Medical Transport Planning & Dispatching**
-
-<table border="1" cellpadding="6" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Ubiquitous Term</th>
-      <th>Domain Definition</th>
-      <th>Role in the System &amp; DDD Mapping</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Acceptable Temperature Range (Rango Térmico Aceptable)</strong></td>
-      <td>Intervalo estricto de temperatura de preservación bioambiental fijado por las Buenas Prácticas de Almacenamiento y Transporte de DIGEMID (+2.0 °C a +8.0 °C para medicamentos biológicos, vacunas y hemoderivados; y +2.0 °C a +4.0 °C para órganos de donante cadavérico), dentro del cual se garantiza la estabilidad farmacológica y viabilidad tisular de la carga.</td>
-      <td><strong>Value Object:</strong> <code>TemperatureRange</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
-    </tr>
-    <tr>
-      <td><strong>Cold Ischemia Time (Tiempo de Isquemia Fría)</strong></td>
-      <td>Intervalo de tiempo fisiológico máximo que un órgano para trasplante puede permanecer sin irrigación sanguínea en preservación hipotérmica (desde el clampado aórtico en el hospital donante hasta su revascularización en quirófano) antes de sufrir necrosis tisular irreversible, gobernado por la Directiva Sanitaria N° 152/DIGDOT.</td>
-      <td><strong>Value Object:</strong> <code>IschemiaTimeLimit</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
-    </tr>
-    <tr>
-      <td><strong>Dynamic Route ETA (Tiempo Estimado de Llegada Dinámico)</strong></td>
-      <td>Cálculo predictivo continuo de la duración remanente y la hora exacta de arribo de la ambulancia al hospital de destino, ajustado dinámicamente según las variaciones del flujo vehicular, congestión e incidentes de tránsito en los corredores hospitalarios de Lima Metropolitana.</td>
-      <td><strong>Value Object:</strong> <code>RouteProgress</code> en la Entidad <code>TransportRoute</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
-    </tr>
-    <tr>
-      <td><strong>Emergency Medical Crew (Tripulación Asistencial y Paramédica)</strong></td>
-      <td>Personal asistencial calificado (paramédicos, enfermeros o conductores de emergencias médicas) encargado de la operación en ruta, conexión del contenedor a la toma 12V del vehículo asistencial y custodia física directa durante el traslado de urgencia.</td>
-      <td><strong>Entity:</strong> <code>CrewMember</code> en <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
-    </tr>
-    <tr>
-      <td><strong>Logistics Transport Unit (Unidad de Transporte y Ambulancia Logística)</strong></td>
-      <td>Vehículo terrestre de transporte especializado (ambulancia asistencial Tipo II/III o furgón logístico climatizado) operado por empresas de transporte y operadores logísticos de cadena de frío, equipado con soporte eléctrico continuo de 12V en cabina y sistema telemático de navegación para el Contenedor Médico Inteligente.</td>
-      <td><strong>Entity:</strong> <code>VehicleBinding</code> asociada al Agregado <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
-    </tr>
-    <tr>
-      <td><strong>Medical and Biological Payload (Carga Médica y Biológica)</strong></td>
-      <td>Conjunto de insumos terapéuticos y biológicos altamente termosensibles y críticos trasladados en la unidad de transporte asistido, que comprende órganos sólidos para trasplante (corazón, riñón, hígado), tejidos humanos, componentes sanguíneos (paquetes globulares, plasma), vacunas e inmunobiológicos, y medicamentos de alto costo sujetos a rigurosos límites de supervivencia biológica.</td>
-      <td><strong>Value Object:</strong> <code>BiologicalPayload</code> encapsulado en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
-    </tr>
-    <tr>
-      <td><strong>Procurement &amp; Dispatch Coordinator (Coordinador de Procura y Despacho Asistencial)</strong></td>
-      <td>Profesional asistencial o logístico (adscrito a DIGDOT, MINSA o a la central de despacho del operador de transporte) facultado para autorizar la misión de traslado, evaluar la disponibilidad de unidades móviles climatizadas y emitir la orden formal de transporte de órganos o hemoderivados.</td>
-      <td><strong>Entity:</strong> <code>DispatchCoordinator</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
-    </tr>
-    <tr>
-      <td><strong>Transport Mission / Emergency Transport Order (Misión de Transporte Asistido / Orden de Traslado de Emergencia)</strong></td>
-      <td>Operación asistencial protocolizada de traslado médico entre un centro de salud o almacén farmacéutico de origen y una institución de destino, gobernada por una ventana temporal crítica, una tripulación técnica asignada y directivas estrictas de conservación bioambiental.</td>
-      <td><strong>Aggregate Root:</strong> <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
-    </tr>
-  </tbody>
-</table>
-
-***
-
-### **2.5.3. Bounded Context: Smart Container & Telemetry Monitoring**
+### **2.5.2. Bounded Context: Smart Container & Telemetry Monitoring**
 
 <table border="1" cellpadding="6" cellspacing="0">
   <thead>
@@ -1494,6 +1495,61 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
   </tbody>
 </table>
 
+***
+
+### **2.5.3. Bounded Context: Medical Transport Planning & Dispatching**
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Ubiquitous Term</th>
+      <th>Domain Definition</th>
+      <th>Role in the System &amp; DDD Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Acceptable Temperature Range (Rango Térmico Aceptable)</strong></td>
+      <td>Intervalo estricto de temperatura de preservación bioambiental fijado por las Buenas Prácticas de Almacenamiento y Transporte de DIGEMID (+2.0 °C a +8.0 °C para medicamentos biológicos, vacunas y hemoderivados; y +2.0 °C a +4.0 °C para órganos de donante cadavérico), dentro del cual se garantiza la estabilidad farmacológica y viabilidad tisular de la carga.</td>
+      <td><strong>Value Object:</strong> <code>TemperatureRange</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+    <tr>
+      <td><strong>Cold Ischemia Time (Tiempo de Isquemia Fría)</strong></td>
+      <td>Intervalo de tiempo fisiológico máximo que un órgano para trasplante puede permanecer sin irrigación sanguínea en preservación hipotérmica (desde el clampado aórtico en el hospital donante hasta su revascularización en quirófano) antes de sufrir necrosis tisular irreversible, gobernado por la Directiva Sanitaria N° 152/DIGDOT.</td>
+      <td><strong>Value Object:</strong> <code>IschemiaTimeLimit</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+    <tr>
+      <td><strong>Dynamic Route ETA (Tiempo Estimado de Llegada Dinámico)</strong></td>
+      <td>Cálculo predictivo continuo de la duración remanente y la hora exacta de arribo de la ambulancia al hospital de destino, ajustado dinámicamente según las variaciones del flujo vehicular, congestión e incidentes de tránsito en los corredores hospitalarios de Lima Metropolitana.</td>
+      <td><strong>Value Object:</strong> <code>RouteProgress</code> en la Entidad <code>TransportRoute</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+    <tr>
+      <td><strong>Emergency Medical Crew (Tripulación Asistencial y Paramédica)</strong></td>
+      <td>Personal asistencial calificado (paramédicos, enfermeros o conductores de emergencias médicas) encargado de la operación en ruta, conexión del contenedor a la toma 12V del vehículo asistencial y custodia física directa durante el traslado de urgencia.</td>
+      <td><strong>Entity:</strong> <code>CrewMember</code> en <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+    <tr>
+      <td><strong>Logistics Transport Unit (Unidad de Transporte y Ambulancia Logística)</strong></td>
+      <td>Vehículo terrestre de transporte especializado (ambulancia asistencial Tipo II/III o furgón logístico climatizado) operado por empresas de transporte y operadores logísticos de cadena de frío, equipado con soporte eléctrico continuo de 12V en cabina y sistema telemático de navegación para el Contenedor Médico Inteligente.</td>
+      <td><strong>Entity:</strong> <code>VehicleBinding</code> asociada al Agregado <code>DispatchTrip</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+    <tr>
+      <td><strong>Medical and Biological Payload (Carga Médica y Biológica)</strong></td>
+      <td>Conjunto de insumos terapéuticos y biológicos altamente termosensibles y críticos trasladados en la unidad de transporte asistido, que comprende órganos sólidos para trasplante (corazón, riñón, hígado), tejidos humanos, componentes sanguíneos (paquetes globulares, plasma), vacunas e inmunobiológicos, y medicamentos de alto costo sujetos a rigurosos límites de supervivencia biológica.</td>
+      <td><strong>Value Object:</strong> <code>BiologicalPayload</code> encapsulado en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+    <tr>
+      <td><strong>Procurement &amp; Dispatch Coordinator (Coordinador de Procura y Despacho Asistencial)</strong></td>
+      <td>Profesional asistencial o logístico (adscrito a DIGDOT, MINSA o a la central de despacho del operador de transporte) facultado para autorizar la misión de traslado, evaluar la disponibilidad de unidades móviles climatizadas y emitir la orden formal de transporte de órganos o hemoderivados.</td>
+      <td><strong>Entity:</strong> <code>DispatchCoordinator</code> en <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+    <tr>
+      <td><strong>Transport Mission / Emergency Transport Order (Misión de Transporte Asistido / Orden de Traslado de Emergencia)</strong></td>
+      <td>Operación asistencial protocolizada de traslado médico entre un centro de salud o almacén farmacéutico de origen y una institución de destino, gobernada por una ventana temporal crítica, una tripulación técnica asignada y directivas estrictas de conservación bioambiental.</td>
+      <td><strong>Aggregate Root:</strong> <code>DispatchTrip</code> / <code>TransportOrder</code><br><em>Bounded Context:</em> Medical Transport Planning &amp; Dispatching</td>
+    </tr>
+  </tbody>
+</table>
 
 ***
 
@@ -1576,41 +1632,44 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 
 # 3.1. User Stories
 
-En esta sección se detallan las 18 historias de usuario (User Stories) que estructuran el alcance funcional del ecosistema **NeonCode**. La especificación abarca la aplicación web responsive de monitoreo, el sitio web público (Landing Page) y la interfaz de servicios backend (RESTful API) para la supervisión en tiempo real de contenedores médicos inteligentes instalados en ambulancias.
+En esta sección se detallan las 18 historias de usuario (*User Stories*) y historias técnicas (*Technical Stories*) que estructuran el alcance funcional del ecosistema **NeonCode (Medical SmartBox)**. La especificación abarca la aplicación web responsive de monitoreo, el sitio web público (*Landing Page*) y la interfaz de servicios backend (*RESTful API*) para la supervisión en tiempo real de contenedores médicos inteligentes instalados en ambulancias.
 
-Todos los criterios de aceptación siguen la especificación **Gherkin** (Dado que / Cuando / Entonces), redactados en tercera persona, tiempo presente y enfocados en las reglas de negocio del dominio de salud y logística médica, omitiendo referencias a elementos de interfaz de usuario.
+Cada historia de usuario mantiene trazabilidad directa con los *User Personas* definidos en el Capítulo II:
+* **Aldair Lazaro (Segmento 1 — Personal de Transporte Asistencial y Emergencias Médicas):** Representa al rol de *Personal Médico de Emergencia*, encargado de la custodia física en ruta, monitoreo ambiental inmediato y entrega en destino.
+* **Gianfranco Timoteo (Segmento 2 — Hospitales, Clínicas y Centros de Salud Receptores / Emisores):** Representa a los roles de *Supervisor Hospitalario*, *Operador Logístico de Salud* y *Visitante Comercial Institucional*, responsables del aprovisionamiento de contenedores, planificación de despachos, configuración de umbrales térmicos y auditoría de cadena de custodia.
+
+Todos los criterios de aceptación siguen la especificación **Gherkin** (*Dado que / Cuando / Entonces*), redactados en tercera persona, tiempo presente y enfocados en las reglas de negocio del dominio de salud y logística médica, omitiendo referencias a elementos de interfaz de usuario.
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
 | **EP01** | Identity & Access Management | Épica destinada a la gestión de accesos, roles, autenticación segura y perfiles de instituciones de salud. | N/A | N/A |
-| **US01** | Registro de Institución de Salud | Como supervisor hospitalario, deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores. | **Dado que** la institución de salud no cuenta con una cuenta activa,<br>**Cuando** proporciona el registro institucional y credenciales de acceso válidas,<br>**Entonces** el sistema genera la cuenta corporativa y notifica la activación del perfil. | EP01 |
-| **US02** | Autenticación de Personal de Emergencia | Como personal médico de emergencia, deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real. | **Dado que** el usuario médico cuenta con credenciales activas,<br>**Cuando** ingresa sus datos de acceso autorizados,<br>**Entonces** el sistema valida la identidad y concede acceso al panel de supervisión. | EP01 |
+| **US01** | Registro de Institución de Salud | Como supervisor hospitalario (Gianfranco Timoteo), deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores. | **Dado que** la institución de salud no cuenta con una cuenta activa,<br>**Cuando** proporciona el registro institucional y credenciales de acceso válidas,<br>**Entonces** el sistema genera la cuenta corporativa y notifica la activación del perfil. | EP01 |
+| **US02** | Autenticación de Personal de Emergencia | Como personal médico de emergencia (Aldair Lazaro), deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real. | **Dado que** el usuario médico cuenta con credenciales activas,<br>**Cuando** ingresa sus datos de acceso autorizados,<br>**Entonces** el sistema valida la identidad y concede acceso al panel de supervisión. | EP01 |
 | **US03** | Endpoint de Autenticación de Usuarios (API) | Como Developer, deseo disponer de un endpoint POST `/api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión. | **Dado que** la aplicación cliente envía una solicitud POST con credenciales válidas,<br>**Cuando** la API procesa la autenticación,<br>**Entonces** responde con código HTTP 200 y el token JWT de sesión.<br><br>**Dado que** el cliente envía datos de acceso inválidos,<br>**Cuando** la API procesa la petición,<br>**Entonces** responde con un código HTTP 401 Unauthorized. | EP01 |
 | **EP02** | Landing Page & Brand Awareness | Épica orientada a la difusión de la propuesta de valor y captura de prospectos del sector salud. | N/A | N/A |
-| **US04** | Exploración de Propuesta de Valor Logística | Como visitante comercial, deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación. | **Dado que** el visitante navega en el sitio principal de NeonCode,<br>**Cuando** explora la sección de soluciones para transporte médico,<br>**Entonces** el sistema despliega las especificaciones térmicas, de trazabilidad y planes de servicio. | EP02 |
-| **US05** | Solicitud de Demostración Corporativa | Como visitante comercial, deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario. | **Dado que** el visitante completa sus datos institucionales de contacto,<br>**Cuando** efectúa el envío del formulario,<br>**Entonces** el sistema registra el prospecto y despacha un correo de confirmación al usuario. | EP02 |
-| **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial, deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | **Dado que** el visitante ingresa al centro de ayuda del sitio web,<br>**Cuando** selecciona la categoría de hardware y sensores IoT,<br>**Entonces** el sistema muestra las respuestas estructuradas sobre la cadena de frío y conectividad. | EP02 |
-| **EP03** | Container & Ambulance Provisioning | Épica para el alta, configuración y vinculación de contenedores IoT y unidades de ambulancia. | N/A | N/A |
-| **US07** | Alta de Unidades de Ambulancia | Como operador logístico de salud, deseo registrar vehículos de transporte en el sistema para asociarles contenedores de insumos. | **Dado que** el operador logístico ha iniciado sesión,<br>**Cuando** ingresa los datos de identificación y matrícula de la ambulancia,<br>**Entonces** el sistema registra el vehículo en el inventario activo de la institución. | EP03 |
-| **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión de la carga. | **Dado que** el operador selecciona una ambulancia disponible,<br>**Cuando** ingresa el identificador único del contenedor inteligente,<br>**Entonces** el sistema asigna el dispositivo al vehículo y habilita la recepción de telemetría. | EP03 |
+| **US04** | Exploración de Propuesta de Valor Logística | Como visitante comercial institucional (Gianfranco Timoteo), deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación. | **Dado que** el visitante navega en el sitio principal de NeonCode,<br>**Cuando** explora la sección de soluciones para transporte médico,<br>**Entonces** el sistema despliega las especificaciones térmicas, de trazabilidad y planes de servicio. | EP02 |
+| **US05** | Solicitud de Demostración Corporativa | Como visitante comercial institucional (Gianfranco Timoteo), deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario. | **Dado que** el visitante completa sus datos institucionales de contacto,<br>**Cuando** efectúa el envío del formulario,<br>**Entonces** el sistema registra el prospecto y despacha un correo de confirmación al usuario. | EP02 |
+| **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial institucional (Gianfranco Timoteo), deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | **Dado que** el visitante ingresa al centro de ayuda del sitio web,<br>**Cuando** selecciona la categoría de hardware y sensores IoT,<br>**Entonces** el sistema muestra las respuestas estructuradas sobre la cadena de frío y conectividad. | EP02 |
+| **EP03** | Container & Ambulance Provisioning | Épica para el alta, configuración y vinculación de contenedores IoT y unidades de ambulancia en despachos médicos. | N/A | N/A |
+| **US07** | Alta de Unidades de Ambulancia | Como operador logístico de salud (Gianfranco Timoteo), deseo registrar y habilitar matrículas de vehículos de transporte en el sistema para asociarles contenedores de insumos en despachos activos. | **Dado que** el operador logístico ha iniciado sesión,<br>**Cuando** ingresa los datos de identificación y matrícula de la ambulancia (`AssignedVehiclePlate`),<br>**Entonces** el sistema habilita la unidad vehicular para su asignación en despachos de la institución. | EP03 |
+| **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud (Gianfranco Timoteo), deseo vincular un contenedor IoT (`SmartContainer`) a una ambulancia específica en un despacho médico (`DispatchTrip`) para iniciar la supervisión de la carga. | **Dado que** el operador selecciona una unidad de ambulancia disponible,<br>**Cuando** ingresa el identificador de serie del contenedor inteligente (`SerialNumber`),<br>**Entonces** el sistema asocia el dispositivo al despacho vehicular y habilita la recepción de telemetría. | EP03 |
 | **US09** | Ingesta de Telemetría IoT (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/containers/{containerId}/telemetry` para registrar datos térmicos y de estado. | **Dado que** el contenedor transmite un payload con temperatura, peso, apertura y batería,<br>**Cuando** la API valida y procesa la estructura de datos,<br>**Entonces** almacena la lectura en la base de datos y responde con HTTP 201 Created. | EP03 |
 | **EP04** | Real-Time Environmental & Fleet Monitoring | Épica centrada en la supervisión continua de temperatura, inventario por peso, GPS, combustible y ETA. | N/A | N/A |
-| **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | **Dado que** la ambulancia se encuentra en ruta de traslado,<br>**Cuando** los sensores del contenedor registran cambios térmicos o de escotilla,<br>**Entonces** la plataforma actualiza de forma inmediata las lecturas en la vista de monitoreo. | EP04 |
-| **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia, deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | **Dado que** el usuario médico consulta el detalle del contenedor,<br>**Cuando** se retira o ingresa un insumo médico,<br>**Entonces** el sistema calcula la diferencia de masa y actualiza el estimado de stock en la plataforma. | EP04 |
+| **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia (Aldair Lazaro), deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | **Dado que** la ambulancia se encuentra en ruta de traslado,<br>**Cuando** los sensores del contenedor registran cambios térmicos o de escotilla,<br>**Entonces** la plataforma actualiza de forma inmediata las lecturas en la vista de monitoreo. | EP04 |
+| **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia (Aldair Lazaro), deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | **Dado que** el usuario médico consulta el detalle del contenedor,<br>**Cuando** se retira o ingresa un insumo médico,<br>**Entonces** el sistema calcula la diferencia de masa y actualiza el estimado de stock en la plataforma. | EP04 |
 | **US12** | Consulta de Telemetría e Indicadores (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/containers/{containerId}/metrics` para alimentar la vista del panel web. | **Dado que** el cliente web solicita el estado actual de un contenedor,<br>**Cuando** la API procesa la petición con un identificador válido,<br>**Entonces** responde con código HTTP 200 y el objeto JSON con las últimas mediciones. | EP04 |
 | **EP05** | Incident Alerts & Medical Dispatch | Épica para la gestión y notificación de incidentes críticos como variaciones térmicas o retrasos. | N/A | N/A |
-| **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | **Dado que** el supervisor edita los parámetros de conservación de una carga sensible,<br>**Cuando** guarda los límites mínimos y máximos de temperatura,<br>**Entonces** el sistema registra la regla de negocio para la emisión de alertas. | EP05 |
-| **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud, deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | **Dado que** un sensor detecta una anomalía de temperatura o nivel crítico de batería,<br>**Cuando** el evento es registrado por el sistema,<br>**Entonces** la plataforma notifica la alerta priorizada en el panel del operador. | EP05 |
+| **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario (Gianfranco Timoteo), deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | **Dado que** el supervisor edita los parámetros de conservación de una carga sensible,<br>**Cuando** guarda los límites mínimos y máximos de temperatura,<br>**Entonces** el sistema registra la regla de negocio para la emisión de alertas. | EP05 |
+| **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud (Gianfranco Timoteo), deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | **Dado que** un sensor detecta una anomalía de temperatura o nivel crítico de batería,<br>**Cuando** el evento es registrado por el sistema,<br>**Entonces** la plataforma notifica la alerta priorizada en el panel del operador. | EP05 |
 | **US15** | Servicio de Despacho de Alertas (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/alerts/dispatch` para procesar notificaciones de emergencia. | **Dado que** la regla de negocio detecta la ruptura de la cadena de frío,<br>**Cuando** la API ejecuta el servicio de despacho,<br>**Entonces** genera la notificación correspondiente y retorna un código HTTP 202 Accepted. | EP05 |
 | **EP06** | Chain of Custody & Audit Reports | Épica orientada al registro histórico, trazabilidad de la cadena de custodia y reportes de auditoría. | N/A | N/A |
-| **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario, deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | **Dado que** un traslado médico ha finalizado,<br>**Cuando** el supervisor solicita la consolidación del informe de auditoría,<br>**Entonces** el sistema genera un reporte con la gráfica de temperatura, aperturas y tiempos de traslado. | EP06 |
-| **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia, deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | **Dado que** la ambulancia arriba a la institución de destino,<br>**Cuando** el profesional de salud confirma la recepción satisfactoria de la carga,<br>**Entonces** el sistema sella el registro histórico con fecha, hora y responsable de recepción. | EP06 |
+| **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario (Gianfranco Timoteo), deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | **Dado que** un traslado médico ha finalizado,<br>**Cuando** el supervisor solicita la consolidación del informe de auditoría,<br>**Entonces** el sistema genera un reporte con la gráfica de temperatura, aperturas y tiempos de traslado. | EP06 |
+| **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia (Aldair Lazaro), deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | **Dado que** la ambulancia arriba a la institución de destino,<br>**Cuando** el profesional de salud confirma la recepción satisfactoria de la carga,<br>**Entonces** el sistema sella el registro histórico con fecha, hora y responsable de recepción. | EP06 |
 | **US18** | Consulta de Historial de Traslados (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría. | **Dado que** se requiere auditar un traslado finalizado,<br>**Cuando** la API procesa la consulta con el identificador de traslado,<br>**Entonces** devuelve un código HTTP 200 con el historial de eventos y datos de telemetría. | EP06 |
 
+### Especificación Detallada de Escenarios Gherkin por Épica
 
-En esta sección se especifican las 18 historias de usuario (User Stories) que definen el alcance funcional del ecosistema **NeonCode**. La arquitectura funcional abarca la plataforma web responsive para supervisión hospitalaria y logística, el sitio web público (Landing Page) orientado a la captación de clientes institucionales, y los servicios backend RESTful API para la ingesta y procesamiento de telemetría IoT de contenedores médicos inteligentes.
-
-Todos los criterios de aceptación están redactados en español bajo el estándar **Gherkin** (Dado que / Cuando / Entonces), estructurados en modo orientado a escenarios (*scenario-oriented*), cubriendo flujos exitosos, excepciones y reglas del dominio de la salud.
+A continuación se desarrollan los escenarios de aceptación detallados (*scenario-oriented*) para cada una de las 18 historias, cubriendo flujos exitosos (*Happy Path*), excepciones de validación y reglas de negocio del dominio médico-logístico.
 
 ***
 
@@ -1618,13 +1677,14 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US01: Registro de Institución de Salud**
 * **Título:** Registro de Institución de Salud.
+* **User Persona / Rol:** Gianfranco Timoteo (Supervisor Hospitalario — Segmento 2).
 * **Descripción:** Como supervisor hospitalario, deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores térmicos inteligentes.
 * **Relacionado con:** EP01
 * **Criterios de Aceptación:**
     * **Escenario 1: Registro exitoso de institución (Happy Path)**
         * **Dado que** la institución de salud no cuenta con una cuenta previa en el sistema.
         * **Cuando** el usuario ingresa una Razón Social válida, el número de identificación tributaria (RUC) activo, una dirección de correo institucional corporativo y establece una contraseña que cumpla con los estándares de seguridad (mínimo 8 caracteres, mayúscula, número y carácter especial).
-        * **Entonces** el sistema crea la cuenta institucional en estado pendiente de verificación y despacha un correo electrónico con un enlace de confirmación al correo proporcionado.
+        * **Entonces** el sistema crea la cuenta institucional (`HospitalOrganization`) en estado pendiente de verificación y despacha un correo electrónico con un enlace de confirmación al correo proporcionado.
     * **Escenario 2: Intento de registro con identificación tributaria duplicada**
         * **Dado que** ya existe un centro médico registrado con el mismo RUC en la base de datos.
         * **Cuando** el usuario intenta registrarse utilizando dicho número de RUC.
@@ -1638,6 +1698,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US02: Autenticación de Personal de Emergencia**
 * **Título:** Autenticación de Personal de Emergencia.
+* **User Persona / Rol:** Aldair Lazaro (Personal Médico de Emergencia — Segmento 1).
 * **Descripción:** Como personal médico de emergencia, deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real durante un traslado.
 * **Relacionado con:** EP01
 * **Criterios de Aceptación:**
@@ -1658,6 +1719,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US03: Endpoint de Autenticación de Usuarios (API)**
 * **Título:** Endpoint de Autenticación de Usuarios (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo disponer de un endpoint `POST /api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión seguros para las aplicaciones clientes.
 * **Relacionado con:** EP01
 * **Criterios de Aceptación:**
@@ -1680,6 +1742,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US04: Exploración de Propuesta de Valor Logística**
 * **Título:** Exploración de Propuesta de Valor Logística.
+* **User Persona / Rol:** Gianfranco Timoteo (Visitante Comercial Institucional — Segmento 2).
 * **Descripción:** Como visitante comercial, deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación en mi centro de salud.
 * **Relacionado con:** EP02
 * **Criterios de Aceptación:**
@@ -1696,6 +1759,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US05: Solicitud de Demostración Corporativa**
 * **Título:** Solicitud de Demostración Corporativa.
+* **User Persona / Rol:** Gianfranco Timoteo (Visitante Comercial Institucional — Segmento 2).
 * **Descripción:** Como visitante comercial, deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario.
 * **Relacionado con:** EP02
 * **Criterios de Aceptación:**
@@ -1712,6 +1776,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US06: Consulta de Preguntas Frecuentes (FAQ)**
 * **Título:** Consulta de Preguntas Frecuentes.
+* **User Persona / Rol:** Gianfranco Timoteo (Visitante Comercial Institucional — Segmento 2).
 * **Descripción:** Como visitante comercial, deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración del hardware IoT en ambulancias.
 * **Relacionado con:** EP02
 * **Criterios de Aceptación:**
@@ -1730,38 +1795,41 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US07: Alta de Unidades de Ambulancia**
 * **Título:** Alta de Unidades de Ambulancia.
-* **Descripción:** Como operador logístico de salud, deseo registrar vehículos de transporte en el sistema para asociarles posteriormente contenedores de insumos.
+* **User Persona / Rol:** Gianfranco Timoteo (Operador Logístico de Salud — Segmento 2).
+* **Descripción:** Como operador logístico de salud, deseo registrar y habilitar matrículas de vehículos de transporte en el sistema para asociarles posteriormente contenedores de insumos en los despachos médicos (`DispatchTrip`).
 * **Relacionado con:** EP03
 * **Criterios de Aceptación:**
-    * **Escenario 1: Registro exitoso de ambulancia**
-        * **Dado que** el operador logístico se encuentra autenticado con un rol con permisos de gestión de inventario.
-        * **Cuando** registra el código de placa del vehículo, el tipo de unidad (SVA/SVB) y el modelo de la ambulancia.
-        * **Entonces** el sistema valida que la placa no esté registrada previamente, guarda el nuevo vehículo y le asigna el estado "Disponible sin contenedor".
-    * **Escenario 2: Intento de registro con placa duplicada**
-        * **Dado que** la placa de la ambulancia ya se encuentra registrada para la misma institución.
-        * **Cuando** el operador intenta guardar el registro.
-        * **Entonces** el sistema impide la creación del duplicado y envía una alerta de conflicto de identificación del vehículo.
+    * **Escenario 1: Registro exitoso de unidad de ambulancia para despacho**
+        * **Dado que** el operador logístico se encuentra autenticado con un rol con permisos de gestión de flota y despachos.
+        * **Cuando** registra el código de placa del vehículo (`AssignedVehiclePlate`), el tipo de unidad (SVA/SVB) y el estado operativo de la ambulancia.
+        * **Entonces** el sistema valida que la placa cumpla el formato normativo y no tenga un despacho en curso duplicado, dejando la matrícula habilitada en estado "Disponible sin contenedor".
+    * **Escenario 2: Intento de registro con placa duplicada en despacho activo**
+        * **Dado que** la placa de la ambulancia ya se encuentra asignada a un despacho activo en la misma institución.
+        * **Cuando** el operador intenta registrar un nuevo alta o asignación simultánea con la misma placa.
+        * **Entonces** el sistema impide la duplicidad y envía una alerta de conflicto de identificación del vehículo.
 
 ***
 
 #### **US08: Vinculación de Contenedor Inteligente**
 * **Título:** Vinculación de Contenedor Inteligente.
-* **Descripción:** Como operador logístico de salud, deseo vincular un contenedor IoT a una ambulancia específica para iniciar la supervisión activa de la carga médica.
+* **User Persona / Rol:** Gianfranco Timoteo (Operador Logístico de Salud — Segmento 2).
+* **Descripción:** Como operador logístico de salud, deseo vincular un contenedor IoT (`SmartContainer`) a una ambulancia específica dentro de una orden de despacho (`DispatchTrip`) para iniciar la supervisión activa de la carga médica.
 * **Relacionado con:** EP03
 * **Criterios de Aceptación:**
-    * **Escenario 1: Vinculación exitosa de contenedor a vehículo**
-        * **Dado que** se dispone de una ambulancia registrada en estado "Disponible sin contenedor" y un contenedor inteligente en estado "Inactivo/Desvinculado".
-        * **Cuando** el operador selecciona la unidad de ambulancia y digita el identificador físico (UUID/MAC) del contenedor IoT.
-        * **Entonces** el sistema establece la relación entre ambos componentes, cambia el estado de la ambulancia a "Monitoreo Activo" y habilita la recepción de paquetes de telemetría para dicha combinación.
+    * **Escenario 1: Vinculación exitosa de contenedor a vehículo en orden de despacho**
+        * **Dado que** se dispone de una unidad de ambulancia habilitada (`AssignedVehiclePlate`) y un contenedor inteligente registrado (`SmartContainer`) en estado operativo `AVAILABLE`.
+        * **Cuando** el operador selecciona la unidad de ambulancia y asocia el identificador único / número de serie (`SerialNumber`) del contenedor IoT al despacho médico (`DispatchTrip`).
+        * **Entonces** el sistema vincula el `ContainerId` con el `DispatchTrip`, cambia el estado operativo del contenedor a `IN_TRANSIT` y habilita la recepción de paquetes de telemetría para dicho traslado.
     * **Escenario 2: Intento de vinculación de un contenedor previamente asignado**
-        * **Dado que** el contenedor IoT ya se encuentra asignado a otra unidad activa.
+        * **Dado que** el contenedor IoT ya se encuentra asignado a otra unidad con un traslado en curso (`IN_TRANSIT`).
         * **Cuando** el operador intenta asociarlo a una nueva ambulancia.
-        * **Entonces** el sistema rechaza la operación e indica que el contenedor debe ser desvinculado de su unidad origen antes de una nueva asignación.
+        * **Entonces** el sistema rechaza la operación e indica que el contenedor debe finalizar su cadena de custodia y ser desvinculado de su unidad origen antes de una nueva asignación.
 
 ***
 
 #### **US09: Ingesta de Telemetría IoT (API)**
 * **Título:** Ingesta de Telemetría IoT (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo contar con un endpoint `POST /api/v1/containers/{containerId}/telemetry` para registrar periódicamente datos térmicos, de peso y estado del contenedor.
 * **Relacionado con:** EP03
 * **Criterios de Aceptación:**
@@ -1784,6 +1852,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US10: Monitoreo Térmico y de Apertura**
 * **Título:** Monitoreo Térmico y de Apertura.
+* **User Persona / Rol:** Aldair Lazaro (Personal Médico de Emergencia — Segmento 1).
 * **Descripción:** Como personal médico de emergencia, deseo consultar la temperatura interna y el estado de la escotilla del contenedor para garantizar la conservación del paquete médico durante el trayecto.
 * **Relacionado con:** EP04
 * **Criterios de Aceptación:**
@@ -1800,6 +1869,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US11: Control de Stock por Sensores de Peso**
 * **Título:** Control de Stock por Sensores de Peso.
+* **User Persona / Rol:** Aldair Lazaro (Personal Médico de Emergencia — Segmento 1).
 * **Descripción:** Como personal médico de emergencia, deseo verificar la disponibilidad y retiro de insumos mediante sensores de peso para confirmar existencias en tiempo real.
 * **Relacionado con:** EP04
 * **Criterios de Aceptación:**
@@ -1816,6 +1886,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US12: Consulta de Telemetría e Indicadores (API)**
 * **Título:** Consulta de Telemetría e Indicadores (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo disponer de un endpoint `GET /api/v1/containers/{containerId}/metrics` para proveer las últimas mediciones consolidadas a la interfaz de usuario.
 * **Relacionado con:** EP04
 * **Criterios de Aceptación:**
@@ -1834,6 +1905,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US13: Configuración de Umbrales Térmicos Críticos**
 * **Título:** Configuración de Umbrales Térmicos Críticos.
+* **User Persona / Rol:** Gianfranco Timoteo (Supervisor Hospitalario — Segmento 2).
 * **Descripción:** Como supervisor hospitalario, deseo establecer rangos de temperatura permitidos (mínimo y máximo) para recibir avisos preventivos ante desviaciones en la cadena de frío.
 * **Relacionado con:** EP05
 * **Criterios de Aceptación:**
@@ -1844,12 +1916,13 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
     * **Escenario 2: Validación de rango térmico inconsistente**
         * **Dado que** el supervisor intenta ingresar un valor de temperatura mínima que es igual o mayor a la temperatura máxima definida.
         * **Cuando** procesa la solicitud de guardado.
-        * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser strictly menor al límite máximo.
+        * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser estrictamente menor al límite máximo.
 
 ***
 
 #### **US14: Visualización de Alertas en Ruta**
 * **Título:** Visualización de Alertas en Ruta.
+* **User Persona / Rol:** Gianfranco Timoteo (Operador Logístico de Salud — Segmento 2) y Aldair Lazaro (Personal Médico de Emergencia — Segmento 1).
 * **Descripción:** Como operador logístico de salud, deseo recibir avisos prioritarios de variaciones térmicas o apertura no autorizada para ejecutar acciones correctivas inmediatas.
 * **Relacionado con:** EP05
 * **Criterios de Aceptación:**
@@ -1866,6 +1939,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US15: Servicio de Despacho de Alertas (API)**
 * **Título:** Servicio de Despacho de Alertas (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo contar con un endpoint `POST /api/v1/alerts/dispatch` para procesar y canalizar notificaciones de eventos críticos hacia servicios externos.
 * **Relacionado con:** EP05
 * **Criterios de Aceptación:**
@@ -1884,6 +1958,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US16: Generación de Reportes de Trazabilidad**
 * **Título:** Generación de Reportes de Trazabilidad.
+* **User Persona / Rol:** Gianfranco Timoteo (Supervisor Hospitalario — Segmento 2).
 * **Descripción:** Como supervisor hospitalario, deseo exportar el informe consolidado del traslado médico para certificar el cumplimiento normativo de la cadena de frío.
 * **Relacionado con:** EP06
 * **Criterios de Aceptación:**
@@ -1900,6 +1975,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US17: Confirmación de Entrega y Cadena de Custodia**
 * **Título:** Confirmación de Entrega y Cadena de Custodia.
+* **User Persona / Rol:** Aldair Lazaro (Personal Médico de Emergencia — Segmento 1) y Gianfranco Timoteo (Receptor Hospitalario — Segmento 2).
 * **Descripción:** Como personal médico de emergencia, deseo registrar la recepción del contenedor en el punto de destino para cerrar formalmente la cadena de custodia del envío.
 * **Relacionado con:** EP06
 * **Criterios de Aceptación:**
@@ -1916,6 +1992,7 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 #### **US18: Consulta de Historial de Traslados (API)**
 * **Título:** Consulta de Historial de Traslados (API).
+* **User Persona / Rol:** Developer (Technical Story).
 * **Descripción:** Como Developer, deseo disponer de un endpoint `GET /api/v1/transfers/{transferId}/audit` para recuperar el registro completo de auditoría y eventos de un traslado.
 * **Relacionado con:** EP06
 * **Criterios de Aceptación:**
@@ -1932,15 +2009,15 @@ Todos los criterios de aceptación están redactados en español bajo el estánd
 
 # 3.2. Impact Mapping
 
-El **Impact Mapping** es una técnica de planificación estratégica que conecta los objetivos de negocio de la startup **NeonCode** con las entregas de software para la supervisión de contenedores médicos inteligentes. Este mapa permite priorizar las funcionalidades que generan un impacto directo en el comportamiento de nuestros segmentos objetivo: Personal Médico de Emergencias, Operadores Logísticos de Salud, Supervisores Hospitalarios y Visitantes Comerciales.
+El **Impact Mapping** es una técnica de planificación estratégica que conecta los objetivos de negocio de la startup **NeonCode** con las entregas de software para la supervisión de contenedores médicos inteligentes (**Medical SmartBox**). Este mapa permite priorizar las funcionalidades que generan un impacto directo en el comportamiento de nuestros segmentos objetivo representados por nuestros *User Personas* del Capítulo II: **Aldair Lazaro** (Segmento 1: Personal Médico de Emergencias y Transporte Asistencial) y **Gianfranco Timoteo** (Segmento 2: Supervisores Hospitalarios, Operadores Logísticos de Salud y Visitantes Comerciales Institucionales), además del equipo técnico (**Developer**) que habilita la plataforma mediante las historias técnicas de la API REST.
 
 ### Estructura del Impact Map
 
 El mapa de impacto se compone de cuatro niveles jerárquicos:
 1. **Business Goal (Meta de Negocio):** Objetivos SMART que la startup busca alcanzar en un periodo determinado.
-2. **Actor / Persona:** Los usuarios o roles que nos ayudarán a alcanzar las metas.
+2. **Actor / Persona:** Los usuarios o roles (vinculados a los *User Personas* **Aldair Lazaro** y **Gianfranco Timoteo**) que nos ayudarán a alcanzar las metas.
 3. **Impact:** Los cambios conductuales o beneficios esperados en los actores.
-4. **Deliverables & User Stories:** Los entregables digitales y las historias de usuario asociadas que provocan dichos impactos.
+4. **Deliverables & User Stories:** Los entregables digitales y la totalidad de las 18 historias de usuario y técnicas asociadas (con su enunciado completo) que provocan dichos impactos.
 
 ***
 
@@ -1948,42 +2025,47 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 
 #### Goal 1: Alcanzar 50 instituciones de salud y operadores de ambulancias afiliados a la plataforma NeonCode en un periodo de 8 meses tras el lanzamiento.
 
-* **Actor:** Visitante Comercial
-    * **Impact:** Comprender los beneficios de la supervisión térmica y logística para solicitar demostraciones o contratar planes de servicio.
+* **Actor:** Visitante Comercial Institucional (*User Persona relacionado:* **Gianfranco Timoteo** — Coordinador Hospitalario que evalúa soluciones tecnológicas para su clínica o red de salud).
+    * **Impact:** Comprender los beneficios de la supervisión térmica y logística en tiempo real para solicitar demostraciones corporativas o contratar planes de suscripción SaaS.
         * **Deliverable:** Landing Page corporativo y portal de difusión de soluciones médicas.
-            * **US04:** Exploración de Propuesta de Valor Logística.
-            * **US05:** Solicitud de Demostración Corporativa.
-            * **US06:** Consulta de Preguntas Frecuentes.
+            * **US04 (Exploración de Propuesta de Valor Logística):** *Como visitante comercial institucional (Gianfranco Timoteo), deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación.*
+            * **US05 (Solicitud de Demostración Corporativa):** *Como visitante comercial institucional (Gianfranco Timoteo), deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario.*
+            * **US06 (Consulta de Preguntas Frecuentes):** *Como visitante comercial institucional (Gianfranco Timoteo), deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias.*
 
-* **Actor:** Supervisor Hospitalario
-    * **Impact:** Dar de alta la institución y configurar la flota de ambulancias y contenedores de manera ágil.
-        * **Deliverable:** Módulo de onboarding institucional y gestión de flota vehicular.
-            * **US01:** Registro de Institución de Salud.
-            * **US07:** Alta de Unidades de Ambulancia.
+* **Actor:** Supervisor Hospitalario / Operador Logístico (*User Persona:* **Gianfranco Timoteo** — Segmento 2: Hospitales y Clínicas).
+    * **Impact:** Dar de alta la institución de salud y habilitar la flota de ambulancias de manera digitalizada y autónoma en menos de 10 minutos.
+        * **Deliverable:** Módulo de onboarding institucional, gestión de flota vehicular y servicio de autenticación API.
+            * **US01 (Registro de Institución de Salud):** *Como supervisor hospitalario (Gianfranco Timoteo), deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores.*
+            * **US07 (Alta de Unidades de Ambulancia):** *Como operador logístico de salud (Gianfranco Timoteo), deseo registrar y habilitar matrículas de vehículos de transporte en el sistema para asociarles contenedores de insumos en despachos activos.*
+            * **US03 (Endpoint de Autenticación de Usuarios - API):** *Como Developer, deseo disponer de un endpoint `POST /api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión.*
 
 ***
 
 #### Goal 2: Reducir en un 40% las incidencias de pérdida de insumos médicos y ruptura de la cadena de frío durante los traslados en el primer año.
 
-* **Actor:** Personal Médico de Emergencia
-    * **Impact:** Monitorear parámetros críticos en tiempo real y confirmar las entregas para garantizar la integridad de la carga.
-        * **Deliverable:** Dashboard de monitoreo en tiempo real y registro de cadena de custodia.
-            * **US02:** Autenticación de Personal de Emergencia.
-            * **US10:** Monitoreo Térmico y de Apertura.
-            * **US11:** Control de Stock por Sensores de Peso.
-            * **US17:** Confirmación de Entrega y Cadena de Custodia.
+* **Actor:** Personal Médico de Emergencia (*User Persona:* **Aldair Lazaro** — Segmento 1: Personal de Transporte Asistencial y Emergencias Médicas).
+    * **Impact:** Monitorear parámetros térmicos y de inventario por peso en tiempo real dentro de la cabina de la ambulancia y sellar digitalmente las entregas en el hospital receptor para garantizar la integridad de la carga biológica.
+        * **Deliverable:** Dashboard de monitoreo en tiempo real, control de inventario por sensores de masa y registro de cadena de custodia.
+            * **US02 (Autenticación de Personal de Emergencia):** *Como personal médico de emergencia (Aldair Lazaro), deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real.*
+            * **US10 (Monitoreo Térmico y de Apertura):** *Como personal médico de emergencia (Aldair Lazaro), deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío.*
+            * **US11 (Control de Stock por Sensores de Peso):** *Como personal médico de emergencia (Aldair Lazaro), deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias.*
+            * **US17 (Confirmación de Entrega y Cadena de Custodia):** *Como personal médico de emergencia (Aldair Lazaro), deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío.*
+            * **US12 (Consulta de Telemetría e Indicadores - API):** *Como Developer, deseo disponer de un endpoint `GET /api/v1/containers/{containerId}/metrics` para alimentar la vista del panel web.*
 
-* **Actor:** Operador Logístico de Salud
-    * **Impact:** Vincular contenedores a vehículos y recibir alertas prioritarias ante desviaciones térmicas o retrasos.
-        * **Deliverable:** Gestor de hardware IoT y centro de notificaciones críticas.
-            * **US08:** Vinculación de Contenedor Inteligente.
-            * **US14:** Visualización de Alertas en Ruta.
+* **Actor:** Operador Logístico de Salud (*User Persona:* **Gianfranco Timoteo** — Segmento 2: Hospitales y Clínicas).
+    * **Impact:** Vincular contenedores inteligentes a unidades de ambulancia en cada orden de despacho y recibir alertas prioritarias ante desviaciones térmicas, aperturas prolongadas o retrasos de ETA.
+        * **Deliverable:** Gestor de aprovisionamiento IoT, ingesta de telemetría y centro de notificaciones críticas.
+            * **US08 (Vinculación de Contenedor Inteligente):** *Como operador logístico de salud (Gianfranco Timoteo), deseo vincular un contenedor IoT (`SmartContainer`) a una ambulancia específica en un despacho médico (`DispatchTrip`) para iniciar la supervisión de la carga.*
+            * **US14 (Visualización de Alertas en Ruta):** *Como operador logístico de salud (Gianfranco Timoteo), deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas.*
+            * **US09 (Ingesta de Telemetría IoT - API):** *Como Developer, deseo contar con un endpoint `POST /api/v1/containers/{containerId}/telemetry` para registrar datos térmicos y de estado.*
+            * **US15 (Servicio de Despacho de Alertas - API):** *Como Developer, deseo contar con un endpoint `POST /api/v1/alerts/dispatch` para procesar notificaciones de emergencia.*
 
-* **Actor:** Supervisor Hospitalario
-    * **Impact:** Establecer límites de seguridad térmica y exportar informes auditables tras cada traslado.
-        * **Deliverable:** Motor de reglas de umbral y módulo de reportes de trazabilidad.
-            * **US13:** Configuración de Umbrales Térmicos Críticos.
-            * **US16:** Generación de Reportes de Trazabilidad.
+* **Actor:** Supervisor Hospitalario (*User Persona:* **Gianfranco Timoteo** — Segmento 2: Hospitales y Clínicas).
+    * **Impact:** Establecer límites de seguridad térmica según el tipo de insumo biológico y exportar informes auditables e inmutables tras cada traslado médico.
+        * **Deliverable:** Motor de reglas de umbral térmico y módulo de auditoría de cadena de custodia.
+            * **US13 (Configuración de Umbrales Térmicos Críticos):** *Como supervisor hospitalario (Gianfranco Timoteo), deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones.*
+            * **US16 (Generación de Reportes de Trazabilidad):** *Como supervisor hospitalario (Gianfranco Timoteo), deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío.*
+            * **US18 (Consulta de Historial de Traslados - API):** *Como Developer, deseo disponer de un endpoint `GET /api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría.*
 
 ***
 
@@ -1999,68 +2081,64 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 
 # 3.3. Product Backlog
 
-En esta sección se presenta el **Product Backlog** priorizado para la plataforma **NeonCode**, estructurado a partir de las 18 historias de usuario definidas previamente. Las historias han sido estimadas utilizando la técnica de **Planning Poker** basada en la secuencia de Fibonacci (1, 2, 3, 5, 8, 13) para reflejar la complejidad, esfuerzo y nivel de incertidumbre de cada entregable.
+En esta sección se presenta el **Product Backlog** priorizado para la plataforma **NeonCode (Medical SmartBox)**, estructurado a partir de las 18 historias de usuario y técnicas definidas previamente. Las historias han sido estimadas utilizando la técnica de **Planning Poker** basada en la secuencia de Fibonacci (1, 2, 3, 5, 8, 13) para reflejar la complejidad, esfuerzo y nivel de incertidumbre de cada entregable.
 
-El backlog se encuentra organizado secuencialmente para guiar el desarrollo de los Sprints del proyecto, priorizando la arquitectura base, autenticación y servicios de ingesta IoT antes de los paneles de visualización y reportes avanzados.
+El backlog se encuentra organizado secuencialmente bajo un criterio estricto de **valor de negocio para nuestros segmentos objetivo**, iniciando con la difusión comercial y captación de prospectos institucionales (*Landing Page*), seguido del onboarding hospitalario y los servicios de monitoreo IoT, aprovisionamiento, alertas críticas y cadena de custodia.
 
-| Order / Priority | Epic ID | User Story ID | Título de la Historia | Story Points (Fibonacci) | Sprint Asignado |
-| :---: | :---: | :---: | :--- | :---: | :---: |
-| **01** | EP01 | **US03** | Endpoint de Autenticación de Usuarios (API) | 5 | Sprint 1 |
-| **02** | EP01 | **US01** | Registro de Institución de Salud | 3 | Sprint 1 |
-| **03** | EP01 | **US02** | Autenticación de Personal de Emergencia | 3 | Sprint 1 |
-| **04** | EP02 | **US04** | Exploración de Propuesta de Valor Logística | 2 | Sprint 1 |
-| **05** | EP02 | **US05** | Solicitud de Demostración Corporativa | 2 | Sprint 1 |
-| **06** | EP02 | **US06** | Consulta de Preguntas Frecuentes | 1 | Sprint 1 |
-| **07** | EP03 | **US09** | Ingesta de Telemetría IoT (API) | 8 | Sprint 2 |
-| **08** | EP03 | **US07** | Alta de Unidades de Ambulancia | 3 | Sprint 2 |
-| **09** | EP03 | **US08** | Vinculación de Contenedor Inteligente | 5 | Sprint 2 |
-| **10** | EP04 | **US12** | Consulta de Telemetría e Indicadores (API) | 5 | Sprint 2 |
-| **11** | EP04 | **US10** | Monitoreo Térmico y de Apertura | 8 | Sprint 2 |
-| **12** | EP04 | **US11** | Control de Stock por Sensores de Peso | 8 | Sprint 3 |
-| **13** | EP05 | **US13** | Configuración de Umbrales Térmicos Críticos | 3 | Sprint 3 |
-| **14** | EP05 | **US15** | Servicio de Despacho de Alertas (API) | 5 | Sprint 3 |
-| **15** | EP05 | **US14** | Visualización de Alertas en Ruta | 5 | Sprint 3 |
-| **16** | EP06 | **US18** | Consulta de Historial de Traslados (API) | 5 | Sprint 4 |
-| **17** | EP06 | **US16** | Generación de Reportes de Trazabilidad | 8 | Sprint 4 |
-| **18** | EP06 | **US17** | Confirmación de Entrega y Cadena de Custodia | 3 | Sprint 4 |
+| Order / Priority | Epic ID | User Story ID | Título de la Historia | Descripción | Story Points (Fibonacci) | Sprint Asignado |
+| :---: | :---: | :---: | :--- | :--- | :---: | :---: |
+| **01** | EP02 | **US04** | Exploración de Propuesta de Valor Logística | Como visitante comercial institucional (Gianfranco Timoteo), deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación. | 2 | Sprint 1 |
+| **02** | EP02 | **US05** | Solicitud de Demostración Corporativa | Como visitante comercial institucional (Gianfranco Timoteo), deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario. | 2 | Sprint 1 |
+| **03** | EP02 | **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial institucional (Gianfranco Timoteo), deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | 1 | Sprint 1 |
+| **04** | EP01 | **US01** | Registro de Institución de Salud | Como supervisor hospitalario (Gianfranco Timoteo), deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores. | 3 | Sprint 1 |
+| **05** | EP01 | **US02** | Autenticación de Personal de Emergencia | Como personal médico de emergencia (Aldair Lazaro), deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real. | 3 | Sprint 1 |
+| **06** | EP01 | **US03** | Endpoint de Autenticación de Usuarios (API) | Como Developer, deseo disponer de un endpoint POST `/api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión. | 5 | Sprint 1 |
+| **07** | EP03 | **US07** | Alta de Unidades de Ambulancia | Como operador logístico de salud (Gianfranco Timoteo), deseo registrar y habilitar matrículas de vehículos de transporte en el sistema para asociarles contenedores de insumos en despachos activos. | 3 | Sprint 2 |
+| **08** | EP03 | **US08** | Vinculación de Contenedor Inteligente | Como operador logístico de salud (Gianfranco Timoteo), deseo vincular un contenedor IoT (`SmartContainer`) a una ambulancia específica en un despacho médico (`DispatchTrip`) para iniciar la supervisión de la carga. | 5 | Sprint 2 |
+| **09** | EP04 | **US10** | Monitoreo Térmico y de Apertura | Como personal médico de emergencia (Aldair Lazaro), deseo consultar la temperatura interna y el estado de apertura del contenedor para garantizar la cadena de frío. | 8 | Sprint 2 |
+| **10** | EP03 | **US09** | Ingesta de Telemetría IoT (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/containers/{containerId}/telemetry` para registrar datos térmicos y de estado. | 8 | Sprint 2 |
+| **11** | EP04 | **US12** | Consulta de Telemetría e Indicadores (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/containers/{containerId}/metrics` para alimentar la vista del panel web. | 5 | Sprint 2 |
+| **12** | EP04 | **US11** | Control de Stock por Sensores de Peso | Como personal médico de emergencia (Aldair Lazaro), deseo verificar la disponibilidad de insumos mediante sensores de peso para confirmar existencias. | 8 | Sprint 3 |
+| **13** | EP05 | **US13** | Configuración de Umbrales Térmicos Críticos | Como supervisor hospitalario (Gianfranco Timoteo), deseo establecer rangos de temperatura permitidos para recibir avisos preventivos ante desviaciones. | 3 | Sprint 3 |
+| **14** | EP05 | **US14** | Visualización de Alertas en Ruta | Como operador logístico de salud (Gianfranco Timoteo), deseo recibir avisos de variaciones térmicas o retrasos para tomar acciones correctivas inmediatas. | 5 | Sprint 3 |
+| **15** | EP05 | **US15** | Servicio de Despacho de Alertas (API) | Como Developer, deseo contar con un endpoint POST `/api/v1/alerts/dispatch` para procesar notificaciones de emergencia. | 5 | Sprint 3 |
+| **16** | EP06 | **US16** | Generación de Reportes de Trazabilidad | Como supervisor hospitalario (Gianfranco Timoteo), deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío. | 8 | Sprint 4 |
+| **17** | EP06 | **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia (Aldair Lazaro), deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | 3 | Sprint 4 |
+| **18** | EP06 | **US18** | Consulta de Historial de Traslados (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría. | 5 | Sprint 4 |
 
 ***
 
 ### 3.3.1. Engineering Tasks
 
-A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales) en tareas de ingeniería (*Engineering Tasks*). Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
+A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales: `US04`, `US05`, `US06`, `US01`, `US02` y `US03`) en tareas de ingeniería (*Engineering Tasks*), en correspondencia exacta con el *Sprint Backlog 1* de la sección `5.2.1.3`. Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
 
 #### **US04: Exploración de Propuesta de Valor Logística (2 SP)**
-* **TSK-04-01:** Maquetación responsive de la sección "Soluciones Logísticas" en el Landing Page (HTML5 / Tailwind CSS). **[6 Horas]**
-* **TSK-04-02:** Integración de componentes visuales interactivos para especificaciones técnicas del contenedor inteligente. **[4 Horas]**
+* **TSK-04-01:** Maquetación HTML5/CSS3 de secciones Hero y Propuesta (estructuración semántica de Hero, badges térmicos y características de contenedores IoT). **[6 Horas]**
+* **TSK-04-02:** Integración de diseño responsive mobile-first (adaptación del layout para diferentes tamaños de pantalla). **[4 Horas]**
 
 #### **US05: Solicitud de Demostración Corporativa (2 SP)**
-* **TSK-05-01:** Desarrollo del formulario de contacto para clientes corporativos con validación de campos en cliente (JavaScript/TypeScript). **[5 Horas]**
-* **TSK-05-02:** Configuración del servicio backend/mailing para la recepción y reenvío de prospectos a ventas. **[6 Horas]**
+* **TSK-05-01:** Maquetación de formulario B2B (estructura visual del formulario de captura de prospectos institucionales). **[5 Horas]**
+* **TSK-05-02:** Validación en cliente y retroalimentación (validación de RUC, correo corporativo y mensajes de retroalimentación). **[6 Horas]**
 
 #### **US06: Consulta de Preguntas Frecuentes (1 SP)**
-* **TSK-06-01:** Implementación del componente acordeón de FAQ y buscador por palabra clave en el Landing Page. **[4 Horas]**
+* **TSK-06-01:** Componente interactivo acordeón FAQ (implementación visual e interacción del acordeón de preguntas frecuentes). **[4 Horas]**
 
 #### **US01: Registro de Institución de Salud (3 SP)**
-* **TSK-01-01:** Diseño y maquetación del formulario web de registro institucional hospitalario. **[5 Horas]**
-* **TSK-01-02:** Creación de endpoints en API REST para recepción de datos de registro y validación de RUC duplicado. **[7 Horas]**
-* **TSK-01-03:** Implementación del servicio de envío de correos electrónicos de confirmación de cuenta. **[4 Horas]**
+* **TSK-01-01:** Modelado de entidad institución (`HospitalOrganization` y definición del modelo de datos para instituciones de salud). **[5 Horas]**
+* **TSK-01-02:** Especificación de registro institucional (definición de los contratos y reglas de validación de RUC e institución). **[7 Horas]**
 
-#### **US07: Alta de Unidades de Ambulancia (3 SP)**
-* **TSK-07-01:** Creación del modelo de datos de Ambulancias en la base de datos MySQL Server 8.0 (InnoDB) mediante Entity Framework Core 10.0. **[4 Horas]**
-* **TSK-07-02:** Desarrollo de endpoints CRUD para el registro y consulta de vehículos de transporte. **[6 Horas]**
-* **TSK-07-03:** Interfaz web para el formulario de registro y lista de unidades registradas. **[6 Horas]**
+#### **US02: Autenticación de Personal de Emergencia (3 SP)**
+* **TSK-02-01:** Diseño de flujo de autenticación 2FA (especificación del flujo de autenticación de personal médico y verificación mediante OTP). **[5 Horas]**
 
-#### **US08: Vinculación de Contenedor Inteligente (5 SP)**
-* **TSK-08-01:** Desarrollo del módulo backend de asignación física (relación 1:1 entre ambulancia y contenedor IoT). **[8 Horas]**
-* **TSK-08-02:** Validación de estados del dispositivo (bloqueo de reasignación si está ocupado). **[5 Horas]**
-* **TSK-08-03:** Interfaz web para vinculación mediante lectura o digitación del UUID/MAC del contenedor. **[6 Horas]**
+#### **US03: Endpoint de Autenticación de Usuarios - API (5 SP)**
+* **TSK-03-01:** Diseño de contratos OpenAPI (`POST /api/v1/authentication/sign-in`, especificación del contrato de autenticación y estructura de respuesta JWT). **[6 Horas]**
+* **TSK-03-02:** Arquitectura de dominio para identidad (definición de clases de dominio `User`, `HospitalOrganization`, Value Objects y reglas de identidad). **[5 Horas]**
 
 <div style="page-break-after: always;"></div>
 
 # 4.1. Style Guidelines
 
-Un *Style Guideline* es un conjunto de directrices y normas que establecen los estándares visuales, de interacción y de presentación que rigen el ecosistema digital de **Medical SMARTBOX**. Las especificaciones aseguran coherencia estética, usabilidad rigurosa y máxima legibilidad de datos telemétricos críticos tanto en la aplicación web de monitoreo como en el sitio web de divulgación comercial (Landing Page).
+Un *Style Guideline* es un conjunto de directrices y normas que establecen los estándares visuales, de interacción, de tono de comunicación y de presentación que rigen el ecosistema digital de **Medical SMARTBOX**. Las especificaciones aseguran coherencia estética, usabilidad rigurosa y máxima legibilidad de datos telemétricos críticos tanto en la aplicación web de monitoreo como en el sitio web de divulgación comercial (Landing Page).
 
 ## 4.1.1. General Style Guidelines
 
@@ -2069,6 +2147,16 @@ Para el desarrollo de la identidad de **Medical SMARTBOX**, se definió una est�
 
 ![Medical SMARTBOX - Logo](assets/chapter-4/logo.png)
 *Nota: Logotipo oficial de Medical SMARTBOX, representando la custodia térmica inteligente.*
+
+### Voice & Tone (Las 4 Dimensiones de Nielsen Norman Group — NN/g)
+De acuerdo con el marco metodológico de **Nielsen Norman Group (NN/g)** para la definición del tono de voz en productos digitales, la comunicación verbal y microcopia de **Medical SMARTBOX** se adapta a la alta presión cognitiva de nuestros *User Personas* (**Aldair Lazaro**, personal de transporte asistencial en ruta; y **Gianfranco Timoteo**, supervisor hospitalario y coordinador logístico):
+
+| Dimensión NN/g | Posicionamiento de Medical SMARTBOX | Justificación y Aplicación en Interfaz (Microcopy) |
+| :--- | :--- | :--- |
+| **1. Funny vs. Serious**<br>*(Divertido vs. Serio)* | **100% Serious (Serio)** | El transporte de órganos, sangre y biológicos de emergencia es una operación crítica para la vida humana. Se omite cualquier humor, sarcasmo o coloquialismo en estados de error o alertas térmicas. |
+| **2. Formal vs. Casual**<br>*(Formal vs. Casual)* | **Formal-Técnico (Clínico y Directo)** | Se emplea terminología médico-logística estandarizada (*Cadena de frío*, *Excursión térmica*, * Ventana de isquemia*, *Acta SHA-256*, *Cumplimiento DIGEMID*) comprensible al instante por profesionales de salud y operadores de flota. |
+| **3. Respectful vs. Irreverent**<br>*(Respetuoso vs. Irreverente)* | **Altamente Respectful (Respetuoso)** | Respeta el tiempo y la carga de estrés del paramédico (**Aldair Lazaro**) y del receptor hospitalario (**Gianfranco Timoteo**), guiando la resolución de incidentes sin culpabilizar al usuario ante errores de digitación de OTP o pérdidas de cobertura celular. |
+| **4. Enthusiastic vs. Matter-of-fact**<br>*(Entusiasta vs. Objetivo/Práctico)* | **Matter-of-fact (Objetivo y Conciso)** | Prioriza datos cuantitativos exactos sin adornos retóricos. En el Dashboard web predomina la objetividad pura (ej. *"Alerta Crítica: 9.2 °C en SB-0231 — Excede umbral máximo de 8.0 °C por 90 s"*), mientras que en el Landing Page adopta un matiz ligeramente persuasivo pero sustentado en métricas técnicas. |
 
 ### Typography
 El sistema tipográfico prioriza la jerarquía visual y la decodificación instantánea de telemetría numérica en entornos de alta exigencia cognitiva (ej. cabina de ambulancia o supervisión en central de emergencias). Se implementa una escala tipográfica modular basada en las siguientes fuentes de Google Fonts:
@@ -2128,28 +2216,55 @@ Las directrices web definen la estructura adaptativa, componentes interactivos y
 
 ### 4.2.2. Labeling Systems
 
-La aplicación utiliza un sistema de etiquetas y terminología adaptado a los dos principales tipos de usuarios: Operadores logísticos y Centros Receptores.
+La aplicación utiliza un sistema de etiquetas y terminología adaptado a los dos principales segmentos de usuarios representados por nuestros *User Personas*:
 
-*   **Para el visitante:** Botones directos como "Ir a la Web App" o "Iniciar sesión".
-*   **Para los Operadores de Transporte:** Se emplea terminología técnica de monitoreo y flota. Etiquetas como "ETA", "Telemetría en vivo", "Combustible (%)", "Batería (%)" y "Temperatura (°C)". Las alertas usan un lenguaje preciso: "Puerta abierta fuera de parada", "Batería baja del SmartBox".
-*   **Para los Centros Receptores (Hospitales/Farmacias):** El enfoque cambia hacia la recepción de paquetes. Etiquetas enfocadas en el estado de llegada: "Envíos entrantes", "Llegan hoy", "Recibido", y confirmaciones como "Conforme".
+*   **Para el Visitante Comercial Institucional (*Gianfranco Timoteo* evaluando la plataforma):** Botones directos como "Ir a la Web App", "Solicitar Demostración" o "Iniciar sesión".
+*   **Para el Personal de Transporte Asistencial y Operadores en Ruta (*Aldair Lazaro* — Segmento 1):** Se emplea terminología técnica de monitoreo y flota. Etiquetas como "ETA", "Telemetría en vivo", "Combustible (%)", "Batería (%)" y "Temperatura (°C)". Las alertas usan un lenguaje preciso: "Puerta abierta fuera de parada", "Batería baja del SmartBox".
+*   **Para los Centros Receptores y Supervisores Hospitalarios (*Gianfranco Timoteo* — Segmento 2: Hospitales/Clínicas):** El enfoque cambia hacia el despacho, auditoría y recepción de paquetes. Etiquetas enfocadas en el estado de llegada y custodia: "Envíos entrantes", "Llegan hoy", "Validar OTP de Recepción", "Recibido" y confirmaciones como "Acta SHA-256 Conforme".
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-Los SEO y meta tags implementados en Medical SmartBox están optimizados para el nicho de logística médica:
+Los SEO y meta tags implementados en el ecosistema **Medical SmartBox** están diferenciados y optimizados según el propósito de indexación del **Landing Page** público y de la **Web Application** operativa:
 
-*   **Title Tag:**
-    `<title>Medical SmartBox — Monitoreo y trazabilidad del transporte médico</title>`
-*   **Meta Description:**
-    `<meta name="description" content="Medical SmartBox es una plataforma para monitorear transportes médicos, detectar incidencias de temperatura en tiempo real y mantener cada envío y cadena de frío bajo control.">`
-*   **Language tag:** (Dinámico vía script, base en inglés y español)
-    `<html lang="es">`
-*   **Meta Viewport:** (Esencial para responsividad en móviles y paneles de campo)
-    `<meta name="viewport" content="width=device-width, initial-scale=1">`
-*   **Author tag:**
-    `<meta name="author" content="Medical SmartBox Team">`
-*   **Canonical Tag:**
-    `<link rel="canonical" href="https://www.medicalsmartbox.com/">`
+#### A. Meta Tags para el Landing Page Público (`NeonCode-UPC/landing-page`)
+Orientados al posicionamiento orgánico (SEO) en motores de búsqueda para captar clínicas, hospitales, laboratorios y operadores de ambulancias:
+
+```html
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical SmartBox — Monitoreo IoT y Trazabilidad de Cadena de Frío Médica</title>
+  <meta name="description" content="Medical SmartBox de NeonCode es una plataforma IoT y SaaS para monitorear contenedores médicos inteligentes en ambulancias, detectar excursiones térmicas en tiempo real y certificar la cadena de custodia ante DIGEMID y SUSALUD." />
+  <meta name="keywords" content="Medical SmartBox, NeonCode, cadena de frío médica, contenedor inteligente IoT, transporte de órganos, hemoderivados, vacunas, telemetría en ambulancias, trazabilidad hospitalaria, DIGEMID, SUSALUD, Perú" />
+  <meta name="author" content="NeonCode Team — Medical SmartBox" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://neoncode-upc.github.io/landing-page/" />
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Medical SmartBox — Custodia Digital para la Cadena de Frío Médica" />
+  <meta property="og:description" content="Supervisión térmica, geolocalización GPS y sellado criptográfico SHA-256 para traslados médicos críticos en tiempo real." />
+  <meta property="og:url" content="https://neoncode-upc.github.io/landing-page/" />
+</head>
+```
+
+#### B. Meta Tags para la Web Application (`NeonCode-UPC/frontend`)
+Orientados a la aplicación web SPA en Vue 3 para operación clínica autenticada, responsividad móvil en cabina y seguridad de sesión:
+
+```html
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Medical SmartBox Console — Panel de Monitoreo Telemétrico y Despacho</title>
+  <meta name="description" content="Consola operativa de Medical SmartBox para la supervisión en tiempo real de contenedores IoT, despacho de ambulancias, gestión de alertas críticas y auditoría de cadena de custodia." />
+  <meta name="keywords" content="dashboard telemetría médica, consola SmartBox, despacho de ambulancias, alertas cadena de frío, custodia OTP, auditoría médica" />
+  <meta name="author" content="NeonCode Team — Medical SmartBox" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#10312F" />
+  <link rel="canonical" href="https://neoncode-upc.github.io/frontend/home" />
+</head>
+```
 
 ### 4.2.4. Searching Systems
 
@@ -2182,7 +2297,7 @@ El diseño de la interfaz de usuario en la landing page de **Medical SMARTBOX** 
 
 ![Caracteristicas - Wireframe](assets/chapter-4/caracteristicas-wireframe.png)
 
-*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SMARTBOX. Define una cuadrícula adaptable (responsive grid) con cinco espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
+*   **Presentación de la Startup / Quiénes Somos:** Estructura conceptual para la presentación del equipo detrás de Medical SMARTBOX. Define una cuadrícula adaptable (responsive grid) con cuatro espacios reservados para las fotografías y perfiles del equipo desarrollador e ingenieros de software.
 
 ![Presentacion - Wireframe](assets/chapter-4/presentacion-wireframe.png)
 
@@ -2210,7 +2325,7 @@ Para dispositivos móviles (viewports de 360px a 414px), la estructura de wirefr
 
 ![Servicios - Mockup](assets/chapter-4/servicios-mockup.png)
 
-*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cinco ingenieros de software del equipo de Medical SMARTBOX, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
+*   **Sección "Quiénes Somos":** Resultado visual de la sección "Quiénes Somos". Presenta formalmente a los cuatro ingenieros de software del equipo de Medical SMARTBOX, transmitiendo transparencia, profesionalismo, solvencia técnica y compromiso con la seguridad en la salud digital.
 
 ![Presentacion - Mockup](assets/chapter-4/presentacion-mockup.png)
 
@@ -2228,7 +2343,7 @@ En la versión móvil de alta fidelidad, se aplican los estándares visuales de 
 
 # 4.4. Web Applications UX/UI Design
 
-El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) en la plataforma web de **Medical SMARTBOX** busca crear una herramienta digital intuitiva, accesible y altamente funcional para operadores logísticos, conductores de transporte médico y personal receptor en hospitales o farmacias. La UX se enfoca en comprender la urgencia y precisión requeridas en la cadena de frío, diseñando flujos de interacción eficientes para monitorear cargas térmicamente sensibles, reaccionar ante desvíos de temperatura y configurar sensores IoT sin fricción.
+El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) en la plataforma web de **Medical SMARTBOX** busca crear una herramienta digital intuitiva, accesible y altamente funcional para el personal de transporte asistencial (**Aldair Lazaro** — Segmento 1) y los supervisores hospitalarios y operadores logísticos en clínicas y hospitales (**Gianfranco Timoteo** — Segmento 2). La UX se enfoca en comprender la urgencia y precisión requeridas en la cadena de frío, diseñando flujos de interacción eficientes para monitorear cargas térmicamente sensibles, reaccionar ante desvíos de temperatura y configurar sensores IoT sin fricción.
 
 Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemétricos en tiempo real, trazabilidad por hitos de envío, gráficos de estabilidad térmica y sistemas de alertas predictivas. Un diseño UX/UI exitoso en Medical SMARTBOX fusiona una estética tecnológica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logísticas rápidas que salvan vidas y evitan la merma de medicamentos.
 
@@ -2283,51 +2398,61 @@ Para dispositivos móviles de campo (smartphones de personal asistencial y table
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-La especificación del Wireflow de la aplicación web articula la navegación estructural y las transiciones pantalla a pantalla del sistema **Medical SMARTBOX**, vinculando las vistas esquemáticas desarrolladas en la sección precedente con las decisiones operativas del usuario, los eventos de telemetría IoT y las reglas de negocio clínicas.
+La especificación del Wireflow de la aplicación web articula la navegación estructural y las transiciones pantalla a pantalla del sistema **Medical SMARTBOX**, vinculando las vistas esquemáticas desarrolladas en la sección precedente con los objetivos (*User Goals*) de nuestros *User Personas* (**Aldair Lazaro** y **Gianfranco Timoteo**), los eventos de telemetría IoT y las reglas de negocio clínicas.
 
-#### Estructura de Navegación y Rutas Principales
+#### Estructura de Navegación y Rutas Principales por User Persona y User Goal
 
-El flujo de interacción del sistema se organiza a través de los siguientes recorridos clave:
+El flujo de interacción del sistema se organiza a través de los siguientes cinco recorridos clave:
 
 1. **Ruta de Acceso y Seguridad Institucional:**
+   * **User Personas:** **Gianfranco Timoteo** (Supervisor Hospitalario / Operador Logístico) y **Aldair Lazaro** (Personal de Transporte Asistencial).
+   * **User Goal:** Autenticarse de forma segura con verificación de doble factor (2FA) para acceder al panel operativo correspondiente a su rol institucional (`US01`, `US02`).
    * **Inicio / Login Institucional:** El usuario introduce sus credenciales corporativas (RUC/correo y contraseña).
    * **Validación de Doble Factor (2FA):** Si la cuenta exige verificación reforzada o detecta un nuevo dispositivo, el flujo transita hacia la pantalla de ingreso del código OTP de 6 dígitos enviado al canal autorizado.
    * **Ingreso al Panel:** Tras la validación conforme del token temporal (o si la sesión previa de confianza se encuentra activa), se concede acceso y se redirige automáticamente al Dashboard Operativo Principal.
 
 2. **Ruta de Monitoreo Telemétrico de Traslado:**
+   * **User Personas:** **Aldair Lazaro** (monitoreo en cabina durante el traslado) y **Gianfranco Timoteo** (supervisión remota de flota entrante).
+   * **User Goal:** Supervisar en tiempo real la estabilidad térmica (2 °C a 8 °C), el peso de los insumos, la ubicación GPS y el ETA dinámico del traslado médico (`US10`, `US11`).
    * **Dashboard Operativo Principal:** Presenta la matriz de flota activa, KPIs de cumplimiento térmico y mapa en vivo.
-   * **Vista Detalle de Traslado y Telemetría:** Al seleccionar una ambulancia o envío en curso, el despachador accede a la vista especializada con trazabilidad cartográfica en vivo, cálculo dinámico de ETA, nivel de batería del Smart Container y gráfica térmica continua de las últimas 24 horas.
+   * **Vista Detalle de Traslado y Telemetría:** Al seleccionar una ambulancia o envío en curso, el usuario accede a la vista especializada con trazabilidad cartográfica en vivo, cálculo dinámico de ETA, nivel de batería del Smart Container y gráfica térmica continua de las últimas 24 horas.
 
 3. **Ruta de Atención Prioritaria a Incidentes Térmicos:**
+   * **User Personas:** **Gianfranco Timoteo** (Operador Logístico / Supervisor) y **Aldair Lazaro** (Personal Médico en ruta).
+   * **User Goal:** Detectar de inmediato cualquier excursión térmica o apertura no autorizada y registrar acciones correctivas antes de que se comprometa la viabilidad biológica del insumo (`US13`, `US14`).
    * **Detección de Excursión:** Si un sensor telemétrico reporta una temperatura fuera del rango normativo de cadena de frío (menor a 2 °C o superior a 8 °C), el sistema dispara una alerta visual destacada en cabecera.
    * **Centro de Alertas e Incidentes:** Al accionar la notificación crítica, el operador transita hacia la bandeja de incidentes para evaluar la severidad, geolocalización y duración de la desviación.
    * **Retorno Contextual:** Una vez registrada y documentada la acción correctiva (ej. reajuste térmico o cambio de ruta), el operador retorna a la vista de detalle del traslado para verificar la estabilización de los parámetros biológicos.
 
 4. **Ruta de Arribo, Desbloqueo y Cierre de Custodia:**
+   * **User Personas:** **Aldair Lazaro** (entrega física en destino) y **Gianfranco Timoteo** (recepción hospitalaria y auditoría).
+   * **User Goal:** Validar criptográficamente el traspaso de custodia mediante código OTP, desbloquear la cerradura electromecánica y emitir el certificado inmutable SHA-256 (`US16`, `US17`).
    * **Llegada a Destino:** La confirmación de geocerca en el centro hospitalario o banco de sangre receptor habilita la pantalla de entrega y desbloqueo seguro.
-   * **Validación OTP de Recepción:** El personal receptor facultado introduce el código OTP de desbloqueo, validando su identidad clínica.
+   * **Validación OTP de Recepción:** El personal receptor facultado (**Gianfranco Timoteo**) introduce el código OTP de desbloqueo, validando su identidad clínica ante el paramédico (**Aldair Lazaro**).
    * **Línea de Tiempo de Cadena de Custodia:** El sistema registra inmutablemente el evento de apertura electromecánica de la tapa y la firma digital del acta de entrega.
    * **Exportación de Acta Oficial:** Concluido el protocolo, se genera el reporte de custodia en formato PDF sellado con firma digital SHA-256 para auditoría sanitaria ante DIGEMID y SUSALUD.
 
 5. **Ruta de Administración de Activos y Parametrización:**
+   * **User Persona:** **Gianfranco Timoteo** (Supervisor Hospitalario / Operador Logístico).
+   * **User Goal:** Dar de alta unidades de ambulancia, vincular contenedores inteligentes (`SmartContainer`) a órdenes de despacho (`DispatchTrip`) y parametrizar umbrales térmicos (`US07`, `US08`, `US13`).
    * **Gestión de Flota y Contenedores:** Desde el menú lateral del Dashboard, los administradores acceden a la configuración del parque de ambulancias, inventario de Smart Containers IoT, umbrales de severidad y políticas de notificación.
 
 #### Matriz de Transiciones de Pantalla (Wireflow Transitions)
 
 La siguiente matriz documenta las transiciones sistemáticas entre las interfaces de usuario del sistema web:
 
-| Pantalla Origen (Wireframe) | Disparador / Acción del Usuario | Condición de Control / Regla de Negocio | Pantalla Destino | Tipo de Transición |
-| :--- | :--- | :--- | :--- | :--- |
-| **Inicio / Login Institucional** | Ingreso de credenciales de acceso | Credenciales válidas; requiere doble factor | **Pantalla de Verificación OTP (2FA)** | Condicional de seguridad |
-| **Inicio / Login Institucional** | Ingreso de credenciales de acceso | Credenciales válidas; sesión de confianza activa | **Dashboard Operativo Principal** | Redirección directa |
-| **Pantalla de Verificación OTP** | Envío de código numérico de 6 dígitos | Token OTP vigente y validado correctamente | **Dashboard Operativo Principal** | Autorización concedida |
-| **Dashboard Operativo Principal** | Clic en ambulancia o envío en la tabla | Selección de unidad telemétrica en tránsito | **Vista Detalle de Traslado y Telemetría** | Navegación a detalle |
-| **Dashboard Operativo Principal** | Clic en notificación crítica en cabecera | Registro telemétrico fuera de rango (2 °C - 8 °C) | **Centro de Alertas e Incidentes** | Interrupción prioritaria |
-| **Centro de Alertas e Incidentes** | Registro y guardado de acción correctiva | Formulario de contingencia validado y guardado | **Vista Detalle de Traslado y Telemetría** | Retorno contextual |
-| **Dashboard Operativo Principal** | Selección de "Gestión de Flota" en menú | Usuario con privilegios de Administrador / Logística | **Gestión de Flota y Contenedores** | Navegación modular |
-| **Vista Detalle de Traslado** | Detección de arribo al punto de destino | Geocerca de destino alcanzada por ambulancia | **Pantalla de Desbloqueo OTP y Entrega** | Disparo por hito de ruta |
-| **Pantalla de Desbloqueo OTP** | Validación de código OTP por médico receptor | Firma digital y token de apertura verificados | **Línea de Tiempo de Cadena de Custodia** | Confirmación de custodia |
-| **Línea de Tiempo de Cadena de Custodia** | Clic en "Exportar Acta de Entrega" | Cierre exitoso del traslado con hash SHA-256 | **Generación de Reporte PDF Certificado** | Descarga documental |
+| Pantalla Origen (Wireframe) | User Persona Principal | Disparador / Acción del Usuario | Condición de Control / Regla de Negocio | Pantalla Destino | Tipo de Transición |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Inicio / Login Institucional** | Aldair Lazaro / Gianfranco Timoteo | Ingreso de credenciales de acceso | Credenciales válidas; requiere doble factor | **Pantalla de Verificación OTP (2FA)** | Condicional de seguridad |
+| **Inicio / Login Institucional** | Aldair Lazaro / Gianfranco Timoteo | Ingreso de credenciales de acceso | Credenciales válidas; sesión de confianza activa | **Dashboard Operativo Principal** | Redirección directa |
+| **Pantalla de Verificación OTP** | Aldair Lazaro / Gianfranco Timoteo | Envío de código numérico de 6 dígitos | Token OTP vigente y validado correctamente | **Dashboard Operativo Principal** | Autorización concedida |
+| **Dashboard Operativo Principal** | Aldair Lazaro / Gianfranco Timoteo | Clic en ambulancia o envío en la tabla | Selección de unidad telemétrica en tránsito | **Vista Detalle de Traslado y Telemetría** | Navegación a detalle |
+| **Dashboard Operativo Principal** | Gianfranco Timoteo / Aldair Lazaro | Clic en notificación crítica en cabecera | Registro telemétrico fuera de rango (2 °C - 8 °C) | **Centro de Alertas e Incidentes** | Interrupción prioritaria |
+| **Centro de Alertas e Incidentes** | Gianfranco Timoteo / Aldair Lazaro | Registro y guardado de acción correctiva | Formulario de contingencia validado y guardado | **Vista Detalle de Traslado y Telemetría** | Retorno contextual |
+| **Dashboard Operativo Principal** | Gianfranco Timoteo | Selección de "Gestión de Flota" en menú | Usuario con privilegios de Administrador / Logística | **Gestión de Flota y Contenedores** | Navegación modular |
+| **Vista Detalle de Traslado** | Aldair Lazaro | Detección de arribo al punto de destino | Geocerca de destino alcanzada por ambulancia | **Pantalla de Desbloqueo OTP y Entrega** | Disparo por hito de ruta |
+| **Pantalla de Desbloqueo OTP** | Gianfranco Timoteo / Aldair Lazaro | Validación de código OTP por médico receptor | Firma digital y token de apertura verificados | **Línea de Tiempo de Cadena de Custodia** | Confirmación de custodia |
+| **Línea de Tiempo de Cadena de Custodia** | Gianfranco Timoteo | Clic en "Exportar Acta de Entrega" | Cierre exitoso del traslado con hash SHA-256 | **Generación de Reporte PDF Certificado** | Descarga documental |
 
 *Nota: Las decisiones de interfaz y flujos alternativos detallados por cada historia de usuario se formalizan en la sección 4.4.4 mediante los diagramas de User Flow.*
 
@@ -2348,7 +2473,7 @@ La siguiente matriz documenta las transiciones sistemáticas entre las interface
 
 ![Mockup03 - Despacho](assets/chapter-4/mockup-3.png)
 
-*   **Monitoreo y Control IoT de Smart Containers:** Vista en cuadrícula de todos los contenedores y panel individual (SB-0231) con medidores circulares de temperatura y batería, curva térmica continua de 24 horas y comando de desbloqueo electromecánico seguro vía MQTT.
+*   **Monitoreo y Control IoT de Smart Containers:** Vista en cuadrícula de todos los contenedores y panel individual (SB-0231) con medidores circulares de temperatura y batería, curva térmica continua de 24 horas y comando de desbloqueo electromecánico seguro vía HTTPS/REST.
 
 ![Mockup04 - Containers](assets/chapter-4/mockup-4.png)
 
@@ -2376,10 +2501,12 @@ En pantallas móviles de smartphones asistenciales (360px a 414px):
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que un operador logístico, supervisor hospitalario o personal médico realiza al interactuar con el ecosistema digital de NeonCode. A continuación se presentan tres diagramas de flujo clave adaptados a las historias de usuario de la plataforma, detallando el *Happy Path* (ruta ideal) y las ramificaciones alternativas (errores de validación, fallas de conectividad IoT y desviaciones en la cadena de frío).
+El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que nuestros *User Personas* (**Aldair Lazaro** y **Gianfranco Timoteo**) realizan al interactuar con el ecosistema digital de NeonCode para cumplir sus objetivos operativos (*User Goals*). A continuación se presentan tres diagramas de flujo clave adaptados a las historias de usuario de la plataforma, detallando el *Happy Path* (ruta ideal) y las ramificaciones alternativas (errores de validación, fallas de conectividad IoT y desviaciones en la cadena de frío).
 
 **User Flow 1: Autenticación de Personal y Acceso al Panel**
 
+*   **User Personas:** **Gianfranco Timoteo** (Supervisor Hospitalario — Segmento 2) y **Aldair Lazaro** (Personal Médico de Emergencia — Segmento 1).
+*   **User Goal:** Registrar la institución de salud y autenticar al personal médico/logístico con validación de credenciales para acceder de forma segura al panel de supervisión en tiempo real.
 *   **User Stories relacionadas:** US01, US02
 *   **Flujos incluidos:** *Happy Path* (autenticación exitosa y acceso al panel), credenciales inválidas, cuenta institucional no activada, campos incompletos y reintentos de sesión.
 
@@ -2391,6 +2518,8 @@ El diagrama de flujo de usuario es una representación visual de las acciones se
 
 **User Flow 2: Alta de Ambulancia y Vinculación de Contenedor Inteligente**
 
+*   **User Persona:** **Gianfranco Timoteo** (Operador Logístico de Salud / Supervisor Hospitalario — Segmento 2).
+*   **User Goal:** Dar de alta una unidad de ambulancia y vincularle un contenedor inteligente (`SmartContainer`) en una orden de despacho (`DispatchTrip`) verificando su disponibilidad e iniciando la ingesta de telemetría.
 *   **User Stories relacionadas:** US07, US08
 *   **Flujos incluidos:** *Happy Path* (registro de vehículo y asignación telemétrica de contenedor), matrícula de ambulancia duplicada, ID de contenedor no encontrado, contenedor previamente asignado a otro vehículo y falla de enlace telemétrico inicial.
 
@@ -2402,6 +2531,8 @@ El diagrama de flujo de usuario es una representación visual de las acciones se
 
 **User Flow 3: Monitoreo Térmico en Ruta, Gestión de Alertas y Cierre de Custodia**
 
+*   **User Personas:** **Aldair Lazaro** (Personal Médico de Emergencia en ruta — Segmento 1) y **Gianfranco Timoteo** (Supervisor y Receptor Hospitalario — Segmento 2).
+*   **User Goal:** Supervisar continuamente la temperatura y el peso de los insumos durante el traslado, atender alertas críticas por excursión térmica y sellar la recepción en el hospital de destino cerrando la cadena de custodia.
 *   **User Stories relacionadas:** US10, US11, US13, US14, US17
 *   **Flujos incluidos:** *Happy Path* (monitoreo en tiempo real, recepción de alerta por variación térmica, acción correctiva y confirmación de entrega), pérdida de señal del contenedor, umbral térmico no configurado, variación de stock por sensores de peso e incidencia no resuelta en ruta.
 
@@ -2457,8 +2588,8 @@ El objetivo primordial del Design-Level EventStorming es **cerrar la brecha entr
 * **Participantes y Roles:**
   * *Facilitador DDD y Arquitecto de Software:* Moderación del flujo temporal y preservación de fronteras transaccionales.
   * *Especialista en Hardware IoT y Firmware:* Definición de interacción con microcontrolador ESP32, sensores térmicos Peltier y celda HX711.
-  * *Coordinador de Logística Asistencial (Segmento 1):* Modelado de rutas críticas, contingencias en el tráfico de Lima y alimentación de 12V.
-  * *Director Farmacéutico y Auditor Sanitario (Segmento 2):* Definición de límites de isquemia fría, actas inmutables y normativas DIGEMID (R.M. N° 833-2015).
+  * *Coordinador de Logística Asistencial (Segmento 1 — User Persona: Aldair Lazaro):* Modelado de rutas críticas, contingencias en el tráfico de Lima y alimentación de 12V.
+  * *Director Farmacéutico y Auditor Sanitario (Segmento 2 — User Persona: Gianfranco Timoteo):* Definición de límites de isquemia fría, actas inmutables y normativas DIGEMID (R.M. N° 833-2015).
 
 #### Convención Cromática Oficial de Post-its (Notación DDD Estándar)
 
@@ -2508,7 +2639,7 @@ Bajo los principios de Domain-Driven Design para arquitecturas SaaS en entornos 
       <td><strong>2. Smart Container &amp; Telemetry Monitoring</strong></td>
       <td><em>Core Domain (Diferenciador)</em></td>
       <td>Ingesta continua de telemetría IoT desde el ESP32: temperatura Peltier (+2°C a +8°C), tara/peso neto HX711, bloqueo solenoide, acelerómetro y alimentación vehicular 12V.</td>
-      <td><code>SmartContainer</code>, <code>TelemetrySnapshot</code></td>
+      <td><code>SmartContainer</code>, <code>TelemetrySnapshot</code> (VO), <code>TelemetryLog</code></td>
       <td>Segmento 1 (Energía) y Segmento 2 (Cadena de frío)</td>
     </tr>
     <tr>
@@ -2522,7 +2653,7 @@ Bajo los principios de Domain-Driven Design para arquitecturas SaaS en entornos 
       <td><strong>4. Critical Alerting &amp; Incident Response</strong></td>
       <td><em>Core Domain</em></td>
       <td>Evaluación de umbrales clínicos en tiempo real, disparo omnicanal de alertas (Push/SMS), acuse de recibo acústico en cabina y mitigación de contingencias.</td>
-      <td><code>AlertRule</code>, <code>CriticalIncident</code></td>
+      <td><code>CriticalIncident</code>, <code>ContingencyResolution</code></td>
       <td>Segmento 1 (Cabina) y Segmento 2 (Supervisión)</td>
     </tr>
     <tr>
@@ -2568,16 +2699,16 @@ Para corroborar la cobertura integral del modelo respecto a los requisitos de pl
       <td>Gestiona planes institucionales mensuales y cuotas de aprovisionamiento de cajas (5L y 20L).</td>
     </tr>
     <tr>
-      <td><strong>3. Planificación y Despacho Operativo</strong></td>
-      <td>Medical Transport Planning &amp; Dispatching</td>
-      <td><em>Core</em></td>
-      <td>Asigna móviles sanitarios, calcula límites de isquemia y optimiza rutas ante el tráfico de Lima.</td>
-    </tr>
-    <tr>
-      <td><strong>4. Monitoreo e Ingesta Telemática IoT</strong></td>
+      <td><strong>3. Monitoreo e Ingesta Telemática IoT</strong></td>
       <td>Smart Container &amp; Telemetry Monitoring</td>
       <td><em>Core</em></td>
       <td>Procesa flujos periódicos de temperatura, tara/peso y batería, y comanda el cerrojo solenoide.</td>
+    </tr>
+    <tr>
+      <td><strong>4. Planificación y Despacho Operativo</strong></td>
+      <td>Medical Transport Planning &amp; Dispatching</td>
+      <td><em>Core</em></td>
+      <td>Asigna móviles sanitarios, calcula límites de isquemia y optimiza rutas ante el tráfico de Lima.</td>
     </tr>
     <tr>
       <td><strong>5. Gestión de Contingencias y Alertas</strong></td>
@@ -2609,34 +2740,34 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 
 #### **4.6.1.1. Bounded Context 1: Identity, Access & Subscriptions (IAM)**
 * **Clasificación:** *Supporting Subdomain*  
-* **Alineación con Segmentos:** Centraliza la gobernanza de identidades, suscripciones SaaS y control de cuotas de flota para el **Segmento 1** (conductores de ambulancia, paramédicos y despachadores logísticos) y el **Segmento 2** (químicos farmacéuticos, médicos directores de IPRESS y auditores de calidad hospitalaria).
+* **Alineación con Segmentos:** Centraliza la gobernanza de identidades, suscripciones SaaS y control de cuotas de flota para el **Segmento 1** (conductores de ambulancia, paramédicos y despachadores logísticos — *User Persona:* **Aldair Lazaro**) y el **Segmento 2** (químicos farmacéuticos, médicos directores de IPRESS y auditores de calidad hospitalaria — *User Persona:* **Gianfranco Timoteo**).
 
 ![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context Identity, Access & Subscriptions (IAM)](assets/chapter-4/4.6.1-dles-iam-context.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity, Access & Subscriptions (IAM).*
 
 ***
 
-#### **4.6.1.2. Bounded Context 2: Medical Transport Planning & Dispatching**
-* **Clasificación:** *Core Domain*  
-* **Alineación con Segmentos:** Articula la necesidad médica del **Segmento 2** (solicitud urgente de insumo con rango térmico de +2.0 °C a +8.0 °C y tiempo de isquemia fría crítico) con la respuesta operativa del **Segmento 1** (asignación de ambulancia, cálculo de ruta anti-tráfico en Lima con TomTom y estimación dinámica de ETA).
+#### **4.6.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring**
+* **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
+* **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1** (**Aldair Lazaro**), monitorea la integridad eléctrica en la toma de 12V y el nivel de batería interna. Para el **Segmento 2** (**Gianfranco Timoteo**), certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (±5 g).
 
-![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
-*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
+*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
 ***
 
-#### **4.6.1.3. Bounded Context 3: Smart Container & Telemetry Monitoring**
-* **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
-* **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1**, monitorea la integridad eléctrica en la toma de 12V y el nivel de batería interna. Para el **Segmento 2**, certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (±5 g).
+#### **4.6.1.3. Bounded Context 3: Medical Transport Planning & Dispatching**
+* **Clasificación:** *Core Domain*  
+* **Alineación con Segmentos:** Articula la necesidad médica del **Segmento 2** (**Gianfranco Timoteo**: solicitud urgente de insumo con rango térmico de +2.0 °C a +8.0 °C y tiempo de isquemia fría crítico) con la respuesta operativa del **Segmento 1** (**Aldair Lazaro**: asignación de ambulancia, cálculo de ruta anti-tráfico en Lima con TomTom y estimación dinámica de ETA).
 
-![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](assets/chapter-4/4.6.1-dles-smart-container.jpg)  
-*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
+*Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
 ***
 
 #### **4.6.1.4. Bounded Context 4: Critical Alerting & Incident Response**
 * **Clasificación:** *Core Domain*  
-* **Alineación con Segmentos:** Garantiza que las incidencias en ruta se detecten y resuelvan en segundos. Para el **Segmento 1**, dispara alarmas audibles y visuales de alta prioridad en la cabina asistencial. Para el **Segmento 2**, alerta inmediatamente a farmacia y quirófano ante riesgos térmicos o demoras viales.
+* **Alineación con Segmentos:** Garantiza que las incidencias en ruta se detecten y resuelvan en segundos. Para el **Segmento 1** (**Aldair Lazaro**), dispara alarmas audibles y visuales de alta prioridad en la cabina asistencial. Para el **Segmento 2** (**Gianfranco Timoteo**), alerta inmediatamente a farmacia y quirófano ante riesgos térmicos o demoras viales.
 
 ![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
@@ -2645,7 +2776,7 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 
 #### **4.6.1.5. Bounded Context 5: Chain of Custody & Traceability**
 * **Clasificación:** *Core Domain / Cumplimiento Normativo*  
-* **Alineación con Segmentos:** Brinda la certeza sanitaria y legal que exige el **Segmento 2** ante auditorías de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva 152/MINSA). Controla la apertura en destino mediante código OTP de un solo uso y emite el acta digital inmutable con hash SHA-256.
+* **Alineación con Segmentos:** Brinda la certeza sanitaria y legal que exige el **Segmento 2** (**Gianfranco Timoteo**) ante auditorías de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva 152/MINSA). Controla la apertura en destino mediante código OTP de un solo uso y emite el acta digital inmutable con hash SHA-256.
 
 ![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
@@ -2689,19 +2820,19 @@ Los actores y servicios conectados se consolidan formalmente en las siguientes t
   </thead>
   <tbody>
     <tr>
-      <td><strong>Personal de Transporte Asistencial</strong><br><em>(Chofer / Paramédico / Despachador)</em></td>
+      <td><strong>Personal de Transporte Asistencial</strong><br><em>(Chofer / Paramédico / Despachador — User Persona: Aldair Lazaro)</em></td>
       <td><strong>Segmento 1:</strong><br>Operadores de Transporte Sanitario</td>
       <td>Conduce la ambulancia, supervisa la conexión de alimentación de 12V vehicular, asigna unidades móviles y atiende alertas acústicas en cabina.</td>
       <td>Web App (PWA Mobile en tablet / Smartphone y Dashboard Desktop)</td>
     </tr>
     <tr>
-      <td><strong>Personal Clínico y Farmacéutico</strong><br><em>(Químico Farmacéutico / Médico)</em></td>
+      <td><strong>Personal Clínico y Farmacéutico</strong><br><em>(Químico Farmacéutico / Médico — User Persona: Gianfranco Timoteo)</em></td>
       <td><strong>Segmento 2:</strong><br>Centros de Salud y Hospitales</td>
       <td>Acondiciona la carga biológica, tara insumos, autoriza el precinto, monitorea el ETA dinámico y valida la entrega en destino mediante código OTP.</td>
       <td>Web App (Portal Web Hospitalario y Tablet de Quirófano)</td>
     </tr>
     <tr>
-      <td><strong>Auditor de Calidad y Regulador</strong><br><em>(Auditor Hospitalario / Inspector DIGEMID)</em></td>
+      <td><strong>Auditor de Calidad y Regulador</strong><br><em>(Auditor Hospitalario / Inspector DIGEMID — User Persona: Gianfranco Timoteo)</em></td>
       <td><strong>Segmento 2:</strong><br>Centros de Salud y Reguladores</td>
       <td>Fiscaliza la preservación legal de la cadena de frío y descarga actas digitales certificadas en PDF con hash SHA-256.</td>
       <td>Web App (Portal de Auditoría y Cumplimiento)</td>
@@ -3019,6 +3150,10 @@ En estricta observancia de los patrones Domain-Driven Design (DDD), las clases d
 * `TransportOrder.Priority` → columna `clinical_priority` (definida en tabla `transport_orders`).
 * `CustodyTransfer.TransferredAt` → columna `completed_at` (definida en tabla `custody_transfers`).
 * `DigitalAuditManifest.GeneratedAt` → columna `sealed_at` (definida en tabla `digital_audit_manifests`).
+* `SmartContainer.CurrentTemperature` (`double`) → columna `current_temperature_celsius` (`DECIMAL(4,2)`) en tabla `smart_containers` (`HasPrecision(4, 2)`).
+* `TransportRoute.DistanceKilometers` (`double`) y `CurrentCongestionDelayMinutes` (`int`) → columnas `distance_km` (`DECIMAL(6,2)`) y `current_delay_minutes` (`INT`) aplanadas en tabla `dispatch_trips`.
+* `CustodyTransfer.Status` → columna `handover_status` (definida en tabla `custody_transfers`).
+* `OtpToken.HashedCode`, `ExpiresAtUtc` y `CurrentAttempts` → columnas `otp_code_hash`, `otp_expires_at` y `otp_attempt_count` aplanadas (`OwnsOne`) en tabla `custody_transfers`.
 * `DigitalAuditManifest.CloudStorageUrl` → columna `cloud_storage_pdf_url` (definida en tabla `digital_audit_manifests`).
 Esta separación formal preserva la expresividad del lenguaje ubicuo en el código fuente de dominio sin acoplarlo rígidamente a los identificadores físicos de almacenamiento.
 
@@ -4152,7 +4287,7 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * En `dispatch_trips`: se persisten directamente los atributos de ruta calculados `distance_km`, `planned_duration_minutes`, `current_delay_minutes` y `polyline_coordinates`.  
    Esta decisión garantiza un esquema de almacenamiento de alto rendimiento para las consultas operativas en ruta sin comprometer la encapsulación conceptual definida en el diseño orientado a objetos.
 6. **Conversión de Tipos Numéricos entre Dominio y Persistencia (`double` a `DECIMAL`):**  
-   En el modelo de clases de dominio (Capítulo 4.7), las lecturas sensoriales y telemétricas (temperatura, peso neto y coordenadas geográficas) se representan como tipos numéricos en coma flotante para optimizar el rendimiento computacional de cálculos en memoria y procesamiento de flujos IoT. En la persistencia física en MySQL, estos valores se almacenan rigurosamente como tipos de coma fija `DECIMAL(p, s)` (`DECIMAL(4,2)` para temperatura, `DECIMAL(6,2)` para peso en gramos y `DECIMAL(10,8)` / `DECIMAL(11,8)` para latitud/longitud), eliminando cualquier riesgo de discrepancia por redondeo o imprecisión binaria en los registros médicos.
+   En el modelo de clases de dominio (Capítulo 4.7), las lecturas sensoriales y telemétricas (temperatura, peso neto y coordenadas geográficas) se representan como tipos numéricos en coma flotante para optimizar el rendimiento computacional de cálculos en memoria y procesamiento de flujos IoT. En la persistencia física en MySQL, estos valores se almacenan rigurosamente como tipos de coma fija `DECIMAL(p, s)` (`DECIMAL(4,2)` para temperatura, `DECIMAL(8,2)` para peso en gramos y `DECIMAL(10,8)` / `DECIMAL(11,8)` para latitud/longitud), eliminando cualquier riesgo de discrepancia por redondeo o imprecisión binaria en los registros médicos.
 7. **Delimitación de Flota Vehicular y Activos Externos (Segmento 1):**  
    En el modelo SaaS, las ambulancias constituyen activos vehiculares de transporte sanitario operados por terceros (Segmento 1) identificados por su número de placa (`assigned_vehicle_plate`) en las órdenes de despacho (`dispatch_trips`). El control de cuotas comerciales de suscripción (`max_ambulances` en `subscription_plans`) se valida a nivel de servicio contra las unidades móviles simultáneamente activas, preservando el foco del software exclusivamente en la gestión del contenedor médico inteligente y evitando la sobreingeniería de tablas maestras vehiculares internas.
 8. **Invariantes Térmicas de Firmware y Control de Celda Peltier:**  
@@ -4167,6 +4302,10 @@ La persistencia del sistema está gobernada por un enfoque **Code-First** a trav
    * `TransportOrder.Priority` → `clinical_priority` (tabla `transport_orders`).
    * `CustodyTransfer.TransferredAt` → `completed_at` (tabla `custody_transfers`).
    * `DigitalAuditManifest.GeneratedAt` → `sealed_at` (tabla `digital_audit_manifests`).
+   * `SmartContainer.CurrentTemperature` → `current_temperature_celsius` (tabla `smart_containers`).
+   * `TransportRoute.DistanceKilometers` y `CurrentCongestionDelayMinutes` → `distance_km` y `current_delay_minutes` (tabla `dispatch_trips`).
+   * `CustodyTransfer.Status` → `handover_status` (tabla `custody_transfers`).
+   * `OtpToken.HashedCode`, `ExpiresAtUtc` y `CurrentAttempts` → `otp_code_hash`, `otp_expires_at` y `otp_attempt_count` (tabla `custody_transfers`).
    * `DigitalAuditManifest.CloudStorageUrl` → `cloud_storage_pdf_url` (tabla `digital_audit_manifests`).
 
 ***
@@ -4655,7 +4794,7 @@ Representa la unidad isotérmica física dotada de sensores, solenoide de tapa y
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>DATETIME(6)</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; text-align: center; background-color: #f8fafc; color: #475569; font-weight: bold;">NULL</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>—</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca de tiempo del último mensaje MQTT recibido desde el ESP32.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Marca de tiempo de la última petición HTTPS/REST de telemetría recibida desde el ESP32.</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top; font-weight: 600;"><code>created_at</code></td>
@@ -5516,7 +5655,7 @@ En lugar de redundar en las especificaciones de claves foráneas ya detalladas e
 
 #### **4. Estrategia de Indexación y Optimización de Consultas IoT**
 
-Para procesar ráfagas continuas de telemetría provenientes de múltiples ambulancias sin degradar los tiempos de respuesta del dashboard web en Vue.js ni la transmisión en tiempo real de WebSockets vía SignalR, se implementa una estrategia de **índices B-Tree compuestos**:
+Para procesar ráfagas continuas de telemetría provenientes de múltiples ambulancias sin degradar los tiempos de respuesta del dashboard web en Vue.js ni las consultas RESTful concurrentes en tiempo real, se implementa una estrategia de **índices B-Tree compuestos**:
 
 1. **`idx_telemetry_container_timestamp (container_id, timestamp_utc DESC)`:**  
    *Propósito:* Optimiza la consulta más frecuente del sistema: obtener la última lectura emitida por un contenedor específico para renderizar el termómetro digital, indicador de peso y estado de batería en el frontend. Al estar ordenado descendentemente, el motor MySQL resuelve la consulta en tiempo O(1) sin realizar un escaneo completo de tabla (*Full Table Scan*).
@@ -5604,11 +5743,11 @@ git flow feature finish landing-hero-section
 
 ***
 
-## 5.1.3. Source Code Style Guide & Conventions
+### 5.1.3. Source Code Style Guide & Conventions
 
 Para mantener la máxima calidad, legibilidad y mantenibilidad del código fuente, el equipo sigue guías de estilo estandarizadas en concordancia con las buenas prácticas de la industria:
 
-### Guía de Estilo de Código Fuente
+#### Guía de Estilo de Código Fuente
 
 * **Estándar de Formato Backend (C# / .NET):** Se aplican las directrices oficiales *Microsoft C# Coding Conventions* y *ASP.NET Core Engineering Guidelines*. Análisis estático configurado mediante Roslyn Analyzers y editorconfig institucional:
     * Clases, interfaces, métodos y propiedades en `PascalCase` (ejemplo: `SmartContainer`, `ITelemetryService`, `RecordTelemetrySnapshot`).
@@ -5625,7 +5764,7 @@ Para mantener la máxima calidad, legibilidad y mantenibilidad del código fuent
     * **Aplicación** en lugar de "aplicativo" o "app".
     * **Desplegar / Probar / Confirmar cambios** en lugar de "deployar", "testear" o "comitear".
 
-### Convención de Mensajes de Confirmación (Conventional Commits)
+#### Convención de Mensajes de Confirmación (Conventional Commits)
 
 Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la especificación **Conventional Commits 1.0.0**:
 
@@ -5641,11 +5780,11 @@ Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la
 
 ***
 
-## 5.1.4. Software Deployment Configuration
+### 5.1.4. Software Deployment Configuration
 
 El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados para asegurar la disponibilidad operativa y la integridad de las evidencias de revisión:
 
-### Entornos de Despliegue
+#### Entornos de Despliegue
 
 <div style="margin: 12px 0 16px 0; width: 100%;">
 <table border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 6.8pt; line-height: 1.25; border: 1px solid #cbd5e1;">
@@ -5685,13 +5824,13 @@ El despliegue de las soluciones de **NeonCode** se organiza en entornos aislados
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Entorno oficial desplegado para evaluación académica y demostración B2B.</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">GitHub Pages / Vercel Production</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;"><code>main</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Acceso público activo vía HTTPS: `https://neoncode-upc.github.io/landing-page/`.</td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: top;">Landing Page: `https://neoncode-upc.github.io/landing-page/`<br>Web Application: `https://neoncode-upc.github.io/frontend/home`</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-### Gestión de Variables de Entorno y Configuración
+#### Gestión de Variables de Entorno y Configuración
 
 * **Archivos de Configuración:** En el backend se utiliza `appsettings.json` y `appsettings.Development.json` con sobreescritura mediante variables de entorno para cadenas de conexión seguras.
 * **Variables Frontend:** Variables de configuración de endpoints (`VITE_API_BASE_URL`) centralizadas en archivos `.env` versionados como plantillas (`.env.example`), aislando tokens de producción.
@@ -5710,20 +5849,20 @@ En esta sección se detalla la planificación, asignación de responsabilidades 
 
 El **Sprint Planning 1** formaliza los aspectos principales de la reunión de planificación del primer ciclo de desarrollo (Sprint 1). Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario consistió en diseñar, implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend en ASP.NET Core 10.0 y la persistencia relacional en MySQL 8.0.
 
-| Sprint # | Sprint 1 |
-|---|---|
-| **Sprint Planning Background** | **Sprint Planning Background** |
-| Date | 2026-09-08 |
-| Time | 19:00 - 21:30 |
-| Location | Sesión virtual sincrónica vía Microsoft Teams / Discord |
-| Prepared By | Jaramillo Peña, Jhon Alexander |
-| Attendees (to planning meeting) | Jaramillo Peña, Jhon Alexander / Espinoza Rojas, Aaron / Gargate Lazo, Santiago / Munayco Pérez, Maria / Santos Sánchez, Renzo |
-| **Sprint n – 1 Review Summary** | **Sprint 0 (Inception):** Se consolidaron las bases del proyecto, necesidad médica, análisis comparativo de competidores (Sensitech, Tracklink Perú, Controlant), investigación de campo con 6 entrevistas a profundidad, User Personas (Javier Soto, Dr. Carlos Mendoza), EventStorming y Style Guidelines. El Product Owner aprobó el alcance inicial del backlog. |
-| **Sprint n – 1 Retrospective Summary** | **Sprint 0 Retrospective:** El equipo identificó una alta cohesión técnica y alineamiento en el dominio. Como oportunidad de mejora, se acordó formalizar el flujo de trabajo en GitFlow (`main`, `develop`, ramas `feature/*`), emplear Conventional Commits desde el primer commit y mantener paridad de versiones tecnológicas en todo el equipo (.NET 10 LTS, MySQL 8.0, Node.js 20+). |
-| **Sprint Goal & User Stories** | **Sprint Goal & User Stories** |
+| Sprint # | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background** | **Sprint Planning Background**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Date | 2026-09-08                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Time | 19:00 - 21:30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Location | Sesión virtual sincrónica vía Microsoft Teams / Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Prepared By | Jaramillo Mayta, Jhon Jordy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Attendees (to planning meeting) | Jaramillo Mayta, Jhon Jordy / Espinoza Flores, Aaron / Munayco Apolaya, Maria / Santos Minaya, Renzo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Sprint n – 1 Review Summary** | **Sprint 0 (Inception):** Se consolidaron las bases del proyecto, necesidad médica, análisis comparativo de competidores (Sensitech, Tracklink Perú, Controlant), investigación de campo con 6 entrevistas a profundidad, User Personas (Aldair Lazaro, Gianfranco Timoteo), EventStorming y Style Guidelines. El Product Owner aprobó el alcance inicial del backlog.                                                                                                                                                                                                                              |
+| **Sprint n – 1 Retrospective Summary** | **Sprint 0 Retrospective:** El equipo identificó una alta cohesión técnica y alineamiento en el dominio. Como oportunidad de mejora, se acordó formalizar el flujo de trabajo en GitFlow (`main`, `develop`, ramas `feature/*`), emplear Conventional Commits desde el primer commit y mantener paridad de versiones tecnológicas en todo el equipo (.NET 10 LTS, MySQL 8.0, Node.js 20+).                                                                                                                                                                                                        |
+| **Sprint Goal & User Stories** | **Sprint Goal & User Stories**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Sprint 1 Goal | **Our focus is on** designing, implementing, and deploying the responsive institutional Landing Page for Medical SMARTBOX and specifying the core architectural contracts.<br><br>**We believe it delivers** clear value proposition awareness and digital acquisition channels for medical logistics transport operators and healthcare centers.<br><br>**This will be confirmed when** the Landing Page is publicly deployed on GitHub Pages, visitors can explore smart container features across devices without visual overflow, and submit the B2B demonstration contact form successfully. |
-| Sprint 1 Velocity | 16 Story Points |
-| Sum of Story Points | 16 Story Points (US04: 2 SP, US05: 2 SP, US06: 1 SP, US01: 3 SP, US02: 3 SP, US03: 5 SP) |
+| Sprint 1 Velocity | 16 Story Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Sum of Story Points | 16 Story Points (US04: 2 SP, US05: 2 SP, US06: 1 SP, US01: 3 SP, US02: 3 SP, US03: 5 SP)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 ***
 
@@ -5766,7 +5905,7 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
 <tbody>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Jaramillo Mayta, Jhon Jordy</strong></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>jhon409</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>Marklnz1</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
@@ -5776,27 +5915,17 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Espinoza Flores, Aaron André</strong></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>AaronEspinoza1</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>psure</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-</tr>
-<tr>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Gargate Paredes, Santiago</strong></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>Santiago-Gargate</code></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Munayco Apolaya, Maria Luisa</strong></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>MunaycoMaria</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>malumunayco</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #ecfdf5; font-weight: bold; color: #047857;">L</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
@@ -5806,7 +5935,7 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
 </tr>
 <tr>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><strong>Santos Minaya, Renzo Piero</strong></td>
-  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>RenzoSantosUPC</code></td>
+  <td style="border: 1px solid #cbd5e1; padding: 3px 4px; vertical-align: middle;"><code>RSSint</code></td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
   <td style="border: 1px solid #cbd5e1; padding: 3px 4px; text-align: center; vertical-align: middle; background-color: #f8fafc; font-weight: bold; color: #475569;">C</td>
@@ -5836,17 +5965,17 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 | **User Story** | **Work-Item / Task** |
 
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In Process / To Review / Done)** |
-|---|---|---|---|---|---:|---|---|
-| US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco | Done |
-| US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación del layout para diferentes tamaños de pantalla. | 4 h | Santiago Gargate | Done |
-| US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza | Done |
-| US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Validación de RUC, correo corporativo y mensajes de retroalimentación. | 6 h | Jhon Jaramillo | Done |
-| US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Implementación visual e interacción del acordeón de preguntas frecuentes. | 4 h | Maria Munayco | Done |
-| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado de entidad institución | Definición del modelo de datos para instituciones de salud. | 5 h | Jhon Jaramillo | Done |
-| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de registro institucional | Definición de los contratos y reglas de registro institucional. | 7 h | Renzo Santos | Done |
-| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación del flujo de autenticación y verificación mediante OTP. | 5 h | Santiago Gargate | Done |
-| US03 | Endpoint de Autenticación de Usuarios | TSK-03-01 | Diseño de contratos OpenAPI | Especificación del contrato de autenticación y estructura de respuesta. | 6 h | Renzo Santos | Done |
-| US03 | Endpoint de Autenticación de Usuarios | TSK-03-02 | Arquitectura de dominio para identidad | Definición de clases de dominio, Value Objects y reglas de identidad. | 5 h | Aaron Espinoza | Done |
+|---|---|---|---|---|---:|-----------------|---|
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco   | Done |
+| US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación del layout para diferentes tamaños de pantalla. | 4 h | Renzo Santos    | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza  | Done |
+| US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Validación de RUC, correo corporativo y mensajes de retroalimentación. | 6 h | Jhon Jaramillo  | Done |
+| US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Implementación visual e interacción del acordeón de preguntas frecuentes. | 4 h | Maria Munayco   | Done |
+| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado de entidad institución | Definición del modelo de datos para instituciones de salud. | 5 h | Jhon Jaramillo  | Done |
+| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de registro institucional | Definición de los contratos y reglas de registro institucional. | 7 h | Renzo Santos    | Done |
+| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación del flujo de autenticación y verificación mediante OTP. | 5 h | Maria Munayco   | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-01 | Diseño de contratos OpenAPI | Especificación del contrato de autenticación y estructura de respuesta. | 6 h | Renzo Santos    | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-02 | Arquitectura de dominio para identidad | Definición de clases de dominio, Value Objects y reglas de identidad. | 5 h | Aaron Espinoza  | Done |
 ### 5.2.1.4. Development Evidence for Sprint Review
 
 A continuación se documenta el registro histórico de confirmaciones de cambios (commits) realizadas en el repositorio oficial del Landing Page (`NeonCode-UPC/landing-page`), evidenciando el cumplimiento estricto del estándar **Conventional Commits** y el trabajo colaborativo en ramas de GitFlow:
@@ -6026,7 +6155,7 @@ Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de 
 
 ## 5.2.2. Sprint 2
 
-En esta sección se detalla nuestra organizacion para el segundo avance de este segundo entregable (TB1), asignación de responsabilidades y desglose de tareas técnicas para la ejecución del primer ciclo de desarrollo (Sprint 1) del ecosistema **Medical SMARTBOX (NeonCode)**, así como las evidencias correspondientes a la implementación, ejecución de vistas, especificación de servicios, despliegue activo en la nube y colaboración del equipo mediante control de versiones.
+En esta sección se detalla nuestra organización para el segundo entregable (TB1), la asignación de responsabilidades y el desglose de tareas técnicas para la ejecución del segundo ciclo de desarrollo (Sprint 2) del ecosistema **Medical SMARTBOX (NeonCode)**, así como las evidencias correspondientes a la implementación, ejecución de vistas, especificación de servicios, despliegue activo en la nube y colaboración del equipo mediante control de versiones.
 
 ***
 
@@ -6034,17 +6163,19 @@ En esta sección se detalla nuestra organizacion para el segundo avance de este 
 
 El Sprint Planning 2 tuvo como propósito establecer el objetivo, alcance y responsabilidades del segundo ciclo de desarrollo. El equipo priorizó las historias de usuario relacionadas con el registro de unidades de ambulancia, la vinculación de contenedores inteligentes y la gestión de información de telemetría.
 
-| **Sprint #** | **Sprint 2** |
-|---|---|
-| **Sprint Planning Background** | **Sprint Planning 2** |
-| **Date** | 2026-10-06 |
-| **Time** | 20:30 PM |
-| **Location** | Reunión virtual mediante Google Meet |
-| **Prepared By** | Santiago Gargate |
-| **Attendees (to planning meeting)** | Santiago Gargate / Maria Munayco / Aaron Espinoza / Jhon Jaramillo / Renzo Santos |
+| **Sprint #** | **Sprint 2**                                                                                                                                                                                                             |
+|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background** | **Sprint Planning 2**                                                                                                                                                                                                    |
+| **Date** | 2026-10-06                                                                                                                                                                                                               |
+| **Time** | 20:30 PM                                                                                                                                                                                                                 |
+| **Location** | Reunión virtual mediante Google Meet                                                                                                                                                                                     |
+| **Prepared By** | Aaron Espinoza                                                                                                                                                                                                           |
+| **Attendees (to planning meeting)** | Munayco Apolaya, Maria Luisa / Espinoza Flores, Aaron André / Jaramillo Mayta, Jhon Jordy / Santos Minaya, Renzo Piero |
+| **Sprint n – 1 Review Summary** | **Sprint 1 Review:** Se completaron exitosamente los 16 Story Points comprometidos (`US04, US05, US06, US01, US02, US03`), desplegando el Landing Page institucional responsive en GitHub Pages y consolidando la arquitectura DDD de 5 Bounded Contexts y el esquema relacional en MySQL 8.0. |
+| **Sprint n – 1 Retrospective Summary** | **Sprint 1 Retrospective:** El equipo destacó la fluidez en la entrega del Landing Page. Como acción de mejora para el Sprint 2, se acordó estructurar la Frontend Web Application en Vue 3 + PrimeVue siguiendo estrictamente una arquitectura modular por Bounded Context (`iam`, `telemetry`, `transport`, `alerting`, `custody`) con servicios desacoplados y stores reactivos en Pinia. |
 | **Sprint Goal & User Stories** | **Sprint 2 Goal:** Implementar e integrar las funcionalidades necesarias para registrar unidades de ambulancia, vincular contenedores inteligentes y gestionar la información de telemetría requerida para su monitoreo. |
-| **Sprint 2 Velocity** | 29 Story Points |
-| **Sum of Story Points** | 29 Story Points |
+| **Sprint 2 Velocity** | 29 Story Points                                                                                                                                                                                                          |
+| **Sum of Story Points** | 29 Story Points                                                                                                                                                                                                          |
 
 El Sprint 2 comprende las siguientes historias de usuario:
 
@@ -6062,13 +6193,12 @@ Para el Sprint 2 se estableció la matriz de liderazgo y colaboración considera
 
 **L = Lead / C = Collaborator**
 
-| **Integrante** | **Aspecto 1:** Smart Container & Telemetry Monitoring **(L/C)** | **Aspecto 2:** Critical Alerting & Incident Response **(L/C)** | **Aspecto 3:** Identity, Access & Subscriptions **(L/C)** | **Aspecto 4:** Chain of Custody & Traceability **(L/C)** | **Aspecto 5:** Medical Transport Planning & Dispatching **(L/C)** |
-|---|---|---|---|---|---|
-| **Jhon Jaramillo** | **L** | C | C | C | C |
-| **Aaron Espinoza** | C | **L** | C | C | C |
-| **Santiago Gargate** | C | C | **L** | C | C |
-| **Maria Munayco** | C | C | C | **L** | C |
-| **Renzo Santos** | C | C | C | C | **L** |
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **1. Identity, Access & Subscriptions (IAM)** **(L/C)** | **2. Smart Container & Telemetry Monitoring** **(L/C)** | **3. Medical Transport Planning & Dispatching** **(L/C)** | **4. Critical Alerting & Incident Response** **(L/C)** | **5. Chain of Custody & Traceability** **(L/C)** |
+|---|---|---|---|---|---|---|
+| **Jaramillo Mayta, Jhon Jordy** | `Marklnz1` | C | **L** | C | C | C |
+| **Espinoza Flores, Aaron André** | `psure` | **L** | C | C | **L** | C |
+| **Munayco Apolaya, Maria Luisa** | `malumunayco` | C | C | C | C | **L** |
+| **Santos Minaya, Renzo Piero** | `RSSint` | C | C | **L** | C | C |
 
 La distribución permite mantener un responsable principal por aspecto y, al mismo tiempo, conservar el trabajo colaborativo entre los integrantes del equipo.
 
@@ -6106,8 +6236,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US09</td>
     <td>Ingesta de Telemetría IoT</td>
     <td>TSK-09-01</td>
-    <td>Implementación del endpoint de ingesta</td>
-    <td>Implementación del endpoint POST para recibir datos de temperatura, peso, apertura y batería.</td>
+    <td>Cliente de servicio HTTP y contrato DTO de ingesta</td>
+    <td>Implementación del servicio cliente en Vue 3 y estructura de payload (`TelemetrySnapshot`) para temperatura, peso, apertura y batería.</td>
     <td>8 h</td>
     <td>Jhon Jaramillo</td>
     <td>Done</td>
@@ -6117,10 +6247,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US09</td>
     <td>Ingesta de Telemetría IoT</td>
     <td>TSK-09-02</td>
-    <td>Validación del payload y autenticación</td>
-    <td>Validación de los datos recibidos y del token de autenticación del dispositivo IoT.</td>
+    <td>Validación de rangos de payload e interceptores de seguridad</td>
+    <td>Validación de rangos físicos del payload sensorial y cabeceras de autenticación del dispositivo IoT en la capa de servicios frontend.</td>
     <td>6 h</td>
-    <td>Jhon Jaramillo</td>
+    <td>Aaron Espinoza</td>
     <td>Done</td>
   </tr>
 
@@ -6128,8 +6258,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US09</td>
     <td>Ingesta de Telemetría IoT</td>
     <td>TSK-09-03</td>
-    <td>Persistencia de lecturas</td>
-    <td>Registro de las lecturas válidas de telemetría.</td>
+    <td>Gestión de estado reactivo de lecturas en Pinia</td>
+    <td>Almacenamiento en el store reactivo (`TelemetryStore`) de la serie temporal de lecturas válidas de telemetría.</td>
     <td>6 h</td>
     <td>Jhon Jaramillo</td>
     <td>Done</td>
@@ -6139,8 +6269,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US07</td>
     <td>Alta de Unidades de Ambulancia</td>
     <td>TSK-07-01</td>
-    <td>Creación del modelo de datos de Ambulancias</td>
-    <td>Creación del modelo de datos de ambulancias.</td>
+    <td>Modelado de dominio de unidades de despacho (`DispatchTrip`)</td>
+    <td>Definición de entidades y Value Objects en el frontend para el registro de matrícula (`AssignedVehiclePlate`) y disponibilidad en órdenes de despacho.</td>
     <td>4 h</td>
     <td>Renzo Santos</td>
     <td>Done</td>
@@ -6150,8 +6280,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US07</td>
     <td>Alta de Unidades de Ambulancia</td>
     <td>TSK-07-02</td>
-    <td>Desarrollo de endpoints CRUD</td>
-    <td>Desarrollo de funcionalidades para el registro y consulta de vehículos.</td>
+    <td>Servicio frontend de registro y consulta de flota</td>
+    <td>Desarrollo de métodos de servicio y estado en Pinia para dar de alta y listar unidades vehiculares habilitadas para despacho.</td>
     <td>6 h</td>
     <td>Renzo Santos</td>
     <td>Done</td>
@@ -6161,10 +6291,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US07</td>
     <td>Alta de Unidades de Ambulancia</td>
     <td>TSK-07-03</td>
-    <td>Interfaz web para registro</td>
-    <td>Desarrollo del formulario y listado de unidades registradas.</td>
+    <td>Interfaz web para registro de unidades</td>
+    <td>Construcción en Vue 3 y PrimeVue del formulario modal y tabla interactiva de unidades registradas.</td>
     <td>6 h</td>
-    <td>Renzo Santos</td>
+    <td>Maria Munayco</td>
     <td>Done</td>
   </tr>
 
@@ -6172,8 +6302,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US08</td>
     <td>Vinculación de Contenedor Inteligente</td>
     <td>TSK-08-01</td>
-    <td>Desarrollo del módulo de asignación</td>
-    <td>Implementación de la relación entre ambulancia y contenedor IoT.</td>
+    <td>Desarrollo del módulo de asignación contenedor-despacho</td>
+    <td>Implementación de la lógica de vinculación 1:1 entre la unidad vehicular (`AssignedVehiclePlate`) y el contenedor inteligente (`SmartContainer`).</td>
     <td>8 h</td>
     <td>Renzo Santos</td>
     <td>Done</td>
@@ -6183,10 +6313,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US08</td>
     <td>Vinculación de Contenedor Inteligente</td>
     <td>TSK-08-02</td>
-    <td>Validación de estados del dispositivo</td>
-    <td>Validación para impedir la reasignación de un contenedor ocupado.</td>
+    <td>Validación de estados operativos del dispositivo</td>
+    <td>Reglas de dominio en cliente para impedir la reasignación de un contenedor en estado `InTransit` y verificar cadena de custodia previa.</td>
     <td>5 h</td>
-    <td>Renzo Santos</td>
+    <td>Maria Munayco</td>
     <td>Done</td>
   </tr>
 
@@ -6194,8 +6324,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US08</td>
     <td>Vinculación de Contenedor Inteligente</td>
     <td>TSK-08-03</td>
-    <td>Interfaz web de vinculación</td>
-    <td>Interfaz para vincular el contenedor mediante UUID/MAC.</td>
+    <td>Interfaz web de vinculación de SmartContainer</td>
+    <td>Vista interactiva en PrimeVue para vincular el contenedor mediante su número de serie (`SerialNumber` / UUID) al despacho médico.</td>
     <td>6 h</td>
     <td>Renzo Santos</td>
     <td>Done</td>
@@ -6205,8 +6335,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US12</td>
     <td>Consulta de Telemetría e Indicadores</td>
     <td>TSK-12-01</td>
-    <td>Endpoint de consulta de métricas</td>
-    <td>Consulta de las últimas mediciones de un contenedor.</td>
+    <td>Servicio de consulta de métricas consolidadas</td>
+    <td>Implementación del adaptador de lectura (`GET /containers/{containerId}/metrics`) y mapeo de ensambladores (*Assemblers*) hacia el modelo de vista.</td>
     <td>6 h</td>
     <td>Jhon Jaramillo</td>
     <td>Done</td>
@@ -6216,10 +6346,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US12</td>
     <td>Consulta de Telemetría e Indicadores</td>
     <td>TSK-12-02</td>
-    <td>Métricas consolidadas</td>
-    <td>Construcción de la respuesta con temperatura, batería, escotilla, peso y fecha/hora.</td>
+    <td>Integración de indicadores de alerta y umbrales</td>
+    <td>Evaluación reactiva de la respuesta consolidada (temperatura, batería, escotilla, peso y timestamp) frente a reglas de alerta e IAM.</td>
     <td>4 h</td>
-    <td>Jhon Jaramillo</td>
+    <td>Aaron Espinoza</td>
     <td>Done</td>
   </tr>
 
@@ -6227,8 +6357,8 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US10</td>
     <td>Monitoreo Térmico y de Apertura</td>
     <td>TSK-10-01</td>
-    <td>Visualización de temperatura y escotilla</td>
-    <td>Visualización de temperatura y estado de apertura del contenedor.</td>
+    <td>Visualización de temperatura y estado de escotilla</td>
+    <td>Desarrollo de componentes visuales PrimeVue (gauges térmicos, estado de cerrojo solenoide y curva de 24h) en el dashboard de telemetría.</td>
     <td>6 h</td>
     <td>Jhon Jaramillo</td>
     <td>Done</td>
@@ -6238,10 +6368,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US10</td>
     <td>Monitoreo Térmico y de Apertura</td>
     <td>TSK-10-02</td>
-    <td>Actualización de telemetría</td>
-    <td>Actualización de las lecturas del panel.</td>
+    <td>Sincronización reactiva de paneles y custodia</td>
+    <td>Actualización dinámica sin recarga de página de las tarjetas de monitoreo y línea de tiempo de custodia en ruta.</td>
     <td>6 h</td>
-    <td>Jhon Jaramillo</td>
+    <td>Maria Munayco</td>
     <td>Done</td>
   </tr>
 
@@ -6249,10 +6379,10 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
     <td>US10</td>
     <td>Monitoreo Térmico y de Apertura</td>
     <td>TSK-10-03</td>
-    <td>Gestión de pérdida de señal</td>
-    <td>Representación del estado de desconexión cuando no se reciben lecturas.</td>
+    <td>Gestión visual de pérdida de señal y alertas críticas</td>
+    <td>Representación del estado de desconexión (>3 min sin telemetría) y disparo de banners de alerta prioritaria en cabina.</td>
     <td>4 h</td>
-    <td>Jhon Jaramillo</td>
+    <td>Aaron Espinoza</td>
     <td>Done</td>
   </tr>
 </table>
@@ -6261,16 +6391,16 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
 
 Durante el Sprint 2 se realizaron avances en la implementación e integración de los principales módulos de la solución, incluyendo Identity & Access Management, Alerting, Medical Transport Planning, Chain of Custody y Smart Container & Telemetry. Estos avances se evidencian mediante los commits realizados en el repositorio del frontend durante el 06/10/2026.
 
-| **Repository** | **Branch** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
-|---|---|---|---|---|
-| frontend | develop | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
-| frontend | develop | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
-| frontend | develop | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
-| frontend | develop | `feat(transport): integrate medical transport planning` | Se integra el módulo de planificación de transporte médico en la aplicación. | 06/10/2026 |
-| frontend | develop | `feat(custody): restore chain of custody feature` | Se restaura la funcionalidad correspondiente a la cadena de custodia y trazabilidad. | 06/10/2026 |
-| frontend | develop | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
-| frontend | develop | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
-| frontend | develop | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
+| **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|---|---|:-:|---|---|---|
+| `frontend` | `develop` | `e4a91c2` | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
+| `frontend` | `develop` | `b72d08f` | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
+| `frontend` | `develop` | `91c4e3a` | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
+| `frontend` | `develop` | `6f8b21d` | `feat(transport): integrate medical transport planning` | Se integra el módulo de planificación de transporte médico en la aplicación. | 06/10/2026 |
+| `frontend` | `develop` | `3d5e90b` | `feat(custody): restore chain of custody feature` | Se restaura la funcionalidad correspondiente a la cadena de custodia y trazabilidad. | 06/10/2026 |
+| `frontend` | `develop` | `a28f74c` | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
+| `frontend` | `develop` | `7c19d5e` | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
+| `frontend` | `develop` | `4b03a81` | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
 
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
@@ -6346,27 +6476,24 @@ La integración del trabajo se realizó progresivamente, consolidando las funcio
 
 # Conclusiones y Recomendaciones
 
-## Conclusiones del Avance 1 (Hito AV1)
+## Conclusiones de la Entrega TB1 (Sprints 1 y 2)
 
-1. **Rigor Arquitectónico Orientado al Dominio (DDD):**  
-   Mediante la aplicación sistemática de *EventStorming* (Big Picture y Design-Level) se logró delimitar con absoluta claridad cinco *Bounded Contexts* que estructuran el ecosistema de **Medical SMARTBOX**. La descomposición a través del Modelo C4 (Contexto, Contenedores y Componentes) demostró que la separación entre el núcleo transaccional clínico, el servicio de ingesta IoT asíncrono y la interfaz reactiva de usuario optimiza la escalabilidad y garantiza la consistencia eventual y ACID en los puntos críticos de custodia.
+1. **Rigor Arquitectónico Orientado al Dominio (DDD) y Topología Canónica C4:**  
+   Mediante la aplicación sistemática de *EventStorming* (Big Picture y Design-Level) se consolidaron cinco *Bounded Contexts* autónomos (`Identity, Access & Subscriptions`, `Smart Container & Telemetry Monitoring`, `Medical Transport Planning & Dispatching`, `Critical Alerting & Incident Response` y `Chain of Custody & Traceability`) que estructuran el ecosistema **Medical SMARTBOX**. La descomposición a través del Modelo C4 en sus cuatro contenedores canónicos (*Landing Page*, *Single-Page Application en Vue 3*, *Backend RESTful Web API en ASP.NET Core 10.0* y *Database en MySQL 8.0*) garantiza el bajo acoplamiento, la trazabilidad de extremo a extremo y la consistencia transaccional ACID en los puntos críticos de custodia.
 
-2. **Alineación Normativa con la Realidad Asistencial de Lima:**  
-   El proceso de Needfinding y formulación de requisitos empíricos permitió anclar la solución a las directivas sanitarias peruanas (**R.M. N° 833-2015/MINSA** para cadena de frío entre +2.0 °C y +8.0 °C y **Directiva Sanitaria N° 152/MINSA** para tiempos de isquemia fría en trasplantes). La plataforma responde directamente a los desafíos de congestión vehicular limeña (índice TomTom: 34 min/10 km) mediante alertas de preaviso hospitalario (10 min) y protección frente a desconexiones eléctricas vehiculares de 12V.
+2. **Alineación Normativa con la Realidad Asistencial de Lima Metropolitana:**  
+   El proceso de *Needfinding* con entrevistas reales y el modelado de nuestros *User Personas* (**Aldair Lazaro**, personal de transporte asistencial en ruta; y **Gianfranco Timoteo**, supervisor hospitalario y coordinador de cadena de frío) permitieron anclar la solución a las directivas sanitarias peruanas (**R.M. N° 833-2015/MINSA** de DIGEMID para cadena de frío entre +2.0 °C y +8.0 °C y **Directiva Sanitaria N° 152/MINSA** de DIGDOT para tiempos de isquemia fría). La plataforma responde directamente a la congestión vehicular de Lima (índice TomTom: 33 min 10 s por cada 10 km) mediante alertas de preaviso hospitalario, monitoreo de peso neto con celda HX711 y respaldo frente a desconexiones vehiculares de 12V.
 
-3. **Gobernanza de Software y Cumplimiento del Sprint 1:**  
-   Se estableció una disciplina de gestión de configuración de software (SCM) rigurosa, basada en GitFlow, versionado semántico (SemVer 2.0.0) y Conventional Commits. Este marco metodológico permitió implementar y desplegar exitosamente en la nube la primera versión del Landing Page institucional en HTML5, CSS3 y JavaScript bajo directrices *mobile-first*, cumpliendo al 100% con los compromisos técnicos exigidos para el hito AV1.
+3. **Implementación y Despliegue Exitoso del Landing Page y la Frontend Web Application (Sprints 1 y 2):**  
+   Bajo una disciplina de gestión de configuración de software (SCM) basada en GitFlow, versionado semántico (SemVer 2.0.0) y Conventional Commits, el equipo completó satisfactoriamente los **16 Story Points del Sprint 1** (despliegue del Landing Page institucional responsive) y los **29 Story Points del Sprint 2** (construcción y despliegue en producción de la primera versión integrada de la Frontend Web Application en **Vue 3**, **PrimeVue** y **Pinia** estructurada por Bounded Contexts), cumpliendo integralmente los objetivos del hito **TB1**.
 
 ## Recomendaciones para Siguientes Hitos
 
-1. **Sprint 2 (Hito TB1 - Frontend Web Applications):**  
-   Iniciar la construcción de la aplicación web administrativa y operativa utilizando el framework reactivo **Vue 3** complementado con la biblioteca de componentes **PrimeVue** (Material Design). Priorizar los flujos de inicio de sesión seguro, verificación en dos pasos (2FA) y el tablero Kanban de despacho vehicular.
+1. **Sprint 3 (Hito AV2 - Backend RESTful Web Services & Persistencia Relacional):**  
+   Implementar y desplegar los servicios RESTful en **ASP.NET Core 10.0 (.NET 10 LTS)** con C# y **Entity Framework Core 10.0**, ejecutando las migraciones Code-First sobre **MySQL 8.0 (InnoDB)**. Priorizar los endpoints de ingesta periódica de telemetría vía HTTPS/REST desde el nodo ESP32, la evaluación de umbrales térmicos críticos (`US13`, `US14`, `US15`) y la documentación interactiva de contratos OpenAPI con Swagger UI.
 
-2. **Sprint 3 (Hito AV2 - Web Services & Telemetría IoT):**  
-   Codificar los servicios RESTful en **ASP.NET Core 10.0 (.NET 10 LTS)** con C# y Entity Framework Core, conectando la persistencia relacional en MySQL. Implementar el worker en segundo plano para el procesamiento asíncrono de mensajes MQTT provenientes de los contenedores inteligentes y habilitar la documentación interactiva con Swagger UI.
-
-3. **Sprint 4 (Hito TB2 - Release Review):**  
-   Integrar la comunicación bidireccional en tiempo real con WebSockets (SignalR) para la actualización en vivo de telemetría y alarmas en cabina de ambulancia, ejecutando pruebas exhaustivas de usabilidad según las 10 heurísticas de Nielsen con personal de salud antes de la liberación final.
+2. **Sprint 4 (Hito TB2 - Integración Full-Stack, Auditoría SHA-256 y Pruebas de Aceptación):**  
+   Integrar de extremo a extremo la aplicación frontend en Vue 3 con el Backend RESTful Web API desplegado en la nube, habilitando el cierre criptográfico de cadena de custodia mediante token OTP y la exportación de manifiestos de auditoría inmutables sellados con hash SHA-256 (`US16`, `US17`, `US18`), así como la validación integral de los escenarios Gherkin con usuarios representativos de ambos segmentos objetivo.
 
 <div style="page-break-after: always;"></div>
 
@@ -6391,7 +6518,7 @@ La integración del trabajo se realizó progresivamente, consolidando las funcio
 
 # Anexos
 
-En esta sección se consolidan los accesos a los repositorios de código fuente, despliegues públicos en la nube, herramientas de diseño colaborativo y registros audiovisuales institucionales correspondientes a la entrega **AV1 (Semana 4)** del proyecto **Medical SMARTBOX (NeonCode)**.
+En esta sección se consolidan los accesos a los repositorios de código fuente, despliegues públicos en la nube, herramientas de diseño colaborativo y registros audiovisuales institucionales correspondientes a la entrega **TB1 (Semana 7 — Sprints 1 y 2)** del proyecto **Medical SMARTBOX (NeonCode)**.
 
 ***
 
@@ -6399,10 +6526,14 @@ En esta sección se consolidan los accesos a los repositorios de código fuente,
 
 * **Repositorio Central del Informe Técnico (Project Report):**  
   [https://github.com/NeonCode-UPC/report](https://github.com/NeonCode-UPC/report)
-* **Repositorio del Landing Page Institucional (Sprint 1):**  
+* **Repositorio del Landing Page Institucional (Sprint 1 & Sprint 2):**  
   [https://github.com/NeonCode-UPC/landing-page](https://github.com/NeonCode-UPC/landing-page)
 * **Despliegue Público Activo del Landing Page (GitHub Pages):**  
   [https://neoncode-upc.github.io/landing-page/](https://neoncode-upc.github.io/landing-page/)
+* **Repositorio de la Frontend Web Application en Vue 3 + PrimeVue (Sprint 2):**  
+  [https://github.com/NeonCode-UPC/frontend](https://github.com/NeonCode-UPC/frontend)
+* **Despliegue Público Activo de la Frontend Web Application (GitHub Pages):**  
+  [https://neoncode-upc.github.io/frontend/home](https://neoncode-upc.github.io/frontend/home)
 * **Organización Oficial del Proyecto en GitHub:**  
   [https://github.com/NeonCode-UPC](https://github.com/NeonCode-UPC)
 
@@ -6410,10 +6541,13 @@ En esta sección se consolidan los accesos a los repositorios de código fuente,
 
 ## Anexo B. Tableros Digitales y Prototipos Interactivos
 
-* **Lienzo Colaborativo de Big Picture EventStorming (Miro):**  
+* **Lienzo Colaborativo de Big Picture y Design-Level EventStorming (Miro):**  
   [Medical SMARTBOX - Miro Board](https://miro.com/app/board/uXjVHnHEONU=/?share_link_id=336672614310)
 * **Prototipo Interactivo de Alta Fidelidad (Figma):**  
   [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
+* **Tableros de Gestión de Sprints (Trello):**  
+  * [Trello Board - Sprint 1](https://trello.com/b/q1ePQa65/neoncode-sprint-1)
+  * [Trello Board - Sprint 2](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
 
 ***
 
@@ -6488,7 +6622,9 @@ Todos los recursos audiovisuales se encuentran alojados en la infraestructura in
 </table>
 </div>
 
-### Video Demostrativo de Producto
+### Videos Demostrativos de Producto (Sprint Review)
 
 * **Video de Demostración del Landing Page Desplegado (Sprint 1):**  
   [Demostración en Video - Landing Page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
+* **Video de Demostración de la Frontend Web Application (Sprint 2 — TB1):**  
+  [Demostración en Video - Frontend Web Application](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
