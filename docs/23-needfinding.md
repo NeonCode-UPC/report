@@ -152,7 +152,7 @@ El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de 
 ### Síntesis de Necesidades Priorizadas
 
 | Prioridad | Necesidad | Criterio de validación |
-|:---:|---|---|
+| :--------: | :------------------------------------- | :--------------------------------------------------- |
 | 1 | Conocer condición y ubicación de la carga en tiempo casi real. | El usuario identifica estado, vigencia y riesgo sin recurrir a otro canal. |
 | 2 | Recibir alertas accionables y priorizadas. | Cada alerta muestra severidad, causa, impacto, responsable y próximo paso. |
 | 3 | Mantener cadena de custodia verificable. | Cada evento registra fecha, hora, actor y evidencia. |

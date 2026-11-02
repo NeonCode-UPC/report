@@ -1,4 +1,4 @@
-<div class="cover-page" align="center" style="text-align: center; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.25;">
+<div id="carátula" class="cover-page" align="center" style="text-align: center; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.25;">
 <div align="center" style="margin: 0 0 8mm 0;">
 <img src="assets/images/logo_upc.png" alt="UPC Logo" class="cover-logo" width="52" height="52" style="width: 13.5mm !important; height: 13.5mm !important; display: block; margin: 0 auto;" />
 </div>

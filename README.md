@@ -1,4 +1,4 @@
-<div class="cover-page" align="center" style="text-align: center; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.25;">
+<div id="carátula" class="cover-page" align="center" style="text-align: center; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.25;">
 <div align="center" style="margin: 0 0 8mm 0;">
 <img src="assets/images/logo_upc.png" alt="UPC Logo" class="cover-logo" width="52" height="52" style="width: 13.5mm !important; height: 13.5mm !important; display: block; margin: 0 auto;" />
 </div>
@@ -67,7 +67,7 @@
 El presente Registro de Versiones del Informe documenta la trazabilidad evolutiva, iterativa y colaborativa de la memoria técnica del proyecto **Medical SMARTBOX** a lo largo de su ciclo de vida de desarrollo. En estricta observancia del estándar de versionado semántico (*Semantic Versioning 2.0.0*) y de los criterios de evaluación de la asignatura **1ASI0730 Aplicaciones Web**, se registran de forma estructurada las incorporaciones de secciones, diagramas de arquitectura, modelos de dominio, historias de usuario, especificaciones de bases de datos y evidencias de implementación del primer ciclo ágil (Sprint 1) junto con el despliegue del Landing Page institucional, así como las mejoras producto de las revisiones internas de calidad del equipo **NeonCode** para la entrega oficial del **Hito TB1 (Semana 7)**, complementado con la hoja de ruta planificada para los hitos sucesivos del proyecto.
 
 | Versión | Fecha | Autor | Descripción de modificación |
-| :---: | :---: | :--- | :--- |
+| :--------- | :----------- | :----------------- | :----------------------------------------------------------- |
 | **V1.0.0** | 08/09/2026 | NeonCode Team | **Inicialización del Repositorio y Andamiaje Documental:** Creación de la estructura base del repositorio en la organización pública de GitHub (`NeonCode-UPC/report`). Configuración del modelo de ramificación GitFlow (`main`, `develop`), convenciones Conventional Commits y estructura de directorios `docs/` y `assets/`. Elaboración de la Carátula institucional según las directrices y modelo del docente Velásquez Núñez, y generación del esqueleto Markdown para todos los capítulos. |
 | **V1.1.0** | 09/09/2026 | Espinoza Flores, Aaron André<br>Munayco Apolaya, Maria Luisa | **Relevamiento de Requisitos, Marco Estratégico e Investigación de Mercado:** Elaboración del Capítulo I completo: 1.1 Startup Profile (misión, visión y perfiles de integrantes), 1.2 Solution Profile (problemática 5W2H sustentada en fallas de cadena de frío en ambulancias de Lima Metropolitana, formulación del proceso Lean UX con Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) y 1.3 Segmentos Objetivo (delimitación del Segmento 1: operadores de transporte asistencial y ambulancias, y Segmento 2: centros sanitarios, bancos de sangre y farmacéuticas). Desarrollo del Capítulo II: 2.1 Competidores (análisis competitivo de mercado real frente a Sensitech, Tracklink Perú y Controlant) y 2.2 Entrevistas (diseño de guías semiestructuradas, registro de 6 sesiones con enlaces a video y análisis de hallazgos cualitativos). |
 | **V1.2.0** | 14/09/2026 | Jaramillo Mayta, Jhon Jordy<br>Munayco Apolaya, Maria Luisa<br>Santos Minaya, Renzo Piero | **Needfinding, Modelado de Dominio y Especificación Ágil:** Elaboración del Capítulo 2.3 Needfinding completo (User Personas para ambos segmentos: Aldair Lazaro y Gianfranco Timoteo; User Task Matrix priorizada, User Journey Mapping As-Is y Empathy Maps). Modelado del Capítulo 2.4 (Big Picture EventStorming en Miro cubriendo el ciclo de despacho, monitoreo térmico IoT y entrega asistencial) y Capítulo 2.5 (Ubiquitous Language formal categorizado por Bounded Contexts). Desarrollo del Capítulo III completo: 3.1 User Stories (18 historias de usuario épicas y técnicas redactadas bajo sintaxis Gherkin Given-When-Then en español con criterios de aceptación rigurosos), 3.2 Impact Mapping (Goal → Actor → Impact → Deliverable) y 3.3 Product Backlog priorizado por valor asistencial. Elaboración de las Guías de Estilo (4.1) y Arquitectura de Información (4.2). |
@@ -107,7 +107,7 @@ Para garantizar la integridad estructural, la trazabilidad histórica de los cam
 La siguiente matriz resume la distribución formal de responsabilidades y las aportaciones técnicas destacadas de cada miembro del equipo durante el desarrollo del primer avance (AV1) y de la primera entrega parcial (TB1):
 
 | Integrante | Usuario GitHub | Rol Principal | Secciones y Capítulos Asignados (AV1 y TB1) | Aportaciones Técnicas Destacadas |
-| :--- |:--------------:| :---: | :--- | :--- |
+| :--------------- | :----------: | :--------------: | :--------------------------- | :--------------------------- |
 | **Espinoza Flores, Aaron André** |    `@psure`    | Research & Entrevistas | **Capítulo I completo:**<br>• 1.1 Startup Profile<br>• 1.2 Solution Profile (5W2H, Lean UX)<br>• 1.3 Segmentos Objetivo<br>**Capítulo II:**<br>• 2.1 Competidores<br>• 2.2 Entrevistas<br>**Sprint 2 (TB1):**<br>• Bounded Contexts *Critical Alerting* e *IAM* | Formulación de la problemática clínica 5W2H sustentada en pérdidas de cadena de frío en ambulancias; elaboración del Lean UX Canvas; delimitación demográfica y cualitativa de los dos segmentos objetivo; diseño y análisis de entrevistas semiestructuradas; desarrollo de módulos de alertas e identidad en Sprint 2. |
 | **Jaramillo Mayta, Jhon Jordy** |  `@Marklnz1`   | Arquitecto de Software | **Capítulo II:**<br>• 2.4 Big Picture EventStorming<br>• 2.5 Ubiquitous Language<br>**Capítulo IV:**<br>• 4.6 Domain-Driven Architecture (C4)<br>• 4.7 Software OO Design (UML)<br>• 4.8 Database Design (ERD)<br>**Sprint 2 (TB1):**<br>• Bounded Context *Smart Container & Telemetry* | Modelado colaborativo en Miro del Big Picture EventStorming; redacción del Ubiquitous Language; consolidación táctica en 5 Bounded Contexts; diagramas C4 canónicos (Contexto, Contenedores, Componentes); Diagramas de Clases UML con agregados ricos y diseño relacional en 3NF con UUIDv7 (RFC 9562). |
 | **Munayco Apolaya, Maria Luisa** | `@malumunayco` | UX/UI Designer | **Capítulo II:**<br>• 2.3 Needfinding (Personas, Task Matrix, Journey Maps, Empathy)<br>**Capítulo IV:**<br>• 4.1 Style Guidelines<br>• 4.2 Information Architecture<br>• 4.3 a 4.5 UI/UX Wireframes & Mockups<br>**Sprint 2 (TB1):**<br>• Bounded Context *Chain of Custody* | Creación de User Personas (Aldair Lazaro y Gianfranco Timoteo), Journey Maps As-Is y mapas de empatía en UXPressia; definición del Design System clínico y Guías de Estilo; arquitectura de la información (SEO, taxonomía, navegación); diseño interactivo en Figma y módulo de custodia en Sprint 2. |
@@ -128,7 +128,7 @@ Cada integrante trabajó en su respectiva rama `feature/*`, sometiendo sus avanc
 Los datos cuantitativos extraídos del historial de Git para el repositorio de documentación (`NeonCode-UPC/report`) durante el hito **AV1** evidencian una participación activa y balanceada de todos los miembros:
 
 | Integrante | Ramas Principales de Aporte | Commits Realizados | Líneas de Markdown Agregadas (aprox.) | Archivos Aportados / Editados |
-| :--- | :--- | :---: | :---: | :--- |
+| :----------------- | :------------------------- | :----------: | :----------: | :--------------------------- |
 | **Aaron André Espinoza Flores** | `feature/ch1-startup-solution`, `feature/ch2-research` | 5 | ~1,200 | `11-startup-profile.md`, `12-solution-profile.md`, `13-segmentos-objetivos.md`, `21-competidores.md`, `22-entrevistas.md` |
 | **Jhon Jordy Jaramillo Mayta** | `feature/ch2-domain-modeling`, `feature/ch4-architecture` | 8 | ~4,800 | `24-big-picture-eventstorming.md`, `25-ubiquitous-language.md`, `46-dd-software-architecture.md`, `47-software-object-oriented-design.md`, `48-database-design.md` |
 | **Maria Luisa Munayco Apolaya** | `feature/ch2-needfinding`, `feature/ch4-ux-ui` | 6 | ~1,950 | `23-needfinding.md`, `41-style-guidelines.md`, `42-information-architecture.md`, `43-landing-page-ui-design.md`, `44-web-application-uxui-design.md`, `45-web-application-prototyping.md` |
@@ -182,7 +182,7 @@ Durante las semanas 5 a 7 correspondientes al **Hito TB1 (Sprint 2)**, el equipo
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
 - [Contenido](#contenido)
 - [Student Outcome](#student-outcome)
-- [Capítulo I: Introducción](#capítulo-i-introducción)
+- [Capítulo I: Introducción](#11-startup-profile)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -194,7 +194,7 @@ Durante las semanas 5 a 7 correspondientes al **Hito TB1 (Sprint 2)**, el equipo
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+- [Capítulo II: Requirements Elicitation & Analysis](#21-competidores)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
@@ -208,20 +208,20 @@ Durante las semanas 5 a 7 correspondientes al **Hito TB1 (Sprint 2)**, el equipo
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
   - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
-    - [2.4.1. Leyenda de Elementos del EventStorming (Convención de Colores)](#241-leyenda-de-elementos-del-eventstorming-convención-de-colores)
-    - [2.4.2. Desglose Cronológico del Flujo de Eventos del Dominio](#242-desglose-cronológico-del-flujo-de-eventos-del-dominio)
+    - [2.4.1. Leyenda de Elementos del EventStorming (Convención de Colores)](#241-análisis-del-dominio-y-hallazgos-de-la-sesión)
+    - [2.4.2. Desglose Cronológico del Flujo de Eventos del Dominio](#242-flujo-detallado-de-comandos-eventos-y-políticas-de-dominio)
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
     - [2.5.1. Bounded Context: Identity, Access & Subscriptions (IAM)](#251-bounded-context-identity-access--subscriptions-iam)
     - [2.5.2. Bounded Context: Smart Container & Telemetry Monitoring](#252-bounded-context-smart-container--telemetry-monitoring)
     - [2.5.3. Bounded Context: Medical Transport Planning & Dispatching](#253-bounded-context-medical-transport-planning--dispatching)
     - [2.5.4. Bounded Context: Critical Alerting & Incident Response](#254-bounded-context-critical-alerting--incident-response)
     - [2.5.5. Bounded Context: Chain of Custody & Traceability](#255-bounded-context-chain-of-custody--traceability)
-- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+- [Capítulo III: Requirements Specification](#31-user-stories)
   - [3.1. User Stories](#31-user-stories)
   - [3.2. Impact Mapping](#32-impact-mapping)
   - [3.3. Product Backlog](#33-product-backlog)
-    - [3.3.1. Engineering Tasks (Desglose del Sprint 1)](#331-engineering-tasks-desglose-del-sprint-1)
-- [Capítulo IV: Product Design](#capítulo-iv-product-design)
+    - [3.3.1. Engineering Tasks (Desglose del Sprint 1)](#331-engineering-tasks)
+- [Capítulo IV: Product Design](#41-style-guidelines)
   - [4.1. Style Guidelines](#41-style-guidelines)
     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
     - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
@@ -242,20 +242,20 @@ Durante las semanas 5 a 7 correspondientes al **Hito TB1 (Sprint 2)**, el equipo
   - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
   - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
     - [4.6.1. Design-Level EventStorming](#461-design-level-eventstorming)
-    - [4.6.2. Software Architecture Context Diagram (C4)](#462-software-architecture-context-diagram-c4)
-    - [4.6.3. Software Architecture Container Diagrams (C4)](#463-software-architecture-container-diagrams-c4)
-    - [4.6.4. Software Architecture Components Diagrams (C4)](#464-software-architecture-components-diagrams-c4)
+    - [4.6.2. Software Architecture Context Diagram (C4)](#462-software-architecture-context-diagram)
+    - [4.6.3. Software Architecture Container Diagrams (C4)](#463-software-architecture-container-diagrams)
+    - [4.6.4. Software Architecture Components Diagrams (C4)](#464-software-architecture-components-diagrams)
   - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
     - [4.7.1. Class Diagrams](#471-class-diagrams)
   - [4.8. Database Design](#48-database-design)
     - [4.8.1. Database Diagrams](#481-database-diagrams)
-- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
+- [Capítulo V: Product Implementation, Validation & Deployment](#51-software-configuration-management)
   - [5.1. Software Configuration Management](#51-software-configuration-management)
     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
     - [5.1.2. Source Code Management](#512-source-code-management)
     - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page--services-implementations)
     - [5.2.1. Sprint 1](#521-sprint-1)
       - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
       - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
@@ -277,10 +277,9 @@ Durante las semanas 5 a 7 correspondientes al **Hito TB1 (Sprint 2)**, el equipo
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
-  - [Anexo A. Repositorios Oficiales y Despliegues en la Nube](#anexo-a-repositorios-oficiales-y-despliegues-en-la-nube)
+  - [Anexo A. Repositorios Oficiales y Despliegues en la Nube](#anexo-a-repositorios-de-código-fuente-y-despliegues-en-la-nube)
   - [Anexo B. Tableros Digitales y Prototipos Interactivos](#anexo-b-tableros-digitales-y-prototipos-interactivos)
-  - [Anexo C. Registro Audiovisual de Entrevistas y Demostración Funcional](#anexo-c-registro-audiovisual-de-entrevistas-y-demostración-funcional)
-  - [Anexo D. Glosario de Acrónimos y Normativa Sanitaria Referencial](#anexo-d-glosario-de-acrónimos-y-normativa-sanitaria-referencial)
+  - [Anexo C. Registro Audiovisual de Entrevistas y Demostración Funcional](#anexo-c-grabaciones-audiovisuales-y-entrevistas-a-profundidad)
 
 <div style="page-break-after: always;"></div>
 
@@ -322,7 +321,7 @@ El enfoque de NeonCode combina innovación tecnológica con responsabilidad soci
 En esta sección se presentarán los perfiles de los integrantes del equipo, incluyendo fotografía, código de estudiante, nombres y apellidos, carrera, principales conocimientos técnicos y habilidades que aportan al desarrollo del proyecto. Cada integrante deberá evidenciar su participación en la investigación, documentación, diseño, implementación, pruebas y despliegue de la solución.
 
 | Foto | Integrante | Código | Carrera | Perfil y aporte al proyecto |
-| :---: | --- | :---: | :---: | --- |
+| :-----------: | :--------------- | :---------: | :------------: | :--------------------------------------------- |
 | <img src="assets/chapter-1/renzo.jpg" alt="Renzo Piero Santos Minaya" width="100"/> | **Renzo Piero Santos Minaya** | u202114790 | Ingeniería de Software | Estudiante de Ingeniería de Software con conocimientos en arquitectura orientada al dominio (DDD), backend en ASP.NET Core (.NET 10) y modelado relacional en MySQL. Aporta en el diseño arquitectónico C4, especificación de contratos OpenAPI y servicios de backend. |
 | <img src="assets/chapter-1/aaron.jpg" alt="Aaron André Espinoza Flores" width="100"/> | **Aaron André Espinoza Flores** | u202222859 | Ingeniería de Software | Estudiante de Ingeniería de Software con experiencia en diseño de interacción, historias de usuario en Gherkin y maquetación frontend. Lidera el desarrollo de componentes de captura en el Landing Page y colabora en Needfinding. |
 | <img src="assets/chapter-1/jhon.png" alt="Jhon Jordy Jaramillo Mayta" width="100"/> | **Jhon Jordy Jaramillo Mayta** | u202520310 | Ingeniería de Software | Estudiante de Ingeniería de Software con enfoque en gestión de identidad, control de acceso y seguridad web. Aporta en el modelado del Bounded Context de IAM, flujos de autenticación segura 2FA/OTP y despliegue del Landing Page. |
@@ -345,7 +344,7 @@ La solución propuesta, **Medical SMARTBOX**, consiste en una plataforma web Saa
 Para delimitar con precisión el alcance del problema y el perfil de la solución, se aplica la metodología **5W2H** (*What, Why, Who, Where, When, How, How Much*):
 
 | Interrogante (5W2H) | Dimensión de Análisis | Descripción Fundamentada en el Dominio Asistencial |
-| :--- | :--- | :--- |
+| :--------------- | :--------------------- | :------------------------------------------------------------- |
 | **What?** *(¿Qué ocurre?)* | Naturaleza del problema y propuesta tecnológica | Ruptura inadvertida de la cadena de frío ($+2\,^\circ\text{C}$ a $+8\,^\circ\text{C}$), manipulación sin control físico y ausencia de trazabilidad digital en el transporte móvil de muestras biológicas, hemocomponentes y órganos. Se resuelve mediante el ecosistema ciber-físico **Medical SMARTBOX** (contenedor IoT activo + plataforma web en Vue 3 y API RESTful en ASP.NET Core 10). |
 | **Why?** *(¿Por qué ocurre?)* | Causas raíz y justificación normativa | Por el uso generalizado de contenedores isotérmicos pasivos sin telemetría en ruta, el llenado manual de actas en papel vulnerables a extravío o alteración post-facto, y la desconexión entre la ambulancia en tránsito y el equipo clínico receptor. Esto contraviene las exigencias de trazabilidad del **Manual de Buenas Prácticas de Distribución y Transporte (RM N.° 833-2015/MINSA — DIGEMID)**. |
 | **Who?** *(¿Quiénes son los afectados?)* | Actores directos e indirectos | **Segmento 1:** Personal de transporte asistencial (conductores de ambulancia, paramédicos y técnicos del SAMU 106, EsSalud STAE y flotas privadas).<br>**Segmento 2:** Personal clínico receptor, coordinadores de procura de órganos, jefes de banco de sangre, farmacias hospitalarias y auditores de calidad de clínicas e IPRESS de nivel II y III. |
@@ -419,7 +418,7 @@ We will know we are successful when users can monitor active medical transports 
 ### 1.2.2.4. Lean UX Canvas
 
 | Sección | Descripción |
-|---|---|
+| :------------------------ | :--------------------------------------------------------------------------- |
 | Business problem | Las instituciones de salud necesitan transportar medicamentos, órganos e insumos sensibles con mayor control, trazabilidad y capacidad de respuesta ante incidentes. |
 | Business outcomes | Reducir incidentes de conservación, mejorar la visibilidad del traslado, disminuir incertidumbre sobre tiempos de llegada y generar evidencia histórica. |
 | Users | Personal de transporte asistencial (conductores y paramédicos) y personal clínico/logístico de instituciones hospitalarias receptoras. |
@@ -1038,7 +1037,7 @@ El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de 
 ### Síntesis de Necesidades Priorizadas
 
 | Prioridad | Necesidad | Criterio de validación |
-|:---:|---|---|
+| :--------: | :------------------------------------- | :--------------------------------------------------- |
 | 1 | Conocer condición y ubicación de la carga en tiempo casi real. | El usuario identifica estado, vigencia y riesgo sin recurrir a otro canal. |
 | 2 | Recibir alertas accionables y priorizadas. | Cada alerta muestra severidad, causa, impacto, responsable y próximo paso. |
 | 3 | Mantener cadena de custodia verificable. | Cada evento registra fecha, hora, actor y evidencia. |
@@ -1372,7 +1371,7 @@ Conforme a las directrices fundamentales de *Domain-Driven Design* (Eric Evans, 
 Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a su correspondiente *Bounded Context*, garantizando que cada concepto posea una semántica unívoca y bien delimitada dentro de las fronteras transaccionales del dominio. La estructuración en cinco (5) Bounded Contexts dentro de este glosario rige de manera consistente a lo largo de todo el informe técnico, desde los requisitos hasta el diseño orientado a objetos y la base de datos relacional. A continuación, se presenta la tabla consolidada en orden alfabético estricto (A-Z) como índice lexicográfico de referencia rápida, seguida del desglose analítico detallado por cada subdominio según el orden canónico del sistema:
 
 | # | Ubiquitous Term (English / Español) | Bounded Context Asociado | Tipo de Artefacto DDD |
-|:---:|:---|:---|:---|
+| :------: | :--------------------------------- | :----------------------------------- | :--------------------- |
 | 1 | **Acceptable Temperature Range (Rango Térmico Aceptable)** | Medical Transport Planning & Dispatching | Value Object |
 | 2 | **Audit Trail & Digital Manifest (Rastro de Auditoría y Manifiesto Digital)** | Chain of Custody & Traceability | Aggregate Root |
 | 3 | **Automated Maintenance and Sensor Calibration (Mantenimiento y Calibración Automatizada)** | Smart Container & Telemetry Monitoring | Domain Policy |
@@ -1641,7 +1640,7 @@ Cada historia de usuario mantiene trazabilidad directa con los *User Personas* d
 Todos los criterios de aceptación siguen la especificación **Gherkin** (*Dado que / Cuando / Entonces*), redactados en tercera persona, tiempo presente y enfocados en las reglas de negocio del dominio de salud y logística médica, omitiendo referencias a elementos de interfaz de usuario.
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-| :--- | :--- | :--- | :--- | :--- |
+| :--------- | :----------------- | :------------------------------- | :--------------------------- | :----------- |
 | **EP01** | Identity & Access Management | Épica destinada a la gestión de accesos, roles, autenticación segura y perfiles de instituciones de salud. | N/A | N/A |
 | **US01** | Registro de Institución de Salud | Como supervisor hospitalario (Gianfranco Timoteo), deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores. | **Dado que** la institución de salud no cuenta con una cuenta activa,<br>**Cuando** proporciona el registro institucional y credenciales de acceso válidas,<br>**Entonces** el sistema genera la cuenta corporativa y notifica la activación del perfil. | EP01 |
 | **US02** | Autenticación de Personal de Emergencia | Como personal médico de emergencia (Aldair Lazaro), deseo autenticarme en la aplicación web para acceder al estado de la carga transportada en tiempo real. | **Dado que** el usuario médico cuenta con credenciales activas,<br>**Cuando** ingresa sus datos de acceso autorizados,<br>**Entonces** el sistema valida la identidad y concede acceso al panel de supervisión. | EP01 |
@@ -2086,7 +2085,7 @@ En esta sección se presenta el **Product Backlog** priorizado para la plataform
 El backlog se encuentra organizado secuencialmente bajo un criterio estricto de **valor de negocio para nuestros segmentos objetivo**, iniciando con la difusión comercial y captación de prospectos institucionales (*Landing Page*), seguido del onboarding hospitalario y los servicios de monitoreo IoT, aprovisionamiento, alertas críticas y cadena de custodia.
 
 | Order / Priority | Epic ID | User Story ID | Título de la Historia | Descripción | Story Points (Fibonacci) | Sprint Asignado |
-| :---: | :---: | :---: | :--- | :--- | :---: | :---: |
+| :------: | :--------: | :-------: | :------------------- | :---------------------------------- | :------: | :--------: |
 | **01** | EP02 | **US04** | Exploración de Propuesta de Valor Logística | Como visitante comercial institucional (Gianfranco Timoteo), deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación. | 2 | Sprint 1 |
 | **02** | EP02 | **US05** | Solicitud de Demostración Corporativa | Como visitante comercial institucional (Gianfranco Timoteo), deseo enviar un formulario de contacto para solicitar una demostración del sistema en mi centro hospitalario. | 2 | Sprint 1 |
 | **03** | EP02 | **US06** | Consulta de Preguntas Frecuentes | Como visitante comercial institucional (Gianfranco Timoteo), deseo revisar la sección de FAQ en el Landing Page para resolver dudas sobre la integración IoT en ambulancias. | 1 | Sprint 1 |
@@ -5850,7 +5849,7 @@ En esta sección se detalla la planificación, asignación de responsabilidades 
 El **Sprint Planning 1** formaliza los aspectos principales de la reunión de planificación del primer ciclo de desarrollo (Sprint 1). Conforme a las consideraciones oficiales del hito AV1 (Semana 4), el foco prioritario consistió en diseñar, implementar y desplegar en la nube la primera versión oficial del **Landing Page institucional** responsive para capturar la demanda B2B de operadores logísticos y centros de salud, estableciendo simultáneamente los cimientos arquitectónicos del backend en ASP.NET Core 10.0 y la persistencia relacional en MySQL 8.0.
 
 | Sprint # | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------- | :--------------------------------------------------------------------------- |
 | **Sprint Planning Background** | **Sprint Planning Background**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Date | 2026-09-08                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Time | 19:00 - 21:30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -5961,11 +5960,11 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1)
 
 | Sprint # | Sprint 1 |
-|---|---|
+| :----------------------- | :--------------------------------------------------------------------------- |
 | **User Story** | **Work-Item / Task** |
 
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In Process / To Review / Done)** |
-|---|---|---|---|---|---:|-----------------|---|
+| :-----: | :------------- | :-------: | :---------------- | :--------------------------- | :-----: | :---------- | :-----: |
 | US04 | Exploración de Propuesta de Valor Logística | TSK-04-01 | Maquetación HTML5/CSS3 de secciones Hero y Propuesta | Estructuración semántica de Hero, badges térmicos y características de contenedores IoT. | 6 h | Maria Munayco   | Done |
 | US04 | Exploración de Propuesta de Valor Logística | TSK-04-02 | Integración de diseño responsive mobile-first | Adaptación del layout para diferentes tamaños de pantalla. | 4 h | Renzo Santos    | Done |
 | US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza  | Done |
@@ -6164,7 +6163,7 @@ En esta sección se detalla nuestra organización para el segundo entregable (TB
 El Sprint Planning 2 tuvo como propósito establecer el objetivo, alcance y responsabilidades del segundo ciclo de desarrollo. El equipo priorizó las historias de usuario relacionadas con el registro de unidades de ambulancia, la vinculación de contenedores inteligentes y la gestión de información de telemetría.
 
 | **Sprint #** | **Sprint 2**                                                                                                                                                                                                             |
-|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------- | :--------------------------------------------------------------------------- |
 | **Sprint Planning Background** | **Sprint Planning 2**                                                                                                                                                                                                    |
 | **Date** | 2026-10-06                                                                                                                                                                                                               |
 | **Time** | 20:30 PM                                                                                                                                                                                                                 |
@@ -6194,7 +6193,7 @@ Para el Sprint 2 se estableció la matriz de liderazgo y colaboración considera
 **L = Lead / C = Collaborator**
 
 | **Team Member (Last Name, First Name)** | **GitHub Username** | **1. Identity, Access & Subscriptions (IAM)** **(L/C)** | **2. Smart Container & Telemetry Monitoring** **(L/C)** | **3. Medical Transport Planning & Dispatching** **(L/C)** | **4. Critical Alerting & Incident Response** **(L/C)** | **5. Chain of Custody & Traceability** **(L/C)** |
-|---|---|---|---|---|---|---|
+| :--------------------- | :------------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | **Jaramillo Mayta, Jhon Jordy** | `Marklnz1` | C | **L** | C | C | C |
 | **Espinoza Flores, Aaron André** | `psure` | **L** | C | C | **L** | C |
 | **Munayco Apolaya, Maria Luisa** | `malumunayco` | C | C | C | C | **L** |
@@ -6213,6 +6212,7 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
 
 <table>
+  <colgroup><col style="width: 7%;"><col style="width: 14%;"><col style="width: 9%;"><col style="width: 17%;"><col style="width: 28%;"><col style="width: 7%;"><col style="width: 11%;"><col style="width: 7%;"></colgroup>
   <tr>
     <td><strong>Sprint #</strong></td>
     <td colspan="7"><strong>Sprint 2</strong></td>
@@ -6392,7 +6392,7 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
 Durante el Sprint 2 se realizaron avances en la implementación e integración de los principales módulos de la solución, incluyendo Identity & Access Management, Alerting, Medical Transport Planning, Chain of Custody y Smart Container & Telemetry. Estos avances se evidencian mediante los commits realizados en el repositorio del frontend durante el 06/10/2026.
 
 | **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
-|---|---|:-:|---|---|---|
+| :----------: | :---------: | :--------: | :------------------------- | :---------------------------- | :----------: |
 | `frontend` | `develop` | `e4a91c2` | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
 | `frontend` | `develop` | `b72d08f` | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
 | `frontend` | `develop` | `91c4e3a` | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
