@@ -8,7 +8,7 @@
 **Docente:** Velásquez Núñez, Ángel Augusto  
 **Startup / Equipo:** NeonCode  
 **Producto:** Medical SMARTBOX  
-**Período Académico:** `202620` (Hito Actual: **TB1 — Versión `2.0.0`**)
+**Período Académico:** `202620` (Hito Actual: **TB1 — Versión [`2.1.0`](CHANGELOG.md)**)
 
 ---
 
@@ -49,6 +49,7 @@ report/
 ├── metadata.yaml                            # Variables globales de título, autores y diseño
 ├── bibtex.bib                               # Base de datos bibliográfica en formato BibTeX
 ├── Makefile                                 # Automatización de compilación (make pdf / make clean)
+├── CHANGELOG.md                             # Historial de versiones SemVer (Keep a Changelog)
 └── README.md                                # Punto de entrada e índice maestro del repositorio
 ```
 
