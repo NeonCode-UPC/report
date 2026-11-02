@@ -56,7 +56,26 @@ function RawInline(el)
   return el
 end
 
+function Image(el)
+  -- Allow Markdown files in report/ and report/front-matter/ to use file-relative paths
+  -- (../assets/... or ../../assets/...) for IDE & GitHub preview while normalizing to
+  -- repository-root assets/... when compiling the unified document via Pandoc.
+  if el.src then
+    el.src = el.src:gsub("^(%.%./)+assets/", "assets/")
+  end
+  return el
+end
+
 function Link(el)
+  -- Convert relative cross-file Markdown links (e.g. ../11-startup-profile.md#section)
+  -- into internal document anchors (#section) when compiling the unified PDF/HTML report.
+  if not el.target:match("^[a-zA-Z][a-zA-Z0-9+.-]*:") then
+    local md_anchor = el.target:match("%.md#(.+)$")
+    if md_anchor then
+      el.target = "#" .. md_anchor
+    end
+  end
+
   -- When --file-scope is enabled, Pandoc prefixes internal #anchor links with filepath__.
   -- Strip the filepath__ prefix on internal anchor links so cross-file TOC links resolve cleanly.
   if el.target:sub(1, 1) == "#" and el.target:find("__") then

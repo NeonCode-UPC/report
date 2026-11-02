@@ -14,4 +14,4 @@ Las decisiones de interacción se fundamentaron directamente en la arquitectura 
   4. **Gestión de Incidentes y Excursiones Térmicas:** Notificación inmediata ante anomalías de frío, registro de causa raíz y acciones correctivas inmediatas.
   5. **Protocolo de Entrega y Cadena de Custodia:** Generación y validación de código de un solo uso (OTP) en centro hospitalario receptor y emisión de acta digital de custodia sellada.
 
-* **Visualización de Recursos:** Ver el [Anexo B](63-anexos.md#anexo-b-tableros-digitales-y-prototipos-interactivos) para el catálogo de enlaces a tableros colaborativos y prototipos interactivos.
+* **Visualización de Recursos:** Ver el [Anexo B](annexes/annex-b-collaborative-boards-and-prototypes.md#anexo-b-tableros-digitales-y-prototipos-interactivos) para el catálogo de enlaces a tableros colaborativos y prototipos interactivos.

@@ -59,7 +59,7 @@ Los datos cuantitativos extraídos del historial de Git para el repositorio de d
 A continuación, se presentan las capturas oficiales de la analítica de colaboración del repositorio del informe en GitHub:
 
 
-![Project Contributors Graph](assets/chapter-5/report-insights-av1.png)
+![Project Contributors Graph](../../assets/chapter-5/report-insights-av1.png)
 
 *Figura 0.1 - Histograma de frecuencia de commits y distribución de aportes por colaborador en el repositorio de documentación (Fuente: GitHub Insights).*
 

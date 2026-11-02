@@ -65,8 +65,8 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 
 #### Impact Map Goal 1
 
-![Impact Map Goal 1](assets/chapter-3/impact-map-goal-1.png)
+![Impact Map Goal 1](../assets/chapter-3/impact-map-goal-1.png)
 
 #### Impact Map Goal 2
 
-![Impact Map Goal 2](assets/chapter-3/impact-map-goal-2.png)
+![Impact Map Goal 2](../assets/chapter-3/impact-map-goal-2.png)

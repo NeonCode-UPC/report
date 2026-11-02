@@ -1,6 +1,6 @@
 ::: {#carátula .cover-page}
 
-![UPC Logo](assets/images/logo-upc.png){.cover-logo width=13.5mm height=13.5mm}
+![UPC Logo](../../assets/images/logo-upc.png){.cover-logo width=13.5mm height=13.5mm}
 
 Universidad Peruana de Ciencias Aplicadas  
 Carrera de Ingeniería de Software

@@ -55,7 +55,7 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 
 **Board del Sprint 1:**
 
-![Tablero Trello del Sprint 1](assets/chapter-5/sprint-1-board.png)
+![Tablero Trello del Sprint 1](../assets/chapter-5/sprint-1-board.png)
 
 
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1)
@@ -97,7 +97,7 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 
 #### Video de Demostración de Navegación (Landing Page): [Ver video aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
 
-![Vista implementada: Landing Page Principal (Hero Section)](assets/chapter-5/sprint-1-exec-hero.png)
+![Vista implementada: Landing Page Principal (Hero Section)](../assets/chapter-5/sprint-1-exec-hero.png)
 
 ### Vista implementada: Landing Page Principal (Hero Section)
 
@@ -109,10 +109,10 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Propuesta de valor clara:** Título principal de alto impacto acompañado de una breve descripción del propósito del software.
 * **Llamados a la acción (CTA):** Botones duales contrastados para redirigir rápidamente al usuario hacia la Web App o el formulario de ingreso.
 
-![Landing Page - Sección Hero](assets/chapter-4/hero-mockup.png)
+![Landing Page - Sección Hero](../assets/chapter-4/hero-mockup.png)
 *Nota: Captura de ejecución del Landing Page institucional implementado.*
 
-![Vista implementada: Formulario de Inicio de Sesión (Login)](assets/chapter-5/sprint-1-exec-login.png)
+![Vista implementada: Formulario de Inicio de Sesión (Login)](../assets/chapter-5/sprint-1-exec-login.png)
 
 ### Vista implementada: Formulario de Inicio de Sesión (Login)
 
@@ -124,7 +124,7 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Botón de acción directa:** Botón estilizado con los colores de la marca para el envío y validación de las credenciales de usuario (*Iniciar sesión*).
 * **Control de navegación:** Botón de cierre superior (X) para retornar a la Landing Page principal de manera intuitiva.
 
-![Vista implementada: Detalle de Monitoreo de Transporte en Tiempo Real](assets/chapter-5/sprint-1-exec-telemetry.png)
+![Vista implementada: Detalle de Monitoreo de Transporte en Tiempo Real](../assets/chapter-5/sprint-1-exec-telemetry.png)
 
 ### Vista implementada: Detalle de Monitoreo de Transporte en Tiempo Real
 
@@ -136,10 +136,10 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Gráfico de Historial Térmico:** Gráfica lineal automatizada que contrasta las mediciones de las últimas 6 horas frente al rango seguro permitido (2 °C - 8 °C).
 * **Metadatos de Operación:** Tarjetas informativas con los datos asignados del Conductor (M. Quispe) y la Placa del Vehículo (ABQ-742).
 
-![Landing Page - Presentación de Características](assets/chapter-4/presentacion-mockup.png)
+![Landing Page - Presentación de Características](../assets/chapter-4/presentacion-mockup.png)
 *Nota: Sección interactiva de propuesta tecnológica del Landing Page.*
 
-![Vista implementada: Módulo de Gestión de Alertas e Incidencias](assets/chapter-5/sprint-1-exec-alerts.png)
+![Vista implementada: Módulo de Gestión de Alertas e Incidencias](../assets/chapter-5/sprint-1-exec-alerts.png)
 
 ### Vista implementada: Módulo de Gestión de Alertas e Incidencias
 
@@ -152,7 +152,7 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 * **Acciones de Mitigación:** Botones interactivos de respuesta rápida (*Revisar transporte* y *Ver historial*).
 * **Feed Cronológico Histórico:** Listado lateral estructurado por prioridad de eventos y estados logísticos anteriores (Puerta abierta, Batería baja, Desvío resuelto, Entrega confirmada).
 
-![Landing Page - Footer y Conversión B2B](assets/chapter-4/cta-footer-mockup.png)
+![Landing Page - Footer y Conversión B2B](../assets/chapter-4/cta-footer-mockup.png)
 *Nota: Sección de conversión final y pie de página institucional.*
 
 ***
@@ -187,7 +187,7 @@ En estricta observancia del requisito rector del hito AV1 (*"A nivel de implemen
 
 Durante el Sprint 1, el equipo utilizó GitHub como herramienta centralizada de control de versiones y colaboración técnica. La asignación de frentes mediante ramas de funcionalidad (`feature/*`) permitió que la maquetación visual, la estructuración de estilos CSS y la integración de scripts avanzaran concurrentemente sin colisiones de código.
 
-![Team Collaboration Insights during Sprint](assets/chapter-5/report-insights-av1.png)
+![Team Collaboration Insights during Sprint](../assets/chapter-5/report-insights-av1.png)
 *Nota: Analítica de colaboración, frecuencia de confirmaciones y contribuciones del equipo NeonCode durante el Sprint 1.*
 
 ## 5.2.2. Sprint 2
@@ -244,7 +244,7 @@ La distribución permite mantener un responsable principal por aspecto y, al mis
 El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sprint en tareas técnicas que permiten organizar y controlar su implementación. El Sprint contempla **29 Story Points** distribuidos entre US07, US08, US09, US10 y US12.
 
 **Board del Sprint 2:**
-![Tablero Trello del Sprint 2](assets/chapter-5/sprint-2-board.png)
+![Tablero Trello del Sprint 2](../assets/chapter-5/sprint-2-board.png)
 
 
 **URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
@@ -293,11 +293,11 @@ En el Sprint 2 se logró avanzar en la implementación e integración de las pri
 
 **Screenshots de Identity, Access & Subscriptions (IAM)**
 
-![Vista de Usuarios y Roles (IAM)](assets/chapter-5/sprint-2-iam-users.png)
+![Vista de Usuarios y Roles (IAM)](../assets/chapter-5/sprint-2-iam-users.png)
 
 *Vista de Usuarios y Roles*
 
-![Vista de Suscripción Corporativa (IAM)](assets/chapter-5/sprint-2-iam-subscription.png)
+![Vista de Suscripción Corporativa (IAM)](../assets/chapter-5/sprint-2-iam-subscription.png)
 
 *Vista de Suscripción*
 
@@ -319,7 +319,7 @@ Se realizó el despliegue de la nueva versión del Landing Page, incorporando la
 
 **Evidencia del despliegue:**
 
-![Captura del Landing Page desplegado en GitHub Pages](assets/chapter-5/sprint-2-deploy-landing.png)
+![Captura del Landing Page desplegado en GitHub Pages](../assets/chapter-5/sprint-2-deploy-landing.png)
 
 
 *Landing Page desplegado y disponible para su visualización.*
@@ -332,7 +332,7 @@ Durante el Sprint 2 se implementó y desplegó la primera versión de la Fronten
 
 **Evidencia del despliegue:**
 
-![Captura de la Frontend Web Application desplegada en GitHub Pages](assets/chapter-5/sprint-2-deploy-webapp.png)
+![Captura de la Frontend Web Application desplegada en GitHub Pages](../assets/chapter-5/sprint-2-deploy-webapp.png)
 
 
 *Primera versión de la Frontend Web Application desplegada.*
@@ -351,6 +351,6 @@ La integración del trabajo se realizó progresivamente, consolidando las funcio
 
 **Evidencia de colaboración del equipo**
 
-![Team Collaboration Insights — Sprint 2](assets/chapter-5/sprint-2-collaboration-insights.png)
+![Team Collaboration Insights — Sprint 2](../assets/chapter-5/sprint-2-collaboration-insights.png)
 
 *Nota: Evidencia de colaboración del equipo durante el Sprint 2, mostrando la actividad registrada en GitHub mediante commits y contribuciones de los integrantes.*

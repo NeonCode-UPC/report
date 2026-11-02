@@ -24,14 +24,14 @@ Se elaboró una ficha de User Persona por segmento en UXPressia. Cada ficha se b
 
 Aldair tiene 26 años, vive en San Martín de Porres y es paramédico rescatista de ambulancia con 3 años de experiencia en emergencias prehospitalarias. Realiza entre 3 y 6 traslados asistenciales por turno y vigila al paciente y los fármacos a la vez. Registra la entrega en planillas de papel y se comunica con el hospital receptor por llamadas y WhatsApp.
 
-![User Persona - Aldair Lazaro](assets/chapter-2/user-persona-aldair.png)
+![User Persona - Aldair Lazaro](../assets/chapter-2/user-persona-aldair.png)
 *Nota: Elaboración propia en UXPressia para el Segmento 1.*
 
 **User Persona 2: Gianfranco Timoteo (Segmento 2: operadores logísticos e instituciones de salud)**
 
 Gianfranco tiene 21 años, vive en Chorrillos y es coordinador de soporte y supervisor de cadena de frío en un laboratorio clínico. Audita la recepción de muestras biológicas y reactivos, y consolida en Excel las actas recibidas en papel. Detecta discrepancias de temperatura en aproximadamente el 15 % de los envíos que recibe en horas punta.
 
-![User Persona - Gianfranco Timoteo](assets/chapter-2/user-persona-gianfranco.png)
+![User Persona - Gianfranco Timoteo](../assets/chapter-2/user-persona-gianfranco.png)
 *Nota: Elaboración propia en UXPressia para el Segmento 2.*
 
 **Trazabilidad entre las entrevistas y las personas**
@@ -98,7 +98,7 @@ El User Journey Mapping ilustra el recorrido **actual (As-Is)** de cada persona,
 | Durante | Conduce o acompaña la ambulancia en el tráfico, atiende al paciente y comunica su avance al hospital. | Celular, compartimento posterior de la ambulancia | No puede ver la temperatura sin abrir la tapa. Los baches pueden abrir el seguro sin que lo note. Estrés por la doble carga de vigilar al paciente y los fármacos. |
 | Después | Entrega la carga, el hospital mide la temperatura y firma la planilla de papel. | Planilla de papel autocopiativo, personal de farmacia | Si el termómetro marca fuera de rango, el lote puede ser rechazado. No puede demostrar a qué hora subió la temperatura. |
 
-![User Journey Map - Aldair Lazaro](assets/chapter-2/user-journey-aldair.png)
+![User Journey Map - Aldair Lazaro](../assets/chapter-2/user-journey-aldair.png)
 *Nota: Elaboración propia en UXPressia para la situación actual (As-Is) de Aldair Lazaro.*
 
 **User Journey Map 2: Gianfranco Timoteo (Segmento 2)**
@@ -111,7 +111,7 @@ El User Journey Mapping ilustra el recorrido **actual (As-Is)** de cada persona,
 | Durante | Espera la llegada de la unidad en hora punta llamando reiteradamente al transportista; al arribar la ambulancia, mide puntualmente la temperatura con termómetro infrarrojo o descarga el datalogger USB. | Bahía de recepción, termómetro de punzón/infrarrojo, datalogger USB, acta impresa | Desconoce si hubo excursiones térmicas intermedias o aperturas del cooler en el camino; en el 15 % de los envíos en hora punta detecta desviaciones recién al abrir la caja. |
 | Después | Firma o rechaza el acta en papel, transcribe manualmente las lecturas a una hoja de cálculo Excel y archiva los folios físicos para inspecciones de DIGEMID. | Planillas de papel, computadora de escritorio (Excel), archivadores físicos | Alto desgaste operativo al digitar actas dispersas, riesgo de errores de transcripción o pérdida de hojas físicas y vulnerabilidad ante auditorías de trazabilidad. |
 
-![User Journey Map - Gianfranco Timoteo](assets/chapter-2/user-journey-gianfranco.png)
+![User Journey Map - Gianfranco Timoteo](../assets/chapter-2/user-journey-gianfranco.png)
 
 *Nota: Elaboración propia en UXPressia para la situación actual (As-Is) de Gianfranco Timoteo.*
 
@@ -131,7 +131,7 @@ El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de 
 - **Pains:** No puede demostrar a qué hora subió la temperatura. Los baches abren los coolers sin que se note. Riesgo de rechazo del lote.
 - **Gains:** Contar con un registro que pruebe que la cadena de frío se mantuvo. Menos discusiones con farmacia.
 
-![Empathy Map - Aldair Lazaro](assets/chapter-2/empathy-map-aldair.png)
+![Empathy Map - Aldair Lazaro](../assets/chapter-2/empathy-map-aldair.png)
 *Nota: Elaboración propia en UXPressia para Aldair Lazaro.*
 
 **Mapa de empatía 2: Gianfranco Timoteo (Segmento 2)**
@@ -146,7 +146,7 @@ El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de 
 - **Pains:** No puede auditar la temperatura durante el trayecto. Los registros manuscritos no son confiables. Esfuerzo manual para consolidar la información.
 - **Gains:** Un registro digital continuo y confiable de la temperatura. Menos trabajo manual al consolidar datos.
 
-![Empathy Map - Gianfranco Timoteo](assets/chapter-2/empathy-map-gianfranco.png)
+![Empathy Map - Gianfranco Timoteo](../assets/chapter-2/empathy-map-gianfranco.png)
 *Nota: Elaboración propia en UXPressia para Gianfranco Timoteo.*
 
 ***

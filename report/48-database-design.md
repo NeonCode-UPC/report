@@ -371,10 +371,9 @@ Para procesar ráfagas continuas de telemetría provenientes de múltiples ambul
 
 #### **5. Diagrama Físico de Base de Datos (Entity Relationship Diagram)**
 
-<p align="center" style="text-align: center; margin: 4px 0 6px 0;">
-  ![Figura 4.8.1 - Database Physical Data Model (Entity Relationship Diagram)](assets/chapter-4/4.8.1-database-diagram.png){.database-diagram height=215mm}
-  <em style="font-size: 8pt;">Nota: Diagrama Relacional Físico de Base de Datos generado mediante Reverse Engineering en MySQL Workbench 8.0 bajo motor InnoDB.</em>
-</p>
+![Figura 4.8.1 - Database Physical Data Model (Entity Relationship Diagram)](../assets/chapter-4/4.8.1-database-diagram.png){.database-diagram height=215mm}
+
+*Nota: Diagrama Relacional Físico de Base de Datos generado mediante Reverse Engineering en MySQL Workbench 8.0 bajo motor InnoDB.*
 
 ***
 
