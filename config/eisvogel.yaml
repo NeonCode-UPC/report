@@ -1,0 +1,81 @@
+# =============================================================================
+# Pandoc + Eisvogel LaTeX Profile (config/eisvogel.yaml)
+# Uso: pandoc --defaults=config/eisvogel.yaml
+# =============================================================================
+
+from: markdown+gfm_auto_identifiers+pipe_tables+backtick_code_blocks+fenced_code_attributes+fenced_divs+bracketed_spans+footnotes+link_attributes-implicit_figures-tex_math_dollars
+to: pdf
+pdf-engine: xelatex
+template: config/templates/eisvogel.latex
+
+file-scope: true
+
+resource-path:
+  - "."
+  - "report"
+  - "report/front-matter"
+  - "report/annexes"
+  - "assets"
+  - "assets/images"
+  - "assets/diagrams"
+  - "assets/chapter-1"
+  - "assets/chapter-2"
+  - "assets/chapter-3"
+  - "assets/chapter-4"
+  - "assets/chapter-5"
+
+metadata-files:
+  - metadata.yaml
+
+citeproc: true
+bibliography: bibtex.bib
+
+input-files:
+  - report/front-matter/02-version-history.md
+  - report/front-matter/03-collaboration-insights.md
+  - report/front-matter/05-student-outcome.md
+  - report/11-startup-profile.md
+  - report/12-solution-profile.md
+  - report/13-target-segments.md
+  - report/21-competitors.md
+  - report/22-interviews.md
+  - report/23-needfinding.md
+  - report/24-big-picture-eventstorming.md
+  - report/25-ubiquitous-language.md
+  - report/31-user-stories.md
+  - report/32-impact-mapping.md
+  - report/33-product-backlog.md
+  - report/41-style-guidelines.md
+  - report/42-information-architecture.md
+  - report/43-landing-page-ui-design.md
+  - report/44-web-application-uxui-design.md
+  - report/45-web-application-prototyping.md
+  - report/46-dd-software-architecture.md
+  - report/47-software-object-oriented-design.md
+  - report/48-database-design.md
+  - report/51-software-configuration-management.md
+  - report/52-landingpage-services-implementations.md
+  - report/61-conclusions.md
+  - report/99-bibliography.md
+  - report/annexes/annex-a-repositories-and-deployments.md
+  - report/annexes/annex-b-collaborative-boards-and-prototypes.md
+  - report/annexes/annex-c-audiovisual-records.md
+
+output-file: build/upc-pre-202620-1asi0730-8150-neoncode-report-tb1.pdf
+
+toc: true
+toc-depth: 3
+number-sections: false
+syntax-highlighting: tango
+
+filters:
+  - config/filters/pagebreak-and-tables.lua
+
+variables:
+  geometry:
+    - a4paper
+    - margin=20mm
+  fontsize: 10pt
+  colorlinks: true
+  linkcolor: "0284C7"
+  urlcolor: "0284C7"
