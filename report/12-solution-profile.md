@@ -38,6 +38,8 @@ Our initial focus will be health institutions, emergency medical staff and medic
 
 We will know we are successful when users can monitor active medical transports in real time, receive timely alerts for critical incidents, reduce uncertainty about arrival times and access traceability records for completed transfers.
 
+::: {.compact-lists}
+
 ### 1.2.2.2. Lean UX Assumptions
 
 #### Business Assumptions
@@ -83,6 +85,8 @@ We will know we are successful when users can monitor active medical transports 
 - We believe we will achieve more accurate operational coordination if logistics operators attain real-time route visibility with GPS tracking and estimated arrival time.
 - We believe we will achieve better emergency planning if dispatchers and supervisors attain visibility of vehicle autonomy with fuel-level monitoring and vehicle status integration.
 - We believe we will achieve stronger transport accountability if health institutions attain historical evidence of each transfer with traceability reports and chain-of-custody records.
+
+:::
 
 ### 1.2.2.4. Lean UX Canvas
 

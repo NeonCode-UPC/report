@@ -11,7 +11,7 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
 3. **Impact:** Los cambios conductuales o beneficios esperados en los actores.
 4. **Deliverables & User Stories:** Los entregables digitales y la totalidad de las 18 historias de usuario y técnicas asociadas (con su enunciado completo) que provocan dichos impactos.
 
-***
+::: {.impact-map-lists}
 
 ### Mapeo Completo por Objetivos de Negocio (Business Goals)
 
@@ -30,8 +30,6 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
             * **US01 (Registro de Institución de Salud):** *Como supervisor hospitalario (Gianfranco Timoteo), deseo registrar mi centro médico en la plataforma NeonCode para gestionar la flota de ambulancias y contenedores.*
             * **US07 (Alta de Unidades de Ambulancia):** *Como operador logístico de salud (Gianfranco Timoteo), deseo registrar y habilitar matrículas de vehículos de transporte en el sistema para asociarles contenedores de insumos en despachos activos.*
             * **US03 (Endpoint de Autenticación de Usuarios - API):** *Como Developer, deseo disponer de un endpoint `POST /api/v1/authentication/sign-in` para validar credenciales y emitir tokens de sesión.*
-
-***
 
 #### Goal 2: Reducir en un 40% las incidencias de pérdida de insumos médicos y ruptura de la cadena de frío durante los traslados en el primer año.
 
@@ -59,14 +57,18 @@ El mapa de impacto se compone de cuatro niveles jerárquicos:
             * **US16 (Generación de Reportes de Trazabilidad):** *Como supervisor hospitalario (Gianfranco Timoteo), deseo exportar el informe del traslado médico para certificar el cumplimiento de la cadena de frío.*
             * **US18 (Consulta de Historial de Traslados - API):** *Como Developer, deseo disponer de un endpoint `GET /api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría.*
 
-***
+:::
 
 ### Captura de los Artefactos en UXPressia
 
-#### Impact Map Goal 1
+::: {.figure-block}
+**Impact Map Goal 1**
 
 ![Impact Map Goal 1](../assets/chapter-3/impact-map-goal-1.png)
+:::
 
-#### Impact Map Goal 2
+::: {.figure-block}
+**Impact Map Goal 2**
 
 ![Impact Map Goal 2](../assets/chapter-3/impact-map-goal-2.png)
+:::

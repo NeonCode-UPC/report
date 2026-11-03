@@ -83,6 +83,8 @@ El modelo de datos relacional de Medical SMARTBOX ha sido diseñado bajo una est
 
 #### **2. Diccionario de Datos Exhaustivo por Bounded Context**
 
+::: {.db-dict-table}
+
 A continuación se detalla la especificación formal de las 11 tablas del sistema relacional agrupadas por sus Bounded Contexts, cubriendo de forma estricta las necesidades operativas del **Segmento 1 (Ambulancias y Logística)** y el **Segmento 2 (Hospitales y Laboratorios B2B)**:
 
 ***
@@ -107,6 +109,8 @@ Almacena los niveles de suscripción B2B que determinan la capacidad operativa d
 | `telemetry_data_retention_months` | `INT` | NOT NULL | `DEFAULT 12, CHECK (> 0)` | Período de retención de telemetría histórica conforme a normativa DIGEMID. |
 | `is_active` | `TINYINT(1)` | NOT NULL | `DEFAULT 1` | Indicador booleano de vigencia comercial del plan. |
 | `created_at` | `DATETIME(6)` | NOT NULL | `DEFAULT CURRENT_TIMESTAMP(6)` | Fecha y hora UTC de registro del plan en la plataforma. |
+
+\newpage
 
 ###### **Tabla 2: `hospital_institutions`**
 
@@ -150,8 +154,6 @@ Gestiona las credenciales y perfiles profesionales autorizados en ambos segmento
 | `last_login_at` | `DATETIME(6)` | NULL | `—` | Marca temporal UTC del último inicio de sesión autenticado. |
 | `created_at` | `DATETIME(6)` | NOT NULL | `DEFAULT CURRENT_TIMESTAMP(6)` | Registro inicial de la cuenta de usuario. |
 | `updated_at` | `DATETIME(6)` | NOT NULL | `DEFAULT CURRENT_TIMESTAMP(6)` | Timestamp de modificación de credenciales o perfil. |
-
-***
 
 ##### **4.8.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring (Core Domain)**
 
@@ -198,8 +200,6 @@ Serie temporal de lecturas sensoriales emitidas en ráfagas cada 5 segundos dura
 | `longitude` | `DECIMAL(11, 8)` | NULL | `—` | Coordenada GPS longitudinal del vehículo en ruta. |
 | `firmware_signature` | `VARCHAR(128)` | NOT NULL | `—` | Hash de validación criptográfica de la trama generada por el ESP32. |
 | `is_thermal_excursion` | `TINYINT(1)` | NOT NULL | `DEFAULT 0` | Flag de desvío: marcado con 1 si la temperatura sale de +2.0°C a +8.0°C. |
-
-***
 
 ##### **4.8.1.3. Bounded Context 3: Medical Transport Planning & Dispatching (Core Domain)**
 
@@ -333,7 +333,11 @@ Acta digital de entrega legal sellada criptográficamente con hash SHA-256 para 
 | `minsa_compliance_verified` | `TINYINT(1)` | NOT NULL | `DEFAULT 1` | Certificación booleana de cumplimiento de la Directiva Sanitaria 152/MINSA. |
 | `sealed_at` | `DATETIME(6)` | NOT NULL | `—` | Fecha y hora UTC del sellado criptográfico del acta. |
 
-***
+:::
+
+\newpage
+
+::: {.compact-lists}
 
 #### **3. Políticas Globales de Integridad Referencial y Trazabilidad**
 
@@ -346,8 +350,6 @@ En lugar de redundar en las especificaciones de claves foráneas ya detalladas e
 | **Propagación Segura de Cambios** | `ON UPDATE CASCADE` | Claves primarias sustitutas basadas en identificadores UUIDv7 (`CHAR(36)`). | Garantiza sincronización referencial automática en capas de persistencia y cachés sin requerir operaciones manuales en la base de datos. |
 | **Principio de Custodia Unívoca (Sin N:M)** | Restricciones `1:1` y `1:N` estrictas con `UNIQUE` | Asignación Orden → Despacho → Contenedor → Transferencia de Custodia. | Elimina tablas intermedias de cruce N:M; la normativa sanitaria exige un único custodio legal y un único contenedor responsable por cada traslado de órganos o hemoderivados. |
 | **Inmutabilidad Criptográfica de Cierre** | Columna `is_sealed_and_immutable = 1` y hash SHA-256 | Tabla `digital_audit_manifests` (Manifiesto de Auditoría). | Bloquea a nivel de servicio y regla de base de datos cualquier mutación posterior al sellado de custodia asistencial en destino hospitalario. |
-
-***
 
 #### **4. Estrategia de Indexación y Optimización de Consultas IoT**
 
@@ -365,7 +367,7 @@ Para procesar ráfagas continuas de telemetría provenientes de múltiples ambul
 4. **`idx_critical_incidents_status_severity (status, severity)`:**  
    *Propósito:* Prioriza las alertas no resueltas (`Open`) de mayor severidad (`CriticalEmergency`, `CatastrophicFailure`) para despachar notificaciones inmediatas mediante push y SMS a la central médica.
 
-***
+:::
 
 \newpage
 
@@ -374,8 +376,6 @@ Para procesar ráfagas continuas de telemetría provenientes de múltiples ambul
 ![Figura 4.8.1 - Database Physical Data Model (Entity Relationship Diagram)](../assets/chapter-4/4.8.1-database-diagram.png){.database-diagram height=215mm}
 
 *Nota: Diagrama Relacional Físico de Base de Datos generado mediante Reverse Engineering en MySQL Workbench 8.0 bajo motor InnoDB.*
-
-***
 
 \newpage
 

@@ -76,10 +76,15 @@ Para corroborar la cobertura integral del modelo respecto a los requisitos de pl
 
 El siguiente esquema general ilustra cómo interactúan los cinco contextos mediante el intercambio de eventos de dominio y comandos de orquestación, asegurando alto desacoplamiento y fronteras transaccionales autónomas:
 
-![Figura 4.6.1.1 - Mapa de Integración entre Bounded Contexts (DLES)](../assets/chapter-4/4.6.1-dles-macro-context-map.jpg)  
+::: {.figure-block}
+
+![Figura 4.6.1.1 - Mapa de Integración entre Bounded Contexts (DLES)](../assets/chapter-4/4.6.1-dles-macro-context-map.jpg)
+
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo Design-Level EventStorming para Medical SMARTBOX.*
 
-***
+:::
+
+\newpage
 
 ### **4. Desglose Detallado por Bounded Contexts**
 
@@ -89,8 +94,13 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Supporting Subdomain*  
 * **Alineación con Segmentos:** Centraliza la gobernanza de identidades, suscripciones SaaS y control de cuotas de flota para el **Segmento 1** (conductores de ambulancia, paramédicos y despachadores logísticos — *User Persona:* **Aldair Lazaro**) y el **Segmento 2** (químicos farmacéuticos, médicos directores de IPRESS y auditores de calidad hospitalaria — *User Persona:* **Gianfranco Timoteo**).
 
-![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context Identity, Access & Subscriptions (IAM)](../assets/chapter-4/4.6.1-dles-iam-context.jpg)  
+::: {.figure-block}
+
+![Figura 4.6.1.2 - Design-Level EventStorming: Bounded Context Identity, Access & Subscriptions (IAM)](../assets/chapter-4/4.6.1-dles-iam-context.jpg)
+
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Identity, Access & Subscriptions (IAM).*
+
+:::
 
 ***
 
@@ -100,10 +110,17 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Core Domain (Diferenciador Tecnológico)*  
 * **Alineación con Segmentos:** Representa el corazón IoT del sistema. Para el **Segmento 1** (**Aldair Lazaro**), monitorea la integridad eléctrica en la toma de 12V y el nivel de batería interna. Para el **Segmento 2** (**Gianfranco Timoteo**), certifica la curva ininterrumpida de frío (+2.0 °C a +8.0 °C) y la estabilidad del peso neto del insumo mediante celda de carga HX711 (±5 g).
 
-![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](../assets/chapter-4/4.6.1-dles-smart-container.jpg)  
+::: {.figure-block}
+
+![Figura 4.6.1.3 - Design-Level EventStorming: Bounded Context Smart Container & Telemetry Monitoring](../assets/chapter-4/4.6.1-dles-smart-container.jpg)
+
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Smart Container & Telemetry Monitoring.*
 
-***
+:::
+
+\newpage
+
+:::: {.compact-lists}
 
 #### **4.6.1.3. Bounded Context 3: Medical Transport Planning & Dispatching**
 
@@ -111,10 +128,13 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Core Domain*  
 * **Alineación con Segmentos:** Articula la necesidad médica del **Segmento 2** (**Gianfranco Timoteo**: solicitud urgente de insumo con rango térmico de +2.0 °C a +8.0 °C y tiempo de isquemia fría crítico) con la respuesta operativa del **Segmento 1** (**Aldair Lazaro**: asignación de ambulancia, cálculo de ruta anti-tráfico en Lima con TomTom y estimación dinámica de ETA).
 
-![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](../assets/chapter-4/4.6.1-dles-transport-planning.jpg)  
+::: {.figure-block}
+
+![Figura 4.6.1.4 - Design-Level EventStorming: Bounded Context Medical Transport Planning & Dispatching](../assets/chapter-4/4.6.1-dles-transport-planning.jpg){.max-h-38}
+
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Medical Transport Planning & Dispatching.*
 
-***
+:::
 
 #### **4.6.1.4. Bounded Context 4: Critical Alerting & Incident Response**
 
@@ -122,10 +142,13 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Core Domain*  
 * **Alineación con Segmentos:** Garantiza que las incidencias en ruta se detecten y resuelvan en segundos. Para el **Segmento 1** (**Aldair Lazaro**), dispara alarmas audibles y visuales de alta prioridad en la cabina asistencial. Para el **Segmento 2** (**Gianfranco Timoteo**), alerta inmediatamente a farmacia y quirófano ante riesgos térmicos o demoras viales.
 
-![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](../assets/chapter-4/4.6.1-dles-critical-alerting.jpg)  
+::: {.figure-block}
+
+![Figura 4.6.1.5 - Design-Level EventStorming: Bounded Context Critical Alerting & Incident Response](../assets/chapter-4/4.6.1-dles-critical-alerting.jpg){.max-h-32}
+
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Critical Alerting & Incident Response.*
 
-***
+:::
 
 #### **4.6.1.5. Bounded Context 5: Chain of Custody & Traceability**
 
@@ -133,10 +156,17 @@ El siguiente esquema general ilustra cómo interactúan los cinco contextos medi
 * **Clasificación:** *Core Domain / Cumplimiento Normativo*  
 * **Alineación con Segmentos:** Brinda la certeza sanitaria y legal que exige el **Segmento 2** (**Gianfranco Timoteo**) ante auditorías de DIGEMID (R.M. N° 833-2015/MINSA) y DIGDOT (Directiva 152/MINSA). Controla la apertura en destino mediante código OTP de un solo uso y emite el acta digital inmutable con hash SHA-256.
 
-![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](../assets/chapter-4/4.6.1-dles-chain-of-custody.jpg)  
+::: {.figure-block}
+
+![Figura 4.6.1.6 - Design-Level EventStorming: Bounded Context Chain of Custody & Traceability](../assets/chapter-4/4.6.1-dles-chain-of-custody.jpg){.max-h-32}
+
 *Nota: Elaboración propia en Miro según la técnica Design-Level EventStorming para el Bounded Context de Chain of Custody & Traceability.*
 
-***
+:::
+
+::::
+
+\newpage
 
 ## **4.6.2. Software Architecture Context Diagram**
 
@@ -149,8 +179,6 @@ Para representar la arquitectura del sistema se adoptó el **C4 Model** concebid
 * **Nombre Oficial:** `Medical SMARTBOX Platform` `[Software System]`
 * **Descripción de Dominio:** Plataforma integral B2B SaaS de software y telemetría IoT para la monitorización activa de la cadena de frío (+2.0 °C a +8.0 °C), pesaje de alta precisión (±5 g), custodia electromecánica inmutable y trazabilidad de traslados asistenciales en ambulancias para Lima Metropolitana y el Callao.
 * **Misión Operativa:** Garantizar el "Desperdicio Cero" de órganos, hemoderivados y vacunas durante el trayecto vial, asegurando el cumplimiento de la **R.M. N° 833-2015/MINSA** (Manual de BPDT - DIGEMID) y la **Directiva Sanitaria N° 152/MINSA** (DIGDOT).
-
-***
 
 ### **3. Catálogo de Actores y Sistemas Externos**
 
@@ -174,16 +202,21 @@ Los actores y servicios conectados se consolidan formalmente en las siguientes t
 | **Cloud Document Storage** | Object Storage | Amazon Web Services S3. Custodia inmutable de actas digitales de entrega certificadas con sellado SHA-256. | `HTTPS / S3 API` |
 | **B2B Payment Gateway** | Pasarela de Pagos | Culqi / Stripe API. Gestiona transacciones de cobro recurrente para suscripciones institucionales SaaS B2B. | `HTTPS / REST (TLS 1.3)` |
 
-***
+\newpage
 
 ### **4. Diagrama de Contexto del Sistema (C4 Nivel 1)**
 
 El diagrama de contexto sitúa a la plataforma en el centro del ecosistema, delimitando sus relaciones perimétricas:
 
-![Figura 4.6.2.1 - C4 Model: System Context Diagram (Nivel 1)](../assets/chapter-4/4.6.2-c4-context-diagram.png)  
+::: {.figure-block}
+
+![Figura 4.6.2.1 - C4 Model: System Context Diagram (Nivel 1)](../assets/chapter-4/4.6.2-c4-context-diagram.png){.max-h-195}
+
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
-***
+:::
+
+\newpage
 
 ## **4.6.3. Software Architecture Container Diagrams**
 
@@ -221,16 +254,21 @@ Conforme a las disposiciones rectoras de la cátedra y la rúbrica ABET, la arqu
 | Backend Web API | Database | `TCP / SQL` | TCP 3306 | Consultas y persistencia relacional transaccional vía EF Core. |
 | Hardware ESP32 | Backend Web API | `JSON / HTTPS` | TCP 443 | Ingesta periódica de paquetes sensoriales de telemetría. |
 
-***
+\newpage
 
 ### **4. Diagrama de Contenedores de la Solución (C4 Nivel 2)**
 
 El siguiente diagrama descompone la solución en sus unidades de software operativas:
 
-![Figura 4.6.3.1 - C4 Model: Container Diagram (Nivel 2)](../assets/chapter-4/4.6.3-c4-container-diagram.png)  
+::: {.figure-block}
+
+![Figura 4.6.3.1 - C4 Model: Container Diagram (Nivel 2)](../assets/chapter-4/4.6.3-c4-container-diagram.png){.max-h-185}
+
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
 
-***
+:::
+
+\newpage
 
 ## **4.6.4. Software Architecture Components Diagrams**
 
@@ -242,8 +280,6 @@ La Web API estructura su lógica interna organizando sus módulos en corresponde
 
 * Cada módulo agrupa sus controladores REST, servicios de aplicación y contratos de dominio.
 * El componente de acceso a datos centraliza la persistencia relacional con Entity Framework Core hacia MySQL.
-
-***
 
 ### **2. Catálogo Modular de Componentes de la Web API**
 
@@ -258,11 +294,16 @@ Los componentes internos de la API se mapean directamente con los **cinco Bounde
 | **Chain of Custody Module** | ASP.NET Core Controller & Service | Valida token OTP de apertura y genera actas digitales de entrega inmutables selladas con hash SHA-256. | `ICustodyRepository` , `ICloudStorageService` |
 | **Data Access & Persistence (EF Core)** | Entity Framework Core 10.0 | Encapsula `AppDbContext` , mapeos relacionales Fluent API y transacciones ACID hacia MySQL 8.0. | MySQL Database (Port 3306) |
 
-***
+\newpage
 
 ### **3. Diagrama de Componentes de la RESTful Web API (C4 Nivel 3)**
 
 El siguiente diagrama detalla la estructura modular interna del servidor de aplicaciones:
 
-![Figura 4.6.4.1 - C4 Model: Component Diagram (Nivel 3 - Backend RESTful Web API)](../assets/chapter-4/4.6.4-c4-component-backend-api.png)  
+::: {.figure-block}
+
+![Figura 4.6.4.1 - C4 Model: Component Diagram (Nivel 3 - Backend RESTful Web API)](../assets/chapter-4/4.6.4-c4-component-backend-api.png){.max-h-195}
+
 *Nota: Elaboración propia en Structurizr conforme a los estándares del modelo C4 para la arquitectura de software.*
+
+:::

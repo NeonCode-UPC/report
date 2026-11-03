@@ -38,8 +38,6 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | 28 | **Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)** | Smart Container & Telemetry Monitoring | Value Object / Domain Event |
 | 29 | **Weight-Based Medical Stock (Stock Médico Ponderal)** | Smart Container & Telemetry Monitoring | Value Object |
 
-***
-
 ### **2.5.1. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
 | **Ubiquitous Term** | **Domain Definition** | **Role in the System & DDD Mapping** |
@@ -48,8 +46,6 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | **Hospital Geofence (Geocerca Hospitalaria)** | Perímetro geográfico virtual delimitado alrededor de la institución de salud receptora (típicamente con un radio de 2 km / 10 min), cuyo traspaso por la ambulancia activa automáticamente los protocolos de pre-arribo y habilita la autorización del desbloqueo digital. | **Value Object:** `GeoFence` en `HospitalInstitution`<br>*Bounded Context:* Identity, Access & Subscriptions (IAM) |
 | **SaaS Subscription Plan (Plan de Suscripción SaaS B2B)** | Acuerdo comercial formal y recurrente entre la plataforma Medical SMARTBOX y la institución de salud o empresa de ambulancias, que establece la cuota máxima de contenedores médicos autorizados en flota (Small Box de 5L vs. Standard Box de 20L), niveles de servicio de soporte y acceso multi-inquilino al portal de trazabilidad. | **Aggregate Root:** `SubscriptionPlan`<br>*Bounded Context:* Identity, Access & Subscriptions (IAM) |
 | **Fleet Container Provisioning (Aprovisionamiento y Vinculación de Flota)** | Proceso técnico y administrativo mediante el cual se activa, calibra y asocia un Contenedor Médico Inteligente a la flota de una institución acreditada, supeditado a la regla de cupos comerciales contratados. | **Domain Policy:** Regla de cupo `CanProvisionBox` en `SubscriptionPlan`<br>*Bounded Context:* Identity, Access & Subscriptions (IAM) |
-
-***
 
 ### **2.5.2. Bounded Context: Smart Container & Telemetry Monitoring**
 
@@ -64,8 +60,6 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | **Vehicle Telematics and Auxiliary Power (Telemática Vehicular y Alimentación Auxiliar)** | Parámetros operativos capturados desde la unidad móvil de transporte asistencial (estado de suministro eléctrico continuo de 12V en cabina, velocidad de desplazamiento y coordenadas geográficas en tiempo real) que permiten supervisar la estabilidad energética del contenedor y predecir los tiempos de traslado en la red vial de Lima Metropolitana. | **Value Object:** `AuxiliaryPowerTelemetry` / **Domain Event:** `ExternalPowerLost`<br>*Bounded Context:* Smart Container & Telemetry Monitoring |
 | **Weight-Based Medical Stock (Stock Médico Ponderal)** | Estimación cuantitativa en tiempo real de la cantidad de medicamentos, ampollas o insumos almacenados dentro del compartimento, calculada a partir de las variaciones de masa registradas continuamente por la celda de carga de precisión, permitiendo prevenir desabastecimientos en ruta o sustracciones clandestinas. | **Value Object:** `PayloadWeight` (Invariante de peso en `SmartContainer` )<br>*Bounded Context:* Smart Container & Telemetry Monitoring |
 
-***
-
 ### **2.5.3. Bounded Context: Medical Transport Planning & Dispatching**
 
 | **Ubiquitous Term** | **Domain Definition** | **Role in the System & DDD Mapping** |
@@ -79,7 +73,9 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | **Procurement & Dispatch Coordinator (Coordinador de Procura y Despacho Asistencial)** | Profesional asistencial o logístico (adscrito a DIGDOT, MINSA o a la central de despacho del operador de transporte) facultado para autorizar la misión de traslado, evaluar la disponibilidad de unidades móviles climatizadas y emitir la orden formal de transporte de órganos o hemoderivados. | **Entity:** `DispatchCoordinator` en `TransportOrder`<br>*Bounded Context:* Medical Transport Planning & Dispatching |
 | **Transport Mission / Emergency Transport Order (Misión de Transporte Asistido / Orden de Traslado de Emergencia)** | Operación asistencial protocolizada de traslado médico entre un centro de salud o almacén farmacéutico de origen y una institución de destino, gobernada por una ventana temporal crítica, una tripulación técnica asignada y directivas estrictas de conservación bioambiental. | **Aggregate Root:** `DispatchTrip` / `TransportOrder`<br>*Bounded Context:* Medical Transport Planning & Dispatching |
 
-***
+\newpage
+
+::: {.compact-ubiq-tables}
 
 ### **2.5.4. Bounded Context: Critical Alerting & Incident Response**
 
@@ -90,8 +86,6 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | **Hospital Pre-Arrival Notice (Aviso de Pre-Arribo Hospitalario)** | Comunicación protocolar preventiva enviada automáticamente al equipo médico y quirúrgico del hospital receptor cuando la ambulancia se encuentra a una proximidad crítica (10 minutos de arribo o cruce de geocerca), facilitando el alistamiento de quirófano, esterilización de instrumental y despeje de rampas de trauma shock. | **Domain Event:** `HospitalPreArrivalTriggered`<br>*Bounded Context:* Critical Alerting & Incident Response |
 | **Thermal Excursion (Excursión Térmica)** | Incidente crítico originado cuando la temperatura interna de la cámara del contenedor traspasa los márgenes de seguridad normativos durante un tiempo mayor a la tolerancia asistencial permitida, comprometiendo la estabilidad fisicoquímica o viabilidad celular del insumo y tipificándose como una no conformidad sanitaria grave. | **Domain Event:** `ThermalExcursionDetected` / **Aggregate Root:** `CriticalIncident`<br>*Bounded Context:* Critical Alerting & Incident Response |
 
-***
-
 ### **2.5.5. Bounded Context: Chain of Custody & Traceability**
 
 | **Ubiquitous Term** | **Domain Definition** | **Role in the System & DDD Mapping** |
@@ -101,3 +95,5 @@ Cada uno de los 29 términos canónicos se encuentra formalmente circunscrito a 
 | **Custody Handover Act (Acta de Entrega y Trazabilidad de Custodia)** | Documento protocolar formal generado al término del traslado asistencial, donde la tripulación paramédica y el equipo médico receptor rubrican mancomunadamente la conformidad del estado físico, el balance de stock y el dictamen de viabilidad biológica con el respaldo de la curva térmica completa del trayecto. | **Aggregate Root:** `CustodyTransfer`<br>*Bounded Context:* Chain of Custody & Traceability |
 | **One-Time Password / Unlock Token (Clave OTP / Token de Desbloqueo Temporal)** | Clave numérica efímera de seguridad clínica generada dinámicamente por la plataforma y transmitida exclusivamente al médico receptor facultado, cuya introducción en el panel de control del contenedor condiciona la liberación del solenoide físico de la tapa únicamente cuando la ambulancia se encuentra dentro de la geocerca hospitalaria autorizada de destino. | **Value Object:** `OtpToken` encapsulado en `CustodyTransfer`<br>*Bounded Context:* Chain of Custody & Traceability |
 | **Receiving Medical Custodian (Custodio Médico Receptor)** | Profesional de la salud facultado en el establecimiento hospitalario o farmacia de destino (cirujano de trasplantes, médico de emergencia o químico farmacéutico responsable) habilitado para recibir la clave OTP, constatar la viabilidad clínica y formalizar el acta de conformidad. | **Value Object:** `ReceivingPhysician` en `CustodyTransfer`<br>*Bounded Context:* Chain of Custody & Traceability |
+
+:::

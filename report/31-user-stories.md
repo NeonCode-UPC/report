@@ -40,7 +40,9 @@ Todos los criterios de aceptación siguen la especificación **Gherkin** (*Dado 
 
 A continuación se desarrollan los escenarios de aceptación detallados (*scenario-oriented*) para cada una de las 18 historias, cubriendo flujos exitosos (*Happy Path*), excepciones de validación y reglas de negocio del dominio médico-logístico.
 
-***
+\newpage
+
+::: {.user-story-card}
 
 ### Epic 01: Identity & Access Management (EP01)
 
@@ -65,7 +67,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** intenta enviar el formulario de registro.
         * **Entonces** el sistema bloquea el registro e indica que debe utilizar un dominio de correo institucional.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US02: Autenticación de Personal de Emergencia**
 
@@ -88,7 +92,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** realiza el quinto intento incorrecto.
         * **Entonces** el sistema bloquea temporalmente la cuenta por un periodo de 15 minutos y envía una alerta de seguridad al correo registrado.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US03: Endpoint de Autenticación de Usuarios (API)**
 
@@ -111,7 +117,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** la API ejecuta la validación de entrada.
         * **Entonces** responde con un código `HTTP 400 Bad Request` indicando las reglas de validación no cumplidas.
 
-***
+:::
+
+::: {.user-story-card}
 
 ### Epic 02: Landing Page & Brand Awareness (EP02)
 
@@ -132,7 +140,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** la página carga sus contenidos.
         * **Entonces** los activos de información sobre las características IoT deben renderizarse completamente en un tiempo no mayor a 2 segundos bajo conexiones estándar.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US05: Solicitud de Demostración Corporativa**
 
@@ -151,7 +161,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** intenta enviar el formulario de contacto.
         * **Entonces** el sistema detiene el proceso de envío y notifica de manera específica cuáles campos deben ser completados.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US06: Consulta de Preguntas Frecuentes (FAQ)**
 
@@ -170,7 +182,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** procesa la consulta en la barra de búsqueda de FAQ.
         * **Entonces** el sistema filtra y expone únicamente aquellos elementos cuya pregunta o respuesta contengan la palabra clave consultada.
 
-***
+:::
+
+::: {.user-story-card}
 
 ### Epic 03: Container & Ambulance Provisioning (EP03)
 
@@ -191,7 +205,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** el operador intenta registrar un nuevo alta o asignación simultánea con la misma placa.
         * **Entonces** el sistema impide la duplicidad y envía una alerta de conflicto de identificación del vehículo.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US08: Vinculación de Contenedor Inteligente**
 
@@ -210,7 +226,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** el operador intenta asociarlo a una nueva ambulancia.
         * **Entonces** el sistema rechaza la operación e indica que el contenedor debe finalizar su cadena de custodia y ser desvinculado de su unidad origen antes de una nueva asignación.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US09: Ingesta de Telemetría IoT (API)**
 
@@ -233,7 +251,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** la API recibe la transmisión.
         * **Entonces** rechaza la conexión con un código `HTTP 401 Unauthorized`.
 
-***
+:::
+
+::: {.user-story-card}
 
 ### Epic 04: Real-Time Environmental & Fleet Monitoring (EP04)
 
@@ -254,7 +274,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** se cumple el tiempo límite de inactividad.
         * **Entonces** el sistema marca el estado de la conexión como "Sin Señal / Desconectado" y registra la hora de última lectura recibida.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US11: Control de Stock por Sensores de Peso**
 
@@ -273,7 +295,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** se procesa la lectura.
         * **Entonces** el sistema genera una observación en la bitácora de la ruta indicando "Divergencia de peso no clasificada".
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US12: Consulta de Telemetría e Indicadores (API)**
 
@@ -292,7 +316,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** se ejecuta la consulta GET al endpoint.
         * **Entonces** la API responde con un código `HTTP 200 OK` entregando la estructura con valores nulos y un indicador de estado "Sin datos registrados".
 
-***
+:::
+
+::: {.user-story-card}
 
 ### Epic 05: Incident Alerts & Medical Dispatch (EP05)
 
@@ -313,7 +339,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** procesa la solicitud de guardado.
         * **Entonces** el sistema rechaza la regla de negocio y notifica que la temperatura mínima debe ser estrictamente menor al límite máximo.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US14: Visualización de Alertas en Ruta**
 
@@ -332,7 +360,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** el tiempo de apertura continua excede los 120 segundos.
         * **Entonces** el sistema emite una alerta de advertencia "Escotilla Abierta Prolongada" dirigida al personal médico de la unidad.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US15: Servicio de Despacho de Alertas (API)**
 
@@ -351,7 +381,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** la API evalúa la estructura del mensaje.
         * **Entonces** detiene la ejecución y devuelve un código `HTTP 400 Bad Request`.
 
-***
+:::
+
+::: {.user-story-card}
 
 ### Epic 06: Chain of Custody & Audit Reports (EP06)
 
@@ -372,7 +404,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** el supervisor intenta consolidar el reporte final de auditoría.
         * **Entonces** el sistema bloquea la emisión final e indica que únicamente se pueden generar reportes parciales o preliminares mientras el traslado siga abierto.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US17: Confirmación de Entrega y Cadena de Custodia**
 
@@ -391,7 +425,9 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Cuando** se intenta cerrar la cadena de custodia.
         * **Entonces** el sistema exige al usuario ingresar una observación de cierre obligatoria detallando las condiciones en las que se recibe la carga antes de permitir la finalización del servicio.
 
-***
+:::
+
+::: {.user-story-card}
 
 #### **US18: Consulta de Historial de Traslados (API)**
 
@@ -409,3 +445,5 @@ A continuación se desarrollan los escenarios de aceptación detallados (*scenar
         * **Dado que** la solicitud utiliza un `{transferId}` que no existe en el registro histórico.
         * **Cuando** la API busca el expediente.
         * **Entonces** responde con un código `HTTP 404 Not Found` notificando la inexistencia del registro.
+
+:::

@@ -37,6 +37,27 @@ h1, h2, h3, h4, h5, h6 {
     break-after: avoid;
 }
 
+h5 {
+    font-size: 10pt;
+    margin: 12px 0 6px 0;
+}
+
+h6 {
+    font-size: 9.5pt;
+    margin: 10px 0 4px 0;
+}
+
+h6 + p {
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+hr {
+    border: none;
+    border-top: 0.5pt solid #cbd5e1;
+    margin: 8px 0;
+}
+
 table {
     width: 100% !important;
     table-layout: fixed !important;
@@ -82,10 +103,14 @@ pre {
     background-color: #f8fafc;
     border: 0.5pt solid #e2e8f0;
     border-radius: 4px;
-    padding: 8px 10px;
-    font-size: 8pt;
+    padding: 6px 8px;
+    margin: 5px 0 8px 0;
+    font-size: 7.2pt;
+    line-height: 1.26;
     white-space: pre-wrap;
     word-wrap: break-word;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 pre code {
@@ -174,3 +199,217 @@ td img, th img {
     display: block !important;
     margin: 2mm auto !important;
 }
+
+/* ==========================================================================
+   Pagination & Layout Polish Classes (A4 Docs-as-Code Typography)
+   ========================================================================== */
+
+.toc-list ul {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 1.28;
+    font-size: 9.0pt;
+}
+
+.toc-list li {
+    margin-bottom: 0.5px;
+}
+
+.team-photo {
+    width: 17mm !important;
+    height: 21mm !important;
+    max-height: 21mm !important;
+    object-fit: cover !important;
+    border-radius: 3px;
+}
+
+.compact-lists h4 {
+    margin: 5px 0 2px 0;
+}
+
+.compact-lists ul,
+.compact-lists ol {
+    margin: 2px 0 5px 0;
+}
+
+.compact-lists li {
+    margin-bottom: 1px;
+    line-height: 1.35;
+}
+
+.compact-lists table {
+    margin: 6px 0 8px 0 !important;
+}
+
+.auto-table table {
+    table-layout: auto !important;
+}
+
+.figure-block,
+.evidence-block,
+.ui-block,
+.persona-card-block,
+.user-story-card {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin: 2.5mm 0 3.5mm 0;
+}
+
+.ui-block ul {
+    margin: 0 0 2mm 0 !important;
+}
+
+.figure-block p,
+.evidence-block p {
+    margin-top: 1.5mm;
+    margin-bottom: 2mm;
+}
+
+.keep-with-next {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+}
+
+.compact-keep-items > ul > li {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+}
+
+.persona-card {
+    max-height: 195mm !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 2mm auto !important;
+    display: block !important;
+}
+
+.uxpressia-empathy-1 {
+    max-height: 158mm !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 2mm auto !important;
+    display: block !important;
+}
+
+.uxpressia-empathy-2 {
+    max-height: 172mm !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 2mm auto !important;
+    display: block !important;
+}
+
+.impact-map-lists ul {
+    margin-top: 2px !important;
+    margin-bottom: 3px !important;
+}
+
+.impact-map-lists li {
+    margin-bottom: 1.5px !important;
+}
+
+.compact-ubiq-tables h3 {
+    margin: 5px 0 2px 0 !important;
+}
+
+.compact-ubiq-tables p {
+    margin: 2px 0 4px 0 !important;
+}
+
+.compact-ubiq-tables table {
+    margin: 4px 0 7px 0 !important;
+}
+
+.compact-ubiq-tables th,
+.compact-ubiq-tables td {
+    padding: 2.5px 4px !important;
+}
+
+.compact-tasks h4 {
+    margin: 3px 0 1px 0 !important;
+    font-size: 9pt;
+}
+
+.compact-tasks ul {
+    margin: 1px 0 3px 0 !important;
+}
+
+.compact-tasks li {
+    margin-bottom: 0.5px !important;
+    line-height: 1.32;
+}
+
+/* Proportional 7-column Product Backlog table (3.3) */
+.backlog-table table col:nth-child(1), .backlog-table table th:nth-child(1), .backlog-table table td:nth-child(1) { width: 8% !important; }
+.backlog-table table col:nth-child(2), .backlog-table table th:nth-child(2), .backlog-table table td:nth-child(2) { width: 7% !important; }
+.backlog-table table col:nth-child(3), .backlog-table table th:nth-child(3), .backlog-table table td:nth-child(3) { width: 8% !important; }
+.backlog-table table col:nth-child(4), .backlog-table table th:nth-child(4), .backlog-table table td:nth-child(4) { width: 19% !important; }
+.backlog-table table col:nth-child(5), .backlog-table table th:nth-child(5), .backlog-table table td:nth-child(5) { width: 36% !important; }
+.backlog-table table col:nth-child(6), .backlog-table table th:nth-child(6), .backlog-table table td:nth-child(6) { width: 12% !important; }
+.backlog-table table col:nth-child(7), .backlog-table table th:nth-child(7), .backlog-table table td:nth-child(7) { width: 10% !important; }
+
+/* Proportional 5-column Database Dictionary tables (4.8) */
+.db-dict-table table col:nth-child(1), .db-dict-table table th:nth-child(1), .db-dict-table table td:nth-child(1) { width: 18% !important; }
+.db-dict-table table col:nth-child(2), .db-dict-table table th:nth-child(2), .db-dict-table table td:nth-child(2) { width: 14% !important; }
+.db-dict-table table col:nth-child(3), .db-dict-table table th:nth-child(3), .db-dict-table table td:nth-child(3) { width: 8% !important; }
+.db-dict-table table col:nth-child(4), .db-dict-table table th:nth-child(4), .db-dict-table table td:nth-child(4) { width: 20% !important; }
+.db-dict-table table col:nth-child(5), .db-dict-table table th:nth-child(5), .db-dict-table table td:nth-child(5) { width: 40% !important; }
+
+/* Proportional 8-column Sprint Backlog tables (5.2) */
+.sprint-backlog-table table col:nth-child(1), .sprint-backlog-table table th:nth-child(1), .sprint-backlog-table table td:nth-child(1) { width: 7% !important; }
+.sprint-backlog-table table col:nth-child(2), .sprint-backlog-table table th:nth-child(2), .sprint-backlog-table table td:nth-child(2) { width: 14% !important; }
+.sprint-backlog-table table col:nth-child(3), .sprint-backlog-table table th:nth-child(3), .sprint-backlog-table table td:nth-child(3) { width: 8% !important; }
+.sprint-backlog-table table col:nth-child(4), .sprint-backlog-table table th:nth-child(4), .sprint-backlog-table table td:nth-child(4) { width: 16% !important; }
+.sprint-backlog-table table col:nth-child(5), .sprint-backlog-table table th:nth-child(5), .sprint-backlog-table table td:nth-child(5) { width: 23% !important; }
+.sprint-backlog-table table col:nth-child(6), .sprint-backlog-table table th:nth-child(6), .sprint-backlog-table table td:nth-child(6) { width: 12% !important; }
+.sprint-backlog-table table col:nth-child(7), .sprint-backlog-table table th:nth-child(7), .sprint-backlog-table table td:nth-child(7) { width: 10% !important; }
+.sprint-backlog-table table col:nth-child(8), .sprint-backlog-table table th:nth-child(8), .sprint-backlog-table table td:nth-child(8) { width: 10% !important; }
+
+/* Section 4.1 & 4.3 Specimen / Screen Sizing */
+.style-specimen-lg {
+    max-height: 48mm !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 2.5mm auto !important;
+    display: block !important;
+}
+
+.style-specimen-sm {
+    max-height: 22mm !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 2.5mm auto !important;
+    display: block !important;
+}
+
+.landing-screen {
+    width: 71% !important;
+    max-width: 71% !important;
+    height: auto !important;
+    margin: 1.5mm auto !important;
+    display: block !important;
+}
+
+/* Proportional Height Cap Helpers (preserve aspect ratio & crispness) */
+.max-h-32  { max-height: 32mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 1.5mm auto !important; display: block !important; }
+.max-h-36  { max-height: 36mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-38  { max-height: 38mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 1.5mm auto !important; display: block !important; }
+.max-h-44  { max-height: 44mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-68  { max-height: 68mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-70  { max-height: 70mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-80  { max-height: 80mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-86  { max-height: 86mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-88  { max-height: 88mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-92  { max-height: 92mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-96  { max-height: 96mm !important;  max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-105 { max-height: 105mm !important; max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-112 { max-height: 112mm !important; max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-132 { max-height: 132mm !important; max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-185 { max-height: 185mm !important; max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-190 { max-height: 190mm !important; max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }
+.max-h-195 { max-height: 195mm !important; max-width: 100% !important; width: auto !important; height: auto !important; margin: 2mm auto !important; display: block !important; }

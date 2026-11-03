@@ -52,8 +52,6 @@ Esta separación formal preserva la expresividad del lenguaje ubicuo en el códi
 
 A continuación se detalla la especificación estática de clases para los cinco Bounded Contexts del sistema que articulan el **Segmento 1 (Transporte y Flota Logística)** y el **Segmento 2 (Centros de Salud y Cadenas Farmacéuticas)**:
 
-***
-
 #### **4.7.1.1. Bounded Context 1: Identity, Access & Subscriptions (IAM)**
 
 Este contexto centraliza la autenticación mediante tokens JWT, control de acceso basado en roles (RBAC) para los dos segmentos objetivo, registro formal de sedes hospitalarias con código RENIPRESS y gestión del modelo de suscripción SaaS para flotas de contenedores médicos, garantizando consistencia transaccional inmediata en la validación de licencias, membresías activas y cuotas de aprovisionamiento de cajas inteligentes.
@@ -68,8 +66,6 @@ Este contexto centraliza la autenticación mediante tokens JWT, control de acces
 | `IUserRepository` | `«Repository»` | N/A (Contrato abstracto) | `+ GetByIdAsync(id: Guid): Task<UserAccount>`<br>`+ GetByEmailAsync(email: string): Task<UserAccount>`<br>`+ SaveAsync(user: UserAccount): Task` | Desacopla la persistencia de usuarios del motor MySQL. |
 | `IInstitutionRepository` | `«Repository»` | N/A (Contrato abstracto) | `+ GetByIdAsync(id: Guid): Task<HospitalInstitution>`<br>`+ GetByRenipressCodeAsync(code: string): Task<HospitalInstitution>`<br>`+ SaveAsync(institution: HospitalInstitution): Task` | Garantiza la inversión de dependencias para la gestión institucional. |
 | `ISubscriptionRepository` | `«Repository»` | N/A (Contrato abstracto) | `+ GetByIdAsync(id: Guid): Task<SubscriptionPlan>`<br>`+ GetByCodeAsync(code: string): Task<SubscriptionPlan>`<br>`+ SaveAsync(plan: SubscriptionPlan): Task` | Garantiza la persistencia e inversión de dependencias para los planes de suscripción B2B. |
-
-***
 
 #### **4.7.1.2. Bounded Context 2: Smart Container & Telemetry Monitoring (IoT)**
 
@@ -184,19 +180,25 @@ Para asegurar total rigurosidad en la implementación del diagrama UML, la sigui
 | `DispatchTrip` | `*` | Asociación ( `-->` ) | `1` | `UserAccount` | `assigned crew >` (chofer y paramédico asignados) |
 | `CustodyTransfer` | `*` | Asociación ( `-->` ) | `1` | `UserAccount` | `recipient >` (médico o farmacéutico que recibe con OTP) |
 
-***
+\newpage
 
 ### **4. Diagramas de Clases por Bounded Context**
 
 A continuación, se presentan las especificaciones visuales del diseño orientado a objetos para cada uno de los Bounded Contexts de la plataforma, elaboradas bajo la notación formal de UML 2.5 y los patrones tácticos de Domain-Driven Design:
 
+::: {.figure-block}
+
 #### **4.1. Bounded Context: Identity, Access & Subscriptions (IAM)**
 
-![Figura 4.7.1.1 - Diagrama de Clases: Identity, Access & Subscriptions (IAM)](../assets/chapter-4/4.7.1-class-diagram-iam.png)
+![Figura 4.7.1.1 - Diagrama de Clases: Identity, Access & Subscriptions (IAM)](../assets/chapter-4/4.7.1-class-diagram-iam.png){.max-h-185}
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de IAM y Suscripciones.*
 
-***
+:::
+
+\newpage
+
+::: {.figure-block}
 
 #### **4.2. Bounded Context: Smart Container & Telemetry Monitoring**
 
@@ -204,7 +206,11 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Contenedores Inteligentes y Telemetría.*
 
-***
+:::
+
+\newpage
+
+::: {.figure-block}
 
 #### **4.3. Bounded Context: Medical Transport Planning & Dispatching**
 
@@ -212,7 +218,11 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Transporte y Despacho.*
 
-***
+:::
+
+\newpage
+
+::: {.figure-block}
 
 #### **4.4. Bounded Context: Critical Alerting & Incident Response**
 
@@ -220,10 +230,16 @@ A continuación, se presentan las especificaciones visuales del diseño orientad
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Alertas Críticas e Incidentes.*
 
-***
+:::
+
+\newpage
+
+::: {.figure-block}
 
 #### **4.5. Bounded Context: Chain of Custody & Traceability**
 
 ![Figura 4.7.1.5 - Diagrama de Clases: Chain of Custody & Traceability](../assets/chapter-4/4.7.1-class-diagram-chain-of-custody.png)
 
 *Nota: Elaboración propia en PlantUML conforme a los estándares de UML 2.5 y Domain-Driven Design para el Bounded Context de Cadena de Custodia y Trazabilidad.*
+
+:::

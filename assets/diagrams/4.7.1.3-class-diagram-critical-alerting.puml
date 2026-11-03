@@ -1,0 +1,84 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam classFontStyle bold
+skinparam roundcorner 8
+
+title Medical SMARTBOX - Critical Alerting & Incident Response (UML Class Diagram)
+
+package "Bounded Context: Critical Alerting & Incident Response" <<Rectangle>> {
+    enum IncidentType <<Enumeration>> {
+        ColdChainBreachHigh
+        ColdChainBreachLow
+        Auxiliary12VPowerLost
+        PayloadTamperingSuspected
+        SevereTrafficDelayExceeded
+    }
+
+    enum IncidentStatus <<Enumeration>> {
+        Triggered
+        Acknowledged
+        Escalated
+        Resolved
+    }
+
+    enum IncidentSeverity <<Enumeration>> {
+        LowWarning
+        ModerateAlert
+        CriticalEmergency
+        CatastrophicFailure
+    }
+
+    enum EscalationLevelEnum <<Enumeration>> {
+        OperationalCabAlert = 1
+        LogisticsSupervisorAlert = 2
+        MedicalDirectorEscalation = 3
+    }
+
+    class CriticalIncident <<AggregateRoot>> {
+        + Id: Guid
+        + TripId: Guid
+        + ContainerId: Guid
+        + IncidentType: IncidentType
+        + Status: IncidentStatus
+        + Severity: IncidentSeverity
+        + TriggerTemperatureCelsius: decimal?
+        + TriggerBatteryPercentage: decimal?
+        + EscalationLevel: EscalationLevelEnum
+        + TriggeredAt: DateTime
+        + AcknowledgedAt: DateTime?
+        + AcknowledgedByUserId: Guid?
+        - _resolution: ContingencyResolution?
+        + Acknowledge(operatorId: Guid): void
+        + EscalateToMedicalDirector(): void
+        + Resolve(action: string, resolvedBy: Guid): Result
+    }
+
+    class ContingencyResolution <<Entity>> {
+        + Id: Guid
+        + MitigationAction: string
+        + QualitySignoffNotes: string
+        + ResolvedAt: DateTime
+        + ResolvedByUserId: Guid
+        + WasThermalIntegrityRestored: bool
+        + ValidateResolution(): bool
+    }
+
+    interface IIncidentRepository <<Repository>> {
+        + GetActiveIncidentsAsync(): Task<List<CriticalIncident>>
+        + SaveAsync(incident: CriticalIncident): Task
+    }
+
+    interface INotificationService <<Service>> {
+        + SendCriticalPushAlertAsync(userId: Guid, msg: string): Task<bool>
+        + SendSmsAlertAsync(phone: string, msg: string): Task<bool>
+    }
+
+    CriticalIncident "1" *-- "0..1" ContingencyResolution : - _resolution
+    CriticalIncident "*" --> "1" IncidentSeverity
+    CriticalIncident "*" --> "1" IncidentType
+    CriticalIncident "*" --> "1" IncidentStatus
+    CriticalIncident "*" --> "1" EscalationLevelEnum
+    IIncidentRepository ..> CriticalIncident : persists >
+}
+@enduml

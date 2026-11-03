@@ -1,3 +1,5 @@
+***
+
 ## Anexo B. Tableros Digitales y Prototipos Interactivos {#anexo-b-tableros-digitales-y-prototipos-interactivos}
 
 * **Lienzo Colaborativo de Big Picture y Design-Level EventStorming (Miro):**  

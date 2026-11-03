@@ -1,0 +1,115 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam classFontStyle bold
+skinparam roundcorner 8
+
+title Medical SMARTBOX - Medical Transport Planning & Dispatching (UML Class Diagram)
+
+package "Bounded Context: Medical Transport Planning & Dispatching" <<Rectangle>> {
+    enum PriorityLevel <<Enumeration>> {
+        Routine
+        Urgent
+        StatEmergency
+    }
+
+    enum TripStatus <<Enumeration>> {
+        Scheduled
+        ResourcesAssigned
+        PrecoolingVerified
+        InTransit
+        ArrivedAtDestination
+        Completed
+        Cancelled
+    }
+
+    enum CargoType <<Enumeration>> {
+        HeartOrgan
+        LiverOrgan
+        KidneyOrgan
+        BloodPlasmaPack
+        ThermolabileVaccine
+        BiopsySample
+    }
+
+    enum TransportOrderStatus <<Enumeration>> {
+        Pending
+        Assigned
+        InTransit
+        Completed
+        Cancelled
+    }
+
+    class TransportOrder <<AggregateRoot>> {
+        + Id: Guid
+        + OrderCode: string
+        + OriginHospitalId: Guid
+        + DestinationHospitalId: Guid
+        + Priority: PriorityLevel
+        + Status: TransportOrderStatus
+        + CargoType: CargoType
+        + CargoDescription: string
+        + MaxIschemiaLimit: IschemiaTimeLimit
+        + CreatedByUserId: Guid
+        + CreatedAt: DateTime
+        + ValidateIschemiaFeasibility(estMinutes: int): bool
+        + CancelOrder(reason: string): void
+    }
+
+    class DispatchTrip <<AggregateRoot>> {
+        + Id: Guid
+        + OrderId: Guid
+        + AssignedVehiclePlate: string
+        + AssignedContainerId: Guid
+        + AssignedDriverUserId: Guid
+        + AssignedParamedicUserId: Guid
+        + Status: TripStatus
+        + ScheduledDepartureTime: DateTime
+        + ActualDepartureTime: DateTime?
+        + EstimatedArrivalTime: DateTime
+        + ActualArrivalTime: DateTime?
+        - _route: TransportRoute
+        + AssignCrewAndResources(vehPlate: string, boxId: Guid, driverId: Guid, paramedicId: Guid): void
+        + StartTrip(boxPrecooled: bool): Result
+        + UpdateDynamicEta(newEta: DateTime): void
+        + RegisterHospitalArrival(loc: GeoLocation): Result
+    }
+
+    class TransportRoute <<Entity>> {
+        + Id: Guid
+        + DistanceKilometers: double
+        + PlannedDurationMinutes: int
+        + CurrentCongestionDelayMinutes: int
+        + PolylineCoordinates: string
+        + RecalculateRoute(delayMins: int): void
+        + IsSeverelyDelayed(): bool
+    }
+
+    class IschemiaTimeLimit <<ValueObject>> {
+        + MaxSafeHours: double
+        + WarningThresholdHours: double
+        + IsViolated(elapsedHours: double): bool
+        + IsApproachingLimit(elapsedHours: double): bool
+    }
+
+    interface ITransportRepository <<Repository>> {
+        + GetTripByIdAsync(id: Guid): Task<DispatchTrip>
+        + GetActiveTripsAsync(): Task<List<DispatchTrip>>
+        + SaveTripAsync(trip: DispatchTrip): Task
+    }
+
+    interface ITrafficRoutingService <<Service>> {
+        + GetDynamicEtaAsync(origin: GeoLocation, dest: GeoLocation): Task<DateTime>
+        + CheckTrafficDelaysAsync(polyline: string): Task<int>
+    }
+
+    TransportOrder "1" *-- "1" IschemiaTimeLimit
+    TransportOrder "*" --> "1" CargoType
+    TransportOrder "*" --> "1" PriorityLevel
+    TransportOrder "*" --> "1" TransportOrderStatus
+    DispatchTrip "1" *-- "1" TransportRoute : - _route
+    DispatchTrip "*" --> "1" TripStatus
+    DispatchTrip "1" --> "1" TransportOrder : fulfills >
+    ITransportRepository ..> DispatchTrip : persists >
+}
+@enduml
