@@ -1,3 +1,5 @@
+\newpage
+
 ## Anexo C. Grabaciones Audiovisuales y Entrevistas a Profundidad {#anexo-c-grabaciones-audiovisuales-y-entrevistas-a-profundidad}
 
 Todos los recursos audiovisuales se encuentran alojados en la infraestructura institucional de **Microsoft Stream / SharePoint UPC**, configurados con permisos de visualización habilitados para toda la organización (`@upc.edu.pe`).

@@ -72,6 +72,8 @@ Para mantener la máxima calidad, legibilidad y mantenibilidad del código fuent
     * **Aplicación** en lugar de "aplicativo" o "app".
     * **Desplegar / Probar / Confirmar cambios** en lugar de "deployar", "testear" o "comitear".
 
+\newpage
+
 #### Convención de Mensajes de Confirmación (Conventional Commits)
 
 Todos los commits en los repositorios de GitHub deben seguir obligatoriamente la especificación **Conventional Commits 1.0.0**:
