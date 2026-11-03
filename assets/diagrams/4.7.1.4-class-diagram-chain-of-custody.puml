@@ -1,0 +1,76 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam classFontStyle bold
+skinparam roundcorner 8
+
+title Medical SMARTBOX - Chain of Custody & Traceability (UML Class Diagram)
+
+package "Bounded Context: Chain of Custody & Traceability" <<Rectangle>> {
+    enum HandoverStatus <<Enumeration>> {
+        PendingOtpVerification
+        OtpVerifiedLidUnlocked
+        CompletedAccepted
+        RejectedThermalExcursion
+        RejectedTampering
+    }
+
+    class CustodyTransfer <<AggregateRoot>> {
+        + Id: Guid
+        + TripId: Guid
+        + RecipientHospitalId: Guid
+        + AuthorizedRecipientUserId: Guid
+        + Status: HandoverStatus
+        + RecipientNotes: string?
+        + TransferredAt: DateTime?
+        - _otpToken: OtpToken
+        + GenerateRecipientOtp(): string
+        + VerifyOtpAndAuthorizeOpening(enteredOtp: string): Result
+        + ConfirmCustodyAcceptance(notes: string): Result
+        + RejectDeliveryDueToThermalDamage(reason: string): void
+        + RejectDeliveryDueToTampering(reason: string): void
+    }
+
+    class DigitalAuditManifest <<AggregateRoot>> {
+        + Id: Guid
+        + TransferId: Guid
+        + ManifestCode: string
+        + GeneratedAt: DateTime
+        + CryptographicHashSha256: string
+        + CloudStorageUrl: string
+        + IsSealedAndImmutable: bool
+        + AverageTemperatureCelsius: double
+        + MinTemperatureCelsius: double
+        + MaxTemperatureCelsius: double
+        + TotalExcursionSeconds: int
+        + MinsaComplianceVerified: bool
+        + CalculateThermalCompliance(): bool
+        + SealManifest(pdfBytes: byte[]): void
+    }
+
+    class OtpToken <<ValueObject>> {
+        + HashedCode: string
+        + ExpiresAtUtc: DateTime
+        + MaxAttemptsAllowed: int
+        + CurrentAttempts: int
+        + ValidateCode(plainCode: string): bool
+        + IsExpired(): bool
+    }
+
+    interface ICustodyRepository <<Repository>> {
+        + GetTransferByTripIdAsync(tripId: Guid): Task<CustodyTransfer>
+        + SaveTransferAsync(transfer: CustodyTransfer): Task
+        + SaveManifestAsync(manifest: DigitalAuditManifest): Task
+    }
+
+    interface IStorageService <<Service>> {
+        + UploadImmutablePdfAsync(fileName: string, stream: Stream): Task<string>
+    }
+
+    CustodyTransfer "1" *-- "1" OtpToken : - _otpToken
+    CustodyTransfer "1" --> "0..1" DigitalAuditManifest : generates >
+    CustodyTransfer "*" --> "1" HandoverStatus
+    ICustodyRepository ..> CustodyTransfer : persists >
+    DigitalAuditManifest ..> IStorageService : stores via >
+}
+@enduml

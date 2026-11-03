@@ -1,0 +1,143 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam classFontStyle bold
+skinparam roundcorner 8
+
+title Medical SMARTBOX - Smart Container & Telemetry Monitoring (UML Class Diagram)
+
+package "Bounded Context: Smart Container & Telemetry Monitoring" <<Rectangle>> {
+    enum BoxFormFactor <<Enumeration>> {
+        SmallBox_5L
+        StandardBox_20L
+    }
+
+    enum ContainerStatus <<Enumeration>> {
+        Available
+        Precooling
+        LockedAndReady
+        InTransit
+        Delivered
+        MaintenanceRequired
+    }
+
+    enum LockState <<Enumeration>> {
+        Locked
+        Unlocked
+        Tampered
+        Error
+    }
+
+    class SmartContainer <<AggregateRoot>> {
+        + Id: Guid
+        + SerialNumber: string
+        + FormFactor: BoxFormFactor
+        + Status: ContainerStatus
+        + CurrentTemperature: double
+        + NetWeightGrams: double
+        + TareWeightGrams: double
+        + LastTelemetryAt: DateTime
+        - _lock: ElectromechanicalLock
+        - _cooler: PeltierCooler
+        - _battery: BatteryUnit
+        + RecordTelemetry(snapshot: TelemetrySnapshot): Result
+        + CalibrateTare(tareGrams: double): void
+        + LoadPayload(grossWeightGrams: double): void
+        + EngageLock(): void
+        + UnlockWithVerifiedOtp(): void
+        + SwitchToAuxiliaryPower(): void
+    }
+
+    class ElectromechanicalLock <<Entity>> {
+        + Id: Guid
+        + State: LockState
+        + LastEngagedAt: DateTime
+        + IsSecure: bool
+        + Engage(): void
+        + Release(): void
+        + VerifySecurityStatus(): bool
+    }
+
+    class PeltierCooler <<Entity>> {
+        + Id: Guid
+        + PowerOutputPercentage: int
+        + TargetTemperature: double
+        + IsActive: bool
+        + SetTargetTemperature(targetCelsius: double): void
+        + Activate(): void
+        + Deactivate(): void
+    }
+
+    class BatteryUnit <<Entity>> {
+        + Id: Guid
+        + ChargePercentage: double
+        + IsChargingFrom12V: bool
+        + RemainingAutonomyHours: double
+        + UpdateLevel(chargePct: double, isCharging: bool): void
+        + HasSufficientAutonomy(minHours: double): bool
+    }
+
+    class GeoLocation <<ValueObject>> {
+        + Latitude: double
+        + Longitude: double
+        + DistanceTo(other: GeoLocation): double
+        + IsWithinGeofence(center: GeoLocation, radiusMeters: double): bool
+    }
+
+    class TelemetrySnapshot <<ValueObject>> {
+        + TimestampUtc: DateTime
+        + TemperatureCelsius: double
+        + WeightGrams: double
+        + BatteryPercent: double
+        + Is12VConnected: bool
+        + Location: GeoLocation
+        + FirmwareSignature: string
+        + IsThermallyValid(): bool
+        + HasValidSignature(pubKey: string): bool
+    }
+
+    interface ISmartContainerRepository <<Repository>> {
+        + GetByIdAsync(id: Guid): Task<SmartContainer>
+        + GetBySerialNumberAsync(serial: string): Task<SmartContainer>
+        + SaveAsync(container: SmartContainer): Task
+    }
+
+    class TelemetryLog <<Entity>> {
+        + Id: long
+        + ContainerId: Guid
+        + TripId: Guid?
+        + TimestampUtc: DateTime
+        + TemperatureCelsius: decimal
+        + AmbientTemperatureCelsius: decimal
+        + WeightGrams: decimal
+        + BatteryPercentage: decimal
+        + Is12VConnected: bool
+        + PeltierPowerPct: int
+        + LidLockEngaged: bool
+        + Latitude: decimal?
+        + Longitude: decimal?
+        + FirmwareSignature: string
+        + IsThermalExcursion: bool
+        + IsExcursion(minTemp: decimal, maxTemp: decimal): bool
+        + ValidateIntegrity(): bool
+    }
+
+    interface ITelemetryRepository <<Repository>> {
+        + AppendLogAsync(log: TelemetryLog): Task
+        + GetLogsByTripIdAsync(tripId: Guid): Task<IReadOnlyCollection<TelemetryLog>>
+        + GetLatestByContainerIdAsync(containerId: Guid): Task<TelemetryLog>
+    }
+
+    SmartContainer "1" *-- "1" ElectromechanicalLock : - _lock
+    SmartContainer "1" *-- "1" PeltierCooler : - _cooler
+    SmartContainer "1" *-- "1" BatteryUnit : - _battery
+    SmartContainer "1" ..> "*" TelemetrySnapshot : processes >
+    SmartContainer "1" --> "*" TelemetryLog : records >
+    TelemetrySnapshot "1" *-- "1" GeoLocation
+    SmartContainer "*" --> "1" BoxFormFactor
+    SmartContainer "*" --> "1" ContainerStatus
+    ElectromechanicalLock "*" --> "1" LockState
+    ISmartContainerRepository ..> SmartContainer : persists >
+    ITelemetryRepository ..> TelemetryLog : persists >
+}
+@enduml

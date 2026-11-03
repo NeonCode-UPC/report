@@ -4,6 +4,8 @@ En esta sección se presenta el **Product Backlog** priorizado para la plataform
 
 El backlog se encuentra organizado secuencialmente bajo un criterio estricto de **valor de negocio para nuestros segmentos objetivo**, iniciando con la difusión comercial y captación de prospectos institucionales (*Landing Page*), seguido del onboarding hospitalario y los servicios de monitoreo IoT, aprovisionamiento, alertas críticas y cadena de custodia.
 
+::: {.backlog-table}
+
 | Order / Priority | Epic ID | User Story ID | Título de la Historia | Descripción | Story Points (Fibonacci) | Sprint Asignado |
 | :------: | :--------: | :-------: | :------------------- | :---------------------------------- | :------: | :--------: |
 | **01** | EP02 | **US04** | Exploración de Propuesta de Valor Logística | Como visitante comercial institucional (Gianfranco Timoteo), deseo consultar las capacidades de los contenedores inteligentes en el Landing Page para evaluar su implementación. | 2 | Sprint 1 |
@@ -25,11 +27,13 @@ El backlog se encuentra organizado secuencialmente bajo un criterio estricto de 
 | **17** | EP06 | **US17** | Confirmación de Entrega y Cadena de Custodia | Como personal médico de emergencia (Aldair Lazaro), deseo registrar la recepción del contenedor para cerrar la cadena de custodia del envío. | 3 | Sprint 4 |
 | **18** | EP06 | **US18** | Consulta de Historial de Traslados (API) | Como Developer, deseo disponer de un endpoint GET `/api/v1/transfers/{transferId}/audit` para recuperar el registro de auditoría. | 5 | Sprint 4 |
 
-***
+:::
 
 ### 3.3.1. Engineering Tasks
 
 A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales: `US04`, `US05`, `US06`, `US01`, `US02` y `US03`) en tareas de ingeniería (*Engineering Tasks*), en correspondencia exacta con el *Sprint Backlog 1* de la sección `5.2.1.3`. Cada tarea ha sido acotada a una duración estimada de **entre 4 y 8 horas**, asegurando la manejabilidad técnica dentro de la iteración.
+
+::: {.compact-tasks}
 
 #### **US04: Exploración de Propuesta de Valor Logística (2 SP)**
 
@@ -64,3 +68,5 @@ A continuación se detalla el desglose del **Sprint 1** (16 Story Points totales
 
 * **TSK-03-01:** Diseño de contratos OpenAPI (`POST /api/v1/authentication/sign-in`, especificación del contrato de autenticación y estructura de respuesta JWT). **[6 Horas]**
 * **TSK-03-02:** Arquitectura de dominio para identidad (definición de clases de dominio `User`, `HospitalOrganization`, Value Objects y reglas de identidad). **[5 Horas]**
+
+:::

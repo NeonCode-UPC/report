@@ -18,8 +18,11 @@ El taller se desarrolló ejecutando rigurosamente los nueve (9) pasos estructura
 
 ***
 
-![Figura 2.4 - Big Picture EventStorming: Fases de Origen, Tránsito y Destino](../assets/chapter-2/smart-medical-container-eventstorming.jpg)  
+::: {.figure-block}
+![Figura 2.4 - Big Picture EventStorming: Fases de Origen, Tránsito y Destino](../assets/chapter-2/smart-medical-container-eventstorming.jpg)
+
 *Nota: Elaboración propia en Miro según la técnica de modelado colaborativo de Alberto Brandolini para el transporte asistencial de muestras médicas y órganos en Lima Metropolitana.*
+:::
 
 ***
 
@@ -55,8 +58,6 @@ La siguiente matriz sintetiza los problemas operativos reales identificados en l
 | **Arribo** | Quirófano o personal de guardia no preparado al llegar la ambulancia por falta de preaviso. | Alta | **Geocerca de Pre-Arribo (≤ 2 km / 10 min):** Notificación automática al hospital receptor para alistar recepción. | *Medical Transport Planning & Dispatching* |
 | **Entrega** | Apertura indebida en pasillos o entrega a personal no facultado sin validación de identidad. | Crítica | **Doble Factor de Desbloqueo:** Ubicación obligatoria en geocerca hospitalaria + código OTP temporal. | *Chain of Custody & Traceability* |
 | **Cierre** | Rechazo de lotes o litigios por falta de auditoría continua exigida por DIGEMID (R.M. 833-2015). | Media | **Expediente Digital con Hash SHA-256:** Reporte PDF descargable con telemetría completa y firmas. | *Chain of Custody & Traceability* |
-
-***
 
 #### 3. Validación por Storytelling y Reverse Storytelling
 
@@ -111,6 +112,8 @@ Para complementar la visión macro del lienzo y facilitar la transición hacia e
 
 #### Políticas y Rutas Alternativas de Contingencia
 
+::: {.compact-keep-items}
+
 * **Desviación Térmica (Excursión Térmica):**
   * *Evento desencadenante:* `TemperaturaFueraDeRango` (`ThermalExcursionDetected`).
   * *Política reactiva:* Si la temperatura interna excede los 8.0 °C o desciende de 2.0 °C durante más de 120 segundos continuos, disparar de inmediato alerta acústica/visual en cabina vehicular y remitir notificación push de máxima severidad a los médicos del hospital receptor.
@@ -124,6 +127,8 @@ Para complementar la visión macro del lienzo y facilitar la transición hacia e
 * **Apertura No Autorizada de Escotilla:**
   * *Evento desencadenante:* `AperturaFueraDeGeocercaDetectada` (`TamperAttemptDetected`).
   * *Política reactiva:* Si el sensor magnético detecta separación de la tapa fuera del radio hospitalario autorizado, marcar `CadenaDeCustodiaComprometida`, activar sirena local de seguridad y registrar el incidente con coordenadas geográficas inmediatas.
+
+:::
 
 #### Agregados y Límites del Dominio
 

@@ -18,7 +18,7 @@ De acuerdo con el marco metodológico de **Nielsen Norman Group (NN/g)** para la
 | Dimensión NN/g | Posicionamiento de Medical SMARTBOX | Justificación y Aplicación en Interfaz (Microcopy) |
 | :--- | :--- | :--- |
 | **1. Funny vs. Serious**<br>*(Divertido vs. Serio)* | **100% Serious (Serio)** | El transporte de órganos, sangre y biológicos de emergencia es una operación crítica para la vida humana. Se omite cualquier humor, sarcasmo o coloquialismo en estados de error o alertas térmicas. |
-| **2. Formal vs. Casual**<br>*(Formal vs. Casual)* | **Formal-Técnico (Clínico y Directo)** | Se emplea terminología médico-logística estandarizada (*Cadena de frío*, *Excursión térmica*, * Ventana de isquemia*, *Acta SHA-256*, *Cumplimiento DIGEMID*) comprensible al instante por profesionales de salud y operadores de flota. |
+| **2. Formal vs. Casual**<br>*(Formal vs. Casual)* | **Formal-Técnico (Clínico y Directo)** | Se emplea terminología médico-logística estandarizada (*Cadena de frío*, *Excursión térmica*, *Ventana de isquemia*, *Acta SHA-256*, *Cumplimiento DIGEMID*) comprensible al instante por profesionales de salud y operadores de flota. |
 | **3. Respectful vs. Irreverent**<br>*(Respetuoso vs. Irreverente)* | **Altamente Respectful (Respetuoso)** | Respeta el tiempo y la carga de estrés del paramédico (**Aldair Lazaro**) y del receptor hospitalario (**Gianfranco Timoteo**), guiando la resolución de incidentes sin culpabilizar al usuario ante errores de digitación de OTP o pérdidas de cobertura celular. |
 | **4. Enthusiastic vs. Matter-of-fact**<br>*(Entusiasta vs. Objetivo/Práctico)* | **Matter-of-fact (Objetivo y Conciso)** | Prioriza datos cuantitativos exactos sin adornos retóricos. En el Dashboard web predomina la objetividad pura (ej. *"Alerta Crítica: 9.2 °C en SB-0231 — Excede umbral máximo de 8.0 °C por 90 s"*), mientras que en el Landing Page adopta un matiz ligeramente persuasivo pero sustentado en métricas técnicas. |
 
@@ -29,8 +29,8 @@ El sistema tipográfico prioriza la jerarquía visual y la decodificación insta
 *   **Bricolage Grotesque:** Empleada como tipografía corporativa para encabezados primarios y secundarios (`h1`, `h2`, `h3`). Su estructura geométrica contemporánea con remates técnicos otorga autoridad visual, solidez institucional y modernidad tecnológica.
 *   **Inter:** Empleada para textos de párrafo, microcopia de interfaz, tablas de auditoría y visualización de telemetría numérica. Su excelente renderizado subpíxel y variantes tabulares numéricas (`font-variant-numeric: tabular-nums`) garantizan una lectura nítida de decimales de temperatura y porcentajes de batería sin oscilaciones visuales.
 
-![Bricolage Grotesque - Font](../assets/chapter-4/bricolage-font.png)
-![Inter - Font](../assets/chapter-4/inter-font.png)
+![Bricolage Grotesque - Font](../assets/chapter-4/bricolage-font.png){.style-specimen-lg}
+![Inter - Font](../assets/chapter-4/inter-font.png){.style-specimen-lg}
 *Nota: Muestrarios tipográficos de Bricolage Grotesque (titulares) e Inter (cuerpo y datos numéricos).*
 
 ### Colors
@@ -43,14 +43,12 @@ La paleta cromática se seleccionó bajo criterios de contraste accesible (cumpl
 *   **Coral / Rojo Alerta (`#E05A46`):** Tono semántico de alta prioridad reservado exclusivamente para situaciones críticas (temperatura fuera de umbral, desconexión de energía de 12V, batería residual < 15%, apertura no autorizada de tapa).
 *   **Gris Neutro Frío (`#F4F7F6` / `#E2E8F0`):** Fondos de interfaz y delimitadores de paneles modulares para reducir la fatiga visual en turnos prolongados.
 
-![Paleta de Colores](../assets/chapter-4/paleta.png)
+![Paleta de Colores](../assets/chapter-4/paleta.png){.style-specimen-sm}
 *Nota: Muestra de la paleta de colores corporativa y semántica de Medical SMARTBOX.*
 
 ### Spacing
 
 El espaciado se fundamenta en un sistema de rejilla base modular de **8 píxeles** (8-point grid system: 4px, 8px, 16px, 24px, 32px, 48px, 64px). Este estándar asegura consistencia entre paneles modulares, tarjetas de telemetría telemática (*telemetry cards*) y botones de acción rápida, previniendo el hacinamiento de información y reduciendo la tasa de error por toques accidentales en pantallas táctiles de cabina.
-
-***
 
 ## 4.1.2. Web Style Guidelines
 

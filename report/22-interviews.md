@@ -53,6 +53,8 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 
 ### Tabla Consolidada de Registro de Entrevistas:
 
+::: {.auto-table}
+
 | **#** | **Segmento** | **Entrevistado** | **Rol / Cargo** | **Organización** | **Edad** | **Distrito** | **Entrevistador** | **Fecha** | **Dur.** | **Video** |
 | :---: | :-------- | :------------ | :-------------- | :-------------- | :---: | :--------- | :---------- | :-----: | :---: | :---: |
 | **E1** | Segmento 1 | Wilbert Toledo | Estudiante de Medicina / Paramédico en Prácticas | Red de Ambulancias de Emergencia | 21 | Pueblo Libre | Aaron Espinoza | 16/09/2026 | 02:51 min | [Ver][ref-link-1] |
@@ -61,6 +63,8 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 | **E4** | Segmento 2 | Humberto Arellán | Transportista Logístico Biomédico | Empresa de Distribución de Muestras y Fármacos | 49 | Chancay | Jhon Jaramillo | 16/09/2026 | 04:27 min | [Ver][ref-link-4] |
 | **E5** | Segmento 2 | Gianfranco Timoteo | Coordinador de Soporte y Cadena de Frío | Laboratorio y Centro Clínico | 21 | Chorrillos | Jhon Jaramillo | 16/09/2026 | 04:59 min | [Ver][ref-link-5] |
 | **E6** | Segmento 2 | Karla Pacheco | Auxiliar Administrativa de Farmacia y Rutas | Centro de Salud Policlínico | 25 | Breña | Renzo Santos | 16/09/2026 | 04:09 min | [Ver][ref-link-6] |
+
+:::
 
 ***
 

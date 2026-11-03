@@ -14,6 +14,8 @@ Sus necesidades operativas se centran en verificar rápidamente que el contenedo
 * **Dimensionamiento de Flota en Lima Metropolitana:** Según registros del **Registro Nacional de Instituciones Prestadoras de Servicios de Salud (RENIPRESS — SUSALUD)** y del **MINSA**, en Lima Metropolitana y el Callao operan más de **450 unidades de ambulancias acreditadas** (entre bases operativas del SAMU, hospitales nacionales del MINSA, redes prestacionales de EsSalud y clínicas privadas).
 * **Impacto del Tráfico Vehicular en Tiempos de Traslado:** De acuerdo con el *TomTom Traffic Index*, Lima Metropolitana registra un nivel de congestión vehicular superior al **45% en horas punta**, incrementando los tiempos de traslado interhospitalario entre **28 y 42 minutos adicionales** por trayecto de 10 km, lo que eleva críticamente el riesgo de agotamiento de geles refrigerantes en cajas pasivas convencionales.
 
+\newpage
+
 ## Segmento 2: Personal Clínico, Operadores Logísticos e Instituciones de Salud Receptoras
 
 Este segmento está conformado por las instituciones prestadoras de servicios de salud (**IPRESS de Categorías II-2, III-1 y III-2**: hospitales nacionales, institutos especializados, clínicas privadas, bancos de sangre Tipo II y laboratorios de referencia) y sus profesionales responsables: coordinadores clínicos de recepción y procura (**DIGDOT — MINSA**), médicos patólogos clínicos, jefes de banco de sangre, químicos farmacéuticos hospitalarios, supervisores de logística médica y auditores de calidad.

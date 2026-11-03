@@ -1,0 +1,186 @@
+%% -----------------------------------------------------------------------------
+%% 2.4. Big Picture EventStorming - Smart Medical Container (Diagram-as-Code)
+%% Lenguaje: Mermaid
+%% Visualización y Comparación:
+%% 1. Abre este archivo en VS Code con la extensión "Mermaid Editor" o "Markdown Preview Mermaid Support".
+%% 2. O copia y pega este código en https://mermaid.live para visualizarlo en pantalla completa y comparar con Miro.
+%% -----------------------------------------------------------------------------
+
+flowchart TB
+    %% =========================================================================
+    %% DEFINICIÓN DE ESTILOS CROMÁTICOS (Paleta Oficial Alberto Brandolini)
+    %% =========================================================================
+    classDef event fill:#FF9800,stroke:#E65100,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef hotspot fill:#E91E63,stroke:#880E4F,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef role fill:#FFF59D,stroke:#FBC02D,stroke-width:2px,color:#000000,font-weight:bold;
+    classDef opp fill:#4CAF50,stroke:#1B5E20,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef sys fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+
+    %% =========================================================================
+    %% FASE 1: ORIGEN (HOSPITAL EMISOR)
+    %% =========================================================================
+    subgraph F1 ["FASE 1: Origen (Hospital Emisor)"]
+        direction TB
+
+        subgraph F1_Top ["Actores y Hotspots"]
+            direction LR
+            subgraph F1_Roles ["👥 Roles y Sistemas"]
+                direction TB
+                R1_1["👤 Coordinador de Procura (DIGDOT/MINSA)"]:::role
+                R1_2["👤 Bioquímico / Paramédico Asistencial"]:::role
+                S1_1["🏛️ Registro RENIPRESS / SUSALUD"]:::sys
+            end
+            subgraph F1_Hotspots ["🟪 Hotspots (Puntos Críticos)"]
+                direction TB
+                H1_1["⚠️ Despacho sin saber 12V ni frío previo"]:::hotspot
+                H1_2["⚠️ Actas en papel se mojan o extravían"]:::hotspot
+                H1_3["⚠️ Riesgo de manipulación sin pesaje"]:::hotspot
+            end
+        end
+
+        subgraph F1_Events ["🟧 Eventos de Dominio (Domain Events)"]
+            direction TB
+            E1_01["Solicitud de transporte médico urgente emitida"]:::event
+            E1_02["Carga biológica clasificada (órgano/muestra)"]:::event
+            E1_03["Tolerancia térmica establecida (+2°C a +8°C)"]:::event
+            E1_04["Unidad de Transporte Asistencial Tipo II/III asignada"]:::event
+            E1_05["Autodiagnóstico de sensores completado"]:::event
+            E1_06["Pre-enfriamiento Peltier estabilizado"]:::event
+            E1_07["Muestra colocada en bandeja interna"]:::event
+            E1_08["Peso basal registrado por celda HX711 (+-5g)"]:::event
+            E1_09["Tapa hermética de contenedor cerrada"]:::event
+            E1_10["Cerradura de solenoide bloqueada"]:::event
+            E1_11["Acta digital de salida generada con QR"]:::event
+            E1_12["Acta digital firmada digitalmente"]:::event
+
+            E1_01 --> E1_02 --> E1_03 --> E1_04 --> E1_05 --> E1_06 --> E1_07 --> E1_08 --> E1_09 --> E1_10 --> E1_11 --> E1_12
+        end
+
+        subgraph F1_Opp ["🟩 Oportunidades de Solución"]
+            direction TB
+            O1_1["💡 Tablero web de flota en tiempo real"]:::opp
+            O1_2["💡 Acta digital inmutable con código QR"]:::opp
+            O1_3["💡 Tara digital HX711 acoplada a solenoide"]:::opp
+        end
+
+        F1_Top --> F1_Events --> F1_Opp
+    end
+
+    %% =========================================================================
+    %% FASE 2: TRÁNSITO (CALLES DE LIMA)
+    %% =========================================================================
+    subgraph F2 ["FASE 2: Tránsito y Telemetría (Calles de Lima)"]
+        direction TB
+
+        subgraph F2_Top ["Actores y Hotspots"]
+            direction LR
+            subgraph F2_Roles ["👥 Roles y Sistemas"]
+                direction TB
+                R2_1["👤 Paramédico / Conductor (SAMU / Operador Privado)"]:::role
+                S2_1["🖥️ Firmware Autónomo ESP32"]:::sys
+                S2_2["🌐 API Tráfico TomTom"]:::sys
+                S2_3["📲 Pasarela SMS Twilio"]:::sys
+            end
+            subgraph F2_Hotspots ["🟪 Hotspots (Puntos Críticos)"]
+                direction TB
+                H2_1["⚠️ Descarga de batería o falso contacto 12V"]:::hotspot
+                H2_2["⚠️ Rotura de cadena de frío en atascos"]:::hotspot
+                H2_3["⚠️ Pérdida de telemetría en túneles"]:::hotspot
+                H2_4["⚠️ Golpe de calor en cabina (hasta 38.5°C)"]:::hotspot
+            end
+        end
+
+        subgraph F2_Events ["🟧 Eventos de Dominio (Domain Events)"]
+            direction TB
+            E2_01["Contenedor conectado a toma 12V DC"]:::event
+            E2_02["Salida de hospital registrada por geocerca"]:::event
+            E2_03["Telemetría periódica 4G transmitida (temperatura, GPS)"]:::event
+            E2_04["Congestión vehicular severa detectada"]:::event
+            E2_05["Excursión térmica incipiente detectada (> 7.5°C)"]:::event
+            E2_06["Módulo Peltier ajustado a máxima potencia"]:::event
+            E2_07["Alerta acústica y visual en cabina activada"]:::event
+            E2_08["Ruta alterna recalculada hacia destino"]:::event
+            E2_09["Señal 4G perdida en túnel (modo offline)"]:::event
+            E2_10["Lecturas acumuladas en memoria Flash local"]:::event
+            E2_11["Señal 4G recuperada y ráfaga sincronizada"]:::event
+            E2_12["Alimentación externa 12V vehicular perdida"]:::event
+
+            E2_01 --> E2_02 --> E2_03
+            %% Flujo Principal y Concurrencia Operativa en Tránsito
+            E2_03 --> E2_04 --> E2_08
+            E2_03 --> E2_05 --> E2_06 --> E2_07
+            %% Contingencia Eléctrica (Desconexión de 12V vehicular)
+            E2_03 -.-> E2_12 -.-> E2_07
+            %% Contingencia Subterránea (Túneles)
+            E2_03 -.-> E2_09 --> E2_10 --> E2_11
+        end
+
+        subgraph F2_Opp ["🟩 Oportunidades de Solución"]
+            direction TB
+            O2_1["💡 Disipación Peltier + batería LiFePO4 (4h)"]:::opp
+            O2_2["💡 Buffer Flash local con retransmisión"]:::opp
+            O2_3["💡 Alarma sonora y visual ante fallos de frío"]:::opp
+            O2_4["💡 Recálculo de ruta dinámica anti-tráfico TomTom"]:::opp
+        end
+
+        F2_Top --> F2_Events --> F2_Opp
+    end
+
+    %% =========================================================================
+    %% FASE 3: DESTINO (HOSPITAL RECEPTOR)
+    %% =========================================================================
+    subgraph F3 ["FASE 3: Destino y Recepción Segura (Hospital Receptor)"]
+        direction TB
+
+        subgraph F3_Top ["Actores y Hotspots"]
+            direction LR
+            subgraph F3_Roles ["👥 Roles y Sistemas"]
+                direction TB
+                R3_1["👤 Médico Receptor / Destino"]:::role
+                R3_2["👤 Paramédico de Entrega"]:::role
+                S3_1["🏛️ Sistema HIS / Quirófano Hospitalario"]:::sys
+            end
+            subgraph F3_Hotspots ["🟪 Hotspots (Puntos Críticos)"]
+                direction TB
+                H3_1["⚠️ Quirófano o ascensor ocupados por falta de aviso"]:::hotspot
+                H3_2["⚠️ Riesgo de apertura clandestina en ruta"]:::hotspot
+                H3_3["⚠️ Discrepancias legales sobre degradación"]:::hotspot
+            end
+        end
+
+        subgraph F3_Events ["🟧 Eventos de Dominio (Domain Events)"]
+            direction TB
+            E3_01["Geocerca de pre-arribo hospitalaria activada (2 km / 10 min)"]:::event
+            E3_02["Notificación de arribo inminente emitida a emergencia"]:::event
+            E3_03["Arribo de ambulancia registrado en bahía de recepción"]:::event
+            E3_04["Código OTP de un solo uso solicitado"]:::event
+            E3_05["Código OTP validado en teclado numérico"]:::event
+            E3_06["Cerradura de solenoide desbloqueada"]:::event
+            E3_07["Tapa del contenedor abierta en área estéril"]:::event
+            E3_08["Muestra retirada y peso contrastado (+-5g)"]:::event
+            E3_09["Muestra aceptada formalmente como viable"]:::event
+            E3_10["Acta final de entrega firmada digitalmente"]:::event
+            E3_11["Expediente PDF auditado exportado a DIGEMID"]:::event
+
+            E3_01 --> E3_02 --> E3_03 --> E3_04 --> E3_05 --> E3_06 --> E3_07 --> E3_08 --> E3_09 --> E3_10 --> E3_11
+        end
+
+        subgraph F3_Opp ["🟩 Oportunidades de Solución"]
+            direction TB
+            O3_1["💡 Geocerca de proximidad con aviso 10 min antes"]:::opp
+            O3_2["💡 Desbloqueo GPS + Token OTP de 6 dígitos"]:::opp
+            O3_3["💡 Certificado digital inmutable para auditoría"]:::opp
+        end
+
+        F3_Top --> F3_Events --> F3_Opp
+    end
+
+    %% =========================================================================
+    %% CONEXIONES CRONOLÓGICAS ENTRE LAS FASES
+    %% =========================================================================
+    E1_12 ==> E2_01
+    E2_03 ==> E3_01
+    E2_08 --> E3_01
+    E2_07 -.-> E3_01
+    E2_11 -.-> E3_01
+    E2_12 -.-> E3_01

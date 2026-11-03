@@ -6,6 +6,20 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ---
 
+## [2.1.3] - 2026-11-02
+
+### Added
+- Incorporación de las **12 fuentes reales de Diagramas como Código** del equipo en [`assets/diagrams/`](assets/diagrams/) (`.dsl` de Structurizr C4 niveles 1–3, `.puml` de PlantUML para los 5 *Bounded Contexts* UML 2.5, diagrama integrado y modelo ER físico, `.mmd` de Big Picture EventStorming y `.sql` DDL MySQL 8.0).
+- Formato jerárquico vertical del índice modular en [`README.md`](README.md) para mejorar la legibilidad por capítulos.
+
+### Changed
+- Maquetación tipográfica A4 hoja por hoja en [`config/styles/report.css`](config/styles/report.css) y 24 secciones de [`report/`](report/): bloques indivisibles (`.figure-block`, `.ui-block`, `.evidence-block`, `.persona-card-block`, `.user-story-card`), anchos proporcionales deterministas en `<colgroup>` para tablas extensas y vistas de interfaz en `4.4` a ancho completo, optimizando la extensión de 170 a **157 páginas** sin alterar el contenido académico y con cero páginas viudas o leyendas huérfanas.
+
+### Removed
+- Eliminación de los 2 archivos de ejemplo no referenciados en `assets/diagrams/` (`telemetry-custody-sequence.puml` y `telemetry-pipeline-flow.mmd`).
+
+---
+
 ## [2.1.2] - 2026-11-02
 
 ### Added
@@ -36,7 +50,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Metadatos editoriales desacoplados en [`metadata.yaml`](metadata.yaml) y base de datos bibliográfica en [`bibtex.bib`](bibtex.bib) procesada automáticamente en formato APA con `--citeproc` y citas nativas `[@clave]`.
 - Filtro AST en Lua ([`config/filters/pagebreak-and-tables.lua`](config/filters/pagebreak-and-tables.lua)) para saltos de página agnósticos al motor (`latex`, `typst`, `html5`), normalización de rutas relativas `../assets/` y resolución cruzada de anclas `.md#seccion`.
 - Orquestador multiplataforma [`Makefile`](Makefile) (`make pdf`, `make eisvogel`, `make clean`) y pipeline CI/CD en GitHub Actions ([`.github/workflows/build-report.yml`](.github/workflows/build-report.yml)).
-- Fuentes versionables de Diagramas como Código en `assets/diagrams/` ([`telemetry-custody-sequence.puml`](assets/diagrams/telemetry-custody-sequence.puml) y [`telemetry-pipeline-flow.mmd`](assets/diagrams/telemetry-pipeline-flow.mmd)), plantilla [`eisvogel.latex`](config/templates/eisvogel.latex) y fondo vectorial [`cover-background.pdf`](assets/cover-background.pdf).
+- Fuentes versionables de Diagramas como Código en `assets/diagrams/` (`telemetry-custody-sequence.puml` y `telemetry-pipeline-flow.mmd`), plantilla [`eisvogel.latex`](config/templates/eisvogel.latex) y fondo vectorial [`cover-background.pdf`](assets/cover-background.pdf).
 - Subcarpetas modulares normalizadas en inglés y `kebab-case`: `report/front-matter/` (`01` a `05`), `report/99-bibliography.md` y `report/annexes/` (`annex-a`, `annex-b`, `annex-c`).
 - Registro histórico formal [`CHANGELOG.md`](CHANGELOG.md) bajo el estándar *Keep a Changelog*.
 

@@ -1,4 +1,4 @@
-## 2.3. Needfinding
+# 2.3. Needfinding
 
 El proceso de Needfinding permitió identificar y representar las necesidades, objetivos y dificultades de los dos segmentos objetivo de Medical SmartBox. Se partió de las seis entrevistas registradas en la sección 2.2 y de su análisis. Con esa evidencia se construyeron los siguientes artefactos: User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, siguiendo las pautas de Nielsen Norman Group y de Interaction Design Foundation.
 
@@ -16,23 +16,39 @@ Se evitó agrupar únicamente por edad o distrito. Los conjuntos se definieron p
 | Segmento 1: personal médico y de emergencias | E1 Wilbert Toledo, E2 Aldair Lazaro, E3 Renato Calvo Yalan | Trasladan productos médicos en ambulancia mientras atienden al paciente o conducen, y no pueden verificar con frecuencia el estado de la carga. | Aldair Lazaro |
 | Segmento 2: operadores logísticos e instituciones de salud | E4 Humberto Arellán, E5 Gianfranco Timoteo, E6 Karla Pacheco | Coordinan, reciben y auditan traslados, y dependen de llamadas y registros manuales para conocer su estado. | Gianfranco Timoteo |
 
-### 2.3.1. User Personas
+## 2.3.1. User Personas
 
 Se elaboró una ficha de User Persona por segmento en UXPressia. Cada ficha se basa en un entrevistado representativo y en los patrones comunes de su segmento, que se resumen en la tabla de trazabilidad.
+
+\newpage
+
+::: {.persona-card-block}
 
 **User Persona 1: Aldair Lazaro (Segmento 1: personal médico y de emergencias)**
 
 Aldair tiene 26 años, vive en San Martín de Porres y es paramédico rescatista de ambulancia con 3 años de experiencia en emergencias prehospitalarias. Realiza entre 3 y 6 traslados asistenciales por turno y vigila al paciente y los fármacos a la vez. Registra la entrega en planillas de papel y se comunica con el hospital receptor por llamadas y WhatsApp.
 
-![User Persona - Aldair Lazaro](../assets/chapter-2/user-persona-aldair.png)
+![User Persona - Aldair Lazaro](../assets/chapter-2/user-persona-aldair.png){.persona-card}
+
 *Nota: Elaboración propia en UXPressia para el Segmento 1.*
+
+:::
+
+\newpage
+
+::: {.persona-card-block}
 
 **User Persona 2: Gianfranco Timoteo (Segmento 2: operadores logísticos e instituciones de salud)**
 
 Gianfranco tiene 21 años, vive en Chorrillos y es coordinador de soporte y supervisor de cadena de frío en un laboratorio clínico. Audita la recepción de muestras biológicas y reactivos, y consolida en Excel las actas recibidas en papel. Detecta discrepancias de temperatura en aproximadamente el 15 % de los envíos que recibe en horas punta.
 
-![User Persona - Gianfranco Timoteo](../assets/chapter-2/user-persona-gianfranco.png)
+![User Persona - Gianfranco Timoteo](../assets/chapter-2/user-persona-gianfranco.png){.persona-card}
+
 *Nota: Elaboración propia en UXPressia para el Segmento 2.*
+
+:::
+
+\newpage
 
 **Trazabilidad entre las entrevistas y las personas**
 
@@ -57,7 +73,7 @@ Los porcentajes se calculan sobre las tres entrevistas de cada segmento (n = 3).
 
 ***
 
-### 2.3.2. User Task Matrix
+## 2.3.2. User Task Matrix
 
 La User Task Matrix reúne las tareas que realizan las dos personas para cumplir sus objetivos en el traslado de productos médicos, **independientemente de la existencia de una solución de software**. Para cada tarea se indica la frecuencia con que se realiza y su importancia para el resultado del traslado. Las tareas se identificaron a partir de las entrevistas E1 a E6.
 
@@ -86,7 +102,7 @@ La diferencia principal es el momento en que actúan: el Segmento 1 se concentra
 
 ***
 
-### 2.3.3. User Journey Mapping
+## 2.3.3. User Journey Mapping
 
 El User Journey Mapping ilustra el recorrido **actual (As-Is)** de cada persona, es decir, cómo vive el traslado hoy, sin Medical SmartBox. Se organiza en tres fases: Antes (preparación), Durante (tránsito) y Después (entrega y cierre). Cada mapa se elaboró en UXPressia y está vinculado a su User Persona. El contenido se basa en las entrevistas E1 a E6.
 
@@ -98,8 +114,11 @@ El User Journey Mapping ilustra el recorrido **actual (As-Is)** de cada persona,
 | Durante | Conduce o acompaña la ambulancia en el tráfico, atiende al paciente y comunica su avance al hospital. | Celular, compartimento posterior de la ambulancia | No puede ver la temperatura sin abrir la tapa. Los baches pueden abrir el seguro sin que lo note. Estrés por la doble carga de vigilar al paciente y los fármacos. |
 | Después | Entrega la carga, el hospital mide la temperatura y firma la planilla de papel. | Planilla de papel autocopiativo, personal de farmacia | Si el termómetro marca fuera de rango, el lote puede ser rechazado. No puede demostrar a qué hora subió la temperatura. |
 
+::: {.figure-block}
 ![User Journey Map - Aldair Lazaro](../assets/chapter-2/user-journey-aldair.png)
+
 *Nota: Elaboración propia en UXPressia para la situación actual (As-Is) de Aldair Lazaro.*
+:::
 
 **User Journey Map 2: Gianfranco Timoteo (Segmento 2)**
 
@@ -111,15 +130,17 @@ El User Journey Mapping ilustra el recorrido **actual (As-Is)** de cada persona,
 | Durante | Espera la llegada de la unidad en hora punta llamando reiteradamente al transportista; al arribar la ambulancia, mide puntualmente la temperatura con termómetro infrarrojo o descarga el datalogger USB. | Bahía de recepción, termómetro de punzón/infrarrojo, datalogger USB, acta impresa | Desconoce si hubo excursiones térmicas intermedias o aperturas del cooler en el camino; en el 15 % de los envíos en hora punta detecta desviaciones recién al abrir la caja. |
 | Después | Firma o rechaza el acta en papel, transcribe manualmente las lecturas a una hoja de cálculo Excel y archiva los folios físicos para inspecciones de DIGEMID. | Planillas de papel, computadora de escritorio (Excel), archivadores físicos | Alto desgaste operativo al digitar actas dispersas, riesgo de errores de transcripción o pérdida de hojas físicas y vulnerabilidad ante auditorías de trazabilidad. |
 
+::: {.figure-block}
 ![User Journey Map - Gianfranco Timoteo](../assets/chapter-2/user-journey-gianfranco.png)
 
 *Nota: Elaboración propia en UXPressia para la situación actual (As-Is) de Gianfranco Timoteo.*
+:::
 
-### 2.3.4. Empathy Mapping
+## 2.3.4. Empathy Mapping
 
 El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de cada persona. Para elaborarlo en UXPressia se colocó a la User Persona al centro y cada miembro del equipo agregó observaciones sobre lo que piensa, siente, ve, oye, dice y hace, a partir de las entrevistas. Después se identificaron sus Pains y Gains y se consolidaron en equipo.
 
-**Mapa de empatía 1: Aldair Lazaro (Segmento 1)**
+#### Mapa de empatía 1: Aldair Lazaro (Segmento 1)
 
 - **¿Con quién estamos empatizando?** Con Aldair Lazaro, paramédico rescatista de ambulancia de 26 años (E2).
 - **¿Qué necesita hacer?** Trasladar los medicamentos y hemoderivados en buenas condiciones mientras atiende al paciente, y lograr que el hospital acepte la entrega.
@@ -131,10 +152,13 @@ El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de 
 - **Pains:** No puede demostrar a qué hora subió la temperatura. Los baches abren los coolers sin que se note. Riesgo de rechazo del lote.
 - **Gains:** Contar con un registro que pruebe que la cadena de frío se mantuvo. Menos discusiones con farmacia.
 
-![Empathy Map - Aldair Lazaro](../assets/chapter-2/empathy-map-aldair.png)
-*Nota: Elaboración propia en UXPressia para Aldair Lazaro.*
+::: {.figure-block}
+![Empathy Map - Aldair Lazaro](../assets/chapter-2/empathy-map-aldair.png){.uxpressia-empathy-1}
 
-**Mapa de empatía 2: Gianfranco Timoteo (Segmento 2)**
+*Nota: Elaboración propia en UXPressia para Aldair Lazaro.*
+:::
+
+#### Mapa de empatía 2: Gianfranco Timoteo (Segmento 2)
 
 - **¿Con quién estamos empatizando?** Con Gianfranco Timoteo, coordinador de soporte y supervisor de cadena de frío en un laboratorio clínico, de 21 años (E5).
 - **¿Qué necesita hacer?** Auditar la recepción de muestras biológicas y reactivos, y mantener registros confiables ante DIGEMID.
@@ -146,10 +170,11 @@ El Empathy Mapping profundiza en el modelo mental y las presiones cotidianas de 
 - **Pains:** No puede auditar la temperatura durante el trayecto. Los registros manuscritos no son confiables. Esfuerzo manual para consolidar la información.
 - **Gains:** Un registro digital continuo y confiable de la temperatura. Menos trabajo manual al consolidar datos.
 
-![Empathy Map - Gianfranco Timoteo](../assets/chapter-2/empathy-map-gianfranco.png)
-*Nota: Elaboración propia en UXPressia para Gianfranco Timoteo.*
+::: {.figure-block}
+![Empathy Map - Gianfranco Timoteo](../assets/chapter-2/empathy-map-gianfranco.png){.uxpressia-empathy-2}
 
-***
+*Nota: Elaboración propia en UXPressia para Gianfranco Timoteo.*
+:::
 
 ### Síntesis de Necesidades Priorizadas
 

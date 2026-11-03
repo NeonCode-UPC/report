@@ -35,7 +35,7 @@ El análisis comparativo adopta estrictamente la estructura normativa del cuadro
 | **Análisis SWOT: Oportunidades** | Exigencias crecientes de DIGEMID y MINSA para trazabilidad de cadena de frío en emergencias; alta tasa de mermas por tráfico vehicular en Lima. | Incremento en la demanda mundial de medicamentos biológicos sensibles a variaciones de temperatura. | Crecimiento del comercio farmacéutico electrónico y requisitos de trazabilidad en transporte logístico local. | Expansión de requisitos de monitoreo en tiempo real post-COVID y adopción de estándares de sostenibilidad en logística clínica. |
 | **Análisis SWOT: Amenazas** | Burocracia y lentitud en licitaciones del sector salud público (EsSalud/MINSA); resistencia al cambio del personal paramédico ante el registro digital. | Nuevos entrantes en tecnología IoT celular de bajo costo que presionan a la baja los márgenes de hardware. | Competidores de rastreo satelital genérico que ofrecen sensores de temperatura básicos como commodity a bajo precio. | Tensiones geopolíticas y disrupciones en la cadena global de suministro de componentes electrónicos semiconductores para hardware IoT. |
 
-***
+\newpage
 
 ## 2.1.2. Estrategias y tácticas frente a competidores
 
