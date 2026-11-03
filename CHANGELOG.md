@@ -6,6 +6,14 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ---
 
+## [2.1.1] - 2026-11-02
+
+### Fixed
+- Compatibilidad retroactiva de [`config/build.yaml`](config/build.yaml) y [`config/eisvogel.yaml`](config/eisvogel.yaml) con versiones de Pandoc `3.1+` en entornos Linux CI/CD (`ubuntu-latest`), delegando el resaltado léxico al motor predeterminado de Pandoc.
+- Optimización del target `make pdf` en [`Makefile`](Makefile) para generar `build/project-report.pdf` por copia directa sin duplicar la invocación al motor PDF.
+
+---
+
 ## [2.1.0] - 2026-11-02
 
 ### Added

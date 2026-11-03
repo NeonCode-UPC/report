@@ -79,7 +79,7 @@ filters:
 css:
   - config/styles/report.css
 
-syntax-highlighting: tango
+# syntax-highlighting activo por defecto en Pandoc 2.x/3.x
 number-sections: false
 
 variables:
