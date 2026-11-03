@@ -6,6 +6,21 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ---
 
+## [2.1.2] - 2026-11-02
+
+### Added
+- Publicación automatizada de **GitHub Releases** en [`.github/workflows/build-report.yml`](.github/workflows/build-report.yml) adjuntando directamente el PDF oficial compilado ante cada etiqueta SemVer `v*`.
+
+### Changed
+- Simplificación de [`README.md`](README.md) como guía técnica ejecutiva *Docs-as-Code* sin duplicar la carátula académica de [`01-cover.md`](report/front-matter/01-cover.md).
+- Consolidación de la salida de compilación en un único entregable PDF oficial (`upc-pre-202620-1asi0730-8150-neoncode-report-tb1.pdf`) en [`Makefile`](Makefile) y GitHub Actions.
+
+### Fixed
+- Normalización determinista de rutas relativas de imágenes (`../` y `../../`) en [`config/filters/pagebreak-and-tables.lua`](config/filters/pagebreak-and-tables.lua) para incrustar las 77 imágenes sin errores en contenedores Linux de GitHub Actions.
+- Orden de ejecución de `citeproc` posterior al filtro Lua en [`config/build.yaml`](config/build.yaml) y [`config/eisvogel.yaml`](config/eisvogel.yaml) eliminando la colisión de ancla duplicada `#refs`.
+
+---
+
 ## [2.1.1] - 2026-11-02
 
 ### Fixed
