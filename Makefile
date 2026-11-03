@@ -18,7 +18,7 @@ all: pdf
 pdf:
 	@echo "==> Compiling modular Markdown report via Pandoc ($(CONFIG_FILE))..."
 	@$(PANDOC) --defaults=$(CONFIG_FILE)
-	@$(PANDOC) --defaults=$(CONFIG_FILE) -o $(REPORT_PDF)
+	@cp -f $(OUTPUT_PDF) $(REPORT_PDF)
 	@echo "==> Build successful: $(OUTPUT_PDF) & $(REPORT_PDF)"
 
 eisvogel:

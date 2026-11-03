@@ -8,7 +8,7 @@
 **Docente:** Velásquez Núñez, Ángel Augusto  
 **Startup / Equipo:** NeonCode  
 **Producto:** Medical SMARTBOX  
-**Período Académico:** `202620` (Hito Actual: **TB1 — Versión [`2.1.0`](CHANGELOG.md)**)
+**Período Académico:** `202620` (Hito Actual: **TB1 — Versión [`2.1.1`](CHANGELOG.md)**)
 
 ---
 
