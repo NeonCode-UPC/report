@@ -27,7 +27,7 @@ resource-path:
 metadata-files:
   - metadata.yaml
 
-citeproc: true
+# citeproc se ejecuta en filters luego de normalizar #refs
 bibliography: bibtex.bib
 
 input-files:
@@ -70,6 +70,7 @@ number-sections: false
 
 filters:
   - config/filters/pagebreak-and-tables.lua
+  - citeproc
 
 variables:
   geometry:
