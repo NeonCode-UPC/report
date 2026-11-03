@@ -61,7 +61,9 @@ function Image(el)
   -- (../assets/... or ../../assets/...) for IDE & GitHub preview while normalizing to
   -- repository-root assets/... when compiling the unified document via Pandoc.
   if el.src then
-    el.src = el.src:gsub("^(%.%./)+assets/", "assets/")
+    while el.src:sub(1, 3) == "../" do
+      el.src = el.src:sub(4)
+    end
   end
   return el
 end

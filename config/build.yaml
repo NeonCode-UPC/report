@@ -32,7 +32,7 @@ resource-path:
 metadata-files:
   - metadata.yaml
 
-citeproc: true
+# citeproc se ejecuta en filters luego de normalizar #refs
 bibliography: bibtex.bib
 
 # Archivos modulares ordenados secuencialmente por prefijo numérico (Pág. 88)
@@ -74,6 +74,7 @@ output-file: build/upc-pre-202620-1asi0730-8150-neoncode-report-tb1.pdf
 # Filtros de manipulación programática del AST (Pág. 70)
 filters:
   - config/filters/pagebreak-and-tables.lua
+  - citeproc
 
 # Estilos tipográficos y resaltado léxico de código (Págs. 76-78)
 css:
