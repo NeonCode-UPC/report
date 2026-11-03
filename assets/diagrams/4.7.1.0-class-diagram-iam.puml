@@ -1,0 +1,104 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam classFontStyle bold
+skinparam roundcorner 8
+
+title Medical SMARTBOX - Identity, Access & Subscriptions (UML Class Diagram)
+
+package "Bounded Context: Identity, Access & Subscriptions (IAM)" <<Rectangle>> {
+    enum UserRole <<Enumeration>> {
+        AmbulanceDriver
+        Paramedic
+        FleetDispatcher
+        ClinicalPharmacist
+        ReceivingSurgeon
+        QualityAuditor
+        SystemAdministrator
+    }
+
+    enum InstitutionTypeEnum <<Enumeration>> {
+        PublicHospital
+        PrivateClinic
+        AmbulanceNetwork
+        PharmaceuticalLab
+    }
+
+    class SubscriptionPlan <<AggregateRoot>> {
+        + Id: Guid
+        + PlanCode: string
+        + Name: string
+        + MaxAmbulances: int
+        + MaxFleetBoxes: int
+        + MonthlyCostUsd: decimal
+        + SupportSlaHours: int
+        + TelemetryDataRetentionMonths: int
+        + IsActive: bool
+        + CanProvisionBox(currentBoxes: int): bool
+        + CanProvisionAmbulance(currentAmbulances: int): bool
+        + UpdateBillingTerms(cost: decimal, maxBoxes: int, maxAmbulances: int): void
+    }
+
+    class HospitalInstitution <<AggregateRoot>> {
+        + Id: Guid
+        + OfficialName: string
+        + TaxIdRuc: string
+        + InstitutionType: InstitutionTypeEnum
+        + RenipressCode: string
+        + HealthServiceLevel: string
+        + Address: string
+        + District: string
+        + EmergencyPhone: string
+        + Latitude: double
+        + Longitude: double
+        + GeofenceRadiusMeters: double
+        + SubscriptionPlanId: Guid
+        + IsActive: bool
+        + IsLocationInsideGeofence(lat: double, lon: double): bool
+        + UpdateGeofenceRadius(radiusMeters: double): void
+    }
+
+    class UserAccount <<AggregateRoot>> {
+        + Id: Guid
+        + InstitutionId: Guid
+        + FirstName: string
+        + LastName: string
+        + Email: string
+        + PasswordHash: string
+        + PhoneNumber: string
+        + ProfessionalLicenseNumber: string
+        + Role: UserRole
+        + IsActive: bool
+        + LastLoginAt: DateTime?
+        + VerifyPassword(plainPassword: string): bool
+        + ChangePassword(newHash: string): void
+        + DeactivateAccount(): void
+    }
+
+    interface IUserRepository <<Repository>> {
+        + GetByIdAsync(id: Guid): Task<UserAccount>
+        + GetByEmailAsync(email: string): Task<UserAccount>
+        + SaveAsync(user: UserAccount): Task
+    }
+
+    interface IInstitutionRepository <<Repository>> {
+        + GetByIdAsync(id: Guid): Task<HospitalInstitution>
+        + GetByRenipressCodeAsync(code: string): Task<HospitalInstitution>
+        + SaveAsync(institution: HospitalInstitution): Task
+    }
+
+    interface ISubscriptionRepository <<Repository>> {
+        + GetByIdAsync(id: Guid): Task<SubscriptionPlan>
+        + GetByCodeAsync(code: string): Task<SubscriptionPlan>
+        + SaveAsync(plan: SubscriptionPlan): Task
+    }
+
+    HospitalInstitution "*" --> "1" SubscriptionPlan : subscribed to >
+    HospitalInstitution "1" --> "1" InstitutionTypeEnum : classified by >
+    UserAccount "*" --> "1" HospitalInstitution : belongs to >
+    UserAccount "*" --> "1" UserRole : authorized with >
+    IUserRepository ..> UserAccount : persists >
+    IInstitutionRepository ..> HospitalInstitution : persists >
+    ISubscriptionRepository ..> SubscriptionPlan : persists >
+}
+@enduml

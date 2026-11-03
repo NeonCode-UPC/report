@@ -9,7 +9,7 @@ El informe técnico modular está disponible en [`report/`](report/), los recurs
 ```text
 .
 ├── .github/workflows/build-report.yml       # CI/CD: compilación PDF y publicación automática en Releases
-├── assets/                                  # Activos gráficos y fuentes de diagramas (.puml, .mmd)
+├── assets/                                  # Activos gráficos y fuentes de diagramas (.dsl, .puml, .mmd, .sql)
 ├── build/                                   # Salida local del PDF compilado (ignorada en Git)
 ├── config/                                  # Configuración declarativa de Pandoc
 │   ├── build.yaml                           # Archivo Defaults principal (--file-scope, --resource-path)

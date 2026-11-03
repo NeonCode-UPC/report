@@ -1,0 +1,568 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam classFontStyle bold
+skinparam roundcorner 6
+skinparam defaultFontSize 11
+skinparam classFontSize 12
+skinparam classAttributeFontSize 10
+skinparam packageFontSize 13
+skinparam packageFontStyle bold
+skinparam nodesep 45
+skinparam ranksep 50
+
+title Medical SMARTBOX - Domain Object-Oriented Design (UML Class Diagram)
+
+package "Bounded Context: Identity, Access & Subscriptions" <<Rectangle>> {
+    enum UserRole <<Enumeration>> {
+        AmbulanceDriver
+        Paramedic
+        FleetDispatcher
+        ClinicalPharmacist
+        ReceivingSurgeon
+        QualityAuditor
+        SystemAdministrator
+    }
+
+    enum InstitutionTypeEnum <<Enumeration>> {
+        PublicHospital
+        PrivateClinic
+        AmbulanceNetwork
+        PharmaceuticalLab
+    }
+
+    class SubscriptionPlan <<AggregateRoot>> {
+        + Id: Guid
+        + PlanCode: string
+        + Name: string
+        + MaxAmbulances: int
+        + MaxFleetBoxes: int
+        + MonthlyCostUsd: decimal
+        + SupportSlaHours: int
+        + TelemetryDataRetentionMonths: int
+        + IsActive: bool
+        + CanProvisionBox(currentBoxes: int): bool
+        + CanProvisionAmbulance(currentAmbulances: int): bool
+        + UpdateBillingTerms(cost: decimal, maxBoxes: int, maxAmbulances: int): void
+    }
+
+    class HospitalInstitution <<AggregateRoot>> {
+        + Id: Guid
+        + OfficialName: string
+        + TaxIdRuc: string
+        + InstitutionType: InstitutionTypeEnum
+        + RenipressCode: string
+        + HealthServiceLevel: string
+        + Address: string
+        + District: string
+        + EmergencyPhone: string
+        + Latitude: double
+        + Longitude: double
+        + GeofenceRadiusMeters: double
+        + SubscriptionPlanId: Guid
+        + IsActive: bool
+        + IsLocationInsideGeofence(lat: double, lon: double): bool
+        + UpdateGeofenceRadius(radiusMeters: double): void
+    }
+
+    class UserAccount <<AggregateRoot>> {
+        + Id: Guid
+        + InstitutionId: Guid
+        + FirstName: string
+        + LastName: string
+        + Email: string
+        + PasswordHash: string
+        + PhoneNumber: string
+        + ProfessionalLicenseNumber: string
+        + Role: UserRole
+        + IsActive: bool
+        + LastLoginAt: DateTime?
+        + VerifyPassword(plainPassword: string): bool
+        + ChangePassword(newHash: string): void
+        + DeactivateAccount(): void
+    }
+
+    interface IUserRepository <<Repository>> {
+        + GetByIdAsync(id: Guid): Task<UserAccount>
+        + GetByEmailAsync(email: string): Task<UserAccount>
+        + SaveAsync(user: UserAccount): Task
+    }
+
+    interface IInstitutionRepository <<Repository>> {
+        + GetByIdAsync(id: Guid): Task<HospitalInstitution>
+        + GetByRenipressCodeAsync(code: string): Task<HospitalInstitution>
+        + SaveAsync(institution: HospitalInstitution): Task
+    }
+
+    interface ISubscriptionRepository <<Repository>> {
+        + GetByIdAsync(id: Guid): Task<SubscriptionPlan>
+        + GetByCodeAsync(code: string): Task<SubscriptionPlan>
+        + SaveAsync(plan: SubscriptionPlan): Task
+    }
+
+    HospitalInstitution "*" --> "1" SubscriptionPlan : subscribed to >
+    HospitalInstitution "1" --> "1" InstitutionTypeEnum : classified by >
+    UserAccount "*" --> "1" HospitalInstitution : belongs to >
+    UserAccount "*" --> "1" UserRole : authorized with >
+    IUserRepository ..> UserAccount : persists >
+    IInstitutionRepository ..> HospitalInstitution : persists >
+    ISubscriptionRepository ..> SubscriptionPlan : persists >
+}
+
+package "Bounded Context: Smart Container & Telemetry Monitoring" <<Rectangle>> {
+    enum BoxFormFactor <<Enumeration>> {
+        SmallBox_5L
+        StandardBox_20L
+    }
+
+    enum ContainerStatus <<Enumeration>> {
+        Available
+        Precooling
+        LockedAndReady
+        InTransit
+        Delivered
+        MaintenanceRequired
+    }
+
+    enum LockState <<Enumeration>> {
+        Locked
+        Unlocked
+        Tampered
+        Error
+    }
+
+    class SmartContainer <<AggregateRoot>> {
+        + Id: Guid
+        + SerialNumber: string
+        + FormFactor: BoxFormFactor
+        + Status: ContainerStatus
+        + CurrentTemperature: double
+        + NetWeightGrams: double
+        + TareWeightGrams: double
+        + LastTelemetryAt: DateTime
+        - _lock: ElectromechanicalLock
+        - _cooler: PeltierCooler
+        - _battery: BatteryUnit
+        + RecordTelemetry(snapshot: TelemetrySnapshot): Result
+        + CalibrateTare(tareGrams: double): void
+        + LoadPayload(grossWeightGrams: double): void
+        + EngageLock(): void
+        + UnlockWithVerifiedOtp(): void
+        + SwitchToAuxiliaryPower(): void
+    }
+
+    class ElectromechanicalLock <<Entity>> {
+        + Id: Guid
+        + State: LockState
+        + LastEngagedAt: DateTime
+        + IsSecure: bool
+        + Engage(): void
+        + Release(): void
+        + VerifySecurityStatus(): bool
+    }
+
+    class PeltierCooler <<Entity>> {
+        + Id: Guid
+        + PowerOutputPercentage: int
+        + TargetTemperature: double
+        + IsActive: bool
+        + SetTargetTemperature(targetCelsius: double): void
+        + Activate(): void
+        + Deactivate(): void
+    }
+
+    class BatteryUnit <<Entity>> {
+        + Id: Guid
+        + ChargePercentage: double
+        + IsChargingFrom12V: bool
+        + RemainingAutonomyHours: double
+        + UpdateLevel(chargePct: double, isCharging: bool): void
+        + HasSufficientAutonomy(minHours: double): bool
+    }
+
+    class GeoLocation <<ValueObject>> {
+        + Latitude: double
+        + Longitude: double
+        + DistanceTo(other: GeoLocation): double
+        + IsWithinGeofence(center: GeoLocation, radiusMeters: double): bool
+    }
+
+    class TelemetrySnapshot <<ValueObject>> {
+        + TimestampUtc: DateTime
+        + TemperatureCelsius: double
+        + WeightGrams: double
+        + BatteryPercent: double
+        + Is12VConnected: bool
+        + Location: GeoLocation
+        + FirmwareSignature: string
+        + IsThermallyValid(): bool
+        + HasValidSignature(pubKey: string): bool
+    }
+
+    interface ISmartContainerRepository <<Repository>> {
+        + GetByIdAsync(id: Guid): Task<SmartContainer>
+        + GetBySerialNumberAsync(serial: string): Task<SmartContainer>
+        + SaveAsync(container: SmartContainer): Task
+    }
+
+    class TelemetryLog <<Entity>> {
+        + Id: long
+        + ContainerId: Guid
+        + TripId: Guid?
+        + TimestampUtc: DateTime
+        + TemperatureCelsius: decimal
+        + AmbientTemperatureCelsius: decimal
+        + WeightGrams: decimal
+        + BatteryPercentage: decimal
+        + Is12VConnected: bool
+        + PeltierPowerPct: int
+        + LidLockEngaged: bool
+        + Latitude: decimal?
+        + Longitude: decimal?
+        + FirmwareSignature: string
+        + IsThermalExcursion: bool
+        + IsExcursion(minTemp: decimal, maxTemp: decimal): bool
+        + ValidateIntegrity(): bool
+    }
+
+    interface ITelemetryRepository <<Repository>> {
+        + AppendLogAsync(log: TelemetryLog): Task
+        + GetLogsByTripIdAsync(tripId: Guid): Task<IReadOnlyCollection<TelemetryLog>>
+        + GetLatestByContainerIdAsync(containerId: Guid): Task<TelemetryLog>
+    }
+
+    SmartContainer "1" *-- "1" ElectromechanicalLock : - _lock
+    SmartContainer "1" *-- "1" PeltierCooler : - _cooler
+    SmartContainer "1" *-- "1" BatteryUnit : - _battery
+    SmartContainer "1" ..> "*" TelemetrySnapshot : processes >
+    SmartContainer "1" --> "*" TelemetryLog : records >
+    TelemetrySnapshot "1" *-- "1" GeoLocation
+    SmartContainer "*" --> "1" BoxFormFactor
+    SmartContainer "*" --> "1" ContainerStatus
+    ElectromechanicalLock "*" --> "1" LockState
+    ISmartContainerRepository ..> SmartContainer : persists >
+    ITelemetryRepository ..> TelemetryLog : persists >
+}
+
+package "Bounded Context: Medical Transport Planning & Dispatching" <<Rectangle>> {
+    enum PriorityLevel <<Enumeration>> {
+        Routine
+        Urgent
+        StatEmergency
+    }
+
+    enum TripStatus <<Enumeration>> {
+        Scheduled
+        ResourcesAssigned
+        PrecoolingVerified
+        InTransit
+        ArrivedAtDestination
+        Completed
+        Cancelled
+    }
+
+    enum CargoType <<Enumeration>> {
+        HeartOrgan
+        LiverOrgan
+        KidneyOrgan
+        BloodPlasmaPack
+        ThermolabileVaccine
+        BiopsySample
+    }
+
+    enum TransportOrderStatus <<Enumeration>> {
+        Pending
+        Assigned
+        InTransit
+        Completed
+        Cancelled
+    }
+
+    class TransportOrder <<AggregateRoot>> {
+        + Id: Guid
+        + OrderCode: string
+        + OriginHospitalId: Guid
+        + DestinationHospitalId: Guid
+        + Priority: PriorityLevel
+        + Status: TransportOrderStatus
+        + CargoType: CargoType
+        + CargoDescription: string
+        + MaxIschemiaLimit: IschemiaTimeLimit
+        + CreatedByUserId: Guid
+        + CreatedAt: DateTime
+        + ValidateIschemiaFeasibility(estMinutes: int): bool
+        + CancelOrder(reason: string): void
+    }
+
+    class DispatchTrip <<AggregateRoot>> {
+        + Id: Guid
+        + OrderId: Guid
+        + AssignedVehiclePlate: string
+        + AssignedContainerId: Guid
+        + AssignedDriverUserId: Guid
+        + AssignedParamedicUserId: Guid
+        + Status: TripStatus
+        + ScheduledDepartureTime: DateTime
+        + ActualDepartureTime: DateTime?
+        + EstimatedArrivalTime: DateTime
+        + ActualArrivalTime: DateTime?
+        - _route: TransportRoute
+        + AssignCrewAndResources(vehPlate: string, boxId: Guid, driverId: Guid, paramedicId: Guid): void
+        + StartTrip(boxPrecooled: bool): Result
+        + UpdateDynamicEta(newEta: DateTime): void
+        + RegisterHospitalArrival(loc: GeoLocation): Result
+    }
+
+    class TransportRoute <<Entity>> {
+        + Id: Guid
+        + DistanceKilometers: double
+        + PlannedDurationMinutes: int
+        + CurrentCongestionDelayMinutes: int
+        + PolylineCoordinates: string
+        + RecalculateRoute(delayMins: int): void
+        + IsSeverelyDelayed(): bool
+    }
+
+    class IschemiaTimeLimit <<ValueObject>> {
+        + MaxSafeHours: double
+        + WarningThresholdHours: double
+        + IsViolated(elapsedHours: double): bool
+        + IsApproachingLimit(elapsedHours: double): bool
+    }
+
+    interface ITransportRepository <<Repository>> {
+        + GetTripByIdAsync(id: Guid): Task<DispatchTrip>
+        + GetActiveTripsAsync(): Task<List<DispatchTrip>>
+        + SaveTripAsync(trip: DispatchTrip): Task
+    }
+
+    interface ITrafficRoutingService <<Service>> {
+        + GetDynamicEtaAsync(origin: GeoLocation, dest: GeoLocation): Task<DateTime>
+        + CheckTrafficDelaysAsync(polyline: string): Task<int>
+    }
+
+    TransportOrder "1" *-- "1" IschemiaTimeLimit
+    TransportOrder "*" --> "1" CargoType
+    TransportOrder "*" --> "1" PriorityLevel
+    TransportOrder "*" --> "1" TransportOrderStatus
+    DispatchTrip "1" *-- "1" TransportRoute : - _route
+    DispatchTrip "*" --> "1" TripStatus
+    DispatchTrip "1" --> "1" TransportOrder : fulfills >
+    DispatchTrip "1" -right-> "1" SmartContainer : transports >
+    ITransportRepository ..> DispatchTrip : persists >
+}
+
+package "Bounded Context: Critical Alerting & Incident Response" <<Rectangle>> {
+    enum IncidentType <<Enumeration>> {
+        ColdChainBreachHigh
+        ColdChainBreachLow
+        Auxiliary12VPowerLost
+        PayloadTamperingSuspected
+        SevereTrafficDelayExceeded
+    }
+
+    enum IncidentStatus <<Enumeration>> {
+        Triggered
+        Acknowledged
+        Escalated
+        Resolved
+    }
+
+    enum IncidentSeverity <<Enumeration>> {
+        LowWarning
+        ModerateAlert
+        CriticalEmergency
+        CatastrophicFailure
+    }
+
+    enum EscalationLevelEnum <<Enumeration>> {
+        OperationalCabAlert = 1
+        LogisticsSupervisorAlert = 2
+        MedicalDirectorEscalation = 3
+    }
+
+    class CriticalIncident <<AggregateRoot>> {
+        + Id: Guid
+        + TripId: Guid
+        + ContainerId: Guid
+        + IncidentType: IncidentType
+        + Status: IncidentStatus
+        + Severity: IncidentSeverity
+        + TriggerTemperatureCelsius: decimal?
+        + TriggerBatteryPercentage: decimal?
+        + EscalationLevel: EscalationLevelEnum
+        + TriggeredAt: DateTime
+        + AcknowledgedAt: DateTime?
+        + AcknowledgedByUserId: Guid?
+        - _resolution: ContingencyResolution?
+        + Acknowledge(operatorId: Guid): void
+        + EscalateToMedicalDirector(): void
+        + Resolve(action: string, resolvedBy: Guid): Result
+    }
+
+    class ContingencyResolution <<Entity>> {
+        + Id: Guid
+        + MitigationAction: string
+        + QualitySignoffNotes: string
+        + ResolvedAt: DateTime
+        + ResolvedByUserId: Guid
+        + WasThermalIntegrityRestored: bool
+        + ValidateResolution(): bool
+    }
+
+    interface IIncidentRepository <<Repository>> {
+        + GetActiveIncidentsAsync(): Task<List<CriticalIncident>>
+        + SaveAsync(incident: CriticalIncident): Task
+    }
+
+    interface INotificationService <<Service>> {
+        + SendCriticalPushAlertAsync(userId: Guid, msg: string): Task<bool>
+        + SendSmsAlertAsync(phone: string, msg: string): Task<bool>
+    }
+
+    CriticalIncident "1" *-- "0..1" ContingencyResolution : - _resolution
+    CriticalIncident "*" --> "1" IncidentSeverity
+    CriticalIncident "*" --> "1" IncidentType
+    CriticalIncident "*" --> "1" IncidentStatus
+    CriticalIncident "*" --> "1" EscalationLevelEnum
+    SmartContainer "1" -down-> "0..*" CriticalIncident : triggers >
+    IIncidentRepository ..> CriticalIncident : persists >
+}
+
+package "Bounded Context: Chain of Custody & Traceability" <<Rectangle>> {
+    enum HandoverStatus <<Enumeration>> {
+        PendingOtpVerification
+        OtpVerifiedLidUnlocked
+        CompletedAccepted
+        RejectedThermalExcursion
+        RejectedTampering
+    }
+
+    class CustodyTransfer <<AggregateRoot>> {
+        + Id: Guid
+        + TripId: Guid
+        + RecipientHospitalId: Guid
+        + AuthorizedRecipientUserId: Guid
+        + Status: HandoverStatus
+        + RecipientNotes: string?
+        + TransferredAt: DateTime?
+        - _otpToken: OtpToken
+        + GenerateRecipientOtp(): string
+        + VerifyOtpAndAuthorizeOpening(enteredOtp: string): Result
+        + ConfirmCustodyAcceptance(notes: string): Result
+        + RejectDeliveryDueToThermalDamage(reason: string): void
+        + RejectDeliveryDueToTampering(reason: string): void
+    }
+
+    class DigitalAuditManifest <<AggregateRoot>> {
+        + Id: Guid
+        + TransferId: Guid
+        + ManifestCode: string
+        + GeneratedAt: DateTime
+        + CryptographicHashSha256: string
+        + CloudStorageUrl: string
+        + IsSealedAndImmutable: bool
+        + AverageTemperatureCelsius: double
+        + MinTemperatureCelsius: double
+        + MaxTemperatureCelsius: double
+        + TotalExcursionSeconds: int
+        + MinsaComplianceVerified: bool
+        + CalculateThermalCompliance(): bool
+        + SealManifest(pdfBytes: byte[]): void
+    }
+
+    class OtpToken <<ValueObject>> {
+        + HashedCode: string
+        + ExpiresAtUtc: DateTime
+        + MaxAttemptsAllowed: int
+        + CurrentAttempts: int
+        + ValidateCode(plainCode: string): bool
+        + IsExpired(): bool
+    }
+
+    interface ICustodyRepository <<Repository>> {
+        + GetTransferByTripIdAsync(tripId: Guid): Task<CustodyTransfer>
+        + SaveTransferAsync(transfer: CustodyTransfer): Task
+        + SaveManifestAsync(manifest: DigitalAuditManifest): Task
+    }
+
+    interface IStorageService <<Service>> {
+        + UploadImmutablePdfAsync(fileName: string, stream: Stream): Task<string>
+    }
+
+    CustodyTransfer "1" *-- "1" OtpToken : - _otpToken
+    CustodyTransfer "1" --> "0..1" DigitalAuditManifest : generates >
+    CustodyTransfer "*" --> "1" HandoverStatus
+    DispatchTrip "1" -down-> "1" CustodyTransfer : culminates in >
+    ICustodyRepository ..> CustodyTransfer : persists >
+    DigitalAuditManifest ..> IStorageService : stores via >
+}
+
+' Relaciones Cruzadas entre Contextos (con orientación para maquetación en cuadrícula 2x3)
+TransportOrder "*" -up-> "1" HospitalInstitution : origin >
+TransportOrder "*" -up-> "1" HospitalInstitution : destination >
+DispatchTrip "*" -up-> "1" UserAccount : assigned driver >
+DispatchTrip "*" -up-> "1" UserAccount : assigned paramedic >
+CustodyTransfer "*" -up-> "1" UserAccount : authorized recipient >
+CustodyTransfer "*" -up-> "1" HospitalInstitution : recipient hospital >
+
+' Restricciones invisibles para obligar a PlantUML a formar 2 columnas compactas:
+' Columna Izquierda: IAM -> Transport -> Custody
+UserAccount -[hidden]down-> TransportOrder
+TransportOrder -[hidden]down-> CustodyTransfer
+
+' Columna Derecha: SmartContainer -> Alerting -> Shared Kernel
+SmartContainer -[hidden]down-> CriticalIncident
+CriticalIncident -[hidden]down-> IDomainEvent
+
+' Anclaje Horizontal entre columnas:
+HospitalInstitution -[hidden]right-> SmartContainer
+CustodyTransfer -[hidden]right-> IDomainEvent
+
+' Eventos de Dominio Inmutables y Shared Kernel
+package "Shared Kernel & Domain Events" <<Rectangle>> {
+    interface IDomainEvent <<Interface>> {
+        + EventId: Guid
+        + OccurredOn: DateTime
+    }
+
+    class Result <<ValueObject>> {
+        + IsSuccess: bool
+        + ErrorMessage: string
+        + IsFailure: bool
+        + {static} Ok(): Result
+        + {static} Fail(error: string): Result
+    }
+
+    class ThermalExcursionDetectedEvent <<DomainEvent>> {
+        + ContainerId: Guid
+        + CurrentTemperature: double
+        + OccurredOn: DateTime
+    }
+
+    class ExternalPowerLostEvent <<DomainEvent>> {
+        + ContainerId: Guid
+        + BatteryPercentage: decimal
+        + OccurredOn: DateTime
+    }
+
+    class HospitalPreArrivalTriggeredEvent <<DomainEvent>> {
+        + TripId: Guid
+        + DestinationHospitalId: Guid
+        + EstimatedArrival: DateTime
+        + OccurredOn: DateTime
+    }
+
+    class CustodyAcceptedEvent <<DomainEvent>> {
+        + TransferId: Guid
+        + RecipientUserId: Guid
+        + OccurredOn: DateTime
+    }
+
+    ThermalExcursionDetectedEvent ..|> IDomainEvent
+    ExternalPowerLostEvent ..|> IDomainEvent
+    HospitalPreArrivalTriggeredEvent ..|> IDomainEvent
+    CustodyAcceptedEvent ..|> IDomainEvent
+}
+
+@enduml

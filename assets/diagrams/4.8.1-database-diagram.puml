@@ -1,0 +1,248 @@
+@startuml
+' =============================================================================
+' PROYECTO: Medical SMARTBOX - Plataforma IoT para Contenedores Médicos
+' CURSO: 1ASI0730 - Aplicaciones Web | Rúbrica ABET (UPC)
+' CAPÍTULO: 4.8.1 Database Diagrams (Entity-Relationship Diagram / ERD)
+' RDBMS: MySQL Server 8.0 (InnoDB)
+' =============================================================================
+
+!define Table(name,desc) class name as "desc" << (T,#FFAAAA) >>
+!define primary_key(x) <b><color:DarkRed>+ x</color></b>
+!define foreign_key(x) <color:DarkBlue># x</color>
+!define column(x) <color:Black>x</color>
+
+skinparam monochrome false
+skinparam roundcorner 5
+skinparam linetype ortho
+skinparam classFontSize 11
+skinparam classFontName "Segoe UI"
+skinparam packageFontSize 13
+skinparam packageFontStyle bold
+
+title Medical SMARTBOX - Physical Relational Database Diagram (MySQL 8.0 InnoDB)
+
+package "Bounded Context: IAM & Subscriptions" <<Rectangle>> {
+    entity "subscription_plans" as subscription_plans {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * column(name) : VARCHAR(50)
+        * column(code) : VARCHAR(20) [UQ]
+        * column(max_ambulances) : INT
+        * column(max_smartboxes) : INT
+        * column(monthly_price_usd) : DECIMAL(10,2)
+        * column(support_sla_hours) : INT
+        * column(telemetry_data_retention_months) : INT
+        * column(is_active) : TINYINT(1)
+        * column(created_at) : DATETIME(6)
+    }
+
+    entity "hospital_institutions" as hospital_institutions {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * foreign_key(subscription_plan_id) : CHAR(36) [FK]
+        * column(name) : VARCHAR(150)
+        * column(tax_id_ruc) : VARCHAR(11) [UQ]
+        * column(institution_type) : ENUM
+        * column(health_service_level) : VARCHAR(20)
+        * column(address) : VARCHAR(255)
+        * column(district) : VARCHAR(100)
+        * column(emergency_phone) : VARCHAR(20)
+        * column(renipress_code) : VARCHAR(20) [UQ]
+        * column(latitude) : DECIMAL(10,8)
+        * column(longitude) : DECIMAL(11,8)
+        * column(geofence_radius_meters) : DECIMAL(6,2)
+        * column(is_active) : TINYINT(1)
+        * column(created_at) : DATETIME(6)
+        * column(updated_at) : DATETIME(6)
+    }
+
+    entity "users" as users {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * foreign_key(institution_id) : CHAR(36) [FK]
+        * column(first_name) : VARCHAR(80)
+        * column(last_name) : VARCHAR(80)
+        * column(email) : VARCHAR(120) [UQ]
+        * column(password_hash) : VARCHAR(255)
+        * column(role) : ENUM
+        * column(phone_number) : VARCHAR(20)
+        column(medical_license_number) : VARCHAR(30)
+        * column(is_active) : TINYINT(1)
+        column(last_login_at) : DATETIME(6)
+        * column(created_at) : DATETIME(6)
+        * column(updated_at) : DATETIME(6)
+    }
+}
+
+package "Bounded Context: Smart Container IoT & Telemetry" <<Rectangle>> {
+    entity "smart_containers" as smart_containers {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * column(serial_number) : VARCHAR(30) [UQ]
+        * column(form_factor) : ENUM
+        * column(status) : ENUM
+        * column(lock_state) : ENUM
+        * column(current_temperature_celsius) : DECIMAL(4,2)
+        * column(tare_weight_grams) : DECIMAL(8,2)
+        * column(net_weight_grams) : DECIMAL(8,2)
+        * column(battery_percentage) : DECIMAL(5,2)
+        * column(is_12v_connected) : TINYINT(1)
+        column(last_telemetry_at) : DATETIME(6)
+        * column(created_at) : DATETIME(6)
+        * column(updated_at) : DATETIME(6)
+    }
+
+    entity "telemetry_logs" as telemetry_logs {
+        * primary_key(id) : BIGINT [PK, AI]
+        --
+        * foreign_key(container_id) : CHAR(36) [FK]
+        foreign_key(trip_id) : CHAR(36) [FK]
+        * column(timestamp_utc) : DATETIME(6)
+        * column(temperature_celsius) : DECIMAL(4,2)
+        * column(ambient_temperature_celsius) : DECIMAL(4,2)
+        * column(weight_grams) : DECIMAL(8,2)
+        * column(battery_percentage) : DECIMAL(5,2)
+        * column(is_12v_connected) : TINYINT(1)
+        * column(peltier_power_pct) : INT
+        * column(lid_lock_engaged) : TINYINT(1)
+        column(latitude) : DECIMAL(10,8)
+        column(longitude) : DECIMAL(11,8)
+        * column(firmware_signature) : VARCHAR(128)
+        * column(is_thermal_excursion) : TINYINT(1)
+    }
+}
+
+package "Bounded Context: Medical Transport Planning & Dispatching" <<Rectangle>> {
+    entity "transport_orders" as transport_orders {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * column(order_code) : VARCHAR(20) [UQ]
+        * foreign_key(origin_hospital_id) : CHAR(36) [FK]
+        * foreign_key(destination_hospital_id) : CHAR(36) [FK]
+        * foreign_key(created_by_user_id) : CHAR(36) [FK]
+        * column(cargo_type) : ENUM
+        * column(cargo_description) : VARCHAR(255)
+        * column(max_ischemia_hours) : DECIMAL(4,2)
+        * column(ischemia_warning_hours) : DECIMAL(4,2)
+        * column(clinical_priority) : ENUM
+        * column(status) : ENUM
+        * column(created_at) : DATETIME(6)
+        * column(updated_at) : DATETIME(6)
+    }
+
+    entity "dispatch_trips" as dispatch_trips {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * foreign_key(order_id) : CHAR(36) [FK, UQ]
+        * foreign_key(assigned_container_id) : CHAR(36) [FK]
+        * foreign_key(assigned_driver_user_id) : CHAR(36) [FK]
+        * foreign_key(assigned_paramedic_user_id) : CHAR(36) [FK]
+        * column(assigned_vehicle_plate) : VARCHAR(10)
+        * column(status) : ENUM
+        * column(scheduled_departure_time) : DATETIME(6)
+        column(actual_departure_time) : DATETIME(6)
+        * column(estimated_arrival_time) : DATETIME(6)
+        column(actual_arrival_time) : DATETIME(6)
+        * column(distance_km) : DECIMAL(6,2)
+        * column(planned_duration_minutes) : INT
+        * column(current_delay_minutes) : INT
+        column(polyline_coordinates) : TEXT
+        * column(created_at) : DATETIME(6)
+        * column(updated_at) : DATETIME(6)
+    }
+}
+
+package "Bounded Context: Critical Alerting & Incident Response" <<Rectangle>> {
+    entity "critical_incidents" as critical_incidents {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * foreign_key(trip_id) : CHAR(36) [FK]
+        * foreign_key(container_id) : CHAR(36) [FK]
+        foreign_key(acknowledged_by_user_id) : CHAR(36) [FK]
+        * column(severity) : ENUM
+        * column(incident_type) : ENUM
+        * column(triggered_at) : DATETIME(6)
+        column(trigger_temperature_celsius) : DECIMAL(4,2)
+        column(trigger_battery_percentage) : DECIMAL(5,2)
+        * column(status) : ENUM
+        * column(escalation_level) : INT
+        column(acknowledged_at) : DATETIME(6)
+        * column(created_at) : DATETIME(6)
+    }
+
+    entity "contingency_resolutions" as contingency_resolutions {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * foreign_key(incident_id) : CHAR(36) [FK, UQ]
+        * foreign_key(resolved_by_user_id) : CHAR(36) [FK]
+        * column(mitigation_action) : VARCHAR(500)
+        * column(was_thermal_integrity_restored) : TINYINT(1)
+        * column(quality_signoff_notes) : TEXT
+        * column(resolved_at) : DATETIME(6)
+    }
+}
+
+package "Bounded Context: Chain of Custody & Traceability" <<Rectangle>> {
+    entity "custody_transfers" as custody_transfers {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * foreign_key(trip_id) : CHAR(36) [FK, UQ]
+        * foreign_key(recipient_hospital_id) : CHAR(36) [FK]
+        * foreign_key(authorized_recipient_user_id) : CHAR(36) [FK]
+        * column(handover_status) : ENUM
+        * column(otp_code_hash) : VARCHAR(128)
+        * column(otp_expires_at) : DATETIME(6)
+        * column(otp_attempt_count) : INT
+        column(otp_verified_at) : DATETIME(6)
+        column(recipient_notes) : VARCHAR(500)
+        * column(created_at) : DATETIME(6)
+        column(completed_at) : DATETIME(6)
+    }
+
+    entity "digital_audit_manifests" as digital_audit_manifests {
+        * primary_key(id) : CHAR(36) [PK]
+        --
+        * foreign_key(transfer_id) : CHAR(36) [FK, UQ]
+        * column(manifest_code) : VARCHAR(30) [UQ]
+        * column(cryptographic_hash_sha256) : CHAR(64)
+        * column(cloud_storage_pdf_url) : VARCHAR(500)
+        * column(is_sealed_and_immutable) : TINYINT(1)
+        * column(average_temperature_celsius) : DECIMAL(4,2)
+        * column(min_temperature_celsius) : DECIMAL(4,2)
+        * column(max_temperature_celsius) : DECIMAL(4,2)
+        * column(total_excursion_seconds) : INT
+        * column(minsa_compliance_verified) : TINYINT(1)
+        * column(sealed_at) : DATETIME(6)
+    }
+}
+
+' =============================================================================
+' RELACIONES ENTRE TABLAS (INTEGRIDAD REFERENCIAL Y CARDINALIDADES)
+' =============================================================================
+
+subscription_plans ||--o{ hospital_institutions : "1..* has"
+hospital_institutions ||--o{ users : "1..* employs"
+hospital_institutions ||--o{ transport_orders : "1..* originates"
+hospital_institutions ||--o{ transport_orders : "1..* destination_of"
+hospital_institutions ||--o{ custody_transfers : "1..* receives"
+
+users ||--o{ transport_orders : "1..* requests"
+users ||--o{ dispatch_trips : "1..* drives"
+users ||--o{ dispatch_trips : "1..* attends_paramedic"
+users ||--o{ critical_incidents : "0..* acknowledges"
+users ||--o{ contingency_resolutions : "1..* resolves"
+users ||--o{ custody_transfers : "1..* authorized_recipient"
+
+smart_containers ||--o{ telemetry_logs : "1..* records"
+smart_containers ||--o{ dispatch_trips : "1..* assigned_to"
+smart_containers ||--o{ critical_incidents : "1..* subject_of"
+
+transport_orders ||--o| dispatch_trips : "1..0..1 executed_by"
+dispatch_trips ||--o{ telemetry_logs : "0..* logs_telemetry"
+dispatch_trips ||--o{ critical_incidents : "0..* triggers_alert"
+dispatch_trips ||--o| custody_transfers : "1..0..1 transfers_custody"
+
+critical_incidents ||--o| contingency_resolutions : "0..1 mitigated_by"
+custody_transfers ||--o| digital_audit_manifests : "1..0..1 certifies_audit"
+
+@enduml
