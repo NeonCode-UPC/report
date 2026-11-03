@@ -1,0 +1,6 @@
+flowchart LR
+    A["ESP32 Edge Node\n(Peltier + DS18B20 + HX711)"] -->|HTTPS JSON Payload| B["Telemetry Ingestion API\n(.NET 10 LTS)"]
+    B --> C{"Evaluador de Umbrales\n(+2.0°C a +8.0°C)"}
+    C -->|Rango Normal| D["Persistencia Serie Temporal\n(MySQL 8.0 InnoDB)"]
+    C -->|Desviación Crítica| E["Critical Alerting Engine\n(Push / SMS / Cabina)"]
+    D --> F["Acta Digital de Custodia\n(Sello SHA-256 DIGEMID)"]

@@ -1,0 +1,176 @@
+@page {
+    size: A4 portrait;
+    margin: 20mm 15mm 20mm 15mm;
+    @bottom-right {
+        content: counter(page);
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #64748b;
+    }
+    @bottom-left {
+        content: "Medical SMARTBOX — NeonCode (UPC)";
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #64748b;
+    }
+}
+@page :first {
+    @bottom-right { content: normal; }
+    @bottom-left { content: normal; }
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: #1e293b;
+}
+
+/* Hide Pandoc standalone HTML title block since 01-cover.md provides the full UPC cover page */
+#title-block-header {
+    display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0f172a;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    margin: 12px 0 16px 0 !important;
+    font-size: 7.0pt;
+    line-height: 1.28;
+    page-break-inside: auto;
+}
+
+tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+
+thead {
+    display: table-header-group;
+}
+
+th, td {
+    border: 0.5pt solid #cbd5e1 !important;
+    padding: 3.5px 4.5px !important;
+    vertical-align: top !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+}
+
+th {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+}
+
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 86%;
+    background-color: #f8fafc;
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+
+pre {
+    background-color: #f8fafc;
+    border: 0.5pt solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 8pt;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 100%;
+}
+
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 4mm auto;
+}
+
+td img, th img {
+    margin: 2px auto !important;
+}
+
+/* Cover page specific styles (Pure Pandoc Fenced Div) */
+.cover-page {
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.35;
+    page-break-inside: avoid !important;
+    padding-top: 4mm;
+}
+
+.cover-page p {
+    margin: 0 0 11mm 0;
+    font-size: 10.5pt;
+    color: #0f172a;
+}
+
+.cover-page p:nth-of-type(4) {
+    font-size: 14pt;
+    margin: 2mm 0 11mm 0;
+}
+
+.cover-page img, .cover-page .cover-logo {
+    width: 14mm !important;
+    height: 14mm !important;
+    max-width: 14mm !important;
+    max-height: 14mm !important;
+    display: block !important;
+    margin: 0 auto 8mm auto !important;
+    object-fit: contain !important;
+}
+
+.cover-page table {
+    width: auto !important;
+    table-layout: auto !important;
+    margin: 0 auto 12mm auto !important;
+    border: none !important;
+    border-collapse: collapse !important;
+    font-size: 9.5pt;
+}
+
+.cover-page th, .cover-page td {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 3px 32px 3px 0 !important;
+    text-align: left !important;
+    color: #000000 !important;
+}
+
+.cover-page th:last-child, .cover-page td:last-child {
+    padding-right: 0 !important;
+}
+
+/* User Flow & Architecture Diagrams */
+.user-flow-diagram {
+    max-height: 180mm !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    margin: 3mm auto !important;
+}
+
+.database-diagram {
+    max-height: 215mm !important;
+    max-width: 98% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    margin: 2mm auto !important;
+}

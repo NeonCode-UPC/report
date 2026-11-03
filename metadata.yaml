@@ -1,0 +1,37 @@
+---
+title: "Informe del Trabajo Final (TB1)"
+subtitle: "Proyecto: Medical SMARTBOX — Equipo: NeonCode | 1ASI0730 Aplicaciones Web (NRC 8150)"
+author:
+  - "Espinoza Flores, Aaron André (u202222859)"
+  - "Jaramillo Mayta, Jhon Jordy (u202520310)"
+  - "Munayco Apolaya, Maria Luisa (u20231c995)"
+  - "Santos Minaya, Renzo Piero (u202114790)"
+date: "Octubre 2026 — Período 202620"
+lang: "es-PE"
+institution: "Universidad Peruana de Ciencias Aplicadas (UPC)"
+faculty: "Carrera de Ingeniería de Software"
+course-code: "1ASI0730"
+course-name: "Aplicaciones Web"
+nrc: "8150"
+professor: "Velásquez Núñez, Ángel Augusto"
+team-name: "NeonCode"
+project-name: "Medical SMARTBOX"
+period: "202620"
+titlepage: true
+titlepage-color: "FFFFFF"
+titlepage-text-color: "0F172A"
+titlepage-rule-color: "0284C7"
+titlepage-rule-height: 2
+titlepage-background: "assets/cover-background.pdf"
+logo: "assets/images/logo-upc.png"
+logo-width: 18mm
+toc-own-page: true
+toc-title: "Tabla de Contenido"
+tables: true
+caption-justification: centering
+header-left: "Medical SMARTBOX — NeonCode"
+header-right: "1ASI0730 Aplicaciones Web (TB1)"
+footer-left: "Universidad Peruana de Ciencias Aplicadas (UPC)"
+footer-right: "\\thepage"
+link-citations: true
+---
