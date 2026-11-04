@@ -51,7 +51,7 @@ Los aspectos definidos para este primer ciclo corresponden a los módulos del La
 
 ### 5.2.1.3. Sprint Backlog 1
 
-El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para el Sprint 1 y las tareas técnicas resultantes de su descomposición. El objetivo principal del Sprint fue desarrollar y desplegar la primera versión responsive del Landing Page institucional de Medical SMARTBOX, complementando este trabajo con la especificación de los componentes arquitectónicos correspondientes a identidad, registro institucional y servicios.
+El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para el Sprint 1 y las tareas técnicas de ingeniería resultantes de su descomposición. En estricta observancia de los lineamientos del hito AV1 (Semana 4), el alcance de desarrollo en código ejecutable se concentró en la construcción y despliegue de la primera versión responsive del **Landing Page institucional** de Medical SMARTBOX. Las historias relacionadas con identidad y servicios (US01, US02 y US03) fueron abordadas en esta iteración a nivel de **diseño arquitectónico conceptual, especificación formal de contratos OpenAPI y modelado de dominio**, garantizando los cimientos para la posterior codificación de los servicios backend.
 
 **Board del Sprint 1:**
 
@@ -75,11 +75,11 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 | US05 | Solicitud de Demostración Corporativa | TSK-05-01 | Maquetación de formulario B2B | Estructura visual del formulario de captura de prospectos institucionales. | 5 h | Aaron Espinoza  | Done |
 | US05 | Solicitud de Demostración Corporativa | TSK-05-02 | Validación en cliente y retroalimentación | Validación de RUC, correo corporativo y mensajes de retroalimentación. | 6 h | Jhon Jaramillo  | Done |
 | US06 | Consulta de Preguntas Frecuentes | TSK-06-01 | Componente interactivo acordeón FAQ | Implementación visual e interacción del acordeón de preguntas frecuentes. | 4 h | Maria Munayco   | Done |
-| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado de entidad institución | Definición del modelo de datos para instituciones de salud. | 5 h | Jhon Jaramillo  | Done |
-| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación de registro institucional | Definición de los contratos y reglas de registro institucional. | 7 h | Renzo Santos    | Done |
-| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA | Especificación del flujo de autenticación y verificación mediante OTP. | 5 h | Maria Munayco   | Done |
-| US03 | Endpoint de Autenticación de Usuarios | TSK-03-01 | Diseño de contratos OpenAPI | Especificación del contrato de autenticación y estructura de respuesta. | 6 h | Renzo Santos    | Done |
-| US03 | Endpoint de Autenticación de Usuarios | TSK-03-02 | Arquitectura de dominio para identidad | Definición de clases de dominio, Value Objects y reglas de identidad. | 5 h | Aaron Espinoza  | Done |
+| US01 | Registro de Institución de Salud | TSK-01-01 | Modelado conceptual de entidad institución | Especificación de atributos, modelo de datos y reglas de auditoría para instituciones de salud. | 5 h | Jhon Jaramillo  | Done |
+| US01 | Registro de Institución de Salud | TSK-01-02 | Especificación formal de reglas de registro | Definición de contratos y reglas de validación de RUC y dominios corporativos autorizados. | 7 h | Renzo Santos    | Done |
+| US02 | Autenticación de Personal de Emergencia | TSK-02-01 | Diseño de flujo de autenticación 2FA / OTP | Especificación del protocolo de verificación y políticas de expiración para personal médico. | 5 h | Maria Munayco   | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-01 | Diseño de especificación OpenAPI | Especificación del contrato OpenAPI/Swagger para el endpoint de autenticación y token JWT. | 6 h | Renzo Santos    | Done |
+| US03 | Endpoint de Autenticación de Usuarios | TSK-03-02 | Modelado de dominio para identidad | Definición de clases de dominio, Value Objects y políticas de acceso en la arquitectura limpia. | 5 h | Aaron Espinoza  | Done |
 
 :::
 
@@ -194,7 +194,7 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 
 ### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-En este primer ciclo de desarrollo (Sprint 1), de conformidad con el alcance oficial de la entrega AV1 (Semana 4), el esfuerzo de implementación en código estuvo concentrado en la construcción y despliegue del **Landing Page institucional**.
+En este primer ciclo de desarrollo (Sprint 1), de conformidad con el alcance oficial de la entrega AV1 (Semana 4), el esfuerzo de implementación en código ejecutable estuvo concentrado exclusivamente en la construcción y despliegue del **Landing Page institucional**. Por consiguiente, las tareas técnicas asociadas a los servicios backend (US01, US02 y US03) correspondieron estrictamente a la **especificación arquitectónica, diseño de contratos OpenAPI y modelado de dominio**, los cuales fueron formalizados exhaustivamente en los capítulos de diseño técnico:
 
 La arquitectura de servicios backend (**RESTful Web API en ASP.NET Core 10.0 con C#**) y el servicio en segundo plano de ingesta IoT fueron formalizados exhaustivamente en los capítulos de diseño técnico:
 
