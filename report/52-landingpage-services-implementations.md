@@ -283,7 +283,7 @@ La distribución permite mantener un responsable principal por aspecto y, al mis
 
 ### 5.2.2.3. Sprint Backlog 2
 
-El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sprint en tareas técnicas que permiten organizar y controlar su implementación. El Sprint contempla **29 Story Points** distribuidos entre US07, US08, US09, US10 y US12.
+El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sprint en tareas técnicas de ingeniería acotadas entre 4 y 8 horas. En estricta correspondencia con los objetivos del hito TB1 (Semana 7), el esfuerzo de desarrollo se concentró en la construcción de la **primera versión desplegada de la Frontend Web Application en Vue 3**. Por ende, las historias US09 y US12 fueron abordadas a nivel de **cliente web, ensambladores de datos (Assemblers) y gestión de estado reactivo en Pinia**, estableciendo los contratos de consumo para la futura conexión con los servicios RESTful programada para el Sprint 3. El Sprint contempla **29 Story Points** distribuidos entre US07, US08, US09, US10 y US12.
 
 **Board del Sprint 2:**
 
@@ -358,9 +358,9 @@ En el Sprint 2 se logró avanzar en la implementación e integración de las pri
 
 ### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 2 no se desarrollaron ni implementaron servicios web asociados al backend. El alcance de esta entrega estuvo enfocado principalmente en la implementación de la primera versión de las Frontend Web Applications, desarrolladas con Vue.js, PrimeVue y Pinia.
+Durante el Sprint 2 no se desplegaron servicios web ejecutables en el backend, en conformidad con el alcance oficial del hito TB1 que priorizó la entrega y despliegue de la primera versión funcional de la Frontend Web Application en Vue 3 + PrimeVue sobre persistencia reactiva local (Pinia).
 
-Por este motivo, no se presentan endpoints OpenAPI ni evidencias de interacción con servicios backend en esta sección. La implementación de los Web Services se encuentra contemplada para una etapa posterior del proyecto.
+Por este motivo, las evidencias de interacción con el backend en TB1 correspondieron al consumo simulado y desacoplado mediante servicios HTTP cliente y adaptadores DTO. La construcción de los controladores en C# ASP.NET Core (.NET 10 LTS), la configuración de Entity Framework Core con persistencia relacional en MySQL y la documentación interactiva con OpenAPI / Swagger UI constituyen el núcleo técnico del **Sprint 3 (Hito AV2)**.
 
 ### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
