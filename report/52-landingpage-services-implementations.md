@@ -419,3 +419,57 @@ La integración del trabajo se realizó progresivamente, consolidando las funcio
 *Nota: Evidencia de colaboración del equipo durante el Sprint 2, mostrando la actividad registrada en GitHub mediante commits y contribuciones de los integrantes.*
 
 :::
+
+
+\newpage
+
+## 5.2.3. Sprint 3
+
+En esta sección se detalla la planificación, asignación de responsabilidades y ejecución técnica del tercer ciclo de desarrollo (Sprint 3) del ecosistema **Medical SMARTBOX (NeonCode)** para el hito oficial **AV2 (Semana 12 - Sprint Review)**. 
+
+A diferencia del Sprint 1 (concentrado en el Landing Page) y del Sprint 2 (enfocado en la primera versión de la Frontend Web Application sobre persistencia simulada), el presente sprint materializa la **primera versión desplegada de los RESTful Web Services en ASP.NET Core (.NET 10 LTS con C#)**, persistencia relacional en MySQL 8.0, documentación interactiva de contratos con **OpenAPI / Swagger UI**, integración con servicios externos de terceros (**Twilio SMS Gateway**) y la conexión de la aplicación web cliente con los servicios desplegados en la nube.
+
+***
+
+### 5.2.3.1. Sprint Planning 3
+
+La sesión de Sprint Planning 3 tuvo como propósito formalizar el alcance, objetivo de ingeniería y distribución de tareas para la integración vertical de la solución. El equipo evaluó la velocidad técnica y priorizó la transición de las vistas web hacia el consumo de endpoints REST reales, junto con las funcionalidades de control de stock por peso, monitoreo térmico en ruta y despacho automatizado de alertas de emergencia.
+
+| **Sprint #** | **Sprint 3** |
+| :----------------------- | :--------------------------------------------------------------------------- |
+| **Sprint Planning Background** | **Sprint Planning 3** |
+| **Date** | 2026-10-21 |
+| **Time** | 20:00 - 22:30 |
+| **Location** | Sesión virtual sincrónica vía Google Meet / Discord |
+| **Prepared By** | Jaramillo Mayta, Jhon Jordy |
+| **Attendees (to planning meeting)** | Munayco Apolaya, Maria Luisa / Espinoza Flores, Aaron André / Jaramillo Mayta, Jhon Jordy / Santos Minaya, Renzo Piero |
+| **Sprint n – 1 Review Summary** | **Sprint 2 Review:** Se completaron los 29 Story Points comprometidos para TB1, desplegando la primera versión de la Frontend Web Application en GitHub Pages (`https://neoncode-upc.github.io/frontend/home`) y la versión actualizada del Landing Page. La interfaz integró los 5 Bounded Contexts sobre la arquitectura modular de PrimeVue y Pinia. |
+| **Sprint n – 1 Retrospective Summary** | **Sprint 2 Retrospective:** El equipo reconoció como acierto la consistencia visual lograda en las interfaces clínicas. Como acción de mejora imperativa para AV2, se acordó abandonar los repositorios mock en memoria para los flujos críticos, construir la solución de backend en ASP.NET Core siguiendo DDD por capas (*Domain, Application, Infrastructure, Interfaces*), exponer la documentación Swagger desde el primer día y conectar el cliente HTTP Axios a los endpoints desplegados. |
+| **Sprint Goal & User Stories** | **Sprint 3 Goal:** Our focus is on developing and deploying the first official version of the ASP.NET Core RESTful Web Services across all Bounded Contexts, connecting the Vue 3 Frontend Web Application to these live endpoints, and establishing external alert dispatching with Twilio. We believe it delivers automated data persistence, real-time IoT anomaly processing, and multi-channel emergency communication for hospital supervisors and fleet operators. This will be confirmed when telemetry data ingested via HTTP POST is persisted in the database, displayed live on the web monitoring dashboard, and triggers critical alerts through OpenAPI-documented endpoints with Swagger UI. |
+| **User Stories en Alcance** | **Historias Funcionales:** US11: Control de Stock por Sensores de Peso (8 SP) · US13: Configuración de Umbrales Térmicos Críticos (3 SP) · US14: Visualización de Alertas en Ruta (5 SP) · US15: Servicio de Despacho de Alertas e Integración Externa (5 SP).<br>**Servicios Backend & Infraestructura:** TS-API: Servicios de Telemetría IoT en ASP.NET Core (6 SP) · TS-CUS: Servicios de Cadena de Custodia y Reportes PDF (6 SP) · TS-TRA: Servicios de Despacho y Transporte Médico (6 SP). |
+| **Sprint 3 Velocity** | 39 Story Points consolidados (21 SP funcionales + 18 SP de arquitectura de servicios) |
+| **Sum of Story Points** | 39 Story Points |
+
+***
+
+### 5.2.3.2. Aspect Leaders and Collaborators
+
+Para el Sprint 3, la matriz **Leadership-and-Collaboration (LACX)** organiza a los integrantes según su especialización en los Bounded Contexts de la arquitectura orientada al dominio (DDD), asegurando que cada aspecto técnico cuente con un responsable directo de diseño, codificación de controladores y pruebas de integración.
+
+\newpage
+
+**L = Lead / C = Collaborator**
+
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **1. Core API & Telemetry (L/C)** | **2. Chain of Custody & PDF (L/C)** | **3. Critical Alerting & Twilio (L/C)** | **4. Medical Transport (L/C)** | **5. Web App Live Integration (L/C)** | **6. Cloud Deployment & OpenAPI (L/C)** |
+| :--------------------- | :------------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| **Jaramillo Mayta, Jhon Jordy** | `Marklnz1` | **L** | C | C | C | **L** | **L** |
+| **Munayco Apolaya, Maria Luisa** | `malumunayco` | C | **L** | C | C | C | C |
+| **Espinoza Flores, Aaron André** | `psure` | C | C | **L** | C | C | C |
+| **Santos Minaya, Renzo Piero** | `RSSint` | C | C | C | **L** | C | C |
+
+* **Jhon Jaramillo:** Lidera el Bounded Context de Telemetría IoT en backend (`TelemetryLogsController`) y frontend, el andamiaje transversal de inyección de dependencias y el despliegue del Web API en la nube.
+* **Maria Luisa Munayco:** Lidera el Bounded Context de Cadena de Custodia (`CustodyTransfersController`, `DigitalAuditManifestsController`), generación de reportes PDF inmutables y adaptación responsiva de reportes.
+* **Aaron Espinoza:** Lidera el Bounded Context de Alerting (`IncidentController`), manejo de comandos de reconocimiento y la integración con la API de mensajería externa de Twilio SMS.
+* **Renzo Santos:** Lidera el Bounded Context de Transporte Médico (`DispatchTrip`), modelado de estados de ruta, prioridades de carga y vinculación de flota.
+
+***
