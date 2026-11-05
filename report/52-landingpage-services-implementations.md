@@ -473,3 +473,42 @@ Para el Sprint 3, la matriz **Leadership-and-Collaboration (LACX)** organiza a l
 * **Renzo Santos:** Lidera el Bounded Context de Transporte Médico (`DispatchTrip`), modelado de estados de ruta, prioridades de carga y vinculación de flota.
 
 ***
+
+### 5.2.3.3. Sprint Backlog 3
+
+El Sprint Backlog 3 descompone las historias en **16 tareas técnicas de ingeniería acotadas estrictamente entre 4 y 8 horas**, sumando un esfuerzo planificado de 99 horas de desarrollo colaborativo.
+
+**Board del Sprint 3:**
+
+![Tablero Trello del Sprint 3](../assets/chapter-5/sprint-3-board.png){.max-h-80}
+
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-3)
+
+| **Sprint #** | **Sprint 3** |
+| :--- | :--- |
+| **User Story** | **Work-Item / Task** |
+
+::: {.sprint-backlog-table}
+
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In Process / To Review / Done)** |
+| :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
+| **US11** | Control de Stock por Sensores de Peso | TSK-11-01 | Modelado de masa en TelemetryLog | Incorporación de atributo `PayloadWeightKg` en el agregado de telemetría y reglas de variación de masa en C#. | 5 h | Jhon Jaramillo | Done |
+| **US11** | Control de Stock por Sensores de Peso | TSK-11-02 | Componente de visualización de stock | Creación de indicador reactivo de nivel de carga e insumos en Vue 3 conectado al endpoint de telemetría. | 6 h | Jhon Jaramillo | Done |
+| **US13** | Configuración de Umbrales Térmicos Críticos | TSK-13-01 | Entidad de políticas de umbral en Alerting | Modelado de reglas de temperatura máxima y mínima (`ThresholdRule`) en el Bounded Context de Alerting. | 6 h | Aaron Espinoza | Done |
+| **US13** | Configuración de Umbrales Térmicos Críticos | TSK-13-02 | Vista web de configuración de rangos | Interfaz en PrimeVue para que supervisores configuren umbrales por tipo de insumo médico. | 5 h | Maria Munayco | Done |
+| **US14** | Visualización de Alertas en Ruta | TSK-14-01 | Tablero reactivo de incidentes en tiempo real | Integración en frontend del listado de incidencias activas con severidad y temporizador de escalamiento. | 7 h | Aaron Espinoza | Done |
+| **US14** | Visualización de Alertas en Ruta | TSK-14-02 | Flujo de reconocimiento y cierre de incidentes | Diálogo modal de confirmación con registro del operador responsable y acción correctiva. | 5 h | Renzo Santos | Done |
+| **US15** | Servicio de Despacho de Alertas (API) | TSK-15-01 | Endpoint de recepción y despacho de incidentes | Implementación de `POST /api/v1/incidents` y `PUT /api/v1/incidents/{id}/acknowledgement` en ASP.NET Core. | 8 h | Aaron Espinoza | Done |
+| **US15** | Servicio de Despacho de Alertas (API) | TSK-15-02 | Integración con servicio externo de terceros (Twilio) | Implementación de cliente de mensajería SMS para despacho de notificaciones críticas a teléfonos de guardia. | 7 h | Aaron Espinoza | Done |
+| **TS-API** | Servicios de Telemetría IoT en Backend | TSK-API-01 | Controladores y servicios de ingesta de telemetría | Implementación de `TelemetryLogsController`, DTOs de ingesta y endpoints de consulta en ASP.NET Core 10. | 8 h | Jhon Jaramillo | Done |
+| **TS-API** | Servicios de Telemetría IoT en Backend | TSK-API-02 | Conexión del frontend con el API de telemetría | Adaptación del servicio HTTP Axios en el frontend para consumir los endpoints REST reales del backend. | 6 h | Jhon Jaramillo | Done |
+| **TS-CUS** | Servicios de Cadena de Custodia en Backend | TSK-CUS-01 | Controladores de auditoría y manifiestos digitales | Exposición de endpoints `CustodyTransfersController` y `DigitalAuditManifestsController` con OpenAPI. | 8 h | Maria Munayco | Done |
+| **TS-CUS** | Servicios de Cadena de Custodia en Backend | TSK-CUS-02 | Generador de reportes de trazabilidad en PDF | Implementación de `TraceabilityReportPdf` en C# para descarga inmutable de auditorías médicas. | 7 h | Maria Munayco | Done |
+| **TS-TRA** | Servicios de Despacho y Transporte en Backend | TSK-TRA-01 | Entidad `DispatchTrip` y comandos de transporte | Implementación de reglas de despacho, tipos de carga (`CargoType`) y estados de viaje en ASP.NET Core. | 6 h | Renzo Santos | Done |
+| **TS-TRA** | Servicios de Despacho y Transporte en Backend | TSK-TRA-02 | Conexión del módulo de transporte web con el backend | Sincronización del estado de flota y viajes entre el store de Pinia y los servicios de despacho. | 6 h | Renzo Santos | Done |
+| **TS-DEP** | Despliegue en la Nube y Documentación OpenAPI | TSK-DEP-01 | Configuración de Swagger UI y Dockerfile para Web API | Documentación exhaustiva con OpenAPI/Swagger y empaquetamiento para despliegue Cloud. | 6 h | Jhon Jaramillo | Done |
+| **TS-DEP** | Despliegue en la Nube y Documentación OpenAPI | TSK-DEP-02 | Despliegue del Web API en plataforma Cloud pública | Despliegue activo del servicio backend en Render / Railway con certificado HTTPS seguro. | 6 h | Jhon Jaramillo | Done |
+
+:::
+
+***
