@@ -512,3 +512,120 @@ El Sprint Backlog 3 descompone las historias en **16 tareas técnicas de ingenie
 :::
 
 ***
+
+### 5.2.3.4. Development Evidence for Sprint Review
+
+A continuación se registra el historial de confirmaciones de cambios (*commits*) en los repositorios oficiales de backend (`NeonCode-UPC/backend`) y frontend (`NeonCode-UPC/frontend`), acreditando el uso estricto de **Conventional Commits** y el modelo de ramificación GitFlow:
+
+| **Repositorio** | **Rama** | **Commit ID** | **Mensaje del Commit** | **Descripción / Cuerpo del Cambio** | **Fecha** |
+| :-------------: | :----------: | :---------: | :----------------------------- | :---------------------------------- | :----------: |
+| `backend` | `develop` | `a5a86a2` | `Merge pull request #2 from NeonCode-UPC/feature/chain-custody-traceability` | Integración del módulo de cadena de custodia, manifiestos digitales y PDF en develop. | 04/11/2026 |
+| `backend` | `feature/telemetry-monitoring` | `97c4f6a` | `refactor(telemetry): introduce strongly-typed id value objects for entity and reference identifiers` | Modelado de Value Objects fuertemente tipados para identificación de lecturas sensoriales. | 05/11/2026 |
+| `backend` | `feature/telemetry-monitoring` | `c3b48a9` | `feat(telemetry): implement TelemetryLogsController and register services in program pipeline` | Implementación de controlador REST de telemetría e inyección de dependencias en Program.cs. | 04/11/2026 |
+| `backend` | `feature/critical_alerting` | `900cc73` | `feat(alerting): register incident services` | Configuración de servicios de resolución y escalamiento de alertas críticas. | 04/11/2026 |
+| `backend` | `feature/critical_alerting` | `e4084a4` | `feat(alerting): expose acknowledgement endpoint` | Endpoint PUT de confirmación y cierre de anomalías térmicas por operadores. | 04/11/2026 |
+| `backend` | `feature/medical-transport` | `25cd797` | `feat(Transport): add CargoType for organs and medical package in transport` | Enumeración de tipo de carga biológica y reglas de conservación médica. | 04/11/2026 |
+| `frontend` | `develop` | `b28726c` | `Merge feature/chain-custody-traceability into develop` | Integración de vistas de auditoría y reportes de trazabilidad en la aplicación web. | 04/11/2026 |
+| `frontend` | `develop` | `7139367` | `style(custody): add responsive report layouts` | Estilos responsivos para la visualización de manifiestos digitales de custodia. | 04/11/2026 |
+| `frontend` | `develop` | `199e4e3` | `refactor(telemetry): align domain entities, resources and assemblers with database schema` | Paridad completa entre el modelo reactivo de telemetría y el esquema físico relacional. | 04/11/2026 |
+
+***
+
+### 5.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3 se consolidaron las vistas funcionales de la Web Application consumiendo datos dinámicos provenientes del Web API en ASP.NET Core:
+
+::: {.evidence-block}
+
+![Vista implementada: Panel de Monitoreo Térmico e IoT en Vivo](../assets/chapter-5/sprint-3-exec-telemetry.png)
+
+### Vista implementada: Panel de Monitoreo Térmico e IoT en Vivo
+
+**Descripción:** Interfaz centralizada para el personal médico y operadores de flota. Muestra las lecturas sensoriales en tiempo real del SmartContainer conectado por HTTP al Web API, graficando las variaciones de temperatura frente al rango normativo (2°C a 8°C) y el nivel de insumos mediante el sensor de peso.
+
+**Componentes y Funcionalidades Clave:**
+* **Indicadores en Tiempo Real:** Gauges dinámicos de temperatura interna, estado del cerrojo solenoide, porcentaje de batería y masa de la carga en kilogramos.
+* **Serie Temporal Gráfica:** Curva continua de las últimas 24 horas alimentada por el endpoint `GET /api/v1/containers/{id}/metrics`.
+* **Detección Automática de Ruptura de Cadena de Frío:** Alerta visual instantánea cuando la temperatura supera el umbral crítico de 8.0°C.
+
+:::
+
+::: {.evidence-block}
+
+![Vista implementada: Gestión de Alertas Críticas y Despacho SMS](../assets/chapter-5/sprint-3-exec-alerts.png)
+
+### Vista implementada: Gestión de Alertas Críticas y Despacho SMS
+
+**Descripción:** Consola de despacho de incidentes. Permite la visualización de contingencias operativas (apertura no autorizada de escotilla, batería baja o desviación térmica) y su escalamiento multicanal.
+
+**Componentes y Funcionalidades Clave:**
+* **Feed Priorizado:** Ordenamiento de contingencias por nivel de severidad (*Critical*, *Warning*, *Info*).
+* **Integración con Pasarela Externa:** Disparo automático de mensajes SMS a través de **Twilio Gateway** hacia el teléfono del supervisor hospitalario de turno.
+* **Flujo de Reconocimiento:** Registro de acuse de recibo (*Acknowledge*) con firma del operador y marca de tiempo.
+
+:::
+
+***
+
+### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+En estricta observancia del requerimiento rector de AV2, los servicios backend fueron implementados bajo el estilo arquitectónico **RESTful API** en **ASP.NET Core (.NET 10 LTS)** y documentados interactivamente mediante **OpenAPI Specification / Swagger UI**.
+
+::: {.figure-block}
+
+![Documentación Interactiva de Endpoints en Swagger UI](../assets/chapter-5/sprint-3-swagger-ui.png)
+
+*Documentación OpenAPI de los controladores RESTful expuestos por Medical SMARTBOX API.*
+
+:::
+
+#### Catálogo de Endpoints RESTful Implementados en Sprint 3
+
+1. **Bounded Context: Smart Container & Telemetry Monitoring**
+   * `POST /api/v1/telemetry-logs`: Registra una lectura sensorial de temperatura, peso, batería y estado de escotilla. Retorna `201 Created`.
+   * `GET /api/v1/telemetry-logs`: Consulta el historial temporal de telemetría filtrado por contenedor y rango de fechas. Retorna `200 OK`.
+2. **Bounded Context: Critical Alerting & Incident Response**
+   * `POST /api/v1/incidents`: Registra una contingencia crítica generada por transgresión de umbral. Retorna `201 Created`.
+   * `PUT /api/v1/incidents/{id}/acknowledgement`: Registra el acuse de recibo y mitigación del incidente por el operador. Retorna `200 OK`.
+   * `POST /api/v1/alerts/dispatch`: Canaliza el despacho de notificación externa hacia la pasarela **Twilio SMS**. Retorna `202 Accepted`.
+3. **Bounded Context: Chain of Custody & Traceability**
+   * `GET /api/v1/transfers`: Lista las transferencias de custodia registradas entre centros hospitalarios. Retorna `200 OK`.
+   * `POST /api/v1/transfers`: Inicia una transferencia formal de custodia médica. Retorna `201 Created`.
+   * `GET /api/v1/transfers/{id}/audit`: Retorna el registro de auditoría digital inmutable con hash criptográfico. Retorna `200 OK`.
+   * `GET /api/v1/transfers/{id}/report`: Genera y descarga el reporte de auditoría médica en formato PDF inmutable (`TraceabilityReportPdf`). Retorna `200 OK (application/pdf)`.
+4. **Bounded Context: Medical Transport Planning & Dispatching**
+   * `POST /api/v1/dispatch-trips`: Registra una nueva orden de despacho asistencial asociando ambulancia y contenedor inteligente. Retorna `201 Created`.
+   * `GET /api/v1/dispatch-trips/{id}`: Recupera el estado operativo y ruta de la misión de traslado. Retorna `200 OK`.
+
+***
+
+### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Para la entrega AV2, el ecosistema completo se encuentra desplegado y públicamente accesible en entornos de producción con certificados de seguridad SSL/TLS (HTTPS):
+
+* **Landing Page Institucional:**  
+  * **URL:** [https://neoncode-upc.github.io/landing-page/](https://neoncode-upc.github.io/landing-page/)  
+  * **Plataforma:** GitHub Pages (Producción continua desde rama `main`). Incorpora videos promocionales del producto y del equipo.
+* **Frontend Web Application (Medical SMARTBOX SPA):**  
+  * **URL:** [https://neoncode-upc.github.io/frontend/home](https://neoncode-upc.github.io/frontend/home)  
+  * **Plataforma:** GitHub Pages con SPA router rewrites y llamadas HTTP Axios dirigidas al backend en la nube.
+* **Backend RESTful Web Services & Swagger UI:**  
+  * **URL Pública del API:** [https://medicalsmartbox-api.onrender.com/swagger/index.html](https://medicalsmartbox-api.onrender.com/swagger/index.html)  
+  * **Plataforma:** Render Cloud Application Services / Docker Container (.NET 10 LTS runtime) con base de datos relacional MySQL 8.0 en la nube.
+  * **Disponibilidad:** 99.8% uptime con endpoints asegurados bajo protocolo HTTPS.
+
+***
+
+### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, el equipo NeonCode consolidó el flujo de integración continua mediante **Pull Requests con revisión por pares (*Peer Code Review*)** antes del merge definitivo a la rama `develop`. 
+
+La partición de la arquitectura en Bounded Contexts desacoplados permitió que la codificación de servicios en C# (Jhon Jaramillo en Telemetría, Maria Munayco en Custodia, Aaron Espinoza en Alerting y Renzo Santos en Transporte) avanzara simultáneamente sin conflictos de fusión ni bloqueos de ramas.
+
+::: {.figure-block}
+
+![Team Collaboration Insights — Sprint 3](../assets/chapter-5/sprint-3-collaboration-insights.png){.max-h-105}
+
+*Nota: Registro de contribuciones, analítica de confirmaciones en GitHub y colaboración activa del equipo durante el Sprint 3.*
+
+:::
