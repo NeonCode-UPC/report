@@ -58,7 +58,7 @@ El Sprint Backlog 1 presenta el desglose de las User Stories seleccionadas para 
 ![Tablero Trello del Sprint 1](../assets/chapter-5/sprint-1-board.png)
 
 
-**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-1)
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/VMuiyR7d/neoncode-sprint-1)
 
 \newpage
 
@@ -290,7 +290,7 @@ El Sprint Backlog 2 descompone las historias de usuario seleccionadas para el Sp
 ![Tablero Trello del Sprint 2](../assets/chapter-5/sprint-2-board.png){.max-h-80}
 
 
-**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2)
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/sjPHrVTK/neoncode-sprint-2)
 
 | **Sprint #** | **Sprint 2** |
 | :--- | :--- |
@@ -482,7 +482,7 @@ El Sprint Backlog 3 descompone las historias en **16 tareas técnicas de ingenie
 
 ![Tablero Trello del Sprint 3](../assets/chapter-5/sprint-3-board.png){.max-h-80}
 
-**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/q1ePQa65/neoncode-sprint-3)
+**URL público del Board:** [VER BOARD DE TRELLO](https://trello.com/b/LZEQ5Pu9/neoncode-sprint-3)
 
 | **Sprint #** | **Sprint 3** |
 | :--- | :--- |
