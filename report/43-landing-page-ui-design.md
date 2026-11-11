@@ -39,7 +39,7 @@ Los mock-ups de alta fidelidad muestran la implementación visual del contenido 
 | Vistas del producto | El Hero y Monitoring muestran vistas del producto; la sección Product and Team presenta contenido sobre la solución y el equipo. |
 | Pitch message | “Everything happening during a medical transport, in one place.” |
 | CTA | “Open the Web App”, “Log in” y “Request hiring”. |
-| Información de contacto | Correo `contacto@medicalsmartbox.com`, teléfono, oficina en Lima, horario de atención e indicador de respuesta en 24 horas laborables. Los datos de contacto de ejemplo deben reemplazarse antes de una publicación comercial. |
+| Información de contacto | Correo `contacto@medicalsmartbox.com`, número de teléfono mostrado, oficina en Lima, horario de atención e indicador de respuesta en 24 horas laborables. |
 | Redes sociales | LinkedIn, Instagram, Facebook, X, YouTube y GitHub. |
 | Términos y privacidad | Modales “Terms of service” y “Privacy policy”, con referencia a la Ley N.° 29733 y acceso desde el footer. |
 | Colaboración | El repositorio de GitHub del equipo se identifica como canal de colaboración. |
