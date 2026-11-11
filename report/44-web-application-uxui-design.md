@@ -85,3 +85,52 @@ Las siete capturas deben mostrar pantallas reales del showcase y sus estados rep
 | Mock-up 07 · Administración | Usuarios y roles, suscripción, perfil y notificaciones. | [webapp-mockup-07-administracion.png](../assets/chapter-4/webapp-mockup-07-administracion.png) |
 
 *Nota: Las capturas están pendientes. Cada ruta es un destino previsto dentro de `assets/chapter-4/`; no se han agregado archivos de imagen ficticios.*
+
+### 4.4.4. Web Applications User Flow Diagrams
+
+Cada User Flow presenta los mock-ups de las pantallas como pasos del recorrido, identifica la meta de la persona y separa el camino esperado de las alternativas o errores.
+
+**UF1 · Acceso e identidad (US01, US02)**
+
+- **User Goal:** acceder de forma segura a la cuenta.
+- **Happy path:** inicio de sesión → credenciales válidas → verificación en dos pasos → código correcto → panel.
+- **Unhappy paths:** credenciales inválidas; código incorrecto. Los recorridos secundarios incluyen recuperar contraseña y registrar una institución.
+- **Imagen pendiente:** seis capturas/mock-ups conectados para mostrar los estados de acceso, con flechas y decisiones rotuladas. Ruta: [user-flow-01-acceso.png](../assets/chapter-4/user-flow-01-acceso.png).
+
+**UF2 · Operador: incidente en ruta (US14)**
+
+- **User Goal:** identificar y resolver un incidente térmico durante un traslado.
+- **Happy path:** panel → detalle del traslado → ruta y ETA → alerta en ruta → detalle de alerta crítica → incidente → registrar resolución → estado resuelto.
+- **Unhappy paths:** no hay alertas; se pierde la conexión y se muestra “Reintentar conexión”.
+- **Imagen pendiente:** mock-ups del panel, traslado, alerta y resolución conectados en orden. Ruta: [user-flow-02-incidente.png](../assets/chapter-4/user-flow-02-incidente.png).
+
+**UF3 · Flota: vincular un SmartBox (US07, US08)**
+
+- **User Goal:** habilitar una ambulancia y asociarle un SmartBox disponible.
+- **Happy path:** inventario → alta o detalle de ambulancia → vincular contenedor → elegir SmartBox → confirmar asociación.
+- **Unhappy paths:** placa duplicada; SmartBox ya vinculado.
+- **Imagen pendiente:** mock-ups de inventario, formulario/detalle, selección de dispositivo y confirmación. Ruta: [user-flow-03-flota.png](../assets/chapter-4/user-flow-03-flota.png).
+
+**UF4 · Crear un traslado médico (sin User Story específica en 3.1)**
+
+- **User Goal:** registrar un traslado con sus datos y revisar la orden antes de crearla.
+- **Happy path:** Traslados → nuevo traslado → completar formulario → revisar → traslado creado.
+- **Unhappy paths:** la ruta excede el límite de isquemia fría; cancelar el traslado.
+- **Trazabilidad:** US07 y US08 cubren el alta de la unidad y su asociación con un despacho, pero ninguna historia de 3.1 especifica la creación del traslado. El diagrama no atribuye un ID inexistente; la historia correspondiente debe agregarse o confirmarse en el backlog.
+- **Imagen pendiente:** mock-ups de lista, formulario, revisión, resultado y alternativas. Ruta: [user-flow-04-nuevo-traslado.png](../assets/chapter-4/user-flow-04-nuevo-traslado.png).
+
+**UF5 · Personal médico: recepción y custodia (US10, US11, US17)**
+
+- **User Goal:** comprobar el estado de la carga y confirmar su recepción para cerrar la custodia.
+- **Happy path:** panel del personal → monitoreo térmico → verificar insumos → confirmar recepción → validar código → custodia cerrada.
+- **Unhappy paths:** excursión térmica; código incorrecto; telemetría en estado de carga.
+- **Imagen pendiente:** mock-ups de monitoreo, recepción, verificación y confirmación de custodia conectados. Ruta: [user-flow-05-custodia.png](../assets/chapter-4/user-flow-05-custodia.png).
+
+**UF6 · Supervisor: umbrales y reportes (US13, US16)**
+
+- **User Goal:** definir umbrales térmicos y generar un reporte de trazabilidad.
+- **Happy path:** panel → configurar umbrales → guardar regla → consultar custodia → generar reporte.
+- **Unhappy path:** el umbral no es válido y debe corregirse antes de guardar.
+- **Imagen pendiente:** mock-ups de configuración, validación, custodia y reporte conectados. Ruta: [user-flow-06-umbrales-reportes.png](../assets/chapter-4/user-flow-06-umbrales-reportes.png).
+
+*Nota: Los seis User Flow diagrams están pendientes. En cada composición, los mock-ups deben ser las pantallas del recorrido; las flechas deben nombrar acciones o condiciones y las ramas deben distinguirse como happy path o unhappy path.*
