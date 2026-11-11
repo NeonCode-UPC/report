@@ -19,7 +19,7 @@ Las decisiones de navegación siguen la arquitectura de información de la secci
 | Tablero Trello Sprint 1 | Gestión y seguimiento del primer sprint. | [Trello Board - Sprint 1](https://trello.com/b/q1ePQa65/neoncode-sprint-1) |
 | Tablero Trello Sprint 2 | Gestión y seguimiento del segundo sprint. | [Trello Board - Sprint 2](https://trello.com/invite/b/6ac5b477b94c5d4caaf604c3/ATTI42608b792af85428b31c8bfdbc720edbAE48B8A5/neoncode-sprint-2) |
 
-Los recorridos cubiertos son UF1 (acceso e identidad), UF2 (incidente en ruta), UF3 (flota y SmartBox), UF4 (nuevo traslado), UF5 (recepción y custodia) y UF6 (umbrales y reportes). El objetivo UF4 mantiene la observación de trazabilidad documentada en 4.4.4.
+Los recorridos cubiertos son UF1 (acceso e identidad), UF2 (incidente en ruta), UF3 (flota y SmartBox), UF4 (nuevo traslado), UF5 (recepción y custodia) y UF6 (umbrales y reportes).
 
 ### Navigation Demonstration
 
