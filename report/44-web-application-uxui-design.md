@@ -54,3 +54,34 @@ Cada wireflow conecta wireframes mediante flechas que nombran la acción o condi
 **WF6 · Umbrales y trazabilidad.** Configuración de umbrales → validar regla → guardar → consultar custodia → generar reporte. La alternativa muestra un umbral inválido. Archivo previsto: [webapp-wireflow-06-umbrales-reportes.png](../assets/chapter-4/webapp-wireflow-06-umbrales-reportes.png).
 
 *Nota: Los seis diagramas están pendientes de creación. Cada imagen debe mostrar las pantallas esquemáticas como pasos y etiquetar sus flechas con la acción, decisión o resultado correspondiente.*
+
+### 4.4.3. Web Applications Mock-ups
+
+Los mock-ups se documentan mediante capturas del showcase interactivo. Las 64 pantallas se distribuyen por recorrido y área funcional:
+
+| Grupo | Pantallas | Contenido principal |
+| --- | ---: | --- |
+| Acceso e identidad | 10 | Inicio de sesión, credenciales inválidas, verificación en dos pasos, recuperación de contraseña y registro de institución. |
+| Recorrido 1 · Operador | 12 | Panel, traslados, ruta y ETA, alertas, incidentes, historial y estado sin alertas. |
+| Recorrido 2 · Flota | 12 | Ambulancias, inventario de SmartBox, vincular o desvincular, y alta de ambulancia. |
+| Recorrido 3 · Nuevo traslado | 6 | Formulario, revisión, creación, cancelación e historial. |
+| Recorrido 4 · Personal médico | 8 | Monitoreo, excursión térmica, control de stock, telemetría, recepción y custodia. |
+| Recorrido 5 · Supervisor | 9 | Umbrales, reglas de alerta, custodia, acta digital, reportes y auditoría. |
+| Administración y cuenta | 7 | Usuarios, roles, suscripción, perfil y notificaciones. |
+| **Total** | **64** | |
+
+Las pantallas del showcase incluyen estados de carga, error con opción de reintento y estado vacío (“Sin alertas”). La interfaz de esta versión está en español.
+
+Las siete capturas deben mostrar pantallas reales del showcase y sus estados representativos. No deben sustituirse por composiciones de alta fidelidad que no existan en el producto.
+
+| Captura pendiente | Contenido que debe verse | Ruta prevista |
+| --- | --- | --- |
+| Mock-up 01 · Acceso | Inicio de sesión, credenciales inválidas y verificación en dos pasos. | [webapp-mockup-01-acceso.png](../assets/chapter-4/webapp-mockup-01-acceso.png) |
+| Mock-up 02 · Operador | Panel, ruta y ETA, alerta crítica y estado vacío. | [webapp-mockup-02-operador.png](../assets/chapter-4/webapp-mockup-02-operador.png) |
+| Mock-up 03 · Flota | Lista de ambulancias y SmartBox, alta y vinculación. | [webapp-mockup-03-flota.png](../assets/chapter-4/webapp-mockup-03-flota.png) |
+| Mock-up 04 · Nuevo traslado | Formulario, revisión, confirmación y cancelación. | [webapp-mockup-04-nuevo-traslado.png](../assets/chapter-4/webapp-mockup-04-nuevo-traslado.png) |
+| Mock-up 05 · Personal médico | Lectura térmica, telemetría, recepción y cierre de custodia. | [webapp-mockup-05-personal-medico.png](../assets/chapter-4/webapp-mockup-05-personal-medico.png) |
+| Mock-up 06 · Supervisor | Umbrales, alerta, acta digital, reporte y auditoría. | [webapp-mockup-06-supervisor.png](../assets/chapter-4/webapp-mockup-06-supervisor.png) |
+| Mock-up 07 · Administración | Usuarios y roles, suscripción, perfil y notificaciones. | [webapp-mockup-07-administracion.png](../assets/chapter-4/webapp-mockup-07-administracion.png) |
+
+*Nota: Las capturas están pendientes. Cada ruta es un destino previsto dentro de `assets/chapter-4/`; no se han agregado archivos de imagen ficticios.*
