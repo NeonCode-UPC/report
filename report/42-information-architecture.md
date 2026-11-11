@@ -40,3 +40,27 @@ La tabla distingue los metadatos del sitio público de los títulos que la SPA a
 | Títulos por vista | No aplica. | La navegación establece títulos como “Panel”, “Reportes”, “Ajustes” y “Acerca de”, precedidos por “Medical SmartBox”. | Implementado en la SPA. |
 
 Los metadatos del Landing se describen a partir de la implementación reportada para el sitio público. En la Web Application, el `title`, la descripción, el idioma, el viewport, el autor y los títulos por ruta se contrastan con `frontend/index.html` y el router de Vue. No se atribuyen al producto etiquetas de robots, canonical u Open Graph que no aparecen en esa implementación.
+
+### 4.2.4. Searching Systems
+
+La Web Application ofrece un filtro global para localizar información operativa y controles de estado para acotar las listas.
+
+| Mecanismo | Qué permite encontrar o filtrar | Ejemplos |
+| --- | --- | --- |
+| Filtro global | Registros de operación disponibles desde la navegación principal. | Traslado, SmartBox o destino. |
+| Búsqueda y filtros contextuales | Elementos de una lista según su ruta, estado o unidad asociada. | Ruta, “En tránsito”, “Crítica” o SmartBox. |
+| Chips o pestañas de estado | Reducir los resultados a un estado operativo. | “En tránsito”, “Crítica” y “Entregado”. |
+
+Los resultados mantienen visible su identificador y estado para facilitar la selección del registro correcto. Los estados vacíos y los mensajes de error orientan la recuperación cuando la búsqueda no devuelve resultados o la información no está disponible.
+
+### 4.2.5. Navigation Systems
+
+| Nivel | Elementos | Función |
+| --- | --- | --- |
+| Navegación del Landing | Enlaces a Plataforma, Cómo funciona, Soluciones y Trazabilidad; accesos a la Web Application y al inicio de sesión. | Recorrer la información del producto y llegar al acceso o contacto. |
+| Encabezado de la Web Application | Marca, filtro global, notificaciones, usuario, rol e institución. | Mantener a mano las acciones transversales y el contexto de sesión. |
+| Barra lateral | Panel; Operaciones (Traslados, Ruta y ETA); Flota (Ambulancias, SmartBox); Monitoreo (Telemetría); Alertas (Alertas, Incidentes); Trazabilidad (Cadena de custodia, Actas digitales, Auditoría); Reportes; Administración (Usuarios y roles, Suscripción); Cuenta (Ajustes). | Agrupar las pantallas por tarea y área funcional. |
+| Breadcrumbs y navegación contextual | Ruta de la vista actual y acciones como “Ver detalle”, “Ver ruta y ETA” y “Volver a…”. | Ubicar al usuario y facilitar la navegación entre resumen y detalle. |
+| Navegación móvil | Menú drawer y disposición adaptada al ancho disponible. | Conservar acceso a los módulos en pantallas estrechas. |
+
+Los CTA de la página pública que abren la Web Application comparten el punto de entrada. Dentro de la aplicación, las rutas identifican las vistas y el título del navegador se actualiza con la sección seleccionada.
