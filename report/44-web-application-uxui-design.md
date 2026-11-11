@@ -1,290 +1,144 @@
 # 4.4. Web Applications UX/UI Design
 
-El diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI) en la plataforma web de **Medical SMARTBOX** busca crear una herramienta digital intuitiva, accesible y altamente funcional para el personal de transporte asistencial (**Aldair Lazaro** — Segmento 1) y los supervisores hospitalarios y operadores logísticos en clínicas y hospitales (**Gianfranco Timoteo** — Segmento 2). La UX se enfoca en comprender la urgencia y precisión requeridas en la cadena de frío, diseñando flujos de interacción eficientes para monitorear cargas térmicamente sensibles, reaccionar ante desvíos de temperatura y configurar sensores IoT sin fricción.
-
-Por su parte, la UI se encarga del aspecto visual, estructurando de manera clara componentes complejos como dashboards telemétricos en tiempo real, trazabilidad por hitos de envío, gráficos de estabilidad térmica y sistemas de alertas predictivas. Un diseño UX/UI exitoso en Medical SMARTBOX fusiona una estética tecnológica limpia con la practicidad operativa, ofreciendo una experiencia fluida que transforma datos IoT masivos en decisiones logísticas rápidas que salvan vidas y evitan la merma de medicamentos.
-
-***
+La Web Application es la interfaz de operación de Medical SmartBox. El showcase interactivo reúne 64 pantallas organizadas por tareas y roles de operador, personal médico y supervisor. Esta sección documenta su estructura, las transiciones entre pantallas y las vistas que se usarán como evidencia del diseño.
 
 ### 4.4.1. Web Applications Wireframes
 
-#### Wireframes para Desktop Browser
+Las vistas comparten una estructura que permite localizar el módulo actual y operar sobre su contenido.
 
-::: {.ui-block}
+| Zona | Contenido |
+| --- | --- |
+| Barra superior | Marca, filtro global, notificaciones, usuario, rol e institución. |
+| Barra lateral | Módulos agrupados por tarea, según la sección 4.2.5. |
+| Ruta y área de contenido | Breadcrumbs, título de vista, KPIs, paneles, formularios o listas según el módulo. |
+| Adaptación mobile (≤ 700 px) | Contenido en una columna y navegación accesible mediante menú compacto. |
 
-*   **Acceso y Autenticación Segura:** El flujo de inicio de sesión presenta un diseño *desktop* de dos columnas ("auth-shell"). La izquierda actúa como un panel informativo destacando la propuesta de valor ("Cadena de frío bajo custodia digital") y estadísticas de la flota, mientras que la derecha contiene el formulario de acceso institucional que solicita RUC/Correo y Contraseña. A esto le sigue una pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante un código OTP de 6 dígitos.
+| Wireframe | Vista representada | User Stories relacionadas |
+| --- | --- | --- |
+| W01 | Inicio de sesión y verificación de identidad | US01, US02 |
+| W02 | Panel del operador y lista de traslados | US14 |
+| W03 | Ambulancias e inventario de SmartBox | US07, US08 |
+| W04 | Monitoreo térmico y control de stock | US10, US11 |
+| W05 | Umbrales y reglas de alerta | US13 |
+| W06 | Cadena de custodia y reportes | US16, US17 |
 
-![Autenticacion - Wireframe](../assets/chapter-4/autenticacion-wireframe.png)
+![Wireframes desktop W01–W06 con jerarquía, zonas, controles y navegación compartida en escala de grises](../assets/chapter-4/4.4.1-wireframes-webapp-desktop.png)
 
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Núcleo Operativo - Dashboard Principal:** El Dashboard general organiza la vista del operador comenzando con una fila de KPIs (unidades en ruta, monitorizadas, alertas críticas y cumplimiento DIGEMID). En el cuerpo central, se emplea una estructura de cuadrícula (`grid-2`) que muestra un mapa de "Flota en tiempo real" a la izquierda y un panel consolidado de "Alertas críticas recientes" a la derecha, finalizando con una tabla inferior para los "Traslados en curso".
-
-![Nucleo Operativo - Wireframe](../assets/chapter-4/nucleo-wireframe.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Gestión de Envíos y Tablero de Despacho:** El sistema incluye una lista maestra de "Órdenes de traslado" y un formulario completo para crear una nueva orden validando ventana de isquemia fría y precooling. Además, presenta un Tablero de Despacho en formato Kanban que categoriza los viajes en Pendientes, Despachados, En tránsito y Entregados.
-
-![Gestion de Envios - Wireframe](../assets/chapter-4/envios-wireframe.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Vista Detallada de Telemetría y Ruta:** La inspección individual de un envío presenta un *stepper* de estado en la parte superior. Debajo, se divide en dos módulos: a la izquierda, el mapa de trazabilidad y ruta en vivo con cálculo de ETA dinámico; a la derecha, las tarjetas telemétricas y medidores (*gauges*) mostrando la temperatura interna en tiempo real (ej. 4.3°C), nivel de batería, estado de cierre y lecturas recientes.
-
-![Vista de Ruta - Wireframe](../assets/chapter-4/ruta-wireframe.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Monitoreo y Control de Smart Containers:** Se incluye un módulo visual tipo *grid* para monitorear todos los contenedores de la flota y una vista de detalle por Smart Container que incluye una curva gráfica de temperatura de las últimas 24 horas. Complementariamente, el sistema permite enviar comandos de desbloqueo remoto de la tapa mediante interacción electromecánica y visualizar el historial completo de excursiones térmicas.
-
-![Monitoreo de Containers - Wireframe](../assets/chapter-4/containers-wireframe.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Centro de Alertas y Respuesta a Incidentes:** La plataforma cuenta con una bandeja centralizada para gestionar notificaciones. El detalle de una alerta crítica expone la magnitud de la excursión térmica (temperatura, duración, ubicación), el registro temporal del despacho de alertas (vía SMS y Push) y una sección para que el operador documente las acciones correctivas.
-
-![Centro de Alertas - Wireframe](../assets/chapter-4/incidentes-wireframe.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Configuración y Umbrales de Alerta:** Una pantalla de administración dedicada a "Canales de notificación" permite al usuario activar/desactivar notificaciones Push, SMS, Correo y alarmas acústicas. Aquí mismo, en el panel "Umbrales de severidad", se configuran manualmente los límites máximos/mínimos de temperatura y los tiempos límite (SLA) para el envío de alertas.
-
-![Umbrales de Alerta - Wireframe](../assets/chapter-4/alerta-wireframe.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Cadena de Custodia, Manifiestos y Reportes:** El flujo de entrega garantiza la seguridad exigiendo la Verificación OTP en destino y trazando todos los eventos en una Línea de Tiempo de Cadena de Custodia. Administrativamente, se generan Manifiestos Digitales de Auditoría inmutables sellados con SHA-256 y se presenta un consolidado analítico para cumplimiento normativo DIGEMID/DIGDOT.
-
-![Cadena de Custodia - Wireframe](../assets/chapter-4/custodia-wireframe.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Administración Institucional y B2B:** La plataforma incluye la gestión integral de la suscripción, facturación B2B, vinculación de unidades vehiculares y el control granular de usuarios organizados en roles operativos de logística o perfiles clínicos.
-
-![Administracion - Wireframe](../assets/chapter-4/administracion-wireframes.png)
-
-:::
-
-#### Adaptabilidad de Wireframes para Mobile Browser
-
-Para dispositivos móviles de campo (smartphones de personal asistencial y tabletas de ambulancia de 360px a 414px):
-
-*   **Diseño de Columna Unificada (Single-Column Flow):** La disposición de dos columnas se transforma en un flujo vertical secuencial. En el detalle del traslado, el indicador de temperatura actual y la alerta de batería se colocan en la parte superior fija (*sticky banner*), seguidos del mapa simplificado y las lecturas telemétricas.
-*   **Navegación Móvil por Barra Inferior (Bottom Navigation Bar):** Se reemplaza la barra lateral izquierda por una barra de navegación inferior de 5 accesos directos (*Dashboard*, *Ruta en Vivo*, *SmartBox*, *Alertas* y *Perfil*), facilitando la operación con una sola mano.
-*   **Zona Táctil Aumentada para Emergencias:** Todos los controles críticos, en especial el botón de desbloqueo de emergencia y el teclado numérico en pantalla para validación de OTP, cuentan con dimensiones mínimas de 48x48px con alto contraste, permitiendo su uso rápido incluso con guantes clínicos.
-
-***
+![Wireframes mobile W01–W06 en una columna con menú compacto y acciones prioritarias](../assets/chapter-4/4.4.1-wireframes-webapp-mobile.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-La especificación del Wireflow de la aplicación web articula la navegación estructural y las transiciones pantalla a pantalla del sistema **Medical SMARTBOX**, vinculando las vistas esquemáticas desarrolladas en la sección precedente con los objetivos (*User Goals*) de nuestros *User Personas* (**Aldair Lazaro** y **Gianfranco Timoteo**), los eventos de telemetría IoT y las reglas de negocio clínicas.
+Cada wireflow conecta wireframes mediante flechas que nombran la acción o condición que produce la transición. Los recorridos incluyen su resultado esperado y las alternativas relevantes.
 
-#### Estructura de Navegación y Rutas Principales por User Persona y User Goal
+| Wireflow | User Goal | Persona principal | User Stories |
+| --- | --- | --- | --- |
+| WF1 | Acceder a la cuenta y completar la verificación de identidad | Aldair Lazaro y Gianfranco Timoteo | US01, US02 |
+| WF2 | Resolver una alerta térmica durante un traslado | Gianfranco Timoteo | US14 |
+| WF3 | Vincular un SmartBox disponible a una ambulancia | Gianfranco Timoteo | US07, US08 |
+| WF4 | Preparar y crear un traslado médico | Gianfranco Timoteo | US07 y US08 dan soporte parcial; no hay una historia específica de creación de traslado en 3.1 |
+| WF5 | Confirmar la recepción y cerrar la cadena de custodia | Aldair Lazaro y Gianfranco Timoteo | US17 |
+| WF6 | Configurar umbrales y generar un reporte de trazabilidad | Gianfranco Timoteo | US13, US16 |
 
-El flujo de interacción del sistema se organiza a través de los siguientes cinco recorridos clave:
+**WF1 · Acceso e identidad.** Credenciales → validación → verificación en dos pasos → código válido → panel por rol. Las alternativas representan credenciales inválidas, código incorrecto y recuperación de contraseña.
 
-1. **Ruta de Acceso y Seguridad Institucional:**
-   * **User Personas:** **Gianfranco Timoteo** (Supervisor Hospitalario / Operador Logístico) y **Aldair Lazaro** (Personal de Transporte Asistencial).
-   * **User Goal:** Autenticarse de forma segura con verificación de doble factor (2FA) para acceder al panel operativo correspondiente a su rol institucional (`US01`, `US02`).
-   * **Inicio / Login Institucional:** El usuario introduce sus credenciales corporativas (RUC/correo y contraseña).
-   * **Validación de Doble Factor (2FA):** Si la cuenta exige verificación reforzada o detecta un nuevo dispositivo, el flujo transita hacia la pantalla de ingreso del código OTP de 6 dígitos enviado al canal autorizado.
-   * **Ingreso al Panel:** Tras la validación conforme del token temporal (o si la sesión previa de confianza se encuentra activa), se concede acceso y se redirige automáticamente al Dashboard Operativo Principal.
+![Wireflow WF1 con acceso, verificación en dos pasos, panel y alternativas](../assets/chapter-4/4.4.2-wireflow-01-acceso.png)
 
-2. **Ruta de Monitoreo Telemétrico de Traslado:**
-   * **User Personas:** **Aldair Lazaro** (monitoreo en cabina durante el traslado) y **Gianfranco Timoteo** (supervisión remota de flota entrante).
-   * **User Goal:** Supervisar en tiempo real la estabilidad térmica (2 °C a 8 °C), el peso de los insumos, la ubicación GPS y el ETA dinámico del traslado médico (`US10`, `US11`).
-   * **Dashboard Operativo Principal:** Presenta la matriz de flota activa, KPIs de cumplimiento térmico y mapa en vivo.
-   * **Vista Detalle de Traslado y Telemetría:** Al seleccionar una ambulancia o envío en curso, el usuario accede a la vista especializada con trazabilidad cartográfica en vivo, cálculo dinámico de ETA, nivel de batería del Smart Container y gráfica térmica continua de las últimas 24 horas.
+**WF2 · Incidente térmico.** Panel → traslado activo → detalle de alerta → registro de acción correctiva → estado actualizado. La rama alternativa conserva el caso sin alertas o con pérdida de conexión.
 
-3. **Ruta de Atención Prioritaria a Incidentes Térmicos:**
-   * **User Personas:** **Gianfranco Timoteo** (Operador Logístico / Supervisor) y **Aldair Lazaro** (Personal Médico en ruta).
-   * **User Goal:** Detectar de inmediato cualquier excursión térmica o apertura no autorizada y registrar acciones correctivas antes de que se comprometa la viabilidad biológica del insumo (`US13`, `US14`).
-   * **Detección de Excursión:** Si un sensor telemétrico reporta una temperatura fuera del rango normativo de cadena de frío (menor a 2 °C o superior a 8 °C), el sistema dispara una alerta visual destacada en cabecera.
-   * **Centro de Alertas e Incidentes:** Al accionar la notificación crítica, el operador transita hacia la bandeja de incidentes para evaluar la severidad, geolocalización y duración de la desviación.
-   * **Retorno Contextual:** Una vez registrada y documentada la acción correctiva (ej. reajuste térmico o cambio de ruta), el operador retorna a la vista de detalle del traslado para verificar la estabilización de los parámetros biológicos.
+![Wireflow WF2 con traslado, alerta térmica, acción correctiva y ramas alternativas](../assets/chapter-4/4.4.2-wireflow-02-incidente-termico.png)
 
-4. **Ruta de Arribo, Desbloqueo y Cierre de Custodia:**
-   * **User Personas:** **Aldair Lazaro** (entrega física en destino) y **Gianfranco Timoteo** (recepción hospitalaria y auditoría).
-   * **User Goal:** Validar criptográficamente el traspaso de custodia mediante código OTP, desbloquear la cerradura electromecánica y emitir el certificado inmutable SHA-256 (`US16`, `US17`).
-   * **Llegada a Destino:** La confirmación de geocerca en el centro hospitalario o banco de sangre receptor habilita la pantalla de entrega y desbloqueo seguro.
-   * **Validación OTP de Recepción:** El personal receptor facultado (**Gianfranco Timoteo**) introduce el código OTP de desbloqueo, validando su identidad clínica ante el paramédico (**Aldair Lazaro**).
-   * **Línea de Tiempo de Cadena de Custodia:** El sistema registra inmutablemente el evento de apertura electromecánica de la tapa y la firma digital del acta de entrega.
-   * **Exportación de Acta Oficial:** Concluido el protocolo, se genera el reporte de custodia en formato PDF sellado con firma digital SHA-256 para auditoría sanitaria ante DIGEMID y SUSALUD.
+**WF3 · Flota y SmartBox.** Inventario → alta o detalle de ambulancia → vincular contenedor → seleccionar SmartBox → confirmar asociación. Las ramas alternativas muestran matrícula duplicada o dispositivo ya vinculado.
 
-5. **Ruta de Administración de Activos y Parametrización:**
-   * **User Persona:** **Gianfranco Timoteo** (Supervisor Hospitalario / Operador Logístico).
-   * **User Goal:** Dar de alta unidades de ambulancia, vincular contenedores inteligentes (`SmartContainer`) a órdenes de despacho (`DispatchTrip`) y parametrizar umbrales térmicos (`US07`, `US08`, `US13`).
-   * **Gestión de Flota y Contenedores:** Desde el menú lateral del Dashboard, los administradores acceden a la configuración del parque de ambulancias, inventario de Smart Containers IoT, umbrales de severidad y políticas de notificación.
+![Wireflow WF3 con alta de ambulancia, selección y vinculación de SmartBox](../assets/chapter-4/4.4.2-wireflow-03-flota-smartbox.png)
 
-#### Matriz de Transiciones de Pantalla (Wireflow Transitions)
+**WF4 · Nuevo traslado.** Traslados → nuevo traslado → completar datos → revisar → confirmar. Las alternativas incluyen cancelación y una ruta que supera el límite de isquemia fría. La relación de este objetivo con US07–US08 es parcial; 3.1 no especifica la creación de un traslado como una historia independiente.
 
-La siguiente matriz documenta las transiciones sistemáticas entre las interfaces de usuario del sistema web:
+![Wireflow WF4 con formulario, revisión, confirmación y alternativas de traslado](../assets/chapter-4/4.4.2-wireflow-04-nuevo-traslado.png)
 
-| Pantalla Origen (Wireframe) | User Persona Principal | Disparador / Acción del Usuario | Condición de Control / Regla de Negocio | Pantalla Destino | Tipo de Transición |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Inicio / Login Institucional** | Aldair Lazaro / Gianfranco Timoteo | Ingreso de credenciales de acceso | Credenciales válidas; requiere doble factor | **Pantalla de Verificación OTP (2FA)** | Condicional de seguridad |
-| **Inicio / Login Institucional** | Aldair Lazaro / Gianfranco Timoteo | Ingreso de credenciales de acceso | Credenciales válidas; sesión de confianza activa | **Dashboard Operativo Principal** | Redirección directa |
-| **Pantalla de Verificación OTP** | Aldair Lazaro / Gianfranco Timoteo | Envío de código numérico de 6 dígitos | Token OTP vigente y validado correctamente | **Dashboard Operativo Principal** | Autorización concedida |
-| **Dashboard Operativo Principal** | Aldair Lazaro / Gianfranco Timoteo | Clic en ambulancia o envío en la tabla | Selección de unidad telemétrica en tránsito | **Vista Detalle de Traslado y Telemetría** | Navegación a detalle |
-| **Dashboard Operativo Principal** | Gianfranco Timoteo / Aldair Lazaro | Clic en notificación crítica en cabecera | Registro telemétrico fuera de rango (2 °C - 8 °C) | **Centro de Alertas e Incidentes** | Interrupción prioritaria |
-| **Centro de Alertas e Incidentes** | Gianfranco Timoteo / Aldair Lazaro | Registro y guardado de acción correctiva | Formulario de contingencia validado y guardado | **Vista Detalle de Traslado y Telemetría** | Retorno contextual |
-| **Dashboard Operativo Principal** | Gianfranco Timoteo | Selección de "Gestión de Flota" en menú | Usuario con privilegios de Administrador / Logística | **Gestión de Flota y Contenedores** | Navegación modular |
-| **Vista Detalle de Traslado** | Aldair Lazaro | Detección de arribo al punto de destino | Geocerca de destino alcanzada por ambulancia | **Pantalla de Desbloqueo OTP y Entrega** | Disparo por hito de ruta |
-| **Pantalla de Desbloqueo OTP** | Gianfranco Timoteo / Aldair Lazaro | Validación de código OTP por médico receptor | Firma digital y token de apertura verificados | **Línea de Tiempo de Cadena de Custodia** | Confirmación de custodia |
-| **Línea de Tiempo de Cadena de Custodia** | Gianfranco Timoteo | Clic en "Exportar Acta de Entrega" | Cierre exitoso del traslado con hash SHA-256 | **Generación de Reporte PDF Certificado** | Descarga documental |
+**WF5 · Recepción y custodia.** Detalle del traslado → confirmar recepción → verificar código → cerrar y consultar la custodia. Las ramas alternativas incluyen código incorrecto o excursión térmica activa.
 
-*Nota: Las decisiones de interfaz y flujos alternativos detallados por cada historia de usuario se formalizan en la sección 4.4.4 mediante los diagramas de User Flow.*
+![Wireflow WF5 con recepción, verificación, cierre de custodia y alternativas](../assets/chapter-4/4.4.2-wireflow-05-custodia.png)
 
-\newpage
+**WF6 · Umbrales y trazabilidad.** Configuración de umbrales → validar regla → guardar → consultar custodia → generar reporte. La alternativa muestra un umbral inválido.
+
+![Wireflow WF6 con umbrales, validación, custodia, reporte y alternativa de error](../assets/chapter-4/4.4.2-wireflow-06-umbrales-reportes.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
-#### Diseños de Alta Fidelidad para Desktop Browser
+Los mock-ups se documentan mediante capturas del showcase interactivo. Las 64 pantallas se distribuyen por recorrido y área funcional:
 
-::: {.ui-block}
+| Grupo | Pantallas | Contenido principal |
+| --- | ---: | --- |
+| Acceso e identidad | 10 | Inicio de sesión, credenciales inválidas, verificación en dos pasos, recuperación de contraseña y registro de institución. |
+| Recorrido 1 · Operador | 12 | Panel, traslados, ruta y ETA, alertas, incidentes, historial y estado sin alertas. |
+| Recorrido 2 · Flota | 12 | Ambulancias, inventario de SmartBox, vincular o desvincular, y alta de ambulancia. |
+| Recorrido 3 · Nuevo traslado | 6 | Formulario, revisión, creación, cancelación e historial. |
+| Recorrido 4 · Personal médico | 8 | Monitoreo, excursión térmica, control de stock, telemetría, recepción y custodia. |
+| Recorrido 5 · Supervisor | 9 | Umbrales, reglas de alerta, custodia, acta digital, reportes y auditoría. |
+| Administración y cuenta | 7 | Usuarios, roles, suscripción, perfil y notificaciones. |
+| **Total** | **64** | |
 
-*   **Acceso Institucional y 2FA:** Interfaz de usuario de alta fidelidad para el flujo de acceso institucional. La vista se divide en dos columnas: el panel izquierdo refuerza la propuesta de valor corporativa y el panel derecho contiene el formulario de acceso seguido de la pantalla obligatoria de Verificación en Dos Pasos (2FA) mediante OTP de 6 dígitos.
+Las pantallas del showcase incluyen estados de carga, error con opción de reintento y estado vacío (“Sin alertas”). La interfaz de esta versión está en español.
 
-![Mockup01 - Autenticacion](../assets/chapter-4/mockup-1.png)
+![Mock-up 01 de acceso con inicio de sesión, error de credenciales y verificación en dos pasos](../assets/chapter-4/4.4.3-mockup-01-acceso.png)
 
-:::
+![Mock-up 02 del operador con panel, ruta, ETA, alerta crítica y estado vacío](../assets/chapter-4/4.4.3-mockup-02-operador.png)
 
-\newpage
+![Mock-up 03 de flota con ambulancias, SmartBox, alta y vinculación](../assets/chapter-4/4.4.3-mockup-03-flota.png)
 
-::: {.ui-block}
+![Mock-up 04 de nuevo traslado con formulario, revisión, confirmación y cancelación](../assets/chapter-4/4.4.3-mockup-04-nuevo-traslado.png)
 
-*   **Dashboard General de Operaciones:** Interfaz del centro de control integral. Aprovecha el espacio horizontal para presentar la fila superior de KPIs (traslados activos, unidades monitoreadas, alertas y cumplimiento térmico), el mapa interactivo de Lima Metropolitana a la izquierda y el panel de alertas recientes a la derecha, con la tabla de traslados en curso en la parte inferior.
+![Mock-up 05 del personal médico con telemetría, recepción y cierre de custodia](../assets/chapter-4/4.4.3-mockup-05-personal-medico.png)
 
-![Mockup02 - Dashboard](../assets/chapter-4/mockup-2.png)
+![Mock-up 06 del supervisor con umbrales, alertas, acta digital, reporte y auditoría](../assets/chapter-4/4.4.3-mockup-06-supervisor.png)
 
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Planificación y Seguimiento Logístico:** Vista de Órdenes de Traslado y formulario de creación con validaciones de isquemia fría y pre-enfriamiento. Incluye el Tablero de Despacho Kanban (Pendiente, Despachado, En tránsito, Entregado) y la vista dividida de ruta en vivo con cálculo dinámico de ETA.
-
-![Mockup03 - Despacho](../assets/chapter-4/mockup-3.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Monitoreo y Control IoT de Smart Containers:** Vista en cuadrícula de todos los contenedores y panel individual (SB-0231) con medidores circulares de temperatura y batería, curva térmica continua de 24 horas y comando de desbloqueo electromecánico seguro vía HTTPS/REST.
-
-![Mockup04 - Containers](../assets/chapter-4/mockup-4.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Centro de Alertas Críticas e Incidentes:** Bandeja de notificaciones clasificada por severidad. Expone la magnitud de la excursión térmica (temperatura, duración, ubicación satelital), registro cronológico del despacho SMS/Push y registro interactivo de acciones correctivas tomadas por el operador.
-
-![Mockup05 - Incidentes](../assets/chapter-4/mockup-5.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Perfil, Configuración y Control de Roles:** Administración de canales de notificación (Push, SMS, correo, acústica), umbrales de severidad y asignación granular de permisos entre roles operativos (Fleet Logistics Dispatcher) y perfiles clínicos (Receiving Physician, Health Quality Auditor).
-
-![Mockup06 - Configuracion](../assets/chapter-4/mockup-6.png)
-
-:::
-
-\newpage
-
-::: {.ui-block}
-
-*   **Auditoría, Cadena de Custodia y Reportes:** Flujo de validación OTP en destino, registro cronológico inmutable con firma SHA-256 en la cadena de custodia y generación automática de reportes certificados para DIGEMID/SUSALUD.
-
-![Mockup07 - Custodia](../assets/chapter-4/mockup-7.png)
-
-:::
-
-#### Adaptabilidad de Mock-ups para Mobile Browser
-
-En pantallas móviles de smartphones asistenciales (360px a 414px):
-
-*   **Diseño Modular en Tarjetas Verticales:** Los dashboards multipanel se reorganizan en tarjetas apiladas con scroll vertical fluido. La temperatura actual se resalta con tipografía agrandada (36px, `tabular-nums`) y código de color dinámico (verde para 2-8 °C, rojo parpadeante ante excursión térmica).
-*   **Comandos de Acción en Barra Flotante:** La acción de "Confirmar Entrega y Solicitar OTP" permanece anclada como botón flotante (*sticky bottom*) visible en todo momento durante el trayecto, agilizando el traspaso en quirófano o rampa hospitalaria sin necesidad de desplazarse por menús complejos.
-*   **Modo Nocturno / Alto Contraste para Cabina:** La paleta adopta un fondo oscuro de bajo brillo para no encandilar al paramédico ni al conductor en traslados nocturnos de emergencia.
-
-***
-
-\newpage
+![Mock-up 07 de administración con usuarios, roles, suscripción, perfil y notificaciones](../assets/chapter-4/4.4.3-mockup-07-administracion.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que nuestros *User Personas* (**Aldair Lazaro** y **Gianfranco Timoteo**) realizan al interactuar con el ecosistema digital de NeonCode para cumplir sus objetivos operativos (*User Goals*). A continuación se presentan tres diagramas de flujo clave adaptados a las historias de usuario de la plataforma, detallando el *Happy Path* (ruta ideal) y las ramificaciones alternativas (errores de validación, fallas de conectividad IoT y desviaciones en la cadena de frío).
+Cada User Flow presenta los mock-ups de las pantallas como pasos del recorrido, identifica la meta de la persona y separa el camino esperado de las alternativas o errores.
 
-**User Flow 1: Autenticación de Personal y Acceso al Panel**
+**UF1 · Acceso e identidad (US01, US02)**
 
-*   **User Personas:** **Gianfranco Timoteo** (Supervisor Hospitalario — Segmento 2) y **Aldair Lazaro** (Personal Médico de Emergencia — Segmento 1).
-*   **User Goal:** Registrar la institución de salud y autenticar al personal médico/logístico con validación de credenciales para acceder de forma segura al panel de supervisión en tiempo real.
-*   **User Stories relacionadas:** US01, US02
-*   **Flujos incluidos:** *Happy Path* (autenticación exitosa y acceso al panel), credenciales inválidas, cuenta institucional no activada, campos incompletos y reintentos de sesión.
+- **User Goal:** acceder de forma segura a la cuenta.
+- **Happy path:** inicio de sesión → credenciales válidas → verificación en dos pasos → código correcto → panel.
+- **Unhappy paths:** credenciales inválidas; código incorrecto. Los recorridos secundarios incluyen recuperar contraseña y registrar una institución.
+![User Flow UF1 con mock-ups de acceso, verificación, panel y caminos alternativos](../assets/chapter-4/4.4.4-user-flow-01-acceso.png)
 
-![Primer User Flow](../assets/chapter-4/user-flow-1.png){.user-flow-diagram height=140mm}
+**UF2 · Operador: incidente en ruta (US14)**
 
-\newpage
+- **User Goal:** identificar y resolver un incidente térmico durante un traslado.
+- **Happy path:** panel → detalle del traslado → ruta y ETA → alerta en ruta → detalle de alerta crítica → incidente → registrar resolución → estado resuelto.
+- **Unhappy paths:** no hay alertas; se pierde la conexión y se muestra “Reintentar conexión”.
+![User Flow UF2 con mock-ups de panel, traslado, alerta y resolución](../assets/chapter-4/4.4.4-user-flow-02-incidente.png)
 
-**User Flow 2: Alta de Ambulancia y Vinculación de Contenedor Inteligente**
+**UF3 · Flota: vincular un SmartBox (US07, US08)**
 
-*   **User Persona:** **Gianfranco Timoteo** (Operador Logístico de Salud / Supervisor Hospitalario — Segmento 2).
-*   **User Goal:** Dar de alta una unidad de ambulancia y vincularle un contenedor inteligente (`SmartContainer`) en una orden de despacho (`DispatchTrip`) verificando su disponibilidad e iniciando la ingesta de telemetría.
-*   **User Stories relacionadas:** US07, US08
-*   **Flujos incluidos:** *Happy Path* (registro de vehículo y asignación telemétrica de contenedor), matrícula de ambulancia duplicada, ID de contenedor no encontrado, contenedor previamente asignado a otro vehículo y falla de enlace telemétrico inicial.
+- **User Goal:** habilitar una ambulancia y asociarle un SmartBox disponible.
+- **Happy path:** inventario → alta o detalle de ambulancia → vincular contenedor → elegir SmartBox → confirmar asociación.
+- **Unhappy paths:** placa duplicada; SmartBox ya vinculado.
+![User Flow UF3 con mock-ups de inventario, ambulancia, selección y confirmación de SmartBox](../assets/chapter-4/4.4.4-user-flow-03-flota.png)
 
-![Segundo User Flow](../assets/chapter-4/user-flow-2.png){.user-flow-diagram height=180mm}
+**UF4 · Crear un traslado médico (sin User Story específica en 3.1)**
 
-\newpage
+- **User Goal:** registrar un traslado con sus datos y revisar la orden antes de crearla.
+- **Happy path:** Traslados → nuevo traslado → completar formulario → revisar → traslado creado.
+- **Unhappy paths:** la ruta excede el límite de isquemia fría; cancelar el traslado.
+- **Trazabilidad:** US07 y US08 cubren el alta de la unidad y su asociación con un despacho, pero ninguna historia de 3.1 especifica la creación del traslado. El diagrama no atribuye un ID inexistente; la historia correspondiente debe agregarse o confirmarse en el backlog.
+![User Flow UF4 con mock-ups de lista, formulario, revisión, resultado y alternativas](../assets/chapter-4/4.4.4-user-flow-04-nuevo-traslado.png)
 
-**User Flow 3: Monitoreo Térmico en Ruta, Gestión de Alertas y Cierre de Custodia**
+**UF5 · Personal médico: recepción y custodia (US10, US11, US17)**
 
-*   **User Personas:** **Aldair Lazaro** (Personal Médico de Emergencia en ruta — Segmento 1) y **Gianfranco Timoteo** (Supervisor y Receptor Hospitalario — Segmento 2).
-*   **User Goal:** Supervisar continuamente la temperatura y el peso de los insumos durante el traslado, atender alertas críticas por excursión térmica y sellar la recepción en el hospital de destino cerrando la cadena de custodia.
-*   **User Stories relacionadas:** US10, US11, US13, US14, US17
-*   **Flujos incluidos:** *Happy Path* (monitoreo en tiempo real, recepción de alerta por variación térmica, acción correctiva y confirmación de entrega), pérdida de señal del contenedor, umbral térmico no configurado, variación de stock por sensores de peso e incidencia no resuelta en ruta.
+- **User Goal:** comprobar el estado de la carga y confirmar su recepción para cerrar la custodia.
+- **Happy path:** panel del personal → monitoreo térmico → verificar insumos → confirmar recepción → validar código → custodia cerrada.
+- **Unhappy paths:** excursión térmica; código incorrecto; telemetría en estado de carga.
+![User Flow UF5 con mock-ups de monitoreo, recepción, verificación y confirmación de custodia](../assets/chapter-4/4.4.4-user-flow-05-custodia.png)
 
-![Tercer User Flow](../assets/chapter-4/user-flow-3.png){.user-flow-diagram height=185mm}
+**UF6 · Supervisor: umbrales y reportes (US13, US16)**
+
+- **User Goal:** definir umbrales térmicos y generar un reporte de trazabilidad.
+- **Happy path:** panel → configurar umbrales → guardar regla → consultar custodia → generar reporte.
+- **Unhappy path:** el umbral no es válido y debe corregirse antes de guardar.
+![User Flow UF6 con mock-ups de configuración, validación, custodia y reporte](../assets/chapter-4/4.4.4-user-flow-06-umbrales-reportes.png)
+
+En cada composición, los mock-ups representan las pantallas del recorrido; las flechas nombran acciones o condiciones y las ramas distinguen el *happy path* de los *unhappy paths*.
