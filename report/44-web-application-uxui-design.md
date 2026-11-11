@@ -22,11 +22,9 @@ Las vistas comparten una estructura que permite localizar el módulo actual y op
 | W05 | Umbrales y reglas de alerta | US13 |
 | W06 | Cadena de custodia y reportes | US16, US17 |
 
-**Wireframes desktop.** La lámina debe reunir las seis vistas W01–W06 y mostrar jerarquía, zonas de información, controles principales y navegación compartida en escala de grises. Ruta prevista: [webapp-wireframes-desktop.png](../assets/chapter-4/webapp-wireframes-desktop.png).
+![Wireframes desktop W01–W06 con jerarquía, zonas, controles y navegación compartida en escala de grises](../assets/chapter-4/4.4.1-wireframes-webapp-desktop.png)
 
-**Wireframes mobile.** La lámina debe adaptar esas mismas seis vistas a una columna, mostrar el menú compacto y conservar visibles las acciones operativas prioritarias. Ruta prevista: [webapp-wireframes-mobile.png](../assets/chapter-4/webapp-wireframes-mobile.png).
-
-*Nota: Las láminas están pendientes de creación. Las rutas son destinos previstos dentro de `assets/chapter-4/`; no se han agregado archivos de imagen ficticios.*
+![Wireframes mobile W01–W06 en una columna con menú compacto y acciones prioritarias](../assets/chapter-4/4.4.1-wireframes-webapp-mobile.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -41,19 +39,29 @@ Cada wireflow conecta wireframes mediante flechas que nombran la acción o condi
 | WF5 | Confirmar la recepción y cerrar la cadena de custodia | Aldair Lazaro y Gianfranco Timoteo | US17 |
 | WF6 | Configurar umbrales y generar un reporte de trazabilidad | Gianfranco Timoteo | US13, US16 |
 
-**WF1 · Acceso e identidad.** Credenciales → validación → verificación en dos pasos → código válido → panel por rol. Las alternativas representan credenciales inválidas, código incorrecto y recuperación de contraseña. Archivo previsto: [webapp-wireflow-01-acceso.png](../assets/chapter-4/webapp-wireflow-01-acceso.png).
+**WF1 · Acceso e identidad.** Credenciales → validación → verificación en dos pasos → código válido → panel por rol. Las alternativas representan credenciales inválidas, código incorrecto y recuperación de contraseña.
 
-**WF2 · Incidente térmico.** Panel → traslado activo → detalle de alerta → registro de acción correctiva → estado actualizado. La rama alternativa conserva el caso sin alertas o con pérdida de conexión. Archivo previsto: [webapp-wireflow-02-incidente-termico.png](../assets/chapter-4/webapp-wireflow-02-incidente-termico.png).
+![Wireflow WF1 con acceso, verificación en dos pasos, panel y alternativas](../assets/chapter-4/4.4.2-wireflow-01-acceso.png)
 
-**WF3 · Flota y SmartBox.** Inventario → alta o detalle de ambulancia → vincular contenedor → seleccionar SmartBox → confirmar asociación. Las ramas alternativas muestran matrícula duplicada o dispositivo ya vinculado. Archivo previsto: [webapp-wireflow-03-flota-smartbox.png](../assets/chapter-4/webapp-wireflow-03-flota-smartbox.png).
+**WF2 · Incidente térmico.** Panel → traslado activo → detalle de alerta → registro de acción correctiva → estado actualizado. La rama alternativa conserva el caso sin alertas o con pérdida de conexión.
 
-**WF4 · Nuevo traslado.** Traslados → nuevo traslado → completar datos → revisar → confirmar. Las alternativas incluyen cancelación y una ruta que supera el límite de isquemia fría. La relación de este objetivo con US07–US08 es parcial; 3.1 no especifica la creación de un traslado como una historia independiente. Archivo previsto: [webapp-wireflow-04-nuevo-traslado.png](../assets/chapter-4/webapp-wireflow-04-nuevo-traslado.png).
+![Wireflow WF2 con traslado, alerta térmica, acción correctiva y ramas alternativas](../assets/chapter-4/4.4.2-wireflow-02-incidente-termico.png)
 
-**WF5 · Recepción y custodia.** Detalle del traslado → confirmar recepción → verificar código → cerrar y consultar la custodia. Las ramas alternativas incluyen código incorrecto o excursión térmica pendiente. Archivo previsto: [webapp-wireflow-05-custodia.png](../assets/chapter-4/webapp-wireflow-05-custodia.png).
+**WF3 · Flota y SmartBox.** Inventario → alta o detalle de ambulancia → vincular contenedor → seleccionar SmartBox → confirmar asociación. Las ramas alternativas muestran matrícula duplicada o dispositivo ya vinculado.
 
-**WF6 · Umbrales y trazabilidad.** Configuración de umbrales → validar regla → guardar → consultar custodia → generar reporte. La alternativa muestra un umbral inválido. Archivo previsto: [webapp-wireflow-06-umbrales-reportes.png](../assets/chapter-4/webapp-wireflow-06-umbrales-reportes.png).
+![Wireflow WF3 con alta de ambulancia, selección y vinculación de SmartBox](../assets/chapter-4/4.4.2-wireflow-03-flota-smartbox.png)
 
-*Nota: Los seis diagramas están pendientes de creación. Cada imagen debe mostrar las pantallas esquemáticas como pasos y etiquetar sus flechas con la acción, decisión o resultado correspondiente.*
+**WF4 · Nuevo traslado.** Traslados → nuevo traslado → completar datos → revisar → confirmar. Las alternativas incluyen cancelación y una ruta que supera el límite de isquemia fría. La relación de este objetivo con US07–US08 es parcial; 3.1 no especifica la creación de un traslado como una historia independiente.
+
+![Wireflow WF4 con formulario, revisión, confirmación y alternativas de traslado](../assets/chapter-4/4.4.2-wireflow-04-nuevo-traslado.png)
+
+**WF5 · Recepción y custodia.** Detalle del traslado → confirmar recepción → verificar código → cerrar y consultar la custodia. Las ramas alternativas incluyen código incorrecto o excursión térmica activa.
+
+![Wireflow WF5 con recepción, verificación, cierre de custodia y alternativas](../assets/chapter-4/4.4.2-wireflow-05-custodia.png)
+
+**WF6 · Umbrales y trazabilidad.** Configuración de umbrales → validar regla → guardar → consultar custodia → generar reporte. La alternativa muestra un umbral inválido.
+
+![Wireflow WF6 con umbrales, validación, custodia, reporte y alternativa de error](../assets/chapter-4/4.4.2-wireflow-06-umbrales-reportes.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
@@ -72,19 +80,19 @@ Los mock-ups se documentan mediante capturas del showcase interactivo. Las 64 pa
 
 Las pantallas del showcase incluyen estados de carga, error con opción de reintento y estado vacío (“Sin alertas”). La interfaz de esta versión está en español.
 
-Las siete capturas deben mostrar pantallas reales del showcase y sus estados representativos. No deben sustituirse por composiciones de alta fidelidad que no existan en el producto.
+![Mock-up 01 de acceso con inicio de sesión, error de credenciales y verificación en dos pasos](../assets/chapter-4/4.4.3-mockup-01-acceso.png)
 
-| Captura pendiente | Contenido que debe verse | Ruta prevista |
-| --- | --- | --- |
-| Mock-up 01 · Acceso | Inicio de sesión, credenciales inválidas y verificación en dos pasos. | [webapp-mockup-01-acceso.png](../assets/chapter-4/webapp-mockup-01-acceso.png) |
-| Mock-up 02 · Operador | Panel, ruta y ETA, alerta crítica y estado vacío. | [webapp-mockup-02-operador.png](../assets/chapter-4/webapp-mockup-02-operador.png) |
-| Mock-up 03 · Flota | Lista de ambulancias y SmartBox, alta y vinculación. | [webapp-mockup-03-flota.png](../assets/chapter-4/webapp-mockup-03-flota.png) |
-| Mock-up 04 · Nuevo traslado | Formulario, revisión, confirmación y cancelación. | [webapp-mockup-04-nuevo-traslado.png](../assets/chapter-4/webapp-mockup-04-nuevo-traslado.png) |
-| Mock-up 05 · Personal médico | Lectura térmica, telemetría, recepción y cierre de custodia. | [webapp-mockup-05-personal-medico.png](../assets/chapter-4/webapp-mockup-05-personal-medico.png) |
-| Mock-up 06 · Supervisor | Umbrales, alerta, acta digital, reporte y auditoría. | [webapp-mockup-06-supervisor.png](../assets/chapter-4/webapp-mockup-06-supervisor.png) |
-| Mock-up 07 · Administración | Usuarios y roles, suscripción, perfil y notificaciones. | [webapp-mockup-07-administracion.png](../assets/chapter-4/webapp-mockup-07-administracion.png) |
+![Mock-up 02 del operador con panel, ruta, ETA, alerta crítica y estado vacío](../assets/chapter-4/4.4.3-mockup-02-operador.png)
 
-*Nota: Las capturas están pendientes. Cada ruta es un destino previsto dentro de `assets/chapter-4/`; no se han agregado archivos de imagen ficticios.*
+![Mock-up 03 de flota con ambulancias, SmartBox, alta y vinculación](../assets/chapter-4/4.4.3-mockup-03-flota.png)
+
+![Mock-up 04 de nuevo traslado con formulario, revisión, confirmación y cancelación](../assets/chapter-4/4.4.3-mockup-04-nuevo-traslado.png)
+
+![Mock-up 05 del personal médico con telemetría, recepción y cierre de custodia](../assets/chapter-4/4.4.3-mockup-05-personal-medico.png)
+
+![Mock-up 06 del supervisor con umbrales, alertas, acta digital, reporte y auditoría](../assets/chapter-4/4.4.3-mockup-06-supervisor.png)
+
+![Mock-up 07 de administración con usuarios, roles, suscripción, perfil y notificaciones](../assets/chapter-4/4.4.3-mockup-07-administracion.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
@@ -95,21 +103,21 @@ Cada User Flow presenta los mock-ups de las pantallas como pasos del recorrido, 
 - **User Goal:** acceder de forma segura a la cuenta.
 - **Happy path:** inicio de sesión → credenciales válidas → verificación en dos pasos → código correcto → panel.
 - **Unhappy paths:** credenciales inválidas; código incorrecto. Los recorridos secundarios incluyen recuperar contraseña y registrar una institución.
-- **Imagen pendiente:** seis capturas/mock-ups conectados para mostrar los estados de acceso, con flechas y decisiones rotuladas. Ruta: [user-flow-01-acceso.png](../assets/chapter-4/user-flow-01-acceso.png).
+![User Flow UF1 con mock-ups de acceso, verificación, panel y caminos alternativos](../assets/chapter-4/4.4.4-user-flow-01-acceso.png)
 
 **UF2 · Operador: incidente en ruta (US14)**
 
 - **User Goal:** identificar y resolver un incidente térmico durante un traslado.
 - **Happy path:** panel → detalle del traslado → ruta y ETA → alerta en ruta → detalle de alerta crítica → incidente → registrar resolución → estado resuelto.
 - **Unhappy paths:** no hay alertas; se pierde la conexión y se muestra “Reintentar conexión”.
-- **Imagen pendiente:** mock-ups del panel, traslado, alerta y resolución conectados en orden. Ruta: [user-flow-02-incidente.png](../assets/chapter-4/user-flow-02-incidente.png).
+![User Flow UF2 con mock-ups de panel, traslado, alerta y resolución](../assets/chapter-4/4.4.4-user-flow-02-incidente.png)
 
 **UF3 · Flota: vincular un SmartBox (US07, US08)**
 
 - **User Goal:** habilitar una ambulancia y asociarle un SmartBox disponible.
 - **Happy path:** inventario → alta o detalle de ambulancia → vincular contenedor → elegir SmartBox → confirmar asociación.
 - **Unhappy paths:** placa duplicada; SmartBox ya vinculado.
-- **Imagen pendiente:** mock-ups de inventario, formulario/detalle, selección de dispositivo y confirmación. Ruta: [user-flow-03-flota.png](../assets/chapter-4/user-flow-03-flota.png).
+![User Flow UF3 con mock-ups de inventario, ambulancia, selección y confirmación de SmartBox](../assets/chapter-4/4.4.4-user-flow-03-flota.png)
 
 **UF4 · Crear un traslado médico (sin User Story específica en 3.1)**
 
@@ -117,20 +125,20 @@ Cada User Flow presenta los mock-ups de las pantallas como pasos del recorrido, 
 - **Happy path:** Traslados → nuevo traslado → completar formulario → revisar → traslado creado.
 - **Unhappy paths:** la ruta excede el límite de isquemia fría; cancelar el traslado.
 - **Trazabilidad:** US07 y US08 cubren el alta de la unidad y su asociación con un despacho, pero ninguna historia de 3.1 especifica la creación del traslado. El diagrama no atribuye un ID inexistente; la historia correspondiente debe agregarse o confirmarse en el backlog.
-- **Imagen pendiente:** mock-ups de lista, formulario, revisión, resultado y alternativas. Ruta: [user-flow-04-nuevo-traslado.png](../assets/chapter-4/user-flow-04-nuevo-traslado.png).
+![User Flow UF4 con mock-ups de lista, formulario, revisión, resultado y alternativas](../assets/chapter-4/4.4.4-user-flow-04-nuevo-traslado.png)
 
 **UF5 · Personal médico: recepción y custodia (US10, US11, US17)**
 
 - **User Goal:** comprobar el estado de la carga y confirmar su recepción para cerrar la custodia.
 - **Happy path:** panel del personal → monitoreo térmico → verificar insumos → confirmar recepción → validar código → custodia cerrada.
 - **Unhappy paths:** excursión térmica; código incorrecto; telemetría en estado de carga.
-- **Imagen pendiente:** mock-ups de monitoreo, recepción, verificación y confirmación de custodia conectados. Ruta: [user-flow-05-custodia.png](../assets/chapter-4/user-flow-05-custodia.png).
+![User Flow UF5 con mock-ups de monitoreo, recepción, verificación y confirmación de custodia](../assets/chapter-4/4.4.4-user-flow-05-custodia.png)
 
 **UF6 · Supervisor: umbrales y reportes (US13, US16)**
 
 - **User Goal:** definir umbrales térmicos y generar un reporte de trazabilidad.
 - **Happy path:** panel → configurar umbrales → guardar regla → consultar custodia → generar reporte.
 - **Unhappy path:** el umbral no es válido y debe corregirse antes de guardar.
-- **Imagen pendiente:** mock-ups de configuración, validación, custodia y reporte conectados. Ruta: [user-flow-06-umbrales-reportes.png](../assets/chapter-4/user-flow-06-umbrales-reportes.png).
+![User Flow UF6 con mock-ups de configuración, validación, custodia y reporte](../assets/chapter-4/4.4.4-user-flow-06-umbrales-reportes.png)
 
-*Nota: Los seis User Flow diagrams están pendientes. En cada composición, los mock-ups deben ser las pantallas del recorrido; las flechas deben nombrar acciones o condiciones y las ramas deben distinguirse como happy path o unhappy path.*
+En cada composición, los mock-ups representan las pantallas del recorrido; las flechas nombran acciones o condiciones y las ramas distinguen el *happy path* de los *unhappy paths*.
