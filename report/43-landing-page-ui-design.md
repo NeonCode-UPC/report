@@ -30,3 +30,26 @@ Los wireframes representan la estructura y el orden del contenido antes de incor
 *Nota: Los dos diagramas están pendientes de creación. Las rutas son destinos previstos dentro de `assets/chapter-4/`; no se han agregado archivos de imagen ficticios.*
 
 La jerarquía del wireframe sitúa la propuesta de valor y los accesos principales en el hero. En mobile, el contenido se apila en una columna y el menú se presenta como drawer para conservar el acceso a las secciones y acciones principales.
+
+### 4.3.2. Landing Page Mock-up
+
+Los mock-ups de alta fidelidad muestran la implementación visual del contenido definido en el wireframe, con la paleta y tipografía descritas en la sección 4.1.
+
+| Criterio del Landing | Evidencia en la interfaz |
+| --- | --- |
+| Propósito de la plataforma | Secciones Hero, Platform, Monitoring y Traceability presentan la solución y sus capacidades. |
+| Captura del producto o video | El Hero y Monitoring muestran vistas del producto. La sección Videos conserva marcos para “About the Product” y “About the Team”; los videos finales siguen pendientes de publicación. |
+| Pitch message | “Everything happening during a medical transport, in one place.” |
+| CTA | “Open the Web App”, “Log in” y “Request hiring”. |
+| Información de contacto | Correo `contacto@medicalsmartbox.com`, teléfono, oficina en Lima, horario de atención e indicador de respuesta en 24 horas laborables. Los datos de contacto de ejemplo deben reemplazarse antes de una publicación comercial. |
+| Redes sociales | LinkedIn, Instagram, Facebook, X, YouTube y GitHub; los enlaces actuales son cuentas simuladas. |
+| Términos y privacidad | Modales “Terms of service” y “Privacy policy”, con referencia a la Ley N.° 29733 y acceso desde el footer. |
+| Colaboración | Enlace al repositorio de GitHub del equipo. |
+
+El formulario de contratación solicita plan (Small Box de S/ 110 mensuales para 5 L, Standard Box de S/ 160 mensuales para 20 L o asesoría), cantidad de SmartBoxes, organización, nombre, correo de trabajo y comentario opcional, además del consentimiento de privacidad. Calcula una estimación de referencia y contempla errores por campo, estado de envío y confirmación.
+
+**Mock-up desktop.** Debe incluir capturas legibles del hero, secciones de monitoreo y trazabilidad, planes, formulario y footer, además de los marcos de video como se encuentran en el producto. Ruta prevista: [landing-mockup-desktop.png](../assets/chapter-4/landing-mockup-desktop.png).
+
+**Mock-up mobile.** Debe mostrar el menú drawer, las secciones apiladas, los CTA, el formulario y el footer en el viewport móvil. Ruta prevista: [landing-mockup-mobile.png](../assets/chapter-4/landing-mockup-mobile.png).
+
+*Nota: Las capturas están pendientes. Las rutas son destinos previstos dentro de `assets/chapter-4/`; no se han agregado archivos de imagen ficticios.*
