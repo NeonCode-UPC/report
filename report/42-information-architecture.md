@@ -35,7 +35,7 @@ La tabla distingue los metadatos del sitio público de los títulos que la SPA a
 | Título (`title`) | Título del producto en la pestaña del navegador. | `Medical SMARTBOX — Monitoreo y trazabilidad del transporte médico`; las vistas actualizan el título con el nombre de la sección. | Implementado; la SPA usa títulos por vista. |
 | Descripción (`meta description`) | Descripción del producto en español. | Descripción de la plataforma, el monitoreo de traslados y las incidencias de temperatura. | Implementado en ambos. |
 | Viewport | Configuración responsive para la ventana del navegador. | `width=device-width, initial-scale=1.0`. | Implementado en ambos. |
-| Keywords | No existe una etiqueta `keywords` en la implementación revisada. | No existe una etiqueta `keywords` en `frontend/index.html`. | Pendiente de definir si se desea incluir. |
+| Keywords | No implementado. | No implementado en `frontend/index.html`. | Ausente en ambas implementaciones. |
 | Author | No existe una etiqueta `author` en la implementación revisada. | `NeonCode Team`. | Ausente en Landing; implementado en Web App. |
 | Títulos por vista | No aplica. | La navegación establece títulos como “Panel”, “Reportes”, “Ajustes” y “Acerca de”, precedidos por “Medical SmartBox”. | Implementado en la SPA. |
 
