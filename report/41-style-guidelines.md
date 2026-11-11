@@ -122,11 +122,11 @@ El `ink-3` no alcanza 4.5:1 para texto pequeño. Se identifica como limitación 
 | ARIA | Landing: `aria-label`, `aria-live`, `aria-expanded`; Web App: `aria-label` y `aria-live` en elementos clave |
 | Idioma | Landing en inglés con conmutador a español; Web App en español |
 
-**Limitaciones conocidas y mejoras planificadas**
+**Limitaciones observadas en la implementación**
 
-| Limitación | Mejora planificada |
+| Limitación | Estado observado |
 | --- | --- |
-| `ink-3` con 3.6 a 4.0:1 | Oscurecerlo a #5A706D |
-| Botones `btn-sm` de unos 38 px | Alto mínimo de 44 px en punteros táctiles |
-| Web App en español, sin conmutador | Inglés por defecto con ES/EN |
-| Poca cobertura ARIA en la Web App | `role="alert"` en alertas críticas |
+| `ink-3` con contraste de 3.59:1 a 4.03:1 según el fondo | Se usa para etiquetas, microcopy y texto secundario, no como texto pequeño esencial. |
+| Botones `btn-sm` de unos 38 px | Su alto es inferior a 44 px. |
+| Web App en español, sin conmutador de idioma | El idioma disponible en la interfaz es español. |
+| Cobertura ARIA limitada en la Web App | Las alertas críticas no tienen `role="alert"`. |
