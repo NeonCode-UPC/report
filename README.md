@@ -21,7 +21,7 @@ El informe técnico modular está disponible en [`report/`](report/), los recurs
 │   ├── front-matter/                        # Preliminares (01-cover a 05-student-outcome)
 │   ├── 11-startup-profile.md ... 61-conclusions.md
 │   ├── 99-bibliography.md                   # Bibliografía APA autogenerada con citeproc
-│   └── annexes/                             # Anexos aislados (Anexo A, B y C)
+│   └── annexes/                             # Anexos aislados (Anexo A y C)
 ├── metadata.yaml                            # Variables globales de portada y metadatos
 ├── bibtex.bib                               # Base de datos bibliográfica en formato BibTeX
 ├── Makefile                                 # Orquestador de compilación (make pdf / make clean)
@@ -124,5 +124,4 @@ El documento compilado se genera en `build/upc-pre-202620-1asi0730-8150-neoncode
 - [Conclusiones y Recomendaciones](report/61-conclusions.md#conclusiones-y-recomendaciones)
 - [Bibliografía (BibTeX / APA)](report/99-bibliography.md#bibliografía)
 - [Anexo A. Repositorios Oficiales y Despliegues en la Nube](report/annexes/annex-a-repositories-and-deployments.md)
-- [Anexo B. Tableros Digitales y Prototipos Interactivos](report/annexes/annex-b-collaborative-boards-and-prototypes.md)
 - [Anexo C. Grabaciones Audiovisuales y Entrevistas a Profundidad](report/annexes/annex-c-audiovisual-records.md)
