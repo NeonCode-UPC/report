@@ -1,17 +1,23 @@
 # 4.5. Web Applications Prototyping
 
-El prototipo interactivo consolida la representación visual y la dinámica de interacción de los mock-ups de alta fidelidad para el Landing Page institucional y la Web Application de **Medical SMARTBOX**, permitiendo realizar recorridos completos de experiencia de usuario previos a la codificación frontend.
+El prototipo de la Web Application permite recorrer las pantallas y transiciones descritas en la sección 4.4. Se presenta en el showcase HTML interactivo y en un prototipo de alta fidelidad en Figma, para desktop y mobile. El showcase reúne 64 pantallas y más de 130 transiciones definidas.
 
-Para el desarrollo del prototipo de alta fidelidad se utilizó la herramienta profesional **Figma**, estructurando componentes reutilizables bajo directrices de **Material Design**, estados interactivos (*hover*, *active*, modales de alerta crítica, filtros de tabla y visualizadores de telemetría IoT en tiempo real).
+Las decisiones de navegación siguen la arquitectura de información de la sección 4.2: la barra lateral agrupa los módulos, el filtro global y los chips de estado ayudan a localizar registros, y los breadcrumbs y acciones contextuales mantienen al usuario dentro del recorrido. Las confirmaciones, los estados de carga y los mensajes de error muestran el resultado de las interacciones.
 
-Las decisiones de interacción se fundamentaron directamente en la arquitectura de información (Sección 4.2), priorizando la reducción de carga cognitiva en situaciones de emergencia asistencial mediante navegación contextual directa, confirmaciones modales para operaciones críticas y retroalimentación inmediata sobre variables telemétricas.
+| Prototipo | Plataforma | Enlace |
+| --- | --- | --- |
+| Figma, Desktop | Navegador desktop | Pendiente de incorporar el enlace del prototipo. |
+| Figma, Mobile | Navegador mobile | Pendiente de incorporar el enlace del prototipo. |
+| Showcase interactivo | Desktop y mobile | Pendiente de incorporar el enlace público al showcase HTML. |
 
-* **Enlace al Prototipo Interactivo en Figma:** [Medical SMARTBOX - Figma Prototype](https://www.figma.com/design/QTb7ZzZZxSbfMghb8csfPO/NeonCode?node-id=2231-7&t=qCMM6bNK20EdUES6-1)
-* **Alcance y Flujos Cubiertos en el Prototipo:**
-  1. **Autenticación y Seguridad:** Acceso de personal médico y de ambulancia mediante verificación de credenciales y doble factor (2FA).
-  2. **Monitoreo y Despacho en Tiempo Real:** Visualización en mapa georreferenciado de unidades vehiculares en tránsito, rutas activas y estado de contenedores inteligentes.
-  3. **Telemetría y Control de Smart Container:** Detalle individual del contenedor (Smart Container SB-0231), curva continua de temperatura, nivel de carga de batería, sensor de peso y comando de apertura electromecánica.
-  4. **Gestión de Incidentes y Excursiones Térmicas:** Notificación inmediata ante anomalías de frío, registro de causa raíz y acciones correctivas inmediatas.
-  5. **Protocolo de Entrega y Cadena de Custodia:** Generación y validación de código de un solo uso (OTP) en centro hospitalario receptor y emisión de acta digital de custodia sellada.
+Los recorridos cubiertos son UF1 (acceso e identidad), UF2 (incidente en ruta), UF3 (flota y SmartBox), UF4 (nuevo traslado), UF5 (recepción y custodia) y UF6 (umbrales y reportes). El objetivo UF4 mantiene la observación de trazabilidad documentada en 4.4.4.
 
-* **Visualización de Recursos:** Ver el [Anexo B](annexes/annex-b-collaborative-boards-and-prototypes.md#anexo-b-tableros-digitales-y-prototipos-interactivos) para el catálogo de enlaces a tableros colaborativos y prototipos interactivos.
+### Video Prototype Navigation
+
+El video debe demostrar los recorridos UF1–UF6 en desktop y mobile, mostrando las acciones y los resultados de cada transición. La imagen pendiente debe ser una captura legible del video o de su reproductor, con el nombre y duración visibles si la plataforma los muestra.
+
+- **Archivo esperado:** `upc-pre-202620-1asi0730-8150-neoncode-prototype-navigation-sprint-<n>.mp4`.
+- **Microsoft Stream:** pendiente de incorporar el enlace del video.
+- **Captura del video:** [webapp-prototype-navigation-video.png](../assets/chapter-4/webapp-prototype-navigation-video.png).
+
+*Nota: La captura y los enlaces están pendientes de recibir los recursos finales. El NRC `8150` y el nombre de startup `NeonCode` se toman de `metadata.yaml` y del identificador de entrega documentado en el repositorio; falta definir el número de sprint del archivo.*
