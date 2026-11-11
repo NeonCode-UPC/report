@@ -8,7 +8,7 @@ Las Style Guidelines fijan los estándares visuales, de interacción y de comuni
 
 Identidad clínica, limpia y confiable: verde bosque profundo (`ink`) sobre marfil cálido, verde cerceta (`teal`) para acciones y estado “en rango”, y coral reservado a alertas. Logotipo: espacio libre igual a la altura del isotipo, tamaño mínimo de 24 px, versión blanca sobre fondos oscuros.
 
-![Medical SMARTBOX - Logo](../assets/chapter-4/logo.png)
+![Logotipo de Medical SMARTBOX con área de protección y variantes para fondos claros y oscuros](../assets/chapter-4/4.1.1-branding-logo-usage.png)
 
 *Nota: Logotipo oficial de Medical SMARTBOX, representando la custodia térmica inteligente.*
 
