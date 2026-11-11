@@ -35,7 +35,7 @@ Cada wireflow conecta wireframes mediante flechas que nombran la acción o condi
 | WF1 | Acceder a la cuenta y completar la verificación de identidad | Aldair Lazaro y Gianfranco Timoteo | US01, US02 |
 | WF2 | Resolver una alerta térmica durante un traslado | Gianfranco Timoteo | US14 |
 | WF3 | Vincular un SmartBox disponible a una ambulancia | Gianfranco Timoteo | US07, US08 |
-| WF4 | Preparar y crear un traslado médico | Gianfranco Timoteo | US07 y US08 dan soporte parcial; no hay una historia específica de creación de traslado en 3.1 |
+| WF4 | Preparar y crear un traslado médico | Gianfranco Timoteo | |
 | WF5 | Confirmar la recepción y cerrar la cadena de custodia | Aldair Lazaro y Gianfranco Timoteo | US17 |
 | WF6 | Configurar umbrales y generar un reporte de trazabilidad | Gianfranco Timoteo | US13, US16 |
 
@@ -51,7 +51,7 @@ Cada wireflow conecta wireframes mediante flechas que nombran la acción o condi
 
 ![Wireflow WF3 con alta de ambulancia, selección y vinculación de SmartBox](../assets/chapter-4/4.4.2-wireflow-03-flota-smartbox.png)
 
-**WF4 · Nuevo traslado.** Traslados → nuevo traslado → completar datos → revisar → confirmar. Las alternativas incluyen cancelación y una ruta que supera el límite de isquemia fría. La relación de este objetivo con US07–US08 es parcial; 3.1 no especifica la creación de un traslado como una historia independiente.
+**WF4 · Nuevo traslado.** Traslados → nuevo traslado → completar datos → revisar → confirmar. Las alternativas incluyen cancelación y una ruta que supera el límite de isquemia fría.
 
 ![Wireflow WF4 con formulario, revisión, confirmación y alternativas de traslado](../assets/chapter-4/4.4.2-wireflow-04-nuevo-traslado.png)
 
@@ -119,12 +119,11 @@ Cada User Flow presenta los mock-ups de las pantallas como pasos del recorrido, 
 - **Unhappy paths:** placa duplicada; SmartBox ya vinculado.
 ![User Flow UF3 con mock-ups de inventario, ambulancia, selección y confirmación de SmartBox](../assets/chapter-4/4.4.4-user-flow-03-flota.png)
 
-**UF4 · Crear un traslado médico (sin User Story específica en 3.1)**
+**UF4 · Crear un traslado médico**
 
 - **User Goal:** registrar un traslado con sus datos y revisar la orden antes de crearla.
 - **Happy path:** Traslados → nuevo traslado → completar formulario → revisar → traslado creado.
 - **Unhappy paths:** la ruta excede el límite de isquemia fría; cancelar el traslado.
-- **Trazabilidad:** US07 y US08 cubren el alta de la unidad y su asociación con un despacho, pero ninguna historia de 3.1 especifica la creación del traslado. El diagrama no atribuye un ID inexistente; la historia correspondiente debe agregarse o confirmarse en el backlog.
 ![User Flow UF4 con mock-ups de lista, formulario, revisión, resultado y alternativas](../assets/chapter-4/4.4.4-user-flow-04-nuevo-traslado.png)
 
 **UF5 · Personal médico: recepción y custodia (US10, US11, US17)**
