@@ -105,7 +105,6 @@
 - [Bibliografía](../99-bibliography.md#bibliografía)
 - [Anexos](../annexes/annex-a-repositories-and-deployments.md#anexos)
   - [Anexo A. Repositorios Oficiales y Despliegues en la Nube](../annexes/annex-a-repositories-and-deployments.md#anexo-a-repositorios-de-código-fuente-y-despliegues-en-la-nube)
-  - [Anexo B. Tableros Digitales y Prototipos Interactivos](../annexes/annex-b-collaborative-boards-and-prototypes.md#anexo-b-tableros-digitales-y-prototipos-interactivos)
   - [Anexo C. Registro Audiovisual de Entrevistas y Demostración Funcional](../annexes/annex-c-audiovisual-records.md#anexo-c-grabaciones-audiovisuales-y-entrevistas-a-profundidad)
 
 :::

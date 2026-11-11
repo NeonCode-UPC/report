@@ -58,7 +58,6 @@ input-files:
   - report/61-conclusions.md
   - report/99-bibliography.md
   - report/annexes/annex-a-repositories-and-deployments.md
-  - report/annexes/annex-b-collaborative-boards-and-prototypes.md
   - report/annexes/annex-c-audiovisual-records.md
 
 output-file: build/upc-pre-202620-1asi0730-8150-neoncode-report-tb1.pdf
