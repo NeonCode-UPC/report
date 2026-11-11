@@ -24,3 +24,19 @@ Las etiquetas usan términos breves y consistentes con el rol y la tarea. El Lan
 | Personal receptor y supervisión hospitalaria (Gianfranco Timoteo) | “Recepción”, “Código de verificación”, “Cadena de custodia”, “Acta digital”, “Auditoría” y “Reportes”. | Confirmar la entrega y revisar sus registros. |
 
 Las etiquetas de estado se acompañan de texto además del color, para que la condición del traslado o del contenedor no dependa únicamente de la señal cromática. Los CTA del Landing que abren la Web Application conducen al punto de acceso de la plataforma.
+
+### 4.2.3. SEO Tags and Meta Tags
+
+La tabla distingue los metadatos del sitio público de los títulos que la SPA actualiza al navegar. El estado describe lo que está implementado y deja explícito lo que requiere una actualización.
+
+| Elemento | Landing Page público | Web Application | Estado |
+| --- | --- | --- | --- |
+| Idioma (`html lang`) | Español (`es`). | Español (`es`). | Implementado en ambos. |
+| Título (`title`) | Título del producto en la pestaña del navegador. | `Medical SMARTBOX — Monitoreo y trazabilidad del transporte médico`; las vistas actualizan el título con el nombre de la sección. | Implementado; la SPA usa títulos por vista. |
+| Descripción (`meta description`) | Descripción del producto en español. | Descripción de la plataforma, el monitoreo de traslados y las incidencias de temperatura. | Implementado en ambos. |
+| Viewport | Configuración responsive para la ventana del navegador. | `width=device-width, initial-scale=1.0`. | Implementado en ambos. |
+| Keywords | No existe una etiqueta `keywords` en la implementación revisada. | No existe una etiqueta `keywords` en `frontend/index.html`. | Pendiente de definir si se desea incluir. |
+| Author | No existe una etiqueta `author` en la implementación revisada. | `NeonCode Team`. | Ausente en Landing; implementado en Web App. |
+| Títulos por vista | No aplica. | La navegación establece títulos como “Panel”, “Reportes”, “Ajustes” y “Acerca de”, precedidos por “Medical SmartBox”. | Implementado en la SPA. |
+
+Los metadatos del Landing se describen a partir de la implementación reportada para el sitio público. En la Web Application, el `title`, la descripción, el idioma, el viewport, el autor y los títulos por ruta se contrastan con `frontend/index.html` y el router de Vue. No se atribuyen al producto etiquetas de robots, canonical u Open Graph que no aparecen en esa implementación.
