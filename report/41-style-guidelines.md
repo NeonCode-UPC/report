@@ -87,15 +87,36 @@ El `ink-3` se oscurecerá a #5A706D (4.81:1) en la siguiente iteración.
 | Sombras `--sh-1` a `--sh-3` | Reposo, botones y chips, modales |
 
 
-## 4.1.2. Web Style Guidelines
+### 4.1.2. Web Style Guidelines
 
-Las directrices web definen la estructura adaptativa, componentes interactivos y comportamiento responsivo de la plataforma:
+| Dispositivo | Ancho | Comportamiento |
+| --- | --- | --- |
+| Desktop | ≥ 1081 px | Contenido de hasta 1240 px, varias columnas |
+| Tablet | 721 a 1080 px | Cuadrículas reducidas, paneles apilados |
+| Mobile | ≤ 720 px | Una columna y menú drawer (la Web App adapta desde 700 px) |
 
-*   **Estrategia Responsive y Adaptabilidad Multi-dispositivo:**
-    *   **Desktop / Estaciones Hospitalarias (Viewport ≥ 1280px):** Disposición de cuadrícula fluida de 12 columnas. Aprovecha el ancho panorámico para mostrar simultáneamente el mapa de flota satelital en vivo, gráficos telemétricos continuos y panel lateral de incidentes activos.
-    *   **Tablet / Terminales de Cabina (Viewport 768px a 1024px):** Cuadrícula adaptativa de 6 columnas. Los paneles secundarios se condensan en pestañas (*tabs*) o cajones laterales (*drawers*) accesibles mediante gestos táctiles.
-    *   **Mobile Browser / Smartphones Médicos (Viewport 360px a 414px):** Colapso a una columna única fluida (1 columna, 100% de ancho con márgenes laterales de 16px). La barra de navegación superior colapsa en un menú tipo hamburguesa/drawer lateral; los mapas de ruta alternan a pantalla completa modal; las tarjetas de métricas telemétricas se apilan verticalmente; y los botones de acción rápida (ej. "Reconocer Alerta", "Solicitar OTP") cuentan con una altura mínima de **48px** para garantizar un área táctil ergonómica (*touch target*) según directrices de Google Material Design y Apple Human Interface Guidelines.
-*   **Navegación y Patrones de Interacción:**
-    *   **Sticky Header:** Barra de navegación superior fija que mantiene visible el logotipo institucional, estado de conexión en tiempo real (indicador verde de latencia de red), conmutador de idioma (ES/EN) y botón de acceso rápido al perfil de usuario.
-    *   **Route Rail (Navegación Vertical de Seguimiento):** En el Landing Page, un indicador lateral animado (*scrollspy*) sitúa visualmente al visitante a lo largo de las secciones informativas del producto.
-    *   **Retroalimentación Inmediata de Estados:** Cada microinteracción (hover en escritorio, active state en móvil) ofrece respuestas visuales no mayores a 150ms mediante transiciones CSS fluidas (`ease-in-out`), confirmando visualmente cada comando emitidoI.
+| Componente | Variantes | Estados |
+| --- | --- | --- |
+| Button | Primary, accent, ghost, light, outline; sm, base, lg | Default, hover (sube 2 px), focus-visible |
+| Input | Texto y contraseña | Default, focus (borde `teal`) |
+| Badge | ok, info, warn, crit, mute | Punto de color más texto |
+| Alert (Web App) | Informativa, correcta, advertencia, crítica | Ícono, título y descripción |
+| KPI, panel y fila | Valor y etiqueta; listas | Normal, crítico |
+| Modal y Language toggle | Login, privacidad, términos; ES / EN | Abierto/cerrado; `role="switch"` |
+
+| Accesibilidad e i18n | Estado actual |
+| --- | --- |
+| Foco visible | Anillo de 2.5 px en `teal`, separación de 3 px |
+| Movimiento reducido | `prefers-reduced-motion` desactiva animaciones |
+| ARIA | Landing: `aria-label`, `aria-live`, `aria-expanded`; Web App: `aria-label` y `aria-live` en elementos clave |
+| Idioma | Landing en inglés con conmutador a español; Web App en español |
+
+**Limitaciones conocidas y mejoras planificadas**
+
+| Limitación | Mejora planificada |
+| --- | --- |
+| `ink-3` con 3.6 a 4.0:1 | Oscurecerlo a #5A706D |
+| Botones `btn-sm` de unos 38 px | Alto mínimo de 44 px en punteros táctiles |
+| Web App en español, sin conmutador | Inglés por defecto con ES/EN |
+| Poca cobertura ARIA en la Web App | `role="alert"` en alertas críticas |
+| Sin modo nocturno | Evaluarlo en el roadmap |
