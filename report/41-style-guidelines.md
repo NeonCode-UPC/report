@@ -38,31 +38,54 @@ Landing: **Font Awesome Free 6.5.1** (solid, regular, brands). Web App: iconos S
 
 ### Typography
 
-El sistema tipográfico prioriza la jerarquía visual y la decodificación instantánea de telemetría numérica en entornos de alta exigencia cognitiva (ej. cabina de ambulancia o supervisión en central de emergencias). Se implementa una escala tipográfica modular basada en las siguientes fuentes de Google Fonts:
+**Bricolage Grotesque** (encabezados) e **Inter** (cuerpo y telemetría, con `tabular-nums`). Tamaños fluidos con `clamp()`.
 
-*   **Bricolage Grotesque:** Empleada como tipografía corporativa para encabezados primarios y secundarios (`h1`, `h2`, `h3`). Su estructura geométrica contemporánea con remates técnicos otorga autoridad visual, solidez institucional y modernidad tecnológica.
-*   **Inter:** Empleada para textos de párrafo, microcopia de interfaz, tablas de auditoría y visualización de telemetría numérica. Su excelente renderizado subpíxel y variantes tabulares numéricas (`font-variant-numeric: tabular-nums`) garantizan una lectura nítida de decimales de temperatura y porcentajes de batería sin oscilaciones visuales.
-
-![Bricolage Grotesque - Font](../assets/chapter-4/bricolage-font.png){.style-specimen-lg}
-![Inter - Font](../assets/chapter-4/inter-font.png){.style-specimen-lg}
-*Nota: Muestrarios tipográficos de Bricolage Grotesque (titulares) e Inter (cuerpo y datos numéricos).*
+| Nivel | Familia | Tamaño | Peso |
+| --- | --- | --- | --- |
+| Hero | Bricolage | 43 a 90 px | 600 |
+| Título de sección | Bricolage | 32 a 54 px | 600 |
+| Lead | Inter | 16 a 19 px | 400 |
+| Body | Inter | 16 px / 1.6 | 400 |
+| Micro / Label | Inter | 12 a 12.5 px | 400 y 500 |
 
 ### Colors
 
-La paleta cromática se seleccionó bajo criterios de contraste accesible (cumplimiento WCAG 2.1 [@w3c2018] Nivel AA) y codificación semántica para estados operativos clínicos:
+| Token | Hex | Rol |
+| --- | --- | --- |
+| `ink` | #10312F | Texto principal y botón primario |
+| `ink-2` / `ink-3` | #2E4A47 / #6B827F | Texto secundario y de apoyo |
+| `ivory` / `warm` / `mist` | #F7F4EE / #FFFDF9 / #EDF1EE | Fondos y superficies |
+| `teal` / `teal-deep` | #0F7A70 / #0B4F4A | Acción, enlaces y estado “en rango” |
+| `blue` | #1F3C77 | Alertas informativas |
+| `mint` / `lime` | #CDE7DC / #B9DDA0 | Apoyo suave y foco sobre oscuro |
+| `coral` / `coral-pale` | #E05A46 / #FBE6E1 | Alertas críticas |
+| `ok` / `warn` | #2E9E6B / #D99B2B | Estados correcto y advertencia |
 
-*   **Azul Marino Corporativo (`#10312F` / `#1F3C77`):** Color dominante institucional que proyecta solidez, seriedad médica y rigor de ingeniería.
-*   **Verde Cerceta / Teal (`#0F7A70`):** Color primario de acción y estado óptimo ("En Rango", carga refrigerada entre 2 °C y 8 °C, telemetría activa).
-*   **Verde Menta (`#B9DDA0`):** Fondo suave de soporte para indicadores de éxito y tarjetas de estado estable.
-*   **Coral / Rojo Alerta (`#E05A46`):** Tono semántico de alta prioridad reservado exclusivamente para situaciones críticas (temperatura fuera de umbral, desconexión de energía de 12V, batería residual < 15%, apertura no autorizada de tapa).
-*   **Gris Neutro Frío (`#F4F7F6` / `#E2E8F0`):** Fondos de interfaz y delimitadores de paneles modulares para reducir la fatiga visual en turnos prolongados.
+**Verificación de contraste (WCAG 2.1)**
 
-![Paleta de Colores](../assets/chapter-4/paleta.png){.style-specimen-sm}
-*Nota: Muestra de la paleta de colores corporativa y semántica de Medical SMARTBOX.*
+| Texto sobre fondo | Ratio | Resultado |
+| --- | --- | --- |
+| `ink` / `ivory` | 12.73:1 | AAA |
+| `ink-2` / `ivory` | 8.75:1 | AAA |
+| `teal` / `ivory` | 4.74:1 | AA |
+| Blanco / `teal` | 5.20:1 | AA |
+| Badge crítico #A93321 / `coral-pale` | 5.50:1 | AA |
+| Alerta crítica #7A2417 / #FEF3F1 | 9.23:1 | AAA |
+| `ink-3` / `ivory` | 3.73:1 | Solo apoyo o texto grande |
+| `ink-3` / `mist` | 3.59:1 | Solo apoyo o texto grande |
+| `coral` / `warm` | 3.61:1 | Solo elementos no textuales |
 
-### Spacing
+El `ink-3` se oscurecerá a #5A706D (4.81:1) en la siguiente iteración.
 
-El espaciado se fundamenta en un sistema de rejilla base modular de **8 píxeles** (8-point grid system: 4px, 8px, 16px, 24px, 32px, 48px, 64px). Este estándar asegura consistencia entre paneles modulares, tarjetas de telemetría telemática (*telemetry cards*) y botones de acción rápida, previniendo el hacinamiento de información y reduciendo la tasa de error por toques accidentales en pantallas táctiles de cabina.
+### Spacing, bordes y sombras
+
+| Token | Valor |
+| --- | --- |
+| `--pad` / `--maxw` | `clamp(20px, 5vw, 72px)` / 1240 px |
+| Espaciado de sección | `clamp(64px, 9vw, 120px)` |
+| Radios `--r-s` a `--r-xl` | 10, 16, 24 y 34 px; píldora 999 px |
+| Sombras `--sh-1` a `--sh-3` | Reposo, botones y chips, modales |
+
 
 ## 4.1.2. Web Style Guidelines
 
