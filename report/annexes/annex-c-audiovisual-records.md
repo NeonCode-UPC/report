@@ -21,7 +21,10 @@ Todos los recursos audiovisuales se encuentran alojados en la infraestructura in
   [Demostración en Video - Landing Page][video-demo-s1]
 
 * **Video de Demostración de la Frontend Web Application (Sprint 2 — TB1):**  
-  [Demostración en Video - Frontend Web Application][video-demo-s2]
+  *(Enlace específico correspondiente a la Web Application pendiente de publicación en Microsoft Stream / SharePoint).*
+
+* **Video de Demostración de Web Services & Integración (Sprint 3 — AV2):**  
+  *(Grabación demostrativa pendiente de publicación en Microsoft Stream / SharePoint tras el cierre de integración frontend-backend del equipo).*
 
 [video-e1]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi "Grabación Entrevista E1"
 [video-e2]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd "Grabación Entrevista E2"
@@ -30,4 +33,3 @@ Todos los recursos audiovisuales se encuentran alojados en la infraestructura in
 [video-e5]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4 "Grabación Entrevista E5"
 [video-e6]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC "Grabación Entrevista E6"
 [video-demo-s1]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP "Demostración Landing Page Sprint 1"
-[video-demo-s2]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP "Demostración Frontend Web Application Sprint 2"

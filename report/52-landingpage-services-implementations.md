@@ -194,9 +194,7 @@ El Landing Page institucional fue desarrollado y validado satisfactoriamente en 
 
 ### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-En este primer ciclo de desarrollo (Sprint 1), de conformidad con el alcance oficial de la entrega AV1 (Semana 4), el esfuerzo de implementación en código ejecutable estuvo concentrado exclusivamente en la construcción y despliegue del **Landing Page institucional**. Por consiguiente, las tareas técnicas asociadas a los servicios backend (US01, US02 y US03) correspondieron estrictamente a la **especificación arquitectónica, diseño de contratos OpenAPI y modelado de dominio**, los cuales fueron formalizados exhaustivamente en los capítulos de diseño técnico:
-
-La arquitectura de servicios backend (**RESTful Web API en ASP.NET Core 10.0 con C#**) y el servicio en segundo plano de ingesta IoT fueron formalizados exhaustivamente en los capítulos de diseño técnico:
+En este primer ciclo de desarrollo (Sprint 1), de conformidad con el alcance oficial de la entrega AV1 (Semana 4), el esfuerzo de implementación en código ejecutable estuvo concentrado exclusivamente en la construcción y despliegue del **Landing Page institucional**. Por consiguiente, las tareas técnicas asociadas a los servicios backend (US01, US02 y US03) en ASP.NET Core 10.0 con C# correspondieron estrictamente a la **especificación arquitectónica, diseño de contratos OpenAPI y modelado de dominio**, los cuales fueron formalizados exhaustivamente en los capítulos de diseño técnico:
 
 * **Capítulo 4.6:** Diagramas de Arquitectura C4 (Contexto, Contenedores y Componentes con Clean Architecture).
 * **Capítulo 4.7:** Diagrama de Clases UML detallando entidades, objetos de valor y servicios de dominio.
@@ -323,20 +321,20 @@ Durante el Sprint 2 se realizaron avances en la implementación e integración d
 
 | **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :----------: | :---------: | :--------: | :------------------------- | :---------------------------- | :----------: |
-| `frontend` | `develop` | `e4a91c2` | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
-| `frontend` | `develop` | `b72d08f` | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
-| `frontend` | `develop` | `91c4e3a` | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
-| `frontend` | `develop` | `6f8b21d` | `feat(transport): integrate medical transport planning` | Se integra el módulo de planificación de transporte médico en la aplicación. | 06/10/2026 |
-| `frontend` | `develop` | `3d5e90b` | `feat(custody): restore chain of custody feature` | Se restaura la funcionalidad correspondiente a la cadena de custodia y trazabilidad. | 06/10/2026 |
-| `frontend` | `develop` | `a28f74c` | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
-| `frontend` | `develop` | `7c19d5e` | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
-| `frontend` | `develop` | `4b03a81` | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
+| `frontend` | `develop` | `f4ec998` | `feat(frontend): integrate custody, alerting, iam and transport` | Se integran los módulos de Chain of Custody, Alerting, IAM y Medical Transport Planning en la aplicación frontend. | 06/10/2026 |
+| `frontend` | `develop` | `39df8b9` | `feat(iam): integrate identity and subscriptions` | Se integra el módulo de Identity & Access Management junto con la gestión de suscripciones. | 06/10/2026 |
+| `frontend` | `develop` | `0623d97` | `feat(alerting): integrate incident response` | Se integra la funcionalidad de respuesta ante incidentes en la aplicación. | 06/10/2026 |
+| `frontend` | `develop` | `75e651d` | `feat(transport): integrate medical transport planning` | Se integra el módulo de planificación de transporte médico en la aplicación. | 06/10/2026 |
+| `frontend` | `develop` | `817c012` | `feat(custody): restore chain of custody feature` | Se restaura la funcionalidad correspondiente a la cadena de custodia y trazabilidad. | 06/10/2026 |
+| `frontend` | `develop` | `09db7f2` | `feat(custody): restore chain of custody changes` | Se restauran los cambios realizados para la funcionalidad de Chain of Custody. | 06/10/2026 |
+| `frontend` | `develop` | `6370dc3` | `feat(telemetry): implement smart container and telemetry monitoring views and ddd architecture` | Se implementan las vistas de Smart Container y monitoreo de telemetría, junto con la arquitectura DDD. | 06/10/2026 |
+| `frontend` | `develop` | `a270861` | `feat(iam): build subscription management view` | Se implementa la vista para la administración de suscripciones. | 06/10/2026 |
 
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
 En el Sprint 2 se logró avanzar en la implementación e integración de las principales funcionalidades de la Web Application correspondientes a los Bounded Contexts definidos para la solución. Durante este Sprint se desarrollaron y consolidaron funcionalidades relacionadas con el monitoreo de contenedores inteligentes y telemetría, gestión de alertas e incidentes, identidad y suscripciones, trazabilidad de cadena de custodia y planificación de transporte médico.
 
-**Video de Demostración de Navegación (Web Application):** [Ver video aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP)
+**Video de Demostración de Navegación (Web Application):** *(Enlace específico correspondiente a la Web Application pendiente de publicación en Microsoft Stream / SharePoint; véase el Anexo C).*
 
 ::: {.figure-block}
 
@@ -425,15 +423,15 @@ La integración del trabajo se realizó progresivamente, consolidando las funcio
 
 ## 5.2.3. Sprint 3
 
-En esta sección se detalla la planificación, asignación de responsabilidades y ejecución técnica del tercer ciclo de desarrollo (Sprint 3) del ecosistema **Medical SMARTBOX (NeonCode)** para el hito oficial **AV2 (Semana 12 - Sprint Review)**. 
+En esta sección se detalla la planificación, asignación de responsabilidades y ejecución técnica consolidada del equipo **NeonCode** durante el tercer ciclo de desarrollo (**Sprint 3**) de **Medical SMARTBOX**, orientado al hito **AV2 (Semana 12 - Sprint Review)**.
 
-A diferencia del Sprint 1 (concentrado en el Landing Page) y del Sprint 2 (enfocado en la primera versión de la Frontend Web Application sobre persistencia simulada), el presente sprint materializa la **primera versión desplegada de los RESTful Web Services en ASP.NET Core (.NET 10 LTS con C#)**, persistencia relacional en MySQL 8.0, documentación interactiva de contratos con **OpenAPI / Swagger UI**, integración con servicios externos de terceros (**Twilio SMS Gateway**) y la conexión de la aplicación web cliente con los servicios desplegados en la nube.
+A diferencia del Sprint 1 (concentrado en el Landing Page) y del Sprint 2 (enfocado en la primera versión de la Frontend Web Application sobre persistencia simulada), el Sprint 3 materializa la **primera versión desplegada de los RESTful Web Services en ASP.NET Core (.NET 10 LTS con C# 14)**, persistencia relacional con **MySQL (`MySql.EntityFrameworkCore`)**, documentación interactiva de contratos bajo **OpenAPI 3.1.1 / Scalar** (`/openapi/v1.json` y `/scalar`), empaquetamiento Docker en **Render**, integración externa con **TomTom Traffic Routing API** para cálculo dinámico de ETA en traslados médicos, refinamientos del Landing Page y los primeros módulos del frontend conectados progresivamente al backend real.
 
 ***
 
 ### 5.2.3.1. Sprint Planning 3
 
-La sesión de Sprint Planning 3 tuvo como propósito formalizar el alcance, objetivo de ingeniería y distribución de tareas para la integración vertical de la solución. El equipo evaluó la velocidad técnica y priorizó la transición de las vistas web hacia el consumo de endpoints REST reales, junto con las funcionalidades de control de stock por peso, monitoreo térmico en ruta y despacho automatizado de alertas de emergencia.
+La sesión de Sprint Planning 3 formalizó el alcance, objetivo de ingeniería y distribución de responsabilidades entre los cuatro integrantes para construir los servicios RESTful por Bounded Context e iniciar la transición de las vistas web desde almacenamiento simulado hacia el consumo de endpoints reales en la nube.
 
 | **Sprint #** | **Sprint 3** |
 | :----------------------- | :--------------------------------------------------------------------------- |
@@ -444,39 +442,39 @@ La sesión de Sprint Planning 3 tuvo como propósito formalizar el alcance, obje
 | **Prepared By** | Jaramillo Mayta, Jhon Jordy |
 | **Attendees (to planning meeting)** | Munayco Apolaya, Maria Luisa / Espinoza Flores, Aaron André / Jaramillo Mayta, Jhon Jordy / Santos Minaya, Renzo Piero |
 | **Sprint n – 1 Review Summary** | **Sprint 2 Review:** Se completaron los 29 Story Points comprometidos para TB1, desplegando la primera versión de la Frontend Web Application en GitHub Pages (`https://neoncode-upc.github.io/frontend/home`) y la versión actualizada del Landing Page. La interfaz integró los 5 Bounded Contexts sobre la arquitectura modular de PrimeVue y Pinia. |
-| **Sprint n – 1 Retrospective Summary** | **Sprint 2 Retrospective:** El equipo reconoció como acierto la consistencia visual lograda en las interfaces clínicas. Como acción de mejora imperativa para AV2, se acordó abandonar los repositorios mock en memoria para los flujos críticos, construir la solución de backend en ASP.NET Core siguiendo DDD por capas (*Domain, Application, Infrastructure, Interfaces*), exponer la documentación Swagger desde el primer día y conectar el cliente HTTP Axios a los endpoints desplegados. |
-| **Sprint Goal & User Stories** | **Sprint 3 Goal:** Our focus is on developing and deploying the first official version of the ASP.NET Core RESTful Web Services across all Bounded Contexts, connecting the Vue 3 Frontend Web Application to these live endpoints, and establishing external alert dispatching with Twilio. We believe it delivers automated data persistence, real-time IoT anomaly processing, and multi-channel emergency communication for hospital supervisors and fleet operators. This will be confirmed when telemetry data ingested via HTTP POST is persisted in the database, displayed live on the web monitoring dashboard, and triggers critical alerts through OpenAPI-documented endpoints with Swagger UI. |
-| **User Stories en Alcance** | **Historias Funcionales:** US11: Control de Stock por Sensores de Peso (8 SP) · US13: Configuración de Umbrales Térmicos Críticos (3 SP) · US14: Visualización de Alertas en Ruta (5 SP) · US15: Servicio de Despacho de Alertas e Integración Externa (5 SP).<br>**Servicios Backend & Infraestructura:** TS-API: Servicios de Telemetría IoT en ASP.NET Core (6 SP) · TS-CUS: Servicios de Cadena de Custodia y Reportes PDF (6 SP) · TS-TRA: Servicios de Despacho y Transporte Médico (6 SP). |
-| **Sprint 3 Velocity** | 39 Story Points consolidados (21 SP funcionales + 18 SP de arquitectura de servicios) |
+| **Sprint n – 1 Retrospective Summary** | **Sprint 2 Retrospective:** El equipo reconoció como acierto la consistencia visual lograda en las interfaces clínicas. Como acción de mejora para AV2, se acordó implementar la solución de backend en ASP.NET Core (.NET 10) siguiendo DDD por capas (*Domain, Application, Infrastructure, Interfaces*) con persistencia MySQL mediante Entity Framework Core, publicar documentación interactiva OpenAPI/Scalar e iniciar la conexión progresiva del cliente HTTP en Vue 3 hacia la API real. |
+| **Sprint Goal & User Stories** | **Sprint 3 Goal:** Our focus is on developing and deploying the ASP.NET Core 10 RESTful Web API across the core operational Bounded Contexts (`SmartContainers`, `Telemetry`, `Custody`, `Alerting`, `Transport`) backed by MySQL persistence, integrating external dynamic traffic routing through TomTom Traffic Routing API, publishing OpenAPI 3.1.1 / Scalar documentation in Render, and progressively connecting the Vue 3 Web Application modules to live REST contracts. We believe it delivers auditable cold-chain persistence, real-time IoT ingestion, and verifiable API interoperability for hospital supervisors and fleet operators. This will be confirmed when REST endpoints persist and expose telemetry, containers, incidents, custody transfers, and dispatch trips in production with interactive Scalar documentation. |
+| **User Stories en Alcance** | **Historias Funcionales (Product Backlog):** US11: Control de Stock por Sensores de Peso (8 SP) · US13: Configuración de Umbrales Térmicos Críticos (3 SP) · US14: Visualización de Alertas en Ruta (5 SP) · US15: Servicio de Despacho e Integración Externa de Ruta/Alertas (5 SP).<br>**Arquitectura de Servicios & Despliegue (Sprint Scope):** TS-API: Servicios REST de `SmartContainers` y `Telemetry` en ASP.NET Core 10 (6 SP) · TS-CUS: Servicios de Cadena de Custodia, Auditoría Inmutable y Reportes PDF (6 SP) · TS-TRA: Servicios de Despacho, Transporte Médico y Enrutamiento TomTom (6 SP). |
+| **Sprint 3 Velocity** | 39 Story Points planificados (21 SP funcionales + 18 SP de arquitectura e infraestructura backend/cloud) |
 | **Sum of Story Points** | 39 Story Points |
 
 ***
 
 ### 5.2.3.2. Aspect Leaders and Collaborators
 
-Para el Sprint 3, la matriz **Leadership-and-Collaboration (LACX)** organiza a los integrantes según su especialización en los Bounded Contexts de la arquitectura orientada al dominio (DDD), asegurando que cada aspecto técnico cuente con un responsable directo de diseño, codificación de controladores y pruebas de integración.
+Para el Sprint 3, la matriz **Leadership-and-Collaboration (LACX)** distribuye el liderazgo técnico entre los cuatro integrantes del equipo según los Bounded Contexts implementados en `MedicalSmartBox.API`, las integraciones en el frontend y la infraestructura de despliegue cloud:
 
 \newpage
 
 **L = Lead / C = Collaborator**
 
-| **Team Member (Last Name, First Name)** | **GitHub Username** | **1. Core API & Telemetry (L/C)** | **2. Chain of Custody & PDF (L/C)** | **3. Critical Alerting & Twilio (L/C)** | **4. Medical Transport (L/C)** | **5. Web App Live Integration (L/C)** | **6. Cloud Deployment & OpenAPI (L/C)** |
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **1. Core API, SmartContainers & Telemetry (L/C)** | **2. Chain of Custody & PDF (L/C)** | **3. Critical Alerting & Incidents (L/C)** | **4. Medical Transport & TomTom API (L/C)** | **5. Frontend API Integration (L/C)** | **6. Cloud Deployment, MySQL & OpenAPI/Scalar (L/C)** |
 | :--------------------- | :------------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| **Jaramillo Mayta, Jhon Jordy** | `Marklnz1` | **L** | C | C | C | **L** | **L** |
-| **Munayco Apolaya, Maria Luisa** | `malumunayco` | C | **L** | C | C | C | C |
-| **Espinoza Flores, Aaron André** | `psure` | C | C | **L** | C | C | C |
+| **Jaramillo Mayta, Jhon Jordy** | `Marklnz1` | **L** | C | C | C | **L** | C |
+| **Munayco Apolaya, Maria Luisa** | `malumunayco` | C | **L** | C | C | C | **L** |
+| **Espinoza Flores, Aaron André** | `pisure` | C | C | **L** | C | C | C |
 | **Santos Minaya, Renzo Piero** | `RSSint` | C | C | C | **L** | C | C |
 
-* **Jhon Jaramillo:** Lidera el Bounded Context de Telemetría IoT en backend (`TelemetryLogsController`) y frontend, el andamiaje transversal de inyección de dependencias y el despliegue del Web API en la nube.
-* **Maria Luisa Munayco:** Lidera el Bounded Context de Cadena de Custodia (`CustodyTransfersController`, `DigitalAuditManifestsController`), generación de reportes PDF inmutables y adaptación responsiva de reportes.
-* **Aaron Espinoza:** Lidera el Bounded Context de Alerting (`IncidentController`), manejo de comandos de reconocimiento y la integración con la API de mensajería externa de Twilio SMS.
-* **Renzo Santos:** Lidera el Bounded Context de Transporte Médico (`DispatchTrip`), modelado de estados de ruta, prioridades de carga y vinculación de flota.
+* **Jhon Jaramillo (`Marklnz1`):** Lidera el andamiaje compartido inicial de la API y los Bounded Contexts `SmartContainers` (`SmartContainersController`) y `Telemetry` (`TelemetryLogsController`), además de la integración del módulo de telemetría en Vue 3 (`feature/telemetry-backend-integration`).
+* **Maria Luisa Munayco (`malumunayco`):** Lidera el Bounded Context de Cadena de Custodia (`CustodyTransfersController`, `TransfersController`, `DigitalAuditManifestsController`, `AuditEventsController`), reportes de trazabilidad, integración de Custody en `frontend` (`develop`), containerización Docker, despliegue en Render y documentación OpenAPI/Scalar, así como ajustes del Landing Page.
+* **Aaron Espinoza (`pisure`):** Lidera el Bounded Context de Alerting (`IncidentController`), gestión del ciclo de vida de incidentes (`acknowledge`, `resolve`, `escalate`) y persistencia EF Core asociada.
+* **Renzo Santos (`RSSint`):** Lidera el Bounded Context de Transporte Médico (`TransportOrdersController`, `DispatchTripsController`), integración con **TomTom Traffic Routing API** (`TomTomTrafficRoutingService`) y migración inicial unificada del esquema MySQL en EF Core.
 
 ***
 
 ### 5.2.3.3. Sprint Backlog 3
 
-El Sprint Backlog 3 descompone las historias en **16 tareas técnicas de ingeniería acotadas estrictamente entre 4 y 8 horas**, sumando un esfuerzo planificado de 99 horas de desarrollo colaborativo.
+El Sprint Backlog 3 descompone el alcance del equipo en **16 tareas técnicas de ingeniería de entre 5 y 8 horas**, sumando un esfuerzo planificado total de **102 horas**. Asimismo, se incluyen los adelantos realizados en el backend para Cadena de Custodia (`TS-CUS`) y Transporte (`TS-TRA`), anticipando los contratos base necesarios para los reportes de trazabilidad y despacho.
 
 **Board del Sprint 3:**
 
@@ -492,140 +490,179 @@ El Sprint Backlog 3 descompone las historias en **16 tareas técnicas de ingenie
 
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In Process / To Review / Done)** |
 | :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
-| **US11** | Control de Stock por Sensores de Peso | TSK-11-01 | Modelado de masa en TelemetryLog | Incorporación de atributo `PayloadWeightKg` en el agregado de telemetría y reglas de variación de masa en C#. | 5 h | Jhon Jaramillo | Done |
-| **US11** | Control de Stock por Sensores de Peso | TSK-11-02 | Componente de visualización de stock | Creación de indicador reactivo de nivel de carga e insumos en Vue 3 conectado al endpoint de telemetría. | 6 h | Jhon Jaramillo | Done |
-| **US13** | Configuración de Umbrales Térmicos Críticos | TSK-13-01 | Entidad de políticas de umbral en Alerting | Modelado de reglas de temperatura máxima y mínima (`ThresholdRule`) en el Bounded Context de Alerting. | 6 h | Aaron Espinoza | Done |
-| **US13** | Configuración de Umbrales Térmicos Críticos | TSK-13-02 | Vista web de configuración de rangos | Interfaz en PrimeVue para que supervisores configuren umbrales por tipo de insumo médico. | 5 h | Maria Munayco | Done |
-| **US14** | Visualización de Alertas en Ruta | TSK-14-01 | Tablero reactivo de incidentes en tiempo real | Integración en frontend del listado de incidencias activas con severidad y temporizador de escalamiento. | 7 h | Aaron Espinoza | Done |
-| **US14** | Visualización de Alertas en Ruta | TSK-14-02 | Flujo de reconocimiento y cierre de incidentes | Diálogo modal de confirmación con registro del operador responsable y acción correctiva. | 5 h | Renzo Santos | Done |
-| **US15** | Servicio de Despacho de Alertas (API) | TSK-15-01 | Endpoint de recepción y despacho de incidentes | Implementación de `POST /api/v1/incidents` y `PUT /api/v1/incidents/{id}/acknowledgement` en ASP.NET Core. | 8 h | Aaron Espinoza | Done |
-| **US15** | Servicio de Despacho de Alertas (API) | TSK-15-02 | Integración con servicio externo de terceros (Twilio) | Implementación de cliente de mensajería SMS para despacho de notificaciones críticas a teléfonos de guardia. | 7 h | Aaron Espinoza | Done |
-| **TS-API** | Servicios de Telemetría IoT en Backend | TSK-API-01 | Controladores y servicios de ingesta de telemetría | Implementación de `TelemetryLogsController`, DTOs de ingesta y endpoints de consulta en ASP.NET Core 10. | 8 h | Jhon Jaramillo | Done |
-| **TS-API** | Servicios de Telemetría IoT en Backend | TSK-API-02 | Conexión del frontend con el API de telemetría | Adaptación del servicio HTTP Axios en el frontend para consumir los endpoints REST reales del backend. | 6 h | Jhon Jaramillo | Done |
-| **TS-CUS** | Servicios de Cadena de Custodia en Backend | TSK-CUS-01 | Controladores de auditoría y manifiestos digitales | Exposición de endpoints `CustodyTransfersController` y `DigitalAuditManifestsController` con OpenAPI. | 8 h | Maria Munayco | Done |
-| **TS-CUS** | Servicios de Cadena de Custodia en Backend | TSK-CUS-02 | Generador de reportes de trazabilidad en PDF | Implementación de `TraceabilityReportPdf` en C# para descarga inmutable de auditorías médicas. | 7 h | Maria Munayco | Done |
-| **TS-TRA** | Servicios de Despacho y Transporte en Backend | TSK-TRA-01 | Entidad `DispatchTrip` y comandos de transporte | Implementación de reglas de despacho, tipos de carga (`CargoType`) y estados de viaje en ASP.NET Core. | 6 h | Renzo Santos | Done |
-| **TS-TRA** | Servicios de Despacho y Transporte en Backend | TSK-TRA-02 | Conexión del módulo de transporte web con el backend | Sincronización del estado de flota y viajes entre el store de Pinia y los servicios de despacho. | 6 h | Renzo Santos | Done |
-| **TS-DEP** | Despliegue en la Nube y Documentación OpenAPI | TSK-DEP-01 | Configuración de Swagger UI y Dockerfile para Web API | Documentación exhaustiva con OpenAPI/Swagger y empaquetamiento para despliegue Cloud. | 6 h | Jhon Jaramillo | Done |
-| **TS-DEP** | Despliegue en la Nube y Documentación OpenAPI | TSK-DEP-02 | Despliegue del Web API en plataforma Cloud pública | Despliegue activo del servicio backend en Render / Railway con certificado HTTPS seguro. | 6 h | Jhon Jaramillo | Done |
+| **US11** | Control de Stock por Sensores de Peso | TSK-11-01 | Modelado de masa en `TelemetryLog` y `SmartContainer` | Incorporación de atributos de peso en gramos (`WeightGrams`, `NetWeightGrams`, `TareWeightGrams`) y endpoint `weight-movements` en C#. | 5 h | Jhon Jaramillo | Done |
+| **US11** | Control de Stock por Sensores de Peso | TSK-11-02 | Componente de visualización de stock y contenedores | Adaptación de componentes SmartBox/inventario y ensambladores en Vue 3 conectados al Web API (`feature/telemetry-backend-integration`, pendiente merge a `main`). | 6 h | Jhon Jaramillo | To Review |
+| **US13** | Configuración de Umbrales Térmicos Críticos | TSK-13-01 | Reglas de umbral térmico y severidad en backend | Configuración de umbrales (`MinTemperatureCelsius`, `MaxTemperatureCelsius`, `WarningTemperatureCelsius`, `ExcursionToleranceSeconds`) y persistencia de incidentes en EF Core. | 6 h | Aaron Espinoza | Done |
+| **US13** | Configuración de Umbrales Térmicos Críticos | TSK-13-02 | Vista web de configuración de rangos | Interfaz en PrimeVue para configurar parámetros térmicos por contenedor/insumo conectada al endpoint real. | 5 h | Maria Munayco | In Process |
+| **US14** | Visualización de Alertas en Ruta | TSK-14-01 | Tablero reactivo de incidentes en tiempo real | Conexión en el frontend del listado de incidencias activas con `GET /api/v1/incidents` y temporizador de vencimiento (actualmente en `localStorage`). | 7 h | Aaron Espinoza | In Process |
+| **US14** | Visualización de Alertas en Ruta | TSK-14-02 | Flujo de reconocimiento y cierre de incidentes | Conexión de interfaz de confirmación en frontend hacia `/acknowledge` y `/resolve` (pendiente en cliente web). | 5 h | Renzo Santos | In Process |
+| **US15** | Servicio de Despacho e Integración Externa | TSK-15-01 | Endpoint de recepción y gestión de incidentes | Implementación de `IncidentController` (`POST /api/v1/incidents`, `/acknowledge`, `/resolve`, `/escalate`, `GET /active` y `/overdue`) en ASP.NET Core 10. | 8 h | Aaron Espinoza | Done |
+| **US15** | Servicio de Despacho e Integración Externa | TSK-15-02 | Integración externa con TomTom Traffic Routing API | Implementación de `TomTomTrafficRoutingService` contra `api.tomtom.com` para recalcular ETA en vivo desde `PATCH /api/v1/dispatch-trips/{id}/eta`. | 7 h | Renzo Santos | Done |
+| **TS-API** | Servicios de Telemetría IoT en Backend | TSK-API-01 | Controladores y servicios de ingesta de telemetría | Implementación de `TelemetryLogsController` y `SmartContainersController`, DTOs y persistencia relacional en ASP.NET Core 10. | 8 h | Jhon Jaramillo | Done |
+| **TS-API** | Servicios de Telemetría IoT en Backend | TSK-API-02 | Conexión del frontend con el API de telemetría | Implementación de cliente HTTP (`telemetry-api.js`) y store Pinia en `feature/telemetry-backend-integration` (pendiente merge y variables `VITE_*` en Pages). | 6 h | Jhon Jaramillo | Done |
+| **TS-CUS** | Servicios de Cadena de Custodia en Backend | TSK-CUS-01 | Controladores de custodia, auditoría y manifiestos | Implementación de `CustodyTransfersController`, `TransfersController`, `DigitalAuditManifestsController` y `AuditEventsController` con OpenAPI. | 8 h | Maria Munayco | Done |
+| **TS-CUS** | Servicios de Cadena de Custodia en Backend | TSK-CUS-02 | Trazabilidad PDF e integración de Custody web | Exposición de `GET /api/v1/transfers/{transferId}/traceability-report/pdf` e integración de vistas Custody en rama `develop` del frontend. | 7 h | Maria Munayco | Done |
+| **TS-TRA** | Servicios de Despacho y Transporte en Backend | TSK-TRA-01 | Agregados `TransportOrder` y `DispatchTrip` y endpoints | Implementación de `TransportOrdersController` y `DispatchTripsController`, `CargoType`, `MaxIschemiaLimit` y migración inicial MySQL. | 6 h | Renzo Santos | Done |
+| **TS-TRA** | Servicios de Despacho y Transporte en Backend | TSK-TRA-02 | Conexión del módulo de transporte web con backend | Integración de vistas de órdenes y viajes en Vue 3 con `transport-orders` y `dispatch-trips` (actualmente con datos locales simulados). | 6 h | Renzo Santos | In Process |
+| **TS-DEP** | Despliegue en la Nube y Documentación OpenAPI | TSK-DEP-01 | Configuración de OpenAPI 3.1.1, Scalar y Dockerfile | Integración de `Microsoft.AspNetCore.OpenApi`, `Scalar.AspNetCore` (`v2.18.0`), Dockerfile multi-stage y configuración MySQL. | 6 h | Maria Munayco | Done |
+| **TS-DEP** | Despliegue en la Nube y Documentación OpenAPI | TSK-DEP-02 | Despliegue cloud en Render y ajuste final CORS/SPA | Publicación del API en Render (`render.yaml`, `medical-smartbox-api.onrender.com`), pendiente configuración final de `Cors:AllowedOrigins` y variables en GitHub Pages. | 6 h | Maria Munayco | To Review |
 
 :::
+
+*Nota de trazabilidad del tablero: El estado de las tareas refleja el avance real verificado en los repositorios del equipo al 12/11/2026 en correspondencia con las 16 tarjetas del tablero Trello del Sprint 3 (11 en `Done`, 2 en `To Review` y 3 en `In Process`; `TSK-TRA-02` figura como `In Process` en la tabla debido a que la conexión web de transporte continúa pendiente en código).*
 
 ***
 
 ### 5.2.3.4. Development Evidence for Sprint Review
 
-A continuación se registra el historial de confirmaciones de cambios (*commits*) en los repositorios oficiales de backend (`NeonCode-UPC/backend`) y frontend (`NeonCode-UPC/frontend`), acreditando el uso estricto de **Conventional Commits** y el modelo de ramificación GitFlow:
+A continuación se registra una selección representativa de confirmaciones de cambios (*commits*) ejecutadas por los cuatro integrantes del equipo en los repositorios oficiales (`NeonCode-UPC/backend`, `NeonCode-UPC/frontend` y `NeonCode-UPC/landing-page`), acreditando el uso de **Conventional Commits** y el flujo GitFlow:
 
 | **Repositorio** | **Rama** | **Commit ID** | **Mensaje del Commit** | **Descripción / Cuerpo del Cambio** | **Fecha** |
 | :-------------: | :----------: | :---------: | :----------------------------- | :---------------------------------- | :----------: |
-| `backend` | `develop` | `a5a86a2` | `Merge pull request #2 from NeonCode-UPC/feature/chain-custody-traceability` | Integración del módulo de cadena de custodia, manifiestos digitales y PDF en develop. | 04/11/2026 |
-| `backend` | `feature/telemetry-monitoring` | `97c4f6a` | `refactor(telemetry): introduce strongly-typed id value objects for entity and reference identifiers` | Modelado de Value Objects fuertemente tipados para identificación de lecturas sensoriales. | 05/11/2026 |
-| `backend` | `feature/telemetry-monitoring` | `c3b48a9` | `feat(telemetry): implement TelemetryLogsController and register services in program pipeline` | Implementación de controlador REST de telemetría e inyección de dependencias en Program.cs. | 04/11/2026 |
-| `backend` | `feature/critical_alerting` | `900cc73` | `feat(alerting): register incident services` | Configuración de servicios de resolución y escalamiento de alertas críticas. | 04/11/2026 |
-| `backend` | `feature/critical_alerting` | `e4084a4` | `feat(alerting): expose acknowledgement endpoint` | Endpoint PUT de confirmación y cierre de anomalías térmicas por operadores. | 04/11/2026 |
-| `backend` | `feature/medical-transport` | `25cd797` | `feat(Transport): add CargoType for organs and medical package in transport` | Enumeración de tipo de carga biológica y reglas de conservación médica. | 04/11/2026 |
-| `frontend` | `develop` | `b28726c` | `Merge feature/chain-custody-traceability into develop` | Integración de vistas de auditoría y reportes de trazabilidad en la aplicación web. | 04/11/2026 |
-| `frontend` | `develop` | `7139367` | `style(custody): add responsive report layouts` | Estilos responsivos para la visualización de manifiestos digitales de custodia. | 04/11/2026 |
-| `frontend` | `develop` | `199e4e3` | `refactor(telemetry): align domain entities, resources and assemblers with database schema` | Paridad completa entre el modelo reactivo de telemetría y el esquema físico relacional. | 04/11/2026 |
+| `backend` | `main` | `c453fcc` | `Merge pull request #17 from NeonCode-UPC/develop` | Publicación consolidada en `main` con los cinco módulos de servicios backend y configuración de Render. | 12/11/2026 |
+| `backend` | `develop` | `7de1270` | `fix(shared): keep Scalar requests on HTTPS origin` | Ajuste de URL de servidor relativa en OpenAPI para ejecutar peticiones HTTPS desde Scalar en Render. | 12/11/2026 |
+| `backend` | `develop` | `684025f` | `feat(deploy): add Render service blueprint` | Definición de `render.yaml` con runtime Docker, health check `/health` y variables de entorno de producción. | 12/11/2026 |
+| `backend` | `develop` | `ea49679` | `feat(deploy): add multi-stage Docker image` | Construcción de `Dockerfile` multi-etapa con SDK y runtime ASP.NET Core 10.0 expuesto en puerto `10000`. | 12/11/2026 |
+| `backend` | `develop` | `74a4dab` | `feat(persistence): add unified initial schema migration` | Generación de la migración inicial unificada de Entity Framework Core para MySQL. | 11/11/2026 |
+| `backend` | `develop` | `cde09f6` | `feat(transport): integrate TomTom traffic routing` | Integración del servicio HTTP externo `TomTomTrafficRoutingService` para recálculo de ETA en tiempo real. | 11/11/2026 |
+| `backend` | `develop` | `9d75657` | `feat(alerting): expose incident response endpoints` | Exposición de endpoints en `IncidentController` para creación, consulta, reconocimiento, resolución y escalamiento. | 11/11/2026 |
+| `backend` | `develop` | `5bea202` | `feat(custody): describe traceability endpoints` | Documentación OpenAPI de endpoints de auditoría y reportes PDF en `TransfersController`. | 10/11/2026 |
+| `backend` | `develop` | `03d3ad3` | `refactor(container): align container telemetry snapshot contracts with OpenAPI schemas` | Alineamiento de contratos DTO entre `SmartContainersController`, OpenAPI y el modelo frontend. | 09/11/2026 |
+| `backend` | `feature/telemetry-monitoring` | `c3b48a9` | `feat(telemetry): implement TelemetryLogsController and register services in program pipeline` | Implementación del controlador REST de telemetría IoT e inyección de dependencias en `Program.cs`. | 05/11/2026 |
+| `backend` | `develop` | `a5a86a2` | `Merge pull request #2 from NeonCode-UPC/feature/chain-custody-traceability` | Integración inicial del módulo de cadena de custodia, manifiestos digitales y PDF en `develop`. | 04/11/2026 |
+| `frontend` | `feature/telemetry-backend-integration` | `c11aa14` | `feat(telemetry): integrate .net rest endpoints in pinia store and configure api url` | Integración del store Pinia de telemetría y SmartBoxes con los endpoints REST de ASP.NET Core. | 10/11/2026 |
+| `frontend` | `develop` | `b28726c` | `Merge feature/chain-custody-traceability into develop` | Integración de vistas y servicios REST de cadena de custodia y trazabilidad en `develop`. | 04/11/2026 |
+| `landing-page` | `main` | `7073326` | `Merge pull request #9 from NeonCode-UPC/develop` | Consolidación en producción de ajustes de diseño, formularios y plantillas fallback del Landing Page. | 28/10/2026 |
 
 ***
 
 ### 5.2.3.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 3 se consolidaron las vistas funcionales de la Web Application consumiendo datos dinámicos provenientes del Web API en ASP.NET Core:
+Durante el Sprint 3 se ejecutó el despliegue operativo de la Web API en ASP.NET Core 10 en Render y se avanzó parcialmente en la conexión de los módulos de la Frontend Web Application hacia contratos REST reales:
 
-::: {.evidence-block}
+* **Backend RESTful Web Services (en ejecución en la nube):** Los controladores correspondientes a `SmartContainers`, `TelemetryLogs`, `CustodyTransfers`, `Transfers`, `DigitalAuditManifests`, `AuditEvents`, `Incident`, `TransportOrders` y `DispatchTrips` se encuentran activos en Render (`https://medical-smartbox-api.onrender.com`), respondiendo verificaciones de salud en `/health` y exposición de contratos en `/scalar` y `/openapi/v1.json`.
+* **Módulo Chain of Custody & Traceability (`frontend` rama `develop`, commit `b28726c`):** Las vistas web de cadena de custodia, actas digitales y auditoría consumen los endpoints de custodia mediante `VITE_CUSTODY_API_URL` (actualmente con respaldo local `http://localhost:5261`, pendiente de merge a `main` y configuración de variable de entorno en producción).
+* **Módulo SmartContainers & Telemetry (`frontend` rama `feature/telemetry-backend-integration`, commit `c11aa14`):** Los ensambladores, servicios Axios y el store de Pinia fueron adaptados a los contratos de `SmartContainersController` y `TelemetryLogsController` (pendiente de merge a `develop`/`main`, por lo que el despliegue público actual en GitHub Pages continúa utilizando datos de demostración de TB1).
+* **Módulos pendientes de integración cliente y multimedia:** Las vistas frontend de **Critical Alerting** (aún sobre `localStorage`) y **Medical Transport Planning** (aún con arreglos simulados), así como el registro de autenticación IAM en el backend, se encuentran pendientes de integración final por parte del equipo.
 
-![Vista implementada: Panel de Monitoreo Térmico e IoT en Vivo](../assets/chapter-5/sprint-3-exec-telemetry.png)
-
-### Vista implementada: Panel de Monitoreo Térmico e IoT en Vivo
-
-**Descripción:** Interfaz centralizada para el personal médico y operadores de flota. Muestra las lecturas sensoriales en tiempo real del SmartContainer conectado por HTTP al Web API, graficando las variaciones de temperatura frente al rango normativo (2°C a 8°C) y el nivel de insumos mediante el sensor de peso.
-
-**Componentes y Funcionalidades Clave:**
-* **Indicadores en Tiempo Real:** Gauges dinámicos de temperatura interna, estado del cerrojo solenoide, porcentaje de batería y masa de la carga en kilogramos.
-* **Serie Temporal Gráfica:** Curva continua de las últimas 24 horas alimentada por el endpoint `GET /api/v1/containers/{id}/metrics`.
-* **Detección Automática de Ruptura de Cadena de Frío:** Alerta visual instantánea cuando la temperatura supera el umbral crítico de 8.0°C.
-
-:::
-
-::: {.evidence-block}
-
-![Vista implementada: Gestión de Alertas Críticas y Despacho SMS](../assets/chapter-5/sprint-3-exec-alerts.png)
-
-### Vista implementada: Gestión de Alertas Críticas y Despacho SMS
-
-**Descripción:** Consola de despacho de incidentes. Permite la visualización de contingencias operativas (apertura no autorizada de escotilla, batería baja o desviación térmica) y su escalamiento multicanal.
-
-**Componentes y Funcionalidades Clave:**
-* **Feed Priorizado:** Ordenamiento de contingencias por nivel de severidad (*Critical*, *Warning*, *Info*).
-* **Integración con Pasarela Externa:** Disparo automático de mensajes SMS a través de **Twilio Gateway** hacia el teléfono del supervisor hospitalario de turno.
-* **Flujo de Reconocimiento:** Registro de acuse de recibo (*Acknowledge*) con firma del operador y marca de tiempo.
-
-:::
+**Estado de capturas de ejecución extremo a extremo y video de Sprint 3:** *(Las capturas de las vistas web consumiendo en producción los endpoints `.NET 10` desplegados en Render y el enlace del video demostrativo actualizado del Sprint 3 en Microsoft Stream / SharePoint se incorporarán una vez que el equipo fusione `develop` y `feature/telemetry-backend-integration` hacia `main`, habilite `Cors:AllowedOrigins` para GitHub Pages y configure las variables `VITE_*` en el flujo de despliegue).*
 
 ***
 
 ### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-En estricta observancia del requerimiento rector de AV2, los servicios backend fueron implementados bajo el estilo arquitectónico **RESTful API** en **ASP.NET Core (.NET 10 LTS)** y documentados interactivamente mediante **OpenAPI Specification / Swagger UI**.
+En estricta observancia del requisito rector de AV2, los servicios backend fueron implementados bajo el estilo arquitectónico **RESTful API** en **ASP.NET Core (.NET 10 LTS)** utilizando `Microsoft.AspNetCore.OpenApi` (`v10.0.13`) y documentados interactivamente mediante **OpenAPI 3.1.1 / Scalar** (`Scalar.AspNetCore` `v2.18.0`), accesible públicamente en producción bajo TLS (`https://medical-smartbox-api.onrender.com/scalar`).
 
 ::: {.figure-block}
 
-![Documentación Interactiva de Endpoints en Swagger UI](../assets/chapter-5/sprint-3-swagger-ui.png)
+![Documentación Interactiva de Endpoints en Scalar (OpenAPI 3.1.1)](../assets/chapter-5/sprint-3-scalar-ui.png)
 
-*Documentación OpenAPI de los controladores RESTful expuestos por Medical SMARTBOX API.*
+*Documentación interactiva OpenAPI 3.1.1 expuesta mediante Scalar en producción (`https://medical-smartbox-api.onrender.com/scalar`).*
 
 :::
 
+#### Repositorio Oficial y Commits de Documentación de Servicios
+
+* **Repositorio Backend Oficial:** [`https://github.com/NeonCode-UPC/backend`](https://github.com/NeonCode-UPC/backend)
+* **Especificación OpenAPI JSON:** [`https://medical-smartbox-api.onrender.com/openapi/v1.json`](https://medical-smartbox-api.onrender.com/openapi/v1.json)
+* **Trazabilidad en `main` de contratos OpenAPI/Scalar:** `7de1270` (`fix(shared): keep Scalar requests on HTTPS origin`), `a31e2c4` (`feat(api): clarify Scalar documentation and hide root route`), `5bea202` (`feat(custody): describe traceability endpoints`), `83ae7e4` (`feat(custody): describe digital audit manifests`), `5723624` (`feat(custody): describe custody transfer endpoints`), `21996e8` (`feat(custody): document audit event endpoint`), `03d3ad3` (`refactor(container): align container telemetry snapshot contracts with OpenAPI schemas`).
+
 #### Catálogo de Endpoints RESTful Implementados en Sprint 3
 
-1. **Bounded Context: Smart Container & Telemetry Monitoring**
-   * `POST /api/v1/telemetry-logs`: Registra una lectura sensorial de temperatura, peso, batería y estado de escotilla. Retorna `201 Created`.
-   * `GET /api/v1/telemetry-logs`: Consulta el historial temporal de telemetría filtrado por contenedor y rango de fechas. Retorna `200 OK`.
-2. **Bounded Context: Critical Alerting & Incident Response**
-   * `POST /api/v1/incidents`: Registra una contingencia crítica generada por transgresión de umbral. Retorna `201 Created`.
-   * `PUT /api/v1/incidents/{id}/acknowledgement`: Registra el acuse de recibo y mitigación del incidente por el operador. Retorna `200 OK`.
-   * `POST /api/v1/alerts/dispatch`: Canaliza el despacho de notificación externa hacia la pasarela **Twilio SMS**. Retorna `202 Accepted`.
-3. **Bounded Context: Chain of Custody & Traceability**
-   * `GET /api/v1/transfers`: Lista las transferencias de custodia registradas entre centros hospitalarios. Retorna `200 OK`.
-   * `POST /api/v1/transfers`: Inicia una transferencia formal de custodia médica. Retorna `201 Created`.
-   * `GET /api/v1/transfers/{id}/audit`: Retorna el registro de auditoría digital inmutable con hash criptográfico. Retorna `200 OK`.
-   * `GET /api/v1/transfers/{id}/report`: Genera y descarga el reporte de auditoría médica en formato PDF inmutable (`TraceabilityReportPdf`). Retorna `200 OK (application/pdf)`.
-4. **Bounded Context: Medical Transport Planning & Dispatching**
-   * `POST /api/v1/dispatch-trips`: Registra una nueva orden de despacho asistencial asociando ambulancia y contenedor inteligente. Retorna `201 Created`.
-   * `GET /api/v1/dispatch-trips/{id}`: Recupera el estado operativo y ruta de la misión de traslado. Retorna `200 OK`.
+1. **Shared API & Health Infrastructure (`SharedApiExtensions`)**
+   * `GET /`: Retorna estado general de la API e hipervínculos a `/health`, `/openapi/v1.json` y `/scalar`. Retorna `200 OK`.
+   * `GET /health`: Verificación de disponibilidad del servicio para el balanceador de Render (`HealthChecks`). Retorna `200 OK`.
+   * `GET /openapi/v1.json` y `GET /scalar`: Documento OpenAPI 3.1.1 y consola interactiva Scalar habilitados en producción (`OpenApi__ExposeInProduction=true`).
+
+2. **Bounded Context: Smart Container & Telemetry Monitoring**
+   * `SmartContainersController` (`/api/v1/smart-containers`):
+     * `GET /api/v1/smart-containers`: Lista unidades con filtrado opcional por query (`status`, `ambulancePlate`). Retorna `200 OK`.
+     * `GET /api/v1/smart-containers/{id:int}` y `GET /api/v1/smart-containers/serial/{serialNumber}`: Consulta individual por identificador o número de serie de hardware. Retornan `200 OK` / `404 Not Found`.
+     * `POST /api/v1/smart-containers`: Registra un nuevo contenedor isotérmico con parámetros (`SerialNumber`, `FormFactor`, `TareWeightGrams`, `MinTemperatureCelsius`, `MaxTemperatureCelsius`, `WarningTemperatureCelsius`, `ExcursionToleranceSeconds`). Retorna `201 Created`.
+     * `POST /api/v1/smart-containers/{id:int}/pair` y `POST /api/v1/smart-containers/{id:int}/unlink`: Vincula o libera un contenedor respecto a la placa de ambulancia asignada. Retornan `200 OK`, `404 Not Found` o `409 Conflict`.
+     * `POST /api/v1/smart-containers/{id:int}/weight-movements`: Registra variaciones de masa biológica (`NetWeightGrams`, `UnitsDifference`, `ResponsibleUser`, `Reason`). Retorna `200 OK`.
+     * `POST /api/v1/smart-containers/{id:int}/telemetry-snapshot` y `PUT /api/v1/smart-containers/{id:int}`: Sincroniza el último estado sensorial o actualiza parámetros operativos del contenedor. Retornan `200 OK`.
+   * `TelemetryLogsController` (`/api/v1/telemetry-logs`):
+     * `POST /api/v1/telemetry-logs`: Registra una lectura IoT transmitida por el dispositivo (`ContainerId`, `TripId`, `TimestampUtc`, `TemperatureCelsius`, `AmbientTemperatureCelsius`, `WeightGrams`, `BatteryPercentage`, `Is12VConnected`, `PeltierPowerPct`, `LidLockEngaged`, `Latitude`, `Longitude`, `FirmwareSignature`). Retorna `201 Created`.
+     * `GET /api/v1/telemetry-logs`: Consulta series temporales filtradas por `containerId` o `tripId`. Retorna `200 OK`.
+     * `GET /api/v1/telemetry-logs/{id:int}` y `GET /api/v1/telemetry-logs/containers/{containerId}/latest`: Obtiene una lectura por ID o el último registro sensorial de un contenedor. Retornan `200 OK` / `404 Not Found`.
+
+   ```json
+   // Ejemplo de solicitud POST /api/v1/telemetry-logs
+   {
+     "containerId": "1",
+     "tripId": "3f9a1c2e-7b4d-4e92-a8a0-12b34c56d789",
+     "temperatureCelsius": 4.2,
+     "ambientTemperatureCelsius": 23.5,
+     "weightGrams": 12450.00,
+     "batteryPercentage": 82.0,
+     "is12VConnected": true,
+     "peltierPowerPct": 45,
+     "lidLockEngaged": true,
+     "latitude": -12.1045,
+     "longitude": -77.0123,
+     "firmwareSignature": "FW-ESP32-v1.4.2"
+   }
+   ```
+
+3. **Bounded Context: Critical Alerting & Incident Response (`IncidentController`)**
+   * `POST /api/v1/incidents`: Registra una contingencia crítica (`TripId`, `ContainerId`, `IncidentType`, `Severity`, `TriggerTemperatureCelsius`, `TriggerBatteryPercentage`). Retorna `201 Created` o `400 Bad Request`.
+   * `GET /api/v1/incidents`, `GET /api/v1/incidents/{id:guid}`, `GET /api/v1/incidents/active` y `GET /api/v1/incidents/overdue`: Lista el historial completo, consulta detalle o filtra incidentes activos y vencidos respecto a su SLA de reconocimiento. Retornan `200 OK` / `404 Not Found`.
+   * `POST /api/v1/incidents/{id:guid}/acknowledge`: Registra el acuse de recibo del operador responsable. Retorna `200 OK`, `404 Not Found` o `409 Conflict`.
+   * `POST /api/v1/incidents/{id:guid}/resolve` y `POST /api/v1/incidents/{id:guid}/escalate`: Registra la mitigación y cierre de calidad o escala el incidente al nivel de dirección médica. Retornan `200 OK`, `404 Not Found` o `409 Conflict`.
+
+4. **Bounded Context: Chain of Custody & Traceability**
+   * `CustodyTransfersController` (`/api/v1/custody-transfers`):
+     * `GET /api/v1/custody-transfers` y `GET /api/v1/custody-transfers/{identifier}`: Lista u obtiene transferencias de custodia (`CustodyTransferResource`).
+     * `POST /api/v1/custody-transfers`: Inicia una nueva transferencia (`TransferCode`, `TripId`, `RecipientHospitalId`, `AuthorizedRecipientUserId`, `Route`, `Cargo`, `SmartBox`, `TemperatureMax`, `Openings`, `DepartureAt`, `TemperatureReadings`). Retorna `201 Created`.
+     * `POST /api/v1/custody-transfers/{identifier}/temperature-readings`, `.../reception`, `.../otp-verifications`, `.../acceptance`, `.../rejections/thermal-excursion` y `.../rejections/tampering`: Ejecuta el flujo completo de lecturas, preparación en geocerca, verificación OTP, aceptación y rechazo por excursión térmica o manipulación.
+   * `TransfersController` (`/api/v1/transfers`):
+     * `GET /api/v1/transfers/{transferId}/audit`: Recupera eventos de auditoría digital del traslado.
+     * `GET /api/v1/transfers/{transferId}/traceability-report` y `GET /api/v1/transfers/{transferId}/traceability-report/pdf`: Genera el reporte consolidado de trazabilidad y su descarga en formato PDF.
+   * `DigitalAuditManifestsController` (`/api/v1/digital-audit-manifests`):
+     * `GET /api/v1/digital-audit-manifests` y `GET /api/v1/digital-audit-manifests/{transferId}`: Consulta manifiestos digitales sellados e inmutables (con hash criptográfico, estadísticas térmicas y verificación MINSA).
+   * `AuditEventsController` (`/api/v1/audit-events`):
+     * `GET /api/v1/audit-events`: Lista los eventos de auditoría de custodia registrados.
+
+5. **Bounded Context: Medical Transport Planning & Dispatching**
+   * `TransportOrdersController` (`/api/v1/transport-orders`):
+     * `GET /api/v1/transport-orders` y `GET /api/v1/transport-orders/{id:guid}`: Lista o recupera órdenes de traslado asistencial (`TransportOrderResponse`).
+     * `POST /api/v1/transport-orders`: Crea una orden con `OrderCode`, hospitales de origen/destino, `Priority`, `CargoType`, `MaxSafeHours` y `WarningThresholdHours`. Retorna `201 Created`.
+     * `POST /api/v1/transport-orders/{id:guid}/cancel`: Cancela una orden de transporte válida. Retorna `200 OK` o `409 Conflict`.
+   * `DispatchTripsController` (`/api/v1/dispatch-trips`):
+     * `GET /api/v1/dispatch-trips/active` y `GET /api/v1/dispatch-trips/{id:guid}`: Consulta viajes activos o detalle de despacho (`DispatchTripResponse`).
+     * `POST /api/v1/dispatch-trips`, `.../start`, `.../arrival` y `.../complete`: Asigna ambulancia, contenedor, conductor y paramédico, e implementa la máquina de estados del viaje (`AssignResources`, `Start`, `RegisterArrival`, `Complete`).
+     * `PATCH /api/v1/dispatch-trips/{id:guid}/eta`: Recalcula la hora estimada de llegada integrando el servicio externo **TomTom Traffic Routing API**. Retorna `200 OK` o `503 Service Unavailable`.
+
+*Nota sobre alcance pendiente en API:* El Bounded Context **Identity, Access & Subscriptions (IAM)** aún no expone controladores de autenticación JWT ni gestión de planes en `MedicalSmartBox.API`, y la solución aún no incluye un proyecto de pruebas automatizadas ejecutables (`*Tests.csproj`), ítems contemplados para el cierre del siguiente ciclo.
 
 ***
 
 ### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-Para la entrega AV2, el ecosistema completo se encuentra desplegado y públicamente accesible en entornos de producción con certificados de seguridad SSL/TLS (HTTPS):
+Para el estado actual del Sprint 3 (AV2), el ecosistema cuenta con los siguientes despliegues públicos en la nube bajo protocolo HTTPS:
 
-* **Landing Page Institucional:**  
-  * **URL:** [https://neoncode-upc.github.io/landing-page/](https://neoncode-upc.github.io/landing-page/)  
-  * **Plataforma:** GitHub Pages (Producción continua desde rama `main`). Incorpora videos promocionales del producto y del equipo.
-* **Frontend Web Application (Medical SMARTBOX SPA):**  
-  * **URL:** [https://neoncode-upc.github.io/frontend/home](https://neoncode-upc.github.io/frontend/home)  
-  * **Plataforma:** GitHub Pages con SPA router rewrites y llamadas HTTP Axios dirigidas al backend en la nube.
-* **Backend RESTful Web Services & Swagger UI:**  
-  * **URL Pública del API:** [https://medicalsmartbox-api.onrender.com/swagger/index.html](https://medicalsmartbox-api.onrender.com/swagger/index.html)  
-  * **Plataforma:** Render Cloud Application Services / Docker Container (.NET 10 LTS runtime) con base de datos relacional MySQL 8.0 en la nube.
-  * **Disponibilidad:** 99.8% uptime con endpoints asegurados bajo protocolo HTTPS.
+* **Backend RESTful Web Services & OpenAPI Scalar (En producción):**
+  * **Documentación interactiva (Scalar UI):** [`https://medical-smartbox-api.onrender.com/scalar`](https://medical-smartbox-api.onrender.com/scalar)
+  * **Esquema OpenAPI 3.1.1 y Health Check:** [`https://medical-smartbox-api.onrender.com/openapi/v1.json`](https://medical-smartbox-api.onrender.com/openapi/v1.json) · [`https://medical-smartbox-api.onrender.com/health`](https://medical-smartbox-api.onrender.com/health)
+  * **Infraestructura:** Render Web Service (`render.yaml`, plan `free`), empaquetado mediante `Dockerfile` multi-etapa sobre `mcr.microsoft.com/dotnet/aspnet:10.0` con aplicación automática de migraciones EF Core contra base de datos MySQL. *(Referencia visual del entorno publicado en producción en la sección 5.2.3.6).*
+* **Landing Page Institucional:**
+  * **URL:** [`https://neoncode-upc.github.io/landing-page/`](https://neoncode-upc.github.io/landing-page/)
+  * **Estado:** Desplegado en GitHub Pages desde rama `main` (`7073326`), incorporando las mejoras de retroalimentación del 28/10/2026 y dejando estructurada la sección de videos con identificadores en espera de asignación de las grabaciones finales (`VIDEO_IDS`).
+* **Frontend Web Application (Medical SMARTBOX SPA):**
+  * **URL:** [`https://neoncode-upc.github.io/frontend/home`](https://neoncode-upc.github.io/frontend/home)
+  * **Estado:** Despliegue activo en GitHub Pages; el entorno público continúa sirviendo la compilación base de `main` (`1155c8f`), quedando pendiente la fusión de `develop` y `feature/telemetry-backend-integration`, la inyección de variables `VITE_*` en el workflow de GitHub Actions y la habilitación del origen de GitHub Pages en `Cors:AllowedOrigins` de Render para consumir directamente `medical-smartbox-api.onrender.com`.
 
 ***
 
 ### 5.2.3.8. Team Collaboration Insights during Sprint
 
-Durante el Sprint 3, el equipo NeonCode consolidó el flujo de integración continua mediante **Pull Requests con revisión por pares (*Peer Code Review*)** antes del merge definitivo a la rama `develop`. 
-
-La partición de la arquitectura en Bounded Contexts desacoplados permitió que la codificación de servicios en C# (Jhon Jaramillo en Telemetría, Maria Munayco en Custodia, Aaron Espinoza en Alerting y Renzo Santos en Transporte) avanzara simultáneamente sin conflictos de fusión ni bloqueos de ramas.
+Durante el Sprint 3, el equipo **NeonCode** trabajó en ramas por Bounded Context en `NeonCode-UPC/backend`, `NeonCode-UPC/frontend` y `NeonCode-UPC/landing-page`, integrando los Pull Requests hacia `develop` y `main`. Los cuatro integrantes registraron contribuciones verificables en la rama `main` del repositorio `backend`: **Maria Luisa Munayco (`malumunayco`)** con 116 commits, **Aaron Espinoza (`pisure`)** con 46 commits, **Renzo Santos (`RSSint`)** con 46 commits y **Jhon Jaramillo (`Marklnz1`)** con 33 commits (sin contar merges).
 
 ::: {.figure-block}
 
-![Team Collaboration Insights — Sprint 3](../assets/chapter-5/sprint-3-collaboration-insights.png){.max-h-105}
+![Team Collaboration Insights — Sprint 3 (`NeonCode-UPC/backend`)](../assets/chapter-5/sprint-3-collaboration-insights.png){.max-h-105}
 
-*Nota: Registro de contribuciones, analítica de confirmaciones en GitHub y colaboración activa del equipo durante el Sprint 3.*
+*Nota: Panel Contributors de GitHub en `NeonCode-UPC/backend` reflejando las confirmaciones semanales en `main` de los cuatro integrantes del equipo durante el Sprint 3.*
 
 :::
