@@ -1,64 +1,132 @@
 # 4.1. Style Guidelines
 
-Un *Style Guideline* es un conjunto de directrices y normas que establecen los estándares visuales, de interacción, de tono de comunicación y de presentación que rigen el ecosistema digital de **Medical SMARTBOX**. Las especificaciones aseguran coherencia estética, usabilidad rigurosa y máxima legibilidad de datos telemétricos críticos tanto en la aplicación web de monitoreo como en el sitio web de divulgación comercial (Landing Page).
+Las Style Guidelines fijan los estándares visuales, de interacción y de comunicación de Medical SmartBox y aseguran coherencia entre el Landing Page y la Web Application. Toman como referencia **Material Design** y **PrimeVue**, con adaptaciones propias, y sus valores se extrajeron del código desplegado. El idioma por defecto es inglés (en_US) con español (es_419) como alternativa.
 
-## 4.1.1. General Style Guidelines
+### 4.1.1. General Style Guidelines
 
 ### Branding
 
-Para el desarrollo de la identidad de **Medical SMARTBOX**, se definió una estética limpia, clínica y altamente tecnológica que sintetiza la convergencia entre logística médica asistencial y telemetría de precisión IoT. La identidad visual simboliza el control integral y la custodia ininterrumpida de la cadena de frío para hemoderivados, órganos y medicamentos biológicos. La composición cromática —basada en Azul Marino Profundo, Verde Cerceta (Teal), Verde Menta y acentos de Alerta en Coral/Rojo— transmite confiabilidad médica, estabilidad operativa y capacidad inmediata de advertencia frente a excursiones térmicas.
+Identidad clínica, limpia y confiable: verde bosque profundo (`ink`) sobre marfil cálido, verde cerceta (`teal`) para acciones y estado “en rango”, y coral reservado a alertas. Logotipo: espacio libre igual a la altura del isotipo, tamaño mínimo de 24 px, versión blanca sobre fondos oscuros.
 
 ![Medical SMARTBOX - Logo](../assets/chapter-4/logo.png)
+
 *Nota: Logotipo oficial de Medical SMARTBOX, representando la custodia térmica inteligente.*
 
-### Voice & Tone (Las 4 Dimensiones de Nielsen Norman Group [@nielsen1994] — NN/g)
 
-De acuerdo con el marco metodológico de **Nielsen Norman Group (NN/g)** para la definición del tono de voz en productos digitales, la comunicación verbal y microcopia de **Medical SMARTBOX** se adapta a la alta presión cognitiva de nuestros *User Personas* (**Aldair Lazaro**, personal de transporte asistencial en ruta; y **Gianfranco Timoteo**, supervisor hospitalario y coordinador logístico):
+### Tone of Communication
 
-| Dimensión NN/g | Posicionamiento de Medical SMARTBOX | Justificación y Aplicación en Interfaz (Microcopy) |
-| :--- | :--- | :--- |
-| **1. Funny vs. Serious**<br>*(Divertido vs. Serio)* | **100% Serious (Serio)** | El transporte de órganos, sangre y biológicos de emergencia es una operación crítica para la vida humana. Se omite cualquier humor, sarcasmo o coloquialismo en estados de error o alertas térmicas. |
-| **2. Formal vs. Casual**<br>*(Formal vs. Casual)* | **Formal-Técnico (Clínico y Directo)** | Se emplea terminología médico-logística estandarizada (*Cadena de frío*, *Excursión térmica*, *Ventana de isquemia*, *Acta SHA-256*, *Cumplimiento DIGEMID*) comprensible al instante por profesionales de salud y operadores de flota. |
-| **3. Respectful vs. Irreverent**<br>*(Respetuoso vs. Irreverente)* | **Altamente Respectful (Respetuoso)** | Respeta el tiempo y la carga de estrés del paramédico (**Aldair Lazaro**) y del receptor hospitalario (**Gianfranco Timoteo**), guiando la resolución de incidentes sin culpabilizar al usuario ante errores de digitación de OTP o pérdidas de cobertura celular. |
-| **4. Enthusiastic vs. Matter-of-fact**<br>*(Entusiasta vs. Objetivo/Práctico)* | **Matter-of-fact (Objetivo y Conciso)** | Prioriza datos cuantitativos exactos sin adornos retóricos. En el Dashboard web predomina la objetividad pura (ej. *"Alerta Crítica: 9.2 °C en SB-0231 — Excede umbral máximo de 8.0 °C por 90 s"*), mientras que en el Landing Page adopta un matiz ligeramente persuasivo pero sustentado en métricas técnicas. |
+| Dimensión | Posición | Ejemplo |
+| --- | --- | --- |
+| Divertido / Serio | Serio, con calidez | “Temperature above range. Check the container.” |
+| Formal / Casual | Casual formal | “Your shipment arrives in 12 min.” |
+| Respetuoso / Irreverente | Respetuoso | “Delivery confirmed. The record was saved.” |
+| Entusiasta / Sereno | Sereno | “No action needed. Temperature is in range.” |
+
+### Design Principles
+
+| Principio | Cómo se aplica |
+| --- | --- |
+| Jerarquía visual | Alertas y temperatura con mayor tamaño y contraste; lo secundario en neutros |
+| Contraste y legibilidad | Texto de al menos 4.5:1 y cifras tabulares |
+| Consistencia | Mismos tokens y componentes en Landing y Web App |
+| Retroalimentación | Transiciones de 180 ms en botones y controles |
+| Diseño inclusivo | El color nunca es la única señal: punto o ícono más texto |
+
+### Iconography
+
+El Landing usa **Font Awesome Free 6.5.1** en sus estilos solid, regular y brands, con iconos como `check`, `chevron-down`, `arrow-right`, `location-dot`, `temperature-half`, `triangle-exclamation` y `clock-rotate-left`. La Web Application incrusta iconos SVG en línea, con glifos de Font Awesome e iconos lineales de trazo uniforme. No se utilizan emojis. Los iconos decorativos llevan `aria-hidden="true"`; los iconos que comunican un estado se acompañan de texto o de un `aria-label`.
 
 ### Typography
 
-El sistema tipográfico prioriza la jerarquía visual y la decodificación instantánea de telemetría numérica en entornos de alta exigencia cognitiva (ej. cabina de ambulancia o supervisión en central de emergencias). Se implementa una escala tipográfica modular basada en las siguientes fuentes de Google Fonts:
+**Bricolage Grotesque** (encabezados) e **Inter** (cuerpo y telemetría, con `tabular-nums`). Tamaños fluidos con `clamp()`.
 
-*   **Bricolage Grotesque:** Empleada como tipografía corporativa para encabezados primarios y secundarios (`h1`, `h2`, `h3`). Su estructura geométrica contemporánea con remates técnicos otorga autoridad visual, solidez institucional y modernidad tecnológica.
-*   **Inter:** Empleada para textos de párrafo, microcopia de interfaz, tablas de auditoría y visualización de telemetría numérica. Su excelente renderizado subpíxel y variantes tabulares numéricas (`font-variant-numeric: tabular-nums`) garantizan una lectura nítida de decimales de temperatura y porcentajes de batería sin oscilaciones visuales.
-
-![Bricolage Grotesque - Font](../assets/chapter-4/bricolage-font.png){.style-specimen-lg}
-![Inter - Font](../assets/chapter-4/inter-font.png){.style-specimen-lg}
-*Nota: Muestrarios tipográficos de Bricolage Grotesque (titulares) e Inter (cuerpo y datos numéricos).*
+| Nivel | Familia | Tamaño | Peso |
+| --- | --- | --- | --- |
+| Hero | Bricolage | 43 a 90 px | 600 |
+| Título de sección | Bricolage | 32 a 54 px | 600 |
+| Lead | Inter | 16 a 19 px | 400 |
+| Body | Inter | 16 px / 1.6 | 400 |
+| Micro / Label | Inter | 12 a 12.5 px | 400 y 500 |
 
 ### Colors
 
-La paleta cromática se seleccionó bajo criterios de contraste accesible (cumplimiento WCAG 2.1 [@w3c2018] Nivel AA) y codificación semántica para estados operativos clínicos:
+| Token | Hex | Rol |
+| --- | --- | --- |
+| `ink` | #10312F | Texto principal y botón primario |
+| `ink-2` | #2E4A47 | Texto secundario |
+| `ink-3` | #6B827F | Etiquetas, microcopy y textos de apoyo (uso secundario) |
+| `ivory` / `warm` / `mist` | #F7F4EE / #FFFDF9 / #EDF1EE | Fondos y superficies |
+| `teal` / `teal-deep` | #0F7A70 / #0B4F4A | Acción, enlaces y estado “en rango” |
+| `blue` | #1F3C77 | Alertas informativas |
+| `mint` / `lime` | #CDE7DC / #B9DDA0 | Apoyo suave y foco sobre oscuro |
+| `coral` / `coral-pale` | #E05A46 / #FBE6E1 | Alertas críticas |
+| `ok` / `warn` | #2E9E6B / #D99B2B | Estados correcto y advertencia |
 
-*   **Azul Marino Corporativo (`#10312F` / `#1F3C77`):** Color dominante institucional que proyecta solidez, seriedad médica y rigor de ingeniería.
-*   **Verde Cerceta / Teal (`#0F7A70`):** Color primario de acción y estado óptimo ("En Rango", carga refrigerada entre 2 °C y 8 °C, telemetría activa).
-*   **Verde Menta (`#B9DDA0`):** Fondo suave de soporte para indicadores de éxito y tarjetas de estado estable.
-*   **Coral / Rojo Alerta (`#E05A46`):** Tono semántico de alta prioridad reservado exclusivamente para situaciones críticas (temperatura fuera de umbral, desconexión de energía de 12V, batería residual < 15%, apertura no autorizada de tapa).
-*   **Gris Neutro Frío (`#F4F7F6` / `#E2E8F0`):** Fondos de interfaz y delimitadores de paneles modulares para reducir la fatiga visual en turnos prolongados.
+**Verificación de contraste (WCAG 2.1)**
 
-![Paleta de Colores](../assets/chapter-4/paleta.png){.style-specimen-sm}
-*Nota: Muestra de la paleta de colores corporativa y semántica de Medical SMARTBOX.*
+| Texto sobre fondo | Ratio | Resultado |
+| --- | --- | --- |
+| `ink` / `ivory` | 12.73:1 | AAA |
+| `ink-2` / `ivory` | 8.75:1 | AAA |
+| `teal` / `ivory` | 4.74:1 | AA |
+| Blanco / `teal` | 5.20:1 | AA |
+| Blanco / `teal-deep` | 9.41:1 | AAA |
+| `warm` / `ink` | 13.76:1 | AAA |
+| Badge ok #1F7A52 / #E6F4EC | 4.67:1 | AA |
+| Badge warn #8A6014 / #FBF0DA | 4.94:1 | AA |
+| Badge crítico #A93321 / `coral-pale` | 5.50:1 | AA |
+| Badge info `teal-deep` / `teal-pale` | 8.10:1 | AAA |
+| Alerta crítica #7A2417 / #FEF3F1 | 9.23:1 | AAA |
+| `lime` (foco sobre oscuro) / `ink` | 9.26:1 | AAA |
+| `ink-3` / `ivory` | 3.73:1 | Solo apoyo o texto grande |
+| `ink-3` / `warm` | 4.03:1 | Solo apoyo o texto grande |
+| `ink-3` / `mist` | 3.59:1 | Solo apoyo o texto grande |
+| `coral` / `warm` | 3.61:1 | Solo elementos no textuales |
 
-### Spacing
+El `ink-3` no alcanza 4.5:1 para texto pequeño. Se identifica como limitación y se planifica oscurecerlo a #5A706D (4.81:1 sobre `ivory` y 4.64:1 sobre `mist`) en una siguiente iteración. El `coral` se reserva para iconos, bordes y rellenos; el texto de alertas críticas usa #A93321 o #7A2417.
 
-El espaciado se fundamenta en un sistema de rejilla base modular de **8 píxeles** (8-point grid system: 4px, 8px, 16px, 24px, 32px, 48px, 64px). Este estándar asegura consistencia entre paneles modulares, tarjetas de telemetría telemática (*telemetry cards*) y botones de acción rápida, previniendo el hacinamiento de información y reduciendo la tasa de error por toques accidentales en pantallas táctiles de cabina.
+### Spacing, bordes y sombras
 
-## 4.1.2. Web Style Guidelines
+| Token | Valor |
+| --- | --- |
+| `--pad` / `--maxw` | `clamp(20px, 5vw, 72px)` / 1240 px |
+| Espaciado de sección | `clamp(64px, 9vw, 120px)` |
+| Radios `--r-s` a `--r-xl` | 10, 16, 24 y 34 px; píldora 999 px |
+| Sombras `--sh-1` a `--sh-3` | Reposo, botones y chips, modales |
 
-Las directrices web definen la estructura adaptativa, componentes interactivos y comportamiento responsivo de la plataforma:
 
-*   **Estrategia Responsive y Adaptabilidad Multi-dispositivo:**
-    *   **Desktop / Estaciones Hospitalarias (Viewport ≥ 1280px):** Disposición de cuadrícula fluida de 12 columnas. Aprovecha el ancho panorámico para mostrar simultáneamente el mapa de flota satelital en vivo, gráficos telemétricos continuos y panel lateral de incidentes activos.
-    *   **Tablet / Terminales de Cabina (Viewport 768px a 1024px):** Cuadrícula adaptativa de 6 columnas. Los paneles secundarios se condensan en pestañas (*tabs*) o cajones laterales (*drawers*) accesibles mediante gestos táctiles.
-    *   **Mobile Browser / Smartphones Médicos (Viewport 360px a 414px):** Colapso a una columna única fluida (1 columna, 100% de ancho con márgenes laterales de 16px). La barra de navegación superior colapsa en un menú tipo hamburguesa/drawer lateral; los mapas de ruta alternan a pantalla completa modal; las tarjetas de métricas telemétricas se apilan verticalmente; y los botones de acción rápida (ej. "Reconocer Alerta", "Solicitar OTP") cuentan con una altura mínima de **48px** para garantizar un área táctil ergonómica (*touch target*) según directrices de Google Material Design y Apple Human Interface Guidelines.
-*   **Navegación y Patrones de Interacción:**
-    *   **Sticky Header:** Barra de navegación superior fija que mantiene visible el logotipo institucional, estado de conexión en tiempo real (indicador verde de latencia de red), conmutador de idioma (ES/EN) y botón de acceso rápido al perfil de usuario.
-    *   **Route Rail (Navegación Vertical de Seguimiento):** En el Landing Page, un indicador lateral animado (*scrollspy*) sitúa visualmente al visitante a lo largo de las secciones informativas del producto.
-    *   **Retroalimentación Inmediata de Estados:** Cada microinteracción (hover en escritorio, active state en móvil) ofrece respuestas visuales no mayores a 150ms mediante transiciones CSS fluidas (`ease-in-out`), confirmando visualmente cada comando emitido.
+### 4.1.2. Web Style Guidelines
+
+| Dispositivo | Ancho | Comportamiento |
+| --- | --- | --- |
+| Desktop | ≥ 1081 px | Contenido de hasta 1240 px, varias columnas |
+| Tablet | 721 a 1080 px | Cuadrículas reducidas, paneles apilados |
+| Mobile | ≤ 720 px | Una columna y menú drawer (la Web App adapta desde 700 px) |
+
+| Componente | Variantes | Estados y especificación |
+| --- | --- | --- |
+| Button | Primary (`ink`), accent (`teal`), ghost, light y outline sobre fondos oscuros; tamaños sm, base y lg | Default, hover (sube 2 px) y focus-visible; forma de píldora, peso 600 y transición de 180 ms |
+| Input (campo de login) | Texto y contraseña | Default y focus; etiqueta visible de 0.82 rem, borde de 1.5 px y radio de 16 px; al enfocar el borde pasa a `teal` |
+| Badge | ok, info, warn, crit y mute | Fijo; punto de color más texto sobre fondo pálido |
+| Alert (Web App) | Informativa, correcta, advertencia y crítica | Visible; icono, título y descripción. Ejemplos: “Código de verificación incorrecto”, “Límite de isquemia fría superado” y “Retraso por tráfico” |
+| KPI card | Valor y etiqueta | Normal o crítico; cifras con números tabulares y color semántico |
+| Panel y row | Panel con encabezado y filas de lista | Normal o hover; fila con identificador, ruta o descripción y badge de estado |
+| Thermometer bar | Barra de temperatura o batería | Normal, advertencia o crítico; relleno con el color del token semántico |
+| Modal (Landing) | Login, privacidad y términos | Abierto o cerrado; elemento `<dialog>` con fondo atenuado, radio de 24 px y botón de cierre |
+| Language toggle (Landing) | ES / EN | Español o inglés; conmutador tipo píldora con `role="switch"` y `aria-checked` |
+
+| Accesibilidad e i18n | Estado actual |
+| --- | --- |
+| Foco visible | Anillo de 2.5 px en `teal`, separación de 3 px |
+| Movimiento reducido | `prefers-reduced-motion` desactiva animaciones |
+| ARIA | Landing: `aria-label`, `aria-live`, `aria-expanded`; Web App: `aria-label` y `aria-live` en elementos clave |
+| Idioma | Landing en inglés con conmutador a español; Web App en español |
+
+**Limitaciones observadas en la implementación**
+
+| Limitación | Estado observado |
+| --- | --- |
+| `ink-3` con contraste de 3.59:1 a 4.03:1 según el fondo | Se usa para etiquetas, microcopy y texto secundario, no como texto pequeño esencial. |
+| Botones `btn-sm` de unos 38 px | Su alto es inferior a 44 px. |
+| Web App en español, sin conmutador de idioma | El idioma disponible en la interfaz es español. |
+| Cobertura ARIA limitada en la Web App | Las alertas críticas no tienen `role="alert"`. |
