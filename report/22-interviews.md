@@ -55,14 +55,14 @@ Se ejecutaron un total de **6 entrevistas a profundidad** (3 participantes por c
 
 ::: {.auto-table}
 
-| **#** | **Segmento** | **Entrevistado** | **Rol / Cargo** | **Organización** | **Edad** | **Distrito** | **Entrevistador** | **Fecha** | **Dur.** | **Video** |
+| **#** | **Segmento** | **Entrevistado** | **Rol / Cargo** | **Organización** | **Edad** | **Distrito** | **Entrevistador** | **Fecha** | **Tiempo en video** | **Video** |
 | :---: | :-------- | :------------ | :-------------- | :-------------- | :---: | :--------- | :---------- | :-----: | :---: | :---: |
-| **E1** | Segmento 1 | Wilbert Toledo | Estudiante de Medicina / Paramédico en Prácticas | Red de Ambulancias de Emergencia | 21 | Pueblo Libre | Aaron Espinoza | 16/09/2026 | 02:51 min | [Ver][ref-link-1] |
-| **E2** | Segmento 1 | Aldair Lazaro | Paramédico de Transporte Asistido | Servicio de Ambulancias y Rescate | 26 | San Martín de Porres | Aaron Espinoza | 17/09/2026 | 04:38 min | [Ver][ref-link-2] |
-| **E3** | Segmento 1 | Renato Calvo Yalan | Conductor / Paramédico Asistencial | Unidad Móvil de Soporte Vital | 22 | San Isidro | Maria Munayco | 17/09/2026 | 02:24 min | [Ver][ref-link-3] |
-| **E4** | Segmento 2 | Humberto Arellán | Transportista Logístico Biomédico | Empresa de Distribución de Muestras y Fármacos | 49 | Chancay | Jhon Jaramillo | 16/09/2026 | 04:27 min | [Ver][ref-link-4] |
-| **E5** | Segmento 2 | Gianfranco Timoteo | Coordinador de Soporte y Cadena de Frío | Laboratorio y Centro Clínico | 21 | Chorrillos | Jhon Jaramillo | 16/09/2026 | 04:59 min | [Ver][ref-link-5] |
-| **E6** | Segmento 2 | Karla Pacheco | Auxiliar Administrativa de Farmacia y Rutas | Centro de Salud Policlínico | 25 | Breña | Renzo Santos | 16/09/2026 | 04:09 min | [Ver][ref-link-6] |
+| **E1** | Segmento 1 | Wilbert Toledo | Estudiante de Medicina / Paramédico en Prácticas | Red de Ambulancias de Emergencia | 21 | Pueblo Libre | Aaron Espinoza | 16/09/2026 | 00:00 - 04:09 | [Ver][ref-link-1] |
+| **E2** | Segmento 1 | Aldair Lazaro | Paramédico de Transporte Asistido | Servicio de Ambulancias y Rescate | 26 | San Martín de Porres | Aaron Espinoza | 17/09/2026 | 04:10 - 09:08 | [Ver][ref-link-2] |
+| **E3** | Segmento 1 | Renato Calvo Yalan | Conductor / Paramédico Asistencial | Unidad Móvil de Soporte Vital | 22 | San Isidro | Aaron Espinoza | 17/09/2026 | 09:09 - 13:35 | [Ver][ref-link-3] |
+| **E4** | Segmento 2 | Humberto Arellán | Transportista Logístico Biomédico | Empresa de Distribución de Muestras y Fármacos | 49 | Chancay | Santiago Gargate | 16/09/2026 | 13:36 - 16:00 | [Ver][ref-link-4] |
+| **E5** | Segmento 2 | Gianfranco Timoteo | Coordinador de Soporte y Cadena de Frío | Laboratorio y Centro Clínico | 21 | Chorrillos | Santiago Gargate | 16/09/2026 | 16:00 - 20:37 | [Ver][ref-link-5] |
+| **E6** | Segmento 2 | Karla Pacheco | Auxiliar Administrativa de Farmacia y Rutas | Centro de Salud Policlínico | 25 | Breña | Santiago Gargate | 16/09/2026 | 20:27 - 23:28 | [Ver][ref-link-6] |
 
 :::
 
@@ -195,9 +195,9 @@ El análisis sistemático de las entrevistas combina el rigor cualitativo de inc
 | Desconocimiento de la hora de llegada en quirófano. | Visualización de ruta en tiempo real y cálculo automatizado de ETA dinámico. | Integración de servicio telemático de mapas y rutas (`US08`, `US12`). |
 | Disputas legales y desconfianza en actas de papel. | Generación de acta de custodia digital inmutable con sellado criptográfico. | Manifiesto digital PDF con hash SHA-256 (`US16`) almacenado en MySQL 8.0. |
 
-[ref-link-1]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi
-[ref-link-2]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd
-[ref-link-3]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi
-[ref-link-4]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQCOlY0VDDlYTaEz1XMBJVqqAbYPNMKkoNavYEq4x8SMEIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Rp6Coc
-[ref-link-5]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4
-[ref-link-6]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC
+[ref-link-1]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQBcbMWLMmn5Q6PDNalWJGQ0AZYZhIqLw0FdX3vWfmTjZxg?e=71EeQU
+[ref-link-2]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQBcbMWLMmn5Q6PDNalWJGQ0AZYZhIqLw0FdX3vWfmTjZxg?e=71EeQU
+[ref-link-3]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQBcbMWLMmn5Q6PDNalWJGQ0AZYZhIqLw0FdX3vWfmTjZxg?e=71EeQU
+[ref-link-4]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQBcbMWLMmn5Q6PDNalWJGQ0AZYZhIqLw0FdX3vWfmTjZxg?e=71EeQU
+[ref-link-5]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQBcbMWLMmn5Q6PDNalWJGQ0AZYZhIqLw0FdX3vWfmTjZxg?e=71EeQU
+[ref-link-6]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQBcbMWLMmn5Q6PDNalWJGQ0AZYZhIqLw0FdX3vWfmTjZxg?e=71EeQU
