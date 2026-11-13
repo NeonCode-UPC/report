@@ -35,22 +35,6 @@ Las cinco entrevistas de validación del Sprint 3 se encuentran en el siguiente 
 
 *Las edades y los distritos marcados con asterisco son datos ficticios de ejemplo; deben sustituirse por datos confirmados. Los nombres de E1 y E2 también son ficticios. La fecha se registra según lo proporcionado.*
 
-### B. Análisis por segmento objetivo
-
-El análisis de las respuestas está pendiente de transcribir o revisar el contenido de las entrevistas. Los siguientes puntos organizan la información por validar y no representan hallazgos confirmados.
-
-#### Segmento 1: Personal médico y paramédicos de ambulancias (E1 y E2)
-
-- **Variables objetivas por documentar:** funciones durante los traslados, forma de coordinación, dificultades operativas y tareas realizadas en la aplicación.
-- **Variables subjetivas por documentar:** percepción de utilidad, dudas, dificultades de uso y sugerencias de mejora de cada participante.
-- **E1 y E2:** respuestas y observaciones pendientes de revisión.
-
-#### Segmento 2: Centros de salud, farmacias y operadores logísticos (E3, E4 y E5)
-
-- **Variables objetivas por documentar:** responsabilidades de recepción o supervisión, coordinación actual, consulta de traslados y manejo de alertas y registros.
-- **Variables subjetivas por documentar:** interpretación de la propuesta de valor, preocupaciones para la adopción y mejoras sugeridas por los participantes.
-- **E3, E4 y E5:** respuestas y observaciones pendientes de revisión.
-
 ## 5.3.3. Evaluaciones según heurísticas
 
 La siguiente guía organiza la evaluación de usabilidad de las entrevistas. Su resultado está pendiente de contrastar con las grabaciones o sus transcripciones.
