@@ -26,6 +26,12 @@ Todos los recursos audiovisuales se encuentran alojados en la infraestructura in
 * **Video de Demostración de Web Services & Integración (Sprint 3 — AV2):**  
   *(Grabación demostrativa pendiente de publicación en Microsoft Stream / SharePoint tras el cierre de integración frontend-backend del equipo).*
 
+### Video Promocional de Producto (About-the-Product — Sprint 3 / AV2)
+
+* **Video About-the-Product (`upc-pre-202620-1asi0730-8150-neoncode-about-the-product-sprint-3.mp4`, duración `00:02:40`):**  
+  * **Microsoft Stream (UPC):** [Ver en Microsoft Stream][video-about-product-stream]
+  * **YouTube (Incrustado en Landing Page):** [Ver en YouTube (`X0bqgC3zW-4`)][video-about-product-yt]
+
 [video-e1]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQCihpuSFk_uRraSi_YPm6zdAWy1fp-ti8brf56zZ5T5dPU?e=THmpOi "Grabación Entrevista E1"
 [video-e2]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQAnNStpnJLhQrdYqBUBUuhsAXzXihAxwOY5jm2ogaY1W_o?e=dTOVJd "Grabación Entrevista E2"
 [video-e3]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDZgfiUkHGxRrwTdE7Iv-OtAY9gytVP4b90_kNvg11HLBM?e=D0DFJi "Grabación Entrevista E3"
@@ -33,3 +39,5 @@ Todos los recursos audiovisuales se encuentran alojados en la infraestructura in
 [video-e5]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBZE3k_0cleSJ9ddix4HoawAaRyJwIJyrE49MOVHQoWX-g?e=VpNpC4 "Grabación Entrevista E5"
 [video-e6]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQBcid1EWBvQQ4gHkfCezwxOAcdZisuuMwmtkIhUnB3A0nc?e=pXWVBC "Grabación Entrevista E6"
 [video-demo-s1]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b556_upc_edu_pe/IQAX1igNY3mbRqGmWKucsjYmASJHJ3_4rrqXZmvxOTHGoaU?e=4wl9UP "Demostración Landing Page Sprint 1"
+[video-about-product-stream]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520310_upc_edu_pe/IQDQVA_8tv7fQqm1LAP82SLtAT3XW7ARYq0eOYXXkJPTHxU?e=52X6g7 "Video About-the-Product en Microsoft Stream"
+[video-about-product-yt]: https://youtu.be/X0bqgC3zW-4 "Video About-the-Product en YouTube"
