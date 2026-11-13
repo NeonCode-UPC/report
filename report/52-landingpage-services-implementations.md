@@ -649,9 +649,18 @@ En estricta observancia del requisito rector de AV2, los servicios backend fuero
 Para el estado actual del Sprint 3 (AV2), el ecosistema cuenta con los siguientes despliegues públicos en la nube bajo protocolo HTTPS:
 
 * **Backend RESTful Web Services & OpenAPI Scalar (En producción):**
+  * **URL base en producción:** [`https://medical-smartbox-api.onrender.com`](https://medical-smartbox-api.onrender.com)
   * **Documentación interactiva (Scalar UI):** [`https://medical-smartbox-api.onrender.com/scalar`](https://medical-smartbox-api.onrender.com/scalar)
-  * **Esquema OpenAPI 3.1.1 y Health Check:** [`https://medical-smartbox-api.onrender.com/openapi/v1.json`](https://medical-smartbox-api.onrender.com/openapi/v1.json) · [`https://medical-smartbox-api.onrender.com/health`](https://medical-smartbox-api.onrender.com/health)
-  * **Infraestructura:** Servicio web en Render (`render.yaml`, plan gratuito `free`, versión `v1.0.0` desde `main` `482a7bd`), empaquetado mediante `Dockerfile` multietapa sobre `mcr.microsoft.com/dotnet/aspnet:10.0` con aplicación automática de migraciones EF Core contra base de datos MySQL. *(Referencia visual del entorno publicado en producción en la sección 5.2.3.6).*
+  * **Esquema OpenAPI 3.1.1 y verificación de estado:** [`https://medical-smartbox-api.onrender.com/openapi/v1.json`](https://medical-smartbox-api.onrender.com/openapi/v1.json) · [`https://medical-smartbox-api.onrender.com/health`](https://medical-smartbox-api.onrender.com/health)
+  * **Infraestructura:** Servicio web en Render (`render.yaml`, plan gratuito `free`, versión `v1.0.0` desde `main` `482a7bd`), empaquetado mediante `Dockerfile` multietapa sobre `mcr.microsoft.com/dotnet/aspnet:10.0` con aplicación automática de migraciones EF Core contra base de datos MySQL.
+
+::: {.figure-block}
+
+![Despliegue activo de `medical-smartbox-api` en Render](../assets/chapter-5/sprint-3-deploy-render.jpg){.max-h-88}
+
+*Panel de despliegues en Render confirmando el servicio `medical-smartbox-api` en estado activo (`Live`) sobre `NeonCode-UPC/backend` en `https://medical-smartbox-api.onrender.com` (captura del despliegue `2e6e5c6`, previo a la consolidación final `v1.0.0` en `482a7bd`).*
+
+:::
 * **Landing Page Institucional:**
   * **URL:** [`https://neoncode-upc.github.io/landing-page/`](https://neoncode-upc.github.io/landing-page/)
   * **Estado:** Desplegado en GitHub Pages desde rama `main` (`7073326`), incorporando las mejoras de retroalimentación del 28/10/2026 y dejando estructurada la sección de videos con identificadores en espera de asignación de las grabaciones finales (`VIDEO_IDS`).

@@ -25,7 +25,7 @@ En esta sección se consolidan los accesos a los repositorios de código fuente,
   [https://github.com/NeonCode-UPC/backend][repo-backend]
 
 * **Despliegue Público del Backend RESTful API & Documentación Scalar OpenAPI 3.1.1 (Render):**  
-  [https://medical-smartbox-api.onrender.com/scalar][deploy-backend-scalar] · [Health Check][deploy-backend-health]
+  [https://medical-smartbox-api.onrender.com][deploy-backend-base] · [Scalar OpenAPI][deploy-backend-scalar] · [Verificación `/health`][deploy-backend-health]
 
 * **Organización Oficial del Proyecto en GitHub:**  
   [https://github.com/NeonCode-UPC][org-github]
@@ -36,6 +36,7 @@ En esta sección se consolidan los accesos a los repositorios de código fuente,
 [repo-frontend]: https://github.com/NeonCode-UPC/frontend "Repositorio de la Frontend Web Application"
 [deploy-frontend]: https://neoncode-upc.github.io/frontend/home "Despliegue Público Frontend Web Application"
 [repo-backend]: https://github.com/NeonCode-UPC/backend "Repositorio del Backend RESTful Web API"
+[deploy-backend-base]: https://medical-smartbox-api.onrender.com "URL Base Backend Render"
 [deploy-backend-scalar]: https://medical-smartbox-api.onrender.com/scalar "Documentación Interactiva Scalar API"
 [deploy-backend-health]: https://medical-smartbox-api.onrender.com/health "Estado de Salud Backend Render"
 [org-github]: https://github.com/NeonCode-UPC "Organización Oficial NeonCode-UPC"
