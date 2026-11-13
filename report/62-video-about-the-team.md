@@ -1,7 +1,20 @@
 # Video About-the-Team
 
-El video **About-the-Team** presenta la participación de los integrantes de NeonCode en el desarrollo de Medical SMARTBOX, sus aportes al proyecto y los aprendizajes del trabajo en equipo.
+::: {.compact-lists}
 
-[Ver video About-the-Team del Sprint 3][about-team-video]
+En esta sección se presenta el **Video About-the-Team** de NeonCode para el Sprint 3 de **Medical SMARTBOX**.
 
-[about-team-video]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQArxRTvLqHqToO_dxmRP4rkASZrEjl8umdi9A7Nb0JfaPs?e=a940em
+## Contenido y Estructura Audiovisual
+
+El video está dedicado al trabajo del equipo durante el proyecto, incluyendo los aportes de sus integrantes, el proceso de colaboración y los aprendizajes alcanzados.
+
+## Ficha Técnica y Enlaces Oficiales
+
+| **Atributo** | **Detalle** |
+| :--- | :--- |
+| **Nomenclatura (MP4)** | `upc-pre-202620-1asi0730-8150-NeonCode-about-the-team-sprint-3.mp4` |
+| **Microsoft Stream / SharePoint (UPC)** | [Ver Video About-the-Team][about-team-video] |
+
+:::
+
+[about-team-video]: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQArxRTvLqHqToO_dxmRP4rkASZrEjl8umdi9A7Nb0JfaPs?e=a940em "Video About-the-Team del Sprint 3"
