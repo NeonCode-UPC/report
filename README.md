@@ -124,6 +124,7 @@ El documento compilado se genera en `build/upc-pre-202620-1asi0730-8150-neoncode
 
 ### Cierre y Anexos
 - [Conclusiones y Recomendaciones](report/61-conclusions.md#conclusiones-y-recomendaciones)
+- [Video About-the-Team](report/62-video-about-the-team.md#video-about-the-team)
 - [Bibliografía (BibTeX / APA)](report/99-bibliography.md#bibliografía)
 - [Anexo A. Repositorios Oficiales y Despliegues en la Nube](report/annexes/annex-a-repositories-and-deployments.md)
 - [Anexo B. Tableros Digitales y Prototipos Interactivos](report/annexes/annex-b-collaborative-boards-and-prototypes.md)
