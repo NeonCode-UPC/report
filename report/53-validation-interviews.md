@@ -23,13 +23,13 @@ Las cinco entrevistas de validación del Sprint 3 se encuentran en el siguiente 
 
 ::: {.auto-table}
 
-| **Entrevista** | **Tiempo en video** | **Video** |
-| :---: | :---: | :---: |
-| **E1** | 00:00 - 04:57 | [Ver][validation-interviews-video] |
-| **E2** | 04:58 - 09:45 | [Ver][validation-interviews-video] |
-| **E3** | 09:45 - 15:32 | [Ver][validation-interviews-video] |
-| **E4** | 15:32 - 23:54 | [Ver][validation-interviews-video] |
-| **E5** | 23:55 - FIN | [Ver][validation-interviews-video] |
+| **Entrevista** | **Entrevistado** | **Tiempo en video** | **Video** |
+| :---: | :--- | :---: | :---: |
+| **E1** | Luis Ramirez (nombre ficticio) | 00:00 - 04:57 | [Ver][validation-interviews-video] |
+| **E2** | Daniela Torres (nombre ficticio) | 04:58 - 09:45 | [Ver][validation-interviews-video] |
+| **E3** | Antony Palomino | 09:45 - 15:32 | [Ver][validation-interviews-video] |
+| **E4** | Anthobel Loayza | 15:32 - 23:54 | [Ver][validation-interviews-video] |
+| **E5** | Hugo Martinez | 23:55 - FIN | [Ver][validation-interviews-video] |
 
 :::
 
