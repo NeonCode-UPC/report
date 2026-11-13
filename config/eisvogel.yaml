@@ -55,6 +55,7 @@ input-files:
   - report/48-database-design.md
   - report/51-software-configuration-management.md
   - report/52-landingpage-services-implementations.md
+  - report/53-validation-interviews.md
   - report/54-video-about-the-product.md
   - report/61-conclusions.md
   - report/99-bibliography.md
