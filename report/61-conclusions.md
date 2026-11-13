@@ -11,10 +11,21 @@
 3. **Implementación y Despliegue Exitoso del Landing Page y la Frontend Web Application (Sprints 1 y 2):**  
    Bajo una disciplina de gestión de configuración de software (SCM) basada en GitFlow, versionado semántico (SemVer 2.0.0) y Conventional Commits, el equipo completó satisfactoriamente los **16 Story Points del Sprint 1** (despliegue del Landing Page institucional responsive) y los **29 Story Points del Sprint 2** (construcción y despliegue en producción de la primera versión integrada de la Frontend Web Application en **Vue 3**, **PrimeVue** y **Pinia** estructurada por Bounded Contexts), cumpliendo integralmente los objetivos del hito **TB1**.
 
+## Conclusiones del Sprint 3 (Hito AV2)
+
+1. **Desarrollo de servicios backend:**
+   El Sprint 3 avanzó en los servicios RESTful de Medical SMARTBOX con ASP.NET Core y persistencia en MySQL. El trabajo se organizó por bounded contexts e incluyó funcionalidades para contenedores, telemetría, transporte, cadena de custodia e incidentes críticos.
+
+2. **Documentación e integración progresiva:**
+   Se incorporó documentación interactiva de la API mediante OpenAPI y Scalar, y se avanzó en la conexión de módulos del frontend con el backend. La integración no es completa: algunos flujos, como la interfaz de alertas, aún requieren conexión directa a los servicios.
+
+3. **Coordinación y continuidad del proyecto:**
+   La distribución de responsabilidades y el trabajo con ramas permitieron desarrollar los distintos componentes del Sprint 3 de forma colaborativa. Los avances proporcionan una base para continuar con la integración, las pruebas y la validación de la solución.
+
 ## Recomendaciones para Siguientes Hitos
 
-1. **Sprint 3 (Hito AV2 - Backend RESTful Web Services & Persistencia Relacional):**  
-   Implementar y desplegar los servicios RESTful en **ASP.NET Core 10.0 (.NET 10 LTS)** con C# y **Entity Framework Core 10.0**, ejecutando las migraciones Code-First sobre **MySQL 8.0 (InnoDB)**. Priorizar los endpoints de ingesta periódica de telemetría vía HTTPS/REST desde el nodo ESP32, la evaluación de umbrales térmicos críticos (`US13`, `US14`, `US15`) y la documentación interactiva de contratos OpenAPI con Swagger UI.
+1. **Continuidad del Sprint 3 (Backend e integración):**
+   Completar la conexión de los módulos pendientes del frontend con los servicios RESTful y verificar los flujos de telemetría, alertas, transporte y cadena de custodia. Mantener actualizada la documentación OpenAPI en Scalar y comprobar la persistencia y el despliegue en los entornos correspondientes.
 
 2. **Sprint 4 (Hito TB2 - Integración Full-Stack, Auditoría SHA-256 y Pruebas de Aceptación):**  
    Integrar de extremo a extremo la aplicación frontend en Vue 3 con el Backend RESTful Web API desplegado en la nube, habilitando el cierre criptográfico de cadena de custodia mediante token OTP y la exportación de manifiestos de auditoría inmutables sellados con hash SHA-256 (`US16`, `US17`, `US18`), así como la validación integral de los escenarios Gherkin con usuarios representativos de ambos segmentos objetivo.
